@@ -146,9 +146,9 @@ eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n *
   !*** ./src/front/service/posts.js ***!
   \************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("/* WEBPACK VAR INJECTION */(function(module) {/**\r\n * API posts front end service\r\n *\r\n * src/front/service/post.js\r\n */\nvar postUrl = 'http://142.93.24.13/wp-json/wp/v2/posts';\nvar posts = fetch(postUrl).then(function (resp) {\n  return resp.json();\n}).then(function (data) {\n  return JSON.stringify(data);\n});\nmodule[\"export\"] = posts;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/module.js */ \"./node_modules/webpack/buildin/module.js\")(module)))\n\n//# sourceURL=webpack:///./src/front/service/posts.js?");
+eval("/**\r\n * API posts front end service\r\n *\r\n * src/front/service/post.js\r\n */\nvar postUrl = 'http://142.93.24.13/wp-json/wp/v2/posts';\nvar posts = fetch(postUrl).then(function (resp) {\n  return resp.json();\n}).then(function (data) {\n  return JSON.stringify(data);\n});\nmodule.exports = posts;\n\n//# sourceURL=webpack:///./src/front/service/posts.js?");
 
 /***/ }),
 

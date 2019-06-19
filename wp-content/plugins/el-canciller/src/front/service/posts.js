@@ -10,4 +10,4 @@ const posts = fetch(postUrl)
                 .then((resp) => resp.json())
                 .then(data => JSON.stringify(data))
 
-module.export = posts;
+module.exports = posts;
