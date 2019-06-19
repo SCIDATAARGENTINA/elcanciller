@@ -23,7 +23,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-
+	<p>hola</p>
 	<div class="top-bar">
 		<div class="container">
 
