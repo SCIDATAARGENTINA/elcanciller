@@ -22,7 +22,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<p>hola</p>
 <div id="page" class="site">
 	<div class="top-bar">
 		<div class="container">
