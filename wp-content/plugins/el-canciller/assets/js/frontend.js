@@ -148,7 +148,7 @@ eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n *
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * API posts front end service\r\n *\r\n * src/front/service/wordpressapi.js\r\n */\nfunction getData(query) {\n  var url = \"http://142.93.24.13/wp-json/wp/v2/\".concat(query);\n  var headers = new HttpHeaders({// tslint:disable-next-line:max-line-length\n    //'Authorization': 'Bearer BQDN8FI-G3-thKplSnuymOZA8ixIHLoEnrEg4-nvcCsN64BGpyNv1LdbM53gz0ODqo9QXYLHKtbKaG7DLl0'\n  });\n  return fetch(url, {\n    headers: headers\n  }).then(function (data) {\n    return data.json();\n  });\n}\n\nvar apiData = {\n  getLatestPosts: function getLatestPosts() {\n    return getData('/posts?per_page=100');\n  }\n};\nmodule.exports = apiData;\n\n//# sourceURL=webpack:///./src/front/service/wordpressapi.js?");
+eval("/**\r\n * API posts front end service\r\n *\r\n * src/front/service/wordpressapi.js\r\n */\nfunction getData(query) {\n  var url = \"http://142.93.24.13/wp-json/wp/v2\".concat(query);\n  var headers = new HttpHeaders({// tslint:disable-next-line:max-line-length\n    //'Authorization': 'Bearer BQDN8FI-G3-thKplSnuymOZA8ixIHLoEnrEg4-nvcCsN64BGpyNv1LdbM53gz0ODqo9QXYLHKtbKaG7DLl0'\n  });\n  return fetch(url, {\n    headers: headers\n  }).then(function (data) {\n    return data.json();\n  });\n}\n\nvar apiData = {\n  getLatestPosts: function getLatestPosts() {\n    return getData('/posts?per_page=100');\n  }\n};\nmodule.exports = apiData;\n\n//# sourceURL=webpack:///./src/front/service/wordpressapi.js?");
 
 /***/ }),
 
