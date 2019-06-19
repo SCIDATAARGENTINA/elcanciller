@@ -137,7 +137,7 @@ eval("/**\r\n * Test frontend component.\r\n *\r\n * src/front/components/front-
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\nvar front = __webpack_require__(/*! ./components/front-test */ \"./src/front/components/front-test.js\");\n\nvar posts = __webpack_require__(/*! ./service/posts */ \"./src/front/service/posts.js\");\n\nfront.log('Here is a message for the frontend! Hola');\nconsole.log(posts.posts); // Let's test a function using Lodash.\n\nfront.log(front.getLastArrayElement([1, 2, 3])); // Should log out 3.\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
+eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\nvar front = __webpack_require__(/*! ./components/front-test */ \"./src/front/components/front-test.js\");\n\nvar _require = __webpack_require__(/*! ./service/posts */ \"./src/front/service/posts.js\"),\n    posts = _require.posts;\n\nfront.log('Here is a message for the frontend! Hola');\nconsole.log(posts.posts);\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
 
 /***/ }),
 
@@ -148,7 +148,7 @@ eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n *
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * API posts front end service\r\n *\r\n * src/front/service/posts.js\r\n */\nvar postUrl = 'http://142.93.24.13/wp-json/wp/v2/posts?per_page=-1';\nvar posts = fetch(postUrl).then(function (res) {\n  return res.json();\n}).then(function (res) {\n  return res;\n});\nconsole.log(posts);\nmodule.exports = posts;\n\n//# sourceURL=webpack:///./src/front/service/posts.js?");
+eval("/**\r\n * API posts front end service\r\n *\r\n * src/front/service/posts.js\r\n */\nvar postUrl = 'http://142.93.24.13/wp-json/wp/v2/posts?per_page=-1';\nvar posts = fetch(postUrl).then(function (res) {\n  return res.json();\n}).then(function (res) {\n  return res;\n});\nconsole.log(posts);\nexports = posts;\n\n//# sourceURL=webpack:///./src/front/service/posts.js?");
 
 /***/ }),
 
