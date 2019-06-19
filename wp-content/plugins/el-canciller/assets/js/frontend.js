@@ -137,7 +137,7 @@ eval("/**\r\n * Test frontend component.\r\n *\r\n * src/front/components/front-
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\nvar front = __webpack_require__(/*! ./components/front-test */ \"./src/front/components/front-test.js\");\n\nvar posts = __webpack_require__(/*! ./service/posts */ \"./src/front/service/posts.js\");\n\nconsole.log(posts);\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
+eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\nvar front = __webpack_require__(/*! ./components/front-test */ \"./src/front/components/front-test.js\");\n\nvar posts = __webpack_require__(/*! ./service/posts */ \"./src/front/service/posts.js\");\n\nposts.then(function (res) {\n  console.log(res);\n});\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
 
 /***/ }),
 
@@ -148,7 +148,7 @@ eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n *
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * API posts front end service\r\n *\r\n * src/front/service/posts.js\r\n */\nvar postUrl = 'http://142.93.24.13/wp-json/wp/v2/posts?per_page=100';\nvar posts = fetch(postUrl).then(function (data) {\n  return data.json();\n}).then(function (res) {\n  console.log(res);\n});\nmodule.exports = posts;\n\n//# sourceURL=webpack:///./src/front/service/posts.js?");
+eval("/**\r\n * API posts front end service\r\n *\r\n * src/front/service/posts.js\r\n */\nvar postUrl = 'http://142.93.24.13/wp-json/wp/v2/posts?per_page=100';\nvar posts = fetch(postUrl).then(function (data) {\n  return data.json();\n});\nmodule.exports = posts;\n\n//# sourceURL=webpack:///./src/front/service/posts.js?");
 
 /***/ }),
 

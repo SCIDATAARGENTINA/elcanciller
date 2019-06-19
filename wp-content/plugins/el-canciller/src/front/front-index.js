@@ -6,4 +6,6 @@
 const front = require('./components/front-test');
 const posts = require('./service/posts');
 
-console.log(posts);
+posts.then(res => {
+    console.log(res);
+});
