@@ -4,8 +4,8 @@
  * src/front/front-index.js
  */
 const front = require('./components/front-test');
-const posts = require('./service/posts');
+const apiData = require('./service/wordpressapi');
 
-posts.then(res => {
+apiData.getLatestPosts.then(res => {
     console.log(res);
 });
