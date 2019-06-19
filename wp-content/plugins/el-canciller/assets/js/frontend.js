@@ -150,7 +150,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ser
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n * API posts front end service\r\n *\r\n * src/front/service/wordpressapi.js\r\n */\nfunction getData(query) {\n  var url = \"http://142.93.24.13/wp-json/wp/v2\".concat(query);\n  var headers = new HttpHeaders({// tslint:disable-next-line:max-line-length\n    //'Authorization': 'Bearer BQDN8FI-G3-thKplSnuymOZA8ixIHLoEnrEg4-nvcCsN64BGpyNv1LdbM53gz0ODqo9QXYLHKtbKaG7DLl0'\n  });\n  return fetch(url, {\n    headers: headers\n  }).then(function (data) {\n    return data.json();\n  });\n}\n\nfunction getLatestPosts() {\n  return getData('/posts?per_page=100');\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getLatestPosts);\n\n//# sourceURL=webpack:///./src/front/service/wordpressapi.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n * API posts front end service\r\n *\r\n * src/front/service/wordpressapi.js\r\n */\nfunction getData(query) {\n  var url = \"http://142.93.24.13/wp-json/wp/v2\".concat(query);\n  var headers = new HttpHeaders({// tslint:disable-next-line:max-line-length\n    //'Authorization': 'Bearer BQDN8FI-G3-thKplSnuymOZA8ixIHLoEnrEg4-nvcCsN64BGpyNv1LdbM53gz0ODqo9QXYLHKtbKaG7DLl0'\n  });\n  return fetch(url, {\n    headers: headers\n  }).then(function (data) {\n    return data.json();\n  });\n}\n\nvar getLatestPosts = getData('/posts?per_page=100');\n/* harmony default export */ __webpack_exports__[\"default\"] = (getLatestPosts);\n\n//# sourceURL=webpack:///./src/front/service/wordpressapi.js?");
 
 /***/ }),
 

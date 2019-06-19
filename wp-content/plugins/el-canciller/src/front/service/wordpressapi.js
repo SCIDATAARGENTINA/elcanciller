@@ -18,8 +18,6 @@ function getData(query) {
 
 }
 
-function getLatestPosts() {
-    return getData('/posts?per_page=100');
-}
+const getLatestPosts = getData('/posts?per_page=100');
 
 export default getLatestPosts;
