@@ -4,8 +4,8 @@
  * src/front/front-index.js
  */
 const front = require('./components/front-test');
-const posts = require('./service/posts').default;
+const posts = require('./service/posts');
 
-posts.posts.then(res => {
+posts.then(res => {
     console.log(data);
 });

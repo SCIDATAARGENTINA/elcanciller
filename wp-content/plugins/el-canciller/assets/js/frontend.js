@@ -137,7 +137,7 @@ eval("/**\r\n * Test frontend component.\r\n *\r\n * src/front/components/front-
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\nvar front = __webpack_require__(/*! ./components/front-test */ \"./src/front/components/front-test.js\");\n\nvar posts = __webpack_require__(/*! ./service/posts */ \"./src/front/service/posts.js\")[\"default\"];\n\nposts.posts.then(function (res) {\n  console.log(data);\n});\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
+eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\nvar front = __webpack_require__(/*! ./components/front-test */ \"./src/front/components/front-test.js\");\n\nvar posts = __webpack_require__(/*! ./service/posts */ \"./src/front/service/posts.js\");\n\nposts.then(function (res) {\n  console.log(data);\n});\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
 
 /***/ }),
 
