@@ -1,0 +1,196 @@
+# Translation of Plugins - One-Click Child Theme - Development (trunk) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - One-Click Child Theme - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-23 12:15:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - One-Click Child Theme - Development (trunk)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://terrychay.com/"
+msgstr "http://terrychay.com/"
+
+#. Author of the plugin/theme
+msgid "tychay"
+msgstr "tychay"
+
+#. Description of the plugin/theme
+msgid "Easily child theme any theme from wp-admin wp-admin without going into shell or using FTP."
+msgstr "Crea fácilmente un tema hijo a partir de cualquier tema desde wp-admin sin tener que ir a la consola o usar FTP."
+
+#. Plugin URI of the plugin/theme
+msgid "http://terrychay.com/wordpress-plugins/one-click-child-theme"
+msgstr "http://terrychay.com/wordpress-plugins/one-click-child-theme"
+
+#. Plugin Name of the plugin/theme
+msgid "One-Click Child Theme"
+msgstr "One-Click Child Theme"
+
+#: templates/is_child_already.php:86
+msgid "WordPress has no formal support for theme grandchildren. No other actions currently supported in One Click Child Theme."
+msgstr "WordPress no ofrece compatibilidad formal con temas nieto. Ni ninguna acción compatible actualmente en One Click Child Theme."
+
+#: templates/is_child_already.php:85
+msgid "Grandchild theme?"
+msgstr "¿Es un tema nieto?"
+
+#: templates/is_child_already.php:81
+msgid "Replace Screenshot"
+msgstr "Reemplazar captura de pantalla"
+
+#: templates/is_child_already.php:76
+msgid "mShot"
+msgstr "mShot"
+
+#: templates/is_child_already.php:70
+msgid "Current"
+msgstr "Actual"
+
+#: templates/is_child_already.php:65
+msgid "No screenshot"
+msgstr "Sin captura de pantalla"
+
+#: templates/is_child_already.php:56
+msgid "By default One-Click Child Theme uses the parent theme’s screenshot. You can use WordPress.com’s mshot service to replace the current child theme’s screenshot with a screenshot of your current web site’s homepage (if publicly accessible over the web)."
+msgstr "Por defecto, Tema hijo en un clic utiliza la captura de pantalla del tema padre. Puedes usar el servicio mshot de WordPress.com para reemplazar la captura actual del tema hijo con una captura de la portada actual de tu web (si la web está públicamente accesible)."
+
+#: templates/is_child_already.php:55
+msgid "Screenshot"
+msgstr "Captura de pantalla"
+
+#: templates/is_child_already.php:48
+msgid "Copy Template"
+msgstr "Copiar plantilla"
+
+#: templates/is_child_already.php:35
+msgid "Template File"
+msgstr "Archivo de plantilla"
+
+#: templates/is_child_already.php:29
+msgid "If you wish to modify the behavior of a template file, select it and click the \"Copy Template\" button below."
+msgstr "Si quieres modificar el comportamiento de un archivo de plantilla elígelo y haz clic en el botón de abajo \"Copiar plantilla\"."
+
+#: templates/is_child_already.php:28
+msgid "Child files"
+msgstr "Archivos del tema hijo"
+
+#: templates/is_child_already.php:20
+msgid "Repair Child Theme"
+msgstr "Reparar tema hijo"
+
+#: templates/is_child_already.php:15
+msgid "Detected outdated child theme mechanism. Click the button below to attempt a one-click repair."
+msgstr "Se ha detectado un mecanismo de tema hijo obsoleto. Haz clic en el botón de abajo para tratar de repararlo con un clic."
+
+#: templates/is_child_already.php:14
+msgid "Child theme needs repair"
+msgstr "El tema hijo necesita reparación"
+
+#: templates/create_child_form.php:47
+msgid "Create Child"
+msgstr "Crear hijo"
+
+#: templates/create_child_form.php:42
+msgid "Your name."
+msgstr "Tu nombre."
+
+#: templates/create_child_form.php:39
+msgid "Author"
+msgstr "Autor"
+
+#: templates/create_child_form.php:35
+msgid "Describe your theme."
+msgstr "Describe tu tema."
+
+#: templates/create_child_form.php:32
+msgid "Description"
+msgstr "Descripción"
+
+#: templates/create_child_form.php:28
+msgid "Give your theme a name."
+msgstr "Dale un nombre a tu tema."
+
+#: templates/create_child_form.php:25
+msgid "Theme Name"
+msgstr "Nombre del tema"
+
+#: templates/create_child_form.php:18
+msgid "Fill out this form to create a child theme based on %s (your current theme)."
+msgstr "Rellena este formulario para crear un tema hijo basado en %s (tu tema actual)."
+
+#: templates/create_child_form.php:16
+msgid "Create a Child Theme"
+msgstr "Crea un tema hijo"
+
+#: one-click-child-theme.php:557
+msgid "Theme directory already exists!"
+msgstr "¡El directorio del tema ya existe!"
+
+#: one-click-child-theme.php:234
+msgid "Child Theme"
+msgstr "Tema hijo"
+
+#: one-click-child-theme.php:233
+msgid "Make a Child Theme"
+msgstr "Haz un tema hijo"
+
+#: one-click-child-theme.php:216
+msgid "Successfully changed screenshot."
+msgstr "Captura cambiada con éxito."
+
+#: one-click-child-theme.php:210
+msgid "Failed to create file %s!"
+msgstr "¡Fallo al crear el archivo %s!"
+
+#: one-click-child-theme.php:203
+msgid "Unrecognized mimetype at %s!"
+msgstr "¡Tipo mime no reconocido en %s!"
+
+#: one-click-child-theme.php:196
+msgid "404 File not found at %s!"
+msgstr "¡Archivo 404 no encontrado en %s!"
+
+#: one-click-child-theme.php:189
+msgid "Failed to delete file %s!"
+msgstr "¡Fallo al borrar el archivo %s!"
+
+#: one-click-child-theme.php:175
+msgid "<a href=\"%s\">File %s created!</a>"
+msgstr "<a href=\"%s\">¡Archivo %s creado!</a>"
+
+#: one-click-child-theme.php:168
+msgid "Failed to duplicate file %s!"
+msgstr "¡Fallo al duplicar el archivo %s!"
+
+#: one-click-child-theme.php:161
+msgid "Template file %s already exists in child theme!"
+msgstr "¡El archivo de plantilla %s ya existe en el tema hijo!"
+
+#: one-click-child-theme.php:154
+msgid "Template file %s does not exist in parent theme!"
+msgstr "¡El archivo de plantilla %s no existe en el tema padre!"
+
+#: one-click-child-theme.php:150
+msgid "No template file specified."
+msgstr "No se ha especificado ningún archivo de plantilla."
+
+#: one-click-child-theme.php:146
+msgid "Repaired child theme."
+msgstr "Tema hijo reparado."
+
+#: one-click-child-theme.php:140
+msgid "Failed to edit file: %s"
+msgstr "Fallo al modificar el archivo: %s"
+
+#: one-click-child-theme.php:133
+msgid "Failed to create file: %s"
+msgstr "Fallo al crear el archivo: %s"
+
+#: one-click-child-theme.php:120
+msgid "Theme switched! <a href=\"%s\">Click here to edit the child stylesheet</a>."
+msgstr "¡Tema cambiado! <a href=\"%s\">Haz clic aquí para modificar la hoja de estilos del tema hijo</a>."
