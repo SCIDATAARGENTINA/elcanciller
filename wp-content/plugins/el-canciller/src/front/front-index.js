@@ -6,6 +6,8 @@
 const front = require('./components/front-test');
 import getLatestPosts from './service/wordpressapi';
 
+console.log(getLatestPosts);
+
 getLatestPosts.then(res => {
     console.log(res);
 });
