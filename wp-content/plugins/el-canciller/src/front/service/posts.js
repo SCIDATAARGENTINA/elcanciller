@@ -8,6 +8,6 @@ const postUrl = 'http://142.93.24.13/wp-json/wp/v2/posts';
 
 const posts = fetch(postUrl)
                 .then((resp) => resp.json())
-                .then(data => JSON.stringify(data))
+                .then(data)
 
 module.exports = posts;

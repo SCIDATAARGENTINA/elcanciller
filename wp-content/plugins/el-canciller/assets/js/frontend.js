@@ -148,7 +148,7 @@ eval("/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n *
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * API posts front end service\r\n *\r\n * src/front/service/post.js\r\n */\nvar postUrl = 'http://142.93.24.13/wp-json/wp/v2/posts';\nvar posts = fetch(postUrl).then(function (resp) {\n  return resp.json();\n}).then(function (data) {\n  return JSON.stringify(data);\n});\nmodule.exports = posts;\n\n//# sourceURL=webpack:///./src/front/service/posts.js?");
+eval("/**\r\n * API posts front end service\r\n *\r\n * src/front/service/post.js\r\n */\nvar postUrl = 'http://142.93.24.13/wp-json/wp/v2/posts';\nvar posts = fetch(postUrl).then(function (resp) {\n  return resp.json();\n}).then(data);\nmodule.exports = posts;\n\n//# sourceURL=webpack:///./src/front/service/posts.js?");
 
 /***/ }),
 
