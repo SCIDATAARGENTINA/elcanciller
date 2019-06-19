@@ -19,7 +19,7 @@ function getData(query) {
 }
 
 function getLatestPosts() {
-    getData('/posts?per_page=100');
+    return getData('/posts?per_page=100');
 }
 
 export default getLatestPosts;
