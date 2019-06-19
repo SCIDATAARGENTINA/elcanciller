@@ -10,5 +10,5 @@ const posts = fetch(postUrl)
                 .then(res => res.json())
                 .then(res => res)
 
-console.log(posts)
+posts.then(data = console.log(data));
 module.exports = posts;
