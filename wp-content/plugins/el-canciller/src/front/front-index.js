@@ -9,7 +9,8 @@ import apiData from './service/wordpressapi';
 
 
 apiData.getLatestPosts.then(res => {
-    res.forEach((key, value) => {
-        console.log(key + ' - ' + value); // key - value
+    console.log(res);
+    res.forEach((val, key) => {
+        console.log(val.title + ' - ' + key);
     });
 });
