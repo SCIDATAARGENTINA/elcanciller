@@ -19,7 +19,7 @@ function getData(query) {
 }
 
 const apiData = {
-    getLatestPosts: getData('/posts?per_page=100')
+    getLatestPosts: getData('/posts?per_page=20')
 };
 
 export default apiData;
