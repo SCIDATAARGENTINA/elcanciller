@@ -15,10 +15,10 @@ function renderTemplate(data) {
         var element = el;
 
         data.forEach((val, key) => {
-            if (val.categories === cat) {
+            if (val.categories[0] === cat) {
                 console.log("es la cat");
             }
-            const template =
+            let template =
                 `<p>${val.title.rendered}</p>
              <p>${val.date}</p><br><br>`;
 
