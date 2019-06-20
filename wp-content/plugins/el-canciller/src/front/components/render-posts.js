@@ -9,11 +9,7 @@ function renderTemplate(data) {
 
     const elements = document.querySelectorAll(".render-posts");
 
-    [].forEach.call(elements, function(index, value) {
-        console.log(index, value); // passes index + value back!
-    });
-
-    elements.forEach((el) => {
+    [].forEach.call(elements, (el) => {
         var cat = el.getAttribute('data-category');
         var quantity = el.getAttribute('data-quantity');
 
@@ -29,7 +25,7 @@ function renderTemplate(data) {
                 el.appendChild(template);
             }
 
-            console.log(val.title.rendered + ' - ' + key);
+            console.log(template);
         });
     });
 
