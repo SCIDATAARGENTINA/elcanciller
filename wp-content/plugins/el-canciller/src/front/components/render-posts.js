@@ -15,3 +15,5 @@ function renderTemplate(data) {
     });
 
 }
+
+export default renderTemplate;
