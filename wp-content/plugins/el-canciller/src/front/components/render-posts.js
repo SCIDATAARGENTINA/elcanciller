@@ -15,7 +15,7 @@ function renderTemplate(data) {
 
         data.forEach((val, key) => {
             if (val.categories === cat) {
-                console.log(es la cat);
+                console.log("es la cat");
             }
             const template =
                 `<p>${val.title.rendered}</p>
