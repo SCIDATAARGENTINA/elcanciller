@@ -20,7 +20,7 @@ get_header();
 					<?php get_template_part('template-parts/sidebar/sidebar', 'front') ?>
 				</div><!-- sidebar -->
 				<div class="content">
-					<p>hola</p>
+					<div class="render-posts" data-quantity="10" data-category="515"></div>
 				</div><!-- content -->
 			</div><!-- inner container -->
 
