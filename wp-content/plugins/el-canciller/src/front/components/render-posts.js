@@ -6,7 +6,8 @@
 
 function setTemplate(val) {
     return `<p>${val.title.rendered}</p>
-    <p>${val.date}</p><br><br>`;
+    <p>${val.date}</p>
+    <p>${val.categories[0]}</p><br>`;
 }
 
 function insertData(data, element, cat, quantity) {
