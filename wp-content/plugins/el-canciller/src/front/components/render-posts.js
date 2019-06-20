@@ -4,6 +4,25 @@
  * src/front/components/render-posts.js
  */
 
+function setTemplate(val) {
+    return `<p>${val.title.rendered}</p>
+    <p>${val.date}</p><br><br>`;
+}
+
+function insertData(data, element, cat, quantity) {
+
+    data.forEach((val, key) => {
+
+        let template = setTemplate(val);
+
+        if (val.categories[0] === cat) {
+            if (key <= quantity) {
+                element.innerHTML += template;
+            }
+        }
+    });
+}
+
 
 function renderTemplate(data) {
 
@@ -14,25 +33,10 @@ function renderTemplate(data) {
         var quantity = el.getAttribute('data-quantity');
         var element = el;
 
-        data.forEach((val, key) => {
-            if (val.categories[0] === cat) {
-                console.log("es la cat");
-            }
-            let template =
-                `<p>${val.title.rendered}</p>
-             <p>${val.date}</p><br><br>`;
+        insertData(data, element, cat, quantity);
 
-            if (key <= quantity) {
-                console.log(element);
-                element.innerHTML += template;
-            } else {
-                return;
-            }
-
-            console.log(template);
-        });
     });
-
 }
+
 
 export default renderTemplate;
