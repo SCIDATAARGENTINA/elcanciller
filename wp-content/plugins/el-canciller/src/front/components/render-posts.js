@@ -15,5 +15,3 @@ function renderTemplate(data) {
 
 
 }
-
-var postTemplate = `<h2>${title}<h2>`;

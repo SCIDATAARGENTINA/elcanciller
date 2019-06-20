@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * render posts frontend component.\r\n *\r\n * src/front/components/render-posts.js\r\n */\nfunction renderTemplate(data) {\n  //var postTemplate = `<h2>${title}<h2>`;\n  data.forEach(function (key, value) {\n    console.log(key + ' - ' + value); // key - value\n  });\n}\n\nvar postTemplate = \"<h2>\".concat(title, \"<h2>\");\n\n//# sourceURL=webpack:///./src/front/components/render-posts.js?");
+eval("/**\r\n * render posts frontend component.\r\n *\r\n * src/front/components/render-posts.js\r\n */\nfunction renderTemplate(data) {\n  //var postTemplate = `<h2>${title}<h2>`;\n  data.forEach(function (key, value) {\n    console.log(key + ' - ' + value); // key - value\n  });\n}\n\n//# sourceURL=webpack:///./src/front/components/render-posts.js?");
 
 /***/ }),
 
