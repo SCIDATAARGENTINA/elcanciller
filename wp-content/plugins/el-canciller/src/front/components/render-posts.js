@@ -12,6 +12,7 @@ function renderTemplate(data) {
     [].forEach.call(elements, (el) => {
         var cat = el.getAttribute('data-category');
         var quantity = el.getAttribute('data-quantity');
+        var element = el;
 
         data.forEach((val, key) => {
             if (val.categories === cat) {
@@ -22,7 +23,7 @@ function renderTemplate(data) {
              <p>${val.date}</p><br><br>`;
 
             while (key <= quantity) {
-                el.appendChild(template);
+                element.appendChild(template);
             }
 
             console.log(template);
