@@ -3,7 +3,7 @@
  *
  * src/front/front-index.js
  */
-const front = require('./components/render-posts');
+import renderTemplate from './components/render-posts';
 
 import apiData from './service/wordpressapi';
 
