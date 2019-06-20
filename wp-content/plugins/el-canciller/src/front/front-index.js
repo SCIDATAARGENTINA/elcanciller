@@ -4,10 +4,10 @@
  * src/front/front-index.js
  */
 const front = require('./components/front-test');
-import getLatestPosts from './service/wordpressapi';
 
-console.log(getLatestPosts);
+import apiData from './service/wordpressapi';
 
-getLatestPosts.then(res => {
+
+apiData.getLatestPosts.then(res => {
     console.log(res);
 });
