@@ -9,7 +9,7 @@ function renderTemplate(data) {
 
     const elements = document.querySelectorAll(".render-posts");
 
-    forEach(elements, function(index, value) {
+    [].forEach.call(elements, function(index, value) {
         console.log(index, value); // passes index + value back!
     });
 
