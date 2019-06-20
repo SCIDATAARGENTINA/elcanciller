@@ -24,7 +24,7 @@ function renderTemplate(data) {
 
             if (key <= quantity) {
                 console.log(element);
-                element.innerHTML = template;
+                element.innerHTML += template;
             } else {
                 return;
             }
