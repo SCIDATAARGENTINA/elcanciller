@@ -10,8 +10,8 @@ function renderTemplate(data) {
     const elements = document.querySelectorAll(".render-posts");
 
     elements.forEach((el) => {
-        cat = el.getAttribute('data-category');
-        quantity = el.getAttribute('data-quantity');
+        var cat = el.getAttribute('data-category');
+        var quantity = el.getAttribute('data-quantity');
 
         data.forEach((val, key) => {
             if (val.categories === cat) {
