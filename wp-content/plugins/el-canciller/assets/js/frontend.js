@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * render posts frontend component.\r\n *\r\n * src/front/components/render-posts.js\r\n */\nfunction renderTemplate(data) {\n  //var postTemplate = `<h2>${title}<h2>`;\n  data.forEach(function (key, value) {\n    console.log(key + ' - ' + value); // key - value\n  });\n}\n\n//# sourceURL=webpack:///./src/front/components/render-posts.js?");
+eval("/**\r\n * render posts frontend component.\r\n *\r\n * src/front/components/render-posts.js\r\n */\nfunction renderTemplate(data) {\n  var elements = document.getQuerySelector('.render-posts');\n  console.log(elements);\n  data.forEach(function (val, key) {\n    console.log(val.title.rendered + ' - ' + key);\n  });\n}\n\n//# sourceURL=webpack:///./src/front/components/render-posts.js?");
 
 /***/ }),
 
@@ -105,7 +105,7 @@ eval("/**\r\n * render posts frontend component.\r\n *\r\n * src/front/component
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_render_posts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/render-posts */ \"./src/front/components/render-posts.js\");\n/* harmony import */ var _components_render_posts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_render_posts__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./service/wordpressapi */ \"./src/front/service/wordpressapi.js\");\n/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\n\n\n_service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getLatestPosts.then(function (res) {\n  console.log(res);\n  res.forEach(function (val, key) {\n    console.log(val.title.rendered + ' - ' + key);\n  });\n});\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_render_posts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/render-posts */ \"./src/front/components/render-posts.js\");\n/* harmony import */ var _components_render_posts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_render_posts__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./service/wordpressapi */ \"./src/front/service/wordpressapi.js\");\n/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\n\n\n_service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getLatestPosts.then(function (res) {\n  console.log(res);\n  _components_render_posts__WEBPACK_IMPORTED_MODULE_0___default()(res);\n});\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
 
 /***/ }),
 

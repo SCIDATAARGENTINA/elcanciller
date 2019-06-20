@@ -7,11 +7,11 @@
 
 function renderTemplate(data) {
 
-    //var postTemplate = `<h2>${title}<h2>`;
+    const elements = document.getQuerySelector('.render-posts');
+    console.log(elements);
 
-    data.forEach((key, value) => {
-        console.log(key + ' - ' + value); // key - value
-    })
-
+    data.forEach((val, key) => {
+        console.log(val.title.rendered + ' - ' + key);
+    });
 
 }
