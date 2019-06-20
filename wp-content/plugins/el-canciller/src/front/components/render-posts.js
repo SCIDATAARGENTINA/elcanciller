@@ -24,7 +24,7 @@ function renderTemplate(data) {
 
             while (key <= quantity) {
                 console.log(element);
-                element.appendChild(template);
+                element.innerHTML = +template;
             }
 
             console.log(template);
