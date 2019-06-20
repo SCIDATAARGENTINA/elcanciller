@@ -23,6 +23,7 @@ function renderTemplate(data) {
              <p>${val.date}</p><br><br>`;
 
             while (key <= quantity) {
+                console.log(element);
                 element.appendChild(template);
             }
 
