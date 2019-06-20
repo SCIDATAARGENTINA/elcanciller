@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n * render posts frontend component.\r\n *\r\n * src/front/components/render-posts.js\r\n */\nfunction renderTemplate(data) {\n  var elements = document.getQuerySelector('.render-posts');\n  console.log(elements);\n  data.forEach(function (val, key) {\n    console.log(val.title.rendered + ' - ' + key);\n  });\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (renderTemplate);\n\n//# sourceURL=webpack:///./src/front/components/render-posts.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n * render posts frontend component.\r\n *\r\n * src/front/components/render-posts.js\r\n */\nfunction renderTemplate(data) {\n  var elements = document.querySelectorAll('.render-posts');\n  console.log(elements);\n  data.forEach(function (val, key) {\n    console.log(val.title.rendered + ' - ' + key);\n  });\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (renderTemplate);\n\n//# sourceURL=webpack:///./src/front/components/render-posts.js?");
 
 /***/ }),
 

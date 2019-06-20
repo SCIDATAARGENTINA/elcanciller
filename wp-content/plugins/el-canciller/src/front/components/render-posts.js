@@ -7,7 +7,7 @@
 
 function renderTemplate(data) {
 
-    const elements = document.getQuerySelector('.render-posts');
+    const elements = document.querySelectorAll('.render-posts');
     console.log(elements);
 
     data.forEach((val, key) => {
