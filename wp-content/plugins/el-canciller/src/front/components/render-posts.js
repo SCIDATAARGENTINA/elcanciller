@@ -22,9 +22,11 @@ function renderTemplate(data) {
                 `<p>${val.title.rendered}</p>
              <p>${val.date}</p><br><br>`;
 
-            while (key <= quantity) {
+            if (key <= quantity) {
                 console.log(element);
                 element.innerHTML = +template;
+            } else {
+                return;
             }
 
             console.log(template);
