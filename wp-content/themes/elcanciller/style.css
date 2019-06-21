@@ -485,9 +485,9 @@ input:-internal-autofill-selected {
     left: 0;
     transition: 300ms ease;
     /* Starting position */
-    -moz-transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
     /* Apply animation to this element */
     -moz-animation: example1 30s linear infinite;
     -webkit-animation: example1 30s linear infinite;
@@ -523,11 +523,11 @@ input:-internal-autofill-selected {
 
 @keyframes example1 {
     0% {
-        -moz-transform: translateX(100%);
+        -moz-transform: translateX(20%);
         /* Firefox bug fix */
-        -webkit-transform: translateX(100%);
+        -webkit-transform: translateX(20%);
         /* Firefox bug fix */
-        transform: translateX(100%);
+        transform: translateX(20%);
     }
     100% {
         -moz-transform: translateX(-100%);
