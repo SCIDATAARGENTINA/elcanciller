@@ -30,6 +30,15 @@ font-family: 'Playfair Display', serif;
 
 /* ---------------------------*/
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bree Serif', serif;
+}
+
 .site-content {
     overflow: visible;
 }
@@ -405,10 +414,27 @@ input:-internal-autofill-selected {
 
 .trending-post .category {
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.trending-post .category h3 {
+    color: #e7d117;
+    font-size: 24px;
+}
+
+.trending-post .category i {
+    color: #b29f93;
 }
 
 .trending-post .entry {
     width: 80%;
+}
+
+.trending-post .entry h2 {
+    font-size: 22px;
 }
 
 
