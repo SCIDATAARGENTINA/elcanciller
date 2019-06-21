@@ -463,6 +463,7 @@ input:-internal-autofill-selected {
 .comment-container {
     overflow: hidden;
     font-family: "Roboto";
+    font-size: 12px;
 }
 
 .comment-icon {
