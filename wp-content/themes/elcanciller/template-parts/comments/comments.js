@@ -4,6 +4,12 @@ jQuery(document).ready(function($) {
 
     var comentarios = $('.comentarios');
 
-    console.log(comentarios);
+    comentarios.each(function() {
+        var comentarioChildren = $(this).children();
+        comentarioChildren.each(function() {
+            commentsLenght += $(this).lenght;
+        });
+        console.log(commentsLenght);
+    });
 
 });
