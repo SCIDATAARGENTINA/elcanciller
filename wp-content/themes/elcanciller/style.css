@@ -90,6 +90,7 @@ h2:before {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-left: 13px;
 }
 
 .header-navigation {
@@ -272,6 +273,7 @@ input:-internal-autofill-selected {
 .front-page-content .sidebar {
     margin-top: -100px;
     background: #f5f8fa;
+    margin-right: 20px;
 }
 
 .stories {
