@@ -79,7 +79,7 @@ function custom_post_type_cancilleram()
     'label'                 => __('El Canciller AM', 'elcanciller'),
     'description'           => __('Modulo de administración de El Canciller AM', 'elcanciller'),
     'labels'                => $labels,
-    'supports'              => false,
+    'supports'              => array('title', 'editor', 'author', 'thumbnail'),
     'taxonomies'            => array(),
     'hierarchical'          => false,
     'public'                => true,
