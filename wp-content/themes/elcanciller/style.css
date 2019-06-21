@@ -437,6 +437,7 @@ input:-internal-autofill-selected {
 
 .trending-post .entry img {
     border-left: 2px solid #b29f93;
+    vertical-align: top;
 }
 
 .trending-post .entry h2 {
@@ -458,6 +459,7 @@ input:-internal-autofill-selected {
 .comentarios-sharer {
     display: grid;
     grid-template-columns: 1fr 6fr 5fr;
+    margin: 10px 0;
 }
 
 .comment-container {
@@ -469,7 +471,8 @@ input:-internal-autofill-selected {
 
 .comment-icon {
     color: #b29f93;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .comentario {
