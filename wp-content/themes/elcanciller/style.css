@@ -477,7 +477,7 @@ input:-internal-autofill-selected {
     align-items: center;
     margin-right: 10px;
     position: absolute;
-    top: 0px;
+    top: 3px;
     left: 0px;
 }
 
