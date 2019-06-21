@@ -485,9 +485,9 @@ input:-internal-autofill-selected {
     left: 0;
     transition: 300ms ease;
     /* Starting position */
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
     /* Apply animation to this element */
     -moz-animation: example1 30s linear infinite;
     -webkit-animation: example1 30s linear infinite;
