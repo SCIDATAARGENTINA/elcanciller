@@ -37,6 +37,7 @@ h4,
 h5,
 h6 {
     font-family: 'Bree Serif', serif;
+    font-weight: 400;
 }
 
 .site-content {
