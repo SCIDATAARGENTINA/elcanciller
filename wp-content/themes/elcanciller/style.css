@@ -435,6 +435,10 @@ input:-internal-autofill-selected {
     width: 80%;
 }
 
+.trending-post .entry img {
+    border-left: 2px solid #b29f93;
+}
+
 .trending-post .entry h2 {
     font-size: 22px;
 }
@@ -458,6 +462,7 @@ input:-internal-autofill-selected {
 
 .comment-container {
     overflow: hidden;
+    font-family: "Roboto";
 }
 
 .comment-icon {
