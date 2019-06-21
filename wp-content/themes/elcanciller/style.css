@@ -464,6 +464,7 @@ input:-internal-autofill-selected {
     overflow: hidden;
     font-family: "Roboto";
     font-size: 12px;
+    position: relative;
 }
 
 .comment-icon {
@@ -474,8 +475,10 @@ input:-internal-autofill-selected {
 .comentario {
     display: flex;
     align-items: center;
-    display: inline-block;
     margin-right: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .comentario .comment-author {
