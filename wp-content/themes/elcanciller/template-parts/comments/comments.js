@@ -1,7 +1,5 @@
 jQuery(document).ready(function($) {
 
-    var commentsLenght = 0;
-
     var comentarios = $('.comentarios');
 
     comentarios.each(function() {

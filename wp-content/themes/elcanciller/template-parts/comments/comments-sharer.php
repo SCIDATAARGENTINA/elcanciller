@@ -42,7 +42,7 @@
    <div class="share-container">
       <i class="fab fa-twitter"></i>
       <i class="fab fa-facebook-f"></i>
-      <i class="fas fa-sign-in-alt"></i>
+      <a href="<?php the_permalink(); ?>"><i class="fas fa-sign-in-alt"></i></a>
       <i class="fas fa-heart"></i>
    </div>
 
