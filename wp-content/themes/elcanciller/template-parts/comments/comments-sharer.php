@@ -32,7 +32,7 @@
                   <?php echo '@' . $comment->comment_author ?>
                </span>
                <span class="comment-text">
-                  <?php echo substrwords($comment->comment_content ,1); ?>
+                  <?php echo substrwords($comment->comment_content ,5); ?>
                </span>
             </div>
 
