@@ -1,7 +1,9 @@
 jQuery(document).ready(function($) {
 
-    alert('hola');
+    var commentsLenght;
 
+    var comentarios = $('.comentarios');
 
+    console.log(comentarios);
 
 });
