@@ -411,7 +411,7 @@ input:-internal-autofill-selected {
 
 .trending-post {
     display: flex;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
 }
 
 .trending-post .category {
@@ -436,7 +436,7 @@ input:-internal-autofill-selected {
 }
 
 .trending-post .entry img {
-    border-left: 2px solid #b29f93;
+    border-left: 4px solid #b29f93;
     vertical-align: top;
 }
 
@@ -480,7 +480,7 @@ input:-internal-autofill-selected {
     align-items: center;
     margin-right: 10px;
     position: absolute;
-    top: 3px;
+    top: 0px;
     left: 0px;
 }
 
@@ -490,6 +490,16 @@ input:-internal-autofill-selected {
 
 .comentario .comment-content {
     margin-left: 10px;
+}
+
+.comments-sharer .share-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments-sharer .share-container i {
+    color: #b29f93;
 }
 
 

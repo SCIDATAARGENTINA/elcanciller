@@ -38,5 +38,11 @@
       <?php endforeach; ?>
 
    </div><!-- comment-container -->
+   <div class="share-container">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fas fa-sign-in-alt"></i>
+      <i class="fas fa-heart"></i>
+   </div>
 
 </div><!-- comentarios-sharer -->
