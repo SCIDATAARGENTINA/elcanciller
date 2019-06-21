@@ -12,23 +12,24 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+<section id="primary" class="content-area">
+	<main id="main" class="site-main">
 
-			<div class="front-page-content inner container">
-				<div class="sidebar">
-					<?php get_template_part('template-parts/sidebar/sidebar', 'front') ?>
-				</div><!-- sidebar -->
-				<div class="content">
-					<?php get_template_part('template-parts/home/trending', 'front') ?>
-					<div class="render-posts" data-quantity="10" data-category="515"></div>
-					<hr>
-					<div class="render-posts" data-quantity="10" data-category="561"></div>
-				</div><!-- content -->
-			</div><!-- inner container -->
+		<div class="front-page-content inner container">
+			<div class="sidebar">
+				<?php get_template_part('template-parts/sidebar/sidebar', 'front') ?>
+			</div><!-- sidebar -->
+			<div class="content">
+				<?php get_template_part('template-parts/home/trending', 'front') ?>
+				<?php get_template_part('template-parts/home/trending', 'front') ?>
+				<div class="render-posts" data-quantity="10" data-category="515"></div>
+				<hr>
+				<div class="render-posts" data-quantity="10" data-category="561"></div>
+			</div><!-- content -->
+		</div><!-- inner container -->
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+	</main><!-- #main -->
+</section><!-- #primary -->
 
 <?php
 get_footer();
