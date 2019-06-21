@@ -411,6 +411,7 @@ input:-internal-autofill-selected {
 
 .trending-post {
     display: flex;
+    border-bottom: 1px solid #ccc;
 }
 
 .trending-post .category {
