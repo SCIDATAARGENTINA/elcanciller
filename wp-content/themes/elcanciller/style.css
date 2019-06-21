@@ -474,6 +474,8 @@ input:-internal-autofill-selected {
 .comentario {
     display: flex;
     align-items: center;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .comentario .comment-author {
