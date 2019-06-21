@@ -23,20 +23,21 @@
       <i class="far fa-comment-dots"></i>
    </div>
    <div class="comment-container">
+      <div class="comentarios">
 
-      <?php foreach ($comments as $comment) : ?>
+         <?php foreach ($comments as $comment) : ?>
 
-         <div class="comentario">
-            <span class="comment-author">
-               <?php echo '@' . $comment->comment_author ?>
-            </span>
-            <span class="comment-content">
-               <?php echo $comment->comment_content; ?>
-            </span>
-         </div>
+            <div class="comentario">
+               <span class="comment-author">
+                  <?php echo '@' . $comment->comment_author ?>
+               </span>
+               <span class="comment-content">
+                  <?php echo $comment->comment_content; ?>
+               </span>
+            </div>
 
-      <?php endforeach; ?>
-
+         <?php endforeach; ?>
+      </div><!-- comentarios -->
    </div><!-- comment-container -->
    <div class="share-container">
       <i class="fab fa-twitter"></i>
