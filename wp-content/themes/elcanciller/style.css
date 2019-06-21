@@ -271,6 +271,7 @@ input:-internal-autofill-selected {
 
 .front-page-content .sidebar {
     margin-top: -100px;
+    background: #f5f8fa;
 }
 
 .stories {
