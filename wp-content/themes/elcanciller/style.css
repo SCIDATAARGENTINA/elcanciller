@@ -499,6 +499,8 @@ input:-internal-autofill-selected {
     align-items: center;
     margin-right: 10px;
     position: relative;
+    flex-wrap: nowrap;
+    flex: 1 0 auto;
 }
 
 @-moz-keyframes example1 {
