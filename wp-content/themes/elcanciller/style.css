@@ -523,11 +523,11 @@ input:-internal-autofill-selected {
 
 @keyframes example1 {
     0% {
-        -moz-transform: translateX(20%);
+        -moz-transform: translateX(50%);
         /* Firefox bug fix */
-        -webkit-transform: translateX(20%);
+        -webkit-transform: translateX(50%);
         /* Firefox bug fix */
-        transform: translateX(20%);
+        transform: translateX(50%);
     }
     100% {
         -moz-transform: translateX(-100%);
