@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
     comentarios.each(function() {
         var comentarioChildren = $(this).children();
         comentarioChildren.each(function() {
-            commentsLenght += $(this).lenght;
+            commentsLenght += $(this).width();
             console.log(commentsLenght);
 
         });
