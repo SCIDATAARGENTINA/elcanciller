@@ -15,8 +15,6 @@ function insertData(data, element, cat, quantity) {
     data.forEach((val, key) => {
 
         let template = setTemplate(val);
-        console.log(cat);
-        console.log(val.categories[0]);
         if (parseInt(val.categories[0]) == parseInt(cat)) {
             if (key <= quantity) {
                 element.innerHTML += template;

@@ -9,6 +9,5 @@ import apiData from './service/wordpressapi';
 
 
 apiData.getLatestPosts.then(res => {
-    console.log(res);
     renderTemplate(res);
 });
