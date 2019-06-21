@@ -25,6 +25,8 @@ get_header();
 				<div class="render-posts" data-quantity="10" data-category="515"></div>
 				<hr>
 				<div class="render-posts" data-quantity="10" data-category="561"></div>
+				<div class="render-posts" data-quantity="10" data-category="561"></div>
+
 			</div><!-- content -->
 		</div><!-- inner container -->
 
