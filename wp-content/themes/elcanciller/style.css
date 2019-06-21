@@ -481,17 +481,9 @@ input:-internal-autofill-selected {
 
 .comentarios {
     display: flex;
-    width: 100000px;
     position: relative;
     left: 0;
     transition: 300ms ease;
-}
-
-.comentario {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    position: relative;
     /* Starting position */
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
@@ -500,6 +492,13 @@ input:-internal-autofill-selected {
     -moz-animation: example1 15s linear infinite;
     -webkit-animation: example1 15s linear infinite;
     animation: example1 15s linear infinite;
+}
+
+.comentario {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    position: relative;
 }
 
 @-moz-keyframes example1 {
