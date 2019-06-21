@@ -20,6 +20,7 @@ get_header();
 					<?php get_template_part('template-parts/sidebar/sidebar', 'front') ?>
 				</div><!-- sidebar -->
 				<div class="content">
+					<?php get_template_part('template-parts/home/trending', 'front') ?>
 					<div class="render-posts" data-quantity="10" data-category="515"></div>
 					<hr>
 					<div class="render-posts" data-quantity="10" data-category="561"></div>
