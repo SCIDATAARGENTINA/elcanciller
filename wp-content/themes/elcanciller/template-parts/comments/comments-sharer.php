@@ -21,12 +21,15 @@ $comments = get_comments(
 ?>
 
 <div class="comment-container">
+   <div class="comment-icon">
+      <i class="far fa-comment-dots"></i>
+   </div>
 
    <?php foreach ($comments as $comment) : ?>
 
       <div class="comentario">
          <span class="comment-author">
-            <?php echo $comment->comment_author ?>
+            <?php echo '@' . $comment->comment_author ?>
          </span>
          <span class="comment-content">
             <?php echo $comment->comment_content; ?>
