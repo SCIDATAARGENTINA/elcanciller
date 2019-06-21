@@ -471,13 +471,20 @@ input:-internal-autofill-selected {
     font-family: "Roboto";
     font-size: 14px;
     position: relative;
-    display: flex;
 }
 
 .comment-icon {
     color: #b29f93;
     display: flex;
     align-items: center;
+}
+
+.comentarios {
+    display: flex;
+    width: 100000px;
+    position: relative;
+    left: 0;
+    transition: 300ms ease;
 }
 
 .comentario {
