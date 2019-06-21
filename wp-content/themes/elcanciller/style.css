@@ -499,7 +499,7 @@ input:-internal-autofill-selected {
 }
 
 .comments-sharer .share-container i {
-    color: #b29f93;
+    color: #b29f93 !important;
 }
 
 
