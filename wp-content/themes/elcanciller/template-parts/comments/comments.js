@@ -9,11 +9,8 @@ jQuery(document).ready(function($) {
         console.log(comentarioChildren);
         comentarioChildren.each(function() {
             commentsLenght = commentsLenght + $(this).width();
-            console.log(commentsLenght);
-            console.log($(this).width());
-
         });
-        console.log(commentsLenght);
+        $(this).css('width', commentsLenght + 'px');
     });
 
 });
