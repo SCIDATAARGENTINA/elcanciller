@@ -8,6 +8,8 @@ jQuery(document).ready(function($) {
         var comentarioChildren = $(this).children();
         comentarioChildren.each(function() {
             commentsLenght += $(this).lenght;
+            console.log(commentsLenght);
+
         });
         console.log(commentsLenght);
     });
