@@ -10,31 +10,33 @@
  */
 
 ?>
+<div class="comentarios-sharer">
+   <?php
+   $comments = get_comments(
+      array(
+         'post_id' => $post->ID,
+         'number' => 5,
+      )
+   );
+   ?>
+   <div class="comment-icon">
+      <i class="far fa-comment-dots"></i>
+   </div>
+   <div class="comment-container">
 
-<?php
-$comments = get_comments(
-   array(
-      'post_id' => $post->ID,
-      'number' => 5,
-   )
-);
-?>
-<div class="comment-icon">
-   <i class="far fa-comment-dots"></i>
-</div>
-<div class="comment-container">
+      <?php foreach ($comments as $comment) : ?>
 
-   <?php foreach ($comments as $comment) : ?>
+         <div class="comentario">
+            <span class="comment-author">
+               <?php echo '@' . $comment->comment_author ?>
+            </span>
+            <span class="comment-content">
+               <?php echo $comment->comment_content; ?>
+            </span>
+         </div>
 
-      <div class="comentario">
-         <span class="comment-author">
-            <?php echo '@' . $comment->comment_author ?>
-         </span>
-         <span class="comment-content">
-            <?php echo $comment->comment_content; ?>
-         </span>
-      </div>
+      <?php endforeach; ?>
 
-   <?php endforeach; ?>
+   </div><!-- comment-container -->
 
-</div><!-- comment-container -->
+</div><!-- comentarios-sharer -->

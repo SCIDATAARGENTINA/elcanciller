@@ -451,17 +451,22 @@ input:-internal-autofill-selected {
 
 /* ---------------------------*/
 
+.comentarios-sharer {
+    display: grid;
+    grid-template-columns: 1fr 6fr 5fr;
+}
+
 .comment-container {
     overflow: hidden;
 }
 
 .comment-icon {
     color: #b29f93;
+    display: inline-block;
 }
 
 .comentario {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
