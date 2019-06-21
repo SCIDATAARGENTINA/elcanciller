@@ -390,6 +390,34 @@ input:-internal-autofill-selected {
 /* ---------------------------*/
 
 
+/*--------- FRONT PAGE TRENDING POST */
+
+
+/* ---------------------------*/
+
+.entry {
+    margin-top: 0px !important;
+}
+
+.trending-post {
+    display: flex;
+}
+
+.trending-post .category {
+    width: 20%;
+}
+
+.trending-post .entry {
+    width: 80%;
+}
+
+
+/* END FRONT PAGE TRENDING POST*/
+
+
+/* ---------------------------*/
+
+
 /*--------- FOOTER */
 
 
