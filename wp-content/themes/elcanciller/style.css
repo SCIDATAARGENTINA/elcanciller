@@ -471,6 +471,7 @@ input:-internal-autofill-selected {
     font-family: "Roboto";
     font-size: 14px;
     position: relative;
+    display: flex;
 }
 
 .comment-icon {
