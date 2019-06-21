@@ -469,6 +469,10 @@ input:-internal-autofill-selected {
     color: #e7d117;
 }
 
+.comentario .comment-content {
+    margin-left: 10px;
+}
+
 
 /* END COMMENTS*/
 

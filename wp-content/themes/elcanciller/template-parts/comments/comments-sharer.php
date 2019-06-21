@@ -19,11 +19,10 @@ $comments = get_comments(
    )
 );
 ?>
-
+<div class="comment-icon">
+   <i class="far fa-comment-dots"></i>
+</div>
 <div class="comment-container">
-   <div class="comment-icon">
-      <i class="far fa-comment-dots"></i>
-   </div>
 
    <?php foreach ($comments as $comment) : ?>
 
