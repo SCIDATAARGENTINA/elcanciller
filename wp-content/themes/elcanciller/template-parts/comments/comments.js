@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-    var commentsLenght;
+    var commentsLenght = 0;
 
     var comentarios = $('.comentarios');
 
@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         var comentarioChildren = $(this).children();
         console.log(comentarioChildren);
         comentarioChildren.each(function() {
-            commentsLenght += $(this).width();
+            commentsLenght = commentsLenght + $(this).width();
             console.log(commentsLenght);
             console.log($(this).width());
 
