@@ -218,6 +218,7 @@ h2:before {
 header#masthead {
     background: #ECEDE7;
     padding-top: 100px;
+    position: relative;
 }
 
 .main-menu-more {
@@ -340,7 +341,7 @@ input:-internal-autofill-selected {
     font-family: 'Bree Serif', serif;
     display: flex;
     align-items: center;
-    padding: 20px 10px;
+    padding: 15px 10px;
 }
 
 .tiempo .canva-tiempo {
@@ -482,9 +483,7 @@ input:-internal-autofill-selected {
     display: flex;
     align-items: center;
     margin-right: 10px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    position: relative;
 }
 
 .comentario .comment-author {
