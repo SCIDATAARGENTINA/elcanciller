@@ -461,7 +461,7 @@ input:-internal-autofill-selected {
 
 .comentarios-sharer {
     display: grid;
-    grid-template-columns: 1fr 6fr 5fr;
+    grid-template-columns: 1fr 7fr 4fr;
     margin: 10px 0;
 }
 
