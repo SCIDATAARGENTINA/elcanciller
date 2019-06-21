@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
         comentarioChildren.each(function() {
             commentsLenght = commentsLenght + $(this).width();
         });
+        commentsLenght = commentsLenght + 50; // Fix double line text
         $(this).css('width', commentsLenght + 'px');
     });
 
