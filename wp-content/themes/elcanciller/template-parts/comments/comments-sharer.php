@@ -31,7 +31,7 @@
                <span class="comment-author">
                   <?php echo '@' . $comment->comment_author ?>
                </span>
-               <span class="comment-content">
+               <span class="comment-text">
                   <?php echo $comment->comment_content; ?>
                </span>
             </div>
