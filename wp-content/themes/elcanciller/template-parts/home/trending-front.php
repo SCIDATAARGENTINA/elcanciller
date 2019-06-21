@@ -35,12 +35,13 @@
       $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
       $thumbnail_id = get_post_thumbnail_id($post->ID);
       $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+      $categories = get_the_category();
       ?>
 
 
       <?php while ($trending_post->have_posts()) : $trending_post->the_post() ?>
          <div class="category">
-            <h3 class="category-name"><?php echo get_the_category(); ?></h3>
+            <h3 class="category-name"><?php echo $categories[0]->name; ?></h3>
             <span><i class="fas fa-bomb"></i></span>
          </div>
          <div class="entry">
