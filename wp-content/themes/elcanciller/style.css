@@ -492,6 +492,7 @@ input:-internal-autofill-selected {
     -moz-animation: example1 30s linear infinite;
     -webkit-animation: example1 30s linear infinite;
     animation: example1 30s linear infinite;
+    opacity: 0;
 }
 
 .comentario {
