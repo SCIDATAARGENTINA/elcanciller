@@ -39,7 +39,7 @@
          $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
          $categories = get_the_category($post->ID);
          ?>
-         
+
          <div class="category">
             <h3 class="category-name"><?php echo $categories[0]->name ?></h3>
             <span><i class="fas fa-bomb"></i></span>
@@ -49,6 +49,7 @@
             <div class="entry-img">
                <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
             </div>
+            <?php get_template_part('template-parts/comments/comments', 'sharer') ?>
          </div>
       <?php endwhile ?>
 
