@@ -738,6 +738,10 @@ button {
     margin-top: 5px;
 }
 
+.ctf-twitterlink {
+    display: none;
+}
+
 
 /* TWITTER WIDGET */
 
