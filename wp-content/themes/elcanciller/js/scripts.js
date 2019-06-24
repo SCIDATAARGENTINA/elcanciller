@@ -42,10 +42,12 @@ jQuery(document).ready(function($) {
 
     var dotsCount = dots.length;
 
+    var slideCount;
+
     console.log(dotsCount);
 
     $('.carrousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        console.log(event);
+        console.log(slick);
         console.log(currentSlide);
         console.log(nextSlide);
     });
