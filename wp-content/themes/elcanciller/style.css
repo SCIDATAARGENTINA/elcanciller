@@ -672,6 +672,11 @@ button {
     font-family: "Roboto";
     font-size: 10px;
     color: #999999;
+    display: block;
+}
+
+.instagram-data span i {
+    margin-right: 5px;
 }
 
 
