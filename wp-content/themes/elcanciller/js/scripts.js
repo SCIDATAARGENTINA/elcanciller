@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
                 $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
             } else {
                 $('.slick-dots li').css('transform', 'translateX(0px)');
-
+                dotsWidthTotal = 0;
             }
         }
         if (nextSlide == 0) {
