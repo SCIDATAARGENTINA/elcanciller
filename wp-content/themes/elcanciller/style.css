@@ -693,6 +693,11 @@ font-family: 'Playfair Display', serif;
         justify-content: center;
         align-items: center;
     }
+    
+    #ctf.ctf-super-narrow .ctf-author-avatar,
+    #ctf.ctf-super-narrow .ctf-author-avatar img {
+        border-radius: 50%;
+    }
     /* TWITTER WIDGET */
     /* ---------------------------*/
     /*--------- COMMENTS */
