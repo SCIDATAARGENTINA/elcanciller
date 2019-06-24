@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
         }) // end ajax
 
 
-    $(".cancilleram").slick({
+    $(".carrousel").slick({
         dots: true,
         infinite: false,
         arrows: true,

@@ -12,6 +12,8 @@
 ?>
 
 <div class="cancilleram container">
+    <div class="carr-nav"></div>
+    <div class="carrousel">
      <?php
    $args = array(
       'post_type' => 'cancilleram',
@@ -35,9 +37,7 @@
         $get_author_name = get_the_author_meta('display_name');
         $get_author_avatar = get_avatar_url($get_author_id, array('size' => 75));
         ?>
-
-        <div class="owl-item">
-            <div class="carr-nav"></div>
+        <div class="slick-item">
             <div class="data-container">
                 <img src="<?php echo $featured_img_url ?> " alt="<?php echo $alt ?>">
                 <h3><?php echo get_the_content(); ?></h3>
@@ -55,4 +55,5 @@
       <?php endwhile ?>
 
    <?php endif ?>
+   </div>
 </div>
