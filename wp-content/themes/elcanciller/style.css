@@ -564,6 +564,10 @@ input:-internal-autofill-selected {
     vertical-align: middle !important;
 }
 
+.carr-nav {
+    display: flex;
+}
+
 
 /* CANCILLER AM */
 
