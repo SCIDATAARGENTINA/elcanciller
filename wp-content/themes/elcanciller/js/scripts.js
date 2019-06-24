@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
         infinite: false,
         arrows: true,
         prevArrow: '<div class="prev-arrow"></div>',
-        nextArrow: '<div type="button" class="next-arrow"></div>',
+        nextArrow: '<div class="next-arrow"></div>',
         appendDots: '.carr-nav',
         appendArrows: '.carr-nav'
     });
