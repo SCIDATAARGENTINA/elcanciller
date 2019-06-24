@@ -35,8 +35,6 @@ jQuery(document).ready(function($) {
 
     $('.prev-arrow').prepend('<img class="am-logo" src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
 
-    var dots = $('.slick-dots').children();
-
     var dotsWidth = $('.slick-dots li').width();
 
     var dotsWidthTotal = dotsWidth;
@@ -45,7 +43,7 @@ jQuery(document).ready(function($) {
         var maxDots = 4;
         if (nextSlide >= maxDots - 1) {
             $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
-            dotsWidthTotal = dotsWith + dotsWidth;
+            dotsWidthTotal = dotsWidthTotal + dotsWidth;
         }
         console.log(slick.slideCount);
         console.log(currentSlide);
