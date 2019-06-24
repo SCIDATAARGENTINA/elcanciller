@@ -28,5 +28,5 @@
   </div><!-- info-tiempo -->
 </div><!-- tiempo -->
 <div class="widget">
-  <?php get_template_part('template-parts/widgets', 'cancilleram') ?>
+  <?php get_template_part('template-parts/widgets/widget', 'cancilleram') ?>
 </div>
