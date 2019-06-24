@@ -40,13 +40,13 @@
         <div class="slick-item">
             <div class="data-container">
                 <img src="<?php echo $featured_img_url ?> " alt="<?php echo $alt ?>">
-                <h3><?php echo get_the_content(); ?></h3>
+                <h3><span><?php the_title(); ?>.</span> <?php echo get_the_content(); ?></h3>
             </div>
             <div class="author-container">
                 <img src="<?php echo $get_author_avatar ?>" alt="<?php echo $get_author_name ?>">
                 <span><?php echo $get_author_name ?></span>
             </div>
-        </div><!-- owl-item -->
+        </div><!-- slick-item -->
 
         <?php
 
