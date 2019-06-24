@@ -37,6 +37,7 @@
         ?>
 
         <div class="owl-item">
+            <div class="carr-nav"></div>
             <div class="data-container">
                 <img src="<?php echo $featured_img_url ?> " alt="<?php echo $alt ?>">
                 <h3><?php echo get_the_content(); ?></h3>
