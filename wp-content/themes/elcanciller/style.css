@@ -685,10 +685,7 @@ font-family: 'Playfair Display', serif;
     
     #ctf .ctf-author-name {
         margin-top: 0px;
-        font-family: 'Bree Serif';
-        font-weight: normal;
-        color: #b29f93 !important;
-        font-size: 16px !important;
+        font-size: 13px !important;
     }
     
     #ctf .ctf-author-box-link {
