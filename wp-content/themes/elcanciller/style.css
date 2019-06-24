@@ -492,12 +492,13 @@ input:-internal-autofill-selected {
     border: 2px solid #e7d117;
 }
 
-.slick-prev::before {
+.prev-arrow::before {
     content: '';
     width: 20px;
     height: 20px;
     border: 2px solid #e7d117;
     transform: rotateX(45deg);
+    background: transparent;
 }
 
 
