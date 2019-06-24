@@ -41,10 +41,19 @@ jQuery(document).ready(function($) {
 
     $('.carrousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         var maxDots = 4;
-        if (nextSlide >= maxDots - 1) {
-            $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
-            dotsWidthTotal = dotsWidthTotal + dotsWidth;
+        if (nextSlide > currentSlide) {
+            if (nextSlide >= maxDots - 1) {
+                $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
+                dotsWidthTotal = dotsWidthTotal + dotsWidth;
+            }
         }
+        if (nextSlide < currentSlide) {
+            if (nextSlide >= maxDots - 1) {
+                $('.slick-dots li').css('transform', 'translateX(' + dotsWidthTotal + 'px)');
+                dotsWidthTotal = dotsWidthTotal + dotsWidth;
+            }
+        }
+
         console.log(slick.slideCount);
         console.log(currentSlide);
         console.log(nextSlide);
