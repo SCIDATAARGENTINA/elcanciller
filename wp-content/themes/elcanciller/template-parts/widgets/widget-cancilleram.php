@@ -11,4 +11,34 @@
 
 ?>
 
-<p>hola</p>
+<div class="cancilleram container">
+     <?php
+   $args = array(
+      'post_type' => 'cancilleram',
+      'posts_per_page' => 10,
+      'orderby' => 'date',
+      'order' => 'ASC',
+   );
+
+   $trending_post = new WP_Query($args);
+   ?>
+
+   <?php if ($trending_post->have_posts()) : ?>
+
+      <?php while ($trending_post->have_posts()) : $trending_post->the_post() ?>
+
+        <?php
+        $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+        $thumbnail_id = get_post_thumbnail_id($post->ID);
+        $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+        ?>
+
+        <div class="owl-item">
+            <img src="<?php echo $featured_img_url ?> " alt="<?php echo $alt ?>">
+            <h3><?php the_title(); ?></h3>
+        </div><!-- owl-item -->
+         
+      <?php endwhile ?>
+
+   <?php endif ?>
+</div>
