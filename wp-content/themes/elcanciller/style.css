@@ -584,6 +584,10 @@ button {
     vertical-align: inherit;
 }
 
+.slick-dots {
+    list-style-type: none;
+}
+
 
 /* CANCILLER AM */
 
