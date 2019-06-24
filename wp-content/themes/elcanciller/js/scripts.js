@@ -22,4 +22,8 @@ jQuery(document).ready(function($) {
             }
         }) // end ajax
 
+
+    $(".cancilleram.container").owlCarousel();
+
+
 });
