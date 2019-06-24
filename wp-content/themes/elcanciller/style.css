@@ -592,6 +592,9 @@ button {
 
 .slick-dots button {
     visibility: hidden !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
