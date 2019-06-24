@@ -373,6 +373,7 @@ input:-internal-autofill-selected {
 
 .widget {
     padding: 15px 10px;
+    margin: 0px !important;
 }
 
 
