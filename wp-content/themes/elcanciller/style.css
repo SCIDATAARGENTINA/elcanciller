@@ -626,6 +626,9 @@ button {
 
 /*--------- INSTAGRAM WIDGET */
 
+
+/* ---------------------------*/
+
 #sb_instagram #sbi_images .sbi_item {
     padding: 5px !important;
 }
@@ -686,10 +689,23 @@ button {
 }
 
 
+/* INSTAGRAM WIDGET */
+
+
 /* ---------------------------*/
 
 
-/* INSTAGRAM WIDGET */
+/*--------- TWITTER WIDGET */
+
+
+/* ---------------------------*/
+
+.twitter-widget {
+    font-family: 'Roboto' !important;
+}
+
+
+/* TWITTER WIDGET */
 
 
 /* ---------------------------*/

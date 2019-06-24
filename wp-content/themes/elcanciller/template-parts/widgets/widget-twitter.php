@@ -12,6 +12,5 @@
 ?>
 
 <div class="twitter-widget container">
-    </div><!-- end TWITTER profile -->
     <div class="feed"><?php echo do_shortcode('[custom-twitter-feeds]'); ?></div>
 </div><!-- end TWITTER widget container -->
