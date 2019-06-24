@@ -38,7 +38,6 @@ jQuery(document).ready(function($) {
     var dots = $('.slick-dots').children();
 
     var dotsWidth = $('.slick-dots li').width();
-    console.log(dotsWidth);
 
     var dotsCount = dots.length;
 
@@ -47,6 +46,10 @@ jQuery(document).ready(function($) {
     console.log(dotsCount);
 
     $('.carrousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        var maxDots = 4;
+        if (nextSlide >= maxDots - 1) {
+            $('.slick-dots li').css('transform', 'translateX(' + dotsWidth + 'px)');
+        }
         console.log(slick.slideCount);
         console.log(currentSlide);
         console.log(nextSlide);
