@@ -519,6 +519,7 @@ input:-internal-autofill-selected {
     transform: rotate(45deg);
     background: transparent;
     border-top: 0px;
+    cursor: pointer;
 }
 
 .next-arrow::before {
@@ -531,6 +532,7 @@ input:-internal-autofill-selected {
     transform: rotate(45deg);
     background: transparent;
     border-bottom: 0px;
+    cursor: pointer;
 }
 
 .slick-dots {
@@ -568,7 +570,7 @@ input:-internal-autofill-selected {
 }
 
 .am-logo {
-    width: 120px;
+    width: 130px;
     vertical-align: middle !important;
 }
 
