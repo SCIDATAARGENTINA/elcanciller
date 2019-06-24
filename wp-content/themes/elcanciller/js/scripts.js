@@ -23,7 +23,11 @@ jQuery(document).ready(function($) {
         }) // end ajax
 
 
-    $(".cancilleram").slick();
+    $(".cancilleram").slick({
+        dots: true,
+        infinite: false,
+        arrows: true
+    });
 
 
 });
