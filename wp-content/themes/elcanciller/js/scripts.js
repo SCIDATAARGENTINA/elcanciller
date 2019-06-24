@@ -34,16 +34,6 @@ jQuery(document).ready(function($) {
         asNavFor: '.slick-dots'
     });
 
-    $('.slider-nav').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.carrousel',
-        dots: false,
-        arrows: false,
-        centerMode: true,
-        focusOnSelect: true
-    });
-
     $('.prev-arrow').prepend('<img class="am-logo" src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
 
     var dots = $('.slick-dots').children();
