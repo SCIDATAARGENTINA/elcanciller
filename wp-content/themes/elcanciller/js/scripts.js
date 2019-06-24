@@ -30,8 +30,7 @@ jQuery(document).ready(function($) {
         prevArrow: '<div class="prev-arrow"></div>',
         nextArrow: '<div class="next-arrow"></div>',
         appendArrows: '.carr-nav',
-        appendDots: '.prev-arrow',
-        asNavFor: '.slick-dots'
+        appendDots: '.prev-arrow'
     });
 
     $('.prev-arrow').prepend('<img class="am-logo" src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
