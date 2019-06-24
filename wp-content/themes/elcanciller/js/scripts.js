@@ -49,6 +49,7 @@ jQuery(document).ready(function($) {
         var maxDots = 4;
         if (nextSlide >= maxDots - 1) {
             $('.slick-dots li').css('transform', 'translateX(-' + dotsWidth + 'px)');
+            dotsWidth = dotsWith + dotsWidth;
         }
         console.log(slick.slideCount);
         console.log(currentSlide);
