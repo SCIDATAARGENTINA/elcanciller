@@ -601,6 +601,10 @@ button {
     list-style-type: none;
 }
 
+.slick-dots li {
+    transition: 300ms ease;
+}
+
 .slick-dots button {
     visibility: hidden !important;
     display: flex;
