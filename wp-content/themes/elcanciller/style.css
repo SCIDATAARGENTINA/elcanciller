@@ -455,6 +455,31 @@ input:-internal-autofill-selected {
 /* ---------------------------*/
 
 
+/*--------- CANCILLER AM */
+
+
+/* ---------------------------*/
+
+.cancilleram.container {}
+
+.cancilleram.container img {
+    vertical-align: top;
+    margin-bottom: 0px;
+}
+
+.cancilleram.container h3 {
+    color: #b29f93;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+
+/* CANCILLER AM */
+
+
+/* ---------------------------*/
+
+
 /*--------- COMMENTS */
 
 
