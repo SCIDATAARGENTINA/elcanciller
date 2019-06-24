@@ -37,6 +37,8 @@ jQuery(document).ready(function($) {
 
     var dots = $('.slick-dots').children();
 
+    var dotsWidth = $('.slick-dots li').width();
+    console.log(dotsWidth);
 
     var dotsCount = dots.length;
 
