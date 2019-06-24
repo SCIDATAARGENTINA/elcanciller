@@ -559,6 +559,11 @@ input:-internal-autofill-selected {
     text-align: left;
 }
 
+.am-logo {
+    width: 120px;
+    vertical-align: middle;
+}
+
 
 /* CANCILLER AM */
 

@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
         appendDots: '.prev-arrow'
     });
 
-    $('.prev-arrow').prepend('<img src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
+    $('.prev-arrow').prepend('<img class="am-logo" src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
 
 
 });
