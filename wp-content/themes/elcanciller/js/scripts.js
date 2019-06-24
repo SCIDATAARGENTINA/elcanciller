@@ -60,6 +60,10 @@ jQuery(document).ready(function($) {
             $('.slick-dots li').css('transform', 'translateX(0px)');
             dotsWidthTotal = 0;
         }
+        if (nextSlide == 9) {
+            dotsWidthTotal = dotsWidth * (slick.slideCount - maxDots);
+            $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
+        }
 
         console.log(slick.slideCount);
         console.log(currentSlide);
