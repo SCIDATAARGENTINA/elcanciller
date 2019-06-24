@@ -541,6 +541,9 @@ input:-internal-autofill-selected {
     opacity: 1;
     color: #fff;
     background: #fff;
+    background: #e7d117;
+    visibility: visible;
+    display: block;
 }
 
 .slick-dots li.slick-active button:before {
@@ -586,6 +589,10 @@ button {
 
 .slick-dots {
     list-style-type: none;
+}
+
+.slick-dot button {
+    visibility: hidden;
 }
 
 
