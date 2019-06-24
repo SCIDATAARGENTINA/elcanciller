@@ -36,6 +36,9 @@ jQuery(document).ready(function($) {
     $('.prev-arrow').prepend('<img class="am-logo" src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
 
     var dots = $('.slick-dots').children();
-    console.log(dots);
+
+    dots.each(function(index, dot) {
+        console.log(dot);
+    });
 
 });
