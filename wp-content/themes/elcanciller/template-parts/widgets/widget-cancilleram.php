@@ -35,7 +35,7 @@
 
         <div class="owl-item">
             <img src="<?php echo $featured_img_url ?> " alt="<?php echo $alt ?>">
-            <h3><?php the_title(); ?></h3>
+            <h3><?php echo get_the_content(); ?></h3>
         </div><!-- owl-item -->
          
       <?php endwhile ?>
