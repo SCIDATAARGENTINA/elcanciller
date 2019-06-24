@@ -32,7 +32,7 @@
         $thumbnail_id = get_post_thumbnail_id($post->ID);
         $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
         $get_author_id = get_the_author_meta('ID');
-        $get_author_name = get_the_author();
+        $get_author_name = get_the_author_meta('display_name');
         $get_author_avatar = get_avatar_url($get_author_id, array('size' => 450));
         ?>
 
