@@ -33,3 +33,6 @@
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'instagram') ?>
 </div>
+<div class="widget">
+  <?php get_template_part('template-parts/widgets/widget', 'twitter') ?>
+</div>
