@@ -45,8 +45,6 @@ jQuery(document).ready(function($) {
             if (nextSlide >= maxDots - 1) {
                 dotsWidthTotal = dotsWidthTotal + dotsWidth;
                 $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
-            } else if (nextSlide >= slick.slideCount - maxDots) {
-                return;
             }
         }
         if (nextSlide < currentSlide) {
