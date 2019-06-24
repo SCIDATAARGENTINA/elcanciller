@@ -639,6 +639,17 @@ button {
     justify-content: space-between;
 }
 
+.instagram-pic {
+    display: block;
+    width: 50px;
+    box-sizing: content-box;
+    padding: 10px;
+}
+
+.instagram-data>* {
+    margin: 0px;
+}
+
 
 /* ---------------------------*/
 
