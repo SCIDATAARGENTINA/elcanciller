@@ -30,12 +30,24 @@ jQuery(document).ready(function($) {
         prevArrow: '<div class="prev-arrow"></div>',
         nextArrow: '<div class="next-arrow"></div>',
         appendArrows: '.carr-nav',
-        appendDots: '.prev-arrow'
+        appendDots: '.prev-arrow',
+        asNavFor: '.slick-dots'
+    });
+
+    $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.carrousel',
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        focusOnSelect: true
     });
 
     $('.prev-arrow').prepend('<img class="am-logo" src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
 
     var dots = $('.slick-dots').children();
+
 
     var dotsCount = dots.length;
 
@@ -43,8 +55,7 @@ jQuery(document).ready(function($) {
 
     dots.each(function(index, dot) {
         if (index >= 4) {
-            var itemWidth = dot.width();
-            $('.slick-dots li').css('transform', 'translateX(-' + itemWidth + 'px)');
+
         }
     });
 
