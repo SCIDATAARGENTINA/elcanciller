@@ -551,7 +551,7 @@ input:-internal-autofill-selected {
     position: static;
     bottom: auto;
     display: flex;
-    width: 30%;
+    width: 100px;
     margin: 0;
     overflow: hidden;
     padding: 0px;
