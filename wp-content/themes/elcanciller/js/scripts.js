@@ -37,20 +37,20 @@ jQuery(document).ready(function($) {
 
     var dotsWidth = $('.slick-dots li').width();
 
-    var dotsWidthTotal = dotsWidth;
+    var dotsWidthTotal = 0;
 
     $('.carrousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         var maxDots = 4;
         if (nextSlide > currentSlide) {
             if (nextSlide >= maxDots - 1) {
-                $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
                 dotsWidthTotal = dotsWidthTotal + dotsWidth;
+                $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
             }
         }
         if (nextSlide < currentSlide) {
             if (nextSlide >= maxDots - 1) {
-                $('.slick-dots li').css('transform', 'translateX(' + dotsWidthTotal + 'px)');
                 dotsWidthTotal = dotsWidthTotal - dotsWidth;
+                $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
             }
         }
 
