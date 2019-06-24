@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
 
     dots.each(function(index, dot) {
         if (index >= 4) {
-            itemWidth = dot.width();
+            var itemWidth = dot.width();
             $('.slick-dots li').css('transform', 'translateX(-' + itemWidth + 'px)');
         }
     });
