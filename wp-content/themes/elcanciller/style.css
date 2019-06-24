@@ -501,6 +501,11 @@ input:-internal-autofill-selected {
     display: inline-block;
 }
 
+.prev-arrow {
+    display: flex;
+    align-items: center;
+}
+
 .prev-arrow::before {
     content: '';
     width: 13px;
