@@ -566,6 +566,7 @@ input:-internal-autofill-selected {
 
 .carr-nav {
     display: flex;
+    align-content: center;
 }
 
 
