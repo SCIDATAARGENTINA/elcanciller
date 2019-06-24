@@ -505,7 +505,8 @@ input:-internal-autofill-selected {
     content: '';
     width: 13px;
     height: 13px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     border: 2px solid #e7d117;
     border-right: 0px;
     transform: rotate(45deg);
@@ -530,9 +531,7 @@ input:-internal-autofill-selected {
 }
 
 .slick-dots li button:before {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: static;
     width: 5px;
     height: 5px;
     content: '';
