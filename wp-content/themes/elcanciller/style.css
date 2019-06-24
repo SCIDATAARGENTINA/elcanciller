@@ -624,6 +624,26 @@ button {
 /* ---------------------------*/
 
 
+/*--------- INSTAGRAM WIDGET */
+
+#sb_instagram #sbi_images .sbi_item {
+    padding: 5px !important;
+}
+
+#sb_instagram #sbi_images {
+    padding: 0px !important;
+}
+
+
+/* ---------------------------*/
+
+
+/* INSTAGRAM WIDGET */
+
+
+/* ---------------------------*/
+
+
 /*--------- COMMENTS */
 
 
