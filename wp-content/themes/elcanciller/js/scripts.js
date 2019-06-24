@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
 
     console.log(dotsCount);
 
-    slickSlider.on('beforeChange', function(event, currentSlide, nextSlide) {
+    $('.carrousel').on('beforeChange', function(event, currentSlide, nextSlide) {
         console.log(event);
         console.log(currentSlide);
         console.log(nextSlide);
