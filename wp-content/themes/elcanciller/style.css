@@ -561,7 +561,7 @@ input:-internal-autofill-selected {
 
 .am-logo {
     width: 120px;
-    vertical-align: middle;
+    vertical-align: middle !important;
 }
 
 
