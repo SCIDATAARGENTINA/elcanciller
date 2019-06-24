@@ -516,6 +516,24 @@ input:-internal-autofill-selected {
     border-bottom: 0px;
 }
 
+.slick-dots {
+    position: static;
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    content: '';
+    border-radius: 50%;
+    border: 1px solid #e7d117;
+    text-align: center;
+    opacity: .25;
+    color: #fff;
+}
+
 
 /* CANCILLER AM */
 
