@@ -473,6 +473,12 @@ input:-internal-autofill-selected {
     margin: 5px 0;
 }
 
+.cancilleram .author-container img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
 
 /* CANCILLER AM */
 
