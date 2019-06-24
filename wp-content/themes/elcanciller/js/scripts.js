@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
         prevArrow: '<div class="prev-arrow"></div>',
         nextArrow: '<div class="next-arrow"></div>',
         appendArrows: '.carr-nav',
-        appendDots: '.next-arrow'
+        appendDots: '.prev-arrow'
     });
 
 
