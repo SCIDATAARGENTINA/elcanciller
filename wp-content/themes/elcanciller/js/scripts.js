@@ -37,8 +37,14 @@ jQuery(document).ready(function($) {
 
     var dots = $('.slick-dots').children();
 
+    var dotsCount = dots.length;
+
+    console.log(dotsCount);
+
     dots.each(function(index, dot) {
-        console.log(dot);
+        if (index >= 5) {
+            console.log(dot);
+        }
     });
 
 });
