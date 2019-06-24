@@ -27,3 +27,6 @@
     <span class="fech"><?php echo date_i18n('D j M Y'); ?></span>
   </div><!-- info-tiempo -->
 </div><!-- tiempo -->
+<div class="widget">
+  <?php get_template_part('template-parts/widgets', 'cancilleram') ?>
+</div>
