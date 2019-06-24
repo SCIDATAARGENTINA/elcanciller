@@ -26,7 +26,9 @@ jQuery(document).ready(function($) {
     $(".cancilleram").slick({
         dots: true,
         infinite: false,
-        arrows: true
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>'
     });
 
 

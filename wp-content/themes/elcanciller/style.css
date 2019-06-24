@@ -492,6 +492,14 @@ input:-internal-autofill-selected {
     border: 2px solid #e7d117;
 }
 
+.slick-prev::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e7d117;
+    transform: rotateX(45deg);
+}
+
 
 /* CANCILLER AM */
 
