@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
 
     $(".carrousel").slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         arrows: true,
         prevArrow: '<div class="prev-arrow"></div>',
         nextArrow: '<div class="next-arrow"></div>',
@@ -54,6 +54,10 @@ jQuery(document).ready(function($) {
             } else {
                 $('.slick-dots li').css('transform', 'translateX(0px)');
             }
+        }
+        if (nextSlide == 0) {
+            $('.slick-dots li').css('transform', 'translateX(0px)');
+            dotsWidthTotal = 0;
         }
 
         console.log(slick.slideCount);
