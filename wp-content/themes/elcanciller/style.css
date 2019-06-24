@@ -475,6 +475,8 @@ input:-internal-autofill-selected {
 
 .cancilleram .author-container {
     margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .cancilleram .author-container span {
