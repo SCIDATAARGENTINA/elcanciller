@@ -704,6 +704,16 @@ button {
     font-family: 'Roboto' !important;
 }
 
+#ctf .ctf-item {
+    display: flex;
+    flex-direction: column;
+}
+
+#ctf .ctf-author-box {
+    display: flex;
+    align-items: center;
+}
+
 
 /* TWITTER WIDGET */
 
