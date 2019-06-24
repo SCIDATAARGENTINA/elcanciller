@@ -492,6 +492,10 @@ input:-internal-autofill-selected {
     border: 2px solid #e7d117;
 }
 
+.prev-arrow .next-arrow {
+    display: inline-block;
+}
+
 .prev-arrow::before {
     content: '';
     width: 13px;
