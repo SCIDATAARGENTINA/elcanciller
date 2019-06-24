@@ -636,7 +636,9 @@ button {
 
 .instagram-profile {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .instagram-pic {
@@ -649,6 +651,10 @@ button {
 .instagra-pic a {
     display: inline-block;
     width: 100%;
+}
+
+.instagram-data {
+    margin-left: 20px;
 }
 
 .instagram-data>* {
