@@ -371,6 +371,10 @@ input:-internal-autofill-selected {
     color: #e7d117;
 }
 
+.widget {
+    padding: 15px 10px;
+}
+
 
 /* ---------------------------*/
 
@@ -535,8 +539,13 @@ input:-internal-autofill-selected {
     border-radius: 50%;
     border: 1px solid #e7d117;
     text-align: center;
-    opacity: .25;
+    opacity: 1;
     color: #fff;
+    background: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+    background: #e7d117;
 }
 
 
