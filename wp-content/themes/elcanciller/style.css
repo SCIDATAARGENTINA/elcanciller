@@ -434,6 +434,10 @@ font-family: 'Playfair Display', serif;
         margin: 5px 0;
     }
     
+    .cancilleram.container h3 span {
+        color: #e7d117;
+    }
+    
     .cancilleram .author-container {
         margin: 10px 0;
         display: flex;
