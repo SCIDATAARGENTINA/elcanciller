@@ -691,7 +691,7 @@ font-family: 'Playfair Display', serif;
         font-family: 'Bree Serif';
         font-weight: normal;
         color: #b29f93 !important;
-        font-size: 16px;
+        font-size: 16px !important;
         display: flex;
         justify-content: center;
         align-items: center;
