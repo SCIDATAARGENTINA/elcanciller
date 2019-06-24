@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
         if (nextSlide < currentSlide) {
             if (nextSlide >= maxDots - 1) {
                 $('.slick-dots li').css('transform', 'translateX(' + dotsWidthTotal + 'px)');
-                dotsWidthTotal = dotsWidthTotal + dotsWidth;
+                dotsWidthTotal = dotsWidthTotal - dotsWidth;
             }
         }
 
