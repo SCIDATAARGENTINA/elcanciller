@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 
     $('.prev-arrow').prepend('<img class="am-logo" src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
 
-    var dotsWidth = $('.slick-dots li').width();
+    var dotsWidth = 16.86;
 
     var dotsWidthTotal = 0;
 
