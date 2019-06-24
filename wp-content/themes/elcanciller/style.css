@@ -646,8 +646,32 @@ button {
     padding: 10px;
 }
 
+.instagra-pic a {
+    display: inline-block;
+    width: 100%;
+}
+
 .instagram-data>* {
     margin: 0px;
+}
+
+.instagram-data h4 a {
+    color: #b29f93 !important;
+    font-size: 17px;
+}
+
+.instagram-data hr {
+    margin: 10px 0;
+    max-width: 40%;
+    height: 1px;
+    background: #ccc;
+}
+
+.instagram-data p,
+.instagram-data span {
+    font-family: "Roboto";
+    font-size: 10px;
+    color: #999999;
 }
 
 
