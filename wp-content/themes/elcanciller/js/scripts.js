@@ -41,10 +41,12 @@ jQuery(document).ready(function($) {
 
     $('.carrousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         var maxDots = 4;
-        if (nextSlide > currentSlide) {
+        if (nextSlide > currentSlide && nextSlide <= slick.slideCount - maxDots) {
             if (nextSlide >= maxDots - 1) {
                 dotsWidthTotal = dotsWidthTotal + dotsWidth;
                 $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
+            } else if (nextSlide >= slick.slideCount - maxDots) {
+                return;
             }
         }
         if (nextSlide < currentSlide) {
