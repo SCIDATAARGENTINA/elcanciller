@@ -548,6 +548,17 @@ input:-internal-autofill-selected {
     background: #e7d117;
 }
 
+.slick-dots {
+    position: static;
+    bottom: auto;
+    display: flex;
+    width: 30%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0px;
+    text-align: left;
+}
+
 
 /* CANCILLER AM */
 
