@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
 
     $('.carrousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         var maxDots = 4;
-        if (nextSlide > currentSlide && nextSlide <= slick.slideCount - maxDots) {
+        if (nextSlide > currentSlide && nextSlide <= slick.slideCount - (maxDots + 2)) {
             if (nextSlide >= maxDots - 1) {
                 dotsWidthTotal = dotsWidthTotal + dotsWidth;
                 $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
