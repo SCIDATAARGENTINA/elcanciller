@@ -504,7 +504,8 @@ input:-internal-autofill-selected {
 .prev-arrow {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .prev-arrow::before {
@@ -559,7 +560,7 @@ input:-internal-autofill-selected {
     position: static;
     bottom: auto;
     display: flex;
-    width: 100px;
+    width: 60px;
     margin: 0;
     overflow: hidden;
     padding: 0px;
