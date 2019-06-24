@@ -33,5 +33,7 @@ jQuery(document).ready(function($) {
         appendDots: '.prev-arrow'
     });
 
+    $('.prev-arrow').append('<img src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
+
 
 });
