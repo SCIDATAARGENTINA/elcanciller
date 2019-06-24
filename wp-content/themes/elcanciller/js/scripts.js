@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
     console.log(dotsCount);
 
     $('.carrousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        console.log(slick);
+        console.log(slick.slideCount);
         console.log(currentSlide);
         console.log(nextSlide);
     });
