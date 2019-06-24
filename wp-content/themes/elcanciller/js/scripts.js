@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
             }
         }) // end ajax
 
-
+    /* SLICK CARROUSEL CANCILELR AM*/
     $(".carrousel").slick({
         dots: true,
         infinite: true,
@@ -64,9 +64,8 @@ jQuery(document).ready(function($) {
             dotsWidthTotal = dotsWidth * (slick.slideCount - maxDots);
             $('.slick-dots li').css('transform', 'translateX(-' + dotsWidthTotal + 'px)');
         }
-
-        console.log(slick.slideCount);
-        console.log(currentSlide);
-        console.log(nextSlide);
     });
+
+    /* SLICK CARROUSEL CANCILELR AM END*/
+
 });
