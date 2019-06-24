@@ -541,7 +541,6 @@ input:-internal-autofill-selected {
     opacity: 1;
     color: #fff;
     background: #fff;
-    background: #e7d117;
     visibility: visible;
     display: block;
 }
@@ -591,8 +590,8 @@ button {
     list-style-type: none;
 }
 
-.slick-dot button {
-    visibility: hidden;
+.slick-dots button {
+    visibility: hidden !important;
 }
 
 
