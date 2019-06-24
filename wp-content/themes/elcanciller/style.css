@@ -714,6 +714,28 @@ button {
     align-items: center;
 }
 
+#ctf .ctf-tweet-content,
+#ctf .ctf-tweet-actions {
+    margin-left: 0px;
+}
+
+.ctf-tweet-actions {
+    align-items: center;
+    font-size: 15px;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.ctf-tweet-content {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
 
 /* TWITTER WIDGET */
 
