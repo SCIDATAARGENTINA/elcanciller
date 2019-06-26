@@ -5,9 +5,11 @@
  */
 import renderTemplate from './components/render-posts';
 
-import apiData from './service/wordpressapi';
+import { getData, getCategory } from './service/wordpressapi';
 
 
-apiData.getLatestPosts.then(res => {
+getData('').then(res => {
     renderTemplate(res);
 });
+
+getCategory(515);

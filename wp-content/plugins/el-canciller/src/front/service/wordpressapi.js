@@ -5,9 +5,9 @@
  */
 
 
-function getData(query) {
+let getData = (query) => {
 
-    const url = `http://142.93.24.13/wp-json/wp/v2${ query }`;
+    const url = `http://142.93.24.13/wp-json/wp/v2/${ query }`;
 
     const headers = {
         // tslint:disable-next-line:max-line-length
@@ -18,8 +18,17 @@ function getData(query) {
 
 }
 
-const apiData = {
-    getLatestPosts: getData('/posts?per_page=20')
+let getCategory = async(id) => {
+
+    let category = await getData(`categories/${id}`);
+
+    console.log(category);
+
 };
 
-export default apiData;
+
+
+module.exports = {
+    getData,
+    getCategory
+}
