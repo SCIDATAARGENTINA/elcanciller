@@ -4,39 +4,18 @@
  * src/front/components/render-posts.js
  */
 
-function setTemplate(val) {
-    return `<p>${val.title.rendered}</p>
-    <p>${val.date}</p>
-    <p>${val.categories[0]}</p><br>`;
-}
+let setTemplate = (post) => {
+    return ``;
+};
 
-function insertData(data, element, cat, quantity) {
+let renderTemplate = (postArr) => {
 
-    data.forEach((val, key) => {
+    let renderNodes = document.querySelectorAll('.render-posts');
 
-        let template = setTemplate(val);
-        if (parseInt(val.categories[0]) == parseInt(cat)) {
-            if (key <= quantity) {
-                element.innerHTML += template;
-            }
-        }
-    });
-}
+    console.log(renderNodes);
+};
 
 
-function renderTemplate(data) {
-
-    const elements = document.querySelectorAll(".render-posts");
-
-    [].forEach.call(elements, (el) => {
-        var cat = el.getAttribute('data-category');
-        var quantity = el.getAttribute('data-quantity');
-        var element = el;
-
-        insertData(data, element, cat, quantity);
-
-    });
-}
-
-
-export default renderTemplate;
+module.exports = {
+    renderTemplate
+};
