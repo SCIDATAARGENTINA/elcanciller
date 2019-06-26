@@ -27,6 +27,4 @@ let shuffle = (array) => {
 
 };
 
-module.exports = {
-    shuffle
-};
+export default shuffle;

@@ -112,10 +112,11 @@ eval("/**\r\n * Test admin component.\r\n *\r\n * src/admin/components/admin-tes
 /*!**********************************!*\
   !*** ./src/utils/utils-index.js ***!
   \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("/**\r\n * Shared utilities.\r\n */\n\n/**\r\n * Suffle Array ( Para randomizar los posts);\r\n */\nvar shuffle = function shuffle(array) {\n  var currentIndex = array.length;\n  var temporaryValue, randomIndex; // While there remain elements to shuffle...\n\n  while (0 !== currentIndex) {\n    // Pick a remaining element...\n    randomIndex = Math.floor(Math.random() * currentIndex);\n    currentIndex -= 1; // And swap it with the current element.\n\n    temporaryValue = array[currentIndex];\n    array[currentIndex] = array[randomIndex];\n    array[randomIndex] = temporaryValue;\n  }\n\n  return array;\n};\n\nmodule.exports = {\n  shuffle: shuffle\n};\n\n//# sourceURL=webpack:///./src/utils/utils-index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n * Shared utilities.\r\n */\n\n/**\r\n * Suffle Array ( Para randomizar los posts);\r\n */\nvar shuffle = function shuffle(array) {\n  var currentIndex = array.length;\n  var temporaryValue, randomIndex; // While there remain elements to shuffle...\n\n  while (0 !== currentIndex) {\n    // Pick a remaining element...\n    randomIndex = Math.floor(Math.random() * currentIndex);\n    currentIndex -= 1; // And swap it with the current element.\n\n    temporaryValue = array[currentIndex];\n    array[currentIndex] = array[randomIndex];\n    array[randomIndex] = temporaryValue;\n  }\n\n  return array;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (shuffle);\n\n//# sourceURL=webpack:///./src/utils/utils-index.js?");
 
 /***/ })
 
