@@ -3,7 +3,8 @@
  *
  * src/front/front-index.js
  */
-
+require("babel-core/register");
+require("babel-polyfill");
 import renderTemplate from './components/render-posts';
 
 import { getData, getCategory } from './service/wordpressapi';
