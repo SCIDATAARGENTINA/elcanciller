@@ -1,6 +1,6 @@
 // Require path.
 const path = require('path');
-
+const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 // Configuration object.
 const config = {
     // Create the entry points.
@@ -10,7 +10,16 @@ const config = {
         frontend: ['babel-polyfill', './src/front/front-index.js'],
         admin: './src/admin/admin-index.js'
     },
+    plugins: [
+        // To strip all locales except “en”
+        new MomentLocalesPlugin(),
 
+        // Or: To strip all locales except “en”, “es-us” and “ru”
+        // (“en” is built into Moment and can’t be removed)
+        new MomentLocalesPlugin({
+            localesToKeep: ['es-us'],
+        }),
+    ],
     // Create the output files.
     // One for each of our entry points.
     output: {
