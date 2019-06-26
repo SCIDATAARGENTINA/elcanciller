@@ -16,17 +16,11 @@ let createPostArray = async(quantity) => {
 
     let latestPosts = await getLatestPosts(quantity);
 
-    latestPosts.forEach(async(post) => {
-
+    for (let post of latestPosts) {
         console.log(post);
 
         let categories = await getCategories(post.categories);
-
-        //console.log(categories);
-
-
-
-    });
+    }
 
 };
 
