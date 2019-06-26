@@ -22,7 +22,7 @@ let fetchTags = async() => {
 };
 
 let fetchComments = async() => {
-    comments = getComments();
+    comments = await getComments();
 };
 
 let findPostCategories = (id, categories) => {
