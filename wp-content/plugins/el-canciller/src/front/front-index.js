@@ -24,9 +24,11 @@ let findPostCategories = (id, categories) => {
 
     let catArray = [];
 
-    let postCategories = categories.find(category => id[0] == category.id);
+    for (let category of categories) {
+        console.log(category);
+    }
 
-    console.log(postCategories);
+
 };
 
 let createPostArray = async(quantity) => {
