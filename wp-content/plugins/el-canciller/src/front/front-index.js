@@ -3,7 +3,6 @@
  *
  * src/front/front-index.js
  */
-import '@babel/polyfill';
 
 import renderTemplate from './components/render-posts';
 
