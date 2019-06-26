@@ -116,7 +116,7 @@ eval("/**\r\n * Test admin component.\r\n *\r\n * src/admin/components/admin-tes
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shuffle\", function() { return shuffle; });\n/**\r\n * Shared utilities.\r\n */\n\n/**\r\n * Suffle Array ( Para randomizar los posts);\r\n */\nfunction shuffle(array) {\n  var currentIndex = array.length;\n  var temporaryValue, randomIndex; // While there remain elements to shuffle...\n\n  while (0 !== currentIndex) {\n    // Pick a remaining element...\n    randomIndex = Math.floor(Math.random() * currentIndex);\n    currentIndex -= 1; // And swap it with the current element.\n\n    temporaryValue = array[currentIndex];\n    array[currentIndex] = array[randomIndex];\n    array[randomIndex] = temporaryValue;\n  }\n\n  return array;\n}\n\n//# sourceURL=webpack:///./src/utils/utils-index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shuffle\", function() { return shuffle; });\n/**\r\n * Shared utilities.\r\n */\n\n/**\r\n * Suffle Array ( Para randomizar los posts);\r\n */\nfunction shuffle(arrParam) {\n  var arr = arrParam.slice(),\n      length = arr.length,\n      temp,\n      i;\n\n  while (length) {\n    i = Math.floor(Math.random() * length--);\n    temp = arr[length];\n    arr[length] = arr[i];\n    arr[i] = temp;\n  }\n\n  return arr;\n}\n\n//# sourceURL=webpack:///./src/utils/utils-index.js?");
 
 /***/ })
 

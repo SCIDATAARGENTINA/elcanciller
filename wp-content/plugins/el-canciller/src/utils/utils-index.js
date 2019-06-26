@@ -6,23 +6,19 @@
  * Suffle Array ( Para randomizar los posts);
  */
 
-export function shuffle(array) {
+export function shuffle(arrParam) {
+    let arr = arrParam.slice(),
+        length = arr.length,
+        temp,
+        i;
 
-    let currentIndex = array.length;
-    let temporaryValue, randomIndex;
+    while (length) {
+        i = Math.floor(Math.random() * length--);
 
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
+        temp = arr[length];
+        arr[length] = arr[i];
+        arr[i] = temp;
     }
 
-    return array;
-
+    return arr;
 }
