@@ -12,7 +12,9 @@ let renderTemplate = (postArr) => {
 
     let renderNodes = document.querySelectorAll('.render-posts');
 
-    console.log(renderNodes);
+    for (let node of renderNodes) {
+        console.log(node);
+    }
 };
 
 

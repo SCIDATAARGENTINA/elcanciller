@@ -3845,7 +3845,7 @@ eval("var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\tr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * render posts frontend component.\r\n *\r\n * src/front/components/render-posts.js\r\n */\nvar setTemplate = function setTemplate(post) {\n  return \"\";\n};\n\nvar renderTemplate = function renderTemplate(postArr) {\n  var renderNodes = document.querySelectorAll('.render-posts');\n  console.log(renderNodes);\n};\n\nmodule.exports = {\n  renderTemplate: renderTemplate\n};\n\n//# sourceURL=webpack:///./src/front/components/render-posts.js?");
+eval("/**\r\n * render posts frontend component.\r\n *\r\n * src/front/components/render-posts.js\r\n */\nvar setTemplate = function setTemplate(post) {\n  return \"\";\n};\n\nvar renderTemplate = function renderTemplate(postArr) {\n  var renderNodes = document.querySelectorAll('.render-posts');\n  var _iteratorNormalCompletion = true;\n  var _didIteratorError = false;\n  var _iteratorError = undefined;\n\n  try {\n    for (var _iterator = renderNodes[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {\n      var node = _step.value;\n      console.log(node);\n    }\n  } catch (err) {\n    _didIteratorError = true;\n    _iteratorError = err;\n  } finally {\n    try {\n      if (!_iteratorNormalCompletion && _iterator[\"return\"] != null) {\n        _iterator[\"return\"]();\n      }\n    } finally {\n      if (_didIteratorError) {\n        throw _iteratorError;\n      }\n    }\n  }\n};\n\nmodule.exports = {\n  renderTemplate: renderTemplate\n};\n\n//# sourceURL=webpack:///./src/front/components/render-posts.js?");
 
 /***/ }),
 
