@@ -16,9 +16,17 @@ let createPostArray = async(quantity) => {
 
     let latestPosts = await getLatestPosts(quantity);
 
-    latestPosts.forEach((post) => {
+    latestPosts.forEach(async(post) => {
 
-        console.log(post.categories);
+        console.log(post);
+
+        let categories = await getCategories(post.categories);
+
+        let tags = await getTags(post.tags);
+
+        console.log(tags, categories);
+
+
 
     });
 

@@ -20,7 +20,7 @@ let getData = (query) => {
 
 let getCategories = async(id) => {
 
-
+    id = id.toString();
 
     let category = await getData(`categories/${id}`);
 
@@ -29,6 +29,8 @@ let getCategories = async(id) => {
 };
 
 let getTags = async(id) => {
+
+    id = id.toString();
 
     let tags = await getData(`tags/${id}`);
 
