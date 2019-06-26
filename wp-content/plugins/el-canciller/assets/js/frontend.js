@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/front/front-index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3858,7 +3858,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n * render posts fronte
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_render_posts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/render-posts */ \"./src/front/components/render-posts.js\");\n/* harmony import */ var _service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./service/wordpressapi */ \"./src/front/service/wordpressapi.js\");\n/* harmony import */ var _service_wordpressapi__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__);\n/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\n__webpack_require__(!(function webpackMissingModule() { var e = new Error(\"Cannot find module 'babel-core/register'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));\n\n__webpack_require__(/*! babel-polyfill */ \"./node_modules/babel-polyfill/lib/index.js\");\n\n\n\nObject(_service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__[\"getData\"])('').then(function (res) {\n  Object(_components_render_posts__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(res);\n});\nObject(_service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__[\"getCategory\"])(515);\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_render_posts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/render-posts */ \"./src/front/components/render-posts.js\");\n/* harmony import */ var _service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./service/wordpressapi */ \"./src/front/service/wordpressapi.js\");\n/* harmony import */ var _service_wordpressapi__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__);\n/**\r\n * Frontend entry point.\r\n *\r\n * src/front/front-index.js\r\n */\n__webpack_require__(/*! babel-polyfill */ \"./node_modules/babel-polyfill/lib/index.js\");\n\n\n\nObject(_service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__[\"getData\"])('').then(function (res) {\n  Object(_components_render_posts__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(res);\n});\nObject(_service_wordpressapi__WEBPACK_IMPORTED_MODULE_1__[\"getCategory\"])(515);\n\n//# sourceURL=webpack:///./src/front/front-index.js?");
 
 /***/ }),
 
@@ -3870,6 +3870,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /***/ (function(module, exports) {
 
 eval("function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\n/**\r\n * API posts front end service\r\n *\r\n * src/front/service/wordpressapi.js\r\n */\nvar getData = function getData(query) {\n  var url = \"http://142.93.24.13/wp-json/wp/v2/\".concat(query);\n  var headers = {// tslint:disable-next-line:max-line-length\n    //'Authorization': 'Bearer BQDN8FI-G3-thKplSnuymOZA8ixIHLoEnrEg4-nvcCsN64BGpyNv1LdbM53gz0ODqo9QXYLHKtbKaG7DLl0'\n  };\n  return fetch(url, {\n    headers: headers\n  }).then(function (data) {\n    return data.json();\n  });\n};\n\nvar getCategory =\n/*#__PURE__*/\nfunction () {\n  var _ref = _asyncToGenerator(\n  /*#__PURE__*/\n  regeneratorRuntime.mark(function _callee(id) {\n    var category;\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            _context.next = 2;\n            return getData(\"categories/\".concat(id));\n\n          case 2:\n            category = _context.sent;\n            console.log(category);\n\n          case 4:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n\n  return function getCategory(_x) {\n    return _ref.apply(this, arguments);\n  };\n}();\n\nmodule.exports = {\n  getData: getData,\n  getCategory: getCategory\n};\n\n//# sourceURL=webpack:///./src/front/service/wordpressapi.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!*******************************************************!*\
+  !*** multi babel-polyfill ./src/front/front-index.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! babel-polyfill */\"./node_modules/babel-polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! ./src/front/front-index.js */\"./src/front/front-index.js\");\n\n\n//# sourceURL=webpack:///multi_babel-polyfill_./src/front/front-index.js?");
 
 /***/ })
 
