@@ -62,12 +62,21 @@ let getLatestPosts = async(quantity) => {
 
 };
 
-let getComments = async(id) => {
+let getCommentsById = async(id) => {
 
     let postComments = await getData(`comments?post=${id}`);
 
     return postComments;
 };
+
+let getComments = async() => {
+
+    let comments = await getData(`comments`);
+
+    return comments;
+};
+
+
 
 
 module.exports = {
@@ -77,5 +86,6 @@ module.exports = {
     getComments,
     getTagsById,
     getCategories,
-    getTags
+    getTags,
+    getCommentsById
 };
