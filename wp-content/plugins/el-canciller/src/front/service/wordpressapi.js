@@ -18,7 +18,7 @@ let getData = (query) => {
 
 };
 
-let getCategories = async(id) => {
+let getCategoriesById = async(id) => {
 
     id = id.toString();
 
@@ -28,11 +28,27 @@ let getCategories = async(id) => {
 
 };
 
-let getTags = async(id) => {
+let getCategories = async() => {
+
+    let category = await getData(`categories/`);
+
+    return category;
+
+};
+
+let getTagsById = async(id) => {
 
     id = id.toString();
 
     let tags = await getData(`tags/${id}`);
+
+    return tags;
+
+};
+
+let getTags = async() => {
+
+    let tags = await getData(`tags/`);
 
     return tags;
 
@@ -53,12 +69,17 @@ let getComments = async(id) => {
     return postComments;
 };
 
+let categories = getCategories();
+
+let tags = getTags();
 
 
 module.exports = {
     getData,
-    getCategories,
+    getCategoriesById,
     getLatestPosts,
     getComments,
-    getTags
+    getTagsById,
+    categories,
+    tags
 };
