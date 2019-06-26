@@ -4,7 +4,12 @@
  * src/front/components/render-posts.js
  */
 
+var moment = require('moment');
+
 var utils = require('../../utils/utils-index');
+
+console.log(moment([2007, 0, 29]).fromNow());
+
 
 let setTemplate = (post) => {
     return `<div>`;
