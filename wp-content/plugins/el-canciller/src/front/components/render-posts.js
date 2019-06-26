@@ -35,7 +35,8 @@ let renderTemplate = (postArr) => {
     console.log('Normal:', postArr);
 
     console.log('Random: ', randomArr);
-    console.log(moment([2007, 0, 29]).fromNow());
+    var now = moment.moment();
+    console.log(now);
 
 
 };
