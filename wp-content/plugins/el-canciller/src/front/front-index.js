@@ -20,6 +20,14 @@ let fetchTags = async() => {
     tags = await getTags();
 };
 
+let findPostCategories = (id, categories) => {
+
+    let catArray = [];
+
+    console.log(id, categories);
+
+};
+
 let createPostArray = async(quantity) => {
 
     let postArray = [];
@@ -29,7 +37,7 @@ let createPostArray = async(quantity) => {
     for (let post of latestPosts) {
         console.log(post);
 
-        console.log(categories);
+        findPostCategories(post.categories, categories);
 
         console.log(tags);
     }
