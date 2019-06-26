@@ -4,7 +4,7 @@
  * src/front/components/render-posts.js
  */
 
-import { shuffle } from '../../utils/utils-index';
+var shuffle = require('../../utils/utils-index');
 
 let setTemplate = (post) => {
     return ``;
