@@ -19,7 +19,7 @@ let renderTemplate = (postArr) => {
         let random = node.getAttribute('data-random');
         console.log(random);
         if (random == 1) {
-            postArr = shuffle(postArr);
+            postArr = shuffle.shuffle(postArr);
             console.log(postArr);
         }
 
