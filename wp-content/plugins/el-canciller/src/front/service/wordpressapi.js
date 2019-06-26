@@ -69,10 +69,17 @@ let getComments = async(id) => {
     return postComments;
 };
 
-let categories = getCategories();
+let categories;
 
-let tags = getTags();
+getCategories().then((resp) => {
+    categories = resp;
+});
 
+let tags;
+
+getTags().then((resp) => {
+    tags = resp;
+});
 
 module.exports = {
     getData,
