@@ -8,10 +8,11 @@ var moment = require('moment');
 
 var utils = require('../../utils/utils-index');
 
-console.log(moment([2007, 0, 29]).fromNow());
 
 
 let setTemplate = (post) => {
+    console.log(moment([2007, 0, 29]).fromNow());
+
     return `<div>`;
 };
 
