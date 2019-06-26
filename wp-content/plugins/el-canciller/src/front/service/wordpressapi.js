@@ -22,13 +22,30 @@ let getCategory = async(id) => {
 
     let category = await getData(`categories/${id}`);
 
-    console.log(category);
+    return category;
 
+};
+
+let getLatestPosts = async(quantity) => {
+
+    let latestPosts = await getData(`posts?per_page=${quantity}`);
+
+    return latestPosts;
+
+};
+
+let getComments = async(id) => {
+
+    let postComments = await getData(`comments?post=${id}`);
+
+    return postComments;
 };
 
 
 
 module.exports = {
     getData,
-    getCategory
+    getCategory,
+    getLatestPosts,
+    getComments
 };

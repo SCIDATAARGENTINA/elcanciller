@@ -7,11 +7,19 @@ require("babel-polyfill");
 
 import renderTemplate from './components/render-posts';
 
-import { getData, getCategory } from './service/wordpressapi';
+import { getData, getCategory, getLatestPosts, getComments } from './service/wordpressapi';
 
 
-getData('').then(res => {
-    //renderTemplate(res);
-});
+let createPostArray = async(quantity) => {
 
-getCategory(515);
+    let postArray = [];
+
+    let latestPosts = await getLatestPosts(quantity);
+
+    latestPosts.forEach((post) => {
+        console.log(post);
+    });
+
+};
+
+createPostArray(50);
