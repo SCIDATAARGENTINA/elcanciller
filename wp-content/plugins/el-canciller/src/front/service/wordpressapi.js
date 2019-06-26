@@ -16,7 +16,7 @@ let getData = (query) => {
 
     return fetch(url, { headers }).then(data => data.json());
 
-}
+};
 
 let getCategory = async(id) => {
 
@@ -31,4 +31,4 @@ let getCategory = async(id) => {
 module.exports = {
     getData,
     getCategory
-}
+};
