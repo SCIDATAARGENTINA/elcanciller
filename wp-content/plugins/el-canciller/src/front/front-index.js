@@ -20,6 +20,7 @@ let createPostArray = async(quantity) => {
         console.log(post);
 
         let categories = await getCategories(post.categories);
+        console.log(categories);
     }
 
 };
