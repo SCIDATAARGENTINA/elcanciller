@@ -49,6 +49,25 @@ let findPostComments = (id, comments) => {
 
     let comArray = [];
 
+    for (let postid of id) {
+
+        for (let comment of comments) {
+
+            if (comment.post == postid && comment.status == "approved") {
+
+                let commentObj = {
+                    author: comment.author_name,
+                    content: comment.content.rendered
+                };
+
+                comArray.push(commentObj);
+
+            }
+
+        }
+
+    }
+
     console.log(comments);
 
 };
@@ -75,13 +94,15 @@ let createPostArray = async(quantity) => {
             comments: postComments
         };
 
+        postArray.push(postObject);
+
     }
 
+    console.log(postArray);
 };
 
 fetchCategories();
 
 fetchComments();
-//fetchTags();
 
 createPostArray(50);
