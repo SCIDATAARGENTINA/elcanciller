@@ -17,7 +17,6 @@ let renderTemplate = (postArr) => {
     for (let node of renderNodes) {
 
         let random = node.getAttribute('data-random');
-        console.log(postArr);
         console.log(random);
         if (random == 1) {
             postArr = shuffle(postArr);
