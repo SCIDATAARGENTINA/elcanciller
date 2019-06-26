@@ -4,7 +4,7 @@
  * src/front/components/render-posts.js
  */
 
-//import { shuffle } from '../../utils/utils-index';
+import { shuffle } from '../../utils/utils-index';
 
 let setTemplate = (post) => {
     return ``;
@@ -19,7 +19,7 @@ let renderTemplate = (postArr) => {
         let random = node.getAttribute('data-random');
         console.log(random);
         if (random == 1) {
-            //shuffle(postArr);
+            postArr = shuffle(postArr);
             console.log(postArr);
         }
 
