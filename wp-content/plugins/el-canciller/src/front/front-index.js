@@ -25,7 +25,7 @@ let findPostCategories = (id, categories) => {
     let catArray = [];
 
     for (let category of categories) {
-        console.log(category);
+        console.log(category.id);
     }
 
 
