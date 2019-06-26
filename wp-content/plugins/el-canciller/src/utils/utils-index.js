@@ -6,7 +6,7 @@
  * Suffle Array ( Para randomizar los posts);
  */
 
-let shuffle = function(array) {
+let shuffle = (array) => {
 
     let currentIndex = array.length;
     let temporaryValue, randomIndex;
