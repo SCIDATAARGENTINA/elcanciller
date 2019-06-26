@@ -26,7 +26,7 @@ let findPostCategories = (id, categories) => {
 
     for (let catid of id) {
         for (let category of categories) {
-            console.log(category);
+            console.log(category.id);
             if (category.id == catid) {
                 console.log(category);
             }
