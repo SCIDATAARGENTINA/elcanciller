@@ -64,7 +64,7 @@ let findPostComments = (id, comments) => {
 
     }
 
-    console.log(comments);
+    return comArray;
 
 };
 
