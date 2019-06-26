@@ -18,11 +18,21 @@ let getData = (query) => {
 
 };
 
-let getCategory = async(id) => {
+let getCategories = async(id) => {
+
+
 
     let category = await getData(`categories/${id}`);
 
     return category;
+
+};
+
+let getTags = async(id) => {
+
+    let tags = await getData(`tags/${id}`);
+
+    return tags;
 
 };
 
@@ -45,7 +55,8 @@ let getComments = async(id) => {
 
 module.exports = {
     getData,
-    getCategory,
+    getCategories,
     getLatestPosts,
-    getComments
+    getComments,
+    getTags
 };
