@@ -11,7 +11,7 @@ import { getData, getCategory } from './service/wordpressapi';
 
 
 getData('').then(res => {
-    renderTemplate(res);
+    //renderTemplate(res);
 });
 
 getCategory(515);
