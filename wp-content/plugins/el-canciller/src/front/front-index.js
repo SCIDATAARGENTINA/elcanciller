@@ -75,7 +75,6 @@ let createPostArray = async(quantity) => {
     let latestPosts = await getLatestPosts(quantity);
 
     for (let post of latestPosts) {
-        console.log(post);
 
         let postCategories = findPostCategories(post.categories, categories);
 
