@@ -27,4 +27,4 @@ let shuffle = (array) => {
 
 };
 
-export default shuffle;
+export default { shuffle };

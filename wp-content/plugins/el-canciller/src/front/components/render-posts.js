@@ -4,7 +4,7 @@
  * src/front/components/render-posts.js
  */
 
-var shuffle = require('../../utils/utils-index');
+var utils = require('../../utils/utils-index');
 
 let setTemplate = (post) => {
     return ``;
@@ -19,7 +19,7 @@ let renderTemplate = (postArr) => {
         let random = node.getAttribute('data-random');
         console.log(random);
         if (random == 1) {
-            postArr = shuffle.shuffle(postArr);
+            postArr = utils.shuffle(postArr);
             console.log(postArr);
         }
 
