@@ -17,14 +17,15 @@ let renderTemplate = (postArr) => {
     for (let node of renderNodes) {
 
         let random = node.getAttribute('data-random');
-        console.log(random);
-        console.log(postArr);
         if (random == 1) {
-            postArr = utils.shuffle(postArr);
-            console.log(postArr);
+            randomArr = utils.shuffle(postArr);
         }
 
     }
+    console.log('Normal:', postArr);
+
+    console.log('Random: ', randomArr);
+
 
 };
 
