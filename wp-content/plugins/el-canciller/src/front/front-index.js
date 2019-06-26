@@ -81,6 +81,7 @@ let createPostArray = async(quantity) => {
 
 fetchCategories();
 
+fetchComments();
 //fetchTags();
 
 createPostArray(50);
