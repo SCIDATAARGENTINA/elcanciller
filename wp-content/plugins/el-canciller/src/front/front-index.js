@@ -7,8 +7,18 @@ require("babel-polyfill");
 
 import renderTemplate from './components/render-posts';
 
-import { getData, getCategoriesById, getLatestPosts, getComments, getTagsById, categories, tags } from './service/wordpressapi';
+import { getData, getCategoriesById, getLatestPosts, getComments, getTagsById, getCategories, getTags } from './service/wordpressapi';
 
+let categories;
+let tags;
+
+let fetchCategories = async() => {
+    categories = await getCategories();
+};
+
+let fetchTags = async() => {
+    tags = await getTags();
+};
 
 let createPostArray = async(quantity) => {
 
@@ -25,5 +35,9 @@ let createPostArray = async(quantity) => {
     }
 
 };
+
+fetchCategories();
+
+fetchTags();
 
 createPostArray(50);

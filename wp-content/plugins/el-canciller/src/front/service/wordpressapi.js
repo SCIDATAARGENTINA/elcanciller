@@ -69,17 +69,6 @@ let getComments = async(id) => {
     return postComments;
 };
 
-let categories;
-
-getCategories().then((resp) => {
-    categories = resp;
-});
-
-let tags;
-
-getTags().then((resp) => {
-    tags = resp;
-});
 
 module.exports = {
     getData,
@@ -87,6 +76,6 @@ module.exports = {
     getLatestPosts,
     getComments,
     getTagsById,
-    categories,
-    tags
+    getCategories,
+    getTags
 };
