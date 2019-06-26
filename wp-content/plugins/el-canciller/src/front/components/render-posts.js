@@ -18,13 +18,11 @@ let renderTemplate = (postArr) => {
 
         let random = node.getAttribute('data-random');
         if (random == 1) {
-            randomArr = utils.shuffle(postArr);
+
         }
 
     }
     console.log('Normal:', postArr);
-
-    console.log('Random: ', randomArr);
 
 
 };
