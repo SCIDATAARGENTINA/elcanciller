@@ -21,9 +21,9 @@ get_header();
 			</div><!-- sidebar -->
 			<div class="content">
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
-				<div class="render-posts" data-quantity="4"></div>
+				<div class="render-posts" data-quantity="4" data-random="1"></div>
 				<hr>
-				<div class="render-posts" data-quantity="9" data-category="561"></div>
+				<div class="render-posts" data-quantity="9"></div>
 
 			</div><!-- content -->
 		</div><!-- inner container -->

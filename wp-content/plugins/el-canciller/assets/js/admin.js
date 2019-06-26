@@ -115,7 +115,7 @@ eval("/**\r\n * Test admin component.\r\n *\r\n * src/admin/components/admin-tes
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * Shared utilities.\r\n */\n\n/**\r\n * Uppercase a string.\r\n */\nexports.upper = function (message) {\n  return message.toUpperCase();\n};\n/**\r\n * Test if is type string.\r\n */\n\n\nexports.isString = function (message) {\n  return 'string' === typeof message;\n};\n\n//# sourceURL=webpack:///./src/utils/utils-index.js?");
+eval("/**\r\n * Shared utilities.\r\n */\n\n/**\r\n * Suffle Array ( Para randomizar los posts);\r\n */\nvar shuffle = function shuffle(array) {\n  var currentIndex = array.length;\n  var temporaryValue, randomIndex; // While there remain elements to shuffle...\n\n  while (0 !== currentIndex) {\n    // Pick a remaining element...\n    randomIndex = Math.floor(Math.random() * currentIndex);\n    currentIndex -= 1; // And swap it with the current element.\n\n    temporaryValue = array[currentIndex];\n    array[currentIndex] = array[randomIndex];\n    array[randomIndex] = temporaryValue;\n  }\n\n  return array;\n};\n\nmodule.exports = {\n  shuffle: shuffle\n};\n\n//# sourceURL=webpack:///./src/utils/utils-index.js?");
 
 /***/ })
 
