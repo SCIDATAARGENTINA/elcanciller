@@ -30,7 +30,7 @@ let getCategoriesById = async(id) => {
 
 let getCategories = async() => {
 
-    let category = await getData(`categories?per_page=-1`);
+    let category = await getData(`categories?per_page=100`);
 
     return category;
 
