@@ -22,9 +22,7 @@ let createPostArray = async(quantity) => {
 
         let categories = await getCategories(post.categories);
 
-        let tags = await getTags(post.tags);
-
-        console.log(tags, categories);
+        console.log(categories);
 
 
 
