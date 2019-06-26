@@ -66,7 +66,7 @@ let createPostArray = async(quantity) => {
 
         let postComments = findPostComments(post.id, comments);
 
-        postObject = {
+        let postObject = {
             id: post.id,
             title: post.title.rendered,
             link: post.link,
