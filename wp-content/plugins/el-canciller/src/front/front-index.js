@@ -49,20 +49,16 @@ let findPostComments = (id, comments) => {
 
     let comArray = [];
 
-    for (let postid of id) {
+    for (let comment of comments) {
 
-        for (let comment of comments) {
+        if (comment.post == id && comment.status == "approved") {
 
-            if (comment.post == postid && comment.status == "approved") {
+            let commentObj = {
+                author: comment.author_name,
+                content: comment.content.rendered
+            };
 
-                let commentObj = {
-                    author: comment.author_name,
-                    content: comment.content.rendered
-                };
-
-                comArray.push(commentObj);
-
-            }
+            comArray.push(commentObj);
 
         }
 
