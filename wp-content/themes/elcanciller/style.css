@@ -906,8 +906,10 @@ font-family: 'Playfair Display', serif;
     .post-data .post-title h3::before {
         content: '';
         width: 30%;
-        height: 2px;
+        height: 1px;
+        display: block;
         background: #ccc;
+        margin-bottom: 5px;
     }
     
     .post-data .post-title span.time-ago {
