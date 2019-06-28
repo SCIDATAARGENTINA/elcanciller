@@ -40,7 +40,7 @@ let renderTemplate = (postArr) => {
     console.log('Normal:', postArr);
 
     console.log('Random: ', randomArr);
-    let now = moment(postArr.date.fromNow());
+    let now = moment(postArr[0].date.fromNow());
     console.log(now, moment.locale());
 
 
