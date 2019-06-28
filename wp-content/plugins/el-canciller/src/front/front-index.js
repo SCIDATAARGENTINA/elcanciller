@@ -77,8 +77,11 @@ let createPostArray = async(quantity) => {
 
     for (let post of latestPosts) {
 
-        let postCategories = post._embedded['wp:term']['0'];
+        let postCategories = [];
 
+        if (post._embedded['wp:term']) {
+            postCategories = post._embedded['wp:term']['0'];
+        }
         //findPostCategories(post.categories, categories);
 
         let postComments = findPostComments(post.id, comments);
