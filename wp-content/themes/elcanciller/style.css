@@ -852,11 +852,12 @@ font-family: 'Playfair Display', serif;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     
     .hovered .action-links i {
         color: #fff;
-        margin: 0 5px;
+        margin: 0 10px;
         font-size: 22px;
     }
     
