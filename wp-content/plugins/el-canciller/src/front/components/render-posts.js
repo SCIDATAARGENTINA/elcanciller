@@ -16,7 +16,7 @@ moment.locale('es');
 let setTemplate = (post) => {
 
     console.log(post);
-
+    console.log(post.category[0].name);
     let postRendered = document.createElement('div');
     let postDate = moment(post.date).fromNow();
 
