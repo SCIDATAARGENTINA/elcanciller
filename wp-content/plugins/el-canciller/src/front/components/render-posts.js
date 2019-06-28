@@ -35,8 +35,6 @@ let renderTemplate = (postArr) => {
 
     for (let node of renderNodes) {
 
-        let template = '';
-
         // Randomize Array if has 'data-random' = 1
         let random = node.getAttribute('data-random');
 
@@ -45,7 +43,7 @@ let renderTemplate = (postArr) => {
 
             for (let post of randomArr) {
 
-                template += setTemplate(post);
+                let template = +setTemplate(post);
 
             }
 
@@ -53,7 +51,7 @@ let renderTemplate = (postArr) => {
 
             for (let post of postArr) {
 
-                template += setTemplate(post);
+                let template = +setTemplate(post);
 
             }
 
