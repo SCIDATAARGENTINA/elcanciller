@@ -717,6 +717,7 @@ font-family: 'Playfair Display', serif;
         display: grid;
         grid-template-columns: 1fr 11fr;
         margin: 10px 0;
+        margin-left: 20px;
     }
     
     .comment-container {
@@ -851,7 +852,7 @@ font-family: 'Playfair Display', serif;
         border-top: 5px solid #e7d117;
         padding-left: 30px;
         position: absolute;
-        bottom: 0px;
+        bottom: 18px;
         left: -5px;
     }
     /* END POST RENDERED*/
