@@ -825,6 +825,10 @@ font-family: 'Playfair Display', serif;
     /*--------- POST RENDERED */
     /* ---------------------------*/
     
+    .post-rendered {
+        height: 300px;
+    }
+    
     .post-rendered .rendered-img {
         background-position: center center;
         background-size: cover;
@@ -832,6 +836,7 @@ font-family: 'Playfair Display', serif;
     
     .post-rendered .hovered {
         background-color: rgba(0, 0, 0, 0.3);
+        position: relative;
     }
     
     .post-data {
@@ -840,7 +845,7 @@ font-family: 'Playfair Display', serif;
     
     .post-data .post-category {
         color: #c4afa1;
-        transform: rotate(180deg);
+        transform: rotate(270deg);
     }
     /* END POST RENDERED*/
     /* ---------------------------*/
