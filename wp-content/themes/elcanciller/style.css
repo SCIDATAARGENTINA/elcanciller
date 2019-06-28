@@ -887,13 +887,19 @@ font-family: 'Playfair Display', serif;
         width: 215%;
         position: absolute;
         top: -5px;
-        left: -46px;
+        left: -120%;
+    }
+    
+    .post-data .post-title {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
     }
     
     .post-data .post-title h3 {
         color: #fff;
         margin-bottom: 0px;
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .post-data .post-title span.time-ago {
