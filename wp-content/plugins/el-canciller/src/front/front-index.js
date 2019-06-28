@@ -73,7 +73,6 @@ let createPostArray = async(quantity) => {
     let postArray = [];
 
     let latestPosts = await getLatestPosts(quantity);
-    console.log(latestPosts);
 
     for (let post of latestPosts) {
 

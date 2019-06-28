@@ -91,9 +91,6 @@ let renderTemplate = (postArr) => {
 
     }
 
-    console.log(postArr);
-
-
 };
 
 
