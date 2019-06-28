@@ -858,7 +858,8 @@ font-family: 'Playfair Display', serif;
     
     .post-data {
         display: flex;
-        position: relative;
+        position: absolute;
+        bottom: 0px;
     }
     
     .post-data .post-category {
