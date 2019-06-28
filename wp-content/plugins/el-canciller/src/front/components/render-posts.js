@@ -74,7 +74,7 @@ let renderTemplate = (postArr) => {
 
             for (let post of randomArr) {
 
-                node.innerHTML = +setTemplate(post);
+                node.innerHTML += setTemplate(post);
 
             }
 
@@ -82,7 +82,7 @@ let renderTemplate = (postArr) => {
 
             for (let post of postArr) {
 
-                node.innerHTML = +setTemplate(post);
+                node.innerHTML += setTemplate(post);
 
             }
 
