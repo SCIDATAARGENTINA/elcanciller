@@ -830,7 +830,7 @@ font-family: 'Playfair Display', serif;
         background-size: cover;
     }
     
-    .post-rendered .hover {
+    .post-rendered .hovered {
         background-color: rgba(0, 0, 0, 0.3);
     }
     /* END POST RENDERED*/
