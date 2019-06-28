@@ -78,19 +78,30 @@ let createPostArray = async(quantity) => {
     for (let post of latestPosts) {
 
         let postCategories = [];
+        let postComments = [];
+        let postFeaturedImg = [];
 
         if (post._embedded['wp:term']) {
             postCategories = post._embedded['wp:term']['0'];
         }
         //findPostCategories(post.categories, categories);
 
-        let postComments = findPostComments(post.id, comments);
+        if (post._embedded.replies) {
+            postComments = post._embedded.replies[0]
+        }
+
+        if (post._embedded['wp:featuredmedia']) {
+            postFeaturedImg = post._embedded['wp:featuredmedia'][0].media_details.sizes;
+        }
+
+        //findPostComments(post.id, comments);
 
         let postObject = {
             id: post.id,
             title: post.title.rendered,
             link: post.link,
             date: new Date(post.date),
+            featuredMedia: postFeaturedImg,
             category: postCategories,
             comments: postComments
         };
