@@ -15,7 +15,7 @@ moment.locale('es');
 
 let setTemplate = (post) => {
 
-    let template = ;
+    let template = '';
 
 
 };
@@ -52,6 +52,7 @@ let renderTemplate = (postArr) => {
 
     }
 
+    console.log(postArr);
     let now = moment(postArr[0].date).fromNow();
 
 
