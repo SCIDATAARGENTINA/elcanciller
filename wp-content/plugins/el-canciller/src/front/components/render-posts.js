@@ -8,8 +8,8 @@ var moment = require('moment');
 
 var utils = require('../../utils/utils-index');
 
-import 'moment/locale/es'; // without this line it didn't work
-moment.locale('es')
+require('moment/locale/es'); // without this line it didn't work
+moment.locale('es');
 
 
 
