@@ -111,8 +111,4 @@ let createPostArray = async(quantity) => {
     renderTemplate(postArray);
 };
 
-fetchCategories();
-
-fetchComments();
-
 createPostArray(50);

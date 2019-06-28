@@ -15,6 +15,8 @@ moment.locale('es');
 
 let setTemplate = (post) => {
 
+    console.log(post);
+
     let postRendered = document.createElement('div');
     let postDate = moment(post.date).fromNow();
 
