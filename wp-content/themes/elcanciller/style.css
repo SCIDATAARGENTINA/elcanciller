@@ -834,9 +834,13 @@ font-family: 'Playfair Display', serif;
         background-color: rgba(0, 0, 0, 0.3);
     }
     
+    .post-data {
+        display: flex;
+    }
+    
     .post-data .post-category {
         color: #c4afa1;
-        transform: rotate(90deg);
+        transform: rotate(180deg);
     }
     /* END POST RENDERED*/
     /* ---------------------------*/
