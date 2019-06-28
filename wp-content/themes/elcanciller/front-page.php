@@ -35,8 +35,10 @@ get_header();
 									<div class="post-category">
 										<h4>Espectaculo</h4>
 									</div>
-									<h3>Titulo</h3>
-									<span class="time-ago">HACE 2HS</span>
+									<div class="post-title">
+										<h3>Titulo</h3>
+										<span class="time-ago">HACE 2HS</span>
+									</div>
 								</div><!-- post-data -->
 							</div><!-- hovered -->
 						</div><!-- rendered-img -->
