@@ -12,6 +12,8 @@ var utils = require('../../utils/utils-index');
 
 let setTemplate = (post) => {
 
+
+
     return `<div>`;
 };
 
@@ -35,7 +37,7 @@ let renderTemplate = (postArr) => {
     console.log('Normal:', postArr);
 
     console.log('Random: ', randomArr);
-    let now = moment(new Date());
+    let now = moment(new Date()).fromNow();
     console.log(now);
 
 

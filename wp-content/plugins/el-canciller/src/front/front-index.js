@@ -84,7 +84,6 @@ let createPostArray = async(quantity) => {
         if (post._embedded['wp:term']) {
             postCategories = post._embedded['wp:term']['0'];
         }
-        //findPostCategories(post.categories, categories);
 
         if (post._embedded.replies) {
             postComments = post._embedded.replies[0]
@@ -93,8 +92,6 @@ let createPostArray = async(quantity) => {
         if (post._embedded['wp:featuredmedia']) {
             postFeaturedImg = post._embedded['wp:featuredmedia'][0].media_details.sizes;
         }
-
-        //findPostComments(post.id, comments);
 
         let postObject = {
             id: post.id,
