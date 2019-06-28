@@ -884,10 +884,10 @@ font-family: 'Playfair Display', serif;
         height: 10px;
         content: '';
         background: #e7d117;
-        width: 100%;
+        width: 215%;
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: -5px;
+        left: -46px;
     }
     
     .post-data .post-title h3 {

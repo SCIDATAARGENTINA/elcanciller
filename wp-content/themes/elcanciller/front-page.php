@@ -36,7 +36,7 @@ get_header();
 										<h4>Espectaculo</h4>
 									</div>
 									<div class="post-title">
-										<h3>Titulo</h3>
+										<h3>El nuevo disco de Beyonce, entre los nueve peores del año</h3>
 										<span class="time-ago">HACE 2HS</span>
 									</div>
 								</div><!-- post-data -->
