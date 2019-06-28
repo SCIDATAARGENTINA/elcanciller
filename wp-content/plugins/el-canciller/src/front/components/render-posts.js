@@ -35,7 +35,7 @@ let setTemplate = (post) => {
 								</div><!-- action-links -->
 								<div class="post-data">
 									<div class="post-category">
-										<h4>${post.category[0].name}</h4>
+										<h4></h4>
 									</div>
 									<div class="post-title">
 										<h3>${post.title}</h3>
