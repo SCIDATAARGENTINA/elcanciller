@@ -840,6 +840,10 @@ font-family: 'Playfair Display', serif;
         background-color: rgba(0, 0, 0, 0.3);
         position: relative;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
     }
     
     .hovered .action-links {
@@ -858,8 +862,7 @@ font-family: 'Playfair Display', serif;
     
     .post-data {
         display: flex;
-        position: absolute;
-        bottom: 0px;
+        position: relative;
     }
     
     .post-data .post-category {
