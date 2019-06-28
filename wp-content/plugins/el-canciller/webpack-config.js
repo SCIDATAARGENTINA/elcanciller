@@ -41,7 +41,7 @@ const config = {
             loader: 'babel-loader'
         }]
     }
-}
+};
 
 // Export the config object.
 module.exports = config;

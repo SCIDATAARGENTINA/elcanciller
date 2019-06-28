@@ -27,11 +27,36 @@ get_header();
 							<div class="action-links">
 								<i class="fab fa-twitter"></i>
 								<i class="fab fa-facebook-f"></i>
-								<i class="fas fa-sign-out-alt"></i>
+								<a href="#"><i class="fas fa-sign-out-alt"></i></a>
 								<i class="fas fa-heart"></i>
 							</div><!-- action-links -->
-							<div class="post-data"></div>
+							<div class="post-data">
+								<div class="post-category">
+									<h4>Espectaculo</h4>
+								</div>
+								<h3>Titulo</h3>
+								<span class="time-ago">HACE 2HS</span>
+							</div><!-- post-data -->
 						</div><!-- hovered -->
+						<div class="comentarios-noshare">
+							<div class="comment-icon">
+								<i class="far fa-comment-dots"></i>
+							</div>
+							<div class="comment-container">
+								<div class="comentarios">
+
+									<div class="comentario">
+										<span class="comment-author">
+											@autor
+										</span>
+										<span class="comment-text">
+											Hola esto es un comentario
+										</span>
+									</div><!-- comentario -->
+
+								</div><!-- comentarios -->
+							</div><!-- comment-container -->
+						</div><!-- comentarios-noshare -->
 					</div><!-- post-rendered -->
 				</div>
 				<hr>
