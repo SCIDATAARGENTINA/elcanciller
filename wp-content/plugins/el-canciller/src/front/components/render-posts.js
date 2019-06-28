@@ -32,7 +32,7 @@ let setTemplate = (post) => {
     }
 
     if (post.featuredMedia.full) {
-        featuredImage = post.featuredMedia.medium_large.link;
+        featuredImage = post.featuredMedia.medium_large.source_url;
     }
 
 
@@ -56,9 +56,7 @@ let setTemplate = (post) => {
 							</div><!-- hovered -->
 						</div><!-- rendered-img -->`;
 
-    console.log(postRendered);
-
-
+    return postRendered;
 
 };
 
@@ -76,7 +74,7 @@ let renderTemplate = (postArr) => {
 
             for (let post of randomArr) {
 
-                let template = +setTemplate(post);
+                node.innerHTML = +setTemplate(post);
 
             }
 
@@ -84,7 +82,7 @@ let renderTemplate = (postArr) => {
 
             for (let post of postArr) {
 
-                let template = +setTemplate(post);
+                node.innerHTML = +setTemplate(post);
 
             }
 
