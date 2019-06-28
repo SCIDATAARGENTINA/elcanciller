@@ -870,10 +870,10 @@ font-family: 'Playfair Display', serif;
         color: #c4afa1;
         transform: rotate(270deg);
         border-top: 10px solid #e7d117;
-        padding-left: 40px;
-        position: absolute;
-        bottom: 18px;
-        left: -34px;
+        padding-left: 50px;
+        position: relative;
+        bottom: 10px;
+        left: -39px;
         font-size: 16px;
     }
     /* END POST RENDERED*/
