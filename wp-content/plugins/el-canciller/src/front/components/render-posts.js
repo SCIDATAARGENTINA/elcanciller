@@ -19,11 +19,16 @@ let setTemplate = (post) => {
     console.log(post.category[0].name);
     let postRendered = document.createElement('div');
     let postDate = moment(post.date).fromNow();
+    let postCategory = '';
 
     if (post.trending == 'si') {
         postRendered.classList.add('post-rendered', 'trending');
     } else {
         postRendered.classList.add('post-rendered');
+    }
+
+    if (post.category[0].name) {
+        postCategory = post.category[0].name;
     }
 
 
@@ -37,7 +42,7 @@ let setTemplate = (post) => {
 								</div><!-- action-links -->
 								<div class="post-data">
 									<div class="post-category">
-										<h4></h4>
+										<h4>${postCategory}</h4>
 									</div>
 									<div class="post-title">
 										<h3>${post.title}</h3>
