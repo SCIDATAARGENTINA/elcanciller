@@ -829,6 +829,10 @@ font-family: 'Playfair Display', serif;
         background-position: center center;
         background-size: cover;
     }
+    
+    .post-rendered .hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
     /* END POST RENDERED*/
     /* ---------------------------*/
     /*--------- FOOTER */
