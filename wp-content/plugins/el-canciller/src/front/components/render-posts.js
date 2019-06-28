@@ -17,6 +17,7 @@ let setTemplate = (post) => {
 
     let postRendered = document.createElement('div');
     let postDate = moment(post.date).fromNow();
+    let featured_image = '';
 
     if (post.trending == 'si') {
         postRendered.classList.add('post-rendered', 'trending');
@@ -24,7 +25,11 @@ let setTemplate = (post) => {
         postRendered.classList.add('post-rendered');
     }
 
-    postRendered.innerHTML += `<div class="rendered-img" style="background-image: url('${post.featuredMedia.medium_large.source_url}')">
+    if (post.featuredMedia.medium_large.source_url) {
+        featured_image = post.featuredMedia.medium_large.source_url;
+    }
+
+    postRendered.innerHTML += `<div class="rendered-img" style="background-image: url('${featured_image}')">
 							<div class="hovered">
 								<div class="action-links">
 									<i class="fab fa-twitter"></i>
