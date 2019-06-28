@@ -832,11 +832,13 @@ font-family: 'Playfair Display', serif;
     .post-rendered .rendered-img {
         background-position: center center;
         background-size: cover;
+        height: 100%;
     }
     
     .post-rendered .hovered {
         background-color: rgba(0, 0, 0, 0.3);
         position: relative;
+        height: 100%;
     }
     
     .post-data {
