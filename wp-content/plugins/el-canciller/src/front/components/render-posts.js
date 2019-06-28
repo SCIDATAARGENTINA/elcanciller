@@ -15,9 +15,9 @@ moment.locale('es');
 
 let setTemplate = (post) => {
 
+    let template = ;
 
 
-    return `<div>`;
 };
 
 let renderTemplate = (postArr) => {
@@ -26,22 +26,33 @@ let renderTemplate = (postArr) => {
 
     for (let node of renderNodes) {
 
+        let template = '';
+
         // Randomize Array if has 'data-random' = 1
         let random = node.getAttribute('data-random');
+
         if (random == 1) {
             randomArr = utils.shuffle(postArr);
+
+            for (let post of randomArr) {
+
+                template += setTemplate(post);
+
+            }
+
         } else {
+
+            for (let post of postArr) {
+
+                template += setTemplate(post);
+
+            }
 
         }
 
-
-
     }
-    console.log('Normal:', postArr);
 
-    console.log('Random: ', randomArr);
     let now = moment(postArr[0].date).fromNow();
-    console.log(now, moment.locale());
 
 
 };
