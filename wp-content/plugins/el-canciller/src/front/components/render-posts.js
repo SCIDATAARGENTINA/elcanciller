@@ -68,6 +68,8 @@ let renderTemplate = (postArr) => {
 
         // Randomize Array if has 'data-random' = 1
         let random = node.getAttribute('data-random');
+        let quantity = node.getAttribute('data-quantity');
+        console.log(quantity);
 
         if (random == 1) {
             randomArr = utils.shuffle(postArr);
