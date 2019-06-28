@@ -844,14 +844,16 @@ font-family: 'Playfair Display', serif;
     
     .hovered .action-links {
         color: #fff;
-        padding: 30px 0;
+        padding: 50px 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    .hovered .action-links {
+    .hovered .action-links i {
         color: #fff;
+        margin: 0 10px;
+        font-size: 17px;
     }
     
     .post-data {
