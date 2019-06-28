@@ -15,10 +15,12 @@ moment.locale('es');
 
 let setTemplate = (post) => {
 
+    let template;
+
     if (post.trending == 'si') {
-        let template = '<div class="post-rendered trending"></div>';
+        template = '<div class="post-rendered trending"></div>';
     } else {
-        let template = '<div class="post-rendered"></div>';
+        template = '<div class="post-rendered"></div>';
     }
 
     template.append('Hola');
