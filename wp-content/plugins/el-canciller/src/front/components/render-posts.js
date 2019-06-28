@@ -8,6 +8,8 @@ var moment = require('moment');
 
 var utils = require('../../utils/utils-index');
 
+moment.locale('es');
+
 
 
 let setTemplate = (post) => {
