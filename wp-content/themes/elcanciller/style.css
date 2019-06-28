@@ -713,6 +713,12 @@ font-family: 'Playfair Display', serif;
         margin: 10px 0;
     }
     
+    .comentarios-noshare {
+        display: grid;
+        grid-template-columns: 1fr 11fr;
+        margin: 10px 0;
+    }
+    
     .comment-container {
         overflow: hidden;
         font-family: "Roboto";
