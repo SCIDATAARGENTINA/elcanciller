@@ -8,7 +8,7 @@ var moment = require('moment');
 
 var utils = require('../../utils/utils-index');
 
-moment.locale('es');
+moment.locale();
 
 
 
@@ -40,7 +40,7 @@ let renderTemplate = (postArr) => {
 
     console.log('Random: ', randomArr);
     let now = moment(new Date()).fromNow();
-    console.log(now);
+    console.log(now, moment.locale());
 
 
 };
