@@ -848,6 +848,8 @@ font-family: 'Playfair Display', serif;
     .post-data .post-category {
         color: #c4afa1;
         transform: rotate(270deg);
+        border-top: 5px solid #e7d117;
+        padding-left: 30px;
     }
     /* END POST RENDERED*/
     /* ---------------------------*/
