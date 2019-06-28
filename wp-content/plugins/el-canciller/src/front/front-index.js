@@ -100,7 +100,8 @@ let createPostArray = async(quantity) => {
             date: new Date(post.date),
             featuredMedia: postFeaturedImg,
             category: postCategories,
-            comments: postComments
+            comments: postComments,
+            trending: post.acf.trending
         };
 
         postArray.push(postObject);
