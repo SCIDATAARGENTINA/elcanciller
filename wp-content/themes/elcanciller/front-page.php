@@ -22,22 +22,24 @@ get_header();
 			<div class="content">
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
 				<div class="render-posts" data-quantity="4" data-random="1">
-					<div class="post-rendered trending" style="background-image: url('http://142.93.24.13/wp-content/uploads/2019/06/macri-vidal.jpg')">
-						<div class="hovered">
-							<div class="action-links">
-								<i class="fab fa-twitter"></i>
-								<i class="fab fa-facebook-f"></i>
-								<a href="#"><i class="fas fa-sign-out-alt"></i></a>
-								<i class="fas fa-heart"></i>
-							</div><!-- action-links -->
-							<div class="post-data">
-								<div class="post-category">
-									<h4>Espectaculo</h4>
-								</div>
-								<h3>Titulo</h3>
-								<span class="time-ago">HACE 2HS</span>
-							</div><!-- post-data -->
-						</div><!-- hovered -->
+					<div class="post-rendered trending">
+						<div class="rendered-img" style="background-image: url('http://142.93.24.13/wp-content/uploads/2019/06/macri-vidal.jpg')">
+							<div class="hovered">
+								<div class="action-links">
+									<i class="fab fa-twitter"></i>
+									<i class="fab fa-facebook-f"></i>
+									<a href="#"><i class="fas fa-sign-out-alt"></i></a>
+									<i class="fas fa-heart"></i>
+								</div><!-- action-links -->
+								<div class="post-data">
+									<div class="post-category">
+										<h4>Espectaculo</h4>
+									</div>
+									<h3>Titulo</h3>
+									<span class="time-ago">HACE 2HS</span>
+								</div><!-- post-data -->
+							</div><!-- hovered -->
+						</div><!-- rendered-img -->
 						<div class="comentarios-noshare">
 							<div class="comment-icon">
 								<i class="far fa-comment-dots"></i>
