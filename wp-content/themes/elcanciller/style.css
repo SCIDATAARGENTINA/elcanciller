@@ -848,7 +848,7 @@ font-family: 'Playfair Display', serif;
     
     .hovered .action-links {
         color: #fff;
-        padding: 50px 0;
+        padding: 70px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -873,7 +873,7 @@ font-family: 'Playfair Display', serif;
         /* border-top: 10px solid #e7d117; */
         /* padding-left: 50px; */
         position: relative;
-        bottom: -17px;
+        bottom: -35%;
         /* left: -12px; */
         font-size: 16px;
         height: 40px;
@@ -894,6 +894,7 @@ font-family: 'Playfair Display', serif;
         display: flex;
         flex-direction: column;
         padding-left: 20px;
+        padding-bottom: 20px;
     }
     
     .post-data .post-title h3 {
