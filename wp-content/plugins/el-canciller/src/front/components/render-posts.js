@@ -19,6 +19,7 @@ let setTemplate = (post) => {
     let postRendered = document.createElement('div');
     let postDate = moment(post.date).fromNow();
     let postCategory = '';
+    let featuredImage = '';
 
     if (post.trending == 'si') {
         postRendered.classList.add('post-rendered', 'trending');
@@ -30,8 +31,12 @@ let setTemplate = (post) => {
         postCategory = post.category[0].name;
     }
 
+    if (post.featuredMedia.full) {
+        featuredImage = post.featuredMedia.medium_large.link;
+    }
 
-    postRendered.innerHTML += `<div class="rendered-img" style="background-image: url('')">
+
+    postRendered.innerHTML += `<div class="rendered-img" style="background-image: url('${featuredImage}')">
 							<div class="hovered">
 								<div class="action-links">
 									<i class="fab fa-twitter"></i>
