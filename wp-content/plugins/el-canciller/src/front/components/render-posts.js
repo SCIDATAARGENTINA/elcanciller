@@ -29,7 +29,7 @@ let setTemplate = (post) => {
         featured_image = post.featuredMedia.medium_large.source_url;
     }
 
-    postRendered.innerHTML += `<div class="rendered-img" style="background-image: url('${featured_image}')">
+    postRendered.innerHTML += `<div class="rendered-img" style="background-image: url('')">
 							<div class="hovered">
 								<div class="action-links">
 									<i class="fab fa-twitter"></i>
