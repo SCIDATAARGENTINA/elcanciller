@@ -23,7 +23,7 @@ let setTemplate = (post) => {
         template = '<div class="post-rendered"></div>';
     }
 
-    template.append('Hola');
+    template.innerHTML += 'Hola';
 
     console.log(template);
 
