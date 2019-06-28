@@ -26,7 +26,7 @@ let setTemplate = (post) => {
         postRendered.classList.add('post-rendered');
     }
 
-    if (post.category) {
+    if (post.category[0]) {
         postCategory = post.category[0].name;
     }
 
