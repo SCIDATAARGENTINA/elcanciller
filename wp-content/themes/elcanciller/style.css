@@ -850,6 +850,9 @@ font-family: 'Playfair Display', serif;
         transform: rotate(270deg);
         border-top: 5px solid #e7d117;
         padding-left: 30px;
+        position: absolute;
+        bottom: 0px;
+        left: -5px;
     }
     /* END POST RENDERED*/
     /* ---------------------------*/
