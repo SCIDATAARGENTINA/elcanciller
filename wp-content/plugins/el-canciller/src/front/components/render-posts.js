@@ -75,7 +75,7 @@ let renderTemplate = (postArr) => {
             randomArr = utils.shuffle(postArr);
 
             for (let post of randomArr) {
-                if (i > quantity) {
+                if (i < quantity) {
                     node.appendChild(setTemplate(post));
                 }
                 i++;
@@ -85,7 +85,7 @@ let renderTemplate = (postArr) => {
         } else {
 
             for (let post of postArr) {
-                if (i > quantity) {
+                if (i < quantity) {
                     node.appendChild(setTemplate(post));
                 }
                 i++;
