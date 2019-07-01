@@ -79,6 +79,7 @@ let renderTemplate = (postArr) => {
                     node.appendChild(setTemplate(post));
                 }
                 i++;
+                console.log(i);
             }
 
         } else {
@@ -88,6 +89,7 @@ let renderTemplate = (postArr) => {
                     node.appendChild(setTemplate(post));
                 }
                 i++;
+                console.log(i);
             }
 
         }
