@@ -751,6 +751,16 @@ font-family: 'Playfair Display', serif;
         opacity: 0;
     }
     
+    .comentarios.sin-comentarios {
+        -moz-transform: none;
+        -webkit-transform: none;
+        transform: none;
+        /* Apply animation to this element */
+        -moz-animation: none;
+        -webkit-animation: none;
+        animation: none;
+    }
+    
     .comentario {
         display: flex;
         align-items: center;
