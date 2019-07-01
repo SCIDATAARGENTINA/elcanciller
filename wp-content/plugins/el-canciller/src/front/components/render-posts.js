@@ -28,12 +28,13 @@ let setTemplate = (post) => {
 
     if (post.comments) {
         comments = post.comments;
-        comentarioTexto = comment.content.rendered;
+        comentarioTexto = post.comment.content.rendered;
+        console.log(comments);
         console.log(comentarioTexto);
         for (let comment of comments) {
             comentariosRendered.innerHTML += `<div class="comentario">
                                                 <span class="comment-author">
-                                                    ${comment.author_name}
+                                                    ${post.comment.author_name}
                                                 </span>
                                                 <span class="comment-text">
                                                     ${comentarioTexto}
