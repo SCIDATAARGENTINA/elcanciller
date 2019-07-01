@@ -26,7 +26,7 @@ let setTemplate = (post) => {
         postRendered.classList.add('post-rendered');
     }
 
-    if (post.comments) {
+    if (post.comments.id) {
         comments = post.comments;
         console.log(comments);
         comentarioTexto = post.comments.content.rendered;
