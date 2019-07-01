@@ -28,7 +28,7 @@ let setTemplate = (post) => {
 
     if (post.comments) {
         comments = post.comments;
-        comentarioTexto = post.comment.content.rendered;
+        comentarioTexto = post.comments.content.rendered;
         console.log(comments);
         console.log(comentarioTexto);
         for (let comment of comments) {
