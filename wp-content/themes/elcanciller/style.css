@@ -744,7 +744,6 @@ font-family: 'Playfair Display', serif;
         -webkit-transform: translateX(0%);
         transform: translateX(0%);
         opacity: 0;
-        visibility: hidden;
     }
     
     .comentarios.sin-comentarios {
