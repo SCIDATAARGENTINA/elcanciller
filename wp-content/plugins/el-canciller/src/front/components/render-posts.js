@@ -38,6 +38,7 @@ let setTemplate = (post) => {
                                                 </span>
                                            </div><!-- comentario -->`;
         }
+        console.log(comentariosTemplate);
     } else {
         console.log(comments[0]);
         comentariosTemplate = `<div class="comentario">
