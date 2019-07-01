@@ -17,6 +17,7 @@ let setTemplate = (post) => {
     let postDate = moment(post.date).fromNow();
     let postCategory = '';
     let featuredImage = '';
+    let postCategoryLink = '';
     let comments = 'No hay comentarios';
     let noComments = 'sin-comentarios';
     let comentariosTemplate = '';
@@ -52,6 +53,7 @@ let setTemplate = (post) => {
 
     if (post.category[0]) {
         postCategory = post.category[0].name;
+        postCategoryLink = post.category[0].link;
     }
 
     if (post.featuredMedia.full) {
@@ -68,12 +70,12 @@ let setTemplate = (post) => {
                                         </div><!-- action-links -->
                                         <div class="post-data">
                                             <div class="post-title">
-                                                <h3>${post.title}</h3>
+                                                <a href="${postCategoryLink}"><h3>${post.link}</h3></a>
                                                 <span class="time-ago">${postDate}</span>
                                             </div>
                                         </div><!-- post-data -->
                                         <div class="post-category">
-                                            <h4>${postCategory}</h4>
+                                            <a href="${postCategoryLink}"><h4>${postCategory}</h4></a>
                                         </div>
                                     </div><!-- hovered -->
                                 </div><!-- rendered-img -->`;
