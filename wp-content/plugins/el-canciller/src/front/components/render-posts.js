@@ -70,7 +70,7 @@ let setTemplate = (post) => {
                                         </div><!-- action-links -->
                                         <div class="post-data">
                                             <div class="post-title">
-                                                <a href="${postCategoryLink}"><h3>${post.link}</h3></a>
+                                                <a href="${post.link}"><h3>${post.title}</h3></a>
                                                 <span class="time-ago">${postDate}</span>
                                             </div>
                                         </div><!-- post-data -->
