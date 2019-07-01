@@ -864,6 +864,12 @@ font-family: 'Playfair Display', serif;
         bottom: -23px;
         left: -5px;
         z-index: 2;
+        opacity: 0;
+        transition: 300ms ease;
+    }
+    
+    .post-rendered:hover::before {
+        opacity: 1;
     }
     
     .post-rendered .rendered-img {
