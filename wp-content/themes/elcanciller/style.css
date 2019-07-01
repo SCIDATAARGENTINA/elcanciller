@@ -924,7 +924,7 @@ font-family: 'Playfair Display', serif;
         left: -122px;
     }
     
-    .hovered .post-category {
+    .hovered .post-category a {
         color: #c4afa1;
     }
     
