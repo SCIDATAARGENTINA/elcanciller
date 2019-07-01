@@ -41,6 +41,7 @@ let setTemplate = (post) => {
                                            </div><!-- comentario -->`;
         }
     } else {
+        console.log(comments[0]);
         comentariosRendered.innerHTML += `<div class="comentario">
                                                 <span class="comment-text">
                                                     ${comments[0]}
