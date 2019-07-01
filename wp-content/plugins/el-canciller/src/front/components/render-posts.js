@@ -28,6 +28,7 @@ let setTemplate = (post) => {
 
     if (post.comments) {
         comments = post.comments;
+        console.log(comments);
         for (let comment of comments) {
             comentariosRendered.innerHTML += `<div class="comentario">
                                                 <span class="comment-author">
