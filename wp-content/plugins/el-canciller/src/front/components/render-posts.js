@@ -32,7 +32,7 @@ let setTemplate = (post) => {
         let comentarioTexto = post.comments[0].content.rendered;
         for (let comment of comments) {
             noComments = '';
-            comentariosTemplate = `<div class="comentario">
+            comentariosTemplate += `<div class="comentario">
                                                 <span class="comment-author">
                                                     @${comment.author_name}
                                                 </span>
