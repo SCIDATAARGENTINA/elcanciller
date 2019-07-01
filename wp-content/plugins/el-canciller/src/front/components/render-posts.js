@@ -89,7 +89,7 @@ let setTemplate = (post) => {
 							</div><!-- comment-container -->
                         </div><!-- comentarios-noshare -->`;
 
-    console.log(templateContent);
+    postRendered.innerHTML += templateContent;
 
     return postRendered;
 
