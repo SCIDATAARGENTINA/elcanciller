@@ -39,9 +39,7 @@ let setTemplate = (post) => {
                                                 </span>
                                            </div><!-- comentario -->`;
         }
-        console.log(comentariosTemplate);
     } else {
-        console.log(comments[0]);
         comentariosTemplate = `<div class="comentario">
                                                 <span class="comment-text">
                                                     ${comments[0]}
@@ -56,9 +54,6 @@ let setTemplate = (post) => {
     if (post.featuredMedia.full) {
         featuredImage = post.featuredMedia.medium_large.source_url;
     }
-
-    console.log(comentariosTemplate);
-
 
     let templateContent = `<div class="rendered-img" style="background-image: url('${featuredImage}')">
                                     <div class="hovered">
