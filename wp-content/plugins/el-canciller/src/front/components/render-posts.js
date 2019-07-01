@@ -49,6 +49,7 @@ let setTemplate = (post) => {
                                                 </span>
                                            </div><!-- comentario -->`;
     }
+    console.log(comentariosRendered);
 
 
     postRendered.innerHTML += `<div class="rendered-img" style="background-image: url('${featuredImage}')">
