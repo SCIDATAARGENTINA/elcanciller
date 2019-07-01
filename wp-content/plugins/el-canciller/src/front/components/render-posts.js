@@ -42,7 +42,7 @@ let setTemplate = (post) => {
     } else {
         comentariosRendered.innerHTML += `<div class="comentario">
                                                 <span class="comment-text">
-                                                    ${comments}
+                                                    ${comments[0]}
                                                 </span>
                                            </div><!-- comentario -->`;
     }
