@@ -97,7 +97,7 @@ let setTemplate = (post) => {
 
 };
 
-let renderTemplate = (postArr) => {
+let renderTemplate = (postArr, rendered) => {
 
     let renderNodes = document.querySelectorAll('.render-posts');
 
@@ -130,6 +130,8 @@ let renderTemplate = (postArr) => {
         }
 
     }
+
+    rendered();
 
 };
 
