@@ -744,10 +744,6 @@ font-family: 'Playfair Display', serif;
         -moz-transform: translateX(0%);
         -webkit-transform: translateX(0%);
         transform: translateX(0%);
-        /* Apply animation to this element */
-        -moz-animation: example1 40s linear infinite;
-        -webkit-animation: example1 40s linear infinite;
-        animation: example1 40s linear infinite;
         opacity: 0;
     }
     
@@ -950,6 +946,10 @@ font-family: 'Playfair Display', serif;
     
     .post-rendered:hover .comentarios {
         opacity: 1;
+        /* Apply animation to this element */
+        -moz-animation: example1 40s linear infinite;
+        -webkit-animation: example1 40s linear infinite;
+        animation: example1 40s linear infinite;
     }
     
     .post-rendered:hover .hovered {
