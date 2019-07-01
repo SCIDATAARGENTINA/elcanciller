@@ -24,7 +24,6 @@ get_header();
 				<div class="render-posts grid2" data-quantity="4"></div>
 
 			</div><!-- content -->
-		<div class="render-posts grid3" data-quantity="9"></div>
 
 		</div><!-- inner container -->
 
