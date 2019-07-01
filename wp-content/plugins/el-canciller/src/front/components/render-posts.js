@@ -29,6 +29,22 @@ let setTemplate = (post) => {
 
     if (post.comments) {
         comments = post.comments;
+        for (let comment of comments) {
+            comentariosRendered.innerHTML += `<div class="comentario">
+                                                <span class="comment-author">
+                                                    ${comment.author_name}
+                                                </span>
+                                                <span class="comment-text">
+                                                    ${comment.content.rendered}
+                                                </span>
+                                           </div><!-- comentario -->`;
+        }
+    } else {
+        comentariosRendered.innerHTML += `<div class="comentario">
+                                                <span class="comment-text">
+                                                    ${comments}
+                                                </span>
+                                           </div><!-- comentario -->`;
     }
 
     if (post.category[0]) {
@@ -39,16 +55,6 @@ let setTemplate = (post) => {
         featuredImage = post.featuredMedia.medium_large.source_url;
     }
 
-    for (let comment of comments) {
-        comentariosRendered.innerHTML += `<div class="comentario">
-                                                <span class="comment-author">
-                                                    ${comment.author_name}
-                                                </span>
-                                                <span class="comment-text">
-                                                    ${comment.content.rendered}
-                                                </span>
-                                           </div><!-- comentario -->`;
-    }
     console.log(comentariosRendered);
 
 
