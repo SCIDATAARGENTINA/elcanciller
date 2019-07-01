@@ -951,11 +951,11 @@ font-family: 'Playfair Display', serif;
         -moz-animation: example1 40s linear infinite;
         -webkit-animation: example1 40s linear infinite;
         animation: example1 40s linear infinite;
+        visibility: visible;
     }
     
     .post-rendered:hover .hovered {
         opacity: 1;
-        visibility: visible;
     }
     
     .post-rendered:hover .hovered .action-links {
