@@ -19,6 +19,7 @@ let setTemplate = (post) => {
     let featuredImage = '';
     let comments = ['No hay comentarios'];
     let comentariosRendered = document.createElement('div').classList.add('comentarios');
+    let comentariosTemplate = '';
 
     if (post.trending == 'si') {
         postRendered.classList.add('post-rendered', 'trending');
@@ -30,7 +31,7 @@ let setTemplate = (post) => {
         comments = post.comments;
         comentarioTexto = post.comments.content.rendered;
         for (let comment of comments) {
-            comentariosRendered.innerHTML += `<div class="comentario">
+            comentariosTemplate = `<div class="comentario">
                                                 <span class="comment-author">
                                                     ${comment.author_name}
                                                 </span>
@@ -41,7 +42,7 @@ let setTemplate = (post) => {
         }
     } else {
         console.log(comments[0]);
-        comentariosRendered.innerHTML += `<div class="comentario">
+        comentariosTemplate = `<div class="comentario">
                                                 <span class="comment-text">
                                                     ${comments[0]}
                                                 </span>
@@ -56,7 +57,7 @@ let setTemplate = (post) => {
         featuredImage = post.featuredMedia.medium_large.source_url;
     }
 
-    console.log(comentariosRendered);
+    console.log(comentariosTemplate);
 
 
     let templateContent = `<div class="rendered-img" style="background-image: url('${featuredImage}')">
