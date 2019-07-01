@@ -18,8 +18,10 @@ let setTemplate = (post) => {
     let postCategory = '';
     let featuredImage = '';
     let comments = ['No hay comentarios'];
-    let comentariosRendered = document.createElement('div').classList.add('comentarios');
+    let comentariosRendered = document.createElement('div');
     let comentariosTemplate = '';
+
+    comentariosRendered.classList.add('comentarios')
 
     if (post.trending == 'si') {
         postRendered.classList.add('post-rendered', 'trending');
