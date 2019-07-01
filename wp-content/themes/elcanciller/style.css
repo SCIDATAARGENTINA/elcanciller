@@ -962,7 +962,7 @@ font-family: 'Playfair Display', serif;
         text-transform: uppercase;
     }
     
-    .post-rendered::after {
+    .post-rendered.trending::after {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         content: "\f1e2";
@@ -970,7 +970,7 @@ font-family: 'Playfair Display', serif;
         height: 50px;
         display: flex;
         justify-content: center;
-        align-self: center;
+        align-items: center;
         color: #fff;
         background: #e7d117;
         position: absolute;
