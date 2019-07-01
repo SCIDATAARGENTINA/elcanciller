@@ -110,8 +110,12 @@ let createPostArray = async(quantity) => {
 
     renderTemplate(postArray, () => {
         var loading = document.getElementsByClassName('loader');
-        console.log(loading);
-        loading.style.display = 'none';
+
+        for (let loader of loading) {
+
+            console.log(loader);
+            loader.style.display = 'none';
+        }
     });
 };
 

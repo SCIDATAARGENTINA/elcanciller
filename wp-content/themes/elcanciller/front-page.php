@@ -21,16 +21,16 @@ get_header();
 			</div><!-- sidebar -->
 			<div class="content">
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
+				<div class="loader">Loading...</div>
 				<div class="render-posts col-2" data-quantity="4">
-					<div class="loader">Loading...</div>
 				</div>
 
 			</div><!-- content -->
 
 		</div><!-- inner container -->
 		<div class="outer-container">
+			<div class="loader">Loading...</div>
 			<div class="render-posts col-3" data-quantity="9">
-				<div class="loader">Loading...</div>
 			</div>
 		</div><!-- outer-container -->
 
