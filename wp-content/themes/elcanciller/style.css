@@ -741,13 +741,13 @@ font-family: 'Playfair Display', serif;
         left: 0;
         transition: 300ms ease;
         /* Starting position */
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
         /* Apply animation to this element */
-        -moz-animation: example1 30s linear infinite;
-        -webkit-animation: example1 30s linear infinite;
-        animation: example1 30s linear infinite;
+        -moz-animation: example1 40s linear infinite;
+        -webkit-animation: example1 40s linear infinite;
+        animation: example1 40s linear infinite;
         opacity: 0;
     }
     
@@ -790,11 +790,11 @@ font-family: 'Playfair Display', serif;
     
     @keyframes example1 {
         0% {
-            -moz-transform: translateX(50%);
+            -moz-transform: translateX(0%);
             /* Firefox bug fix */
-            -webkit-transform: translateX(50%);
+            -webkit-transform: translateX(0%);
             /* Firefox bug fix */
-            transform: translateX(50%);
+            transform: translateX(0%);
         }
         100% {
             -moz-transform: translateX(-100%);
