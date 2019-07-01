@@ -18,7 +18,7 @@ let setTemplate = (post) => {
     let postCategory = '';
     let featuredImage = '';
     let comments = 'No hay comentarios';
-    let noComments = 'no-comments';
+    let noComments = 'sin-comentarios';
     console.log(post.comments);
 
     if (post.trending == 'si') {
