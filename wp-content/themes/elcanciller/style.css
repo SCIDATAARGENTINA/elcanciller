@@ -857,6 +857,7 @@ font-family: 'Playfair Display', serif;
         justify-content: flex-end;
         align-items: flex-start;
         padding: 10px;
+        opacity: 0;
     }
     
     .hovered .action-links {
@@ -921,6 +922,15 @@ font-family: 'Playfair Display', serif;
         font-size: 12px;
         font-family: 'Bree Serif', serif;
         text-transform: uppercase;
+    }
+    
+    .post-rendered:hover .commentarios {
+        opacity: 1;
+    }
+    /* HOVER EFFECT*/
+    
+    .post-rendered:hover .hovered {
+        opacity: 1;
     }
     /* END POST RENDERED*/
     /* ---------------------------*/
