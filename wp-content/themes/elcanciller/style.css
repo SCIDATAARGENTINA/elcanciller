@@ -803,6 +803,10 @@ font-family: 'Playfair Display', serif;
         margin-left: 10px;
     }
     
+    .comentario .comment-text p {
+        margin: 0px !important;
+    }
+    
     .comentarios-sharer .share-container {
         display: flex;
         justify-content: space-around;
