@@ -360,6 +360,7 @@ font-family: 'Playfair Display', serif;
     .inner.container,
     .outer-container {
         max-width: 900px;
+        margin: 0 auto;
     }
     
     .front-page-content.inner.container {
