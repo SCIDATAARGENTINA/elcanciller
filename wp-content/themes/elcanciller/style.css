@@ -835,10 +835,10 @@ font-family: 'Playfair Display', serif;
         width: 10px;
         content: '';
         background: #e7d117;
-        height: 100%;
+        height: 50%;
         position: absolute;
-        bottom: -5px;
-        left: 0px;
+        bottom: -23px;
+        left: -5px;
         z-index: 2;
     }
     
@@ -879,6 +879,7 @@ font-family: 'Playfair Display', serif;
         width: 100%;
         height: 100%;
         align-items: flex-end;
+        padding-left: 20px;
     }
     
     .hovered .post-category {
