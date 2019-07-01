@@ -859,7 +859,7 @@ font-family: 'Playfair Display', serif;
         align-items: flex-start;
         padding: 10px;
         opacity: 0;
-        transform: 300ms ease;
+        transition: 300ms ease;
     }
     
     .hovered .action-links {
