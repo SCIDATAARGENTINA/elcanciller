@@ -18,8 +18,6 @@ let setTemplate = (post) => {
     let postCategory = '';
     let featuredImage = '';
     let comments = ['No hay comentarios'];
-    let comentariosRendered = document.createElement('div');
-    let comentariosTemplate = '';
 
     comentariosRendered.classList.add('comentarios')
 
@@ -86,8 +84,10 @@ let setTemplate = (post) => {
 							<div class="comment-icon">
 								<i class="far fa-comment-dots"></i>
 							</div>
-							<div class="comment-container">
-								${comentariosRendered}
+                            <div class="comment-container">
+                                <div class="comentarios">
+                                     ${comentariosTemplate}
+                                </div><!-- comentarios -->
 							</div><!-- comment-container -->
                         </div><!-- comentarios-noshare -->`;
 
