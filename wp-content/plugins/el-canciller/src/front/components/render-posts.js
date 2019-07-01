@@ -13,7 +13,6 @@ moment.locale('es');
 
 let setTemplate = (post) => {
 
-    console.log(post);
     let postRendered = document.createElement('div');
     let postDate = moment(post.date).fromNow();
     let postCategory = '';
@@ -110,7 +109,6 @@ let renderTemplate = (postArr) => {
                     node.appendChild(setTemplate(post));
                 }
                 i++;
-                console.log(i);
             }
 
         } else {
@@ -120,7 +118,6 @@ let renderTemplate = (postArr) => {
                     node.appendChild(setTemplate(post));
                 }
                 i++;
-                console.log(i);
             }
 
         }
