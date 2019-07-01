@@ -18,6 +18,7 @@ let setTemplate = (post) => {
     let postCategory = '';
     let featuredImage = '';
     let comments = 'No hay comentarios';
+    let noComments = 'no-comments';
     console.log(post.comments);
 
     if (post.trending == 'si') {
@@ -30,6 +31,7 @@ let setTemplate = (post) => {
         comments = post.comments;
         let comentarioTexto = post.comments[0].content.rendered;
         for (let comment of comments) {
+            noComments = '';
             comentariosTemplate = `<div class="comentario">
                                                 <span class="comment-author">
                                                     @${comment.author_name}
@@ -80,7 +82,7 @@ let setTemplate = (post) => {
 								<i class="far fa-comment-dots"></i>
 							</div>
                             <div class="comment-container">
-                                <div class="comentarios">
+                                <div class="comentarios ${noComments}">
                                      ${comentariosTemplate}
                                 </div><!-- comentarios -->
 							</div><!-- comment-container -->
