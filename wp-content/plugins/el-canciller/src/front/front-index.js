@@ -102,6 +102,7 @@ let createPostArray = async(quantity) => {
             comments: postComments,
             trending: post.acf.trending
         };
+        console.log(postObject);
 
         postArray.push(postObject);
 
