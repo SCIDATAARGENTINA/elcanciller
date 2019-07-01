@@ -28,16 +28,14 @@ let setTemplate = (post) => {
 
     if (post.comments.id) {
         comments = post.comments;
-        console.log(comments);
         comentarioTexto = post.comments.content.rendered;
-        console.log(comentarioTexto);
         for (let comment of comments) {
             comentariosRendered.innerHTML += `<div class="comentario">
                                                 <span class="comment-author">
-                                                    ${post.comment.author_name}
+                                                    ${comment.author_name}
                                                 </span>
                                                 <span class="comment-text">
-                                                    ${comentarioTexto}
+                                                    ${post.comments.content.rendered}
                                                 </span>
                                            </div><!-- comentario -->`;
         }
@@ -61,7 +59,7 @@ let setTemplate = (post) => {
     console.log(comentariosRendered);
 
 
-    postRendered.innerHTML += `<div class="rendered-img" style="background-image: url('${featuredImage}')">
+    let templateContent = `<div class="rendered-img" style="background-image: url('${featuredImage}')">
                                     <div class="hovered">
                                         <div class="action-links">
                                             <i class="fab fa-twitter"></i>
@@ -81,7 +79,7 @@ let setTemplate = (post) => {
                                     </div><!-- hovered -->
                                 </div><!-- rendered-img -->`;
 
-    postRendered.innerHTML += `<div class="comentarios-noshare">
+    templateContent += `<div class="comentarios-noshare">
 							<div class="comment-icon">
 								<i class="far fa-comment-dots"></i>
 							</div>
@@ -89,6 +87,8 @@ let setTemplate = (post) => {
 								${comentariosRendered}
 							</div><!-- comment-container -->
                         </div><!-- comentarios-noshare -->`;
+
+    console.log(templateContent);
 
     return postRendered;
 
