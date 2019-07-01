@@ -11,8 +11,6 @@ var utils = require('../../utils/utils-index');
 require('moment/locale/es');
 moment.locale('es');
 
-
-
 let setTemplate = (post) => {
 
     console.log(post);
@@ -20,11 +18,17 @@ let setTemplate = (post) => {
     let postDate = moment(post.date).fromNow();
     let postCategory = '';
     let featuredImage = '';
+    let comments = ['No hay comentarios'];
+    let comentariosRendered = document.createElement('div').classList.add('comentarios');
 
     if (post.trending == 'si') {
         postRendered.classList.add('post-rendered', 'trending');
     } else {
         postRendered.classList.add('post-rendered');
+    }
+
+    if (post.comments) {
+        comments = post.comments;
     }
 
     if (post.category[0]) {
@@ -35,26 +39,46 @@ let setTemplate = (post) => {
         featuredImage = post.featuredMedia.medium_large.source_url;
     }
 
+    for (let comment of comments) {
+        comentariosRendered.innerHTML += `<div class="comentario">
+                                                <span class="comment-author">
+                                                    ${comment.author_name}
+                                                </span>
+                                                <span class="comment-text">
+                                                    ${comment.content.rendered}
+                                                </span>
+                                           </div><!-- comentario -->`;
+    }
+
 
     postRendered.innerHTML += `<div class="rendered-img" style="background-image: url('${featuredImage}')">
-							<div class="hovered">
-								<div class="action-links">
-									<i class="fab fa-twitter"></i>
-									<i class="fab fa-facebook-f"></i>
-									<a href="${post.link}"><i class="fas fa-sign-out-alt"></i></a>
-									<i class="fas fa-heart"></i>
-								</div><!-- action-links -->
-								<div class="post-data">
-									<div class="post-title">
-										<h3>${post.title}</h3>
-										<span class="time-ago">${postDate}</span>
-									</div>
-                                </div><!-- post-data -->
-                                <div class="post-category">
-                                    <h4>${postCategory}</h4>
-                                </div>
-							</div><!-- hovered -->
-						</div><!-- rendered-img -->`;
+                                    <div class="hovered">
+                                        <div class="action-links">
+                                            <i class="fab fa-twitter"></i>
+                                            <i class="fab fa-facebook-f"></i>
+                                            <a href="${post.link}"><i class="fas fa-sign-out-alt"></i></a>
+                                            <i class="fas fa-heart"></i>
+                                        </div><!-- action-links -->
+                                        <div class="post-data">
+                                            <div class="post-title">
+                                                <h3>${post.title}</h3>
+                                                <span class="time-ago">${postDate}</span>
+                                            </div>
+                                        </div><!-- post-data -->
+                                        <div class="post-category">
+                                            <h4>${postCategory}</h4>
+                                        </div>
+                                    </div><!-- hovered -->
+                                </div><!-- rendered-img -->`;
+
+    postRendered.innerHTML += `<div class="comentarios-noshare">
+							<div class="comment-icon">
+								<i class="far fa-comment-dots"></i>
+							</div>
+							<div class="comment-container">
+								${comentariosRendered}
+							</div><!-- comment-container -->
+                        </div><!-- comentarios-noshare -->`;
 
     return postRendered;
 
