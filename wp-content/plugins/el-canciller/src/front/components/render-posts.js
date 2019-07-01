@@ -45,14 +45,14 @@ let setTemplate = (post) => {
 									<i class="fas fa-heart"></i>
 								</div><!-- action-links -->
 								<div class="post-data">
-									<div class="post-category">
-										<h4>${postCategory}</h4>
-									</div>
 									<div class="post-title">
 										<h3>${post.title}</h3>
 										<span class="time-ago">${postDate}</span>
 									</div>
-								</div><!-- post-data -->
+                                </div><!-- post-data -->
+                                <div class="post-category">
+                                    <h4>${postCategory}</h4>
+                                </div>
 							</div><!-- hovered -->
 						</div><!-- rendered-img -->`;
 

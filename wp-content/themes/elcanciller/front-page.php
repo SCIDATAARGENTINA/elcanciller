@@ -32,14 +32,14 @@ get_header();
 									<i class="fas fa-heart"></i>
 								</div><!-- action-links -->
 								<div class="post-data">
-									<div class="post-category">
-										<h4>Espectaculo</h4>
-									</div>
 									<div class="post-title">
 										<h3>El nuevo disco de Beyonce, entre los nueve peores del año</h3>
 										<span class="time-ago">HACE 2HS</span>
 									</div>
 								</div><!-- post-data -->
+								<div class="post-category">
+									<h4>Espectaculo</h4>
+								</div>
 							</div><!-- hovered -->
 						</div><!-- rendered-img -->
 						<div class="comentarios-noshare">
