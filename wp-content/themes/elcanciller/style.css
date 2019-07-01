@@ -828,6 +828,17 @@ font-family: 'Playfair Display', serif;
     
     .post-rendered {
         height: 300px;
+        position: relative;
+    }
+    
+    .post-rendered::before {
+        height: 10px;
+        content: '';
+        background: #e7d117;
+        width: 100%;
+        position: absolute;
+        bottom: -5px;
+        left: 0px;
     }
     
     .post-rendered .rendered-img {
@@ -878,16 +889,6 @@ font-family: 'Playfair Display', serif;
         font-size: 16px;
         height: 40px;
         width: 40px;
-    }
-    
-    .post-data .post-category::before {
-        height: 10px;
-        content: '';
-        background: #e7d117;
-        width: 215%;
-        position: absolute;
-        top: -5px;
-        left: -120%;
     }
     
     .post-data .post-title {
