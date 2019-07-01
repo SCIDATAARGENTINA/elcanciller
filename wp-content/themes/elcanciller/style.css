@@ -832,6 +832,10 @@ font-family: 'Playfair Display', serif;
         margin-bottom: 50px;
     }
     
+    .post-rendered * {
+        transition: 300ms ease;
+    }
+    
     .post-rendered::before {
         width: 10px;
         content: '';
@@ -871,6 +875,9 @@ font-family: 'Playfair Display', serif;
         width: 100%;
         position: relative;
         top: 50px;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: 300ms ease;
     }
     
     .hovered .action-links i {
@@ -925,13 +932,18 @@ font-family: 'Playfair Display', serif;
         font-family: 'Bree Serif', serif;
         text-transform: uppercase;
     }
+    /* HOVER EFFECT*/
     
     .post-rendered:hover .comentarios {
         opacity: 1;
     }
-    /* HOVER EFFECT*/
     
     .post-rendered:hover .hovered {
+        opacity: 1;
+    }
+    
+    .post-rendered:hover .hovered .action-links {
+        transform: translateY(0px);
         opacity: 1;
     }
     /* END POST RENDERED*/
