@@ -32,7 +32,7 @@ let setTemplate = (post) => {
         for (let comment of comments) {
             comentariosTemplate = `<div class="comentario">
                                                 <span class="comment-author">
-                                                    ${comment.author_name}
+                                                    @${comment.author_name}
                                                 </span>
                                                 <span class="comment-text">
                                                     ${comentarioTexto}
