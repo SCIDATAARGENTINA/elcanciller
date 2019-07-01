@@ -35,7 +35,7 @@ let setTemplate = (post) => {
                                                     ${comment.author_name}
                                                 </span>
                                                 <span class="comment-text">
-                                                    ${post.comments.content.rendered}
+                                                    ${comment.content.rendered}
                                                 </span>
                                            </div><!-- comentario -->`;
         }
