@@ -357,7 +357,8 @@ font-family: 'Playfair Display', serif;
     /*--------- FRONT PAGE */
     /* ---------------------------*/
     
-    .inner.container {
+    .inner.container,
+    .outer-container {
         max-width: 900px;
     }
     

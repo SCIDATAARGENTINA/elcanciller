@@ -26,9 +26,9 @@ get_header();
 			</div><!-- content -->
 
 		</div><!-- inner container -->
-		
-		<div class="render-posts col-3" data-quantity="9"></div>
-
+		<div class="outer-container">
+			<div class="render-posts col-3" data-quantity="9"></div>
+		</div><!-- outer-container -->
 
 	</main><!-- #main -->
 </section><!-- #primary -->
