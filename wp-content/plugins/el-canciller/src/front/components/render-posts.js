@@ -17,7 +17,7 @@ let setTemplate = (post) => {
     let postDate = moment(post.date).fromNow();
     let postCategory = '';
     let featuredImage = '';
-    let comments = ['No hay comentarios'];
+    let comments = 'No hay comentarios';
     console.log(post.comments);
 
     if (post.trending == 'si') {
@@ -26,24 +26,23 @@ let setTemplate = (post) => {
         postRendered.classList.add('post-rendered');
     }
 
-    if (post.comments[0].id) {
+    if (post.comments[0]) {
         comments = post.comments;
         let comentarioTexto = post.comments[0].content.rendered;
-        console.log(comentarioTexto);
         for (let comment of comments) {
             comentariosTemplate = `<div class="comentario">
                                                 <span class="comment-author">
                                                     ${comment.author_name}
                                                 </span>
                                                 <span class="comment-text">
-                                                    ${comment.content.rendered}
+                                                    ${comentarioTexto}
                                                 </span>
                                            </div><!-- comentario -->`;
         }
     } else {
         comentariosTemplate = `<div class="comentario">
                                                 <span class="comment-text">
-                                                    ${comments[0]}
+                                                    ${comments}
                                                 </span>
                                            </div><!-- comentario -->`;
     }
