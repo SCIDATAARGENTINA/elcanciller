@@ -78,6 +78,7 @@ let renderTemplate = (postArr) => {
                 if (i > quantity) {
                     node.appendChild(setTemplate(post));
                 }
+                i++;
             }
 
         } else {
@@ -86,7 +87,7 @@ let renderTemplate = (postArr) => {
                 if (i > quantity) {
                     node.appendChild(setTemplate(post));
                 }
-
+                i++;
             }
 
         }
