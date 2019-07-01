@@ -63,6 +63,7 @@ get_header();
 						</div><!-- comentarios-noshare -->
 					</div><!-- post-rendered -->
 				</div>
+				<hr>
 				<div class="render-posts" data-quantity="9"></div>
 
 			</div><!-- content -->
