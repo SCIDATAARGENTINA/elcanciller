@@ -844,6 +844,7 @@ font-family: 'Playfair Display', serif;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
+        padding: 10px;
     }
     
     .hovered .action-links {
@@ -892,8 +893,7 @@ font-family: 'Playfair Display', serif;
     .post-data .post-title {
         display: flex;
         flex-direction: column;
-        padding-left: 20px;
-        padding-bottom: 20px;
+        margin-left: 30px;
     }
     
     .post-data .post-title h3 {
@@ -915,6 +915,7 @@ font-family: 'Playfair Display', serif;
         color: #c4afa1;
         font-size: 12px;
         font-family: 'Bree Serif', serif;
+        text-transform: uppercase;
     }
     /* END POST RENDERED*/
     /* ---------------------------*/
