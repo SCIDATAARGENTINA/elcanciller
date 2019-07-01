@@ -18,6 +18,7 @@ let setTemplate = (post) => {
     let postCategory = '';
     let featuredImage = '';
     let comments = ['No hay comentarios'];
+    console.log(post.comments);
 
     if (post.trending == 'si') {
         postRendered.classList.add('post-rendered', 'trending');
