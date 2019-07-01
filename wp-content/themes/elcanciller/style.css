@@ -861,11 +861,13 @@ font-family: 'Playfair Display', serif;
     
     .hovered .action-links {
         color: #fff;
-        padding: 70px 0;
+        padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
+        position: relative;
+        top: 50px;
     }
     
     .hovered .action-links i {
