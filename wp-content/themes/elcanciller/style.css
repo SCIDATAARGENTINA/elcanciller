@@ -826,16 +826,17 @@ font-family: 'Playfair Display', serif;
     /*--------- RENDER POSTS */
     /* ---------------------------*/
     
-    .render-posts.grid2 {
+    .render-posts {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
     }
     
-    .render-posts.grid3 {
-        display: grid;
+    .render-posts.col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .render-posts.col-3 {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
     }
     /* ---------------------------*/
     /*--------- POST RENDERED */

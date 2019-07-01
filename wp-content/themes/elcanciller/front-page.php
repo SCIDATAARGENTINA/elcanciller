@@ -21,7 +21,7 @@ get_header();
 			</div><!-- sidebar -->
 			<div class="content">
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
-				<div class="render-posts" data-quantity="4"></div>
+				<div class="render-posts col-2" data-quantity="4"></div>
 
 			</div><!-- content -->
 
