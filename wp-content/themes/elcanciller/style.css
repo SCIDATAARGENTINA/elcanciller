@@ -1227,17 +1227,17 @@ button {
 
 /* ---------------------------*/
 
-.videos {
+.video {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.videos .player-icon {
+.video .player-icon {
     width: 50px;
 }
 
-.videos .player-icon img {
+.video .player-icon img {
     width: 100%;
     height: 100%;
     ;
