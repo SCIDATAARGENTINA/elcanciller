@@ -29,6 +29,7 @@ get_header();
 
 		</div><!-- inner container -->
 		<div class="outer-container">
+			<?php get_template_part('template-parts/sections/section', 'instagram') ?>
 			<div class="loader">Loading...</div>
 			<div class="render-posts col-3" data-quantity="9">
 			</div>
