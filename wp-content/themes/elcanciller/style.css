@@ -1222,6 +1222,34 @@ button {
 /* ---------------------------*/
 
 
+/*--------- VIDEOS */
+
+
+/* ---------------------------*/
+
+.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos .player-icon {
+    width: 50px;
+}
+
+.videos .player-icon img {
+    width: 100%;
+    height: 100%;
+    ;
+}
+
+
+/*VIDEOS END*/
+
+
+/* ---------------------------*/
+
+
 /*--------- FOOTER */
 
 
