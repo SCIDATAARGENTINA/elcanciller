@@ -26,7 +26,7 @@
             </div><!-- end videos-title -->
             <div class="videos-list">
                 
-            </div><!-- end logo -->
+            </div><!-- end videos-list -->
         </div><!-- end profile data -->
     </div><!-- videos-title-list -->
 
@@ -41,6 +41,8 @@
                         $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
                         $thumbnail_id = get_post_thumbnail_id($post->ID);
                         $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                        $categories = get_categories();
+                        $categorylink = get_category_link( $categories[0]->term_id )
                         ?>
                         
                         <div id="video-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="video popup-video" style="background-image: url('<?php echo $featured_img_url ?>');">
@@ -49,7 +51,18 @@
                             </div><!-- player icon -->
                         </div><!-- video -->
                         <div id="video-popup-<?php echo $post->ID ?>" class="player-content mfp-hide">
-                                <?php echo get_the_content(); ?>
+                        <div class="popup-content">
+                            <div class="videos-title">
+                                <div class="videos-pic">
+                                    <a href="#"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-logo.svg" alt="El Canciller - Videos"></a>
+                                </div><!-- end videos-pic -->
+                                <div class="videos-data">
+                                    <h4><a href="<?php echo $categorylink ?>"><?php echo $categories[0]->name ?></a></h4>
+                                    <a href="#"><p>elcancillercom/videos/</p></a>
+                                </div><!-- end videos-data -->
+                            </div><!-- end videos-title -->
+                            <?php echo get_the_content(); ?>
+                        </div>
                         </div>
 
                     <?php 
