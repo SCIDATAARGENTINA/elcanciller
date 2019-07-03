@@ -59,7 +59,7 @@
                     <?php
                     }
                     // Restore original Post Data
-                     ?> 
+                    wp_reset_query(); ?> 
             </div><!-- end videos-list -->
         </div><!-- end profile data -->
     </div><!-- videos-title-list -->
