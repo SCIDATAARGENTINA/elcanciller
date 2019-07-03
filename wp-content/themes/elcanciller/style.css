@@ -393,6 +393,7 @@ input:-internal-autofill-selected {
 
 .front-page-content.inner.container {
     display: flex;
+    margin-bottom: 50px;
 }
 
 .inner.container .sidebar {
@@ -423,6 +424,7 @@ input:-internal-autofill-selected {
 .trending-post {
     display: flex;
     border-bottom: 2px solid #ccc;
+    margin-bottom: 50px;
 }
 
 .trending-post .category {
@@ -908,6 +910,7 @@ button {
 .render-posts {
     display: grid;
     grid-gap: 30px;
+    margin-bottom: 50px;
 }
 
 .render-posts.col-2 {
@@ -1107,6 +1110,7 @@ button {
     grid-template-columns: 2fr 3fr;
     padding: 30px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 .instagram-section::before {
@@ -1175,6 +1179,7 @@ button {
     display: grid;
     grid-template-columns: 2fr 3fr;
     padding: 30px;
+    margin-bottom: 50px;
 }
 
 .videos-section::before {
