@@ -1256,6 +1256,11 @@ button {
     cursor: pointer;
 }
 
+.mfp-content .popup-content {
+    background: #2d2d2d;
+    margin: 0 auto;
+}
+
 
 /*VIDEOS END*/
 
