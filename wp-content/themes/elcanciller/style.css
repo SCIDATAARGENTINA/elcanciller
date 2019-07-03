@@ -1172,6 +1172,9 @@ button {
     background: #edede6;
     border: 2px solid #e7d117;
     position: relative;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 30px;
 }
 
 .videos-section::before {
