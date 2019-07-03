@@ -1191,7 +1191,12 @@ button {
     display: flex;
 }
 
-.videos-pic {}
+.videos-pic {
+    display: block;
+    width: 50px;
+    box-sizing: content-box;
+    padding: 10px;
+}
 
 
 /* ---------------------------*/
