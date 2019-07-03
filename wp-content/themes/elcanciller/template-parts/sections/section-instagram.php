@@ -25,7 +25,7 @@
             </div><!-- end data -->
         </div><!-- end instagram profile -->
         <div class="instagram-logo">
-                <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/instagram-section-logo.png " alt="Instagram - El Canciller Live">
+            <a href="https://www.instagram.com/elcancillerlive/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/instagram-section-logo.png " alt="Instagram - El Canciller Live"></a>
         </div><!-- end logo -->
     </div><!-- end profile data -->
     <div class="feed"><?php echo do_shortcode('[instagram-feed]'); ?></div>
