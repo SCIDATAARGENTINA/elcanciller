@@ -1020,6 +1020,11 @@ font-family: 'Playfair Display', serif;
         align-items: flex-start;
         margin-bottom: 10px;
     }
+    
+    .instagram-section .profile-data {
+        display: flex;
+        flex-direction: column;
+    }
     /* SECTION INSTAGRAM END*/
     /* ---------------------------*/
     /*--------- FOOTER */
