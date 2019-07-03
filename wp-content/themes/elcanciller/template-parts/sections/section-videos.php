@@ -43,10 +43,13 @@
                         $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                         ?>
                         
-                        <div class="video" style="background-image: url('<?php echo $featured_img_url ?>');">
+                        <div id="video-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="video popup-video" style="background-image: url('<?php echo $featured_img_url ?>');">
                             <div class="player-icon">
                                 <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-icon.svg" alt="<?php echo $alt ?>">
                             </div><!-- player icon -->
+                            <div id="video-popup-<?php echo $post->ID ?>" class="player-content mfp-hide">
+                                <?php echo get_the_content(); ?>
+                            </div>
                         </div><!-- video -->
 
                     <?php 

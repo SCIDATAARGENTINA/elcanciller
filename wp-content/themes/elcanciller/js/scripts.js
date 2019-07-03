@@ -68,6 +68,19 @@ jQuery(document).ready(function($) {
 
     /* SLICK CARROUSEL CANCILELR AM END*/
 
+    /*MAGINIFIC POPUP VIDEOS*/
 
+    $('.popup-video').click(function() {
+        var popupContent = $(this).find('.player-content').html();
+        console.log(popupContent);
+        $.magnificPopup.open({
+            items: {
+                src: popupContent,
+                type: 'inline'
+            }
+        });
+    });
+
+    /*MAGINIFIC POPUP VIDEOS END*/
 
 });
