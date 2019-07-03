@@ -176,7 +176,7 @@ function crunchify_create_deals_custom_taxonomy() {
     'menu_name' => __( 'Categorias' ),
   ); 	
  
-  register_taxonomy('categoria_videos',array('videos'), array(
+  register_taxonomy('categoria_videos',array('video'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
