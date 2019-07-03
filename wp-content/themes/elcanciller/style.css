@@ -1198,6 +1198,15 @@ button {
     padding: 10px;
 }
 
+.videos-data h4 {
+    margin: 0px;
+    font-size: 14px;
+    display: inline-block;
+    background: #ff4353;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
 
 /* ---------------------------*/
 
