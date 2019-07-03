@@ -71,7 +71,9 @@ jQuery(document).ready(function($) {
     /*MAGINIFIC POPUP VIDEOS*/
 
     $('.popup-video').each(function() {
-        var popupContent = $(this).find('.player-content').html();
+        var id = $(this).attr('data-id');
+        var popupContent = ('#video-popup-' + id + '').html();
+        console.log(popupContent);
         $(this).magnificPopup({
             items: {
                 src: popupContent,

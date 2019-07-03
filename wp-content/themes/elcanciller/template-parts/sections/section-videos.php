@@ -47,10 +47,10 @@
                             <div class="player-icon">
                                 <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-icon.svg" alt="<?php echo $alt ?>">
                             </div><!-- player icon -->
-                            <div id="video-popup-<?php echo $post->ID ?>" class="player-content mfp-hide">
-                                <?php echo get_the_content(); ?>
-                            </div>
                         </div><!-- video -->
+                        <div id="video-popup-<?php echo $post->ID ?>" class="player-content mfp-hide">
+                                <?php echo get_the_content(); ?>
+                        </div>
 
                     <?php 
                     }
