@@ -70,11 +70,9 @@ jQuery(document).ready(function($) {
 
     /*MAGINIFIC POPUP VIDEOS*/
 
-    $('.popup-video').click(function() {
+    $('.popup-video').each(function() {
         var popupContent = $(this).find('.player-content').html();
-        console.log(popupContent);
-        $(this).maginificPopup();
-        $(this).magnificPopup.open({
+        $(this).magnificPopup({
             items: {
                 src: popupContent,
                 type: 'inline'
