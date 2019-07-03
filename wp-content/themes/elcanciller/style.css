@@ -1195,11 +1195,7 @@ button {
     display: block;
     width: 50px;
     box-sizing: content-box;
-    padding: 10px;
-}
-
-.videos-data {
-    margin-top: 20px;
+    padding-right: 20px;
 }
 
 .videos-data h4 {
