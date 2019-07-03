@@ -20,7 +20,7 @@
                     <a href="https://www.instagram.com/elcancillerlive/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-logo.svg" alt="El CancillerVideos"></a>
                 </div><!-- end videos-pic -->
                 <div class="videos-data">
-                    <h4><a href="https://www.instagram.com/elcancillerlive/">Streaming</a></h4>
+                    <h4><a href="#">Streaming</a></h4>
                     <a href="#"><p>elcancillercom/videos/</p></a>
                 </div><!-- end videos-data -->
             </div><!-- end videos-title -->
