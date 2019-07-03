@@ -84,7 +84,9 @@ jQuery(document).ready(function($) {
 
             // Class that is added to popup wrapper and background
             // make it unique to apply your CSS animations just to this exact popup
-            mainClass: 'mfp-fade'
+            mainClass: 'mfp-fade',
+            closeBtnInside: true,
+            showCloseBtn: true
         });
     });
 
