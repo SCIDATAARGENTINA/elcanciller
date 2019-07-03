@@ -41,8 +41,8 @@
                         $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
                         $thumbnail_id = get_post_thumbnail_id($post->ID);
                         $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                        $categories = get_the_category();
-                        $categorylink = get_category_link( $categories[0]->term_id )
+                        $categories = get_the_terms( $post->ID , array( 'categoria_videos') );
+                        $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
                         ?>
                         
                         <div id="video-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="video popup-video" style="background-image: url('<?php echo $featured_img_url ?>');">
@@ -57,7 +57,7 @@
                                     <a href="#"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-logo.svg" alt="El Canciller - Videos"></a>
                                 </div><!-- end videos-pic -->
                                 <div class="videos-data">
-                                    <h4><a href="<?php echo $categorylink ?>"><?php echo $categories[0]->name ?></a></h4>
+                                    <h4><a href="<?php echo $term_link ?>"><?php echo $categories[0]->name ?></a></h4>
                                     <a href="#"><p>elcancillercom/videos/</p></a>
                                 </div><!-- end videos-data -->
                             </div><!-- end videos-title -->
