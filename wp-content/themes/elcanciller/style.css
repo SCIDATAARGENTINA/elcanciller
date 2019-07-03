@@ -1238,6 +1238,8 @@ button {
     justify-content: center;
     align-items: center;
     height: 250px;
+    background-size: cover;
+    background-position: center center;
 }
 
 .video .player-icon {
