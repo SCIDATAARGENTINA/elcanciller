@@ -1275,6 +1275,13 @@ button {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
+.popup-content .videos-data,
+.popup-content .videos-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*VIDEOS END*/
 
