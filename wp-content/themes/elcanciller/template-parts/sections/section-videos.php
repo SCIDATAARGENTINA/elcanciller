@@ -26,12 +26,12 @@
             </div><!-- end videos-title -->
             <div class="videos-list">
                 <?php $args = array(
-                        'posts_per_page' => 2,
+                        'posts_per_page' => -1,
                         'post_type' => 'video'
                     );
-                    $query = new WP_Query( $args );
-                    while( $query->have_posts() ) {
-                        $query->the_post();
+                    $query1 = new WP_Query( $args );
+                    while( $query1->have_posts() ) {
+                        $query1->the_post();
                         $categories = get_the_terms( $post->ID , array( 'categoria_videos') );
                         $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
                         ?>
