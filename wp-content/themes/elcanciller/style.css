@@ -1211,7 +1211,7 @@ button {
     border-radius: 20px;
 }
 
-.videos-data h4 {
+.videos-data h4 a {
     color: #Fff;
 }
 
