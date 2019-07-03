@@ -1198,13 +1198,21 @@ button {
     padding: 10px;
 }
 
+.videos-data {
+    margin-top: 20px;
+}
+
 .videos-data h4 {
     margin: 0px;
     font-size: 14px;
     display: inline-block;
     background: #ff4353;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border-radius: 20px;
+}
+
+.videos-data h4 {
+    color: #Fff;
 }
 
 .videos-data a p {
