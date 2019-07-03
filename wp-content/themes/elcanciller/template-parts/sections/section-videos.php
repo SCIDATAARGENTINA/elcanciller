@@ -58,6 +58,7 @@
                                 </div><!-- end videos-pic -->
                                 <div class="videos-data">
                                     <h4><a href="<?php echo $term_link ?>"><?php echo $categories[0]->name ?></a></h4>
+                                    <h3><?php the_title(); ?></h3>
                                 </div><!-- end videos-data -->
                             </div><!-- end videos-title -->
                             <?php echo get_the_content(); ?>
