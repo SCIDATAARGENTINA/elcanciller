@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
         var popupContent = $(this).find('.player-content').html();
         console.log(popupContent);
         $(this).maginificPopup();
-        $.magnificPopup.open({
+        $(this).magnificPopup.open({
             items: {
                 src: popupContent,
                 type: 'inline'
