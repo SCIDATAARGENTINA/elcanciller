@@ -1166,6 +1166,25 @@ button {
 /* SECTION INSTAGRAM END*/
 
 
+/*VIDEOS SECTION*/
+
+.videos-section {
+    background: #edede6;
+    border: 2px solid #e7d117;
+    position: relative;
+}
+
+.videos-section::before {
+    content: '';
+    width: 90%;
+    top: -5px;
+    left: 5%;
+    height: 10px;
+    background: #ff4353;
+    position: absolute;
+}
+
+
 /* ---------------------------*/
 
 
