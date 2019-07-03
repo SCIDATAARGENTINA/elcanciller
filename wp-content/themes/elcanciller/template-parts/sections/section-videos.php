@@ -58,7 +58,6 @@
                                 </div><!-- end videos-pic -->
                                 <div class="videos-data">
                                     <h4><a href="<?php echo $term_link ?>"><?php echo $categories[0]->name ?></a></h4>
-                                    <a href="#"><p>elcancillercom/videos/</p></a>
                                 </div><!-- end videos-data -->
                             </div><!-- end videos-title -->
                             <?php echo get_the_content(); ?>
