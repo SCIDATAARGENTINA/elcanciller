@@ -137,7 +137,7 @@ function custom_post_type_videos()
     'label'                 => __('Videos', 'elcanciller'),
     'description'           => __('Modulo de administración de Videos', 'elcanciller'),
     'labels'                => $labels,
-    'supports'              => array('title', 'editor', 'author', 'thumbnail'),
+    'supports'              => array('title', 'editor', 'thumbnail'),
     'taxonomies'            => array(),
     'hierarchical'          => false,
     'public'                => true,
