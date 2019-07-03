@@ -38,7 +38,7 @@
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
                         $query->the_post(); 
-                        $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+                        $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                         $thumbnail_id = get_post_thumbnail_id($post->ID);
                         $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                         ?>
