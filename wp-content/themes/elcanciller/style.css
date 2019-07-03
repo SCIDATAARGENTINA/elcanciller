@@ -1006,7 +1006,8 @@ font-family: 'Playfair Display', serif;
     .instagram-section {
         background: #2d2d2d;
         display: grid;
-        grid-template-columns: 2fr 3fr
+        grid-template-columns: 2fr 3fr;
+        padding: 30px;
     }
     /* SECTION INSTAGRAM END*/
     /* ---------------------------*/
