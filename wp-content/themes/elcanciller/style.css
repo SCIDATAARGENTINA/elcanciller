@@ -1109,6 +1109,7 @@ button {
 }
 
 .instagram-section::before {
+    content: '';
     width: 80%;
     top: -5px;
     height: 10px;
