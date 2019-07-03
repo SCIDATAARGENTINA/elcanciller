@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
 
     $('.popup-video').each(function() {
         var id = $(this).attr('data-id');
-        var popupContent = ('#video-popup-' + id + '').html();
+        var popupContent = $('#video-popup-' + id + '').html();
         console.log(popupContent);
         $(this).magnificPopup({
             items: {
