@@ -1111,9 +1111,9 @@ button {
 
 .instagram-section::before {
     content: '';
-    width: 80%;
+    width: 90%;
     top: -5px;
-    left: 10%;
+    left: 5%;
     height: 10px;
     background: -moz-linear-gradient(45deg, rgba(255, 214, 117, 1) 0%, rgba(255, 146, 50, 1) 21%, rgba(255, 87, 46, 1) 40%, rgba(255, 1, 116, 1) 56%, rgba(199, 4, 162, 1) 71%, rgba(126, 22, 211, 1) 85%, rgba(51, 59, 241, 1) 100%);
     /* ff3.6+ */
