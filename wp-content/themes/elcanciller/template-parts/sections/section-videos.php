@@ -33,7 +33,7 @@
     <div class="videos-feed">
         <?php $args = array(
                         'posts_per_page' => 2,
-                        'post_type' => 'videos'
+                        'post_type' => 'video'
                     );
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
