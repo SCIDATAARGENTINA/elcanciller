@@ -73,6 +73,7 @@ jQuery(document).ready(function($) {
     $('.popup-video').click(function() {
         var popupContent = $(this).find('.player-content').html();
         console.log(popupContent);
+        $(this).maginificPopup();
         $.magnificPopup.open({
             items: {
                 src: popupContent,
