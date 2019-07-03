@@ -1237,10 +1237,11 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 250px;
 }
 
 .video .player-icon {
-    width: 50px;
+    width: 80px;
 }
 
 .video .player-icon img {
