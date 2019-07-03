@@ -1257,7 +1257,7 @@ button {
 }
 
 .mfp-content {
-    width: auto;
+    width: auto !important;
     margin: 0 auto;
 }
 
