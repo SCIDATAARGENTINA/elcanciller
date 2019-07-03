@@ -1275,8 +1275,24 @@ button {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-.popup-content .videos-data,
-.popup-content .videos-pic {}
+.popup-content {}
+
+.popup-content .videos-pic {
+    width: 66px;
+}
+
+.popup-content .videos-pic a {
+    display: block
+}
+
+.popup-content .videos-pic img {
+    width: 100%;
+}
+
+.popup-content h3 {
+    margin: 0px;
+    font-size: 20px;
+}
 
 
 /*VIDEOS END*/
