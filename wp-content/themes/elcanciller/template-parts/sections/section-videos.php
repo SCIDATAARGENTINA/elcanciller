@@ -41,7 +41,7 @@
                         $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
                         $thumbnail_id = get_post_thumbnail_id($post->ID);
                         $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                        $categories = get_categories();
+                        $categories = get_the_category();
                         $categorylink = get_category_link( $categories[0]->term_id )
                         ?>
                         
