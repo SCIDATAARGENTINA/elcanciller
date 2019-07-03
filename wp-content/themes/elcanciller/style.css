@@ -1217,6 +1217,9 @@ button {
 
 .videos-data a p {
     margin: 0px;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: #000;
 }
 
 
