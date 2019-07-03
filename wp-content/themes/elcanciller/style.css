@@ -1127,7 +1127,7 @@ button {
     /* w3c */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#333bf1', endColorstr='#ffd675', GradientType=1);
     /* ie6-9 */
-    position: relative;
+    position: absolute;
 }
 
 .instagram-section .instagram-data h4 a {
