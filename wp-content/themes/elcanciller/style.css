@@ -997,6 +997,19 @@ font-family: 'Playfair Display', serif;
     }
     /* END POST RENDERED*/
     /* ---------------------------*/
+    /*--------- SECTIONS */
+    /* ---------------------------*/
+    /* ---------------------------*/
+    /*--------- SECTION INSTAGRAM */
+    /* ---------------------------*/
+    
+    .section-instagram {
+        background: #2d2d2d;
+        display: grid;
+        grid-template-columns: 1fr 3fr
+    }
+    /* SECTION INSTAGRAM END*/
+    /* ---------------------------*/
     /*--------- FOOTER */
     /* ---------------------------*/
     
