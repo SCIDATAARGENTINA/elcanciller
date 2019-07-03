@@ -22,6 +22,9 @@
             <p>El Canciller Live</p>
             <span><i class="far fa-envelope"></i>ms@elcanciller.com</span>
         </div>
+        <div class="instagram-logo">
+            <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/instagram-section-logo.png " alt="Instagram - El Canciller Live">
+        </div>
     </div><!-- end instagram profile -->
     <div class="feed"><?php echo do_shortcode('[instagram-feed]'); ?></div>
 </div><!-- end instagram widget container -->

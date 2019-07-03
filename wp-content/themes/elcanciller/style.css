@@ -1010,8 +1010,15 @@ font-family: 'Playfair Display', serif;
         padding: 30px;
     }
     
-    .instagram-section .instagram-data h4 {
-        color: #e7d117;
+    .instagram-section .instagram-data h4 a {
+        color: #e7d117 !important;
+    }
+    
+    .instagram-section .instagram-profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 10px;
     }
     /* SECTION INSTAGRAM END*/
     /* ---------------------------*/
