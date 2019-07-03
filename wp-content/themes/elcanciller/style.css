@@ -1276,11 +1276,7 @@ button {
 }
 
 .popup-content .videos-data,
-.popup-content .videos-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.popup-content .videos-pic {}
 
 
 /*VIDEOS END*/
