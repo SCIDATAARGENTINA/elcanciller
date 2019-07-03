@@ -156,6 +156,36 @@ function custom_post_type_videos()
 }
 add_action('init', 'custom_post_type_videos', 0);
 
+//Crear taxonomia personalizada para videos.
+add_action( 'init', 'crunchify_create_deals_custom_taxonomy', 0 );
+ 
+//Crear taxonomia personalizada para videos.
+function crunchify_create_deals_custom_taxonomy() {
+ 
+  $labels = array(
+    'name' => _x( 'Categorias', 'taxonomy general name' ),
+    'singular_name' => _x( 'Categoria', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Buscar categorias' ),
+    'all_items' => __( 'Todas las categorias' ),
+    'parent_item' => __( 'Categoria padre' ),
+    'parent_item_colon' => __( 'Categoria padre:' ),
+    'edit_item' => __( 'Editar categoria' ), 
+    'update_item' => __( 'Actualizar categoria' ),
+    'add_new_item' => __( 'Agregar nueva categoria' ),
+    'new_item_name' => __( 'Nombre de nueva categoria' ),
+    'menu_name' => __( 'Categorias' ),
+  ); 	
+ 
+  register_taxonomy('categoria_videos',array('videos'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'categoria_videos' ),
+  ));
+}
+
 
 function substrwords($text, $maxchar, $end = '...'){
 
