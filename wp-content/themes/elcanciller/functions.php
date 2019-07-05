@@ -201,6 +201,7 @@ function custom_post_type_opinion()
     'show_ui'               => true,
     'show_in_menu'          => true,
     'menu_position'         => 6,
+    'menu_icon'             => 'dashicons-admin-site',
     'show_in_admin_bar'     => false,
     'show_in_nav_menus'     => false,
     'can_export'            => true,
