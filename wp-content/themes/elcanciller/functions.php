@@ -207,7 +207,7 @@ function custom_post_type_opinion()
     'can_export'            => true,
     'has_archive'           => false,
     'exclude_from_search'   => true,
-    'publicly_queryable'    => false,
+    'publicly_queryable'    => true,
     'capability_type'       => 'post',
   );
   register_post_type('opinion', $args);
