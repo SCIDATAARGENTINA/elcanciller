@@ -195,7 +195,7 @@ function custom_post_type_opinion()
     'description'           => __('Modulo de administración de Opinión', 'elcanciller'),
     'labels'                => $labels,
     'supports'              => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions'),
-    'taxonomies'            => array('category', 'tag'),
+    'taxonomies'            => array('category', 'post_tag'),
     'hierarchical'          => false,
     'public'                => true,
     'show_ui'               => true,
