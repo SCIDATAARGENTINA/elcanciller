@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
             commentsLenght = commentsLenght + $(this).width();
         });
         //commentsLenght = commentsLenght; // Fix double line text
-        $(this).css('width', commentsLenght + 'px').css('opacity', '1');
+        $(this).css('width', commentsLenght + 'px');
     });
 
 });
