@@ -1395,7 +1395,7 @@ button {
 }
 
 .opinion .autor a {
-    color: #fff;
+    color: #fff !important;
 }
 
 .opinion a {
