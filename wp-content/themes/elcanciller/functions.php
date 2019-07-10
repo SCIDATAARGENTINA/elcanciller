@@ -6,10 +6,7 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array('parent-style')
-    );
+    //wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
 }
 //
 // Your code goes below
@@ -28,6 +25,7 @@ function custom_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'custom_scripts' );
 
+add_image_size( 'opinion', 300, 150 );
 
 add_action( 'widgets_init', 'sidebar_register' );
 function sidebar_register() {
