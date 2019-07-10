@@ -1514,11 +1514,20 @@ button {
     width: 100%;
 }
 
+.placa-like {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
 .placa-like::before {
     content: '';
     background: #fff;
     width: 40%;
     height: 1px;
+    display: block;
+    margin-right: 10px;
 }
 
 
