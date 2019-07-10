@@ -22,7 +22,7 @@ get_header();
 			<div class="content">
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
 				<div class="loader">Loading...</div>
-				<div class="render-posts col-2" data-quantity="4">
+				<div class="render-posts col-2" data-quantity="4" data-offset="0">
 				</div>
 
 			</div><!-- content -->
@@ -32,7 +32,7 @@ get_header();
 			<?php get_template_part('template-parts/sections/section', 'instagram') ?>
 			<?php get_template_part('template-parts/sections/section', 'videos') ?>
 			<div class="loader">Loading...</div>
-			<div class="render-posts col-3" data-quantity="9">
+			<div class="render-posts col-3" data-quantity="9" data-offset="4">
 			</div>
 		</div><!-- outer-container -->
 

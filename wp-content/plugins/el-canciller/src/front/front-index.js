@@ -74,8 +74,6 @@ let findPostComments = (id, comments) => {
 let renderTemplate = async(rendered) => {
 
     let renderNodes = document.querySelectorAll('.render-posts');
-    console.log(renderNodes);
-    console.log('hola');
 
     for (let node of renderNodes) {
 
@@ -94,13 +92,16 @@ let renderTemplate = async(rendered) => {
             randomArr = utils.shuffle(postArray);
 
             for (let post of randomArr) {
+                console.log('random', post);
+                console.log(setTemplate(post));
                 node.appendChild(setTemplate(post));
             }
 
         } else {
 
             for (let post of postArray) {
-
+                console.log('normal', post);
+                console.log(setTemplate(post));
                 node.appendChild(setTemplate(post));
 
             }
