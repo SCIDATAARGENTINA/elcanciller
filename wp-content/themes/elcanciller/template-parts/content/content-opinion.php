@@ -29,4 +29,5 @@ $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
     <div class="titulo">
         <h3><?php the_title(); ?></h3>
     </div>
+    <?php get_template_part('template-parts/comments/comments', 'nosharer') ?>
 </div><!-- end opinion -->
