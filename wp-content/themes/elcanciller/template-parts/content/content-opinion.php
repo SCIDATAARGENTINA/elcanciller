@@ -22,13 +22,16 @@ $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
 <div id="opinion-<?php echo $post->ID ?>" class="opinion">
     <div class="opinion-container">
         <div class="imagen" style="background-image: url('<?php echo $featured_img_url ?>');">
-            
+            <a href="<?php the_permalink(); ?>"></a>
         </div>
         <div class="autor">
+            <a href="<?php the_permalink(); ?>"></a>
             <p>@<?php the_author(); ?></p>
         </div>
         <div class="titulo">
+            <a href="<?php the_permalink(); ?>">
             <h3><?php the_title(); ?></h3>
+            </a>
         </div>
     </div>
     <?php get_template_part('template-parts/comments/comments', 'nosharer') ?>
