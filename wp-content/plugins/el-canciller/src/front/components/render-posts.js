@@ -130,7 +130,8 @@ let createPostArray = async(quantity, offset = 0) => {
             featuredMedia: postFeaturedImg,
             category: postCategories,
             comments: postComments,
-            trending: post.acf.trending
+            trending: post.acf.trending,
+            show_author: post.acf.show_author
         };
 
         console.log(postObject);
