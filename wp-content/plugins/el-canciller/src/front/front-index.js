@@ -71,6 +71,8 @@ let findPostComments = (id, comments) => {
 let renderTemplate = (rendered) => {
 
     let renderNodes = document.querySelectorAll('.render-posts');
+    console.log(renderNodes);
+    console.log('hola');
 
     for (let node of renderNodes) {
 
@@ -104,7 +106,6 @@ let renderTemplate = (rendered) => {
 
 };
 
-console.log('hola');
 
 renderTemplate(() => {
     var loading = document.getElementsByClassName('loader');
