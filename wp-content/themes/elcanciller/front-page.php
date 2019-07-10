@@ -20,10 +20,11 @@ get_header();
 				<?php get_template_part('template-parts/sidebar/sidebar', 'front') ?>
 			</div><!-- sidebar -->
 			<div class="content">
+
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
 				<div class="loader">Loading...</div>
-				<div class="render-posts col-2" data-quantity="4" data-offset="0">
-				</div>
+				<div class="render-posts col-2" data-quantity="4" data-offset="0"></div>
+				<?php get_template_part('template-parts/sections/section', 'opinion') ?>
 
 			</div><!-- content -->
 
