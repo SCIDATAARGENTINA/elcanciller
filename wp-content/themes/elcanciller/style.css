@@ -944,7 +944,7 @@ button {
 .post-rendered::before {
     width: 10px;
     content: '';
-    background: #e7d117;
+    background: attr(data-color);
     height: 50%;
     position: absolute;
     bottom: -23px;

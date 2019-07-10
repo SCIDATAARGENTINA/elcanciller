@@ -16,6 +16,7 @@ let setTemplate = (post) => {
     let postRendered = document.createElement('div');
     let postDate = moment(post.date).fromNow();
     let postCategory = '';
+    let postCategoryColor = '#e7d117';
     let featuredImage = '';
     let postCategoryLink = '';
     let comments = 'No hay comentarios';
@@ -57,7 +58,11 @@ let setTemplate = (post) => {
     if (post.category[0]) {
         postCategory = post.category[0].name;
         postCategoryLink = post.category[0].link;
+        if (post.category[0].acf.color) {
+            postCategoryColor = post.category[0].acf.color;
+        }
     }
+    postRendered.setAttribute('data-color', postCategoryColor);
 
     if (post.featuredMedia.full) {
         featuredImage = post.featuredMedia.medium_large.source_url;
@@ -81,7 +86,7 @@ let setTemplate = (post) => {
                                             <a href="${postCategoryLink}"><h4>${postCategory}</h4></a>
                                         </div>
                                     </div><!-- hovered -->
-                                    <div class="render-author">
+                                    <div class="render-author" style="background-color: ${postCategoryColor}">
                                         <span>Por: ${post.author.name}</span>
                                     <div><!-- render author -->
                                 </div><!-- rendered-img -->`;
