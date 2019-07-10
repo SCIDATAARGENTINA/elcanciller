@@ -1507,6 +1507,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+    position: relative;
 }
 
 .placa-image img {
@@ -1515,14 +1516,19 @@ button {
 }
 
 .placa-next {
+    display: block;
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    right: 0px;
     height: 100%;
     background: #e7d117;
 }
 
 .placa-next::before {
     content: '';
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
     display: inline-block;
     border: 2px solid #fff;
     border-left: 0px;
@@ -1530,6 +1536,7 @@ button {
     background: transparent;
     border-bottom: 0px;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .placa-like {
