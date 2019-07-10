@@ -101,6 +101,7 @@ let createPostArray = async(quantity, offset = 0) => {
     let postArray = [];
 
     let latestPosts = await api.getLatestPosts(quantity, offset);
+    console.log(latestPosts);
 
     for (let post of latestPosts) {
 
