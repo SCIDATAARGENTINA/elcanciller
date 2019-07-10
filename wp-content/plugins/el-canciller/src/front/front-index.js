@@ -84,23 +84,20 @@ let renderTemplate = async(rendered) => {
         if (node.getAttribute('data-offset')) {
             offset = node.getAttribute('data-offset');
         }
-        console.log(random, quantity, offset);
         let postArray = await createPostArray(quantity, offset);
 
         if (random == 1) {
             randomArr = utils.shuffle(postArray);
 
             for (let post of randomArr) {
-                console.log('random', post);
-                console.log(setTemplate(post));
+
                 node.appendChild(setTemplate(post));
             }
 
         } else {
 
             for (let post of postArray) {
-                console.log('normal', post);
-                console.log(setTemplate(post));
+
                 node.appendChild(setTemplate(post));
 
             }
@@ -120,7 +117,6 @@ document.onreadystatechange = function() {
 
             for (let loader of loading) {
 
-                console.log(loader);
                 loader.style.display = 'none';
             }
         });

@@ -101,7 +101,6 @@ let createPostArray = async(quantity, offset = 0) => {
     let postArray = [];
 
     let latestPosts = await api.getLatestPosts(quantity, offset);
-    console.log(latestPosts);
 
     for (let post of latestPosts) {
 
@@ -124,6 +123,7 @@ let createPostArray = async(quantity, offset = 0) => {
         let postObject = {
             id: post.id,
             title: post.title.rendered,
+            author: post._embedded.author[0]
             link: post.link,
             date: new Date(post.date),
             featuredMedia: postFeaturedImg,
@@ -131,6 +131,8 @@ let createPostArray = async(quantity, offset = 0) => {
             comments: postComments,
             trending: post.acf.trending
         };
+
+        console.log(postObject);
 
         postArray.push(postObject);
 
