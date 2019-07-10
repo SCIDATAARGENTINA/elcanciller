@@ -26,8 +26,9 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
             <a href="<?php the_permalink(); ?>"></a>
         </div>
         <div class="autor">
-            <a href="<?php echo $author_link ?>"></a>
+            <a href="<?php echo $author_link ?>">
             <p>@<?php the_author(); ?></p>
+            </a>
         </div>
         <div class="titulo">
             <a href="<?php the_permalink(); ?>">
