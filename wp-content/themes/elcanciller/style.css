@@ -1394,6 +1394,10 @@ button {
     margin: 0px !important;
 }
 
+.opinion .autor a {
+    color: #fff;
+}
+
 .opinion a {
     display: block;
     width: 100%;
