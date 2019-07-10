@@ -1348,6 +1348,7 @@ button {
 .opiniones {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .opinion-container {
@@ -1361,7 +1362,9 @@ button {
 }
 
 .opinion .autor p {
-    margin: 0px;
+    margin: 10px;
+    line-height: 0px;
+    font-size: 18px;
 }
 
 .opinion img {
@@ -1370,6 +1373,9 @@ button {
 
 .opinion .titulo {
     padding: 10px;
+}
+
+.opinion .titulo h3 {
     font-size: 22px;
 }
 
