@@ -106,13 +106,16 @@ let renderTemplate = (rendered) => {
 
 };
 
+document.onreadystatechange = function() {
+    if (document.readyState == "complete") {
+        renderTemplate(() => {
+            var loading = document.getElementsByClassName('loader');
 
-renderTemplate(() => {
-    var loading = document.getElementsByClassName('loader');
+            for (let loader of loading) {
 
-    for (let loader of loading) {
-
-        console.log(loader);
-        loader.style.display = 'none';
+                console.log(loader);
+                loader.style.display = 'none';
+            }
+        });
     }
-});
+};
