@@ -28,6 +28,10 @@ let setTemplate = (post) => {
         postRendered.classList.add('post-rendered');
     }
 
+    if (post.show_author == 'si') {
+        postRendered.classList.add('show-author');
+    }
+
     if (post.comments[0]) {
         comments = post.comments;
         for (let comment of comments) {
