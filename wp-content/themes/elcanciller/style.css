@@ -1514,6 +1514,24 @@ button {
     width: 100%;
 }
 
+.placa-next {
+    height: 100%;
+    background: #e7d117;
+}
+
+.placa-next::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-left: 0px;
+    transform: rotate(45deg);
+    background: transparent;
+    border-bottom: 0px;
+    cursor: pointer;
+}
+
 .placa-like {
     width: 100%;
     display: flex;

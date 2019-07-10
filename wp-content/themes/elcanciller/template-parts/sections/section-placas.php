@@ -25,6 +25,7 @@
     </div><!-- placa-title -->
     <div class="placa-image">
         <img src="http://142.93.24.13/wp-content/uploads/2019/07/D_Hmw2yX4AAaqXd.jpg" alt="">
+        <button id="next-placa" class="placa-next"></button>
     </div><!-- placa-image -->
     
 </div><!-- end placas-section container -->
