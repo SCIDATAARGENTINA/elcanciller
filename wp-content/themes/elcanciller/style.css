@@ -1515,6 +1515,12 @@ button {
     width: 100%;
 }
 
+.placa-next:hover,
+.placa-next:active,
+.placa-next:focus {
+    background: #e7d117;
+}
+
 .placa-next {
     display: block;
     height: 100%;
