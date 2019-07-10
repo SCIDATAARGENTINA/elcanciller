@@ -971,6 +971,13 @@ button {
     left: 0;
     width: 100%;
     padding: 8px 16px;
+    line-height: 0px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 18px;
+    color: #fff;
 }
 
 .post-rendered .hovered {
