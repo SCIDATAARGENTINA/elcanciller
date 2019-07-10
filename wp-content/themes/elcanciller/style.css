@@ -791,6 +791,7 @@ button {
     grid-template-columns: 1fr 11fr;
     padding: 10px 0;
     margin-left: 20px;
+    border-bottom: 2px solid #ccc;
 }
 
 .comment-container {
