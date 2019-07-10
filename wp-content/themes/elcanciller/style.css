@@ -233,6 +233,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) inset !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) inset !important;
     background-color: transparent !important;
     background-image: none !important;
     color: #fff !important;
@@ -243,7 +244,9 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    transition: "color 9999s ease-out, background-color 9999s ease-out";
     -webkit-transition-delay: 9999s;
+    transition-delay: 9999s;
 }
 
 input:-internal-autofill-selected {
@@ -468,8 +471,6 @@ input:-internal-autofill-selected {
 
 
 /* ---------------------------*/
-
-.cancilleram.container {}
 
 .cancilleram.container img {
     vertical-align: top;

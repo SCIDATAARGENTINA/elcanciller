@@ -54,9 +54,9 @@ let getTags = async() => {
 
 };
 
-let getLatestPosts = async(quantity) => {
+let getLatestPosts = async(quantity, offset = 0) => {
 
-    let latestPosts = await getData(`posts?per_page=${quantity}&orderby=date&order=desc&_embed`);
+    let latestPosts = await getData(`posts?per_page=${quantity}&offset=${offset}&orderby=date&order=desc&_embed`);
 
     return latestPosts;
 

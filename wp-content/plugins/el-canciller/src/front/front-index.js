@@ -5,7 +5,7 @@
  */
 require("babel-polyfill");
 
-import { renderTemplate } from './components/render-posts';
+import { createPostArray } from './components/render-posts';
 
 import { getData, getCategoriesById, getLatestPosts, getComments, getTagsById, getCategories, getTags } from './service/wordpressapi';
 
@@ -68,55 +68,46 @@ let findPostComments = (id, comments) => {
 
 };
 
-let createPostArray = async(quantity) => {
+let renderTemplate = (rendered) => {
 
-    let postArray = [];
+    let renderNodes = document.querySelectorAll('.render-posts');
 
-    let latestPosts = await getLatestPosts(quantity);
+    for (let node of renderNodes) {
 
-    for (let post of latestPosts) {
+        // Randomize Array if has 'data-random' = 1
+        let random = node.getAttribute('data-random');
+        let quantity = node.getAttribute('data-quantity');
+        let offset = node.getAttribute('data-offset');
 
-        let postCategories = [];
-        let postComments = [];
-        let postFeaturedImg = [];
+        if (random == 1) {
+            randomArr = utils.shuffle(createPostArray(quantity, offset));
 
-        if (post._embedded['wp:term']) {
-            postCategories = post._embedded['wp:term']['0'];
+            for (let post of randomArr) {
+                node.appendChild(setTemplate(post));
+            }
+
+        } else {
+
+            for (let post of createPostArray(quantity, offset)) {
+
+                node.appendChild(setTemplate(post));
+
+            }
+
         }
-
-        if (post._embedded.replies) {
-            postComments = post._embedded.replies[0]
-        }
-
-        if (post._embedded['wp:featuredmedia']) {
-            postFeaturedImg = post._embedded['wp:featuredmedia'][0].media_details.sizes;
-        }
-
-        let postObject = {
-            id: post.id,
-            title: post.title.rendered,
-            link: post.link,
-            date: new Date(post.date),
-            featuredMedia: postFeaturedImg,
-            category: postCategories,
-            comments: postComments,
-            trending: post.acf.trending
-        };
-        console.log(postObject);
-
-        postArray.push(postObject);
 
     }
 
-    renderTemplate(postArray, () => {
-        var loading = document.getElementsByClassName('loader');
+    rendered();
 
-        for (let loader of loading) {
-
-            console.log(loader);
-            loader.style.display = 'none';
-        }
-    });
 };
 
-createPostArray(50);
+renderTemplate(() => {
+    var loading = document.getElementsByClassName('loader');
+
+    for (let loader of loading) {
+
+        console.log(loader);
+        loader.style.display = 'none';
+    }
+});

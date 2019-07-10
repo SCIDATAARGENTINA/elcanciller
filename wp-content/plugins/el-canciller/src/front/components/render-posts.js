@@ -97,45 +97,51 @@ let setTemplate = (post) => {
 
 };
 
-let renderTemplate = (postArr, rendered) => {
+let createPostArray = async(quantity, offset) => {
 
-    let renderNodes = document.querySelectorAll('.render-posts');
+    let postArray = [];
 
-    for (let node of renderNodes) {
+    let latestPosts = await getLatestPosts(quantity, offset);
 
-        // Randomize Array if has 'data-random' = 1
-        let random = node.getAttribute('data-random');
-        let quantity = node.getAttribute('data-quantity');
-        let i = 0;
+    for (let post of latestPosts) {
 
-        if (random == 1) {
-            randomArr = utils.shuffle(postArr);
+        let postCategories = [];
+        let postComments = [];
+        let postFeaturedImg = [];
 
-            for (let post of randomArr) {
-                if (i < quantity) {
-                    node.appendChild(setTemplate(post));
-                }
-                i++;
-            }
-
-        } else {
-
-            for (let post of postArr) {
-                if (i < quantity) {
-                    node.appendChild(setTemplate(post));
-                }
-                i++;
-            }
-
+        if (post._embedded['wp:term']) {
+            postCategories = post._embedded['wp:term']['0'];
         }
+
+        if (post._embedded.replies) {
+            postComments = post._embedded.replies[0];
+        }
+
+        if (post._embedded['wp:featuredmedia']) {
+            postFeaturedImg = post._embedded['wp:featuredmedia'][0].media_details.sizes;
+        }
+
+        let postObject = {
+            id: post.id,
+            title: post.title.rendered,
+            link: post.link,
+            date: new Date(post.date),
+            featuredMedia: postFeaturedImg,
+            category: postCategories,
+            comments: postComments,
+            trending: post.acf.trending
+        };
+        console.log(postObject);
+
+        postArray.push(postObject);
 
     }
 
-    rendered();
+    return postArray;
 
 };
 
 
 module.exports = {
-    renderTemplate
+    createPostArray
 };
