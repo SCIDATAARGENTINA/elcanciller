@@ -1502,6 +1502,12 @@ button {
     font-size: 18px;
 }
 
+.placa-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* PLACAS SECTION*/
 
