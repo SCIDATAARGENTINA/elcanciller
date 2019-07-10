@@ -82,7 +82,10 @@ let renderTemplate = (rendered) => {
         // Randomize Array if has 'data-random' = 1
         let random = node.getAttribute('data-random');
         let quantity = node.getAttribute('data-quantity');
-        let offset = node.getAttribute('data-offset');
+        let offset = 0;
+        if (node.getAttribute('data-offset')) {
+            offset = node.getAttribute('data-offset');
+        }
         console.log(random, quantity, offset);
         console.log(createPostArray(quantity, offset));
 
