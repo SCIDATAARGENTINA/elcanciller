@@ -104,6 +104,8 @@ let renderTemplate = (rendered) => {
 
 };
 
+console.log('hola');
+
 renderTemplate(() => {
     var loading = document.getElementsByClassName('loader');
 
