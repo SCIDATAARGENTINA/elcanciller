@@ -1478,6 +1478,7 @@ button {
 .placas-section {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    margin-bottom: 50px;
 }
 
 .placa-title {
@@ -1490,7 +1491,6 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .placa-content img {
