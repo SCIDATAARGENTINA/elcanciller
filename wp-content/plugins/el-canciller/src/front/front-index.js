@@ -105,11 +105,11 @@ let renderTemplate = async(rendered) => {
 
             }
 
+            rendered();
+
         }
 
     }
-
-    rendered();
 
 };
 
