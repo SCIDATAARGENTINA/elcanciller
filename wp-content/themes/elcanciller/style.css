@@ -978,7 +978,10 @@ button {
     /* justify-content: center; */
     font-size: 18px;
     color: #fff;
+    opacity: 1;
 }
+
+.post-rendered .rendered-img .render-author {}
 
 .post-rendered .hovered {
     background-color: rgba(0, 0, 0, 0.3);
@@ -1082,6 +1085,10 @@ button {
 
 
 /* HOVER EFFECT*/
+
+.post-rendered:hover .render-author {
+    opacity: 0;
+}
 
 .post-rendered:hover .comentarios {
     opacity: 1;
