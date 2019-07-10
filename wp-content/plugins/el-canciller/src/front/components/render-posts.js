@@ -8,6 +8,8 @@ var moment = require('moment');
 
 var utils = require('../../utils/utils-index');
 
+import { getLatestPosts } from './service/wordpressapi';
+
 require('moment/locale/es');
 moment.locale('es');
 

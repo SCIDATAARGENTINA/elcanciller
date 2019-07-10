@@ -5,7 +5,7 @@
  */
 require("babel-polyfill");
 
-import { createPostArray } from './components/render-posts';
+import { createPostArray, setTemplate } from './components/render-posts';
 
 import { getData, getCategoriesById, getLatestPosts, getComments, getTagsById, getCategories, getTags } from './service/wordpressapi';
 
