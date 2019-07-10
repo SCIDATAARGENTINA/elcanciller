@@ -30,6 +30,7 @@ get_header();
 
 		</div><!-- inner container -->
 		<div class="outer-container">
+			<?php get_template_part('template-parts/sections/section', 'placas') ?>
 			<?php get_template_part('template-parts/sections/section', 'instagram') ?>
 			<?php get_template_part('template-parts/sections/section', 'videos') ?>
 			<div class="loader">Cargando...</div>
