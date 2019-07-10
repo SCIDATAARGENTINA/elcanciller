@@ -1364,6 +1364,10 @@ button {
     margin: 0px;
 }
 
+.opinion img {
+    vertical-align: top;
+}
+
 .opinion .titulo {
     padding: 10px;
     font-size: 22px;
