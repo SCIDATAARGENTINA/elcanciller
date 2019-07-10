@@ -24,8 +24,8 @@
    </div>
    <div class="comment-container">
       <div class="comentarios">
-
-         <?php foreach ($comments as $comment) : ?>
+          <?php if($comments){  ?>
+            <?php foreach ($comments as $comment) : ?>
 
             <div class="comentario">
                <span class="comment-author">
@@ -37,6 +37,13 @@
             </div>
 
          <?php endforeach; ?>
+         <?php  } else{  ?>
+            <div class="comentario">
+               No hay comentarios
+            </div>
+         <?php } ?>
+
+         
       </div><!-- comentarios -->
    </div><!-- comment-container -->
 </div><!-- comentarios-nosharer -->
