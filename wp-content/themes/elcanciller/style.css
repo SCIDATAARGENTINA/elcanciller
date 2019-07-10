@@ -1374,8 +1374,9 @@ button {
     font-family: 'Bree Serif', serif;
 }
 
-.opinion .image {
-    vertical-align: top;
+.opinion .imagen {
+    background-position: center center;
+    background-size: cover;
     height: 150px;
 }
 
