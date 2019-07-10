@@ -6,9 +6,7 @@
 
 var moment = require('moment');
 
-var utils = require('../../utils/utils-index');
-
-import { getLatestPosts } from '../service/wordpressapi';
+var api = require('../service/wordpressapi');
 
 require('moment/locale/es');
 moment.locale('es');
@@ -103,7 +101,7 @@ let createPostArray = async(quantity, offset) => {
 
     let postArray = [];
 
-    let latestPosts = await getLatestPosts(quantity, offset);
+    let latestPosts = await api.getLatestPosts(quantity, offset);
 
     for (let post of latestPosts) {
 
