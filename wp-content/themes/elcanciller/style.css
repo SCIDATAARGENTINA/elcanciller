@@ -1089,7 +1089,7 @@ button {
 
 /* HOVER EFFECT*/
 
-.post-rendered:hover .render-author {
+.post-rendered.show-author:hover .render-author {
     opacity: 0;
 }
 
