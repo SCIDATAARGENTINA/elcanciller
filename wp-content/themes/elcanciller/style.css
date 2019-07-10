@@ -1488,8 +1488,13 @@ button {
     padding: 20px 50px;
 }
 
+.placa-content img {
+    width: 100px;
+}
+
 .placa-content h3 {
     color: #fff;
+    font-size: 18px;
 }
 
 
