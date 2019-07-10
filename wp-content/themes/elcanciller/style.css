@@ -1487,6 +1487,7 @@ button {
 .placa-content {
     padding: 20px 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
