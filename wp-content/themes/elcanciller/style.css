@@ -1350,7 +1350,7 @@ button {
     grid-template-columns: 1fr 1fr;
 }
 
-.opinion {
+.opinion-container {
     border: 2px solid #e7d117;
 }
 
@@ -1366,6 +1366,7 @@ button {
 
 .opinion .titulo {
     padding: 10px;
+    font-size: 22px;
 }
 
 
