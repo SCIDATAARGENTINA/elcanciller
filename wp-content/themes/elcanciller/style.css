@@ -1427,10 +1427,39 @@ button {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     opacity: 0;
+    transition: 300ms ease;
+}
+
+.opinion:hover .hovered {
+    opacity: 1;
+}
+
+.opinion .hovered .action-links {
+    color: #fff;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: auto !important;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 300ms ease;
+}
+
+.opinion:hover .hovered .action-links {
+    color: #fff;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    top: auto !important;
+    opacity: 1;
+    transform: translateY(0px);
     transition: 300ms ease;
 }
 
