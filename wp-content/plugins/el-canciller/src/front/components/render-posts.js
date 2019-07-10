@@ -58,12 +58,11 @@ let setTemplate = (post) => {
     if (post.category[0]) {
         postCategory = post.category[0].name;
         postCategoryLink = post.category[0].link;
+        postRendered.classList.add(post.category[0].slug);
         if (post.category[0].acf.color) {
             postCategoryColor = post.category[0].acf.color;
         }
     }
-    postRendered.classList.add(post.category[0].slug);
-
 
     if (post.featuredMedia.full) {
         featuredImage = post.featuredMedia.medium_large.source_url;
