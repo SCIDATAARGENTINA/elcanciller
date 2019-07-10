@@ -91,7 +91,7 @@ let setTemplate = (post) => {
                                     </div><!-- hovered -->
                                     <div class="render-author" style="background-color: ${postCategoryColor}">
                                         <span>Por: ${post.author.name}</span>
-                                    <div><!-- render author -->
+                                    </div><!-- render author -->
                                 </div><!-- rendered-img -->`;
 
     templateContent += `<div class="comentarios-noshare">
