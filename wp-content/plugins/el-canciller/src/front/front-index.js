@@ -71,7 +71,7 @@ let findPostComments = (id, comments) => {
 
 };
 
-let renderTemplate = (rendered) => {
+let renderTemplate = async(rendered) => {
 
     let renderNodes = document.querySelectorAll('.render-posts');
     console.log(renderNodes);
@@ -87,7 +87,7 @@ let renderTemplate = (rendered) => {
             offset = node.getAttribute('data-offset');
         }
         console.log(random, quantity, offset);
-        let postArray = createPostArray(quantity, offset);
+        let postArray = await createPostArray(quantity, offset);
         console.log(createPostArray(quantity, offset));
 
         if (random == 1) {
