@@ -875,6 +875,15 @@ button {
     }
 }
 
+.trending-post:hover .comentarios,
+.opinion:hover .comentarios {
+    opacity: 1;
+    /* Apply animation to this element */
+    -moz-animation: example1 40s linear infinite;
+    -webkit-animation: example1 40s linear infinite;
+    animation: example1 40s linear infinite;
+}
+
 .comentario .comment-author {
     color: #e7d117;
 }
