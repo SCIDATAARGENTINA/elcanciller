@@ -25,7 +25,7 @@ function custom_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'custom_scripts' );
 
-add_image_size( 'opinion', 300, 150 );
+add_image_size( 'opinion', 300, 300 );
 
 add_action( 'widgets_init', 'sidebar_register' );
 function sidebar_register() {
