@@ -219,7 +219,7 @@ function custom_post_type_placa()
     'name'                  => _x('Placas', 'Post Type General Name', 'elcanciller'),
     'singular_name'         => _x('Placa', 'Post Type Singular Name', 'elcanciller'),
     'menu_name'             => __('Placa', 'elcanciller'),
-    'name_admin_bar'        => __('Placa', 'elcanciller'),
+    'name_admin_bar'        => __('Placas', 'elcanciller'),
     'archives'              => __('Archivo', 'elcanciller'),
     'attributes'            => __('Atributos', 'elcanciller'),
     'parent_item_colon'     => __('Padre:', 'elcanciller'),
@@ -245,7 +245,7 @@ function custom_post_type_placa()
     'filter_items_list'     => __('Filtrar listado', 'elcanciller'),
   );
   $args = array(
-    'label'                 => __('Placas', 'elcanciller'),
+    'label'                 => __('Placa', 'elcanciller'),
     'description'           => __('Modulo de administración de Placas', 'elcanciller'),
     'labels'                => $labels,
     'supports'              => array('title', 'editor', 'author', 'thumbnail'),
