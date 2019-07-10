@@ -97,7 +97,7 @@ let setTemplate = (post) => {
 
 };
 
-let createPostArray = async(quantity, offset) => {
+let createPostArray = async(quantity, offset = 0) => {
 
     let postArray = [];
 
