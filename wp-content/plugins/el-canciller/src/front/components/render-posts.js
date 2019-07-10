@@ -62,7 +62,8 @@ let setTemplate = (post) => {
             postCategoryColor = post.category[0].acf.color;
         }
     }
-    postRendered.setAttribute('data-color', postCategoryColor);
+    postRendered.classList.add(post.category[0].slug);
+
 
     if (post.featuredMedia.full) {
         featuredImage = post.featuredMedia.medium_large.source_url;
