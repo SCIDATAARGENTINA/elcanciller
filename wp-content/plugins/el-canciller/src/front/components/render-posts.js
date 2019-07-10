@@ -19,6 +19,7 @@ let setTemplate = (post) => {
     let postCategoryColor = '#e7d117';
     let featuredImage = '';
     let postCategoryLink = '';
+    let postCategorySlug = 'politica';
     let comments = 'No hay comentarios';
     let noComments = 'sin-comentarios';
     let comentariosTemplate = '';
@@ -59,6 +60,7 @@ let setTemplate = (post) => {
         postCategory = post.category[0].name;
         postCategoryLink = post.category[0].link;
         postRendered.classList.add(post.category[0].slug);
+        postCategorySlug = post.category[0].slug;
         if (post.category[0].acf.color) {
             postCategoryColor = post.category[0].acf.color;
         }
@@ -68,7 +70,8 @@ let setTemplate = (post) => {
         featuredImage = post.featuredMedia.medium_large.source_url;
     }
 
-    let templateContent = `<div class="rendered-img" style="background-image: url('${featuredImage}')">
+    let templateContent = `<style>${postCategorySlug}::before{background: ${postCategoryColor}}<style>
+                                <div class="rendered-img" style="background-image: url('${featuredImage}')">
                                     <div class="hovered">
                                         <div class="action-links">
                                             <i class="fab fa-twitter"></i>
