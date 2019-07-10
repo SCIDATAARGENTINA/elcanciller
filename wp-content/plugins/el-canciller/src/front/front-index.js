@@ -86,7 +86,6 @@ let renderTemplate = async(rendered) => {
         }
         console.log(random, quantity, offset);
         let postArray = await createPostArray(quantity, offset);
-        console.log(createPostArray(quantity, offset));
 
         if (random == 1) {
             randomArr = utils.shuffle(postArray);
