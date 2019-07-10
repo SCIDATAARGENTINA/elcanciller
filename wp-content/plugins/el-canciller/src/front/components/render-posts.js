@@ -21,7 +21,6 @@ let setTemplate = (post) => {
     let comments = 'No hay comentarios';
     let noComments = 'sin-comentarios';
     let comentariosTemplate = '';
-    console.log(post.comments);
 
     if (post.trending == 'si') {
         postRendered.classList.add('post-rendered', 'trending');
@@ -142,5 +141,6 @@ let createPostArray = async(quantity, offset = 0) => {
 
 
 module.exports = {
-    createPostArray
+    createPostArray,
+    setTemplate
 };
