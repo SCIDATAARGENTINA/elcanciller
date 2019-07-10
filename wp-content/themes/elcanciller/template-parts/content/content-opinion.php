@@ -17,6 +17,7 @@ $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 $categories = get_the_terms( $post->ID , array( 'categoria_videos') );
 $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
+$author_link = get_author_posts_url( get_the_author_meta('ID') );
 ?>
 
 <div id="opinion-<?php echo $post->ID ?>" class="opinion">
@@ -25,7 +26,7 @@ $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
             <a href="<?php the_permalink(); ?>"></a>
         </div>
         <div class="autor">
-            <a href="<?php the_permalink(); ?>"></a>
+            <a href="echo <?php $author_link ?>"></a>
             <p>@<?php the_author(); ?></p>
         </div>
         <div class="titulo">
