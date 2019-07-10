@@ -1456,7 +1456,9 @@ button {
     transform: translateZ(0);
     -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
+    max-height: 300px;
     height: 300px;
+    min-height: 300px;
 }
 
 .loader:before,
