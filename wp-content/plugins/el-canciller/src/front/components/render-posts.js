@@ -70,7 +70,7 @@ let setTemplate = (post) => {
         featuredImage = post.featuredMedia.medium_large.source_url;
     }
 
-    let templateContent = `<style>${postCategorySlug}::before{background: ${postCategoryColor}}<style>
+    let templateContent = `<style>${postCategorySlug}::before{background: ${postCategoryColor}}</style>
                                 <div class="rendered-img" style="background-image: url('${featuredImage}')">
                                     <div class="hovered">
                                         <div class="action-links">
