@@ -87,10 +87,11 @@ let renderTemplate = (rendered) => {
             offset = node.getAttribute('data-offset');
         }
         console.log(random, quantity, offset);
+        let postArray = createPostArray(quantity, offset);
         console.log(createPostArray(quantity, offset));
 
         if (random == 1) {
-            randomArr = utils.shuffle(createPostArray(quantity, offset));
+            randomArr = utils.shuffle(postArray);
 
             for (let post of randomArr) {
                 node.appendChild(setTemplate(post));
@@ -98,7 +99,7 @@ let renderTemplate = (rendered) => {
 
         } else {
 
-            for (let post of createPostArray(quantity, offset)) {
+            for (let post of postArray) {
 
                 node.appendChild(setTemplate(post));
 
