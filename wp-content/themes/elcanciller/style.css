@@ -1340,6 +1340,38 @@ button {
 /* ---------------------------*/
 
 
+/*--------- OPINION */
+
+
+/* ---------------------------*/
+
+.opiniones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.opinion {
+    border: 2px solid #e7d117;
+}
+
+.opinion .autor {
+    background: #b29f93;
+    padding: 10px;
+    color: #fff;
+}
+
+.opinion .autor p {
+    margin: 0px;
+}
+
+.opinion .titulo {
+    padding: 10px;
+}
+
+
+/* ---------------------------*/
+
+
 /*--------- FOOTER */
 
 
