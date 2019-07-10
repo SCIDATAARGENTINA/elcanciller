@@ -81,6 +81,9 @@ let setTemplate = (post) => {
                                             <a href="${postCategoryLink}"><h4>${postCategory}</h4></a>
                                         </div>
                                     </div><!-- hovered -->
+                                    <div class="render-author">
+                                        <span>Por: ${post.author.name}</span>
+                                    <div><!-- render author -->
                                 </div><!-- rendered-img -->`;
 
     templateContent += `<div class="comentarios-noshare">
