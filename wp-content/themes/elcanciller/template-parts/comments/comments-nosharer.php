@@ -39,7 +39,9 @@
          <?php endforeach; ?>
          <?php  } else{  ?>
             <div class="comentario">
-               No hay comentarios
+                <span class="comment-text">
+                  No hay comentarios
+               </span>
             </div>
          <?php } ?>
 
