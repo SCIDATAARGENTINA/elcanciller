@@ -1514,6 +1514,13 @@ button {
     width: 100%;
 }
 
+.placa-like::before {
+    content: '';
+    background: #fff;
+    width: 40%;
+    height: 1px;
+}
+
 
 /* PLACAS SECTION*/
 
