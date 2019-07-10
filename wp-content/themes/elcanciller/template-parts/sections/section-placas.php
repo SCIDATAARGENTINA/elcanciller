@@ -17,6 +17,9 @@
         <div class="placa-content">
             <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/placa-logo.svg" alt="El Canciller Twitter">
             <h3>[ELECCIONES] Alberto Fernández aseguró que sólo tuvo la tarea de unir a las partes dentro del peronismo.</h3>
+            <div class="placa-like">
+                <i class="fas fa-heart"></i>
+            </div>
         </div><!-- placa-content -->
 
     </div><!-- placa-title -->
