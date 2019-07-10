@@ -1403,6 +1403,11 @@ button {
     align-items: center;
 }
 
+.opinion .comentarios-noshare {
+    margin-left: 0px;
+    border-bottom: 2px solid #ccc;
+}
+
 
 /* ---------------------------*/
 
