@@ -70,29 +70,28 @@ let setTemplate = (post) => {
         featuredImage = post.featuredMedia.medium_large.source_url;
     }
 
-    let templateContent = `<style>.${postCategorySlug}::before{background: ${postCategoryColor}}</style>
-                                <div class="rendered-img" style="background-image: url('${featuredImage}')">
-                                    <div class="hovered">
-                                        <div class="action-links">
-                                            <i class="fab fa-twitter"></i>
-                                            <i class="fab fa-facebook-f"></i>
-                                            <a href="${post.link}"><i class="fas fa-sign-out-alt"></i></a>
-                                            <i class="fas fa-heart"></i>
-                                        </div><!-- action-links -->
-                                        <div class="post-data">
-                                            <div class="post-title">
-                                                <a href="${post.link}"><h3>${post.title}</h3></a>
-                                                <span class="time-ago">${postDate}</span>
-                                            </div>
-                                        </div><!-- post-data -->
-                                        <div class="post-category">
-                                            <a href="${postCategoryLink}"><h4>${postCategory}</h4></a>
+    let templateContent = `<div class="rendered-img" style="background-image: url('${featuredImage}')">
+                                <div class="hovered">
+                                    <div class="action-links">
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-facebook-f"></i>
+                                        <a href="${post.link}"><i class="fas fa-sign-out-alt"></i></a>
+                                        <i class="fas fa-heart"></i>
+                                    </div><!-- action-links -->
+                                    <div class="post-data">
+                                        <div class="post-title">
+                                            <a href="${post.link}"><h3>${post.title}</h3></a>
+                                            <span class="time-ago">${postDate}</span>
                                         </div>
-                                    </div><!-- hovered -->
-                                    <div class="render-author" style="background-color: ${postCategoryColor}">
-                                        <span>Por: ${post.author.name}</span>
-                                    </div><!-- render author -->
-                                </div><!-- rendered-img -->`;
+                                    </div><!-- post-data -->
+                                    <div class="post-category">
+                                        <a href="${postCategoryLink}"><h4>${postCategory}</h4></a>
+                                    </div>
+                                </div><!-- hovered -->
+                                <div class="render-author" style="background-color: ${postCategoryColor}">
+                                    <span>Por: ${post.author.name}</span>
+                                </div><!-- render author -->
+                            </div><!-- rendered-img -->`;
 
     templateContent += `<div class="comentarios-noshare">
 							<div class="comment-icon">
@@ -104,6 +103,9 @@ let setTemplate = (post) => {
                                 </div><!-- comentarios -->
 							</div><!-- comment-container -->
                         </div><!-- comentarios-noshare -->`;
+    if (post.category[0]) {
+        templateContent += `<style>.${postCategorySlug}::before{background: ${postCategoryColor}}</style>`;
+    }
 
     postRendered.innerHTML += templateContent;
 
