@@ -966,6 +966,10 @@ button {
 }
 
 .post-rendered .rendered-img .render-author {
+    display: none;
+}
+
+.post-rendered.show-author .rendered-img .render-author {
     position: absolute;
     bottom: 0;
     left: 0;
