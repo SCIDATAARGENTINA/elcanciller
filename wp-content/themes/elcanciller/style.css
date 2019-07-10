@@ -1397,14 +1397,14 @@ button {
 
 .opinion .titulo {
     padding: 15px 10px;
-    height: 130px;
+    height: 100px;
     display: flex;
     align-items: center;
     font-family: 'Bree Serif', serif;
 }
 
 .opinion .titulo h3 {
-    font-size: 22px;
+    font-size: 18px;
     margin: 0px !important;
 }
 
