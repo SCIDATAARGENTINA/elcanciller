@@ -23,8 +23,9 @@
       <i class="far fa-comment-dots"></i>
    </div>
    <div class="comment-container">
+    <?php if($comments){  ?>
+
       <div class="comentarios">
-          <?php if($comments){  ?>
             <?php foreach ($comments as $comment) : ?>
 
             <div class="comentario">
@@ -38,6 +39,7 @@
 
          <?php endforeach; ?>
          <?php  } else{  ?>
+        <div class="comentarios sin-comentarios">
             <div class="comentario">
                 <span class="comment-text">
                   No hay comentarios
