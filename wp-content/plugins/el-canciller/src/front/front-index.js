@@ -9,7 +9,7 @@ import { createPostArray, setTemplate } from './components/render-posts';
 
 import { getData, getCategoriesById, getLatestPosts, getComments, getTagsById, getCategories, getTags } from './service/wordpressapi';
 
-var utils = require('../../utils/utils-index');
+var utils = require('../utils/utils-index');
 
 
 let categories;
