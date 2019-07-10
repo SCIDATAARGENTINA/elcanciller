@@ -40,6 +40,11 @@ h6 {
     font-weight: normal;
 }
 
+button,
+a {
+    outline: 0 !important;
+}
+
 .site-content {
     overflow: visible;
 }
