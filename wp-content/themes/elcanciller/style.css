@@ -790,7 +790,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 11fr;
     padding: 10px 0;
-    margin-left: 20px;
+    padding-left: 20px;
     border-bottom: 2px solid #ccc;
 }
 
@@ -1405,7 +1405,7 @@ button {
 }
 
 .opinion .comentarios-noshare {
-    margin-left: 0px;
+    padding-left: 0px;
     border-bottom: 2px solid #ccc;
 }
 
