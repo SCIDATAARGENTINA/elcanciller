@@ -1470,6 +1470,27 @@ button {
 /* ---------------------------*/
 
 
+/*--------- PLACAS SECTION */
+
+
+/* ---------------------------*/
+
+.placas-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.placa-title {
+    background: #e7d117;
+}
+
+
+/* PLACAS SECTION*/
+
+
+/* ---------------------------*/
+
+
 /*--------- FOOTER */
 
 
