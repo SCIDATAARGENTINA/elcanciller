@@ -245,7 +245,7 @@ function custom_post_type_placa()
     'filter_items_list'     => __('Filtrar listado', 'elcanciller'),
   );
   $args = array(
-    'label'                 => __('Placa', 'elcanciller'),
+    'label'                 => __('Placas', 'elcanciller'),
     'description'           => __('Modulo de administración de Placas', 'elcanciller'),
     'labels'                => $labels,
     'supports'              => array('title', 'editor', 'author', 'thumbnail'),
