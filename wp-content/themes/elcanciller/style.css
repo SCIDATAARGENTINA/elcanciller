@@ -1585,6 +1585,12 @@ button {
     left: 0;
 }
 
+.placa-like i {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
 .slider-placa-imagen {
     position: relative;
     width: 100%;
