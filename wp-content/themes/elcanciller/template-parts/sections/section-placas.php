@@ -44,13 +44,13 @@
                 <?php $slide = 0; ?>
                 <?php foreach($titulos as $titulo){ ?>
                     <?php $slide++; ?>
-                    <h3 data-slide="<?php echo $slide; ?>"><?php echo $titulo; ?></h3>
+                    <h3 class="<?php if ($slide == 1) { echo 'active' } ?>" data-slide="<?php echo $slide; ?>"><?php echo $titulo; ?></h3>
                 <?php } ?>
                 <div class="placa-like">
                     <?php $slide = 0; ?>
                     <?php foreach($ids as $id){ ?>
                         <?php $slide++; ?>
-                         <i data-slide="<?php echo $slide; ?>" class="fas fa-heart" data-id="<?php echo $id ?>"></i>
+                         <i class="<?php if ($slide == 1) { echo 'active' } ?>" data-slide="<?php echo $slide; ?>" class="fas fa-heart" data-id="<?php echo $id ?>"></i>
                     <?php } ?>
                 </div>
             </div><!-- end slider placa titulo -->
@@ -63,7 +63,7 @@
             <?php $slide = 0; ?>
             <?php foreach($placas as $placa){ ?>
                 <?php $slide++; ?>
-                <img data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="El Canciller Live">
+                <img class="<?php if ($slide == 1) { echo 'active' } ?>" data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="El Canciller Live">
             <?php } ?>
         </div><!-- end slider placa imagen -->        
         <button id="next-placa" class="placa-next"></button>
