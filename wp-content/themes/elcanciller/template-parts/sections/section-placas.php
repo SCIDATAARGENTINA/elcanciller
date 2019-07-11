@@ -44,7 +44,7 @@
                     <h3><?php echo $titulo; ?></h3>
                 <?php } ?>
                 <div class="placa-like">
-                    <?php foreach($ids as $ids){ ?>
+                    <?php foreach($ids as $id){ ?>
                          <i class="fas fa-heart" data-id="<?php echo $id ?>"></i>
                     <?php } ?>
                 </div>
