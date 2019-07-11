@@ -34,7 +34,7 @@
                     // Restore original Post Data
                     wp_reset_postdata(); ?> 
     <pre>
-    <?php echo $titulos; echo $placas; ?>
+    <?php echo $titulos[0]; echo $placas[0]; ?>
     </pre>
     <div class="placa-title">
         <div class="placa-content">
