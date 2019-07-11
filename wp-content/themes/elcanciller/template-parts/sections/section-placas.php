@@ -26,7 +26,7 @@
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
                         $query->the_post(); 
-                        $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+                        $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                         
                         array_push($ids, get_the_ID());
                         array_push($titulos, get_the_content());
