@@ -93,9 +93,24 @@ jQuery(document).ready(function($) {
 
     /* SLIDER PLACAS*/
 
-    var titulos = $('.slider-placa-titulo h3');
-    var likes = $('.placa-like i');
-    var slides = $('.slider-placa-imagen img');
+    function updateSlides(currentSlide) {
+
+        var nextSlide = currentSlide + 1;
+        var lastSlide = $('.slider-placa-titulo h3').length;
+
+        $('.slider-placa-titulo h3[data-slide="' + nextSlide + '"]').addClass('active');
+        $('.placa-like i[data-slide="' + nextSlide + '"]').addClass('active');
+        $('.slider-placa-imagen img[data-slide="' + nextSlide + '"]').addClass('active');
+
+        return nextSlide;
+    }
+
+    var currentSlide = 1;
+
+    $('#next-placa').click(function() {
+        currentSlide = updateSlides(currentSlide);
+    });
+
 
     console.log(titulos, likes, slides);
 
