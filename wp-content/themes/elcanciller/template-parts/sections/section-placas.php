@@ -17,6 +17,7 @@
 
      $titulos = array();
      $placas = array();
+     $ids = array();
      
      $args = array(
                         'posts_per_page' => -1,
@@ -27,6 +28,7 @@
                         $query->the_post(); 
                         $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
                         
+                        array_push($ids, get_the_ID());
                         array_push($titulos, get_the_content());
                         array_push($placas, $featured_img_url);
                         
@@ -37,20 +39,26 @@
     <div class="placa-title">
         <div class="placa-content">
             <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/placa-logo.svg" alt="El Canciller Twitter">
-            <?php foreach($titulos as $titulo){ ?>
-            <h3><?php echo $titulo; ?></h3>
-            <?php } ?>
-            <div class="placa-like">
-                <i class="fas fa-heart"></i>
-            </div>
-        </div><!-- placa-content -->
+            <div class="slider-placa-titulo">
+                <?php foreach($titulos as $titulo){ ?>
+                    <h3><?php echo $titulo; ?></h3>
+                <?php } ?>
+                <div class="placa-like">
+                    <?php foreach($ids as $ids){ ?>
+                         <i class="fas fa-heart" data-id="<?php echo $id ?>"></i>
+                    <?php } ?>
+                </div>
+            </div><!-- end slider placa titulo -->
 
+        </div><!-- placa-content -->
     </div><!-- placa-title -->
+
     <div class="placa-image">
+        <div class="slider-placa-imagen">
         <?php foreach($placas as $placa){ ?>
-        <img src="<?php echo $placa; ?>" alt="">
+        <img src="<?php echo $placa; ?>" alt="El Canciller Live">
         <?php } ?>
-        
+        </div><!-- end slider placa imagen -->        
         <button id="next-placa" class="placa-next"></button>
     </div><!-- placa-image -->
     
