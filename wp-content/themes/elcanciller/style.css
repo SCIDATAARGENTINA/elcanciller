@@ -1571,6 +1571,19 @@ button {
 }
 
 
+/* PLACA SLIDER */
+
+.slider-placa-titulo {
+    position: relative;
+}
+
+.slider-placa-titulo h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 /* PLACAS SECTION*/
 
 
