@@ -93,9 +93,9 @@ jQuery(document).ready(function($) {
 
     /* SLIDER PLACAS*/
 
-    var titulos = $('.slider-placa-titulos h3');
+    var titulos = $('.slider-placa-titulo h3');
     var likes = $('.placa-like i');
-    var slides = $('.slider-placa-imagenes img');
+    var slides = $('.slider-placa-imagen img');
 
     console.log(titulos, likes, slides);
 
