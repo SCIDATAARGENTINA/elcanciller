@@ -1575,7 +1575,7 @@ button {
 
 .slider-placa-titulo {
     position: relative;
-    height: 100%;
+    height: 150px;
     width: 100%;
 }
 
@@ -1589,6 +1589,12 @@ button {
     position: absolute;
     bottom: 0px;
     left: 0px;
+}
+
+.placa-like i {
+    position: absolute;
+    left: 48%;
+    cursor: pointer;
 }
 
 .slider-placa-imagen {
