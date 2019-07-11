@@ -104,7 +104,9 @@ jQuery(document).ready(function($) {
         slidesToScroll: 1,
         asNavFor: '.slider-placa-imagen',
         dots: false,
-        fade: true
+        fade: true,
+        arrows: false
+
     });
 
 });
