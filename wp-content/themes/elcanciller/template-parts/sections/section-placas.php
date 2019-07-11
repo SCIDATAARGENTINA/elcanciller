@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying CANCILLER SECCION VIDEOS
+ * Template part for displaying CANCILLER SECCION PLACAS
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
