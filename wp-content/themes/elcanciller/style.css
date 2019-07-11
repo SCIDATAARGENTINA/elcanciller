@@ -1614,7 +1614,6 @@ button {
 
 .slider-placa-imagen img.active {
     transform: translateX(0px);
-    z-index: 5;
     opacity: 1;
 }
 
