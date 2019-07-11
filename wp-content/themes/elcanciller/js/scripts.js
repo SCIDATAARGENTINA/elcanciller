@@ -98,6 +98,14 @@ jQuery(document).ready(function($) {
         var nextSlide = currentSlide + 1;
         var lastSlide = $('.slider-placa-titulo h3').length;
 
+        if (currentSlide == lastSlide) {
+            nextSlide = 1;
+        }
+
+        $('.slider-placa-titulo h3[data-slide="' + currentSlide + '"]').removeClass('active');
+        $('.placa-like i[data-slide="' + currentSlide + '"]').removeClass('active');
+        $('.slider-placa-imagen img[data-slide="' + currentSlide + '"]').removeClass('active');
+
         $('.slider-placa-titulo h3[data-slide="' + nextSlide + '"]').addClass('active');
         $('.placa-like i[data-slide="' + nextSlide + '"]').addClass('active');
         $('.slider-placa-imagen img[data-slide="' + nextSlide + '"]').addClass('active');
