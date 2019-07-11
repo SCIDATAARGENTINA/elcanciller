@@ -49,6 +49,7 @@
                 <div class="placa-like">
                     <?php $slide = 0; ?>
                     <?php foreach($ids as $id){ ?>
+                        <?php $slide++; ?>
                          <i data-slide="<?php echo $slide; ?>" class="fas fa-heart" data-id="<?php echo $id ?>"></i>
                     <?php } ?>
                 </div>
@@ -61,6 +62,7 @@
         <div class="slider-placa-imagen">
             <?php $slide = 0; ?>
             <?php foreach($placas as $placa){ ?>
+                <?php $slide++; ?>
                 <img data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="El Canciller Live">
             <?php } ?>
         </div><!-- end slider placa imagen -->        
