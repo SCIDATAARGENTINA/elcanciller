@@ -55,7 +55,7 @@
                     <?php foreach($ids as $id){ ?>
                         <?php $slide++; ?>
                         <?php if( $slide == 1 ){ ?>
-                            <i class="active" data-slide="<?php echo $slide; ?>" class="fas fa-heart" data-id="<?php echo $id ?>"></i>
+                            <i data-slide="<?php echo $slide; ?>" class="active fas fa-heart" data-id="<?php echo $id ?>"></i>
                         <?php }else { ?>
                             <i data-slide="<?php echo $slide; ?>" class="fas fa-heart" data-id="<?php echo $id ?>"></i>
                         <?php } ?>
