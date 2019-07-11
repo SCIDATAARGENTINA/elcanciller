@@ -1599,14 +1599,22 @@ button {
     left: 48%;
     cursor: pointer;
     opacity: 0;
-    transition: 300ms ease;
-    transform: translateX(-10px);
 }
 
-.slider-placa-titulo h3.active,
+.slider-placa-titulo h3.active {
+    transform: translateX(0px);
+    z-index: 5;
+    opacity: 1;
+}
+
 .slider-placa-titulo i.active {
     z-index: 5;
+    opacity: 1;
+}
+
+.slider-placa-imagen img.active {
     transform: translateX(0px);
+    z-index: 5;
     opacity: 1;
 }
 
@@ -1620,6 +1628,9 @@ button {
     position: absolute;
     top: 0px;
     left: 0px;
+    opacity: 0;
+    transition: 300ms ease;
+    transform: translateX(-10px);
 }
 
 

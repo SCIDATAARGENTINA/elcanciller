@@ -120,7 +120,4 @@ jQuery(document).ready(function($) {
     });
 
 
-    console.log(titulos, likes, slides);
-
-    /**/
 });
