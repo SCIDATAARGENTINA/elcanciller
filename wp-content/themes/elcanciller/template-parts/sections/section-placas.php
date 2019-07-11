@@ -44,13 +44,21 @@
                 <?php $slide = 0; ?>
                 <?php foreach($titulos as $titulo){ ?>
                     <?php $slide++; ?>
-                    <h3 class="<?php if ($slide == 1) { echo 'active' } ?>" data-slide="<?php echo $slide; ?>"><?php echo $titulo; ?></h3>
+                    <?php if( $slide == 1 ){ ?>
+                        <h3 class="active" data-slide="<?php echo $slide; ?>"><?php echo $titulo; ?></h3>
+                    <?php }else { ?>
+                    <h3 data-slide="<?php echo $slide; ?>"><?php echo $titulo; ?></h3>
+                    <?php } ?>
                 <?php } ?>
                 <div class="placa-like">
                     <?php $slide = 0; ?>
                     <?php foreach($ids as $id){ ?>
                         <?php $slide++; ?>
-                         <i class="<?php if ($slide == 1) { echo 'active' } ?>" data-slide="<?php echo $slide; ?>" class="fas fa-heart" data-id="<?php echo $id ?>"></i>
+                        <?php if( $slide == 1 ){ ?>
+                            <i class="active" data-slide="<?php echo $slide; ?>" class="fas fa-heart" data-id="<?php echo $id ?>"></i>
+                        <?php }else { ?>
+                            <i data-slide="<?php echo $slide; ?>" class="fas fa-heart" data-id="<?php echo $id ?>"></i>
+                        <?php } ?>
                     <?php } ?>
                 </div>
             </div><!-- end slider placa titulo -->
@@ -63,7 +71,11 @@
             <?php $slide = 0; ?>
             <?php foreach($placas as $placa){ ?>
                 <?php $slide++; ?>
-                <img class="<?php if ($slide == 1) { echo 'active' } ?>" data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="El Canciller Live">
+                <?php if( $slide == 1 ){ ?>
+                    <img class="active" data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="El Canciller Live">
+                <?php }else { ?>
+                    <img data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="El Canciller Live">
+                <?php } ?>
             <?php } ?>
         </div><!-- end slider placa imagen -->        
         <button id="next-placa" class="placa-next"></button>
