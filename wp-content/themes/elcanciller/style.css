@@ -1575,10 +1575,12 @@ button {
 
 .slider-placa-titulo {
     position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .slider-placa-titulo h3 {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
