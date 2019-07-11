@@ -55,9 +55,9 @@
 
     <div class="placa-image">
         <div class="slider-placa-imagen">
-        <?php foreach($placas as $placa){ ?>
-        <img src="<?php echo $placa; ?>" alt="El Canciller Live">
-        <?php } ?>
+            <?php foreach($placas as $placa){ ?>
+                <img src="<?php echo $placa; ?>" alt="El Canciller Live">
+            <?php } ?>
         </div><!-- end slider placa imagen -->        
         <button id="next-placa" class="placa-next"></button>
     </div><!-- placa-image -->
