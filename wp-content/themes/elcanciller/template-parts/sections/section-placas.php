@@ -12,7 +12,30 @@
 ?>
 
 <div class="placas-section container">
-    
+
+     <?php 
+
+     $titulos = array();
+     $placas = array();
+     
+     $args = array(
+                        'posts_per_page' => -1,
+                        'post_type' => 'placa'
+                    );
+                    $query = new WP_Query( $args );
+                    while( $query->have_posts() ) {
+                        $query->the_post(); 
+                        $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+                        
+                        array_push($titulos, get_the_content());
+                        array_push($placas, $featured_img_url);
+                        
+                    }
+                    // Restore original Post Data
+                    wp_reset_postdata(); ?> 
+    <pre>
+    <?php echo $titulos; echo $placas; ?>
+    </pre>
     <div class="placa-title">
         <div class="placa-content">
             <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/placa-logo.svg" alt="El Canciller Twitter">
