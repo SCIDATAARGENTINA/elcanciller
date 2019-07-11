@@ -91,4 +91,20 @@ jQuery(document).ready(function($) {
 
     /*MAGINIFIC POPUP VIDEOS END*/
 
+    /*SLICK SLIDER PLACAS*/
+
+    $('.slider-placa-imagen').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.slider-placa-titulo'
+    });
+    $('.slider-placa-titulo').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider-placa-imagen',
+        dots: false,
+        fade: true
+    });
+
 });
