@@ -93,7 +93,11 @@ jQuery(document).ready(function($) {
 
     /* SLIDER PLACAS*/
 
+    var titulos = $('.slider-placa-titulos h3');
+    var likes = $('.placa-like i');
+    var slides = $('.slider-placa-imagenes img');
 
+    console.log(titulos, likes, slides);
 
     /**/
 });
