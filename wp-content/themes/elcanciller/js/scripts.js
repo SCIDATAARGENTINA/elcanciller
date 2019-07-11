@@ -97,6 +97,7 @@ jQuery(document).ready(function($) {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        fade: true,
         asNavFor: '.slider-placa-titulo'
     });
     $('.slider-placa-titulo').slick({
@@ -106,7 +107,6 @@ jQuery(document).ready(function($) {
         dots: false,
         fade: true,
         arrows: false
-
     });
 
 });
