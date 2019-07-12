@@ -1916,6 +1916,13 @@ article .post-content .has-content-area {
     font-size: 18px;
 }
 
+#comments .comments-topbar div:after {
+    height: 50%;
+    width: 1px;
+    background: #fff;
+    content: '';
+}
+
 
 /* TWITTER SHARE */
 
