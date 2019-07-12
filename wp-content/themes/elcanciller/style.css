@@ -1847,6 +1847,10 @@ article .post-content .has-content-area {
     line-height: 22pt;
 }
 
+.pvc_stats {
+    display: none;
+}
+
 
 /* TWITTER SHARE */
 
