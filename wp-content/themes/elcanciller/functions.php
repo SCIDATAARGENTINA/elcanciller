@@ -341,18 +341,18 @@ if ( ! function_exists( 't5_comment_mod_links' ) )
         // Mark as Spam.
         $link .= sprintf( $template, $admin_url, 'cdc&dt=spam', __( 'Spam' ) );
         // Delete.
-        $link .= sprintf( $template, $admin_url, 'cdc', __( 'Delete' ) );
+        $link .= sprintf( $template, $admin_url, 'cdc', __( 'Borrar' ) );
 
         // Approve or unapprove.
         $comment = get_comment( $id );
 
         if ( '0' === $comment->comment_approved )
         {
-            $link .= sprintf( $template, $admin_url, 'approvecomment', __( 'Approve' ) );
+            $link .= sprintf( $template, $admin_url, 'approvecomment', __( 'Aprobar' ) );
         }
         else
         {
-            $link .= sprintf( $template, $admin_url, 'unapprovecomment', __( 'Unapprove' ) );
+            $link .= sprintf( $template, $admin_url, 'unapprovecomment', __( 'Desaprobar' ) );
         }
 
         return $link;
