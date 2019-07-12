@@ -1911,6 +1911,7 @@ article .post-content .has-content-area {
     grid-template-columns: 1fr 1fr 1fr;
     background: #e7d117;
     color: #fff;
+    font-family: "Roboto";
 }
 
 
