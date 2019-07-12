@@ -1949,7 +1949,6 @@ article .post-content .has-content-area {
 .comment .comment-body {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     font-family: "Roboto";
     font-size: 15px;
 }
