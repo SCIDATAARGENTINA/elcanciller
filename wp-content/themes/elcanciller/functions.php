@@ -345,7 +345,7 @@ class Canciller_Walker_Comment extends Walker_Comment {
           edit_comment_link( __( $edit_comment_icon , 'twentynineteen' ), '<span class="edit-link">' , '</span>' );
         ?>
         <?php if ( '0' == $comment->comment_approved ) : ?>
-        <?php wp_set_comment_status( ); ?>
+        <?php wp_set_comment_status(comment_ID(), 'approve' ); ?>
         <?php endif; ?>
       </div><!-- .comment-actions -->
       <article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
