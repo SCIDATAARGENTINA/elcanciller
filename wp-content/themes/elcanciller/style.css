@@ -1970,6 +1970,11 @@ article .post-content .has-content-area {
     padding: 5px 10px;
 }
 
+.comment-reply-link:hover {
+    background: #e7d117;
+    color: #fff;
+}
+
 
 /* TWITTER SHARE */
 
