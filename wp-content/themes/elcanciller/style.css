@@ -1488,6 +1488,8 @@ button {
 
 .placa-title {
     background: #e7d117;
+    position: relative;
+    z-index: 5;
 }
 
 .placa-content {
