@@ -876,7 +876,7 @@ button {
         opacity: 1;
     }
     99% {
-        opacity: 0;
+        opacity: 1;
     }
     100% {
         -moz-transform: translateX(-150%);
@@ -884,6 +884,7 @@ button {
         -webkit-transform: translateX(-150%);
         /* Firefox bug fix */
         transform: translateX(-150%);
+        opacity: 0;
     }
 }
 
