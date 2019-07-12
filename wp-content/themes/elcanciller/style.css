@@ -1859,6 +1859,7 @@ article .post-content .has-content-area {
     align-items: center;
     flex-direction: column;
     width: 80%;
+    margin-bottom: 50px;
 }
 
 .related-title i {
