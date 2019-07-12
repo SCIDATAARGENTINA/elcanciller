@@ -1900,6 +1900,7 @@ article .post-content .has-content-area {
     border-bottom: 7px solid #ccc;
     margin: 0px !important;
     margin-left: 50px !important;
+    background: #f5f8fa;
 }
 
 #comments .comments-title-wrap {
