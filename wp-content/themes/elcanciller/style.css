@@ -870,6 +870,13 @@ button {
         -webkit-transform: translateX(0%);
         /* Firefox bug fix */
         transform: translateX(0%);
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
     }
     100% {
         -moz-transform: translateX(-150%);
