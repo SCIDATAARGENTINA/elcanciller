@@ -1854,6 +1854,9 @@ article .post-content .has-content-area {
 .related-title {
     background: #e7d117;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .related-title i {
