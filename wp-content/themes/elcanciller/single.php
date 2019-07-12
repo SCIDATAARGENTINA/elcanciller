@@ -41,7 +41,7 @@ get_header();
 		</div><!-- inner container -->
 		<div class="outer-container">
 			<div class="loader">Cargando...</div>
-			<div class="render-posts col-3" data-quantity="9" data-random="1">
+			<div class="render-posts col-3" data-quantity="9">
 			</div>
 		</div><!-- outer-container -->
 
