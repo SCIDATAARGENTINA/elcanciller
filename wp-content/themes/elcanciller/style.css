@@ -1982,10 +1982,18 @@ article .post-content .has-content-area {
 
 .edit-link {
     border-radius: 20px;
-    background: #e7d117 !important;
-    color: #fff !important;
+    color: #e7d117 !important;
     padding: 5px 10px;
     font-size: 12px;
+    font-family: "Roboto"
+}
+
+.edit-link a {
+    color: #e7d117 !important;
+}
+
+.edit-link svg {
+    margin-right: 5px;
 }
 
 
