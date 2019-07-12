@@ -1913,7 +1913,13 @@ article .post-content .has-content-area {
     color: #fff;
     font-family: "Roboto";
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+#comments .comments-topbar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #comments .comments-topbar div:after {
