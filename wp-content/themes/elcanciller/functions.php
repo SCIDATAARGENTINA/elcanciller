@@ -338,17 +338,17 @@ class Canciller_Walker_Comment extends Walker_Comment {
 		$tag = ( 'div' === $args['style'] ) ? 'div' : 'li';
 
 		?>
-		<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children ? 'parent' : '', $comment ); ?>>
+    <<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children ? 'parent' : '', $comment ); ?>>
+      <div class="comment-actions">
+        <?php
+          $edit_comment_icon = twentynineteen_get_icon_svg( 'edit', 16 );
+          edit_comment_link( __( 'Edit', 'twentynineteen' ), '<span class="edit-link">' . $edit_comment_icon, '</span>' );
+        ?>
+        <?php if ( '0' == $comment->comment_approved ) : ?>
+        <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentynineteen' ); ?></p>
+        <?php endif; ?>
+      </div><!-- .comment-actions -->
       <article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
-        <div class="comment-actions">
-          <?php
-            $edit_comment_icon = twentynineteen_get_icon_svg( 'edit', 16 );
-            edit_comment_link( __( 'Edit', 'twentynineteen' ), '<span class="edit-link">' . $edit_comment_icon, '</span>' );
-          ?>
-          <?php if ( '0' == $comment->comment_approved ) : ?>
-          <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentynineteen' ); ?></p>
-          <?php endif; ?>
-        </div><!-- .comment-metadata -->
         <div class="comment-author">
           <?php
           $comment_author_url = get_comment_author_url( $comment );
