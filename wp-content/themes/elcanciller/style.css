@@ -1923,6 +1923,7 @@ article .post-content .has-content-area {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #comments .comments-topbar div:after {
@@ -1930,14 +1931,17 @@ article .post-content .has-content-area {
     width: 1px;
     background: #fff;
     content: '';
+    position: absolute;
+    right: 0;
 }
 
-#comments .comments-topbar div::last-child:after {
+#comments .comments-topbar div:last-child:after {
     display: none;
 }
 
 #comments .comments-topbar div i {
     margin: 0 5px;
+    font-size: 18px;
 }
 
 
