@@ -1824,6 +1824,12 @@ button {
     padding: 14px;
 }
 
+.post-title .resumen {
+    background: #b29f93;
+    color: #fff;
+    font-family: "Lato";
+}
+
 article .post-content {
     margin-left: 50px;
 }
