@@ -1886,8 +1886,9 @@ article .post-content .has-content-area {
 .grey-band {
     position: absolute;
     width: 100vw;
+    top: 50px;
     left: calc(-50vw + 50%);
-    height: 300px;
+    height: 250px;
     background: #edede6;
 }
 
