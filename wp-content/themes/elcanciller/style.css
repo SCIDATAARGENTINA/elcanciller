@@ -1932,6 +1932,10 @@ article .post-content .has-content-area {
     content: '';
 }
 
+#comments .comments-topbar div i {
+    margin: 0 5px;
+}
+
 
 /* TWITTER SHARE */
 
