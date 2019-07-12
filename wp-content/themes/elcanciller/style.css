@@ -1829,6 +1829,9 @@ button {
     color: #fff;
     font-family: "Lato";
     padding: 14px;
+    font-size: 20px;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
 }
 
 article .post-content {
