@@ -1908,8 +1908,8 @@ article .post-content .has-content-area {
 }
 
 #comments .comments-topbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     background: #e7d117;
     color: #fff;
     font-family: "Roboto";
