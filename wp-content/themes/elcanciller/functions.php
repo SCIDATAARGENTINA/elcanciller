@@ -367,7 +367,8 @@ class Canciller_Walker_Comment extends Walker_Comment {
 					array(
 						'add_below' => 'div-comment',
 						'depth'     => $depth,
-						'max_depth' => $args['max_depth'],
+            'max_depth' => $args['max_depth'],
+            'reply_text' => '#responder',
 						'before'    => '<div class="comment-reply">',
 						'after'     => '</div>',
 					)
