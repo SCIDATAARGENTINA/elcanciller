@@ -1857,6 +1857,7 @@ button {
     left: 0;
     border-radius: 20px;
     opacity: 0;
+    z-index: 3;
 }
 
 .highlight-and-share-wrapper:hover a:before {
