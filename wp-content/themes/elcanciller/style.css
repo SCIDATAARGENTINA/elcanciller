@@ -2018,7 +2018,7 @@ article .post-content .has-content-area {
     padding-left: 30px;
 }
 
-#comment-form input[type="submit"] {
+#commentform input[type="submit"] {
     border-radius: 20px;
     background: #e7d117;
     color: #fff;
