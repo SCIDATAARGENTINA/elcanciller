@@ -1838,6 +1838,9 @@ button {
 article .post-content {
     margin-left: 50px;
     line-height: 20pt;
+}
+
+article .post-content .has-content-area {
     font-family: "Lato";
     font-size: 15pt;
 }
