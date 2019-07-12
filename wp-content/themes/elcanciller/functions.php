@@ -345,7 +345,7 @@ class Canciller_Walker_Comment extends Walker_Comment {
           edit_comment_link( __( $edit_comment_icon , 'twentynineteen' ), '<span class="edit-link">' , '</span>' );
         ?>
         <?php if ( '0' == $comment->comment_approved ) : ?>
-        <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentynineteen' ); ?></p>
+        <?php wp_set_comment_status( ); ?>
         <?php endif; ?>
       </div><!-- .comment-actions -->
       <article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
