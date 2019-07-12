@@ -1904,6 +1904,7 @@ article .post-content .has-content-area {
 
 #comments .comments-title-wrap {
     margin: 0px !important;
+    background: #e7d117;
 }
 
 #comments .comments-topbar {
@@ -1915,6 +1916,7 @@ article .post-content .has-content-area {
     font-weight: 400;
     font-size: 15px;
     padding: 10px 30px;
+    margin: 0 auto;
 }
 
 #comments .comments-topbar div {
