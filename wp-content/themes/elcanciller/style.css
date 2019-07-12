@@ -1949,6 +1949,16 @@ article .post-content .has-content-area {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.reply-author {
+    color: #e7d117;
+}
+
+.commet-content {
+    color: #656565;
 }
 
 
