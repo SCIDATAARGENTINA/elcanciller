@@ -1851,6 +1851,17 @@ article .post-content .has-content-area {
     display: none;
 }
 
+.related-title {
+    background: #e7d117;
+    color: #fff;
+}
+
+.related-title i {
+    color: #b29f93;
+    border-bottom: 1px solid #fff;
+    font-size: 30px;
+}
+
 
 /* TWITTER SHARE */
 
