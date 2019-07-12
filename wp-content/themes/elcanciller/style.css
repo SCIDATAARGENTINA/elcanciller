@@ -1814,6 +1814,7 @@ button {
 
 .post-title {
     margin-top: -60px;
+    position: relative;
 }
 
 .post-title h1 {
