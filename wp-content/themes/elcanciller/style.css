@@ -1871,8 +1871,11 @@ button {
     z-index: 5;
 }
 
-.highlight-and-share-wrapper:hover a:before,
 .highlight-and-share-wrapper:hover a:after {
+    opacity: 1;
+}
+
+.highlight-and-share-wrapper:hover a:before {
     width: 100%;
     opacity: 1;
     height: 100%;
