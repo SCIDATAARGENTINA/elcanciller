@@ -1980,9 +1980,11 @@ article .post-content .has-content-area {
     text-decoration: none;
 }
 
-.comment-edit-link {
+.edit-link {
+    border-radius: 20px;
     background: #e7d117 !important;
     color: #fff !important;
+    padding: 5px 10px;
     font-size: 12px;
 }
 
