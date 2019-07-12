@@ -1858,6 +1858,7 @@ article .post-content .has-content-area {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 80%;
 }
 
 .related-title i {
@@ -1865,6 +1866,13 @@ article .post-content .has-content-area {
     border-bottom: 1px solid #fff;
     font-size: 30px;
     padding: 20px;
+}
+
+.related-posts {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
