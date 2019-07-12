@@ -1860,6 +1860,7 @@ article .post-content .has-content-area {
     flex-direction: column;
     width: 80%;
     margin-bottom: 50px;
+    text-transform: uppercase;
 }
 
 .related-title i {
@@ -1867,6 +1868,7 @@ article .post-content .has-content-area {
     border-bottom: 1px solid #fff;
     font-size: 30px;
     padding: 20px;
+    margin-top: -37px;
 }
 
 .related-posts {
