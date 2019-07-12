@@ -881,7 +881,8 @@ button {
 }
 
 .trending-post:hover .comentarios,
-.opinion:hover .comentarios {
+.opinion:hover .comentarios,
+.post-content .comentarios {
     opacity: 1;
     /* Apply animation to this element */
     -moz-animation: example1 40s linear infinite;
