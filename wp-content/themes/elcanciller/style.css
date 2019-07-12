@@ -1945,6 +1945,11 @@ article .post-content .has-content-area {
     font-size: 18px;
 }
 
+.comment .comment-body {
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 /* TWITTER SHARE */
 
