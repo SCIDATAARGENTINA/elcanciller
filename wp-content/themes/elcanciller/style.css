@@ -1810,12 +1810,14 @@ button {
 .highlight-and-share-wrapper a:hover,
 .highlight-and-share-wrapper a:visited {
     padding: 0px;
-    color: #0099ff;
-    background: #fff;
-    font-family: 'Bree Serif', serif;
-    font-size: 14px;
-    text-transform: lowercase;
-    letter-spacing: 0px;
+    color: #0099ff !important;
+    background: #fff !important;
+    font-family: 'Bree Serif', serif !important;
+    font-size: 14px !important;
+    text-transform: lowercase !important;
+    letter-spacing: 0px !important;
+    display: flex !important;
+    align-items: center;
 }
 
 .has_twitter {
