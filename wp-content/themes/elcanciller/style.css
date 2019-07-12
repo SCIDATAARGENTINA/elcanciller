@@ -1810,6 +1810,8 @@ button {
 .highlight-and-share-wrapper a:hover,
 .highlight-and-share-wrapper a:visited {
     padding: 0px;
+    color: #0099ff;
+    background: #fff;
 }
 
 .has_twitter {
