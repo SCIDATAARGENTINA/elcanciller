@@ -1812,6 +1812,10 @@ button {
     padding: 0px;
     color: #0099ff;
     background: #fff;
+    font-family: 'Bree Serif', serif;
+    font-size: 14px;
+    text-transform: lowercase;
+    letter-spacing: 0px;
 }
 
 .has_twitter {
