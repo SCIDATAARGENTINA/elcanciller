@@ -1980,6 +1980,12 @@ article .post-content .has-content-area {
     text-decoration: none;
 }
 
+.comment-edit-link {
+    background: #e7d117 !important;
+    color: #fff !important;
+    font-size: 12px;
+}
+
 
 /* TWITTER SHARE */
 
