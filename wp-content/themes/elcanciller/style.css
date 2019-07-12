@@ -1960,6 +1960,10 @@ article .post-content .has-content-area {
     margin-right: 10px;
 }
 
+.comment-list {
+    margin: 30px 0 !important;
+}
+
 .comment-content {
     color: #656565;
     margin: 0px !important;
