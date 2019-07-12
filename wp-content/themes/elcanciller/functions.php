@@ -321,6 +321,44 @@ function substrwords($text, $maxchar, $end = '...'){
   return $output;
 }
 
+if ( ! function_exists( 't5_comment_mod_links' ) )
+{
+    add_filter( 'edit_comment_link', 't5_comment_mod_links', 10, 2 );
+
+    /**
+     * Adds Spam and Delete links to the Sdit link.
+     *
+     * @wp-hook edit_comment_link
+     * @param   string  $link Edit link markup
+     * @param   int $id Comment ID
+     * @return  string
+     */
+    function t5_comment_mod_links( $link, $id )
+    {
+        $template = ' <a class="comment-edit-link" href="%1$s%2$s">%3$s</a>';
+        $admin_url = admin_url( "comment.php?c=$id&action=" );
+
+        // Mark as Spam.
+        $link .= sprintf( $template, $admin_url, 'cdc&dt=spam', __( 'Spam' ) );
+        // Delete.
+        $link .= sprintf( $template, $admin_url, 'cdc', __( 'Delete' ) );
+
+        // Approve or unapprove.
+        $comment = get_comment( $id );
+
+        if ( '0' === $comment->comment_approved )
+        {
+            $link .= sprintf( $template, $admin_url, 'approvecomment', __( 'Approve' ) );
+        }
+        else
+        {
+            $link .= sprintf( $template, $admin_url, 'unapprovecomment', __( 'Unapprove' ) );
+        }
+
+        return $link;
+    }
+}
+
 
 class Canciller_Walker_Comment extends Walker_Comment {
 
