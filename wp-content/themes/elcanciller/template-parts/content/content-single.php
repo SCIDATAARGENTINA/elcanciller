@@ -22,10 +22,13 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
 	<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
 
 	<div class="post-title">
+		
 		<h1><?php the_title(); ?></h1>
 		<div class="resumen">
 			<?php echo get_the_excerpt(); ?>
 		</div><!-- resumen -->
+        <?php get_template_part('template-parts/comments/comments', 'sharer') ?>
+
 	</div><!-- post-title -->
 
 	<?php the_content(); ?>
