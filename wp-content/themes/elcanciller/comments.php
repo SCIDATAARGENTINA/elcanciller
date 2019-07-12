@@ -32,6 +32,7 @@ $discussion = twentynineteen_get_discussion_data();
 				comentar
 			</div>
 			<div class="compartir">
+				Compartir:
 				<i class="fab fa-twitter"></i>
 				<i class="fab fa-facebook-f"></i>
 			</div>
