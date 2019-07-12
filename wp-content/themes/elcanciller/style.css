@@ -1974,8 +1974,8 @@ article .post-content .has-content-area {
 .comment-reply-link,
 #cancel-comment-reply-link {
     border-radius: 20px;
-    background: #e7d117;
-    color: #fff;
+    background: #e7d117 !important;
+    color: #fff !important;
     padding: 5px 10px;
     font-size: 12px;
     font-family: "Bree Serif";
