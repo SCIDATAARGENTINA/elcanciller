@@ -55,7 +55,7 @@ $discussion = twentynineteen_get_discussion_data();
 			<?php
 			wp_list_comments(
 				array(
-					'walker'      => new TwentyNineteen_Walker_Comment(),
+					'walker'      => new ElCanciller_Walker_Comment(),
 					'avatar_size' => twentynineteen_get_avatar_size(),
 					'short_ping'  => true,
 					'style'       => 'ol',
