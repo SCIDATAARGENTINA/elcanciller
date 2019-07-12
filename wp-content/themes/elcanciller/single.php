@@ -40,12 +40,14 @@ get_header();
 
 		</div><!-- inner container -->
 		<div class="outer-container">
-			<div class="related-title">
-				<i class="fas fa-bomb"></i>
-				<h3>Lo que no te podés perder</h3>
-			</div><!-- related-title -->
-			<div class="loader">Cargando...</div>
-			<div class="render-posts col-3" data-quantity="9">
+			<div class="related-posts">
+				<div class="related-title">
+					<i class="fas fa-bomb"></i>
+					<h3>Lo que no te podés perder</h3>
+				</div><!-- related-title -->
+				<div class="loader">Cargando...</div>
+				<div class="render-posts col-3" data-quantity="9">
+				</div>
 			</div>
 		</div><!-- outer-container -->
 
