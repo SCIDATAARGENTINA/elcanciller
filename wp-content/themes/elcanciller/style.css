@@ -1809,7 +1809,7 @@ button {
 .highlight-and-share-wrapper a,
 .highlight-and-share-wrapper a:hover,
 .highlight-and-share-wrapper a:visited {
-    padding: 0px;
+    padding: 0px !important;
     color: #0099ff !important;
     background: #fff !important;
     font-family: 'Bree Serif', serif !important;
