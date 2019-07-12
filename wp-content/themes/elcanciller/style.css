@@ -2008,6 +2008,12 @@ article .post-content .has-content-area {
 
 #comments .children article {
     border-left: 2px solid #ccc;
+    border-bottom: 0px !important;
+    padding-left: 10px;
+}
+
+#comments .children li {
+    padding-left: 20px;
 }
 
 
