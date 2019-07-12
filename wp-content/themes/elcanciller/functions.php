@@ -339,16 +339,16 @@ if ( ! function_exists( 't5_comment_mod_links' ) )
         $admin_url = admin_url( "comment.php?c=$id&action=" );
 
         // Mark as Spam.
-        $link .= sprintf( $template, $admin_url, 'cdc&dt=spam', __( 'Spam' ) );
+        $link .= sprintf( $template, $admin_url, 'cdc&dt=spam', __( 'spam' ) );
         // Delete.
-        $link .= sprintf( $template, $admin_url, 'cdc', __( 'Borrar' ) );
+        $link .= sprintf( $template, $admin_url, 'cdc', __( 'borrar' ) );
 
         // Approve or unapprove.
         $comment = get_comment( $id );
 
         if ( '0' === $comment->comment_approved )
         {
-            $link .= sprintf( $template, $admin_url, 'approvecomment', __( 'Aprobar' ) );
+            $link .= sprintf( $template, $admin_url, 'approvecomment', __( 'aprobar' ) );
         }
 
         return $link;
