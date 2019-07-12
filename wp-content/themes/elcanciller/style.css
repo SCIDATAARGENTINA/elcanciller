@@ -1802,3 +1802,32 @@ button {
         height: 5em;
     }
 }
+
+
+/* TWITTER SHARE */
+
+.highlight-and-share-wrapper a,
+.highlight-and-share-wrapper a:hover,
+.highlight-and-share-wrapper a:visited {
+    padding: 0px;
+}
+
+.has_twitter {
+    border-radius: 50px;
+    height: 0px;
+}
+
+.highlight-and-share-wrapper .fa {
+    font-size: 22px;
+    color: #fff;
+    background: #0099ff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* TWITTER SHARE END */
