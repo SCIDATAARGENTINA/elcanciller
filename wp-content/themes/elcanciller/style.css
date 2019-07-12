@@ -1971,7 +1971,8 @@ article .post-content .has-content-area {
     margin: 0px !important;
 }
 
-.comment-reply-link {
+.comment-reply-link,
+#cancel-comment-reply-link {
     border-radius: 20px;
     background: #e7d117;
     color: #fff;
