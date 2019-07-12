@@ -341,7 +341,6 @@ class Canciller_Walker_Comment extends Walker_Comment {
 		<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children ? 'parent' : '', $comment ); ?>>
 			<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
 				<footer class="comment-meta">
-					<p>hola</p>
 					<div class="comment-author vcard">
 						<?php
 						$comment_author_url = get_comment_author_url( $comment );
