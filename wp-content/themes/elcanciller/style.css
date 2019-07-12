@@ -1824,6 +1824,10 @@ button {
     padding: 14px;
 }
 
+article .post-content {
+    margin-right: 50px;
+}
+
 
 /* TWITTER SHARE */
 

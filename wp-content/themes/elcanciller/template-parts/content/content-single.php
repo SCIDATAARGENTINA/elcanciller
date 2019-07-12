@@ -20,9 +20,9 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
-
+	<div class="post-content">
 	<div class="post-title">
-		
+
 		<h1><?php the_title(); ?></h1>
 		<div class="resumen">
 			<?php echo get_the_excerpt(); ?>
@@ -32,6 +32,8 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
 	</div><!-- post-title -->
 
 	<?php the_content(); ?>
+	</div><!-- post content -->
+
 
 </article><!-- #post-${ID} -->
 
