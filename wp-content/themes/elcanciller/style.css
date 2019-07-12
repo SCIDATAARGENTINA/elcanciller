@@ -2006,6 +2006,10 @@ article .post-content .has-content-area {
     margin-right: 5px;
 }
 
+#comments .children article {
+    border-left: 2px solid #ccc;
+}
+
 
 /* TWITTER SHARE */
 
