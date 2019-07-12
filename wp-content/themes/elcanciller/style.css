@@ -1978,6 +1978,13 @@ article .post-content .has-content-area {
     color: #fff;
     padding: 5px 10px;
     font-size: 12px;
+    font-family: "Bree Serif";
+}
+
+#reply-title.comment-reply-title {
+    margin: 0px;
+    margin-left: 50px;
+    font-family: "Bree Serif";
 }
 
 .comment-reply-link:hover,
@@ -1993,7 +2000,7 @@ article .post-content .has-content-area {
     color: #e7d117 !important;
     padding: 5px 10px;
     font-size: 12px;
-    font-family: "Roboto";
+    font-family: "Bree Serif";
     display: flex;
     align-items: center;
 }
@@ -2035,6 +2042,7 @@ article .post-content .has-content-area {
     padding: 10px 15px;
     font-size: 15px;
     text-transform: lowercase;
+    font-family: "Bree Serif";
 }
 
 .comment-form-flex {
