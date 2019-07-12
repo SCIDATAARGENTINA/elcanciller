@@ -2035,8 +2035,16 @@ article .post-content .has-content-area {
     text-transform: lowercase;
 }
 
+.comment-form-flex {
+    margin: 0px;
+}
+
 .comment-form-flex #respond+.comments-title {
     display: none;
+}
+
+#comment {
+    height: 100px;
 }
 
 
