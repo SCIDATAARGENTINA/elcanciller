@@ -1979,12 +1979,16 @@ article .post-content .has-content-area {
     padding: 5px 10px;
     font-size: 12px;
     font-family: "Bree Serif";
+    font-weight: 400;
+    text-transform: lowercase;
 }
 
 #reply-title.comment-reply-title {
     margin: 0px;
     margin-left: 50px;
     font-family: "Bree Serif";
+    font-weight: 400;
+    text-transform: lowercase;
 }
 
 .comment-reply-link:hover,
@@ -2003,6 +2007,8 @@ article .post-content .has-content-area {
     font-family: "Bree Serif";
     display: flex;
     align-items: center;
+    font-weight: 400;
+    text-transform: lowercase;
 }
 
 .edit-link a {
