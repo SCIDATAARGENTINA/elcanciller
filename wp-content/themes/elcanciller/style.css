@@ -1804,6 +1804,26 @@ button {
 }
 
 
+/* ---------------------------*/
+
+
+/*--------- SINGLE POST */
+
+
+/* ---------------------------*/
+
+.post-title {
+    margin-top: -60px;
+}
+
+.post-title h1 {
+    margin: 0px;
+    font-size: 33px;
+    background: #edede6;
+    padding: 14px;
+}
+
+
 /* TWITTER SHARE */
 
 .highlight-and-share-wrapper a,
