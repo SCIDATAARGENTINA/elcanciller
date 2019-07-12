@@ -9,7 +9,7 @@
  * @since 1.0.0
  */
 
-$featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+$featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
 $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 $categories = get_the_terms( $post->ID , array( 'categoria_videos') );
@@ -27,7 +27,7 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
 			<?php echo get_the_excerpt(); ?>
 		</div><!-- resumen -->
 	</div><!-- post-title -->
-	
+
 	<?php the_content(); ?>
 
 </article><!-- #post-${ID} -->
