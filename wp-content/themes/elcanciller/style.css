@@ -1844,7 +1844,14 @@ button {
     transition: 300ms ease;
 }
 
-.highlight-and-share-wrapper:hover .fa {
+.highlight-and-share-wrapper a:before {
+    content: '';
+    background: #0099ff;
+    width: 0%;
+    transition: 300ms ease;
+}
+
+.highlight-and-share-wrapper:hover a:before {
     width: 100%;
 }
 
