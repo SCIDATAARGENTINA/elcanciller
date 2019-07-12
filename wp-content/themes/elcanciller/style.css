@@ -1906,6 +1906,13 @@ article .post-content .has-content-area {
     margin: 0px !important;
 }
 
+#comments .comments-topbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #e7d117;
+    color: #fff;
+}
+
 
 /* TWITTER SHARE */
 
