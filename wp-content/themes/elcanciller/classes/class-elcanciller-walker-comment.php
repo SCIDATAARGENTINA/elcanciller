@@ -38,6 +38,39 @@ class Canciller_Walker_Comment extends Walker_Comment {
 						$avatar             = get_avatar( $comment, $args['avatar_size'] );
 						?>
 						<span class="reply-author">@<?php echo $comment_author ?></span>
+						/*
+						 * Using the `check` icon instead of `check_circle`, since we can't add a
+						 * fill color to the inner check shape when in circle form.
+						 */
+						if ( twentynineteen_is_comment_by_post_author( $comment ) ) {
+							printf( '<span class="post-author-badge" aria-hidden="true">%s</span>', twentynineteen_get_icon_svg( 'check', 24 ) );
+						}
+
+						/*
+						 * Using the `check` icon instead of `check_circle`, since we can't add a
+						 * fill color to the inner check shape when in circle form.
+						 */
+						if ( twentynineteen_is_comment_by_post_author( $comment ) ) {
+							printf( '<span class="post-author-badge" aria-hidden="true">%s</span>', twentynineteen_get_icon_svg( 'check', 24 ) );
+						}
+
+						printf(
+							/* translators: %s: comment author link */
+							wp_kses(
+								__( '%s <span class="screen-reader-text says">says:</span>', 'twentynineteen' ),
+								array(
+									'span' => array(
+										'class' => array(),
+									),
+								)
+							),
+							'<b class="fn">' . $comment_author . '</b>'
+						);
+
+						if ( ! empty( $comment_author_url ) ) {
+							echo '</a>';
+						}
+						?>
 					</div><!-- .comment-author -->
 
 					<div class="comment-metadata">
