@@ -350,10 +350,6 @@ if ( ! function_exists( 't5_comment_mod_links' ) )
         {
             $link .= sprintf( $template, $admin_url, 'approvecomment', __( 'Aprobar' ) );
         }
-        else
-        {
-            $link .= sprintf( $template, $admin_url, 'unapprovecomment', __( 'Desaprobar' ) );
-        }
 
         return $link;
     }
