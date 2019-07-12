@@ -2046,6 +2046,9 @@ article .post-content .has-content-area {
 
 #comment {
     height: 100px;
+    outline: 0;
+    border-color: #ccc;
+    font-size: 15px;
 }
 
 
