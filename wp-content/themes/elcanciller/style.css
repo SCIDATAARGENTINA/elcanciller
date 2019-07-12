@@ -1860,7 +1860,19 @@ button {
     z-index: 3;
 }
 
-.highlight-and-share-wrapper:hover a:before {
+.highlight-and-share-wrapper a:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    color: #fff;
+    right: 20px;
+    transition: 300ms cubic-bezier(0.26, 0.9, 0.26, 1.05);
+    z-index: 5;
+}
+
+.highlight-and-share-wrapper:hover a:before,
+.highlight-and-share-wrapper:hover a:after {
     width: 100%;
     opacity: 1;
     height: 100%;
