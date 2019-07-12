@@ -1863,6 +1863,10 @@ article .post-content .has-content-area {
     text-transform: uppercase;
 }
 
+.related-title h3 {
+    font-size: 26px;
+}
+
 .related-title i {
     color: #b29f93;
     border-bottom: 1px solid #fff;
