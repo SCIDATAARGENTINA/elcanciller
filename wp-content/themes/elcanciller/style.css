@@ -1899,7 +1899,7 @@ article .post-content .has-content-area {
     border-top: 7px solid #ccc;
     border-bottom: 7px solid #ccc;
     margin: 0px !important;
-    margin-left: 50px;
+    margin-left: 50px !important;
 }
 
 
