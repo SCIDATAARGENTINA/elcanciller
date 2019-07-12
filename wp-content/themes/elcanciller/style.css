@@ -1960,7 +1960,7 @@ article .post-content .has-content-area {
 
 .comment-content {
     color: #656565;
-    margin: 0px;
+    margin: 0px !important;
 }
 
 
