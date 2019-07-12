@@ -12,7 +12,7 @@
  *
  * @since 1.0.0
  */
-class Canciller_Walker_Comment extends Walker_Comment {
+class Canciller_Walker_Comment extends \Walker_Comment {
 
 	/**
 	 * Outputs a comment in the HTML5 format.
