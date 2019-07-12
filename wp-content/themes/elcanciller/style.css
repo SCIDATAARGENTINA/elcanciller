@@ -1861,6 +1861,7 @@ article .post-content .has-content-area {
     width: 80%;
     margin-bottom: 50px;
     text-transform: uppercase;
+    position: relative;
 }
 
 .related-title h3 {
