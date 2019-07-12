@@ -41,6 +41,7 @@ get_header();
 		</div><!-- inner container -->
 		<div class="outer-container">
 			<div class="related-posts">
+				<div class="grey-band"></div>
 				<div class="related-title">
 					<i class="fas fa-bomb"></i>
 					<h3>Lo que no te podés perder</h3>

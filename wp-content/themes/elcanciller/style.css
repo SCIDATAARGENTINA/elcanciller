@@ -1882,6 +1882,13 @@ article .post-content .has-content-area {
     flex-direction: column;
 }
 
+.grey-band {
+    position: absolute;
+    width: 100vh;
+    height: 300px;
+    background: #edede6;
+}
+
 
 /* TWITTER SHARE */
 
