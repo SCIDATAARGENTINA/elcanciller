@@ -1970,9 +1970,12 @@ article .post-content .has-content-area {
     padding: 5px 10px;
 }
 
-.comment-reply-link:hover {
+.comment-reply-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:active {
     background: #e7d117;
     color: #fff;
+    text-decoration: none;
 }
 
 
