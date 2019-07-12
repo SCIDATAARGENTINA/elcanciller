@@ -1823,6 +1823,7 @@ button {
     width: 110px !important;
     line-height: 0px !important;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.16) !important;
+    position: relative;
 }
 
 .has_twitter {
@@ -1849,6 +1850,9 @@ button {
     background: #0099ff;
     width: 0%;
     transition: 300ms ease;
+    height: 100%;
+    position: absolute;
+    left: 0;
 }
 
 .highlight-and-share-wrapper:hover a:before {
