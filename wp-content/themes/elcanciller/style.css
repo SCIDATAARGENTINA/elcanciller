@@ -1893,6 +1893,16 @@ article .post-content .has-content-area {
 }
 
 
+/*COMMENTS*/
+
+#comments {
+    border-top: 7px solid #ccc;
+    border-bottom: 7px solid #ccc;
+    margin: 0px !important;
+    margin-left: 50px;
+}
+
+
 /* TWITTER SHARE */
 
 .highlight-and-share-wrapper a,
