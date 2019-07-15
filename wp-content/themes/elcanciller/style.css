@@ -796,6 +796,8 @@ button {
 .tags-icon {
     margin-right: 30px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .tags-icon i {
@@ -813,9 +815,10 @@ button {
 .tags-icon:after {
     position: absolute;
     content: '';
-    height: 100%;
+    height: calc(100% - 49px);
     width: 2px;
     background: #e7d117;
+    top: 49px;
 }
 
 .tag-list {
