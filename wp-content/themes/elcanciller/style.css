@@ -1826,6 +1826,13 @@ button {
     line-height: 20pt
 }
 
+.post-meta {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Bree Serif";
+}
+
 article .post-content {
     margin-left: 50px;
     line-height: 20pt;
