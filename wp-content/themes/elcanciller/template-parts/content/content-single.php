@@ -12,12 +12,13 @@
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
 $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-$categories = get_the_terms( $post->ID , array( 'categoria_videos') );
 $product_id = $post->ID; // this is for any other custom taxonomy
 $taxonomy = 'category'; // this is for default wordpress taxonomy
 $terms = wp_get_post_terms( $product_id, $taxonomy );
-echo $terms;
+
 ?>
+
+<pre><?php echo $terms; ?></pre>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
