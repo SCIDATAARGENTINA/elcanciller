@@ -17,7 +17,7 @@ get_header();
 
 		<div class="front-page-content inner container">
 			<div class="sidebar">
-				<?php get_template_part('template-parts/sidebar/sidebar', 'front') ?>
+				<?php get_template_part('template-parts/sidebar/sidebar', 'single') ?>
 			</div><!-- sidebar -->
 			<div class="content">
 
