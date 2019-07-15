@@ -30,6 +30,7 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
 			$local_date = str_replace($date_connectors_capital, $date_connectors_lower, $default_local_date);
 			?>
 			<span class="post-time"><?php echo $local_date; ?></span>
+			<span class="time-ago"><?php echo time_ago() ?></span>
 		</div>
 
 		<div class="post-title">

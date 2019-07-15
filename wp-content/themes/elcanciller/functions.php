@@ -413,3 +413,9 @@ class Canciller_Walker_Comment extends Walker_Comment {
 		<?php
 	}
 }
+
+
+function time_ago() {
+	return __( 'Hace' ).' '.human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) );
+}
+ 
