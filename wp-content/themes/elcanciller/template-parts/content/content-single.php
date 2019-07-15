@@ -19,8 +19,12 @@ $term = $terms[0];
 $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+	<div class="imagen-post">
+		<div class="post-category">
+			<a href="<?php get_term_link($term);  ?>"><h4><?php echo $term->name; ?></h4></a>
+		</div>
+		<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+	</div><!-- imagen-post -->
 	<div class="post-content">
 		<div class="post-author" >
 			<a style="background-color: <?php echo $cat_color; ?>" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )) ?>">
