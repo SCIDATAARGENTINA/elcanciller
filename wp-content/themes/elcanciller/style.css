@@ -1803,6 +1803,26 @@ button {
 
 /* ---------------------------*/
 
+.post-imagen {
+    position: relative;
+}
+
+.post-imagen .post-category {
+    color: #c4afa1;
+    transform: rotate(270deg);
+    position: absolute;
+    bottom: 50%;
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    left: -122px;
+    z-index: 5;
+}
+
+.post-imagen .post-category a {
+    color: #c4afa1;
+}
+
 .post-content {
     margin-top: -110px;
     position: relative;
