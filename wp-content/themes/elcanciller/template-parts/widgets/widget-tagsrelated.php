@@ -25,7 +25,6 @@ $related_tags = get_tags_in_use($cat_principal->term_id, 'id');
                 $tag = get_tag($tag_id); // <-- your tag ID
             ?>
             <a href="<?php echo get_tag_link($tag_id); ?>"><?php echo $tag->name; ?></a>
-            <p><?php echo $tag->count; ?></p>
 
         <? } ?>
     </div>
