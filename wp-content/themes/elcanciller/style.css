@@ -1835,6 +1835,19 @@ button {
     padding: 5px 10px;
 }
 
+.post-author a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.post-author a span img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
 .post-meta {
     color: #fff;
     display: flex;
