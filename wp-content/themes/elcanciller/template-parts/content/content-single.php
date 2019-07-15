@@ -36,7 +36,8 @@ $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
 			
 		?>
 			<a href="<?php get_the_author_link() ?>">
-			<span><?php echo get_avatar( get_the_author_meta('ID'), 26 ); echo get_the_author(); ?></span>
+			<?php echo get_avatar( get_the_author_meta('ID'), 26 ); ?>
+			<span><?php echo get_the_author(); ?></span>
 			</a>
 		</div>
 
