@@ -19,7 +19,7 @@ $term = $terms[0];
 $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="post-imagen">
+	<div class="post-imagen <?php echo $term->slug ?>">
 		<div class="post-category">
 			<a href="<?php get_term_link($term);  ?>"><h4 style="color: <?php echo $cat_color; ?>"><?php echo $term->name; ?></h4></a>
 		</div>
