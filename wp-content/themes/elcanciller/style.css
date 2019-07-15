@@ -1807,6 +1807,19 @@ button {
     position: relative;
 }
 
+.post-imagen::before {
+    width: 10px;
+    content: '';
+    background-color: #e7d117;
+    height: 50%;
+    position: absolute;
+    bottom: -23px;
+    left: -5px;
+    z-index: 2;
+    opacity: 1;
+    transition: 300ms ease;
+}
+
 .post-imagen .post-category {
     color: #c4afa1;
     transform: rotate(270deg);
