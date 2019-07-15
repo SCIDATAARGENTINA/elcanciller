@@ -16,7 +16,7 @@ $post_id = $post->ID; // this is for any other custom taxonomy
 $taxonomy = 'category'; // this is for default wordpress taxonomy
 $terms = wp_get_post_terms( $post_id, $taxonomy );
 echo '<pre>'; print_r($terms); echo '</pre>';
-$cat_color = get_the_field('color', $terms[0]['taxonomy'] . '_' . $terms[0]['term_id']);
+$cat_color = get_the_field('color', $terms[0]->taxonomy . '_' . $terms[0]->term_id);
 ?>
 <p><?php echo $cat_color; ?></p>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
