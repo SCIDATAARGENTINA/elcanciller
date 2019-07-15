@@ -17,7 +17,6 @@ $cat_principal = $categories[0];
 $related_tags = get_tags_in_use($cat_principal->term_id, 'id');
 
 ?>
-<pre><?php print_r($related_tags); ?></pre>
 <div class="tagsrelated-widget container">
     <div class="tag-list">
         <?php foreach($related_tags as $tag_id){ ?>
