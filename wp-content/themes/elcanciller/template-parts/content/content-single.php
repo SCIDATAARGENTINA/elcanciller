@@ -13,15 +13,19 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
 $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 $categories = get_the_terms( $post->ID , array( 'categoria_videos') );
-$term_link = get_term_link( $categories[0], array( 'categoria_videos') );
-$author_link = get_author_posts_url( get_the_author_meta('ID') );
-
+$product_id = $post->ID; // this is for any other custom taxonomy
+$taxonomy = 'category'; // this is for default wordpress taxonomy
+$terms = wp_get_post_terms( $product_id, $taxonomy );
+echo $terms;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
 	<div class="post-content">
+		<div class="post-author" style="background-color: ">
+
+		</div>
 		<div class="post-meta">
 			<?php $default_local_date = ucwords(utf8_encode(get_the_time('l d \d\e F \d\e Y | H:i'))); 
 			$date_connectors_capital = array('De', 'Del');
