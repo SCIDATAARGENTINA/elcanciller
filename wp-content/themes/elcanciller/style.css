@@ -2056,6 +2056,10 @@ article .post-content .has-content-area {
     font-size: 15px;
 }
 
+.comment-form-url {
+    display: none;
+}
+
 
 /* TWITTER SHARE */
 
