@@ -30,7 +30,7 @@ $related_tags = get_tags_in_use($cat_principal->term_id, 'id');
             $the_query = new WP_Term_Query($args);
             foreach($the_query->get_terms() as $term){ 
             ?>
-                <li><?php echo $term->name." (".$term->count.")"; ?></li>
+                <a href="<?php echo get_term_link( $term ) ?>">#<?php echo $term->name; ?></a>
             <?php
             }
             ?>
