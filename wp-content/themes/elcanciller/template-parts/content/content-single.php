@@ -12,9 +12,9 @@
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
 $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-$product_id = $post->ID; // this is for any other custom taxonomy
+$post_id = $post->ID; // this is for any other custom taxonomy
 $taxonomy = 'category'; // this is for default wordpress taxonomy
-$terms = wp_get_post_terms( $product_id, $taxonomy );
+$terms = wp_get_post_terms( $post_id, $taxonomy );
 
 ?>
 
