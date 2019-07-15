@@ -1857,7 +1857,7 @@ button {
 .post-meta {
     color: #fff;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-family: "Bree Serif";
     font-size: 16px;
     padding: 5px 10px;
