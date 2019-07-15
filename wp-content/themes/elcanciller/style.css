@@ -1949,10 +1949,18 @@ article .post-content .has-content-area {
 }
 
 .comment-form .comment-notes,
-.comment-form label .reply-author {
+.comment-form label {
+    font-size: 14px;
+    color: #e7d117;
+}
+
+.comment-form-comment {
+    margin-bottom: 0px;
+}
+
+.reply-author {
     color: #e7d117;
     margin-right: 10px;
-    font-size: 14px;
 }
 
 .comment-list {
@@ -2145,5 +2153,3 @@ article .post-content .has-content-area {
 
 
 /* TWITTER SHARE END */
-
-a
