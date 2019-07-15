@@ -2000,6 +2000,18 @@ article .post-content .has-content-area {
     text-decoration: none;
 }
 
+.comment-form input[name="author"],
+.comment-form input[name="email"],
+.comment-form input[name="url"] {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Roboto";
+    height: 40px;
+    outline: 0;
+    padding: 5px 10px;
+}
+
 .edit-link {
     border-radius: 20px;
     color: #e7d117 !important;
