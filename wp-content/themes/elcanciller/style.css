@@ -807,7 +807,7 @@ button {
 }
 
 .tag-list li a:hover {
-    opacity: 0.8;
+    border-bottom: 1px solid #e7d117;
 }
 
 
