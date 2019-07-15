@@ -1829,14 +1829,18 @@ button {
 .post-meta {
     color: #fff;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-family: "Bree Serif";
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
     margin-right: 10px;
 }
 
 .post-meta .post-time {}
+
+.post-meta .time-ago {
+    color: #e7d117;
+}
 
 article .post-content {
     margin-left: 50px;
