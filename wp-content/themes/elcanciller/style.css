@@ -1836,9 +1836,7 @@ button {
     margin-right: 10px;
 }
 
-.post-meta .post-time {
-    text-transform: capitalize;
-}
+.post-meta .post-time {}
 
 article .post-content {
     margin-left: 50px;
