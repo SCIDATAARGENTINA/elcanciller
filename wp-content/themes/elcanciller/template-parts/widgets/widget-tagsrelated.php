@@ -10,8 +10,14 @@
  */
 global $wp_query;
 $postID = $wp_query->post->ID;
-?>
 
+$categories = get_the_category($postID);
+$cat_principal = $categories[0];
+
+$related_tags = get_tags_in_use($cat_principal->term_id, 'id');
+
+?>
+<pre><?php print_f($related_tags); ?></pre>
 <div class="tagsrelated-widget container">
     <?php echo $postID ?>
 </div><!-- end tagsrelated widget container -->
