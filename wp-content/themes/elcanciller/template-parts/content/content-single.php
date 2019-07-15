@@ -32,9 +32,6 @@ $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
 			<span class="time-ago"><?php echo time_ago() ?></span>
 		</div><!-- post-meta -->
 		<div class="post-author" style="background-color: <?php echo $cat_color; ?>">
-		<?php 
-			
-		?>
 			<a href="<?php get_the_author_link() ?>">
 			<?php echo get_avatar( get_the_author_meta('ID'), 26 ); ?>
 			<span><?php echo get_the_author(); ?></span>
