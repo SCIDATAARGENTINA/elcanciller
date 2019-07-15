@@ -2014,7 +2014,7 @@ article .post-content .has-content-area {
 
 .comment-form input:active,
 .comment-form input:focus {
-    border-color: transparent;
+    border-color: #ccc !important;
 }
 
 .edit-link {
