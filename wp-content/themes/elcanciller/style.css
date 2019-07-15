@@ -1836,6 +1836,10 @@ button {
     margin-right: 10px;
 }
 
+.post-meta .post-time {
+    text-transform: capitalize;
+}
+
 article .post-content {
     margin-left: 50px;
     line-height: 20pt;
