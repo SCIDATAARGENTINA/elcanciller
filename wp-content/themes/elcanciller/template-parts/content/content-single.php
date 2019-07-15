@@ -22,8 +22,8 @@ $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
 
 	<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
 	<div class="post-content">
-		<div class="post-author" style="background-color: <?php echo $cat_color; ?>">
-			<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )) ?>">
+		<div class="post-author" >
+			<a style="background-color: <?php echo $cat_color; ?>" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )) ?>">
 			<?php echo get_avatar( get_the_author_meta('ID'), 26 ); ?>
 			<span><?php echo get_the_author(); ?></span>
 			</a>
