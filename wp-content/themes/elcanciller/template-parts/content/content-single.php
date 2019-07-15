@@ -19,21 +19,25 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
 	<div class="post-content">
-	<div class="post-title">
+		<div class="post-meta">
+			<span><?php echo get_the_time(); ?></span>
+		</div>
 
-		<h1><?php the_title(); ?></h1>
-		<div class="resumen">
-			<?php echo get_the_excerpt(); ?>
-		</div><!-- resumen -->
-        <?php get_template_part('template-parts/comments/comments', 'sharer') ?>
+		<div class="post-title">
 
-	</div><!-- post-title -->
+			<h1><?php the_title(); ?></h1>
+			<div class="resumen">
+				<?php echo get_the_excerpt(); ?>
+			</div><!-- resumen -->
+			<?php get_template_part('template-parts/comments/comments', 'sharer') ?>
+
+		</div><!-- post-title -->
 
 	<?php the_content(); ?>
 	</div><!-- post content -->
-
 
 </article><!-- #post-${ID} -->
 
