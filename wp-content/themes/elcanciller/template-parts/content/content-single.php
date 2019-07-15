@@ -28,10 +28,8 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
 			$date_connectors_lower = array('de', 'del');
 
 			$local_date = str_replace($date_connectors_capital, $date_connectors_lower, $default_local_date);
-
-			echo $local_date;
 			?>
-			<span class="post-time"><?php echo get_the_time('l d \d\e F \d\e Y | H:i'); ?></span>
+			<span class="post-time"><?php echo $local_date; ?></span>
 		</div>
 
 		<div class="post-title">
