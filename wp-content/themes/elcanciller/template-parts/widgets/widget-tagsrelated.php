@@ -19,5 +19,14 @@ $related_tags = get_tags_in_use($cat_principal->term_id, 'id');
 ?>
 <pre><?php print_r($related_tags); ?></pre>
 <div class="tagsrelated-widget container">
-    <?php echo $postID ?>
+    <div class="tag-list">
+        <?php foreach($related_tags as $tag_id){ ?>
+            <?php 
+                $tag = get_tag($tag_id); // <-- your tag ID
+            ?>
+            <a href="<?php echo get_tag_link($tag_id); ?>"><?php echo $tag->name; ?></a>
+            <p><?php echo $tag->count; ?></p>
+
+        <? } ?>
+    </div>
 </div><!-- end tagsrelated widget container -->
