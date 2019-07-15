@@ -23,7 +23,7 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
 	<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
 	<div class="post-content">
 		<div class="post-meta">
-			<span><?php the_time(); ?></span>
+			<span><?php echo get_the_time(); ?></span>
 		</div>
 
 		<div class="post-title">
