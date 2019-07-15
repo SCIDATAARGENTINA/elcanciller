@@ -16,16 +16,14 @@ $post_id = $post->ID; // this is for any other custom taxonomy
 $taxonomy = 'category'; // this is for default wordpress taxonomy
 $terms = wp_get_post_terms( $post_id, $taxonomy );
 $term = $terms[0];
-echo '<pre>'; print_r($term); echo '</pre>';
 $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
 ?>
-<p><?php echo $cat_color; ?></p>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
 	<div class="post-content">
-		<div class="post-author" style="background-color: ">
-
+		<div class="post-author" style="background-color: <?php echo $cat_color; ?>">
+			<span>Por: <?php echo get_the_author(); ?></span>
 		</div>
 		<div class="post-meta">
 			<?php $default_local_date = ucwords(utf8_encode(get_the_time('l d \d\e F \d\e Y | H:i'))); 
