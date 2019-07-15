@@ -384,6 +384,10 @@ input:-internal-autofill-selected {
     margin: 0px !important;
 }
 
+.widget.no-padding {
+    padding: 0px !important;
+}
+
 
 /* ---------------------------*/
 
