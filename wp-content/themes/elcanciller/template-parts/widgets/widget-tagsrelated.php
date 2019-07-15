@@ -18,6 +18,9 @@ $related_tags = get_tags_in_use($cat_principal->term_id, 'id');
 
 ?>
 <div class="tagsrelated-widget container">
+    <div class="tags-icon">
+        <i class="fas fa-hashtag"></i>
+    </div><!-- tags-icon -->
     <ul class="tag-list">
         <?php 
             $args = array(
@@ -34,5 +37,5 @@ $related_tags = get_tags_in_use($cat_principal->term_id, 'id');
             <?php
             }
             ?>
-    </ul>
+    </ul><!-- tag-list -->
 </div><!-- end tagsrelated widget container -->

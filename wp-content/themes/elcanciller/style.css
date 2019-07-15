@@ -806,10 +806,6 @@ button {
     font-size: 18px;
 }
 
-.tag-list li a:hover {
-    border-bottom: 1px solid #e7d117;
-}
-
 
 /* RELATED HASHTAGS WIDGET */
 
