@@ -23,6 +23,14 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
 	<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
 	<div class="post-content">
 		<div class="post-meta">
+			<?php $default_local_date = ucwords(utf8_encode(get_the_time('l d \d\e F \d\e Y | H:i'))); 
+			$date_connectors_capital = array('De', 'Del');
+			$date_connectors_lower = array('de', 'del');
+
+			$local_date = str_replace($date_connectors_capital, $date_connectors_lower, $default_local_date);
+
+			echo $local_date;
+			?>
 			<span class="post-time"><?php echo get_the_time('l d \d\e F \d\e Y | H:i'); ?></span>
 		</div>
 
