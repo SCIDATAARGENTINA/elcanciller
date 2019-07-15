@@ -26,14 +26,18 @@ $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
 			<?php $default_local_date = ucwords(utf8_encode(get_the_time('l d \d\e F \d\e Y | H:i'))); 
 			$date_connectors_capital = array('De', 'Del');
 			$date_connectors_lower = array('de', 'del');
-
 			$local_date = str_replace($date_connectors_capital, $date_connectors_lower, $default_local_date);
 			?>
 			<span class="post-time"><?php echo $local_date; ?></span>
 			<span class="time-ago"><?php echo time_ago() ?></span>
 		</div><!-- post-meta -->
 		<div class="post-author" style="background-color: <?php echo $cat_color; ?>">
-			<span>Por: <?php echo get_the_author(); ?></span>
+		<?php 
+			
+		?>
+			<a href="<?php get_the_author_link() ?>">
+			<span><?php echo get_avatar( get_the_author_meta('ID'), 26 ); echo get_the_author(); ?></span>
+			</a>
 		</div>
 
 		<div class="post-title">
