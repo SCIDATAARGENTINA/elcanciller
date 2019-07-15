@@ -419,3 +419,53 @@ function time_ago() {
 	return __( 'Hace' ).' '.human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) );
 }
  
+
+function get_tags_in_use($category_ID, $type = 'name'){
+    // Set up the query for our posts
+    $my_posts = new WP_Query(array(
+      'cat' => $category_ID, // Your category id
+      'posts_per_page' => -1 // All posts from that category
+    ));
+
+    // Initialize our tag arrays
+    $tags_by_id = array();
+    $tags_by_name = array();
+    $tags_by_slug = array();
+
+    // If there are posts in this category, loop through them
+    if ($my_posts->have_posts()): while ($my_posts->have_posts()): $my_posts->the_post();
+
+      // Get all tags of current post
+      $post_tags = wp_get_post_tags($my_posts->post->ID);
+
+      // Loop through each tag
+      foreach ($post_tags as $tag):
+
+        // Set up our tags by id, name, and/or slug
+        $tag_id = $tag->term_id;
+        $tag_name = $tag->name;
+        $tag_slug = $tag->slug;
+
+        // Push each tag into our main array if not already in it
+        if (!in_array($tag_id, $tags_by_id))
+          array_push($tags_by_id, $tag_id);
+
+        if (!in_array($tag_name, $tags_by_name))
+          array_push($tags_by_name, $tag_name);
+
+        if (!in_array($tag_slug, $tags_by_slug))
+          array_push($tags_by_slug, $tag_slug);
+
+      endforeach;
+    endwhile; endif;
+
+    // Return value specified
+    if ($type == 'id')
+        return $tags_by_id;
+
+    if ($type == 'name')
+        return $tags_by_name;
+
+    if ($type == 'slug')
+        return $tags_by_slug;
+}
