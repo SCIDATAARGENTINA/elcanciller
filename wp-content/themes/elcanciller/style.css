@@ -1835,10 +1835,13 @@ button {
     padding: 5px 10px;
 }
 
-.post-author a span {
+.post-author a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.post-author a span {
     color: #fff;
 }
 
