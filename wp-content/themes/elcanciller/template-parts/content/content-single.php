@@ -15,10 +15,9 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 $post_id = $post->ID; // this is for any other custom taxonomy
 $taxonomy = 'category'; // this is for default wordpress taxonomy
 $terms = wp_get_post_terms( $post_id, $taxonomy );
+echo '<pre>'; print_r($terms); echo '</pre>';
 
 ?>
-
-<pre><?php echo $terms; ?></pre>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
