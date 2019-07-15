@@ -803,11 +803,11 @@ button {
     color: #e7d117 !important;
     transition: 300ms ease;
     font-family: "Bree Serif" !important;
+    font-size: 18px;
 }
 
 .tag-list li a:hover {
     opacity: 0.8;
-    font-size: 18px;
 }
 
 
