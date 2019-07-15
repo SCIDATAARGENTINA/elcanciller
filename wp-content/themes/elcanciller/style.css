@@ -2012,6 +2012,11 @@ article .post-content .has-content-area {
     padding: 5px 10px;
 }
 
+.comment-form input:active,
+.comment-form input:focus {
+    border-color: transparent;
+}
+
 .edit-link {
     border-radius: 20px;
     color: #e7d117 !important;
