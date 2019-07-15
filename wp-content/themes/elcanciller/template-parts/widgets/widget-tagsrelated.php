@@ -19,12 +19,20 @@ $related_tags = get_tags_in_use($cat_principal->term_id, 'id');
 ?>
 <div class="tagsrelated-widget container">
     <div class="tag-list">
-        <?php foreach($related_tags as $tag_id){ ?>
-            <?php 
-                $tag = get_tag($tag_id); // <-- your tag ID
+        <?php 
+            $args = array(
+                'taxonomy'               => 'post_tag',
+                'orderby'                => 'count',
+                'order'                  => 'DESC',
+                'hide_empty'             => true,
+                'post__in' => $related_tags
+            );
+            $the_query = new WP_Term_Query($args);
+            foreach($the_query->get_terms() as $term){ 
             ?>
-            <a href="<?php echo get_tag_link($tag_id); ?>"><?php echo $tag->name; ?></a>
-
-        <? } ?>
+                <li><?php echo $term->name." (".$term->count.")"; ?></li>
+            <?php
+            }
+            ?>
     </div>
 </div><!-- end tagsrelated widget container -->
