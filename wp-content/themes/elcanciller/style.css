@@ -1811,9 +1811,9 @@ button {
     width: 10px;
     content: '';
     background-color: #e7d117;
-    height: 50%;
+    height: 20%;
     position: absolute;
-    bottom: -23px;
+    bottom: -5px;
     left: -5px;
     z-index: 2;
     opacity: 1;
