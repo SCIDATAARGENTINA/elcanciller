@@ -28,7 +28,7 @@
   </div><!-- info-tiempo -->
 </div><!-- tiempo -->
 <div class="widget">
-  <?php get_template_part('template-parts/widgets/widget', 'cancilleram') ?>
+    <?php get_template_part('template-parts/widgets/widget', 'tagsrelated') ?>
 </div>
 <div class="widget no-padding">
   <div class="loader">Cargando...</div>
