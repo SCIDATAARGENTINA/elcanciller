@@ -1229,20 +1229,7 @@ button {
     top: -5px;
     left: 5%;
     height: 10px;
-    background: -moz-linear-gradient(45deg, rgba(255, 214, 117, 1) 0%, rgba(255, 146, 50, 1) 21%, rgba(255, 87, 46, 1) 40%, rgba(255, 1, 116, 1) 56%, rgba(199, 4, 162, 1) 71%, rgba(126, 22, 211, 1) 85%, rgba(51, 59, 241, 1) 100%);
-    /* ff3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255, 214, 117, 1)), color-stop(21%, rgba(255, 146, 50, 1)), color-stop(40%, rgba(255, 87, 46, 1)), color-stop(56%, rgba(255, 1, 116, 1)), color-stop(71%, rgba(199, 4, 162, 1)), color-stop(85%, rgba(126, 22, 211, 1)), color-stop(100%, rgba(51, 59, 241, 1)));
-    /* safari4+,chrome */
-    background: -webkit-linear-gradient(45deg, rgba(255, 214, 117, 1) 0%, rgba(255, 146, 50, 1) 21%, rgba(255, 87, 46, 1) 40%, rgba(255, 1, 116, 1) 56%, rgba(199, 4, 162, 1) 71%, rgba(126, 22, 211, 1) 85%, rgba(51, 59, 241, 1) 100%);
-    /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(45deg, rgba(255, 214, 117, 1) 0%, rgba(255, 146, 50, 1) 21%, rgba(255, 87, 46, 1) 40%, rgba(255, 1, 116, 1) 56%, rgba(199, 4, 162, 1) 71%, rgba(126, 22, 211, 1) 85%, rgba(51, 59, 241, 1) 100%);
-    /* opera 11.10+ */
-    background: -ms-linear-gradient(45deg, rgba(255, 214, 117, 1) 0%, rgba(255, 146, 50, 1) 21%, rgba(255, 87, 46, 1) 40%, rgba(255, 1, 116, 1) 56%, rgba(199, 4, 162, 1) 71%, rgba(126, 22, 211, 1) 85%, rgba(51, 59, 241, 1) 100%);
-    /* ie10+ */
-    background: linear-gradient(45deg, rgba(255, 214, 117, 1) 0%, rgba(255, 146, 50, 1) 21%, rgba(255, 87, 46, 1) 40%, rgba(255, 1, 116, 1) 56%, rgba(199, 4, 162, 1) 71%, rgba(126, 22, 211, 1) 85%, rgba(51, 59, 241, 1) 100%);
-    /* w3c */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#333bf1', endColorstr='#ffd675', GradientType=1);
-    /* ie6-9 */
+    background: #e7d117 !important;
     position: absolute;
 }
 
@@ -1298,7 +1285,7 @@ button {
     top: -5px;
     left: 5%;
     height: 10px;
-    background: #ff4353;
+    background: #e7d117;
     position: absolute;
 }
 
@@ -1317,7 +1304,7 @@ button {
     margin: 0px;
     font-size: 14px;
     display: inline-block;
-    background: #ff4353;
+    background: #e7d117;
     padding: 5px 15px;
     border-radius: 20px;
 }
