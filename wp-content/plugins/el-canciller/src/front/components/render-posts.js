@@ -95,7 +95,7 @@ let setTemplate = (post) => {
 
     templateContent += `<div class="comentarios-noshare">
 							<div class="comment-icon">
-								<i class="far fa-comment-dots"></i>
+								<img src="http://142.93.24.13/wp-content/uploads/2019/07/comment-bubble.svg">
 							</div>
                             <div class="comment-container">
                                 <div class="comentarios ${noComments}">

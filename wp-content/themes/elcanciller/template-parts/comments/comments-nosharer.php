@@ -20,7 +20,7 @@
    );
    ?>
    <div class="comment-icon">
-      <i class="far fa-comment-dots"></i>
+      <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/comment-bubble.svg" alt="">
    </div>
    <div class="comment-container">
     <?php if($comments){  ?>
