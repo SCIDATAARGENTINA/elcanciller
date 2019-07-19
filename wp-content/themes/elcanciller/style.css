@@ -1152,9 +1152,7 @@ button {
 }
 
 .post-rendered.trending::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f1e2";
+    content: url('http://142.93.24.13/wp-content/uploads/2019/07/fire-blanco.svg');
     width: 50px;
     height: 50px;
     display: flex;
