@@ -40,10 +40,15 @@
          $categories = get_the_category($post->ID);
          ?>
 
-         <div class="category">
-            <h3 class="category-name"><?php echo $categories[0]->name ?></h3>
-            <span><i class="fas fa-bomb"></i></span>
-         </div>
+         <div class="titular">
+            <div class="category">
+               <h3 class="category-name"><?php echo $categories[0]->name ?></h3>
+               <span><i class="fas fa-bomb"></i></span>
+            </div><!-- category -->
+            <h2><?php the_title(); ?></h2>
+         </div><!-- titulo -->
+         
+
          <div class="entry">
             <h2><?php the_title(); ?></h2>
             <div class="entry-img">
