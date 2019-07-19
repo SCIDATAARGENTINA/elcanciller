@@ -457,7 +457,7 @@ input:-internal-autofill-selected {
 }
 
 .trending-post .category a {
-    color: #e7d117;
+    color: #e7d117 !important;
 }
 
 .trending-post .category a h3 {
