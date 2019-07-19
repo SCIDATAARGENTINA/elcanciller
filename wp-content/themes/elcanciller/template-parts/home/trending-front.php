@@ -44,7 +44,7 @@
          <div class="titular">
             <div class="category">
                <a href="<?php echo $cat_link; ?>"><h3 class="category-name"><?php echo $categories[0]->name ?></h3></a>
-               <span><i class="fas fa-bomb"></i></span>
+               <span><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-blanco.svg" alt=""></span>
             </div><!-- category -->
             <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
          </div><!-- titulo -->
