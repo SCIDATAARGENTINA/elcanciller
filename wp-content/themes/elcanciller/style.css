@@ -409,11 +409,11 @@ input:-internal-autofill-selected {
 }
 
 .inner.container .sidebar {
-    width: 30%;
+    width: 23%;
 }
 
 .inner.container .content {
-    width: 70%;
+    width: 77%;
     border-top: 4px solid #e7d117;
 }
 
