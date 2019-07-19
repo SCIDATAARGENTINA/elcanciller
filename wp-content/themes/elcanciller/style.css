@@ -440,6 +440,7 @@ input:-internal-autofill-selected {
 
 .trending-post .titular {
     display: flex;
+    margin-bottom: 15px;
 }
 
 .trending-post .titular a {
