@@ -23,16 +23,24 @@ get_header();
 
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
 				<div class="loader">Cargando...</div>
-				<div class="render-posts col-2" data-quantity="4" data-offset="0"></div>
+				<div class="render-posts col-3" data-quantity="3" data-offset="0"></div>
+				<div class="loader">Cargando...</div>
+				<div class="render-posts col-3" data-quantity="2" data-offset="0">
+					<?php the_field('anuncio_1') ?>
+				</div>
 				<?php get_template_part('template-parts/sections/section', 'opinion') ?>
 
 			</div><!-- content -->
 
 		</div><!-- inner container -->
 		<div class="outer-container">
+			<?php the_field('anuncio_2') ?>
 			<?php get_template_part('template-parts/sections/section', 'placas') ?>
+			<?php the_field('anuncio_3') ?>
 			<?php get_template_part('template-parts/sections/section', 'instagram') ?>
+			<?php the_field('anuncio_4') ?>
 			<?php get_template_part('template-parts/sections/section', 'videos') ?>
+			<?php the_field('anuncio_5') ?>
 			<div class="loader">Cargando...</div>
 			<div class="render-posts col-3" data-quantity="9" data-offset="4">
 			</div>
