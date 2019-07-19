@@ -442,6 +442,11 @@ input:-internal-autofill-selected {
     display: flex;
 }
 
+.trending-post .titular a {
+    text-decoration: none !important;
+    color: #111 !important;
+}
+
 .trending-post .category {
     display: flex;
     flex-direction: column;
@@ -453,6 +458,7 @@ input:-internal-autofill-selected {
 .trending-post .category h3 {
     color: #e7d117;
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .trending-post .category i {
