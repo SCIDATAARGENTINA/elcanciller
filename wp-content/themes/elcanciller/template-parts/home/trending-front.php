@@ -45,7 +45,7 @@
                <h3 class="category-name"><?php echo $categories[0]->name ?></h3>
                <span><i class="fas fa-bomb"></i></span>
             </div><!-- category -->
-            <h2><?php the_title(); ?></h2>
+            <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
          </div><!-- titulo -->
          
 
