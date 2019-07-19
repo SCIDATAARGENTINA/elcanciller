@@ -438,11 +438,16 @@ input:-internal-autofill-selected {
     margin-bottom: 50px;
 }
 
+.trending-post .titular {
+    display: flex;
+}
+
 .trending-post .category {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
+    margin-right: 20px;
 }
 
 .trending-post .category h3 {
@@ -459,7 +464,7 @@ input:-internal-autofill-selected {
     vertical-align: top;
 }
 
-.trending-post .entry h2 {
+.trending-post .titular h2 {
     font-size: 22px;
 }
 
