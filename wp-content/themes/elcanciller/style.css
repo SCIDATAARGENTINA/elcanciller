@@ -889,6 +889,10 @@ button {
     align-items: center;
 }
 
+.comment-icon img {
+    width: 30px;
+}
+
 .comentarios {
     display: flex;
     position: relative;
