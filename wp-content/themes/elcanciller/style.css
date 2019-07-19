@@ -862,7 +862,7 @@ button {
 
 .comentarios-sharer {
     display: grid;
-    grid-template-columns: 1fr 7fr 4fr;
+    grid-template-columns: 1fr 9fr 4fr;
     margin: 10px 0;
 }
 
