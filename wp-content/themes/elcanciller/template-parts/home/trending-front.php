@@ -50,7 +50,6 @@
          
 
          <div class="entry">
-            <h2><?php the_title(); ?></h2>
             <div class="entry-img">
                <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
             </div>
