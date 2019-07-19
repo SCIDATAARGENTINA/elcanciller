@@ -465,8 +465,9 @@ input:-internal-autofill-selected {
     font-size: 24px;
 }
 
-.trending-post .category i {
-    color: #b29f93;
+.trending-post .category img {
+    font-size: 25px;
+    display: block;
 }
 
 .trending-post .entry img {
