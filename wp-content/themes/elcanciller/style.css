@@ -456,10 +456,13 @@ input:-internal-autofill-selected {
     margin-right: 20px;
 }
 
-.trending-post .category h3 {
+.trending-post .category a {
     color: #e7d117;
-    font-size: 24px;
+}
+
+.trending-post .category a h3 {
     margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .trending-post .category i {

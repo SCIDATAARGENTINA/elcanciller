@@ -38,11 +38,12 @@
          $thumbnail_id = get_post_thumbnail_id($post->ID);
          $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
          $categories = get_the_category($post->ID);
+         $cat_link = get_term_link($categories[0]->term_id );
          ?>
 
          <div class="titular">
             <div class="category">
-               <h3 class="category-name"><?php echo $categories[0]->name ?></h3>
+               <a href="<?php echo $cat_link; ?>"><h3 class="category-name"><?php echo $categories[0]->name ?></h3></a>
                <span><i class="fas fa-bomb"></i></span>
             </div><!-- category -->
             <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
