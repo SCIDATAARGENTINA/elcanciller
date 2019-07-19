@@ -52,7 +52,7 @@
 
          <div class="entry">
             <div class="entry-img">
-               <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+               <a href="<?php the_permalink(); ?>"><img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>"></a>
             </div>
             <?php get_template_part('template-parts/comments/comments', 'sharer') ?>
          </div>
