@@ -17,7 +17,7 @@ let setTemplate = (post) => {
     let postDate = moment(post.date).fromNow();
     let postCategory = '';
     let postCategoryColor = '#e7d117';
-    let featuredImage = '';
+    let featuredImage = 'noimg';
     let postCategoryLink = '';
     let postCategorySlug = 'politica';
     let comments = 'No hay comentarios';
