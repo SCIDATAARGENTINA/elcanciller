@@ -980,6 +980,7 @@ button {
 
 .comentarios-sharer .share-container i {
     color: #b29f93 !important;
+    cursor: pointer;
 }
 
 
@@ -1103,6 +1104,7 @@ button {
     color: #fff;
     margin: 0 10px;
     font-size: 22px;
+    cursor: pointer;
 }
 
 .post-data {
