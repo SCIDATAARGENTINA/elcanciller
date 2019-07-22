@@ -24,6 +24,11 @@ let setTemplate = (post) => {
     let comments = 'No hay comentarios';
     let noComments = 'sin-comentarios';
     let comentariosTemplate = '';
+    let likes = 0;
+
+    if (post.likes) {
+        likes = post.likes;
+    }
 
     if (post.trending == 'si') {
         postRendered.classList.add('post-rendered', 'trending');
@@ -77,7 +82,7 @@ let setTemplate = (post) => {
                                         <i class="fab fa-twitter" data-text="${post.title}" data-link="${post.link}"></i>
                                         <i class="fab fa-facebook-f" data-title="${post.title}" data-img="${featuredImage}" data-text="${post.excerpt}" data-link="${post.link}"></i>
                                         <a href="${post.link}"><i class="fas fa-sign-out-alt"></i></a>
-                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-heart like" data-id="${post.id}" data-count="${likes}"></i>
                                     </div><!-- action-links -->
                                     <div class="post-data">
                                         <div class="post-title">
@@ -150,7 +155,8 @@ let createPostArray = async(quantity, offset = 0) => {
             category: postCategories,
             comments: postComments,
             trending: post.acf.trending,
-            show_author: post.acf.show_author
+            show_author: post.acf.show_author,
+            likes: post.acf.likes
         };
 
         console.log(postObject);

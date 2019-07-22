@@ -27,15 +27,6 @@ jQuery(document).ready(function($) {
 
     }
 
-    function updateClapValue() {
-        var count = $('.clap-count').html();
-        console.log('current text: ', count);
-        total = parseInt(count) + 1;
-        console.log('total: ', total);
-        $('.clap-count').html(total);
-        $('.clap-count').addClass('added');
-    }
-
     function setClapCookie(id) {
         Cookies.set('clapped' + id, '1', { expires: 214748 });
     }
@@ -61,7 +52,7 @@ jQuery(document).ready(function($) {
 
         var id = $('article').attr('data-post-id');
 
-        var clap = $('.clap');
+        var clap = $('.like');
 
         validateClapCookie(checkClapCookie(id));
 
@@ -70,8 +61,7 @@ jQuery(document).ready(function($) {
                 getPostData(id, url).done(function(data) {
                     var likeCount = data.acf.likes;
                     addLike(likeCount, id, url);
-                    updateClapValue();
-                    $('.clap').addClass('clapped');
+                    $(this).addClass('liked');
                 });
             } else {
                 return false;
