@@ -1872,6 +1872,10 @@ button {
     position: relative;
 }
 
+.post-imagen img {
+    width: 100%;
+}
+
 .post-imagen::before {
     width: 10px;
     content: '';
