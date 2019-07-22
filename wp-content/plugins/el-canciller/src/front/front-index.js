@@ -59,8 +59,8 @@ let shareActions = ($) => {
             var fbTtitle = $(this).attr('data-title');
             var fbUrl = $(this).attr('data-link');
             var fbImg = $(this).attr('data-img');
-            var fbText = $(this).attr('data-text').text();
-            console.log(fbText);
+            var fbText = $(this).attr('data-text');
+            console.log(fbText.text());
             var title = encodeURIComponent(fbTtitle);
             var text = encodeURIComponent(fbText);
             var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=1389892087910588&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
