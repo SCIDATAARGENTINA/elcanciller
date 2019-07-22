@@ -33,6 +33,14 @@ let shareActions = ($) => {
         };
 
         // twitter
+        $('.share-container .fa-twitter').click(function() {
+            var tweetText = '"' + $(this).attr('data-text') + '"' + ' ' + 'desde @elcancillercom ';
+            var tweetUrl = $(this).attr('data-link');
+            var text = encodeURIComponent(tweetText);
+            var shareUrl = 'https://twitter.com/intent/tweet?url=' + tweetUrl + '&text=' + text;
+            var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
+            win.opener = null;
+        });
 
         $('.action-links .fa-twitter').click(function() {
             var tweetText = '"' + $(this).attr('data-text') + '"' + ' ' + 'desde @elcancillercom ';
