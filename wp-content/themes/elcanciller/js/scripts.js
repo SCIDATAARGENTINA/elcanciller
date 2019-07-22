@@ -141,6 +141,8 @@ jQuery(document).ready(function($) {
     $('.action-links .fa-twitter').click(function() {
         tweetText = '"' + $(this).attr('data-text') + '"' + ' ';
         tweetUrl = $(this).attr('data-link');
+        console.log(tweetText);
+        console.log(tweetUrl);
         var text = encodeURIComponent(tweetText);
         var shareUrl = 'https://twitter.com/intent/tweet?url=' + tweetUrl + '&text=' + text;
         var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
