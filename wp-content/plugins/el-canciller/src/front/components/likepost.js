@@ -1,3 +1,5 @@
+var $ = require("jquery");
+
 jQuery(document).ready(function($) {
 
     function getPostData(id, url) {
@@ -53,26 +55,33 @@ jQuery(document).ready(function($) {
         }
     }
 
-    var url = 'https://socialnews.com.ar';
+    let likePost = () => {
 
-    var id = $('article').attr('data-post-id');
+        var url = 'https://socialnews.com.ar';
 
-    var clap = $('.clap');
+        var id = $('article').attr('data-post-id');
 
-    validateClapCookie(checkClapCookie(id));
+        var clap = $('.clap');
 
-    clap.click(function() {
-        if (checkClapCookie(id) != 1) {
-            getPostData(id, url).done(function(data) {
-                var likeCount = data.acf.likes;
-                addLike(likeCount, id, url);
-                updateClapValue();
-                $('.clap').addClass('clapped');
-            });
-        } else {
-            return false;
-        }
-    });
+        validateClapCookie(checkClapCookie(id));
 
+        clap.click(function() {
+            if (checkClapCookie(id) != 1) {
+                getPostData(id, url).done(function(data) {
+                    var likeCount = data.acf.likes;
+                    addLike(likeCount, id, url);
+                    updateClapValue();
+                    $('.clap').addClass('clapped');
+                });
+            } else {
+                return false;
+            }
+        });
+
+    };
 
 });
+
+module.exports = {
+    likePost
+};
