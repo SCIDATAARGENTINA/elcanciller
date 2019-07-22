@@ -40,7 +40,7 @@
       </div><!-- comentarios -->
    </div><!-- comment-container -->
    <div class="share-container">
-      <i class="fab fa-twitter"></i>
+      <i class="fab fa-twitter" data-text="<?php the_title(); ?>" data-link="<?php the_permalink(); ?>"></i>
       <i class="fab fa-facebook-f"></i>
       <a href="<?php the_permalink(); ?>"><i class="fas fa-sign-in-alt"></i></a>
       <i class="fas fa-heart"></i>

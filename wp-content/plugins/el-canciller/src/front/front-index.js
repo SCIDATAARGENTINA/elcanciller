@@ -12,6 +12,42 @@ import { getData, getCategoriesById, getLatestPosts, getComments, getTagsById, g
 
 var utils = require('../utils/utils-index');
 
+let shareActions = ($) => {
+    $(document).ready(function() {
+
+        /* SHARE ON REDES */
+
+        var getWindowOptions = function() {
+            var width = 500;
+            var height = 350;
+            var left = (window.innerWidth / 2) - (width / 2);
+            var top = (window.innerHeight / 2) - (height / 2);
+
+            return [
+                'resizable,scrollbars,status',
+                'height=' + height,
+                'width=' + width,
+                'left=' + left,
+                'top=' + top,
+            ].join();
+        };
+
+        // twitter
+
+        $('.action-links .fa-twitter').click(function() {
+            var tweetText = '"' + $(this).attr('data-text') + '"' + ' ' + 'desde @elcancillercom ';
+            var tweetUrl = $(this).attr('data-link');
+            var text = encodeURIComponent(tweetText);
+            var shareUrl = 'https://twitter.com/intent/tweet?url=' + tweetUrl + '&text=' + text;
+            var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
+            win.opener = null;
+        });
+
+        // facebook
+
+    });
+};
+
 let renderTemplate = async(rendered) => {
 
     let renderNodes = document.querySelectorAll('.render-posts');
@@ -49,41 +85,8 @@ let renderTemplate = async(rendered) => {
 
     }
 
-    $(document).ready(function() {
+    shareActions();
 
-        /* SHARE ON REDES */
-
-        var getWindowOptions = function() {
-            var width = 500;
-            var height = 350;
-            var left = (window.innerWidth / 2) - (width / 2);
-            var top = (window.innerHeight / 2) - (height / 2);
-
-            return [
-                'resizable,scrollbars,status',
-                'height=' + height,
-                'width=' + width,
-                'left=' + left,
-                'top=' + top,
-            ].join();
-        };
-
-        // twitter
-
-        $('.action-links .fa-twitter').click(function() {
-            var tweetText = '"' + $(this).attr('data-text') + '"' + ' ' + 'desde @elcancillercom ';
-            var tweetUrl = $(this).attr('data-link');
-            console.log(tweetText);
-            console.log(tweetUrl);
-            var text = encodeURIComponent(tweetText);
-            var shareUrl = 'https://twitter.com/intent/tweet?url=' + tweetUrl + '&text=' + text;
-            var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
-            win.opener = null;
-        });
-
-        // facebook
-
-    });
 };
 
 document.onreadystatechange = function() {
