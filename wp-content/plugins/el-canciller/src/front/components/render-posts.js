@@ -75,7 +75,7 @@ let setTemplate = (post) => {
                                 <div class="hovered">
                                     <div class="action-links">
                                         <i class="fab fa-twitter" data-text="${post.title}" data-link="${post.link}"></i>
-                                        <i class="fab fa-facebook-f" data-title="${post.title}" data-img="${featuredImage}" data-text="${excerpt}" data-link="${post.link}"></i>
+                                        <i class="fab fa-facebook-f" data-title="${post.title}" data-img="${featuredImage}" data-text="${post.excerpt}" data-link="${post.link}"></i>
                                         <a href="${post.link}"><i class="fas fa-sign-out-alt"></i></a>
                                         <i class="fas fa-heart"></i>
                                     </div><!-- action-links -->
