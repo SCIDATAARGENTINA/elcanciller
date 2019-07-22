@@ -139,7 +139,7 @@ jQuery(document).ready(function($) {
     // twitter
 
     $('.action-links .fa-twitter').click(function() {
-        tweetText = '"' + $(this).attr('data-text') + ' desde @elcancillercom"' + ' ';
+        tweetText = '"' + $(this).attr('data-text') + '"' + ' ' + 'desde @elcancillercom ';
         tweetUrl = $(this).attr('data-link');
         console.log(tweetText);
         console.log(tweetUrl);
