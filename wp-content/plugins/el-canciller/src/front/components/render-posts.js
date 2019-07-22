@@ -73,7 +73,7 @@ let setTemplate = (post) => {
     let templateContent = `<div class="rendered-img" style="background-image: url('${featuredImage}')">
                                 <div class="hovered">
                                     <div class="action-links">
-                                        <i class="fab fa-twitter" data-text="${$post.title}" data-link="${post.link}"></i>
+                                        <i class="fab fa-twitter" data-text="${post.title}" data-link="${post.link}"></i>
                                         <i class="fab fa-facebook-f"></i>
                                         <a href="${post.link}"><i class="fas fa-sign-out-alt"></i></a>
                                         <i class="fas fa-heart"></i>
