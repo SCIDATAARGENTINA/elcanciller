@@ -59,7 +59,7 @@ let shareActions = ($) => {
             var fbTtitle = $(this).attr('data-title');
             var fbUrl = $(this).attr('data-link');
             var fbImg = $(this).attr('data-img');
-            var fbText = $(this).attr('data-text');
+            var fbText = $(this).attr('data-text').text();
             console.log(fbText);
             var title = encodeURIComponent(fbTtitle);
             var text = encodeURIComponent(fbText);
