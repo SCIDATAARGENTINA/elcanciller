@@ -142,7 +142,7 @@ let createPostArray = async(quantity, offset = 0) => {
         let postObject = {
             id: post.id,
             title: post.title.rendered,
-            excerpt: post.excerpt,
+            excerpt: post.excerpt.rendered,
             author: post._embedded.author[0],
             link: post.link,
             date: new Date(post.date),
