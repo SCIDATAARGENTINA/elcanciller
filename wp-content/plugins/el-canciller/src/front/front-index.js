@@ -85,7 +85,7 @@ let renderTemplate = async(rendered) => {
 
     }
 
-    shareActions();
+    shareActions($);
 
 };
 
