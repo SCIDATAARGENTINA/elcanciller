@@ -60,9 +60,9 @@ let shareActions = ($) => {
             var fbUrl = $(this).attr('data-link');
             var fbImg = $(this).attr('data-img');
             var fbText = $.parseHTML($(this).attr('data-text'));
-            console.log(fbText);
+            console.log(fbText[0].innerText);
             var title = encodeURIComponent(fbTtitle);
-            var text = encodeURIComponent(fbText.text());
+            var text = encodeURIComponent(fbText);
             var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=1389892087910588&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
             var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
             win.opener = null;
