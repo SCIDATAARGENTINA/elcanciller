@@ -119,5 +119,37 @@ jQuery(document).ready(function($) {
         currentSlide = updateSlides(currentSlide);
     });
 
+    /* SHARE ON REDES */
+
+    var getWindowOptions = function() {
+        var width = 500;
+        var height = 350;
+        var left = (window.innerWidth / 2) - (width / 2);
+        var top = (window.innerHeight / 2) - (height / 2);
+
+        return [
+            'resizable,scrollbars,status',
+            'height=' + height,
+            'width=' + width,
+            'left=' + left,
+            'top=' + top,
+        ].join();
+    };
+
+    // twitter
+
+    $('.action-links .fab-twitter').click(function() {
+        tweetText = '"' + $(this).attr('data-text') + '"' + ' ';
+        tweetUrl = $(this).attr('data-link');
+        var text = encodeURIComponent(tweetText);
+        var shareUrl = 'https://twitter.com/intent/tweet?url=' + tweetUrl + '&text=' + text;
+        var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
+        win.opener = null; // 2
+    });
+
+    // facebook
+
+
+
 
 });
