@@ -138,7 +138,7 @@ jQuery(document).ready(function($) {
 
     // twitter
 
-    $('.action-links .fab-twitter').click(function() {
+    $('.action-links .fa-twitter').click(function() {
         tweetText = '"' + $(this).attr('data-text') + '"' + ' ';
         tweetUrl = $(this).attr('data-link');
         var text = encodeURIComponent(tweetText);
