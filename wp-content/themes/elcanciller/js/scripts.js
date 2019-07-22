@@ -119,9 +119,4 @@ jQuery(document).ready(function($) {
         currentSlide = updateSlides(currentSlide);
     });
 
-
-
-
-
-
 });
