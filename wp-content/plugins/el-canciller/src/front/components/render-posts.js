@@ -67,7 +67,7 @@ let setTemplate = (post) => {
     }
 
     if (post.featuredMedia.full) {
-        featuredImage = post.featuredMedia.medium.source_url;
+        featuredImage = post.featuredMedia.full.source_url;
     }
 
     let templateContent = `<div class="rendered-img" style="background-image: url('${featuredImage}')">
