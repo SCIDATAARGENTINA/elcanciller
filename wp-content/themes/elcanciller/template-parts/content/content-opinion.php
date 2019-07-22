@@ -25,7 +25,7 @@ $author_link = get_author_posts_url( get_the_author_meta('ID') );
         <div class="imagen" style="background-image: url('<?php echo $featured_img_url ?>');">
             <div class="hovered">
                 <div class="action-links">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-twitter" data-text="<?php the_title(); ?>" data-link="<?php the_permalink(); ?>"></i>
                     <i class="fab fa-facebook-f"></i>
                     <a href="<?php the_permalink(); ?>"><i class="fas fa-sign-out-alt"></i></a>
                     <i class="fas fa-heart"></i>
