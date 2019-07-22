@@ -5,6 +5,7 @@
  */
 
 var moment = require('moment');
+var $ = require("jquery");
 
 var api = require('../service/wordpressapi');
 

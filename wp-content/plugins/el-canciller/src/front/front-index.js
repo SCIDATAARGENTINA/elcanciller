@@ -4,72 +4,13 @@
  * src/front/front-index.js
  */
 require("babel-polyfill");
+var $ = require("jquery");
 
 import { createPostArray, setTemplate } from './components/render-posts';
 
 import { getData, getCategoriesById, getLatestPosts, getComments, getTagsById, getCategories, getTags } from './service/wordpressapi';
 
 var utils = require('../utils/utils-index');
-
-
-let categories;
-let tags;
-let comments;
-
-let fetchCategories = async() => {
-    categories = await getCategories();
-};
-
-let fetchTags = async() => {
-    tags = await getTags();
-};
-
-let fetchComments = async() => {
-    comments = await getComments();
-};
-
-let findPostCategories = (id, categories) => {
-
-    let catArray = [];
-
-    for (let catid of id) {
-
-        for (let category of categories) {
-
-            if (category.id == catid) {
-                catArray.push(category);
-
-            }
-
-        }
-
-    }
-
-    return catArray;
-};
-
-let findPostComments = (id, comments) => {
-
-    let comArray = [];
-
-    for (let comment of comments) {
-
-        if (comment.post == id && comment.status == "approved") {
-
-            let commentObj = {
-                author: comment.author_name,
-                content: comment.content.rendered
-            };
-
-            comArray.push(commentObj);
-
-        }
-
-    }
-
-    return comArray;
-
-};
 
 let renderTemplate = async(rendered) => {
 
@@ -108,6 +49,41 @@ let renderTemplate = async(rendered) => {
 
     }
 
+    $(document).ready(function() {
+
+        /* SHARE ON REDES */
+
+        var getWindowOptions = function() {
+            var width = 500;
+            var height = 350;
+            var left = (window.innerWidth / 2) - (width / 2);
+            var top = (window.innerHeight / 2) - (height / 2);
+
+            return [
+                'resizable,scrollbars,status',
+                'height=' + height,
+                'width=' + width,
+                'left=' + left,
+                'top=' + top,
+            ].join();
+        };
+
+        // twitter
+
+        $('.action-links .fa-twitter').click(function() {
+            tweetText = '"' + $(this).attr('data-text') + '"' + ' ' + +'desde @elcancillercom ';
+            tweetUrl = $(this).attr('data-link');
+            console.log(tweetText);
+            console.log(tweetUrl);
+            var text = encodeURIComponent(tweetText);
+            var shareUrl = 'https://twitter.com/intent/tweet?url=' + tweetUrl + '&text=' + text;
+            var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
+            win.opener = null;
+        });
+
+        // facebook
+
+    });
 };
 
 document.onreadystatechange = function() {
