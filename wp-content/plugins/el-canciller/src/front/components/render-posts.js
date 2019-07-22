@@ -66,7 +66,7 @@ let setTemplate = (post) => {
         }
     }
 
-    if (post.featuredMedia.length >= 1) {
+    if (post.featuredMedia.full) {
         featuredImage = post.featuredMedia.full.source_url;
     }
 
