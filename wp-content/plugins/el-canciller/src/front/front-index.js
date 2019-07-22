@@ -53,6 +53,21 @@ let shareActions = ($) => {
 
         // facebook
 
+        //https://www.facebook.com/dialog/feed?app_id=1389892087910588 &redirect_uri=https://scotch.io &link=https://scotch.io &picture=http://placekitten.com/500/500 &caption=This%20is%20the%20caption &description=This%20is%20the%20description
+
+        $('.action-links .fa-facebook-f').click(function() {
+            var fbTtitle = '"' + $(this).attr('data-title') + '"' + ' ' + 'desde @elcancillercom ';
+            var fbUrl = $(this).attr('data-link');
+            var fbImg = $(this).attr('data-img');
+            var fbText = $(this).attr('data-text').text();
+            console.log(fbText);
+            var title = encodeURIComponent(fbTtitle);
+            var text = encodeURIComponent(fbText);
+            var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=1389892087910588&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
+            var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
+            win.opener = null;
+        });
+
     });
 };
 

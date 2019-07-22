@@ -75,7 +75,7 @@ let setTemplate = (post) => {
                                 <div class="hovered">
                                     <div class="action-links">
                                         <i class="fab fa-twitter" data-text="${post.title}" data-link="${post.link}"></i>
-                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-facebook-f" data-title="${post.title}" data-img="${featuredImage}" data-text="${excerpt}" data-link="${post.link}"></i>
                                         <a href="${post.link}"><i class="fas fa-sign-out-alt"></i></a>
                                         <i class="fas fa-heart"></i>
                                     </div><!-- action-links -->
@@ -142,6 +142,7 @@ let createPostArray = async(quantity, offset = 0) => {
         let postObject = {
             id: post.id,
             title: post.title.rendered,
+            excerpt: post.excerpt,
             author: post._embedded.author[0],
             link: post.link,
             date: new Date(post.date),
