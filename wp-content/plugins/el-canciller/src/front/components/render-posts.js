@@ -16,8 +16,10 @@ moment.locale('es');
 let getLikedPosts = (id) => {
 
     let likedPosts = cjs.get('likedPosts');
+    console.log(likedPosts);
     let arrIds = JSON.parse(likedPosts);
-
+    console.log(arrIds);
+    console.log(arrIds.includes(id));
     return arrIds.includes(id);
 
 };
