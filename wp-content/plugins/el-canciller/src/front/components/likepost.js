@@ -23,24 +23,32 @@ let setCookie = (cjs, id) => {
 
         arrIds = JSON.parse(likedPosts);
         arrIds.push(id);
-        console.log(arrIds);
         likedPosts = JSON.stringify(arrIds);
-        console.log(likedPosts);
-        //cjs.set('likedPosts', likedPosts);
+        cjs.set('likedPosts', likedPosts);
 
     } else {
 
         arrIds = [id];
         likedPosts = JSON.stringify(arrIds);
-        console.log(arrIds);
-        console.log(likedPosts);
-        //cjs.set('likedPosts', likedPosts);
+        cjs.set('likedPosts', likedPosts);
 
     }
 
 };
 
+let validateIfLiked = (id) => {
+
+    let likedPosts = cjs.get('likedPosts');
+    let arrIds = JSON.parse(likedPosts);
+
+    console.log(arrIds.find(id));
+
+};
+
 let updateLikeData = (likeCount, id, url, $) => {
+
+    validateIfLiked(id);
+
     $(document).ready(function() {
 
         $.ajax({
