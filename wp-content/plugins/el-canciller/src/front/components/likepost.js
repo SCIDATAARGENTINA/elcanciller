@@ -36,7 +36,7 @@ let updateLikeData = (likeCount, id, url, $) => {
 
 };
 
-let likePost = ($) => {
+export let likePost = ($) => {
 
     document.addEventListener('click', async function(event) {
 
@@ -54,8 +54,4 @@ let likePost = ($) => {
 
     }, false);
 
-};
-
-module.exports = {
-    likePost
 };

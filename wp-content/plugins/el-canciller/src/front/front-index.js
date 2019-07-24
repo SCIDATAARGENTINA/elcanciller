@@ -7,7 +7,7 @@ require("babel-polyfill");
 
 var $ = require("jquery");
 
-import { likePost } from './components/likepost';
+var ajax = require('./components/likepost');
 
 import { createPostArray, setTemplate } from './components/render-posts';
 
@@ -123,7 +123,7 @@ let renderTemplate = async(rendered) => {
 
     shareActions($);
 
-    likePost($);
+    ajax.likePost($);
 
 };
 
