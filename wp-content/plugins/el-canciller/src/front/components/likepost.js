@@ -1,9 +1,9 @@
 var $ = require("jquery");
 var cjs = require("cookies-js");
 
-let getPostData = (id) => {
+let getPostData = (id, type) => {
 
-    const url = `http://142.93.24.13/wp-json/wp/v2/posts/${id}`;
+    const url = `http://142.93.24.13/wp-json/wp/v2/${type}/${id}`;
 
     const headers = {
         // tslint:disable-next-line:max-line-length
@@ -87,7 +87,8 @@ export let likePost = ($) => {
 
         let like = event.target;
         let id = like.getAttribute('data-id');
-        let data = await getPostData(id);
+        let postType = like.getAttribute('data-type');
+        let data = await getPostData(id, type);
 
         updateLikeData(parseInt(data.acf.likes), id, content_data.ajax_url, $);
 

@@ -95,7 +95,7 @@ function custom_post_type_cancilleram()
     'exclude_from_search'   => true,
     'publicly_queryable'    => false,
     'show_in_rest'          => true,
-    'rest_base'             => 'result',
+    'rest_base'             => 'cancilleram',
     'rest_controller_class' => 'WP_REST_Posts_Controller',
     'capability_type'       => 'page',
   );
@@ -154,7 +154,7 @@ function custom_post_type_videos()
     'exclude_from_search'   => true,
     'publicly_queryable'    => false,
     'show_in_rest'          => true,
-    'rest_base'             => 'result',
+    'rest_base'             => 'video',
     'rest_controller_class' => 'WP_REST_Posts_Controller',
     'capability_type'       => 'page',
   );
@@ -213,7 +213,7 @@ function custom_post_type_opinion()
     'exclude_from_search'   => true,
     'publicly_queryable'    => true,
     'show_in_rest'          => true,
-    'rest_base'             => 'result',
+    'rest_base'             => 'opinion',
     'rest_controller_class' => 'WP_REST_Posts_Controller',
     'capability_type'       => 'post',
   );
