@@ -30,7 +30,7 @@ function addLike(likeCount, id, $) {
     });
 }
 
-let likePost = async() => {
+let likePost = () => {
 
     document.addEventListener('click', async function(event) {
 
@@ -44,7 +44,7 @@ let likePost = async() => {
         let id = like.getAttribute('data-id');
         let data = await getPostData(id);
 
-        console.log(data);
+        console.log(data.acf.likes);
 
     }, false);
 
