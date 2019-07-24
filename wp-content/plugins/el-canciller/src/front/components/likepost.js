@@ -24,13 +24,13 @@ let setCookie = (cjs, id) => {
         arrIds = JSON.parse(likedPosts);
         arrIds.push(id);
         likedPosts = JSON.stringify(arrIds);
-        cjs.set('likedPosts', likedPosts);
+        cjs.set('likedPosts', likedPosts, { expires: Infinity });
 
     } else {
 
         arrIds = [id];
         likedPosts = JSON.stringify(arrIds);
-        cjs.set('likedPosts', likedPosts);
+        cjs.set('likedPosts', likedPosts, { expires: Infinity });
 
     }
 
