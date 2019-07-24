@@ -41,13 +41,15 @@ let validateIfLiked = (id) => {
     let likedPosts = cjs.get('likedPosts');
     let arrIds = JSON.parse(likedPosts);
 
-    console.log(arrIds.includes(id));
+    return arrIds.includes(id);
 
 };
 
 let updateLikeData = (likeCount, id, url, $) => {
 
-    validateIfLiked(id);
+    if (validateIfLiked(id)) {
+        return;
+    }
 
     $(document).ready(function() {
 
