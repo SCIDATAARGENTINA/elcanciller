@@ -39,7 +39,6 @@ let updateLikeData = (likeCount, id, url, $) => {
             },
             success: function(result) {
                 console.log(result);
-                setClapCookie(id);
             },
             error: function(errorThrown) {
                 console.log(errorThrown);
