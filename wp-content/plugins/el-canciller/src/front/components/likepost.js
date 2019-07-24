@@ -46,7 +46,7 @@ function addLike(likeCount, id, $) {
         data: {
             action: 'ajax_call_count_satisfaccion',
             post_id: id,
-            like_count: likeCount,
+            like_count: pareseInt(likeCount),
         },
         success: function(result) {
             console.log(result);
