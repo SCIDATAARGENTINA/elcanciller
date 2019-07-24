@@ -55,7 +55,7 @@ export let setAllLikes = () => {
         console.log(document.querySelectorAll('.like[data-id="' + value + '"]'));
         console.log(el);
         if (el) {
-            el.classList.add('liked');
+            el[0].classList.add('liked');
         }
     });
 
