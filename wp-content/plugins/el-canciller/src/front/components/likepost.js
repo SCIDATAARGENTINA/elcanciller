@@ -20,6 +20,10 @@ let updateLikeData = (likeCount, id, url) => {
             post_id: id,
             like_count: likeCount
         })
+    }).then(function() {
+        console.log("ok");
+    }).catch(function() {
+        console.log("error");
     });
 };
 
