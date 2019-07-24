@@ -5,7 +5,7 @@ function getPostData(id, url) {
     return $.get(connection);
 }
 
-function addLike(likeCount, id, url) {
+function addLike(likeCount, id, $) {
     $.ajax({
         url: content_data.ajax_url,
         type: 'POST',
@@ -66,7 +66,7 @@ function likePost() {
         }
     });
 
-};
+}
 
 
 module.exports = {

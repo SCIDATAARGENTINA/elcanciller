@@ -48,11 +48,8 @@ add_action( 'wp_enqueue_scripts', 'rest_js_enqueue_scripts' );
 
  function rest_js_enqueue_scripts() {
 
-   if(is_single()){
-     wp_enqueue_script( 'like-post', plugins_url( '/likepost.js', __FILE__ ), array('jquery'), '1.0', true );
-     wp_localize_script( 'like-post', 'content_data', array(
+     wp_localize_script( 'wds-wwe-frontend-js', 'content_data', array(
       'ajax_url' => admin_url( 'admin-ajax.php' )
-    ));
 
    }
 
