@@ -72,9 +72,7 @@ let likePost = () => {
         let id = like.getAttribute('data-id');
         let data = await getPostData(id);
 
-        let likeCount = data.acf.likes + 1;
-
-        updateLikeData(likeCount, id, content_data.ajax_url);
+        updateLikeData(data.acf.likes, id, content_data.ajax_url);
 
     }, false);
 
