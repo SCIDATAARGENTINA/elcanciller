@@ -55,9 +55,9 @@
                     <?php foreach($ids as $id){ ?>
                         <?php $slide++; ?>
                         <?php if( $slide == 1 ){ ?>
-                            <i data-slide="<?php echo $slide; ?>" class="active fas fa-heart like" data-id="<?php echo $id ?>" data-type="<?php get_post_type( get_the_ID() ) ?>"></i>
+                            <i data-slide="<?php echo $slide; ?>" class="active fas fa-heart like" data-id="<?php echo $id ?>" data-type="<?php echo get_post_type( $id ); ?>"></i>
                         <?php }else { ?>
-                            <i data-slide="<?php echo $slide; ?>" class="fas fa-heart like" data-id="<?php echo $id ?>" data-type="<?php echo get_post_type( get_the_ID() ) ?>"></i>
+                            <i data-slide="<?php echo $slide; ?>" class="fas fa-heart like" data-id="<?php echo $id ?>" data-type="<?php echo get_post_type( $id ); ?>"></i>
                         <?php } ?>
                     <?php } ?>
                 </div>
