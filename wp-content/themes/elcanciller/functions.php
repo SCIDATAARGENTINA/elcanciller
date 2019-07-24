@@ -272,7 +272,7 @@ function custom_post_type_placa()
     'exclude_from_search'   => true,
     'publicly_queryable'    => true,
     'show_in_rest'          => true,
-    'rest_base'             => 'result',
+    'rest_base'             => 'posts',
     'rest_controller_class' => 'WP_REST_Posts_Controller',
     'capability_type'       => 'post',
   );
