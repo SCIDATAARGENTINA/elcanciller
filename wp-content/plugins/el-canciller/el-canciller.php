@@ -55,10 +55,10 @@ add_filter( 'acf/rest_api/key', function( $key, $request, $type ) {
 
  }
 
- add_action( 'wp_ajax_nopriv_ajax_call_count_likes', 'ajax_likes' );
- add_action( 'wp_ajax_ajax_call_count_likes', 'ajax_likes' );
+ add_action( 'wp_ajax_nopriv_ajax_call_count_likes', 'ajax_call_count_likes' );
+ add_action( 'wp_ajax_ajax_call_count_likes', 'ajax_call_count_likes' );
 
- function ajax_likes() {
+ function ajax_call_count_likes() {
 
    $currentVal = $_POST['like_count'];
    $currentVal++;
