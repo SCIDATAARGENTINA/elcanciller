@@ -7,13 +7,95 @@ require("babel-polyfill");
 
 var $ = require("jquery");
 
-import { likePost } from './components/likepost';
-
 import { createPostArray, setTemplate } from './components/render-posts';
 
 import { getData, getCategoriesById, getLatestPosts, getComments, getTagsById, getCategories, getTags } from './service/wordpressapi';
 
 var utils = require('../utils/utils-index');
+
+let getPostData = (id) => {
+
+    const url = `http://142.93.24.13/wp-json/wp/v2/posts/${id}`;
+
+    const headers = {
+        // tslint:disable-next-line:max-line-length
+        //'Authorization': 'Bearer BQDN8FI-G3-thKplSnuymOZA8ixIHLoEnrEg4-nvcCsN64BGpyNv1LdbM53gz0ODqo9QXYLHKtbKaG7DLl0'
+    };
+
+    return fetch(url, { headers }).then(data => data.json());
+
+};
+
+let updateLikeData = (likeCount, id, url, $) => {
+    $(document).ready(function() {
+
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: {
+                action: 'ajax_call_count_likes',
+                post_id: id,
+                like_count: likeCount,
+            },
+            success: function(result) {
+                console.log(result);
+                setClapCookie(id);
+            },
+            error: function(errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+
+        //action to handle in WP add_action("wp_ajax_my_user_vote", "my_user_vote");
+        /*let action = "ajax_call_count_likes";
+
+        let data = {
+            action: action,
+            post_id: id,
+            like_count: likeCount
+        };
+        console.log(data);
+
+        let json = JSON.stringify(data);
+
+        let xhr = new XMLHttpRequest();
+
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+        xhr.setRequestHeader('Access-Control-Allow-Headers', '*');
+        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+
+        xhr.onreadystatechange = function () {
+            if (this.readyState != 4) return;
+
+            console.log(this.responseText);
+        };
+
+        xhr.send(data);*/
+
+    });
+
+};
+
+let likePost = ($) => {
+
+    document.addEventListener('click', async function(event) {
+
+        // If the clicked element doesn't have the right selector, bail
+        if (!event.target.matches('.like')) return;
+
+        // Don't follow the link
+        event.preventDefault();
+
+        let like = event.target;
+        let id = like.getAttribute('data-id');
+        let data = await getPostData(id);
+
+        updateLikeData(parseInt(data.acf.likes), id, content_data.ajax_url, $);
+
+    }, false);
+
+};
 
 let shareActions = ($) => {
     $(document).ready(function() {
@@ -122,7 +204,7 @@ let renderTemplate = async(rendered) => {
 
     shareActions($);
 
-    likePost();
+    likePost($);
 
 };
 
