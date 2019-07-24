@@ -2329,10 +2329,7 @@ article .post-content .has-content-area {
 
 /* LIKES */
 
-.like {
-    transform: 300ms ease;
-}
-
 .liked {
+    transition: 300ms ease;
     color: #e7d117 !important;
 }
