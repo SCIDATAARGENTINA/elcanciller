@@ -30,11 +30,9 @@ function addLike(likeCount, id, $) {
     });
 }
 
-let likePost = () => {
+let likePost = async() => {
 
-    var url = 'http://142.93.24.13/';
-
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', async function(event) {
 
         // If the clicked element doesn't have the right selector, bail
         if (!event.target.matches('.like')) return;
@@ -44,8 +42,8 @@ let likePost = () => {
 
         let like = event.target;
         let id = like.getAttribute('data-id');
+        let data = await getPostData(id);
 
-        let data = getPostData(id);
         console.log(data);
 
     }, false);
