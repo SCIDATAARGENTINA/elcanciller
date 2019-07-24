@@ -48,6 +48,7 @@ let validateIfLiked = (id) => {
 let updateLikeData = (likeCount, id, url, $) => {
 
     if (validateIfLiked(id)) {
+        console.log('Ya diste like a esa publicación');
         return;
     }
 
