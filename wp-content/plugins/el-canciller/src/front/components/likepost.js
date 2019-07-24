@@ -31,7 +31,7 @@ let updateLikeData = (likeCount, id, url, $) => {
             },
             success: function(result) {
                 console.log(result);
-                setCookie();
+                setCookie(cjs);
             },
             error: function(errorThrown) {
                 console.log(errorThrown);
