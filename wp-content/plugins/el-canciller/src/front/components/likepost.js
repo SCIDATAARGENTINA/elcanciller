@@ -3,6 +3,10 @@ var cjs = require("cookies-js");
 
 let getPostData = (id, type) => {
 
+    if (type == "post") {
+        type = "posts";
+    }
+
     const url = `http://142.93.24.13/wp-json/wp/v2/${type}/${id}`;
 
     const headers = {
