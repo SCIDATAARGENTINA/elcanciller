@@ -43,10 +43,10 @@ let likePost = () => {
         event.preventDefault();
 
         let like = event.target;
+        let id = like.getAttribute('data-id');
 
-
-        // Log the clicked element in the console
-        console.log(like.getAttribute('data-id'));
+        let data = getPostData(id);
+        console.log(data);
 
     }, false);
 
