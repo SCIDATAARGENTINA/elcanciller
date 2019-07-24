@@ -41,7 +41,7 @@ let validateIfLiked = (id) => {
     let likedPosts = cjs.get('likedPosts');
     let arrIds = JSON.parse(likedPosts);
 
-    console.log(arrIds.find(id));
+    console.log(arrIds.includes(id));
 
 };
 
