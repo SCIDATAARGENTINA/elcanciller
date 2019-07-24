@@ -23,6 +23,7 @@ let setCookie = (cjs, id) => {
 
         arrIds = JSON.parse(likedPosts);
         arrIds.push(id);
+        console.log(arrIds);
         likedPosts = JSON.stringify(arrIds);
         console.log(likedPosts);
         //cjs.set('likedPosts', likedPosts);
@@ -31,6 +32,7 @@ let setCookie = (cjs, id) => {
 
         arrIds = [id];
         likedPosts = JSON.stringify(arrIds);
+        console.log(arrIds);
         console.log(likedPosts);
         //cjs.set('likedPosts', likedPosts);
 
