@@ -12,22 +12,31 @@ let getPostData = (id) => {
 };
 
 let updateLikeData = (likeCount, id, url) => {
-    fetch(url, {
-        method: 'POST',
-        credentials: 'same-origin',
-        headers: new Headers({
-            'Content-Type': 'application/json'
-        }),
-        body: JSON.stringify({
-            action: 'ajax_call_count_likes',
-            post_id: id,
-            like_count: likeCount
-        })
-    }).then(function(data) {
-        console.log(data);
-    }).catch(function(data) {
-        console.log(data);
-    });
+
+    //action to handle in WP add_action("wp_ajax_my_user_vote", "my_user_vote");
+    let action = "ajax_call_count_likes";
+
+    let data = {
+        action: action,
+        post_id: id,
+        like_count: likeCount
+    };
+    console.log(data);
+
+    let json = JSON.stringify(data);
+
+    let xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+
+    xhr.onreadystatechange = function() {
+        if (this.readyState != 4) return;
+
+        console.log(this.responseText);
+    };
+
+    xhr.send(json);
 };
 
 function addLike(likeCount, id, $) {
