@@ -1,4 +1,5 @@
 var $ = require("jquery");
+var cjs = require("cookies-js");
 
 let getPostData = (id) => {
 
@@ -11,6 +12,10 @@ let getPostData = (id) => {
 
     return fetch(url, { headers }).then(data => data.json());
 
+};
+
+let setCookie = (cjs) => {
+    cjs.set('key', 'value');
 };
 
 let updateLikeData = (likeCount, id, url, $) => {
@@ -26,6 +31,7 @@ let updateLikeData = (likeCount, id, url, $) => {
             },
             success: function(result) {
                 console.log(result);
+                setCookie();
             },
             error: function(errorThrown) {
                 console.log(errorThrown);
