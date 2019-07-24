@@ -1,5 +1,3 @@
-var $ = require("jquery");
-
 function getPostData(id, url) {
     var connection = url + '/wp-json/wp/v2/posts/' + id;
     return $.get(connection);
