@@ -2325,3 +2325,14 @@ article .post-content .has-content-area {
 
 
 /* TWITTER SHARE END */
+
+
+/* LIKES */
+
+.like {
+    transform: 300ms ease;
+}
+
+.liked {
+    color: #FF0000;
+}
