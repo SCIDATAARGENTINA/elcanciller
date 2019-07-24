@@ -44,7 +44,7 @@ function validateClapCookie(val) {
     }
 }
 
-let likePost = () => {
+function likePost() {
 
     var url = 'https://socialnews.com.ar';
 
