@@ -42,8 +42,11 @@ let likePost = () => {
         // Don't follow the link
         event.preventDefault();
 
+        let like = event.target;
+
+
         // Log the clicked element in the console
-        console.log(event.target);
+        console.log(like.getAttribute('data-id'));
 
     }, false);
 
