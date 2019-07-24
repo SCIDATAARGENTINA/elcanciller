@@ -18,7 +18,8 @@ let updateLikeData = (likeCount, id, url) => {
             action: 'ajax_call_count_likes',
             post_id: id,
             like_count: likeCount
-        }
+        },
+        credentials: 'same-origin'
     }).then(function(data) {
         console.log(data);
     }).catch(function(data) {
