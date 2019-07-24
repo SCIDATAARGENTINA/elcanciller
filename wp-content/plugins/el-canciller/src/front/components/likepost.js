@@ -35,21 +35,24 @@ function checkClapCookie(id) {
 }
 
 let likePost = ($) => {
+    $(document).ready(function() {
 
-    var url = 'http://142.93.24.13/';
 
-    var like = $('.like');
+        var url = 'http://142.93.24.13/';
 
-    like.click(function() {
-        var id = $(this).attr('data-id');
-        getPostData(id, url).done(function(data) {
-            console.log(data);
-            var likeCount = data.acf.likes;
-            console.log(data.acf.likes);
-            $(this).addClass('liked');
+        var like = $('.like');
+
+        like.click(function() {
+            var id = $(this).attr('data-id');
+            getPostData(id, url).done(function(data) {
+                console.log(data);
+                var likeCount = data.acf.likes;
+                console.log(data.acf.likes);
+                $(this).addClass('liked');
+            });
         });
-    });
 
+    });
 };
 
 
