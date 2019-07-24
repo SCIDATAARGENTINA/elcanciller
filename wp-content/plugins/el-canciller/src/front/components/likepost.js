@@ -88,7 +88,7 @@ export let likePost = ($) => {
         let like = event.target;
         let id = like.getAttribute('data-id');
         let postType = like.getAttribute('data-type');
-        let data = await getPostData(id, type);
+        let data = await getPostData(id, postType);
 
         updateLikeData(parseInt(data.acf.likes), id, content_data.ajax_url, $);
 
