@@ -19,7 +19,7 @@ let updateLikeData = (likeCount, id, url) => {
     let data = {
         action: action,
         post_id: id,
-        like_count: likeCount
+        like_count: pareseInt(likeCount)
     };
     console.log(data);
 
