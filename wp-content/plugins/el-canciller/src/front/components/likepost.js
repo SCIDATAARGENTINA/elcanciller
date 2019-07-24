@@ -91,6 +91,8 @@ export let likePost = ($) => {
 
         updateLikeData(parseInt(data.acf.likes), id, content_data.ajax_url, $);
 
+        like.classList.add('liked');
+
     }, false);
 
 };
