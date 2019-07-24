@@ -43,7 +43,7 @@
       <i class="fab fa-twitter" data-text="<?php the_title(); ?>" data-link="<?php the_permalink(); ?>"></i>
       <i class="fab fa-facebook-f" data-title="<?php the_title() ?>" data-img="<?php echo $featured_img_url ?>" data-text="<?php the_excerpt() ?>" data-link="<?php the_permalink() ?>"></i>
       <a href="<?php the_permalink(); ?>"><i class="fas fa-sign-in-alt"></i></a>
-      <i class="fas fa-heart"></i>
+      <i class="fas fa-heart like" data-id="<?php the_ID(); ?>" data-count="<?php the_field('likes') ?>"></i>
    </div>
 
 </div><!-- comentarios-sharer -->

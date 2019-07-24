@@ -50,9 +50,6 @@ add_filter( 'acf/rest_api/key', function( $key, $request, $type ) {
 
   wp_localize_script( 'wds-wwe-frontend-js', 'content_data', array('ajax_url' => admin_url( 'admin-ajax.php' )));
 
-  wp_enqueue_script( 'cookie-js', plugins_url( '/js.cookie.js', __FILE__ ), '1.0', true );
-
-
  }
 
  add_action( 'wp_ajax_nopriv_ajax_call_count_likes', 'ajax_call_count_likes' );
