@@ -16,7 +16,7 @@ let updateLikeData = (likeCount, id, url) => {
         headers: { "Content-Type": "application/json; charset=utf-8" },
         method: 'POST',
         body: JSON.stringify({
-            action: 'ajax_likes',
+            action: 'ajax_call_count_likes',
             post_id: id,
             like_count: likeCount
         })
