@@ -19,7 +19,7 @@ let updateLikeData = (likeCount, id, url) => {
     let data = {
         action: action,
         post_id: id,
-        like_count: pareseInt(likeCount)
+        like_count: likeCount
     };
     console.log(data);
 
@@ -72,7 +72,7 @@ let likePost = () => {
         let id = like.getAttribute('data-id');
         let data = await getPostData(id);
 
-        updateLikeData(data.acf.likes, id, content_data.ajax_url);
+        updateLikeData(parseInt(data.acf.likes), id, content_data.ajax_url);
 
     }, false);
 
