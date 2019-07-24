@@ -94,6 +94,7 @@ function custom_post_type_cancilleram()
     'has_archive'           => false,
     'exclude_from_search'   => true,
     'publicly_queryable'    => false,
+    'show_in_rest'          => true,
     'capability_type'       => 'page',
   );
   register_post_type('cancilleram', $args);
@@ -150,6 +151,7 @@ function custom_post_type_videos()
     'has_archive'           => false,
     'exclude_from_search'   => true,
     'publicly_queryable'    => false,
+    'show_in_rest'          => true,
     'capability_type'       => 'page',
   );
   register_post_type('video', $args);
@@ -206,6 +208,7 @@ function custom_post_type_opinion()
     'has_archive'           => false,
     'exclude_from_search'   => true,
     'publicly_queryable'    => true,
+    'show_in_rest'          => true,
     'capability_type'       => 'post',
   );
   register_post_type('opinion', $args);
@@ -262,6 +265,7 @@ function custom_post_type_placa()
     'has_archive'           => false,
     'exclude_from_search'   => true,
     'publicly_queryable'    => true,
+    'show_in_rest'          => true,
     'capability_type'       => 'post',
   );
   register_post_type('placa', $args);
