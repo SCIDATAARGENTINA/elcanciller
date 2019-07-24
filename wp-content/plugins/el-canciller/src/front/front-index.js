@@ -7,6 +7,8 @@ require("babel-polyfill");
 
 var $ = require("jquery");
 
+import { likePost } from './components/likepost';
+
 import { createPostArray, setTemplate } from './components/render-posts';
 
 import { getData, getCategoriesById, getLatestPosts, getComments, getTagsById, getCategories, getTags } from './service/wordpressapi';

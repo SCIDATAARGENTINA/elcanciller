@@ -55,3 +55,7 @@ let likePost = ($) => {
     }, false);
 
 };
+
+module.exports = {
+    likePost
+};
