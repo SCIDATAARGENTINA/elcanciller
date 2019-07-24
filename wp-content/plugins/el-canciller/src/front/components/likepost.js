@@ -13,7 +13,6 @@ let getPostData = (id) => {
 
 let updateLikeData = (likeCount, id, url) => {
     fetch(url, {
-        headers: { "Content-Type": "application/json; charset=utf-8" },
         method: 'POST',
         body: JSON.stringify({
             action: 'ajax_call_count_likes',
