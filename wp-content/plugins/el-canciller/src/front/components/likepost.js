@@ -42,19 +42,15 @@ let likePost = ($) => {
 
     like.click(function() {
         var id = $(this).attr('data-id');
-        if (checkClapCookie(id) != 1) {
-            getPostData(id, url).done(function(data) {
-                console.log(data);
-                var likeCount = data.acf.likes;
-                console.log(data.acf.likes);
-                $(this).addClass('liked');
-            });
-        } else {
-            return false;
-        }
+        getPostData(id, url).done(function(data) {
+            console.log(data);
+            var likeCount = data.acf.likes;
+            console.log(data.acf.likes);
+            $(this).addClass('liked');
+        });
     });
 
-}
+};
 
 
 module.exports = {

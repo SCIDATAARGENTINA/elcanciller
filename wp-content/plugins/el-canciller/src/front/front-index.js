@@ -122,7 +122,7 @@ let renderTemplate = async(rendered) => {
 
     shareActions($);
 
-    likePost();
+    likePost($);
 
 };
 
