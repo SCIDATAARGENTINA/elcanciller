@@ -2329,6 +2329,11 @@ article .post-content .has-content-area {
 
 /* LIKES */
 
+.comentarios-sharer .share-container i.liked {
+    transition: 300ms ease;
+    color: #e7d117 !important;
+}
+
 .liked {
     transition: 300ms ease;
     color: #e7d117 !important;
