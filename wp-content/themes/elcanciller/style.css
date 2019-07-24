@@ -2333,3 +2333,7 @@ article .post-content .has-content-area {
     transition: 300ms ease;
     color: #e7d117 !important;
 }
+
+.placa-content.liked {
+    color: red !important;
+}
