@@ -3,7 +3,6 @@
  *
  * src/front/front-index.js
  */
-require("babel-polyfill");
 
 var $ = require("jquery");
 
