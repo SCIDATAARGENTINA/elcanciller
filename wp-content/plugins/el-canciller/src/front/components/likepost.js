@@ -11,6 +11,18 @@ let getPostData = (id) => {
 
 };
 
+let updateLikeData = (likeCount, id, url) => {
+    fetch(url, {
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        method: 'POST',
+        body: JSON.stringify({
+            action: 'ajax_call_count_satisfaccion',
+            post_id: id,
+            like_count: likeCount
+        })
+    });
+};
+
 function addLike(likeCount, id, $) {
     $.ajax({
         url: content_data.ajax_url,
@@ -44,7 +56,9 @@ let likePost = () => {
         let id = like.getAttribute('data-id');
         let data = await getPostData(id);
 
-        console.log(data.acf.likes);
+        let likeCount = data.acf.likes + 1;
+
+        updateLikeData(likeCount, id, content_data.ajax_url);
 
     }, false);
 
