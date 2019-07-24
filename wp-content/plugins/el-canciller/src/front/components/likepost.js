@@ -34,8 +34,6 @@ let likePost = () => {
 
     var url = 'http://142.93.24.13/';
 
-    var like = querySelectorAll('.like');
-
     document.addEventListener('click', function(event) {
 
         // If the clicked element doesn't have the right selector, bail
