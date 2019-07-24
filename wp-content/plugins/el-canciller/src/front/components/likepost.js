@@ -29,6 +29,8 @@ let updateLikeData = (likeCount, id, url) => {
 
     xhr.open("POST", url, true);
     xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+    xhr.setRequestHeader('Access-Control-Allow-Headers', '*');
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
 
     xhr.onreadystatechange = function() {
         if (this.readyState != 4) return;
@@ -38,25 +40,6 @@ let updateLikeData = (likeCount, id, url) => {
 
     xhr.send(data);
 };
-
-function addLike(likeCount, id, $) {
-    $.ajax({
-        url: content_data.ajax_url,
-        type: 'POST',
-        data: {
-            action: 'ajax_call_count_satisfaccion',
-            post_id: id,
-            like_count: pareseInt(likeCount),
-        },
-        success: function(result) {
-            console.log(result);
-            setClapCookie(id);
-        },
-        error: function(errorThrown) {
-            console.log(errorThrown);
-        }
-    });
-}
 
 let likePost = () => {
 
