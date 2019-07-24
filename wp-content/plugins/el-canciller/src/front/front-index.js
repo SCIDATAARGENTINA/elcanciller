@@ -122,6 +122,8 @@ let renderTemplate = async(rendered) => {
 
     shareActions($);
 
+    ajax.setAllLikes();
+
     ajax.likePost($);
 
 };

@@ -45,6 +45,17 @@ let validateIfLiked = (id) => {
 
 };
 
+export let setAllLikes = () => {
+    let likedPosts = cjs.get('likedPosts');
+    let arrIds = JSON.parse(likedPosts);
+
+    arrIds.forEach(function(value) {
+        let el = document.querySelectorAll('[data-id="' + value + '"]');
+        el.classList.add('liked');
+    });
+
+};
+
 let updateLikeData = (likeCount, id, url, $) => {
 
     if (validateIfLiked(id)) {
