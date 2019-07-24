@@ -34,31 +34,20 @@ function checkClapCookie(id) {
     return val;
 }
 
-function validateClapCookie(val) {
-    if (val == 1) {
-        $('.clap').addClass('clapped');
-        $('.clap-count').addClass('added');
-        $('.share-bar').css('opacity', '1');
-    } else {
-        $('.share-bar').css('opacity', '1');
-    }
-}
+let likePost = ($) => {
 
-function likePost() {
+    var url = 'http://142.93.24.13/';
 
-    var url = 'https://socialnews.com.ar';
-
-    var id = $('article').attr('data-post-id');
-
-    var clap = $('.like');
+    var like = $('.fa-heart');
 
     validateClapCookie(checkClapCookie(id));
 
     clap.click(function() {
         if (checkClapCookie(id) != 1) {
             getPostData(id, url).done(function(data) {
+                console.log(data);
                 var likeCount = data.acf.likes;
-                addLike(likeCount, id, url);
+                console.log(data.acf.likes);
                 $(this).addClass('liked');
             });
         } else {
