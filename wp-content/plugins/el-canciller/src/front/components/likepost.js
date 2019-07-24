@@ -14,6 +14,7 @@ let getPostData = (id) => {
 let updateLikeData = (likeCount, id, url) => {
     fetch(url, {
         method: 'POST',
+        credentials: 'same-origin',
         headers: new Headers({
             'Content-Type': 'application/json'
         }),
@@ -21,8 +22,7 @@ let updateLikeData = (likeCount, id, url) => {
             action: 'ajax_call_count_likes',
             post_id: id,
             like_count: likeCount
-        }),
-        credentials: 'same-origin'
+        })
     }).then(function(data) {
         console.log(data);
     }).catch(function(data) {
