@@ -38,11 +38,10 @@ let likePost = ($) => {
 
     var url = 'http://142.93.24.13/';
 
-    var like = $('.fa-heart');
+    var like = $('.like');
 
-    validateClapCookie(checkClapCookie(id));
-
-    clap.click(function() {
+    like.click(function() {
+        var id = $(this).attr('data-id');
         if (checkClapCookie(id) != 1) {
             getPostData(id, url).done(function(data) {
                 console.log(data);
