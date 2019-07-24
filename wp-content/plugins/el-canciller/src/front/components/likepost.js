@@ -14,11 +14,11 @@ let getPostData = (id) => {
 let updateLikeData = (likeCount, id, url) => {
     fetch(url, {
         method: 'POST',
-        body: {
+        body: JSON.stringify({
             action: 'ajax_call_count_likes',
             post_id: id,
             like_count: likeCount
-        },
+        }),
         credentials: 'same-origin'
     }).then(function(data) {
         console.log(data);
