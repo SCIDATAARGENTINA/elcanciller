@@ -51,9 +51,6 @@ export let setAllLikes = () => {
 
     arrIds.forEach(function(value) {
         let el = document.querySelector('.like[data-id="' + value + '"]');
-        console.log(value);
-        console.log(document.querySelector('.like[data-id="' + value + '"]'));
-        console.log(el);
         if (el) {
             el.classList.add('liked');
         }
