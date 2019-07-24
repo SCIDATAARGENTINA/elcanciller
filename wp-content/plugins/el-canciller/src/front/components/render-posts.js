@@ -174,6 +174,8 @@ let createPostArray = async(quantity, offset = 0) => {
             is_liked: getLikedPosts(post.id)
         };
 
+        console.log(postObject);
+
         postArray.push(postObject);
 
     }
