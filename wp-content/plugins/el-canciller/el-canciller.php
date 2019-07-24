@@ -42,18 +42,15 @@ add_action( 'admin_enqueue_scripts', 'admin_scripts' );
 
 add_action( 'wp_enqueue_scripts', 'rest_js_enqueue_scripts' );
 
- add_filter( 'acf/rest_api/key', function( $key, $request, $type ) {
-     return 'acf_fields';
-  }, 10, 3 );
+add_filter( 'acf/rest_api/key', function( $key, $request, $type ) {
+    return 'acf_fields';
+}, 10, 3 );
 
  function rest_js_enqueue_scripts() {
 
-     wp_localize_script( 'wds-wwe-frontend-js', 'content_data', array(
-      'ajax_url' => admin_url( 'admin-ajax.php' )
+  wp_localize_script( 'wds-wwe-frontend-js', 'content_data', array('ajax_url' => admin_url( 'admin-ajax.php' )));
 
-   }
-
-   wp_enqueue_script( 'cookie-js', plugins_url( '/js.cookie.js', __FILE__ ), '1.0', true );
+  wp_enqueue_script( 'cookie-js', plugins_url( '/js.cookie.js', __FILE__ ), '1.0', true );
 
 
  }
