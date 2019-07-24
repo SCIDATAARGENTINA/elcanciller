@@ -1,7 +1,15 @@
-function getPostData(id, url) {
-    var connection = url + '/wp-json/wp/v2/posts/' + id;
-    return $.get(connection);
-}
+let getPostData = (id) => {
+
+    const url = `http://142.93.24.13/wp-json/wp/v2/posts/${id}`;
+
+    const headers = {
+        // tslint:disable-next-line:max-line-length
+        //'Authorization': 'Bearer BQDN8FI-G3-thKplSnuymOZA8ixIHLoEnrEg4-nvcCsN64BGpyNv1LdbM53gz0ODqo9QXYLHKtbKaG7DLl0'
+    };
+
+    return fetch(url, { headers }).then(data => data.json());
+
+};
 
 function addLike(likeCount, id, $) {
     $.ajax({
@@ -20,37 +28,27 @@ function addLike(likeCount, id, $) {
             console.log(errorThrown);
         }
     });
-
 }
 
-function setClapCookie(id) {
-    Cookies.set('clapped' + id, '1', { expires: 214748 });
-}
+let likePost = () => {
 
-function checkClapCookie(id) {
-    var val = Cookies.get('clapped' + id);
-    return val;
-}
+    var url = 'http://142.93.24.13/';
 
-let likePost = ($) => {
-    $(document).ready(function() {
+    var like = querySelectorAll('.like');
 
+    document.addEventListener('click', function(event) {
 
-        var url = 'http://142.93.24.13/';
+        // If the clicked element doesn't have the right selector, bail
+        if (!event.target.matches('.like')) return;
 
-        var like = $('.like');
+        // Don't follow the link
+        event.preventDefault();
 
-        like.click(function() {
-            var id = $(this).attr('data-id');
-            getPostData(id, url).done(function(data) {
-                console.log(data);
-                var likeCount = data.acf.likes;
-                console.log(data.acf.likes);
-                $(this).addClass('liked');
-            });
-        });
+        // Log the clicked element in the console
+        console.log(event.target);
 
-    });
+    }, false);
+
 };
 
 
