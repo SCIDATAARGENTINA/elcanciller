@@ -27,52 +27,32 @@ let getPostData = (id) => {
 };
 
 let updateLikeData = (likeCount, id, url, $) => {
-    $(document).ready(function() {
 
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: {
-                action: 'ajax_call_count_likes',
-                post_id: id,
-                like_count: likeCount,
-            },
-            success: function(result) {
-                console.log(result);
-            },
-            error: function(errorThrown) {
-                console.log(errorThrown);
-            }
-        });
 
-        //action to handle in WP add_action("wp_ajax_my_user_vote", "my_user_vote");
-        /*let action = "ajax_call_count_likes";
+    //action to handle in WP add_action("wp_ajax_my_user_vote", "my_user_vote");
+    let action = "ajax_call_count_likes";
 
-        let data = {
-            action: action,
-            post_id: id,
-            like_count: likeCount
-        };
-        console.log(data);
+    let data = {
+        action: action,
+        post_id: id,
+        like_count: likeCount
+    };
+    console.log(data);
 
-        let json = JSON.stringify(data);
+    let json = data;
 
-        let xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
 
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-        xhr.setRequestHeader('Access-Control-Allow-Headers', '*');
-        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.open("POST", url, true);
 
-        xhr.onreadystatechange = function () {
-            if (this.readyState != 4) return;
+    xhr.onreadystatechange = function() {
+        if (this.readyState != 4) return;
 
-            console.log(this.responseText);
-        };
+        console.log(this.responseText);
+    };
 
-        xhr.send(data);*/
+    xhr.send(data);
 
-    });
 
 };
 
