@@ -6,11 +6,21 @@
 
 var moment = require('moment');
 var $ = require("jquery");
+var cjs = require("cookies-js");
 
 var api = require('../service/wordpressapi');
 
 require('moment/locale/es');
 moment.locale('es');
+
+let getLikedPosts = (id) => {
+
+    let likedPosts = cjs.get('likedPosts');
+    arrIds = JSON.parse(likedPosts);
+
+    return arrIds.includes(id);
+
+};
 
 let setTemplate = (post) => {
 
@@ -25,6 +35,11 @@ let setTemplate = (post) => {
     let noComments = 'sin-comentarios';
     let comentariosTemplate = '';
     let likes = 0;
+    let liked = '';
+
+    if (post.is_liked) {
+        liked = 'liked';
+    }
 
     if (post.likes) {
         likes = post.likes;
@@ -82,7 +97,7 @@ let setTemplate = (post) => {
                                         <i class="fab fa-twitter" data-text="${post.title}" data-link="${post.link}"></i>
                                         <i class="fab fa-facebook-f" data-title="${post.title}" data-img="${featuredImage}" data-text="${post.excerpt}" data-link="${post.link}"></i>
                                         <a href="${post.link}"><i class="fas fa-sign-out-alt"></i></a>
-                                        <i class="fas fa-heart like" data-id="${post.id}" data-count="${likes}"></i>
+                                        <i class="fas fa-heart like ${liked}" data-id="${post.id}" data-count="${likes}"></i>
                                     </div><!-- action-links -->
                                     <div class="post-data">
                                         <div class="post-title">
@@ -124,7 +139,6 @@ let createPostArray = async(quantity, offset = 0) => {
     let postArray = [];
 
     let latestPosts = await api.getLatestPosts(quantity, offset);
-    console.log(latestPosts);
 
     for (let post of latestPosts) {
 
@@ -156,10 +170,9 @@ let createPostArray = async(quantity, offset = 0) => {
             comments: postComments,
             trending: post.acf.trending,
             show_author: post.acf.show_author,
-            likes: post.acf.likes
+            likes: post.acf.likes,
+            is_liked: getLikedPosts(post.id)
         };
-
-        console.log(postObject);
 
         postArray.push(postObject);
 
