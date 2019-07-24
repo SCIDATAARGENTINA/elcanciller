@@ -14,8 +14,26 @@ let getPostData = (id) => {
 
 };
 
-let setCookie = (cjs) => {
-    cjs.set('key', 'value');
+let setCookie = (cjs, id) => {
+
+    let likedPosts = cjs.get('likedPosts');
+    let arrIds = [];
+
+    if (likedPosts) {
+
+        arrIds = JSON.parse(likedPosts);
+        arrIds.push(id);
+        likedPosts = JSON.stringify(arrIds);
+        cjs.set('likedPosts', likedPosts);
+
+    } else {
+
+        arrIds = [id];
+        likedPosts = JSON.stringify(arrIds);
+        cjs.set('likedPosts', likedPosts);
+
+    }
+
 };
 
 let updateLikeData = (likeCount, id, url, $) => {
@@ -31,7 +49,7 @@ let updateLikeData = (likeCount, id, url, $) => {
             },
             success: function(result) {
                 console.log(result);
-                setCookie(cjs);
+                setCookie(cjs, id);
             },
             error: function(errorThrown) {
                 console.log(errorThrown);
