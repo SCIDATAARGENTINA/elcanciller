@@ -36,7 +36,7 @@ let updateLikeData = (likeCount, id, url) => {
         console.log(this.responseText);
     };
 
-    xhr.send(json);
+    xhr.send(data);
 };
 
 function addLike(likeCount, id, $) {
