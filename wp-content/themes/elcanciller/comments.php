@@ -28,8 +28,10 @@ $discussion = twentynineteen_get_discussion_data();
 	<div class="<?php echo $discussion->responses > 0 ? 'comments-title-wrap' : 'comments-title-wrap no-responses'; ?>">
 		<div class="comments-topbar">
 			<div class="comentar">
+				<a href="#respond">
 				<img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/chat-blanco.svg" alt="">
 				comentar
+				</a>
 			</div>
 			<div class="compartir">
 				Compartir:
