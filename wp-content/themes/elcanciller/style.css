@@ -1069,9 +1069,12 @@ ul.tagposts-list li {
 
 /* ADS inside render-posts*/
 
-.render-posts.col-3 #publi1,
-.render-posts.col-3 .post-rendered:first-child {
+.render-posts.col-3 #publi1 {
     order: 1;
+}
+
+.render-posts.col-3 .post-rendered:first-child {
+    order: 0;
 }
 
 
