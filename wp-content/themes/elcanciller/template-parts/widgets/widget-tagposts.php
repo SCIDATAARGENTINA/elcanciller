@@ -24,7 +24,6 @@ $tag_principal = $tags[0];
     <ul class="tagposts-list">
        <?php $args = array(
                         'posts_per_page' => 3,
-                        'post_type' => 'posts',
                         'tag_id' => $tag_principal->term_id
                     );
                     $query = new WP_Query( $args );
