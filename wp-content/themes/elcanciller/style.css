@@ -1067,6 +1067,13 @@ ul.tagposts-list li {
 }
 
 
+/* ADS inside render-posts*/
+
+.render-posts #publi1 {
+    order: 1;
+}
+
+
 /* ---------------------------*/
 
 

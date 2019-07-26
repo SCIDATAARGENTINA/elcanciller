@@ -25,7 +25,7 @@ $page_id  = get_queried_object_id();
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
 				<div class="loader">Cargando...</div>
 				<div class="render-posts col-3" data-quantity="3" data-offset="0"></div>
-				<div class="render-posts col-3" data-quantity="2" data-offset="0">
+				<div class="render-posts col-3" data-quantity="2" data-offset="3">
 					<div id="publi1">
 						<?php the_field('anuncio_1', $page_id) ?>
 					</div>
