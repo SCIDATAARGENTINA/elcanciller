@@ -38,7 +38,7 @@ $discussion = twentynineteen_get_discussion_data();
 			</div>
 			<div class="nota-like">
 				¿Te gusto esta nota?
-				<i class="fas fa-heart like" data-id="<?php the_ID(); ?>" data-count="<?php the_field('likes') ?>" data-type="<?php echo get_post_type( the_ID() ); ?>"></i>
+				<i class="fas fa-heart like" data-id="<?php echo get_the_ID(); ?>" data-count="<?php the_field('likes') ?>" data-type="<?php echo get_post_type( get_the_ID() ); ?>"></i>
 			</div>
 		</div><!-- comments-topbar -->
 	</div><!-- .comments-title-flex -->
