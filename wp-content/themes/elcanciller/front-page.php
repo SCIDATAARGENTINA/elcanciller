@@ -37,14 +37,14 @@ $page_id  = get_queried_object_id();
 		</div><!-- inner container -->
 		<div class="outer-container">
 			<div class="ad-970">
-			<?php the_field('anuncio_2') ?>
+			<?php echo get_the_field('anuncio_2') ?>
 			</div>
 			<?php get_template_part('template-parts/sections/section', 'placas') ?>
-			<div class="ad-970"><?php the_field('anuncio_3') ?></div>
+			<div class="ad-970"><?php echo get_the_field('anuncio_3') ?></div>
 			<?php get_template_part('template-parts/sections/section', 'instagram') ?>
-			<div class="ad-970"><?php the_field('anuncio_4') ?></div>
+			<div class="ad-970"><?php echo get_the_field('anuncio_4') ?></div>
 			<?php get_template_part('template-parts/sections/section', 'videos') ?>
-			<div class="ad-970"><?php the_field('anuncio_5') ?></div>
+			<div class="ad-970"><?php echo get_the_field('anuncio_5') ?></div>
 			<div class="loader">Cargando...</div>
 			<div class="render-posts col-3" data-quantity="9" data-offset="5">
 			</div>
