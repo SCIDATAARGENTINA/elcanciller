@@ -881,6 +881,11 @@ button {
     line-height: 27px;
     font-size: 18px;
     color: #b29f93 !important;
+    display: inline-block;
+}
+
+.tagposts-list ul {
+    list-style-type: none;
 }
 
 
