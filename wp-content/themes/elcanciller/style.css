@@ -1035,6 +1035,10 @@ ul.tagposts-list li {
     cursor: pointer;
 }
 
+.comentar {
+    width: 30px;
+}
+
 
 /* END COMMENTS*/
 
