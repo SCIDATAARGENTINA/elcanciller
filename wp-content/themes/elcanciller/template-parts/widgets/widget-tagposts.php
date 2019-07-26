@@ -15,7 +15,7 @@ $tags = get_the_tags($postID);
 $tag_principal = $tags[0];
 
 ?>
-<pre><?php print_f($tag_principal) ?></pre>
+<pre><?php print_r($tag_principal) ?></pre>
 <div class="tagposts-widget container">
     <div class="current-tag">
         <i class="fas fa-hashtag"></i>
