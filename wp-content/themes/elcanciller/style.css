@@ -1078,8 +1078,11 @@ ul.tagposts-list li {
 }
 
 .ad-long {
-    margin: 0 auto;
     display: block;
+}
+
+.ad-long img {
+    margin: 0 auto;
 }
 
 
