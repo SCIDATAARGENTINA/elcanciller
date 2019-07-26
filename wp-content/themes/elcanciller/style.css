@@ -1093,13 +1093,13 @@ ul.tagposts-list li {
 .col-1-2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-left: 10px;
 }
 
 .col-2-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+    padding-left: 10px;
 }
 
 .advertical {
