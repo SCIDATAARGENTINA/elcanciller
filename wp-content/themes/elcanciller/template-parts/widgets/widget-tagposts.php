@@ -17,6 +17,7 @@ $tag_principal = $tags[0];
 ?>
 <div class="tagposts-widget container">
     <div class="current-tag">
+        <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-amarillo.svg" alt="">
         <a href="<?php echo get_term_link( $tag_principal , 'post_tag' ) ?>">#<?php echo $tag_principal->name ?></a>
     </div><!-- tags-icon -->
     <ul class="tagposts-list">

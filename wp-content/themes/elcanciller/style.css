@@ -865,16 +865,16 @@ button {
 }
 
 .tagposts-widget .current-tag {
+    display: flex;
+}
+
+.tagposts-widget .current-tag a {
     color: #e7d117;
     padding: 10px 15px;
     border: 2px solid #e7d117;
     border-radius: 30px;
     line-height: 20px;
     font-size: 20px;
-}
-
-.tagposts-widget .current-tag a {
-    color: #e7d117;
 }
 
 .tagposts-list a {
