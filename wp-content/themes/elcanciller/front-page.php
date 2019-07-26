@@ -24,11 +24,9 @@ get_header();
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
 				<div class="loader">Cargando...</div>
 				<div class="render-posts col-3" data-quantity="3" data-offset="0"></div>
-				<div class="loader">Cargando...</div>
 				<div class="render-posts col-3" data-quantity="2" data-offset="0">
-					
+					<p>Hola</p>
 				</div>
-				<?php echo get_the_field('anuncio_1') ?>
 				<?php get_template_part('template-parts/sections/section', 'opinion') ?>
 
 			</div><!-- content -->
@@ -43,7 +41,7 @@ get_header();
 			<?php get_template_part('template-parts/sections/section', 'videos') ?>
 			<?php the_field('anuncio_5') ?>
 			<div class="loader">Cargando...</div>
-			<div class="render-posts col-3" data-quantity="9" data-offset="4">
+			<div class="render-posts col-3" data-quantity="9" data-offset="5">
 			</div>
 		</div><!-- outer-container -->
 
