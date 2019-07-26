@@ -1069,7 +1069,7 @@ ul.tagposts-list li {
 
 /* ADS inside render-posts*/
 
-.render-posts #publi1 {
+.render-posts.col-3 #publi1 {
     order: 1;
 }
 
