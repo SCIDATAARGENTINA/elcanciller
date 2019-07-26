@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying tagsrelated WIDGET
+ * Template part for displaying tagposts WIDGET
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

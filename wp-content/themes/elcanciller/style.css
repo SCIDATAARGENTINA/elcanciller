@@ -855,6 +855,25 @@ button {
 /* ---------------------------*/
 
 
+/*--------- TAG RELATED POSTS WIDGET */
+
+
+/* ---------------------------*/
+
+.tagposts-widget .current-tag {
+    color: #e7d117;
+    padding: 10px 15px;
+    border: 1px solid #e7d117;
+    border-radius: 30px;
+}
+
+
+/* TAG RELATED POSTS WIDGET */
+
+
+/* ---------------------------*/
+
+
 /*--------- COMMENTS */
 
 
