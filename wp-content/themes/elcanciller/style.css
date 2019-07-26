@@ -2013,10 +2013,9 @@ article .post-content .has-content-area {
     font-size: 26px;
 }
 
-.related-title i {
-    color: #b29f93;
+.related-title img {
     border-bottom: 1px solid #fff;
-    font-size: 30px;
+    max-width: 50px;
     padding: 20px;
     margin-top: -37px;
 }
