@@ -888,6 +888,10 @@ ul.tagposts-list {
     list-style: none;
 }
 
+ul.tagposts-list li {
+    border-bottom: 2px solid #ccc;
+}
+
 
 /* TAG RELATED POSTS WIDGET */
 
