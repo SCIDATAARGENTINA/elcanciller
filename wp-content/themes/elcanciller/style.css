@@ -1090,6 +1090,16 @@ ul.tagposts-list li {
     margin: 0px;
 }
 
+.col-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.col-2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 /* ---------------------------*/
 
