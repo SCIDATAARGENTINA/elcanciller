@@ -28,7 +28,7 @@ $tag_principal = $tags[0];
                     while( $query->have_posts() ) {
                         $query->the_post(); ?>
 
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                         
                     <?php }
                     // Restore original Post Data
