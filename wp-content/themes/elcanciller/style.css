@@ -2400,6 +2400,7 @@ article .post-content .has-content-area {
     color: #e7d117 !important;
 }
 
-.placa-like .liked {
+.placa-like .liked,
+#comments .liked {
     color: red !important;
 }
