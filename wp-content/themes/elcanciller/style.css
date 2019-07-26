@@ -868,6 +868,10 @@ button {
     display: flex;
 }
 
+.tagposts-widget .current-tag img {
+    width: 50px;
+}
+
 .tagposts-widget .current-tag a {
     color: #e7d117;
     padding: 10px 15px;
