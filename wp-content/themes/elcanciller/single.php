@@ -44,7 +44,7 @@ get_header();
 			<div class="related-posts">
 				<div class="grey-band"></div>
 				<div class="related-title">
-					<i class="fas fa-bomb"></i>
+					<img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron.svg" alt="">
 					<h3>Lo que no te podés perder</h3>
 				</div><!-- related-title -->
 				<div class="loader">Cargando...</div>
