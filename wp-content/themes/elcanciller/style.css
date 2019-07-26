@@ -867,6 +867,10 @@ button {
     border-radius: 30px;
 }
 
+.tagposts-widget .current-tag a {
+    color: #e7d117;
+}
+
 
 /* TAG RELATED POSTS WIDGET */
 
