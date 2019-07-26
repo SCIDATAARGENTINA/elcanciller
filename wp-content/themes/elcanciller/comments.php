@@ -28,17 +28,17 @@ $discussion = twentynineteen_get_discussion_data();
 	<div class="<?php echo $discussion->responses > 0 ? 'comments-title-wrap' : 'comments-title-wrap no-responses'; ?>">
 		<div class="comments-topbar">
 			<div class="comentar">
-				<i class="far fa-comment-dots"></i>
+				<img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/chat-blanco.svg" alt="">
 				comentar
 			</div>
 			<div class="compartir">
 				Compartir:
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"  data-text="<?php the_title(); ?>" data-link="<?php the_permalink() ?>"></i>
+				<i class="fab fa-facebook-f" data-title="<?php the_title(); ?>" data-img="" data-text="<?php echo get_the_excerpt(); ?>" data-link="<?php the_permalink() ?>"></i>
 			</div>
 			<div class="nota-like">
 				¿Te gusto esta nota?
-				<i class="fas fa-heart"></i>
+				<i class="fas fa-heart like" data-id="<?php the_ID(); ?>" data-count="<?php the_field('likes') ?>" data-type="<?php echo get_post_type( the_ID() ); ?>"></i>
 			</div>
 		</div><!-- comments-topbar -->
 	</div><!-- .comments-title-flex -->

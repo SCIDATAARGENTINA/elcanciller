@@ -54,6 +54,15 @@ let shareActions = ($) => {
             win.opener = null;
         });
 
+        $('.compartir .fa-twitter').click(function() {
+            var tweetText = '"' + $(this).attr('data-text') + '"' + ' ' + 'desde @elcancillercom ';
+            var tweetUrl = $(this).attr('data-link');
+            var text = encodeURIComponent(tweetText);
+            var shareUrl = 'https://twitter.com/intent/tweet?url=' + tweetUrl + '&text=' + text;
+            var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
+            win.opener = null;
+        });
+
         // facebook
 
         $('.action-links .fa-facebook-f').click(function() {
@@ -69,6 +78,18 @@ let shareActions = ($) => {
         });
 
         $('.share-container .fa-facebook-f').click(function() {
+            var fbTtitle = $(this).attr('data-title');
+            var fbUrl = $(this).attr('data-link');
+            var fbImg = $(this).attr('data-img');
+            var fbText = $.parseHTML($(this).attr('data-text'));
+            var title = encodeURIComponent(fbTtitle);
+            var text = encodeURIComponent(fbText[0].innerText);
+            var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=1389892087910588&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
+            var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
+            win.opener = null;
+        });
+
+        $('.compartir .fa-facebook-f').click(function() {
             var fbTtitle = $(this).attr('data-title');
             var fbUrl = $(this).attr('data-link');
             var fbImg = $(this).attr('data-img');
