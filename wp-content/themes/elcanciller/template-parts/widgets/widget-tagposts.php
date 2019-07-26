@@ -15,21 +15,21 @@ $tags = get_the_tags($postID);
 $tag_principal = $tags[0];
 
 ?>
+<pre><?php print_f($tag_principal) ?></pre>
 <div class="tagposts-widget container">
     <div class="current-tag">
         <i class="fas fa-hashtag"></i>
-        <a href=""><?php $tag_principal->name ?></a>
+        <a href="#"><?php $tag_principal->name ?></a>
     </div><!-- tags-icon -->
     <ul class="tag-list">
        <?php $args = array(
                         'posts_per_page' => 2,
-                        'post_type' => 'opinion'
+                        'post_type' => 'posts'
                     );
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
                         $query->the_post(); 
                         
-                        get_template_part('template-parts/content/content', 'opinion');
                     }
                     // Restore original Post Data
                     wp_reset_postdata(); ?>
