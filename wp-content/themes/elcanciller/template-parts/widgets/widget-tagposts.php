@@ -19,7 +19,7 @@ $tag_principal = $tags[0];
 <div class="tagposts-widget container">
     <div class="current-tag">
         <i class="fas fa-hashtag"></i>
-        <a href="#"><?php $tag_principal->name ?></a>
+        <a href="<?php echo get_term_link( $tag_principal , 'post_tag' ) ?>"><?php echo $tag_principal->name ?></a>
     </div><!-- tags-icon -->
     <ul class="tag-list">
        <?php $args = array(
