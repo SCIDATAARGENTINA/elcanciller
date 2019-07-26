@@ -884,8 +884,8 @@ button {
     display: inline-block;
 }
 
-.tagposts-list ul li {
-    list-style-type: none;
+ul.tagposts-list {
+    list-style: none;
 }
 
 
