@@ -2017,7 +2017,7 @@ article .post-content .has-content-area {
     border-bottom: 1px solid #fff;
     max-width: 50px;
     margin-top: -37px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .related-posts {
