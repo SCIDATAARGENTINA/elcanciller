@@ -3,7 +3,7 @@ var cjs = require("cookies-js");
 
 let getPostData = (id, type) => {
 
-    if (type == "post") {
+    if (type == "post" || null) {
         type = "posts";
     }
 
