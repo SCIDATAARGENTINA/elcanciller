@@ -860,6 +860,10 @@ button {
 
 /* ---------------------------*/
 
+.tagposts-widget {
+    font-family: "Bree Serif";
+}
+
 .tagposts-widget .current-tag {
     color: #e7d117;
     padding: 10px 15px;
