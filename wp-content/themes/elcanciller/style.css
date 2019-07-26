@@ -1083,6 +1083,7 @@ ul.tagposts-list li {
 
 .ad-long img {
     margin: 0 auto;
+    display: block;
 }
 
 
