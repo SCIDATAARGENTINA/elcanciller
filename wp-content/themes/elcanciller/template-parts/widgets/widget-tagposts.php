@@ -21,16 +21,19 @@ $tag_principal = $tags[0];
         <i class="fas fa-hashtag"></i>
         <a href="<?php echo get_term_link( $tag_principal , 'post_tag' ) ?>"><?php echo $tag_principal->name ?></a>
     </div><!-- tags-icon -->
-    <ul class="tag-list">
+    <ul class="tagposts-list">
        <?php $args = array(
-                        'posts_per_page' => 2,
-                        'post_type' => 'posts'
+                        'posts_per_page' => 3,
+                        'post_type' => 'posts',
+                        'tag_id' => $tag_principal->term_id
                     );
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
-                        $query->the_post(); 
+                        $query->the_post(); ?>
+
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         
-                    }
+                    <?php }
                     // Restore original Post Data
                     wp_reset_postdata(); ?>
     </ul><!-- tag-list -->
