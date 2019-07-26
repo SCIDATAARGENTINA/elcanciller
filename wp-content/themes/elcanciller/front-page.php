@@ -26,8 +26,9 @@ get_header();
 				<div class="render-posts col-3" data-quantity="3" data-offset="0"></div>
 				<div class="loader">Cargando...</div>
 				<div class="render-posts col-3" data-quantity="2" data-offset="0">
-					<?php the_field('anuncio_1') ?>
+					
 				</div>
+				<?php the_field('anuncio_1') ?>
 				<?php get_template_part('template-parts/sections/section', 'opinion') ?>
 
 			</div><!-- content -->
