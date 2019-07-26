@@ -28,6 +28,9 @@
   </div><!-- info-tiempo -->
 </div><!-- tiempo -->
 <div class="widget">
+    <?php get_template_part('template-parts/widgets/widget', 'tagposts') ?>
+</div>
+<div class="widget">
     <?php get_template_part('template-parts/widgets/widget', 'tagsrelated') ?>
 </div>
 <div class="widget no-padding">
