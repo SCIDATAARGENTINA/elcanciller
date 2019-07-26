@@ -36,13 +36,13 @@ $page_id  = get_queried_object_id();
 
 		</div><!-- inner container -->
 		<div class="outer-container">
-			<div class="ad-large"><?php the_field('anuncio_2', $page_id) ?></div>
+			<div class="ad-long"><?php the_field('anuncio_2', $page_id) ?></div>
 			<?php get_template_part('template-parts/sections/section', 'placas') ?>
-			<div class="ad-large"><?php the_field('anuncio_3', $page_id) ?></div>
+			<div class="ad-long"><?php the_field('anuncio_3', $page_id) ?></div>
 			<?php get_template_part('template-parts/sections/section', 'instagram') ?>
-			<div class="ad-large"><?php the_field('anuncio_4', $page_id) ?></div>
+			<div class="ad-long"><?php the_field('anuncio_4', $page_id) ?></div>
 			<?php get_template_part('template-parts/sections/section', 'videos') ?>
-			<div class="ad-large"><?php the_field('anuncio_5', $page_id) ?></div>
+			<div class="ad-long"><?php the_field('anuncio_5', $page_id) ?></div>
 			<div class="loader">Cargando...</div>
 			<div class="render-posts col-3" data-quantity="9" data-offset="5">
 			</div>
