@@ -2375,11 +2375,20 @@ article .post-content .has-content-area {
     height: 100%;
 }
 
+.fa-twitter,
+.fa-facebook-f {
+    cursor: pointer;
+}
+
 
 /* TWITTER SHARE END */
 
 
 /* LIKES */
+
+.like {
+    cursor: pointer;
+}
 
 .comentarios-sharer .share-container i.liked {
     transition: 300ms ease;
