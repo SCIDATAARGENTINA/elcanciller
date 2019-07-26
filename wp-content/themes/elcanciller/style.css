@@ -869,7 +869,8 @@ button {
 }
 
 .tagposts-widget .current-tag img {
-    width: 50px;
+    width: 30px;
+    margin-right: 10px;
 }
 
 .tagposts-widget .current-tag a {
