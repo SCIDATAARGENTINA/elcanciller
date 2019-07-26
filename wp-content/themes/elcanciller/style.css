@@ -886,6 +886,7 @@ button {
 
 ul.tagposts-list {
     list-style: none;
+    padding: 0px;
 }
 
 ul.tagposts-list li {
