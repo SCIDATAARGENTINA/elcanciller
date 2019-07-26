@@ -49,6 +49,11 @@ $page_id  = get_queried_object_id();
 					<?php the_field('anuncio_6', $page_id) ?>
 				</div>
 			</div>
+			<div class="col-1-2">
+				<div class="ad-vertical">
+					<?php the_field('anuncio_7', $page_id) ?>
+				</div>
+			</div>
 		</div><!-- outer-container -->
 
 	</main><!-- #main -->
