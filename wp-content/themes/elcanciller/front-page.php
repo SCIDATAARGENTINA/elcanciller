@@ -50,7 +50,7 @@ $page_id  = get_queried_object_id();
 				</div>
 			</div>
 			<div class="col-1-2">
-				<div class="ad-vertical">
+				<div class="advertical">
 					<?php the_field('anuncio_7', $page_id) ?>
 				</div>
 				<div class="render-posts col-2-2" data-quantity="4" data-offset="7"></div>
