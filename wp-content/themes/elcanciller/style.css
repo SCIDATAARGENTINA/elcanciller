@@ -866,6 +866,7 @@ button {
 
 .tagposts-widget .current-tag {
     display: flex;
+    align-content: center;
 }
 
 .tagposts-widget .current-tag img {
@@ -875,7 +876,7 @@ button {
 
 .tagposts-widget .current-tag a {
     color: #e7d117;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border: 2px solid #e7d117;
     border-radius: 30px;
     line-height: 20px;
