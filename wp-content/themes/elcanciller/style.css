@@ -880,7 +880,7 @@ button {
 .tagposts-list a {
     line-height: 27px;
     font-size: 18px;
-    color: #b29f93;
+    color: #b29f93 !important;
 }
 
 
