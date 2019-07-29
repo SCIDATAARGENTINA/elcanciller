@@ -1170,6 +1170,19 @@ ul.tagposts-list li {
     bottom: 0;
 }
 
+.post-recomendado .titulo a:before {
+    content: '';
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    transform: rotate(20deg);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+}
+
 
 /* ---------------------------*/
 
