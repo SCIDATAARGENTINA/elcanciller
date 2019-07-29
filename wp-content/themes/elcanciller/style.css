@@ -2595,7 +2595,7 @@ article .post-content .has-content-area {
     flex-direction: column;
 }
 
-.search-post .search-content span {
+.search-post .search-content span.time-ago {
     font-size: 14px;
     color: #c4afa1;
 }
