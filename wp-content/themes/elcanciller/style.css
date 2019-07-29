@@ -1143,6 +1143,11 @@ ul.tagposts-list li {
     color: #b29f93;
 }
 
+.post-recomendado .titulo img {
+    width: 50px;
+    margin: 0 30px;
+}
+
 .post-recomendado .titulo a {
     color: #b29f93;
 }
