@@ -1141,6 +1141,7 @@ ul.tagposts-list li {
     justify-content: flex-start;
     align-items: center;
     color: #b29f93;
+    border-bottom: 1px solid #ccc;
 }
 
 .post-recomendado .titulo img {
@@ -1150,6 +1151,7 @@ ul.tagposts-list li {
 
 .post-recomendado .titulo a {
     color: #b29f93;
+    border-left: 1px solid #ccc;
 }
 
 
