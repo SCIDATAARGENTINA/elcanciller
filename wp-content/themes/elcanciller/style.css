@@ -2590,7 +2590,8 @@ article .post-content .has-content-area {
 
 .search-post .search-content {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
