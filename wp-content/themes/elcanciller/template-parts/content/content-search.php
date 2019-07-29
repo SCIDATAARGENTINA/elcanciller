@@ -35,5 +35,6 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} 
         <a style="color: <?php echo $cat_color ?>" href="<?php echo get_term_link($term) ?>"><?php echo $term->name ?></a>
         <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
         <span><?php echo time_ago() ?></span>
+        <?php get_template_part('template-parts/comments/comments', 'nosharer') ?>
     </div>
 </div><!-- end search-article -->
