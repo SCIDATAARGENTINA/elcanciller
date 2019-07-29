@@ -1086,6 +1086,13 @@ ul.tagposts-list li {
     display: block;
 }
 
+#publi2 {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #publi2 p {
     margin: 0px;
 }
