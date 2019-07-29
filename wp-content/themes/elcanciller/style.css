@@ -2604,6 +2604,11 @@ article .post-content .has-content-area {
 
 .search-post .comentarios-noshare {
     grid-template-columns: 1fr 18fr;
+    padding-left: 0px;
+}
+
+.search-post .comentarios-noshare img {
+    width: 25px;
 }
 
 .search-post:hover .comentarios {
