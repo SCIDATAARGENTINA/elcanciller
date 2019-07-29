@@ -2569,12 +2569,14 @@ article .post-content .has-content-area {
 }
 
 .search-post .imagen {
-    height: 250px;
+    max-width: 300px;
+    overflow: hidden;
 }
 
 .search-post .imagen img {
     width: 100%;
     max-height: 100%;
+    object-fit: contain;
 }
 
 
