@@ -1156,6 +1156,7 @@ ul.tagposts-list li {
     border-left: 1px solid #ccc;
     margin: 0 30px;
     font-size: 16px;
+    display: inline-block;
 }
 
 
