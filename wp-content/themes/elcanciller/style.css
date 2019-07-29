@@ -1144,6 +1144,7 @@ ul.tagposts-list li {
     align-items: center;
     color: #b29f93;
     border-bottom: 1px solid #ccc;
+    position: relative;
 }
 
 .post-recomendado .titulo img {
@@ -1157,6 +1158,16 @@ ul.tagposts-list li {
     padding: 0 30px;
     font-size: 16px;
     display: inline-block;
+}
+
+.post-recomendado .titulo:after {
+    content: '';
+    background: #b29f93;
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 
