@@ -2567,7 +2567,7 @@ article .post-content .has-content-area {
     grid-template-columns: 1fr 3fr;
     grid-gap: 20px;
     margin-bottom: 20px;
-    font-size: "Bree Serif";
+    font-family: "Bree Serif";
 }
 
 .search-post .imagen {
@@ -2593,6 +2593,11 @@ article .post-content .has-content-area {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.search-post .search-content span {
+    font-size: 14px;
+    color: #c4afa1;
 }
 
 
