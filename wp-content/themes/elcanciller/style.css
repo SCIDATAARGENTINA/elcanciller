@@ -2631,6 +2631,7 @@ article .post-content .has-content-area {
     height: 2px;
     content: '';
     top: 20px;
+    background: #fff;
 }
 
 
