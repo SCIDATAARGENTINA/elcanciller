@@ -45,6 +45,17 @@ a {
     outline: 0 !important;
 }
 
+blockquote {
+    border-left: 6px solid #e7d117;
+    margin-left: 0;
+    padding: 20px;
+    margin-left: 25px;
+}
+
+blockquote p {
+    margin: 0 !important;
+}
+
 .site-content {
     overflow: visible;
 }
