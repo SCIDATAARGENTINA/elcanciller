@@ -16,7 +16,7 @@ get_header();
 		<main id="main" class="site-main">
 			<div class="front-page-content inner container">
 			<div class="sidebar">
-				
+				<?php get_template_part( 'template-parts/sidebar/sidebar', 'front' ); ?>
 			</div><!-- sidebar -->
 			<div class="content">
 
