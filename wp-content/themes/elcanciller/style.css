@@ -2241,6 +2241,11 @@ article .post-content .has-content-area {
     margin: 0 auto;
 }
 
+#comments .nota-like i {
+    margin: 0 15px;
+    font-size: 23px;
+}
+
 #comments .comments-topbar div {
     display: flex;
     justify-content: center;
