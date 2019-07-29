@@ -2600,7 +2600,7 @@ article .post-content .has-content-area {
     color: #c4afa1;
 }
 
-.search-post .comentarios {
+.search-post:hover .comentarios {
     opacity: 1;
 }
 
