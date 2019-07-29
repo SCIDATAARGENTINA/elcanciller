@@ -2588,5 +2588,10 @@ article .post-content .has-content-area {
     color: #333333;
 }
 
+.search-post .search-content {
+    display: flex;
+    align-items: center;
+}
+
 
 /* END SEARCH*/
