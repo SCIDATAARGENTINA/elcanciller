@@ -2630,6 +2630,10 @@ article .post-content .has-content-area {
 
 .search-results .page-header .page-description {
     background: #edede6;
+    color: #333333;
+    padding: 20px;
+    position: absolute;
+    bottom: -20px;
 }
 
 .search-results .page-header:before {
