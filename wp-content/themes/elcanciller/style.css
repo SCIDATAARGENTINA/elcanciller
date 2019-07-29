@@ -2669,8 +2669,8 @@ article .post-content .has-content-area {
     color: #b29f93;
 }
 
-.nav-next-text,
-.nav-prev-text {
+.pagination .nav-links .prev>*,
+.pagination .nav-links .next>* {
     display: none !important;
 }
 
