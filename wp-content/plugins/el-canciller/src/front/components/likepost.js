@@ -50,6 +50,7 @@ let validateIfLiked = (id) => {
 };
 
 export let setAllLikes = () => {
+
     let likedPosts = cjs.get('likedPosts');
     let arrIds = JSON.parse(likedPosts);
 
