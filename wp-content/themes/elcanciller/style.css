@@ -2600,6 +2600,10 @@ article .post-content .has-content-area {
     color: #c4afa1;
 }
 
+.search-post .comentarios-noshare {
+    grid-template-columns: 1fr 18fr;
+}
+
 .search-post:hover .comentarios {
     opacity: 1;
 }
