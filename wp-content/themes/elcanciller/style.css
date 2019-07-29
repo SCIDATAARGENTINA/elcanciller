@@ -1152,6 +1152,8 @@ ul.tagposts-list li {
 .post-recomendado .titulo a {
     color: #b29f93;
     border-left: 1px solid #ccc;
+    margin-right: 30px;
+    font-size: 22px;
 }
 
 
