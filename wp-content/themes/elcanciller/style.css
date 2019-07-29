@@ -2656,5 +2656,13 @@ article .post-content .has-content-area {
     background: #fff;
 }
 
+.pagination .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-family: "Bree Serif";
+    font-weight: 400;
+}
+
 
 /* END SEARCH*/
