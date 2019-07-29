@@ -2242,8 +2242,8 @@ article .post-content .has-content-area {
 }
 
 #comments .nota-like i {
-    margin: 0 15px;
-    font-size: 23px;
+    margin: 0 15px !important;
+    font-size: 23px !important;
 }
 
 #comments .comments-topbar div {
