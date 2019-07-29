@@ -20,6 +20,10 @@ $taxonomy = 'category'; // this is for default wordpress taxonomy
 $terms = wp_get_post_terms( $post_id, $taxonomy );
 $term = $terms[0];
 $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
+$default_local_date = ucwords(utf8_encode(get_the_time('l d \d\e F \d\e Y | H:i'))); 
+$date_connectors_capital = array('De', 'Del');
+$date_connectors_lower = array('de', 'del');
+$local_date = str_replace($date_connectors_capital, $date_connectors_lower, $default_local_date);
 echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} </style>';
 ?>
 
@@ -30,5 +34,6 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} 
     <div class="search-content">
         <a style="color: <?php echo $cat_color ?>" href="<?php echo get_term_link($term) ?>"><?php echo $term->name ?></a>
         <h3><?php the_title(); ?></h3>
+        <span><?php echo $local_date; ?></span>
     </div>
 </div><!-- end search-article -->
