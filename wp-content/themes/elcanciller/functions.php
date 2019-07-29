@@ -486,9 +486,8 @@ function post_recomendado($atts){
   $a = shortcode_atts( array(
     'postid' => '0'
   ), $atts );
-  echo $a['postid'];
   $title = get_the_title($a['postid']);
-  $link = the_permalink($a['postid']);
+  $link = get_the_permalink($a['postid']);
   ?>
 
   <div class="post-recomendado">
