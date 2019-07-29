@@ -488,16 +488,16 @@ function post_recomendado($atts){
   ), $atts );
   $title = get_the_title($a['postid']);
   $link = get_the_permalink($a['postid']);
-  ?>
+ 
 
-  <div class="post-recomendado">
+  return '<div class="post-recomendado">
     <div class="encabezado"><span>Te recomendamos leer</span></div>
     <div class="titulo">
-      <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron.svg" alt="">
-      <a href="<?php echo $link ?>"><h3><?php echo $title ?></h3></a>
+      <img src="' . bloginfo('url') . '/wp-content/uploads/2019/07/fire-marron.svg" alt="">
+      <a href="' . $link . '"><h3>' . $title . '</h3></a>
     </div>
-  </div>
-<?php 
+  </div>';
+
 }
 
 add_shortcode( 'recomendado', 'post_recomendado' );
