@@ -2616,5 +2616,10 @@ article .post-content .has-content-area {
     opacity: 1;
 }
 
+.search-results .page-header {
+    margin: 0;
+    margin-left: 100px;
+}
+
 
 /* END SEARCH*/
