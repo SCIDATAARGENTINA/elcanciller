@@ -28,7 +28,7 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} 
 ?>
 
 <div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search-post">
-    <div class="imagen">
+    <div class="imagen" style="background-image:url('<?php echo $featured_img_url ?>');">
         <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
     </div>
     <div class="search-content">
