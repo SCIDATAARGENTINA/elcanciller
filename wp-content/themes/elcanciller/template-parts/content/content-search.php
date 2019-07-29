@@ -29,7 +29,7 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} 
 
 <div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search-post">
     <div class="imagen" style="background-image:url('<?php echo $featured_img_url ?>');">
-        <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+        <div class="dummy"></div>
     </div>
     <div class="search-content">
         <a style="color: <?php echo $cat_color ?>" href="<?php echo get_term_link($term) ?>"><?php echo $term->name ?></a>
