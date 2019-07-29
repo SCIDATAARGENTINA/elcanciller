@@ -2348,6 +2348,10 @@ article .post-content .has-content-area {
     border-color: #ccc !important;
 }
 
+.comentar a {
+    color: #fff !important;
+}
+
 .edit-link {
     border-radius: 20px;
     color: #e7d117 !important;
