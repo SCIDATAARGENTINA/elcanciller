@@ -2570,6 +2570,7 @@ article .post-content .has-content-area {
 
 .search-post .imagen {
     width: 200px;
+    height: auto;
 }
 
 .search-post .imagen img {
