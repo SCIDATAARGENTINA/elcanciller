@@ -1140,6 +1140,11 @@ ul.tagposts-list li {
     display: flex;
     justify-content: flex-start;
     align-content: center;
+    color: #b29f93;
+}
+
+.post-recomendado .titulo a {
+    color: #b29f93;
 }
 
 
