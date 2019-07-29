@@ -2600,5 +2600,9 @@ article .post-content .has-content-area {
     color: #c4afa1;
 }
 
+.search-post .comentarios {
+    opacity: 1;
+}
+
 
 /* END SEARCH*/
