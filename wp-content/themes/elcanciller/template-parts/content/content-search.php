@@ -15,10 +15,19 @@
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
 $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-$categories = get_the_terms( $post->ID , array( 'categoria_videos') );
-$term_link = get_term_link( $categories[0], array( 'categoria_videos') );
+$taxonomy = 'category';
+$terms = wp_get_post_terms( $post_id, $taxonomy );
+$term = $terms[0];
+$cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
+echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} </style>';
 ?>
 
-<div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search" style="background-image: url('<?php echo $featured_img_url ?>');">
-    <h2><?php the_title(); ?></h2>
+<div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search">
+    <div class="imagen">
+        <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+    </div>
+    <div class="search-content">
+        <a style="color: <?php $cat_color ?>" href="<?php get_term_link($term) ?>"><?php $term->name ?></a>
+        <h3><?php the_title(); ?></h3>
+    </div>
 </div><!-- end search-article -->
