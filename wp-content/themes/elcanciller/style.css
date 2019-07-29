@@ -2622,6 +2622,7 @@ article .post-content .has-content-area {
     padding-left: 100px;
     background: #c4afa1;
     position: relative;
+    height: 100px;
 }
 
 .search-results .page-header h1 {
