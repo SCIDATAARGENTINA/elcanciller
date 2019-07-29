@@ -26,7 +26,7 @@ get_header();
 				<h1 class="page-title">
 					Resultados de...
 				</h1>
-				<div class="page-description"><?php echo get_search_query(); ?></div>
+				<div class="page-description"><?php echo get_search_form(); ?></div>
 			</header><!-- .page-header -->
 
 			<?php
