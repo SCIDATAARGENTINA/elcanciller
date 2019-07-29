@@ -34,6 +34,6 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} 
     <div class="search-content">
         <a style="color: <?php echo $cat_color ?>" href="<?php echo get_term_link($term) ?>"><?php echo $term->name ?></a>
         <h3><?php the_title(); ?></h3>
-        <span><?php echo $local_date; ?></span>
+        <span><?php echo time_ago() ?></span>
     </div>
 </div><!-- end search-article -->
