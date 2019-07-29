@@ -493,7 +493,7 @@ function post_recomendado($atts){
   return '<div class="post-recomendado">
     <div class="encabezado"><span>Te recomendamos leer</span></div>
     <div class="titulo">
-      <img src="' . bloginfo('url') . '/wp-content/uploads/2019/07/fire-marron.svg" alt="">
+      <img src="' . get_bloginfo('url') . '/wp-content/uploads/2019/07/fire-marron.svg" alt="">
       <a href="' . $link . '"><h3>' . $title . '</h3></a>
     </div>
   </div>';
