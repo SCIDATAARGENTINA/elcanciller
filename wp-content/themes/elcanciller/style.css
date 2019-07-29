@@ -2552,3 +2552,21 @@ article .post-content .has-content-area {
 #comments .liked {
     color: red !important;
 }
+
+
+/* ---------------------------*/
+
+
+/*--------- SEARCH */
+
+
+/* ---------------------------*/
+
+.search-post {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* END SEARCH*/

@@ -27,7 +27,7 @@ $local_date = str_replace($date_connectors_capital, $date_connectors_lower, $def
 echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} </style>';
 ?>
 
-<div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search">
+<div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search-post">
     <div class="imagen">
         <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
     </div>
