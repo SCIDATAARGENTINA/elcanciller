@@ -481,3 +481,22 @@ function get_tags_in_use($category_ID, $type = 'name'){
     if ($type == 'slug')
         return $tags_by_slug;
 }
+
+function post_recomendado($atts){
+  $a = shortcode_atts( $atts ); 
+  $title = get_the_title($a['postid']);
+  $link = the_permalink($a['postid']);
+  ?>
+
+  <div class="post-recomendado">
+    <div class="encabezado"><span>Te recomendamos leer</span></div>
+    <div class="titulo">
+      <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron.svg" alt="">
+      <a href="<?php echo $link ?>"><h3><?php echo $title ?></h3></a>
+    </div>
+  </div>
+
+  <?php  $a['postid'];
+}
+
+add_shortcode( 'recomendado', 'post_recomendado' );
