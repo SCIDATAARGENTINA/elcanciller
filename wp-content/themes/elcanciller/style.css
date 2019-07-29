@@ -2627,7 +2627,7 @@ article .post-content .has-content-area {
 }
 
 .search-results .page-header h1 {
-    color: #fff;
+    color: #fff !important;
     font-family: "Bree Serif";
 }
 
@@ -2650,9 +2650,9 @@ article .post-content .has-content-area {
     position: absolute;
     left: 10px;
     width: 70px;
-    height: 2px;
+    height: 1px;
     content: '';
-    top: 20px;
+    top: 36px;
     background: #fff;
 }
 
