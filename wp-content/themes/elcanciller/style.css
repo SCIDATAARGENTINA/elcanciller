@@ -2624,10 +2624,18 @@ article .post-content .has-content-area {
     position: relative;
 }
 
+.search-results .page-header h1 {
+    color: #fff;
+}
+
+.search-results .page-header .page-description {
+    background: #edede6;
+}
+
 .search-results .page-header:before {
     position: absolute;
     left: 10px;
-    width: 50px;
+    width: 70px;
     height: 2px;
     content: '';
     top: 20px;
