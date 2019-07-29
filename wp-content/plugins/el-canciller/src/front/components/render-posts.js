@@ -20,7 +20,7 @@ let getLikedPosts = (id) => {
 
         return arrIds.includes(id.toString());
     } else {
-        return [];
+        return false;
     }
 
 };
