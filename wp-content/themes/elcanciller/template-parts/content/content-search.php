@@ -28,7 +28,7 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} 
         <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
     </div>
     <div class="search-content">
-        <a style="color: <?php $cat_color ?>" href="<?php get_term_link($term) ?>"><?php $term->name ?></a>
+        <a style="color: <?php echo $cat_color ?>" href="<?php echo get_term_link($term) ?>"><?php echo $term->name ?></a>
         <h3><?php the_title(); ?></h3>
     </div>
 </div><!-- end search-article -->
