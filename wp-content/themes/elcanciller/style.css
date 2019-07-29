@@ -2568,5 +2568,10 @@ article .post-content .has-content-area {
     align-items: center;
 }
 
+.search-post .imagen {
+    max-width: 200px;
+    height: 100%;
+}
+
 
 /* END SEARCH*/
