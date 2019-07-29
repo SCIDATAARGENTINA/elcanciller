@@ -2623,6 +2623,7 @@ article .post-content .has-content-area {
     background: #c4afa1;
     position: relative;
     height: 100px;
+    padding-top: 20px;
 }
 
 .search-results .page-header h1 {
