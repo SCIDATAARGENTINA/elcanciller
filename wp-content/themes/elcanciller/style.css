@@ -2587,6 +2587,7 @@ article .post-content .has-content-area {
     margin: 10px 0;
     font-size: 22px;
     color: #333333;
+    margin-bottom: 0px;
 }
 
 .search-post .search-content {
@@ -2598,6 +2599,7 @@ article .post-content .has-content-area {
 .search-post .search-content span.time-ago {
     font-size: 14px;
     color: #c4afa1;
+    border-bottom: 2px solid #ccc;
 }
 
 .search-post .comentarios-noshare {
