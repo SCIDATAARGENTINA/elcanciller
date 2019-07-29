@@ -1136,6 +1136,12 @@ ul.tagposts-list li {
     font-size: 16px;
 }
 
+.post-recomendado .titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
 
 /* ---------------------------*/
 
