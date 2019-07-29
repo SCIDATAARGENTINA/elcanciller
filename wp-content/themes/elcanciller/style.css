@@ -2626,6 +2626,7 @@ article .post-content .has-content-area {
 
 .search-results .page-header h1 {
     color: #fff;
+    font-family: "Bree Serif";
 }
 
 .search-results .page-header .page-description {
@@ -2634,6 +2635,7 @@ article .post-content .has-content-area {
     padding: 20px;
     position: absolute;
     bottom: -20px;
+    font-family: "Bree Serif";
 }
 
 .search-results .page-header:before {
