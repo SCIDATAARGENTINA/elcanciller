@@ -2621,6 +2621,16 @@ article .post-content .has-content-area {
     margin-bottom: 50px;
     padding-left: 100px;
     background: #c4afa1;
+    position: relative;
+}
+
+.search-results .page-header:before {
+    position: absolute;
+    left: 10px;
+    width: 50px;
+    height: 2px;
+    content: '';
+    top: 20px;
 }
 
 
