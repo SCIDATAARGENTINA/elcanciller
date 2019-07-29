@@ -60,9 +60,11 @@ export let setAllLikes = () => {
         let arrIds = JSON.parse(likedPosts);
 
         arrIds.forEach(function(value) {
-            let el = document.querySelector('.like[data-id="' + value + '"]');
+            let el = document.querySelectorAll('.like[data-id="' + value + '"]');
             if (el) {
-                el.classList.add('liked');
+                el.forEach(function(el) {
+                    el.classList.add('liked');
+                })
             }
         });
     }
