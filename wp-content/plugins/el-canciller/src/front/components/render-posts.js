@@ -14,10 +14,14 @@ require('moment/locale/es');
 moment.locale('es');
 
 let getLikedPosts = (id) => {
-    let likedPosts = cjs.get('likedPosts');
-    let arrIds = JSON.parse(likedPosts);
+    if (cjs.get('likedPosts')) {
+        let likedPosts = cjs.get('likedPosts');
+        let arrIds = JSON.parse(likedPosts);
 
-    return arrIds.includes(id.toString());
+        return arrIds.includes(id.toString());
+    } else {
+        return [];
+    }
 
 };
 
