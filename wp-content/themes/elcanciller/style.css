@@ -2671,7 +2671,7 @@ article .post-content .has-content-area {
 
 .nav-next-text,
 .nav-prev-text {
-    display: none;
+    display: none !important;
 }
 
 
