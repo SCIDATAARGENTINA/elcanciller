@@ -2569,7 +2569,7 @@ article .post-content .has-content-area {
 }
 
 .search-post .imagen {
-    max-width: 200px;
+    width: 300px;
     height: 100%;
 }
 
