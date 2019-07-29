@@ -42,10 +42,14 @@ let setCookie = (cjs, id) => {
 
 let validateIfLiked = (id) => {
 
-    let likedPosts = cjs.get('likedPosts');
-    let arrIds = JSON.parse(likedPosts);
+    if (cjs.get('likedPosts')) {
+        let likedPosts = cjs.get('likedPosts');
+        let arrIds = JSON.parse(likedPosts);
 
-    return arrIds.includes(id);
+        return arrIds.includes(id);
+    } else {
+        return false;
+    }
 
 };
 
