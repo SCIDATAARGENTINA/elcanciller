@@ -1038,6 +1038,7 @@ ul.tagposts-list li {
 .comentar img {
     width: 20px;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 
