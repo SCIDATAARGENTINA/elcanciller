@@ -2665,5 +2665,9 @@ article .post-content .has-content-area {
     color: #b29f93;
 }
 
+.pagination .nav-links a {
+    color: #b29f93;
+}
+
 
 /* END SEARCH*/
