@@ -1166,7 +1166,7 @@ ul.tagposts-list li {
     width: 30px;
     height: 100%;
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: 0;
 }
 
