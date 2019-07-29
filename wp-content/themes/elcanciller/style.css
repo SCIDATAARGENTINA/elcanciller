@@ -1118,6 +1118,28 @@ ul.tagposts-list li {
 /* ---------------------------*/
 
 
+/*--------- SHORTCODES */
+
+
+/* ---------------------------*/
+
+
+/*RECOMENDADOS*/
+
+.post-recomendado {
+    font-family: "Bree Serif";
+}
+
+.post-recomendado .encabezado {
+    background: #f5f8fa;
+    border-bottom: 2px solid #e7d117;
+    font-size: 16px;
+}
+
+
+/* ---------------------------*/
+
+
 /*--------- POST RENDERED */
 
 
