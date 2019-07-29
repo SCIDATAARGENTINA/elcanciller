@@ -14,8 +14,13 @@ get_header();
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<div class="front-page-content inner container">
+			<div class="sidebar">
+				<?php get_template_part('template-parts/sidebar/sidebar', 'single') ?>
+			</div><!-- sidebar -->
+			<div class="content">
 
-		<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<h1 class="page-title">
@@ -34,20 +39,38 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content/content', 'excerpt' );
+				get_template_part( 'template-parts/content/content', 'search' );
 
-				// End the loop.
-			endwhile;
+			// End the loop.
+				endwhile;
 
-			// Previous/next page navigation.
-			twentynineteen_the_posts_navigation();
+				// Previous/next page navigation.
+				twentynineteen_the_posts_navigation();
 
-			// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'template-parts/content/content', 'none' );
+				// If no content, include the "No posts found" template.
+			else :
+				get_template_part( 'template-parts/content/content', 'none' );
 
-		endif;
-		?>
+			endif;
+			?>
+
+			</div><!-- content -->
+
+		</div><!-- inner container -->
+		<div class="outer-container">
+			<div class="related-posts">
+				<div class="grey-band"></div>
+				<div class="related-title">
+					<img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron-blanco.svg" alt="">
+					<h3>Lo que no te podés perder</h3>
+				</div><!-- related-title -->
+				<div class="loader">Cargando...</div>
+				<div class="render-posts col-3" data-quantity="9">
+				</div>
+			</div>
+		</div><!-- outer-container -->
+
+		
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
