@@ -495,8 +495,7 @@ function post_recomendado($atts){
       <a href="<?php echo $link ?>"><h3><?php echo $title ?></h3></a>
     </div>
   </div>
-
-  <?php  $a['postid'];
+<?php 
 }
 
 add_shortcode( 'recomendado', 'post_recomendado' );
