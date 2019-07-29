@@ -2636,6 +2636,7 @@ article .post-content .has-content-area {
     position: absolute;
     bottom: -20px;
     font-family: "Bree Serif";
+    width: 100%;
 }
 
 .search-results .page-header:before {
