@@ -2591,7 +2591,7 @@ article .post-content .has-content-area {
 
 .search-post .search-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 
