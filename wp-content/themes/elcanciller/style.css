@@ -1073,22 +1073,22 @@ ul.tagposts-list li {
     margin-bottom: 50px;
 }
 
-.render-posts.col-2 {
+.col-2 {
     grid-template-columns: 1fr 1fr;
 }
 
-.render-posts.col-3 {
+.col-3 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 
 /* ADS inside render-posts*/
 
-.render-posts.col-3 #publi1 {
+.col-3 #publi1 {
     order: 1;
 }
 
-.render-posts.col-3 div:nth-child(2) {
+.col-3 div:nth-child(2) {
     order: 1;
 }
 
