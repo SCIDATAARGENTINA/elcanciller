@@ -31,10 +31,6 @@ if($term){
 }
 ?>
 
-<pre>
-    <?php print_r($terms) ?>
-</pre>
-
 <div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search-post">
     <div class="imagen" style="background-image:url('<?php echo $featured_img_url ?>');">
         <div class="dummy"></div>
