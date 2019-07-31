@@ -11,7 +11,6 @@
 $term = get_queried_object();
 ?>
 
-<div class="trending-post">
    <?php
    $args = array(
       'post_type' => 'post',
@@ -56,4 +55,3 @@ $term = get_queried_object();
       <?php endwhile ?>
 
    <?php endif ?>
-</div>
