@@ -10,6 +10,8 @@
  */
 
 get_header();
+$term = get_queried_object();
+echo $term->slug;
 ?>
 
 	<section id="primary" class="content-area">
@@ -21,7 +23,7 @@ get_header();
 			<div class="sidebar">
 				<?php get_template_part('template-parts/sidebar/sidebar', 'seccion') ?>
 			</div><!-- sidebar -->
-			<div class="content">
+			<div class="content <?php echo $term->slug ?>">
 				<header class="page-header">
 					
 				</header><!-- .page-header -->
