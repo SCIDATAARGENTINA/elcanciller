@@ -2660,12 +2660,18 @@ article .post-content .has-content-area {
     background: #fff;
 }
 
-.search .no-results .page-title {
-    margin: 30px 0;
+.search .no-results .page-title,
+.search .no-results .page-content {
+    margin: 30px 20px;
 }
 
 .search .no-results {
     font-family: "Bree Serif";
+}
+
+.search .no-results h2 {
+    font-family: "Bree Serif";
+    font-size: 22px;
 }
 
 .pagination .nav-links {
