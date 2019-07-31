@@ -17,7 +17,7 @@ $taxonomy = 'category'; // this is for default wordpress taxonomy
 $terms = wp_get_post_terms( $post_id, $taxonomy );
 $term = $terms[0];
 $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
-echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} </style>';
+echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; border-color: ' . $cat_color . ';} </style>';
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="post-rendered <?php echo $term->slug ?>">
