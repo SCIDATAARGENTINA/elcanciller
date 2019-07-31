@@ -2620,7 +2620,7 @@ article .post-content .has-content-area {
     opacity: 1;
 }
 
-.search-results .page-header {
+.search .page-header {
     margin: 0;
     margin-bottom: 50px;
     padding-left: 100px;
@@ -2630,12 +2630,12 @@ article .post-content .has-content-area {
     padding-top: 20px;
 }
 
-.search-results .page-header h1 {
+.search .page-header h1 {
     color: #fff !important;
     font-family: "Bree Serif";
 }
 
-.search-results .page-header .page-description {
+.search .page-header .page-description {
     background: #edede6;
     color: #333333;
     padding: 10px 15px;
@@ -2646,11 +2646,11 @@ article .post-content .has-content-area {
     font-weight: 400;
 }
 
-.search-results .page-header .page-description:after {
+.search .page-header .page-description:after {
     display: none;
 }
 
-.search-results .page-header:before {
+.search .page-header:before {
     position: absolute;
     left: 10px;
     width: 70px;
