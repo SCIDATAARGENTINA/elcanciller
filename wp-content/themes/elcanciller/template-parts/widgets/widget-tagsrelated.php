@@ -27,6 +27,7 @@ $related_tags = get_tags_in_use($cat_principal->term_id, 'id');
                 'taxonomy'               => 'post_tag',
                 'orderby'                => 'count',
                 'order'                  => 'DESC',
+                'posts_per_page'         => 15,
                 'hide_empty'             => true,
                 'post__in' => $related_tags
             );
