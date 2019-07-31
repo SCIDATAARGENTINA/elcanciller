@@ -11,6 +11,8 @@
 
 get_header();
 $term = get_queried_object();
+$cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
+echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; } .' . $term->slug . '{ border-color: ' . $cat_color . ';} </style>';
 ?>
 
 	<section id="primary" class="content-area">
