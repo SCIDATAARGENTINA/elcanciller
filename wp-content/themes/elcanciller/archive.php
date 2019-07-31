@@ -11,7 +11,6 @@
 
 get_header();
 $term = get_queried_object();
-echo $term->slug;
 ?>
 
 	<section id="primary" class="content-area">
