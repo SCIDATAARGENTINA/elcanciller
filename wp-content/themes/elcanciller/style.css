@@ -1140,6 +1140,8 @@ ul.tagposts-list li {
 
 .seccion-posts {
     display: grid;
+    grid-gap: 30px;
+    margin-bottom: 50px;
 }
 
 
