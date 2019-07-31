@@ -28,7 +28,7 @@ $term_link = get_term_link($term->term_id);
 ?>
 
 <pre>
-    <?php print_r($term) ?>
+    <?php print_r($terms) ?>
 </pre>
 
 <div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search-post">
