@@ -2662,7 +2662,7 @@ article .post-content .has-content-area {
 
 .search .no-results .page-title,
 .search .no-results .page-content {
-    margin: 30px 20px;
+    margin: 50px 20px;
 }
 
 .search .no-results {
@@ -2671,7 +2671,8 @@ article .post-content .has-content-area {
 
 .search .no-results h2 {
     font-family: "Bree Serif";
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: normal;
 }
 
 .pagination .nav-links {
