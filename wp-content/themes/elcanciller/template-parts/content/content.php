@@ -17,9 +17,13 @@ $taxonomy = 'category'; // this is for default wordpress taxonomy
 $terms = wp_get_post_terms( $post_id, $taxonomy );
 $term = $terms[0];
 $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
+$show_author = '';
+if(get_field('show_author') == 'si'){
+	$show_author = 'show-author';
+}
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="post-rendered <?php echo $term->slug ?>">
+<article id="post-<?php the_ID(); ?>" class="post-rendered <?php echo $term->slug ?> <?php echo $show_author ?>">
 	<div class="rendered-img" style="background-image: url('<?php echo $featured_img_url ?>')">
 		<div class="hovered">
 			<div class="action-links">
