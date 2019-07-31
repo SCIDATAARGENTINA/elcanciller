@@ -26,7 +26,7 @@ get_header();
 				<?php get_template_part('template-parts/sidebar/sidebar', 'seccion') ?>
 			</div><!-- sidebar -->
 			<div class="content">
-
+			<div class="seccion-posts col-3">
 			<?php
 			// Start the Loop.
 			while ( have_posts() ) :
@@ -51,7 +51,7 @@ get_header();
 
 		endif;
 		?>
-
+		</div>
 		</div><!-- content -->
 	</div><!-- inner content -->
 
