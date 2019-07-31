@@ -20,7 +20,7 @@ $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
 echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} </style>';
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="post-rendered">
+<article id="post-<?php the_ID(); ?>" class="post-rendered <?php echo $term->slug ?>">
 	<div class="rendered-img" style="background-image: url('<?php echo $featured_img_url ?>')">
 		<div class="hovered">
 			<div class="action-links">
@@ -35,7 +35,7 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . ';} 
 					<span class="time-ago"><?php echo time_ago() ?></span>
 				</div>
 			</div><!-- post-data -->
-			<div class="post-category <?php echo $term->slug ?>">
+			<div class="post-category">
 				<a href="<?php get_term_link($term); ?>"><h4><?php echo $term->name ?></h4></a>
 			</div>
 		</div><!-- hovered -->
