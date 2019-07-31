@@ -24,6 +24,7 @@ $default_local_date = ucwords(utf8_encode(get_the_time('l d \d\e F \d\e Y | H:i'
 $date_connectors_capital = array('De', 'Del');
 $date_connectors_lower = array('de', 'del');
 $local_date = str_replace($date_connectors_capital, $date_connectors_lower, $default_local_date);
+$term_link = get_term_link($term);
 ?>
 
 <div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search-post">
@@ -31,7 +32,7 @@ $local_date = str_replace($date_connectors_capital, $date_connectors_lower, $def
         <div class="dummy"></div>
     </div>
     <div class="search-content">
-        <a style="color: <?php echo $cat_color ?>" href="<?php echo get_term_link($term) ?>"><?php echo $term->name ?></a>
+        <a style="color: <?php echo $cat_color ?>" href="<?php echo $term_link ?>"><?php echo $term->name ?></a>
         <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
         <span class="time-ago"><?php echo time_ago() ?></span>
         <?php get_template_part('template-parts/comments/comments', 'nosharer') ?>
