@@ -13,7 +13,7 @@ $postID = $wp_query->post->ID;
 
 $tags = get_the_tags($postID);
 $tag_principal = $tags[0];
-
+if($tag_principal){
 ?>
 <div class="tagposts-widget container">
     <div class="current-tag">
@@ -36,3 +36,4 @@ $tag_principal = $tags[0];
                     wp_reset_postdata(); ?>
     </ul><!-- tag-list -->
 </div><!-- end tagsrelated widget container -->
+<?php } ?>
