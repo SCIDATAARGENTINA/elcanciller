@@ -24,7 +24,7 @@ $default_local_date = ucwords(utf8_encode(get_the_time('l d \d\e F \d\e Y | H:i'
 $date_connectors_capital = array('De', 'Del');
 $date_connectors_lower = array('de', 'del');
 $local_date = str_replace($date_connectors_capital, $date_connectors_lower, $default_local_date);
-$term_link = get_term_link($term);
+$term_link = get_term_link($term->term_id);
 ?>
 
 <div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search-post">
