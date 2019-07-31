@@ -2673,7 +2673,7 @@ article .post-content .has-content-area {
     font-family: "Bree Serif";
     font-size: 26px;
     font-weight: normal;
-    margin-top: 80px;
+    margin-top: 80px !important;
 }
 
 .pagination .nav-links {
