@@ -17,16 +17,15 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				
-			</header><!-- .page-header -->
-
 			<div class="front-page-content inner container">
 			<div class="sidebar">
 				<?php get_template_part('template-parts/sidebar/sidebar', 'seccion') ?>
 			</div><!-- sidebar -->
 			<div class="content">
 			<div class="seccion-posts col-3">
+			<header class="page-header">
+				
+			</header><!-- .page-header -->
 			<?php
 			// Start the Loop.
 			while ( have_posts() ) :
