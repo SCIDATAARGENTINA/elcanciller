@@ -22,10 +22,10 @@ get_header();
 				<?php get_template_part('template-parts/sidebar/sidebar', 'seccion') ?>
 			</div><!-- sidebar -->
 			<div class="content">
+				<header class="page-header">
+					
+				</header><!-- .page-header -->
 			<div class="seccion-posts col-3">
-			<header class="page-header">
-				
-			</header><!-- .page-header -->
 			<?php
 			// Start the Loop.
 			while ( have_posts() ) :
