@@ -20,6 +20,7 @@ get_header();
 			</div><!-- sidebar -->
 			<div class="content">
 
+			<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<h1 class="page-title">
@@ -27,7 +28,6 @@ get_header();
 				</h1>
 				<div class="page-description"><?php echo get_search_query(); ?></div>
 			</header><!-- .page-header -->
-			<?php if ( have_posts() ) : ?>
 
 			<?php
 			// Start the Loop.
