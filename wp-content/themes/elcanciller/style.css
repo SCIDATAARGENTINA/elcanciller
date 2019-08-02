@@ -1147,6 +1147,7 @@ ul.tagposts-list li {
 .archive-header {
     display: inline-block;
     margin-top: 10px;
+    padding: 10px;
 }
 
 .archive-title {
