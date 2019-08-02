@@ -1179,9 +1179,10 @@ ul.tagposts-list li {
 }
 
 .archive-title .category h3 {
-    margin: 0px;
+    margin: 20px 0;
     margin-left: 20px;
     font-size: 30px;
+    line-height: 22px;
 }
 
 .archive-title .category::before {
