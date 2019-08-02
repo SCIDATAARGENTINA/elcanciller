@@ -48,16 +48,21 @@ $term = get_queried_object();
          $cat_color = get_field('color', $categories[0]->taxonomy . '_' . $categories[0]->term_id);
          ?>
 
-         <header class="archive-header" style="background: <?php echo $cat_color ?>">
-            <h3><?php echo $categories[0]->name ?></h3>
-            <div class="archive-title">
-               <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-blanco.svg" alt="">
-               <h1><?php the_title(); ?></h1>
+         <header class="archive-header">
+            <div class="archive-title" style="background: <?php echo $cat_color ?>">
+               <div class="category">            
+                  <h3><?php echo $categories[0]->name ?></h3>
+               </div>
+               <div class="title">
+                  <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-blanco.svg" alt="">
+                  <h1><?php the_title(); ?></h1>
+               </div>
             </div>
             <div class="archive-image">
                <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
             </div>
          </header>
+         
       <?php endwhile ?>
 
    <?php endif ?>
