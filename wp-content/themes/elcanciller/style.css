@@ -2158,6 +2158,10 @@ ul.tagposts-list li {
     position: relative;
 }
 
+.post-imagen .post-imagen-container {
+    position: relative;
+}
+
 .post-imagen .post-imagen-container:before {
     content: '';
     width: 100%;
