@@ -1160,6 +1160,13 @@ ul.tagposts-list li {
     max-width: 50px;
 }
 
+.archive-title .category::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    color: #fff;
+}
+
 
 /*SECCION*/
 
