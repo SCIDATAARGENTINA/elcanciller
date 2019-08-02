@@ -2155,7 +2155,7 @@ ul.tagposts-list li {
 
 .post-imagen img {
     width: 100%;
-    position: relative;
+    vertical-align: top;
 }
 
 .post-imagen .post-imagen-container {
