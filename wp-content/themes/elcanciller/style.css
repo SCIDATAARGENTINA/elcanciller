@@ -2155,6 +2155,19 @@ ul.tagposts-list li {
 
 .post-imagen img {
     width: 100%;
+    position: relative;
+}
+
+.post-imagen img:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.46262254901960786) 90%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.46262254901960786) 90%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.46262254901960786) 90%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 }
 
 .post-imagen::before {
