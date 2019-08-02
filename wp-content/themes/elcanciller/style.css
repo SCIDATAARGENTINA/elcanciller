@@ -1175,11 +1175,13 @@ ul.tagposts-list li {
 .archive-title .category {
     display: flex;
     align-items: flex-end;
+    margin-bottom: 20px;
 }
 
 .archive-title .category h3 {
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 0px;
 }
 
 .archive-title .category::before {
