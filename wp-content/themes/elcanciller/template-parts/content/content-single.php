@@ -24,7 +24,9 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; b
 		<div class="post-category">
 			<a href="<?php get_term_link($term);  ?>"><h4 style="color: <?php echo $cat_color; ?>"><?php echo $term->name; ?></h4></a>
 		</div>
-		<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+		<div class="post-imagen-container">
+			<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+		</div>
 	</div><!-- post-imagen -->
 	<div class="post-content">
 		<div class="post-author" >
