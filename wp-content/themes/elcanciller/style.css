@@ -931,6 +931,7 @@ ul.tagposts-list li {
     grid-template-columns: 1fr 9fr 4fr;
     margin: 10px 0;
     border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
 }
 
 .comentarios-noshare {
