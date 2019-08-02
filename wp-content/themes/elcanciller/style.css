@@ -1182,7 +1182,7 @@ ul.tagposts-list li {
 .archive-title .category {
     display: flex;
     align-items: flex-end;
-    margin: 20px 0;
+    margin: 10px 0px 20px 0px;
 }
 
 .archive-title .category h3 {
