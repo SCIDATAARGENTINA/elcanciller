@@ -1167,7 +1167,7 @@ ul.tagposts-list li {
 
 .archive-title .category::before {
     content: '';
-    width: 20px;
+    width: 50px;
     height: 2px;
     background: #fff;
     display: inline-block;
