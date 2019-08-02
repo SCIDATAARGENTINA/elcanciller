@@ -1160,11 +1160,16 @@ ul.tagposts-list li {
     max-width: 50px;
 }
 
+.archive-title .category {
+    display: flex;
+}
+
 .archive-title .category::before {
     content: '';
     width: 20px;
     height: 2px;
     color: #fff;
+    display: inline-block;
 }
 
 
