@@ -1156,6 +1156,12 @@ ul.tagposts-list li {
     justify-content: flex-start;
 }
 
+.archive-title .title h1 {
+    background: #edede6;
+    padding: 20px;
+    margin: 0px;
+}
+
 .archive-title img {
     max-width: 50px;
 }
