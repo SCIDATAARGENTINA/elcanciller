@@ -1146,6 +1146,11 @@ ul.tagposts-list li {
     margin-bottom: 50px;
 }
 
+.archive-header {
+    display: flex;
+    flex-direction: column;
+}
+
 .archive-header .archive-title {
     display: inline-block;
     margin-top: 10px;
