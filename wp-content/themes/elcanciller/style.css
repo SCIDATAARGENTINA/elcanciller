@@ -1197,6 +1197,10 @@ ul.tagposts-list li {
     margin-left: 60px;
 }
 
+.archive-image img {
+    vertical-align: top;
+}
+
 
 /*SECCION*/
 
