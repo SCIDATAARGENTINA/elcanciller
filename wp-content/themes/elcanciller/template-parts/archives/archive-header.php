@@ -59,7 +59,7 @@ $term = get_queried_object();
                </div>
             </div>
             <div class="archive-image">
-               <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+               <a href="<?php the_permalink(); ?>"><img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>"></a>
             </div>
          </header>
          
