@@ -50,7 +50,13 @@ $term = get_queried_object();
 
          <header class="archive-header" style="background: <?php echo $cat_color ?>">
             <h3><?php echo $categories[0]->name ?></h3>
-            <h1><?php the_title(); ?></h1>
+            <div class="archive-title">
+               <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-blanco.svg" alt="">
+               <h1><?php the_title(); ?></h1>
+            </div>
+            <div class="archive-image">
+               <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+            </div>
          </header>
       <?php endwhile ?>
 
