@@ -49,8 +49,8 @@ $term = get_queried_object();
          ?>
 
          <header class="archive-header" style="background: <?php echo $cat_color ?>">
-            <h1><?php echo $categories[0]->name ?></h1>
-            <h2><?php the_title(); ?></h2>
+            <h3><?php echo $categories[0]->name ?></h3>
+            <h1><?php the_title(); ?></h1>
          </header>
       <?php endwhile ?>
 

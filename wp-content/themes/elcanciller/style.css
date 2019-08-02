@@ -1144,6 +1144,11 @@ ul.tagposts-list li {
     margin-bottom: 50px;
 }
 
+.archive-header {
+    display: inline-block;
+    margin-top: 10px;
+}
+
 
 /*SECCION*/
 
