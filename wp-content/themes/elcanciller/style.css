@@ -1179,9 +1179,9 @@ ul.tagposts-list li {
 }
 
 .archive-title .category h3 {
-    margin-left: 20px;
-    font-size: 25px;
     margin: 0px;
+    margin-left: 20px;
+    font-size: 30px;
 }
 
 .archive-title .category::before {
