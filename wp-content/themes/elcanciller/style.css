@@ -1149,6 +1149,15 @@ ul.tagposts-list li {
     margin-top: 10px;
 }
 
+.archive-title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.archive-title img {
+    max-width: 50px;
+}
+
 
 /*SECCION*/
 
