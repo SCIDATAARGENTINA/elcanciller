@@ -1150,7 +1150,7 @@ ul.tagposts-list li {
     padding: 10px;
 }
 
-.archive-title {
+.archive-title .title {
     display: flex;
     justify-content: flex-start;
 }
