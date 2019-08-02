@@ -1169,6 +1169,7 @@ ul.tagposts-list li {
 
 .archive-title img {
     max-width: 50px;
+    margin: 0 20px;
 }
 
 .archive-title .category {
