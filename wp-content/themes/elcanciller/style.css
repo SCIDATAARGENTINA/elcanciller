@@ -2208,6 +2208,7 @@ ul.tagposts-list li {
 .post-content {
     margin-top: -110px;
     position: relative;
+    z-index: 1;
 }
 
 .post-title h1 {
