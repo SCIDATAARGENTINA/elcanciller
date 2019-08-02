@@ -1156,6 +1156,7 @@ ul.tagposts-list li {
     margin-top: 10px;
     padding: 10px;
     color: #fff;
+    padding-right: 0px;
 }
 
 .archive-title .title {
