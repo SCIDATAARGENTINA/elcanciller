@@ -21,7 +21,7 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
             success: function(data) {
                 if (data) {
                     button.text('Cargar más...')
-                    $('.seccion-posts.col-3 ').after(data); // insert new posts
+                    $('.seccion-posts.col-3 ').append(data); // insert new posts
                     loadmore_params.current_page++;
 
                     if (loadmore_params.current_page == loadmore_params.max_page)
