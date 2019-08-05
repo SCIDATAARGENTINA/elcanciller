@@ -1235,7 +1235,7 @@ ul.tagposts-list li {
 }
 
 .loadmore img {
-    width: 50px;
+    max-width: 50px;
 }
 
 .loadmore:hover {
