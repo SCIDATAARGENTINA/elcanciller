@@ -54,7 +54,6 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; }
 		endif;
 		?>
 		</div>
-		</div><!-- content -->
 		<?php 
 
 				global $wp_query; // you can remove this line if everything works for you
@@ -65,6 +64,8 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; }
 				}
 		
 		?>
+		</div><!-- content -->
+		
 	</div><!-- inner content -->
 
 		</main><!-- #main -->
