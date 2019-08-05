@@ -525,4 +525,4 @@ function load_more_scripts() {
  	wp_enqueue_script( 'loadmore' );
 }
  
-add_action( 'wp_enqueue_scripts', 'my_load_more_scripts' );
+add_action( 'wp_enqueue_scripts', 'load_more_scripts' );
