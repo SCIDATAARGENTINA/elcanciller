@@ -60,7 +60,7 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; }
  
 				// don't display the button if there are not enough posts
 				if (  $wp_query->max_num_pages > 1 ){
-					echo '<div class="loadmore"><img src="' . bloginfo('url') . '/wp-content/uploads/2019/08/loadmore-plus.svg"></div>';
+					echo '<div class="loadmore"><img src="' . site_url() . '/wp-content/uploads/2019/08/loadmore-plus.svg"></div>';
 				}
 		
 		?>
