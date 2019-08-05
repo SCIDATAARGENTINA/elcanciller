@@ -9,6 +9,8 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
                 'page': loadmore_params.current_page
             };
 
+        console.log(data);
+
         $.ajax({ // you can also use $.post here
             url: loadmore_params.ajaxurl, // AJAX handler
             data: data,
