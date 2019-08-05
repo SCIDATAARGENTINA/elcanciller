@@ -1225,6 +1225,7 @@ ul.tagposts-list li {
     cursor: pointer;
     text-transform: uppercase;
     padding: 10px 0;
+    position: relative;
 }
 
 .loadmore:before {
@@ -1232,16 +1233,15 @@ ul.tagposts-list li {
     height: 4px;
     background: #e7d117;
     content: '';
+    display: block;
+    position: absolute;
 }
 
 .loadmore img {
     max-width: 50px;
 }
 
-.loadmore:hover {
-    background-color: #767676;
-    color: #fff;
-}
+.loadmore:hover {}
 
 
 /* ---------------------------*/
