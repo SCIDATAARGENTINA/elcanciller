@@ -27,11 +27,11 @@ get_header();
 				<div class="page-description"><?php echo get_search_query(); ?></div>
 			</header><!-- .page-header -->
 
-			<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) { ?>
 			
 			<?php
 			// Start the Loop.
-			while ( have_posts() ) :
+			while ( have_posts() ) {
 				the_post();
 
 				/*
@@ -42,9 +42,7 @@ get_header();
 				get_template_part( 'template-parts/content/content', 'search' );
 
 			// End the loop.
-				endwhile;
-
-
+			}
  
 				// don't display the button if there are not enough posts
 				if (  $wp_query->max_num_pages > 1 ){
@@ -53,10 +51,10 @@ get_header();
 		
 
 				// If no content, include the "No posts found" template.
-			else :
+			else {
 				get_template_part( 'template-parts/content/content', 'none' );
-
-			endif;
+			}
+			}
 			?>
 
 			</div><!-- content -->
