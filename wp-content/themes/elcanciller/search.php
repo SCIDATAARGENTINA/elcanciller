@@ -44,8 +44,14 @@ get_header();
 			// End the loop.
 				endwhile;
 
-				// Previous/next page navigation.
-				twentynineteen_the_posts_navigation();
+
+				global $wp_query; // you can remove this line if everything works for you
+ 
+				// don't display the button if there are not enough posts
+				if (  $wp_query->max_num_pages > 1 ){
+					echo '<div class="loadmore"><img src="' . site_url() . '/wp-content/uploads/2019/08/loadmore-plus.svg"></div>';
+				}
+		
 
 				// If no content, include the "No posts found" template.
 			else :
