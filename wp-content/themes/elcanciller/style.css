@@ -1240,6 +1240,7 @@ ul.tagposts-list li {
 
 .loadmore img {
     max-width: 50px;
+    transition: 300ms ease;
 }
 
 .loadmore:hover img {
