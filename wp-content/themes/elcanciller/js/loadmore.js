@@ -16,12 +16,12 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
             data: data,
             type: 'POST',
             beforeSend: function(xhr) {
-                button.addClass('spin');
+                button.find('img').addClass('spin');
 
             },
             success: function(data) {
                 if (data) {
-                    button.removeClass('spin');
+                    button.find('img').removeClass('spin');
                     $('.seccion-posts.col-3 ').append(data); // insert new posts
                     loadmore_params.current_page++;
 
