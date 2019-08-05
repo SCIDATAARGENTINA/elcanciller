@@ -1,6 +1,5 @@
 jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" error
     $('.loadmore').click(function() {
-        console.log('hola');
 
         var button = $(this),
             data = {
@@ -9,7 +8,6 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
                 'page': loadmore_params.current_page
             };
 
-        console.log(data);
 
         $.ajax({ // you can also use $.post here
             url: loadmore_params.ajaxurl, // AJAX handler
@@ -21,7 +19,6 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
             },
             success: function(data) {
                 if (data) {
-                    console.log(data);
                     button.find('img').removeClass('spin');
                     $('.seccion-posts.col-3 ').append(data); // insert new posts
                     loadmore_params.current_page++;
