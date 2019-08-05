@@ -16,11 +16,12 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
             data: data,
             type: 'POST',
             beforeSend: function(xhr) {
-                button.text('Cargando...'); // change the button text, you can also add a preloader image
+                button.addClass('spin');
+
             },
             success: function(data) {
                 if (data) {
-                    button.text('Cargar más...')
+                    button.removeClass('spin');
                     $('.seccion-posts.col-3 ').append(data); // insert new posts
                     loadmore_params.current_page++;
 
