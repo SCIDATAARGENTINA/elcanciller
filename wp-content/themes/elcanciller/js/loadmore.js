@@ -23,7 +23,7 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
                     if ('.search-posts') {
                         $('.search-posts').append(data);
                     } else {
-                        $('.seccion-posts.col-3 ').append(data); // insert new posts
+                        $('.seccion-posts ').append(data); // insert new posts
                     }
                     loadmore_params.current_page++;
 
