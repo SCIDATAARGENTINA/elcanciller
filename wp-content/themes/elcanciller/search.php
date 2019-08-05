@@ -28,7 +28,7 @@ get_header();
 			</header><!-- .page-header -->
 
 			<?php if ( have_posts() ) { ?>
-			
+			<div class="search-posts">
 			<?php
 			// Start the Loop.
 			while ( have_posts() ) {
@@ -43,7 +43,9 @@ get_header();
 
 			// End the loop.
 			}
- 
+			?>
+			</div><!-- search-posts -->
+			<?php
 				// don't display the button if there are not enough posts
 				if (  $wp_query->max_num_pages > 1 ){
 					echo '<div class="loadmore"><img src="' . site_url() . '/wp-content/uploads/2019/08/loadmore-plus.svg"></div>';
