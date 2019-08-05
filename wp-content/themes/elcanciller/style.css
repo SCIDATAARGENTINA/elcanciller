@@ -1235,13 +1235,16 @@ ul.tagposts-list li {
     content: '';
     display: block;
     position: absolute;
+    top: 33px;
 }
 
 .loadmore img {
     max-width: 50px;
 }
 
-.loadmore:hover {}
+.loadmore:hover img {
+    transform: rotate(90deg);
+}
 
 
 /* ---------------------------*/
