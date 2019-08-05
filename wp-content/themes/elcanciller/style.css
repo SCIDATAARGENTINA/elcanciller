@@ -1168,7 +1168,7 @@ ul.tagposts-list li {
     padding: 20px;
     margin: 0px;
     font-size: 35px;
-    color: #666666;
+    color: #111 !important;
     margin-bottom: -60px;
     position: relative;
     z-index: 2;
