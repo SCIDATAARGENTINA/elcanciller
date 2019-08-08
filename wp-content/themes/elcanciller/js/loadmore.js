@@ -20,7 +20,7 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
             success: function(data) {
                 if (data) {
                     button.find('img').removeClass('spin');
-                    if ('.search-posts') {
+                    if ($('.search-posts')) {
                         $('.search-posts').append(data);
                     } else {
                         $('.seccion-posts').append(data); // insert new posts
