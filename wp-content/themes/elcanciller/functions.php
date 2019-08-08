@@ -548,11 +548,10 @@ function loadmore_ajax_handler(){
 			// look into your theme code how the posts are inserted, but you can use your own HTML of course
       // do you remember? - my example is adapted for Twenty Seventeen theme
 
-      if(is_tax() == 1){
-        get_template_part( 'template-parts/content/content' );
-
-      }else{
+      if(is_search() == 1){
         get_template_part( 'template-parts/content/content', 'search' );
+      }else{
+        get_template_part( 'template-parts/content/content' );
       }
 			// for the test purposes comment the line above and uncomment the below one
 			// the_title();
