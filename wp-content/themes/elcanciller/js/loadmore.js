@@ -22,7 +22,6 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
             success: function(data) {
                 if (data) {
                     button.find('img').removeClass('spin');
-                    console.log(data);
                     if ($('.search-posts').length) {
                         console.log('search');
                         $('.search-posts').append(data);
