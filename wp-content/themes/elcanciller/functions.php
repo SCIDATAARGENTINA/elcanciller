@@ -538,6 +538,8 @@ function loadmore_ajax_handler(){
 	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
   $args['post_status'] = 'publish';
   $search = $_POST['search'];
+
+  echo $search;
  
 	// it is always better to use WP_Query but not here
 	query_posts( $args );
