@@ -537,7 +537,7 @@ function loadmore_ajax_handler(){
 	$args = json_decode( stripslashes( $_POST['query'] ), true );
 	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
   $args['post_status'] = 'publish';
-  $search = $_POST['current_page'];
+  $search = $_POST['search'];
  
 	// it is always better to use WP_Query but not here
 	query_posts( $args );
@@ -550,7 +550,7 @@ function loadmore_ajax_handler(){
 			// look into your theme code how the posts are inserted, but you can use your own HTML of course
       // do you remember? - my example is adapted for Twenty Seventeen theme
 
-      if($search == 1){
+      if($search === 1){
         get_template_part( 'template-parts/content/content', 'search' );
       }else{
         get_template_part( 'template-parts/content/content' );
