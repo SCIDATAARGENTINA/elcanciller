@@ -1,6 +1,7 @@
 jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" error
     $('.loadmore').click(function() {
 
+        console.log(loadmore_params.search);
         var button = $(this),
             data = {
                 'action': 'loadmore',
