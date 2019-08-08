@@ -521,7 +521,8 @@ function load_more_scripts() {
 		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
 		'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
 		'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
-		'max_page' => $wp_query->max_num_pages
+    'max_page' => $wp_query->max_num_pages,
+    'search' => is_search()
 	) );
  
  	wp_enqueue_script( 'loadmore' );
@@ -535,7 +536,8 @@ function loadmore_ajax_handler(){
 	// prepare our arguments for the query
 	$args = json_decode( stripslashes( $_POST['query'] ), true );
 	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
-	$args['post_status'] = 'publish';
+  $args['post_status'] = 'publish';
+  $search = $_POST['current_page'];
  
 	// it is always better to use WP_Query but not here
 	query_posts( $args );
@@ -548,7 +550,7 @@ function loadmore_ajax_handler(){
 			// look into your theme code how the posts are inserted, but you can use your own HTML of course
       // do you remember? - my example is adapted for Twenty Seventeen theme
 
-      if(is_search() == 1){
+      if($search == 1){
         get_template_part( 'template-parts/content/content', 'search' );
       }else{
         get_template_part( 'template-parts/content/content' );

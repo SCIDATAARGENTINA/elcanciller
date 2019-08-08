@@ -5,7 +5,8 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
             data = {
                 'action': 'loadmore',
                 'query': loadmore_params.posts, // that's how we get params from wp_localize_script() function
-                'page': loadmore_params.current_page
+                'page': loadmore_params.current_page,
+                'search': loadmore_params.search
             };
 
 
