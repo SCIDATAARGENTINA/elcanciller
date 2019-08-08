@@ -20,9 +20,12 @@ jQuery(function($) { // use jQuery code inside this to avoid "$ is not defined" 
             success: function(data) {
                 if (data) {
                     button.find('img').removeClass('spin');
+                    console.log(data);
                     if ($('.search-posts')) {
+                        console.log('search');
                         $('.search-posts').append(data);
                     } else {
+                        console.log('seccion');
                         $('.seccion-posts').append(data); // insert new posts
                     }
                     loadmore_params.current_page++;
