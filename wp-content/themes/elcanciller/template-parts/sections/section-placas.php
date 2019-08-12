@@ -18,6 +18,7 @@
      $titulos = array();
      $placas = array();
      $ids = array();
+     $alts = array();
      $slide = 0;
      
      $args = array(
@@ -28,10 +29,12 @@
                     while( $query->have_posts() ) {
                         $query->the_post(); 
                         $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+                        $alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
                         
                         array_push($ids, get_the_ID());
                         array_push($titulos, get_the_content());
                         array_push($placas, $featured_img_url);
+                        array_push($alts, $alt);
                         
                     }
                     // Restore original Post Data
@@ -69,13 +72,15 @@
     <div class="placa-image">
         <div class="slider-placa-imagen">
             <?php $slide = 0; ?>
+            <?php $count = 0; ?>
             <?php foreach($placas as $placa){ ?>
                 <?php $slide++; ?>
                 <?php if( $slide == 1 ){ ?>
-                    <img class="active" data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="El Canciller Live">
+                    <img class="active" data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="<?php echo $alts[$count] ?>">
                 <?php }else { ?>
-                    <img data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="El Canciller Live">
+                    <img data-slide="<?php echo $slide; ?>" src="<?php echo $placa; ?>" alt="<?php echo $alts[$count] ?>">
                 <?php } ?>
+                <?php $count++; ?>
             <?php } ?>
         </div><!-- end slider placa imagen -->        
         <button id="next-placa" class="placa-next"></button>
