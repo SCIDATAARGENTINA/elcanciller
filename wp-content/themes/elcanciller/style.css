@@ -1884,7 +1884,7 @@ ul.tagposts-list li {
 
 .placas-section {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 3fr 4fr;
     margin-bottom: 50px;
 }
 
