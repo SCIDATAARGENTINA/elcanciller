@@ -1913,7 +1913,7 @@ ul.tagposts-list li {
 
 .placa-image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px 0;
     position: relative;
@@ -2023,7 +2023,7 @@ ul.tagposts-list li {
 
 .slider-placa-imagen {
     position: relative;
-    width: 100%;
+    width: calc(100% - 20px);
     min-height: 300px;
 }
 
