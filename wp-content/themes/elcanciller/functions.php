@@ -571,9 +571,3 @@ add_action('wp_ajax_loadmore', 'loadmore_ajax_handler'); // wp_ajax_{action}
 add_action('wp_ajax_nopriv_loadmore', 'loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
 
 
-function add_my_custom_post_type( $query ) {
-    if ($query->is_main_query()) 
-        $query->set( 'post_type', array( 'post', 'opinion' ) );
-    return $query;
-}
-add_action( 'pre_get_posts', 'add_my_custom_post_type' );
