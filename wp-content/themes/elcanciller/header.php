@@ -27,7 +27,7 @@
 		<div class="container">
 
 			<div class="logo">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/brand-logo-w.svg" height="15" alt="El Canciller">
+				<a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/brand-logo-w.svg" height="15" alt="El Canciller"></a>
 			</div><!-- end logo -->
 			<div class="user-bar">
 				<div class="trending-bar">
