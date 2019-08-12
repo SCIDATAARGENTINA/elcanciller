@@ -18,7 +18,7 @@
 
     <div class="opiniones">
         <?php $args = array(
-                        'posts_per_page' => 2,
+                        'posts_per_page' => 4,
                         'post_type' => 'opinion'
                     );
                     $query = new WP_Query( $args );
