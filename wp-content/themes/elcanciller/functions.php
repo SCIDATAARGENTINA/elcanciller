@@ -324,7 +324,7 @@ function custom_post_type_encuesta()
     'public'                => true,
     'show_ui'               => true,
     'show_in_menu'          => true,
-    'menu_icon'             => 'dashicons-welcome-widgets-menus',
+    'menu_icon'             => 'dashicons-list-view',
     'menu_position'         => 5,
     'show_in_admin_bar'     => false,
     'show_in_nav_menus'     => false,
