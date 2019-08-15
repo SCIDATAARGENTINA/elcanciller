@@ -2963,9 +2963,10 @@ article .post-content .has-content-area {
     border-radius: 20px;
     background: #fff;
     color: #e7d117;
-    font-size: 18px;
+    font-size: 16px;
     border: 2px solid #e7d117;
     display: inline-block;
+    padding: 5px 10px;
 }
 
 
