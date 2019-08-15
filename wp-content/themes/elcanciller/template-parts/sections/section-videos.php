@@ -32,8 +32,7 @@
                     $videolist = new WP_Query( $args );
                     while( $videolist->have_posts() ) {
                         $videolist->the_post();
-                        $categories = get_the_terms( $post->ID , array( 'categoria_videos') );
-                        $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
+                        $category = get_the_terms( $post->ID , array( 'categoria_videos') );
                         ?>
                         
                         <div id="video-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="video-item popup-video">
@@ -46,7 +45,7 @@
                                         <a href="#"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-logo.svg" alt="El Canciller - Videos"></a>
                                     </div><!-- end videos-pic -->
                                     <div class="videos-data">
-                                        <h4><a href="<?php echo $term_link ?>"><?php echo $categories[0]->name ?></a></h4>
+                                        <h4><a href=""><?php echo $category[0]->name ?></a></h4>
                                         <h3><?php the_title(); ?></h3>
                                     </div><!-- end videos-data -->
                                 </div><!-- end videos-title -->
