@@ -1766,8 +1766,7 @@ ul.tagposts-list li {
 .video-item {
     padding: 20px;
     background: #fff;
-    border-top: 1px solid #1a1a1a;
-    border-bottom: 1px solid #1a1a1a;
+    border-top: 1px solid #cccccc;
     font-size: 18px;
 }
 
