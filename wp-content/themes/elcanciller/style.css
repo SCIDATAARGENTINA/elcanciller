@@ -2913,6 +2913,7 @@ article .post-content .has-content-area {
 
 .encuesta-container .encabezado {
     display: flex;
+    margin: 20px 0;
 }
 
 .encuesta-container .encabezado img {
