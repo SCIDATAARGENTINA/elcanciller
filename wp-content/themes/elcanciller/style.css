@@ -1756,6 +1756,12 @@ ul.tagposts-list li {
     font-size: 20px;
 }
 
+.video-item {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #111;
+}
+
 
 /*VIDEOS END*/
 
