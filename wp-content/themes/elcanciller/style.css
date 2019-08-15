@@ -1624,6 +1624,7 @@ ul.tagposts-list li {
     grid-template-columns: 2fr 3fr;
     padding: 30px;
     margin-bottom: 50px;
+    grid-gap: 30px;
 }
 
 .videos-section::before {
