@@ -1639,6 +1639,7 @@ ul.tagposts-list li {
 
 .videos-title {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .videos-pic {
