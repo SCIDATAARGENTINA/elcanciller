@@ -33,7 +33,9 @@
                     while( $videolist->have_posts() ) {
                         $videolist->the_post(); ?>
                         
-                        <p><?php the_title(); ?></p>
+                        <div class="video-item">
+                            <h3><?php the_title(); ?></h3>
+                        </div>
                         
                     <?php }
                     // Restore original Post Data
