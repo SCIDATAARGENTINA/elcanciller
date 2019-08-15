@@ -37,8 +37,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                 ?>
                 
                     <div class="opcion">
-                        <div class="image-container">
-                        <img src="<?php echo wp_get_attachment_url( $opcion['imagen'] ) ?>" alt="<?php get_post_meta($opcion['imagen'], '_wp_attachment_image_alt', true); ?>">
+                        <div class="image-container" style="background-image: url('<?php echo wp_get_attachment_url( $opcion['imagen'] ) ?> ?>')">
                         </div>
                         <div class="titulo-opcion">
                             <?php echo $opcion['nombre'] ?>

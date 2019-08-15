@@ -2956,12 +2956,5 @@ article .post-content .has-content-area {
     height: 300px;
 }
 
-.encuesta-section .opciones .opcion .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-}
-
 
 /* END ENCUESTAS*/
