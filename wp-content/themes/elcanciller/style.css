@@ -2924,6 +2924,7 @@ article .post-content .has-content-area {
 .encuesta-container .titulo {
     margin-left: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
