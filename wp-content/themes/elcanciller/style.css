@@ -2957,7 +2957,7 @@ article .post-content .has-content-area {
     height: 150px;
     background-size: cover;
     background-position: center center;
-    border: 1px solid #e7d117;
+    border: 2px solid #e7d117;
 }
 
 .encuesta-section .opciones .opcion .titulo-opcion {
@@ -2968,6 +2968,8 @@ article .post-content .has-content-area {
     border: 2px solid #e7d117;
     display: inline-block;
     padding: 5px 10px;
+    position: relative;
+    top: -20px;
 }
 
 
