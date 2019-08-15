@@ -2898,3 +2898,13 @@ article .post-content .has-content-area {
 
 
 /* END SEARCH*/
+
+
+/* ENCUESTAS */
+
+.encuesta-section {
+    border-top: 5px solid #e7d117;
+}
+
+
+/* END ENCUESTAS*/
