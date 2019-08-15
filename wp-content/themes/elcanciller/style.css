@@ -1751,8 +1751,13 @@ ul.tagposts-list li {
     width: 100%;
 }
 
+.popup-content iframe {
+    widows: 100% !important;
+}
+
 .popup-content h3 {
     margin: 0px;
+    margin-right: 20px;
     font-size: 20px;
 }
 
