@@ -1690,6 +1690,7 @@ ul.tagposts-list li {
     background-size: cover;
     background-position: center center;
     transition: 300ms ease;
+    vertical-align: top;
 }
 
 .video:hover {
@@ -1702,7 +1703,7 @@ ul.tagposts-list li {
 
 .video .player-icon {
     width: 80px;
-    opacity: 0.4;
+    opacity: 0.6;
     transition: 300ms ease;
 }
 
