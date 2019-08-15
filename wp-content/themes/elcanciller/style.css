@@ -2952,8 +2952,10 @@ article .post-content .has-content-area {
 
 .encuesta-section .opciones .opcion .image-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
 }
 
 
