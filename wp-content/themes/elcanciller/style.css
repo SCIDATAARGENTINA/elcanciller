@@ -2969,6 +2969,9 @@ article .post-content .has-content-area {
     background-size: cover;
     background-position: center center;
     border: 2px solid #e7d117;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .encuesta-section .opciones .opcion .titulo-opcion {
