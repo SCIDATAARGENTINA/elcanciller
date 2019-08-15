@@ -29,12 +29,14 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
             if( have_rows('opciones') ):
 
                 // loop through the rows of data
-                while ( have_rows('opciones') ) : the_row(); ?>
+                while ( have_rows('opciones') ) : the_row(); 
+                $opcion = get_sub_field('opcion')
+                ?>
                 
                     <div class="opcion">
-                        <img src="<?php echo wp_get_attachment_url( get_sub_field('imagen') ) ?>" alt="<?php get_post_meta(get_sub_field('imagen'), '_wp_attachment_image_alt', true); ?>">
+                        <img src="<?php echo wp_get_attachment_url( $opcion['imagen'] ) ?>" alt="<?php get_post_meta($opcion['imagen'], '_wp_attachment_image_alt', true); ?>">
                         <div class="titulo-opcion">
-                            <?php echo get_sub_field('nombre') ?>
+                            <?php echo $opcion['nombre'] ?>
                         </div><!-- titulo opcion -->
                     </div><!-- opcion -->
 
