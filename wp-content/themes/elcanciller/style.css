@@ -1686,7 +1686,7 @@ ul.tagposts-list li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 100%;
     background-size: cover;
     background-position: center center;
     transition: 300ms ease;
