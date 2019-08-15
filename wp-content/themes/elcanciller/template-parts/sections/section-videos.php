@@ -25,7 +25,19 @@
                 </div><!-- end videos-data -->
             </div><!-- end videos-title -->
             <div class="videos-list">
-                
+                 <?php $args = array(
+                        'posts_per_page' => 3,
+                        'post_type' => 'video'
+                    );
+                    $videolist = new WP_Query( $args );
+                    while( $videolist->have_posts() ) {
+                        $videolist->the_post(); ?>
+                        
+                        <p><?php the_title(); ?></p>
+                        
+                    <?php }
+                    // Restore original Post Data
+                    wp_reset_postdata(); ?> 
             </div><!-- end videos-list -->
         </div><!-- end profile data -->
     </div><!-- videos-title-list -->
