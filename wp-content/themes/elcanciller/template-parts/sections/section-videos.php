@@ -44,7 +44,7 @@
                                         <a href="#"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-logo.svg" alt="El Canciller - Videos"></a>
                                     </div><!-- end videos-pic -->
                                     <div class="videos-data">
-                                        <h4><a href=""><?php echo $category[0]->name ?></a></h4>
+                                        <h4><a href="">Streaming</a></h4>
                                         <h3><?php the_title(); ?></h3>
                                     </div><!-- end videos-data -->
                                 </div><!-- end videos-title -->
