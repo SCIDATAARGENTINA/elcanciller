@@ -2965,6 +2965,7 @@ article .post-content .has-content-area {
     color: #e7d117;
     font-size: 18px;
     border: 2px solid #e7d117;
+    display: inline-block;
 }
 
 
