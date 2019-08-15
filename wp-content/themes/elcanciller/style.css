@@ -1752,7 +1752,7 @@ ul.tagposts-list li {
 }
 
 .popup-content iframe {
-    widows: 100% !important;
+    width: 100% !important;
 }
 
 .popup-content h3 {
