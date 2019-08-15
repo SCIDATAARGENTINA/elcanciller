@@ -2907,36 +2907,47 @@ article .post-content .has-content-area {
     font-family: "Bree Serif";
 }
 
-.encuesta-container .titulo::before {
+.encuesta-section .titulo::before {
     content: '';
     width: 50px;
 }
 
-.encuesta-container .encabezado {
+.encuesta-section .encabezado {
     display: flex;
     margin: 20px 0;
 }
 
-.encuesta-container .encabezado img {
+.encuesta-section .encabezado img {
     width: 100px;
     margin-left: 20px;
 }
 
-.encuesta-container .titulo {
+.encuesta-section .titulo {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.encuesta-container .titulo h3 {
+.encuesta-section .titulo h3 {
     text-transform: uppercase;
     color: #b29f93;
     margin: 0px;
 }
 
-.encuesta-container .titulo p {
+.encuesta-section .titulo p {
     margin: 0px;
+}
+
+.encuesta-section .opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encuesta-section .opciones .opcion {
+    margin: 0 20px;
+    text-align: center;
 }
 
 
