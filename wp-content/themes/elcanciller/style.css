@@ -2906,5 +2906,14 @@ article .post-content .has-content-area {
     border-top: 5px solid #e7d117;
 }
 
+.encuesta-container .titulo::before {
+    content: '';
+    width: 50px;
+}
+
+.encuesta-container .titulo h3 {
+    text-transform: uppercase;
+}
+
 
 /* END ENCUESTAS*/
