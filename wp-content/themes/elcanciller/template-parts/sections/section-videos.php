@@ -32,7 +32,6 @@
                     $videolist = new WP_Query( $args );
                     while( $videolist->have_posts() ) {
                         $videolist->the_post();
-                        $category = get_the_terms( $post->ID , array( 'categoria_videos') );
                         ?>
                         
                         <div id="video-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="video-item popup-video">
