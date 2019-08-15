@@ -32,7 +32,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                 while ( have_rows('opciones') ) : the_row(); ?>
                 
                     <div class="opcion">
-                        <img src="<?php wp_get_attachment_url( get_sub_field('imagen') ) ?>" alt="<?php get_post_meta(get_sub_field('imagen'), '_wp_attachment_image_alt', true); ?>">
+                        <img src="<?php echo wp_get_attachment_url( get_sub_field('imagen') ) ?>" alt="<?php get_post_meta(get_sub_field('imagen'), '_wp_attachment_image_alt', true); ?>">
                         <div class="titulo-opcion">
                             <?php the_sub_field('nombre') ?>
                         </div><!-- titulo opcion -->
