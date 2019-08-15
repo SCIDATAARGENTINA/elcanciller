@@ -2956,6 +2956,7 @@ article .post-content .has-content-area {
     height: 150px;
     background-size: cover;
     background-position: center center;
+    border: 1px solid #e7d117;
 }
 
 
