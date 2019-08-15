@@ -2959,5 +2959,13 @@ article .post-content .has-content-area {
     border: 1px solid #e7d117;
 }
 
+.encuesta-section .opciones .opcion .titulo-opcion {
+    border-radius: 20px;
+    background: #fff;
+    color: #e7d117;
+    font-size: 18px;
+    border: 2px solid #e7d117;
+}
+
 
 /* END ENCUESTAS*/
