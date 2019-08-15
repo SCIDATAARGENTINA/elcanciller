@@ -2952,7 +2952,7 @@ article .post-content .has-content-area {
     position: absolute;
     content: '';
     width: 100%;
-    height: 200px;
+    height: 100px;
     background: #e7d117;
     top: 0;
 }
