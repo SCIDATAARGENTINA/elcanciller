@@ -2945,6 +2945,7 @@ article .post-content .has-content-area {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-top: 50px;
 }
 
 .encuesta-section .opciones::before {
@@ -2953,6 +2954,7 @@ article .post-content .has-content-area {
     width: 100%;
     height: 200px;
     background: #e7d117;
+    top: 0;
 }
 
 .encuesta-section .opciones .opcion {
