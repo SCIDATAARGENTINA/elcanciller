@@ -1760,6 +1760,12 @@ ul.tagposts-list li {
     padding: 20px;
     background: #fff;
     border: 1px solid #111;
+    font-size: 18px;
+}
+
+.video-item h3 {
+    margin: 0px;
+    font-size: 18px;
 }
 
 
