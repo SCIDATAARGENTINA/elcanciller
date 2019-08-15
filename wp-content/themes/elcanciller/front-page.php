@@ -30,6 +30,7 @@ $page_id  = get_queried_object_id();
 						<?php the_field('anuncio_1', $page_id) ?>
 					</div>
 				</div>
+				<?php get_template_part('template-parts/sections/section', 'encuesta') ?>
 				<?php get_template_part('template-parts/sections/section', 'opinion') ?>
 
 			</div><!-- content -->
