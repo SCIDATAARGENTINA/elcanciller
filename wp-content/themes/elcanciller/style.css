@@ -2931,5 +2931,9 @@ article .post-content .has-content-area {
     margin-bottom: 0px;
 }
 
+.encuesta-container .titulo p {
+    margin: 0px;
+}
+
 
 /* END ENCUESTAS*/
