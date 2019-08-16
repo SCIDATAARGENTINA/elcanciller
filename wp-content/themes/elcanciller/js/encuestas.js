@@ -19,6 +19,7 @@ jQuery(document).ready(function($) {
 
     };
 
-    console.log(createOpcData(5, 1, 1));
+    totVotos = $('.encuesta').attr('data-votos');
+
 
 });
