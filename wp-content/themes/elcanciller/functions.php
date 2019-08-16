@@ -652,9 +652,7 @@ function encuestas_ajax_handler(){
   //$numero_opcion = $_POST[''];
 
   echo 'hola';
- 
-  die;
-	
+ 	
 }
  
  
