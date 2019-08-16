@@ -645,7 +645,7 @@ function encuesta_scripts() {
 add_action( 'wp_enqueue_scripts', 'encuesta_scripts' );
 
 
-function encuesta_ajax_handler(){
+function encuestas_ajax_handler(){
  
 	$votos_totales = $_POST[''];
   $votos_opcion = $_POST[''];
