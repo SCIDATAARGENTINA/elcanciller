@@ -646,12 +646,11 @@ add_action( 'wp_enqueue_scripts', 'encuestas_scripts' );
 
 
 function encuestas_ajax_handler(){
- 
-	//$votos_totales = $_POST[''];
-  //$votos_opcion = $_POST[''];
-  //$numero_opcion = $_POST[''];
-
-  echo 'hola';
+  
+  $id_encuesta = $_POST['idEncuesta'];
+	$votos_totales = $_POST['totVotos'];
+  $votos_opcion = $_POST['opcVotos'];
+  $numero_opcion = $_POST['nOpcion'];
  	
 }
  
