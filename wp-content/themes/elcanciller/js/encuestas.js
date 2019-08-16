@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
         $.ajax({
             url: url,
             type: 'POST',
-            dataType: "json",
+            dataType: 'application/json',
             data: data,
             success: function(result) {
                 console.log(result);
