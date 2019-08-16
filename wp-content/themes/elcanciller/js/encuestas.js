@@ -4,6 +4,10 @@ jQuery(document).ready(function($) {
         opcVotos,
         nOpcion;
 
-    alert('hola');
+    let createOpcData = () => {
+        alert('hola');
+    };
+
+    createOpcData();
 
 });
