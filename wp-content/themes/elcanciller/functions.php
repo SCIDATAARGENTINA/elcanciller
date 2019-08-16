@@ -651,7 +651,13 @@ function encuestas_ajax_handler(){
 	$votos_totales = $_POST['totVotos'];
   $votos_opcion = $_POST['opcVotos'];
   $numero_opcion = $_POST['nOpcion'];
- 	echo $id_encuesta;
+
+  $data = array(
+    'votos' => $votos_opcion + 1
+  );
+
+  update_row('opciones', $numero_opcion, $data, $id_encuesta);
+
 }
  
  
