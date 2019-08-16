@@ -642,7 +642,7 @@ function encuestas_scripts() {
  	wp_enqueue_script( 'encuestas' );
 }
  
-add_action( 'wp_enqueue_scripts', 'encuesta_scripts' );
+add_action( 'wp_enqueue_scripts', 'encuestas_scripts' );
 
 
 function encuestas_ajax_handler(){
