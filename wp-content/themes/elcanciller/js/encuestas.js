@@ -41,6 +41,7 @@ jQuery(document).ready(function($) {
         $.ajax({
             url: url,
             type: 'POST',
+            contentType: "text/html; charset=utf-8",
             data: data,
             success: function(result) {
                 console.log(result);
