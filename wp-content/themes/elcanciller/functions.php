@@ -569,9 +569,6 @@ function load_more_scripts() {
  
 	global $wp_query; 
  
-	// In most cases it is already included on the page and this line can be removed
-	wp_enqueue_script('jquery');
- 
 	// register our main script but do not enqueue it yet
 	wp_register_script( 'loadmore', get_stylesheet_directory_uri() . '/js/loadmore.js', array('jquery') );
  
@@ -632,3 +629,32 @@ add_action('wp_ajax_loadmore', 'loadmore_ajax_handler'); // wp_ajax_{action}
 add_action('wp_ajax_nopriv_loadmore', 'loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
 
 
+// AJAX ENCUESTAS
+
+function encuesta_scripts() {
+  
+	wp_register_script( 'encuestas', get_stylesheet_directory_uri() . '/js/encuestas.js', array('jquery') );
+ 
+	wp_localize_script( 'encuestas', 'encuesta_params', array(
+		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+	) );
+ 
+ 	wp_enqueue_script( 'encuestas' );
+}
+ 
+add_action( 'wp_enqueue_scripts', 'encuesta_scripts' );
+
+
+function encuesta_ajax_handler(){
+ 
+	$votos_totales = $_POST[''];
+  $votos_opcion = $_POST[''];
+  $numero_opcion = $_POST[''];
+ 
+	
+}
+ 
+ 
+ 
+add_action('wp_ajax_encuesta', 'encuesta_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_encuesta', 'encuesta_ajax_handler'); // wp_ajax_nopriv_{action}
