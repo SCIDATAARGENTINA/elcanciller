@@ -17,7 +17,7 @@ $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 ?>
 
-<div id="encuesta-<?php echo $post->ID ?>" class="encuesta" data-votos="<?php get_field('total_votos', $post->ID) ?>">
+<div id="encuesta-<?php echo $post->ID ?>" class="encuesta" data-votos="<?php echo get_field('total_votos', $post->ID) ?>">
     <div class="encuesta-container">
         <div class="encabezado">
             <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/08/encuesta-logo.svg" alt="">
