@@ -9,6 +9,10 @@ jQuery(document).ready(function($) {
 
         let percentVotos = (opcVotos * 100) / totVotos;
 
+        if (isNaN(percentVotos)) {
+            percentVotos = 100;
+        }
+
         let data = {
             idEncuesta,
             totVotos,
