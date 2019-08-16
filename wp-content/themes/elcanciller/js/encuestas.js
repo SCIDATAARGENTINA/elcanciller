@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 
         let data = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
 
-        console.log(data);
+        console.log(data, url);
 
         $.ajax({
             url: url,
