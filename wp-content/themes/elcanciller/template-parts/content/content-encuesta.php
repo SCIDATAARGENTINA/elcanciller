@@ -30,17 +30,13 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
             <?php 
             // check if the repeater field has rows of data
             if( have_rows('opciones') ):
-
+                $row_index = 0;
                 // loop through the rows of data
                 while ( have_rows('opciones') ) : the_row(); 
-                $opcion = get_sub_field('opcion')
+                $opcion = get_sub_field('opcion');
+                $row_index++;
                 ?>
-
-                <pre>
-                    <?php print_r($opcion); ?>
-                </pre>
-                
-                    <div class="opcion" data-votos="<?php $opcion['votos'] ?>">
+                    <div class="opcion" data-votos="<?php $opcion['votos'] ?>" data-row_index="<?php $row_index; ?>">
                         <div class="image-container" style="background-image: url('<?php echo wp_get_attachment_url( $opcion['imagen'] ) ?> ?>')">
                         </div>
                         <div class="titulo-opcion">
