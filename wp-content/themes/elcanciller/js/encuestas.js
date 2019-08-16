@@ -41,7 +41,9 @@ jQuery(document).ready(function($) {
         $.ajax({
             url: url,
             type: 'POST',
-            contentType: "text/html; charset=utf-8",
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader("Content-type", "application/json");
+            },
             data: data,
             success: function(result) {
                 console.log(result);
