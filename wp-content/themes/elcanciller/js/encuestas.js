@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
         opcVotos,
         nOpcion;
 
-    var url = encuesta_params.ajaxurl;
+    var url = encuestas_params.ajaxurl;
 
     let createOpcData = (idEncuesta, totVotos, opcVotos, nOpcion) => {
 
@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
         }
 
         let data = {
-            action: 'encuesta_ajax_handler',
+            action: 'encuestas_ajax_handler',
             idEncuesta,
             totVotos,
             opcVotos,

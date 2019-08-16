@@ -635,7 +635,7 @@ function encuesta_scripts() {
   
 	wp_register_script( 'encuestas', get_stylesheet_directory_uri() . '/js/encuestas.js', array('jquery') );
  
-	wp_localize_script( 'encuestas', 'encuesta_params', array(
+	wp_localize_script( 'encuestas', 'encuestas_params', array(
 		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
 	) );
  
@@ -651,10 +651,11 @@ function encuesta_ajax_handler(){
   $votos_opcion = $_POST[''];
   $numero_opcion = $_POST[''];
  
+  die;
 	
 }
  
  
  
-add_action('wp_ajax_encuesta', 'encuesta_ajax_handler'); // wp_ajax_{action}
-add_action('wp_ajax_nopriv_encuesta', 'encuesta_ajax_handler'); // wp_ajax_nopriv_{action}
+add_action('wp_ajax_encuestas', 'encuestas_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_encuestas', 'encuestas_ajax_handler'); // wp_ajax_nopriv_{action}
