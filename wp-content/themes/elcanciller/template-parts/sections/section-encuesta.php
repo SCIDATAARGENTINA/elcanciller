@@ -22,7 +22,7 @@
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
                         $query->the_post(); 
-                        the_field('encuesta');
+                        echo $encuesta_id;
                         
                         get_template_part('template-parts/content/content', 'encuesta');
                     }
