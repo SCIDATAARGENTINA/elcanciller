@@ -30,7 +30,7 @@ $page_id  = get_queried_object_id();
 						<?php the_field('anuncio_1', $page_id) ?>
 					</div>
 				</div>
-				<?php include( locate_template( 'template-parts/sections/section/encuesta.php', false, false ) ); ?>
+				<?php include( locate_template( 'template-parts/sections/section-encuesta.php', false, false ) ); ?>
 				<?php //get_template_part('template-parts/sections/section', 'encuesta') ?> 
 				<?php get_template_part('template-parts/sections/section', 'opinion') ?>
 
