@@ -16,7 +16,8 @@
     <div class="encuestas">
         <?php $args = array(
                         'posts_per_page' => 1,
-                        'post_type' => 'encuesta'
+                        'post_type' => 'encuesta',
+                        'page_id' => get_the_field('encuesta')
                     );
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
