@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
         }
 
         let data = {
-            'action': 'encuestas_ajax_handler',
+            action: 'encuestas_ajax_handler',
             idEncuesta,
             totVotos,
             opcVotos,
@@ -41,6 +41,7 @@ jQuery(document).ready(function($) {
         $.ajax({
             url: url,
             type: 'POST',
+            dataType: "json",
             data: data,
             success: function(result) {
                 console.log(result);
