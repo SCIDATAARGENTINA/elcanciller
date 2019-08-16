@@ -5,6 +5,8 @@ jQuery(document).ready(function($) {
         opcVotos,
         nOpcion;
 
+    var url = encuesta_params.ajaxurl;
+
     let createOpcData = (idEncuesta, totVotos, opcVotos, nOpcion) => {
 
         let percentVotos = (opcVotos * 100) / totVotos;
@@ -14,6 +16,7 @@ jQuery(document).ready(function($) {
         }
 
         let data = {
+            action: 'encuesta_ajax_handler',
             idEncuesta,
             totVotos,
             opcVotos,
@@ -34,6 +37,19 @@ jQuery(document).ready(function($) {
         let data = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
 
         console.log(data);
+
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: data,
+            success: function(result) {
+                console.log(result);
+            },
+            error: function(errorThrown) {
+                console.log(errorThrown);
+            }
+        });
+
     });
 
 
