@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
         }
 
         let data = {
-            action: 'encuestas_ajax_handler',
+            'action': 'encuestas_ajax_handler',
             idEncuesta,
             totVotos,
             opcVotos,
