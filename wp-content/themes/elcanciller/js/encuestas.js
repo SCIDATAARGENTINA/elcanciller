@@ -4,10 +4,21 @@ jQuery(document).ready(function($) {
         opcVotos,
         nOpcion;
 
-    let createOpcData = () => {
-        alert('hola');
+    let createOpcData = (totVotos, opcVotos, nOpcion) => {
+
+        let percentVotos = (opcVotos * 100) / totVotos;
+
+        let data = {
+            totVotos,
+            opcVotos,
+            nOpcion,
+            percentVotos
+        };
+
+        return data;
+
     };
 
-    createOpcData();
+    console.log(createOpcData(5, 1, 1));
 
 });
