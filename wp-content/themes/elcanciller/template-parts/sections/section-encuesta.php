@@ -17,13 +17,12 @@
         <?php $args = array(
                         'posts_per_page' => 1,
                         'post_type' => 'encuesta'
-                        //'p' => "'" + get_the_field('encuesta') + "'"
+                        'p' => get_the_field('encuesta', $page_id)
                     );
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
                         $query->the_post(); 
-                        the_field('encuesta', $page_id);
-                        
+                                                
                         get_template_part('template-parts/content/content', 'encuesta');
                     }
                     // Restore original Post Data
