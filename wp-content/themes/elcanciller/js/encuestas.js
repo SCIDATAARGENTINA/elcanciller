@@ -19,7 +19,14 @@ jQuery(document).ready(function($) {
 
     };
 
-    totVotos = $('.encuesta').attr('data-votos');
+    $('.opcion').click(function() {
+        totVotos = $(this).attr('data-votos_totales');
+        opcVotos = $(this).attr('data-votos');
+        nOpcion = $(this).attr('data-row_index');
+
+        console.log(createOpcData(totVotos, opcVotos, nOpcion));
+    });
+
 
 
 });
