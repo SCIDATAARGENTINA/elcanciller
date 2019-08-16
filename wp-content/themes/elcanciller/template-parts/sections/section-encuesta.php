@@ -17,11 +17,12 @@
         <?php $args = array(
                         'posts_per_page' => 1,
                         'post_type' => 'encuesta',
-                        'p' => "'" + get_the_field('encuesta') + "'"
+                        //'p' => "'" + get_the_field('encuesta') + "'"
                     );
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
                         $query->the_post(); 
+                        echo get_the_field('encuesta');
                         
                         get_template_part('template-parts/content/content', 'encuesta');
                     }
