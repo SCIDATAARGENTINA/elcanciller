@@ -631,7 +631,7 @@ add_action('wp_ajax_nopriv_loadmore', 'loadmore_ajax_handler'); // wp_ajax_nopri
 
 // AJAX ENCUESTAS
 
-function encuesta_scripts() {
+function encuestas_scripts() {
   
 	wp_register_script( 'encuestas', get_stylesheet_directory_uri() . '/js/encuestas.js', array('jquery') );
  
