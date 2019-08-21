@@ -2096,7 +2096,8 @@ ul.tagposts-list li {
 
 .footer-widget-1 .widget,
 .footer-widget-1 .widget a {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Bree Serif', serif;
 }
 
 .widget-title {
