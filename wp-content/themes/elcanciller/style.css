@@ -1569,6 +1569,7 @@ ul.tagposts-list li {
     padding: 30px;
     position: relative;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .instagram-section::before {
@@ -1625,6 +1626,7 @@ ul.tagposts-list li {
     grid-template-columns: 2fr 3fr;
     padding: 30px;
     margin-bottom: 50px;
+    margin-top: 50px;
     grid-gap: 30px;
 }
 
@@ -1914,6 +1916,7 @@ ul.tagposts-list li {
     display: grid;
     grid-template-columns: 3fr 4fr;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .placa-title {
