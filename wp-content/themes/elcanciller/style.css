@@ -2051,7 +2051,7 @@ ul.tagposts-list li {
 .slider-placa-imagen {
     position: relative;
     width: calc(100% - 20px);
-    min-height: 300px;
+    min-height: 350px;
 }
 
 .slider-placa-imagen img {
