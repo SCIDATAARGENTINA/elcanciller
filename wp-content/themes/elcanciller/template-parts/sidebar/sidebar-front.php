@@ -15,9 +15,9 @@
   <img src="<?php echo get_stylesheet_directory_uri() ?>/icons/c-stories.svg" alt="Stories - El Canciller">
 </div><!-- stories -->
 <div class="social-links">
-  <a href="https://www.facebook.com/elcancillercom/"><i class="fab fa-facebook-square"></i></a>
-  <a href="https://twitter.com/elcancillercom"><i class="fab fa-twitter-square"></i></a>
-  <a href="https://www.instagram.com/elcancillerlive/"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/elcancillercom/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+  <a href="https://twitter.com/elcancillercom" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+  <a href="https://www.instagram.com/elcancillerlive/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
 </div><!-- social-links -->
 <div class="tiempo">
   <div class="canva-tiempo">
