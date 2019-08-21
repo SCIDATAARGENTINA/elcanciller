@@ -17,7 +17,7 @@
 <div class="social-links">
   <a href="#"><i class="fab fa-facebook-square"></i></a>
   <a href="#"><i class="fab fa-twitter-square"></i></a>
-  <a href="#"><i class="fab fa-instagram-square"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
 </div><!-- social-links -->
 <div class="tiempo">
   <div class="canva-tiempo">
