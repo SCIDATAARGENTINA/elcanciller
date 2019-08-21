@@ -1073,6 +1073,7 @@ ul.tagposts-list li {
     display: grid;
     grid-gap: 30px;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .col-2 {
