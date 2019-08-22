@@ -1765,7 +1765,7 @@ ul.tagposts-list li {
 .popup-content h3 {
     margin: 0px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 20px;
 }
 
