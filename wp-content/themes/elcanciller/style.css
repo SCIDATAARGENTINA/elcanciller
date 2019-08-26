@@ -3005,6 +3005,8 @@ article .post-content .has-content-area {
     background: rgb(231, 209, 23, 0.4);
     font-family: "Bree Serif";
     font-weight: 400;
+    font-size: 30px;
+    line-height: 0px !important;
 }
 
 
