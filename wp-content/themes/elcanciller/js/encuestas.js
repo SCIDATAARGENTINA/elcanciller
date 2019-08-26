@@ -35,8 +35,8 @@ jQuery(document).ready(function($) {
 
             let el = $(this);
 
-            let totVotos = $(this).attr('data-votos_totales');
-            let opcVotos = $(this).attr('data-votos');
+            let totVotos = el.attr('data-votos_totales');
+            let opcVotos = el.attr('data-votos');
 
             let percentVotos = (opcVotos * 100) / totVotos;
 
@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
 
             el.find('.image-container').append('<div class="resultados">' + Math.round(percentVotos) + '%</div>');
 
-            $('.resultados').css('height', percentVotos + '%');
+            el.find('.resultados').css('height', percentVotos + '%');
 
         });
 
