@@ -96,6 +96,12 @@ jQuery(document).ready(function($) {
 
         validateIfVoted(idEncuesta);
 
+        if (validateIfLiked(idEncuesta)) {
+            console.log('Ya votaste esta encuesta publicación');
+            return;
+        }
+
+
         let data = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
 
 
