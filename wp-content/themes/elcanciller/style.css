@@ -2968,6 +2968,7 @@ article .post-content .has-content-area {
 .encuesta-section .opciones .opcion {
     margin: 0 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .encuesta-section .opciones .opcion .image-container {
