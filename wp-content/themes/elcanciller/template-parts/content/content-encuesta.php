@@ -36,7 +36,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                 $opcion = get_sub_field('opcion');
                 $row_index++;
                 ?>
-                    <div class="opcion" data-id="<?php echo $post->ID ?>" data-votos_totales="<?php echo get_field('total_votos', $post->ID) ?>" data-votos="<?php echo $opcion['votos'] ?>" data-row_index="<?php echo $row_index; ?>">
+                    <div class="opcion" data-id="<?php echo $post->ID ?>" data-votos_totales="<?php echo get_field('total_votos', $post->ID) ?>" data-votos="<?php echo $opcion['votos'] ?>" data-row_index="<?php echo $row_index - 1; ?>">
                         <div class="image-container" style="background-image: url('<?php echo wp_get_attachment_url( $opcion['imagen'] ) ?> ?>')">
                         </div>
                         <div class="titulo-opcion">
