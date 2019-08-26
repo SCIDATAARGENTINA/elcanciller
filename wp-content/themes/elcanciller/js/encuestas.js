@@ -29,7 +29,11 @@ jQuery(document).ready(function($) {
     };
 
     let votoRealizado = (idEncuesta) => {
-        let encuestaEl = $('#encuesta-' + idEncuesta + '');
+        let encuestaEl = $('#encuesta-' + idEncuesta);
+
+        console.log(encuestaEl);
+
+        console.log(encuestaEl.find('.opcion'));
 
         encuestaEl.find('.opcion').each(() => {
             console.log($(this));
