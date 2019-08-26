@@ -31,7 +31,21 @@ jQuery(document).ready(function($) {
     let votoRealizado = (idEncuesta) => {
         let encuestaEl = $('#encuesta-' + idEncuesta + '');
 
-        console.log(encuestaEl);
+        encuestaEl.find('.opcion').each(() => {
+            let totVotos = $(this).attr('data-votos_totales');
+            let opcVotos = $(this).attr('data-votos');
+
+            let percentVotos = (opcVotos * 100) / totVotos;
+
+            if (isNaN(percentVotos)) {
+                percentVotos = "100";
+            }
+
+            $(this).append('<div class="resultados">' + percentVotos + '%</div>');
+
+        });
+
+
     };
 
     $('.opcion').click(function() {
