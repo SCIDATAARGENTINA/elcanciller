@@ -92,6 +92,7 @@ jQuery(document).ready(function($) {
         idEncuesta = $(this).attr('data-id');
         if (validateIfVoted(idEncuesta)) {
             votoRealizado(idEncuesta);
+            console.log(idEncuesta);
         }
     });
 
