@@ -93,7 +93,7 @@ jQuery(document).ready(function($) {
         if (validateIfVoted(idEncuesta)) {
             votoRealizado(idEncuesta);
         }
-    })
+    });
 
     $('.opcion').click(function() {
         idEncuesta = $(this).attr('data-id');
