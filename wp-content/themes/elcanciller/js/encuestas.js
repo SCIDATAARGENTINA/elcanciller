@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
             data: data,
             success: function(result) {
                 console.log(result);
-                votoRealizado($(this));
+                votoRealizado(idEncuesta);
             },
             error: function(errorThrown) {
                 console.log(errorThrown);
