@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
                 percentVotos = "100";
             }
 
-            el.append('<div class="resultados">' + percentVotos + '%</div>');
+            el.find('.image-container').append('<div class="resultados">' + Math.round(percentVotos) + '%</div>');
 
         });
 
