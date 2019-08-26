@@ -2998,6 +2998,7 @@ article .post-content .has-content-area {
     height: 0;
     color: #fff;
     background: rgba(0, 0, 0, 0.4);
+    transition: 300ms ease;
 }
 
 
