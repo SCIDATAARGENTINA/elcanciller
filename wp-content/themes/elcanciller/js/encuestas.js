@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
     };
 
     let votoRealizado = (opcionEl) => {
-        let encuestaEl = opcionEl.parent('encuesta');
+        let encuestaEl = opcionEl.parent('.encuesta');
 
         console.log(encuestaEl);
     };
