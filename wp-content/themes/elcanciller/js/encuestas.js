@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
 
             el.find('.image-container').append('<div class="resultados">' + Math.round(percentVotos) + '%</div>');
 
-            el.find('.resultados').animate({ height: percentVotos + "px" }, 500);
+            el.find('.resultados').animate({ height: percentVotos + "%" }, 300);
 
         });
 
