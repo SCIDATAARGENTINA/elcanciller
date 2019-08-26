@@ -34,7 +34,6 @@ jQuery(document).ready(function($) {
         encuestaEl.find('.opcion').each(function() {
 
             let el = $(this);
-            console.log(el);
 
             let totVotos = $(this).attr('data-votos_totales');
             let opcVotos = $(this).attr('data-votos');
@@ -45,7 +44,7 @@ jQuery(document).ready(function($) {
                 percentVotos = "100";
             }
 
-            //this.append('<div class="resultados">' + percentVotos + '%</div>');
+            el.append('<div class="resultados">' + percentVotos + '%</div>');
 
         });
 
