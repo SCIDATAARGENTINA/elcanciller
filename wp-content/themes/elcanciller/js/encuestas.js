@@ -28,6 +28,12 @@ jQuery(document).ready(function($) {
 
     };
 
+    let votoRealizado = (opcionEl) => {
+        let encuestaEl = opcionEl.parent('encuesta');
+
+        console.log(encuestaEl);
+    };
+
     $('.opcion').click(function() {
         idEncuesta = $(this).attr('data-id');
         totVotos = $(this).attr('data-votos_totales');
