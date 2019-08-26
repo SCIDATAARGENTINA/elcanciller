@@ -89,10 +89,9 @@ jQuery(document).ready(function($) {
     };
 
     $('.encuesta').each(function() {
-        idEncuesta = $(this).attr('data-id');
+        idEncuesta = $(this).find('.opcion').attr('data-id');
         if (validateIfVoted(idEncuesta)) {
             votoRealizado(idEncuesta);
-            console.log(idEncuesta);
         }
     });
 
