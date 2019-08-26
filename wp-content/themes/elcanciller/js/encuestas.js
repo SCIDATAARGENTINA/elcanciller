@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
 
             arrIds = [id];
             encuestasVotadas = JSON.stringify(arrIds);
-            cjs.set('encuestasVotadas', encuestasVotadas, { expires: Infinity });
+            Cookies.set('encuestasVotadas', encuestasVotadas, { expires: Infinity });
 
         }
 
