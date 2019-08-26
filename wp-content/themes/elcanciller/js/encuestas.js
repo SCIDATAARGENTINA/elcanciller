@@ -88,6 +88,13 @@ jQuery(document).ready(function($) {
 
     };
 
+    $('.encuesta').each(function() {
+        idEncuesta = $(this).attr('data-id');
+        if (validateIfVoted(idEncuesta)) {
+            votoRealizado(idEncuesta);
+        }
+    })
+
     $('.opcion').click(function() {
         idEncuesta = $(this).attr('data-id');
         totVotos = $(this).attr('data-votos_totales');
@@ -96,7 +103,6 @@ jQuery(document).ready(function($) {
 
         if (validateIfVoted(idEncuesta)) {
             console.log('Ya votaste esta encuesta.');
-            votoRealizado(idEncuesta);
             return;
         }
 
