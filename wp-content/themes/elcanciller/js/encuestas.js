@@ -46,6 +46,8 @@ jQuery(document).ready(function($) {
 
             el.find('.image-container').append('<div class="resultados">' + Math.round(percentVotos) + '%</div>');
 
+            $('.resultados').css('height', percentVotos + '%');
+
         });
 
 
