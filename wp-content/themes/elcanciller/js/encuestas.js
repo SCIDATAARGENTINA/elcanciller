@@ -28,8 +28,8 @@ jQuery(document).ready(function($) {
 
     };
 
-    let votoRealizado = (opcionEl) => {
-        let encuestaEl = opcionEl.closest('.encuesta');
+    let votoRealizado = (idEncuesta) => {
+        let encuestaEl = $('#encuesta-' + idEncuesta + '');
 
         console.log(encuestaEl);
     };
