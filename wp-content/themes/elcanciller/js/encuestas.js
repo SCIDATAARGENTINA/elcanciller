@@ -35,8 +35,8 @@ jQuery(document).ready(function($) {
 
         console.log(encuestaEl.find('.opcion'));
 
-        encuestaEl.find('.opcion').each(() => {
-            console.log($(this));
+        encuestaEl.find('.opcion').each((index, opcion) => {
+            console.log(opcion);
             let totVotos = $(this).attr('data-votos_totales');
             let opcVotos = $(this).attr('data-votos');
 
