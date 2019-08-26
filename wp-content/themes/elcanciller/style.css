@@ -2991,5 +2991,14 @@ article .post-content .has-content-area {
     top: -20px;
 }
 
+.resultados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+}
+
 
 /* END ENCUESTAS*/
