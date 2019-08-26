@@ -2997,6 +2997,10 @@ article .post-content .has-content-area {
     justify-content: center;
     align-items: center;
     height: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
     color: #fff;
     background: rgb(231, 209, 23, 0.4);
 }
