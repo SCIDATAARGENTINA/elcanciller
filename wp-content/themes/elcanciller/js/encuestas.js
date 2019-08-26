@@ -28,6 +28,41 @@ jQuery(document).ready(function($) {
 
     };
 
+    let setCookie = (id) => {
+
+        let encuestasVotadas = Cookies.get('encuestasVotadas');
+        let arrIds = [];
+
+        if (encuestasVotadas) {
+
+            arrIds = JSON.parse(encuestasVotadas);
+            arrIds.push(id);
+            encuestasVotadas = JSON.stringify(arrIds);
+            Cookies.set('encuestasVotadas', encuestasVotadas, { expires: Infinity });
+
+        } else {
+
+            arrIds = [id];
+            encuestasVotadas = JSON.stringify(arrIds);
+            cjs.set('encuestasVotadas', encuestasVotadas, { expires: Infinity });
+
+        }
+
+    };
+
+    let validateIfVoted = (id) => {
+
+        if (Cookies.get('encuestasVotadas')) {
+            let encuestasVotadas = Cookies.get('encuestasVotadas');
+            let arrIds = JSON.parse(encuestasVotadas);
+
+            return arrIds.includes(id);
+        } else {
+            return false;
+        }
+
+    };
+
     let votoRealizado = (idEncuesta) => {
         let encuestaEl = $('#encuesta-' + idEncuesta);
 
@@ -59,20 +94,22 @@ jQuery(document).ready(function($) {
         opcVotos = $(this).attr('data-votos');
         nOpcion = $(this).attr('data-row_index');
 
+        validateIfVoted(idEncuesta);
+
         let data = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
 
-        console.log(data, url);
+
 
         $.ajax({
             url: url,
             type: 'POST',
             data: data,
             success: function(result) {
-                console.log(result);
+                setCookie(idEncuesta);
                 votoRealizado(idEncuesta);
             },
             error: function(errorThrown) {
-                console.log(errorThrown);
+
             }
         });
 
