@@ -24,7 +24,7 @@ $page_id  = get_queried_object_id();
 
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
 				<div class="col-3" data-quantity="3" data-offset="0">
-				<?php echo do_shortcode('[posts cantidad="2" offset="0" encuesta="48816, 3"]') ?>
+				<?php echo do_shortcode('[posts cantidad="2" offset="0" encuesta="48816 3"]') ?>
 				</div>
 				<div class="col-3" data-quantity="2" data-offset="3">
 					<div id="publi1">
