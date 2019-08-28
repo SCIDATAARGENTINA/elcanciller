@@ -38,6 +38,9 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                         <div class="titulo-opcion">
                             <span class="num-opcion"><?php echo $row_index; ?></span><?php echo $opcion['nombre'] ?>
                         </div><!-- titulo opcion -->
+                        <div class="total">
+                            <i class="fas fa-caret-up"></i><div class="result"></div>
+                        </div>
                     </div><!-- opcion -->
 
                 <?php endwhile;
