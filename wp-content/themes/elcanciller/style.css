@@ -3059,6 +3059,8 @@ article .post-content .has-content-area {
     align-items: center;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    padding: 20px;
 }
 
 .encuesta.card .opcion {
@@ -3072,6 +3074,16 @@ article .post-content .has-content-area {
     font-size: 14px;
     background: rgba(0, 0, 0, 0.30);
     transition: 300ms ease;
+}
+
+.encuesta.card .num-opcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e7d117;
+    height: 100%;
+    width: auto;
+    border-radius: 40px;
 }
 
 
