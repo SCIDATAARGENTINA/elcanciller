@@ -1077,11 +1077,13 @@ ul.tagposts-list li {
 }
 
 .col-2 {
+    grid-gap: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .col-3 {
+    grid-gap: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
