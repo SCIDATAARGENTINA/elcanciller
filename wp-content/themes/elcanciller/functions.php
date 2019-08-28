@@ -691,16 +691,15 @@ function mostrar_posts($atts){
     $i=0;
     while($base_query->have_posts()){
       $base_query->the_post();
-
+      $i++;
 
       get_template_part( 'template-parts/content/content' );
       echo $a['encuesta_id'];
 
-      if($a['encuesta_id'] != false ){
+      if($a['encuesta_id'] != false && $i == $a['encuesta_pos']){
         echo 'aca hay encuesta' . $a['encuesta_id']  . $a['encuesta_pos'];
       }
 
-      $i++;
     }
   }
 }
