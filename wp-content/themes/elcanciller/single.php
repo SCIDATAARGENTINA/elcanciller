@@ -47,8 +47,8 @@ get_header();
 					<img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron-blanco.svg" alt="">
 					<h3>Lo que no te podés perder</h3>
 				</div><!-- related-title -->
-				<div class="loader">Cargando...</div>
-				<div class="render-posts col-3" data-quantity="9">
+				<div class="col-3">
+					<?php echo do_shortcode('[posts cantidad="9" offset="0"]') ?>
 				</div>
 			</div>
 		</div><!-- outer-container -->
