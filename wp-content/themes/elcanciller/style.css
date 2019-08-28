@@ -3039,11 +3039,39 @@ article .post-content .has-content-area {
     margin: 0px;
     background: #e7d117;
     color: #fff;
-    font-weight: bold;
     font-family: "Bree serif";
     font-size: 16px;
     padding: 10px 15px;
     text-align: center;
+}
+
+.encuesta.card .encuesta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.encuesta.card .opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.encuesta.card .opcion {
+    display: block;
+    width: 100%;
+    border-radius: 40px;
+    border: 1px solid white;
+    color: #fff;
+    font-family: "Lato";
+    padding: 5px 10px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.30);
+    transition: 300ms ease;
 }
 
 
