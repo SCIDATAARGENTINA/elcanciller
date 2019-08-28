@@ -675,11 +675,6 @@ function mostrar_posts($atts){
     'encuesta' => array(
       'id' => false,
       'pos' => 0
-    ),
-    'ad' => array(
-      'pageid' => false,
-      'field' => '',
-      'pos' => 0
     )
   ), $atts );
   $title = get_the_title($a['postid']);
@@ -695,9 +690,18 @@ function mostrar_posts($atts){
   $base_query = new WP_Query( $args ); 
 
   if($base_query->have_posts()){
+    $i=0;
     while($base_query->have_posts()){
       $base_query->the_post();
+
+
       get_template_part( 'template-parts/content/content' );
+
+      if($a['encuesta']['id'] != false && $i == $a['encuesta']['pos']){
+        echo 'aca hay encuesta';
+      }
+
+      $i++;
     }
   }
 }
