@@ -3074,6 +3074,7 @@ article .post-content .has-content-area {
     font-size: 14px;
     background: rgba(0, 0, 0, 0.30);
     transition: 300ms ease;
+    position: relative;
 }
 
 .encuesta.card .num-opcion {
@@ -3084,6 +3085,9 @@ article .post-content .has-content-area {
     height: 100%;
     width: auto;
     border-radius: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
 
