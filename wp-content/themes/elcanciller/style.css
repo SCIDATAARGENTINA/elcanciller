@@ -1099,6 +1099,10 @@ ul.tagposts-list li {
     order: 1;
 }
 
+.col-3 .post-rendered {
+    order: 2;
+}
+
 .col-3 div:nth-child(2) {
     order: 1;
 }
@@ -1133,6 +1137,8 @@ ul.tagposts-list li {
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     padding-left: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .advertical {
