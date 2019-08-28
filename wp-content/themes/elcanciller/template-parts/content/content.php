@@ -21,7 +21,11 @@ $show_author = '';
 if(get_field('show_author') == 'si'){
 	$show_author = 'show-author';
 }
+
+echo '<style>.post-rendered.' . $term->slug . ': ' . $cat_color . '; </style>'
+
 ?>
+
 
 <article id="post-<?php the_ID(); ?>" class="post-rendered <?php echo $term->slug ?> <?php echo $show_author ?>">
 	<div class="rendered-img" style="background-image: url('<?php echo $featured_img_url ?>')">
