@@ -710,7 +710,8 @@ function mostrar_posts($atts){
           
           while($encuesta_query->have_posts()){
             $encuesta_query->the_post();
-            the_title();
+            get_template_part( 'template-parts/content/content', 'cardencuesta' );
+
           }
         }    
       }
