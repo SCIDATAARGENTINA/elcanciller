@@ -665,3 +665,40 @@ function encuestas_ajax_handler(){
  
 add_action('wp_ajax_encuestas', 'encuestas_ajax_handler'); // wp_ajax_{action}
 add_action('wp_ajax_nopriv_encuestas', 'encuestas_ajax_handler'); // wp_ajax_nopriv_{action}
+
+
+
+function mostrar_posts($atts){
+  $a = shortcode_atts( array(
+    'cantidad' => '6',
+    'offset' => '0',
+    'encuesta' => array(
+      'id' => false,
+      'pos' => 0
+    ),
+    'ad' => array(
+      'pageid' => false,
+      'field' => '',
+      'pos' => 0
+    )
+  ), $atts );
+  $title = get_the_title($a['postid']);
+  $link = get_the_permalink($a['postid']);
+
+  // Setup arguments.
+  $args = array(
+      'post_type' => 'post',
+      'posts_per_page' => $a['cantidad'],
+      'offset' => $a['offset']
+  );
+  
+  $base_query = new WP_Query( $args ); 
+
+  if($base_query->have_posts()){
+    while($base_query->have_posts()){
+      get_template_part( 'template-parts/content/content' );
+    }
+  }
+}
+
+add_shortcode( 'posts', 'mostrar_posts' );
