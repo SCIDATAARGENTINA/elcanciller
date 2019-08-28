@@ -1430,7 +1430,7 @@ ul.tagposts-list li {
 }
 
 .post-rendered .hovered {
-    /*background-color: rgba(0, 0, 0, 0.3);*/
+    background-color: rgba(0, 0, 0, 0.3);
     position: relative;
     height: 100%;
     display: flex;
