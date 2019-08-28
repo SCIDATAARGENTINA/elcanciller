@@ -46,10 +46,12 @@ $page_id  = get_queried_object_id();
 			<?php get_template_part('template-parts/sections/section', 'videos') ?>
 			<div class="ad-long"><?php the_field('anuncio_5', $page_id) ?></div>
 			<div class="loader">Cargando...</div>
-			<div class="render-posts col-3" data-quantity="2" data-offset="5">
+			<div class="col-3" data-quantity="2" data-offset="5">
 				<div id="publi2">
 					<?php the_field('anuncio_6', $page_id) ?>
 				</div>
+				<?php echo do_shortcode('[posts cantidad="2" offset="5"]') ?>
+
 			</div>
 			<div class="col-1-2">
 				<div class="advertical">
@@ -57,10 +59,7 @@ $page_id  = get_queried_object_id();
 				</div>
 				<div class="col-2-2">
 					<?php echo do_shortcode('[posts cantidad="4" offset="7"]') ?>
-				</div>
-				
-				<!--<div class="render-posts col-2-2" data-quantity="4" data-offset="7"></div>-->
-				
+				</div>				
 			</div>
 		</div><!-- outer-container -->
 
