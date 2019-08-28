@@ -672,10 +672,8 @@ function mostrar_posts($atts){
   $a = shortcode_atts( array(
     'cantidad' => '6',
     'offset' => '0',
-    'encuesta' => array(
-      'id' => false,
-      'pos' => 0
-    )
+    'encuesta_id' => false,
+    'encuesta_pos' => 0
   ), $atts );
   $title = get_the_title($a['postid']);
   $link = get_the_permalink($a['postid']);
@@ -698,8 +696,8 @@ function mostrar_posts($atts){
       get_template_part( 'template-parts/content/content' );
       echo $a['encuesta']['id'];
 
-      if($a['encuesta']['id'] != false && ($i + 1) == $a['encuesta']['pos']){
-        echo 'aca hay encuesta' . $a['encuesta']['pos'] . $a['encuesta']['id'];
+      if($a['encuesta_id'] != false && ($i + 1) == $a['encuesta_pos']){
+        echo 'aca hay encuesta' . $a['encuesta_id']  . $a['encuesta_pos'];
       }
 
       $i++;
