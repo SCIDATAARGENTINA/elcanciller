@@ -1099,7 +1099,7 @@ ul.tagposts-list li {
     order: 1;
 }
 
-.col-3 .post-rendered {
+.col-3.order-2 .post-rendered {
     order: 2;
 }
 

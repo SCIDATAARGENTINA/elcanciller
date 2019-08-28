@@ -26,7 +26,7 @@ $page_id  = get_queried_object_id();
 				<div class="col-3" data-quantity="3" data-offset="0">
 				<?php echo do_shortcode('[posts cantidad="2" offset="0" encuesta_id="48816" encuesta_pos="3"]') ?>
 				</div>
-				<div class="col-3" data-quantity="2" data-offset="3">
+				<div class="col-3 order-2" data-quantity="2" data-offset="3">
 					<div id="publi1">
 						<?php the_field('anuncio_1', $page_id) ?>
 					</div>
