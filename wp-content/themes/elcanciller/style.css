@@ -3078,6 +3078,9 @@ article .post-content .has-content-area {
     position: relative;
     margin-bottom: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    height: 37px;
 }
 
 .encuesta.card .opcion:hover {
@@ -3096,6 +3099,10 @@ article .post-content .has-content-area {
     left: 3px;
     top: 3px;
     color: #000;
+}
+
+.encuesta.card .titulo-opcion {
+    line-height: 22px;
 }
 
 
