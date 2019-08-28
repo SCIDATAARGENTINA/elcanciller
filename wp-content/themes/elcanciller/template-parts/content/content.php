@@ -25,7 +25,11 @@ if(get_field('show_author') == 'si'){
 echo '<style>' . '.post-rendered.' . $term->slug . '::before{ color:' . $cat_color . ';}' .'</style>';
 
 ?>
-
+<style>
+	.post-rendered.<?php $term->slug ?>::before{
+		 color:<?php $cat_color ?>;
+		}
+</style>
 
 <article id="post-<?php the_ID(); ?>" class="post-rendered <?php echo $term->slug ?> <?php echo $show_author ?>">
 	<div class="rendered-img" style="background-image: url('<?php echo $featured_img_url ?>')">
