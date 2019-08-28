@@ -688,10 +688,12 @@ function mostrar_posts($atts){
   $base_query = new WP_Query( $args ); 
 
   if($base_query->have_posts()){
-    $i=0;
+    $i=1;
     while($base_query->have_posts()){
       $base_query->the_post();
       $i++;
+      echo $i;
+      echo $a['encuesta_pos'];
 
       get_template_part( 'template-parts/content/content' );
       echo $a['encuesta_id'];
