@@ -47,11 +47,10 @@ $page_id  = get_queried_object_id();
 			<div class="ad-long"><?php the_field('anuncio_5', $page_id) ?></div>
 			<div class="loader">Cargando...</div>
 			<div class="col-3" data-quantity="2" data-offset="5">
+				<?php echo do_shortcode('[posts cantidad="2" offset="5"]') ?>
 				<div id="publi2">
 					<?php the_field('anuncio_6', $page_id) ?>
 				</div>
-				<?php echo do_shortcode('[posts cantidad="2" offset="5"]') ?>
-
 			</div>
 			<div class="col-1-2">
 				<div class="advertical">
