@@ -696,8 +696,22 @@ function mostrar_posts($atts){
       get_template_part( 'template-parts/content/content' );
 
       if($a['encuesta_id'] != false && $i == intval($a['encuesta_pos'])){
-        echo 'aca hay encuesta' . $a['encuesta_id']  . $a['encuesta_pos'];
-      }
+        
+        $args = array(
+            'post_type' => 'encuesta',
+            'posts_per_page' => 1,
+            'p' => $a['encuesta_id'],
+        );
+
+         $encuesta_query = new WP_Query( $args ); 
+
+        if($encuesta_query->have_posts()){
+          
+          while($encuesta_query->have_posts()){
+
+            the_title();
+
+          }
 
     }
   }
