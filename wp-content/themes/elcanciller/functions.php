@@ -696,6 +696,7 @@ function mostrar_posts($atts){
 
   if($base_query->have_posts()){
     while($base_query->have_posts()){
+      $base_query->the_post();
       get_template_part( 'template-parts/content/content' );
     }
   }
