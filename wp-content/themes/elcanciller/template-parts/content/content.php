@@ -26,8 +26,8 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ color:' . $cat_col
 
 ?>
 <style>
-	.post-rendered.<?php $term->slug ?>::before{
-		 color:<?php $cat_color ?>;
+	.post-rendered.<?php echo $term->slug ?>::before{
+		 color:<?php echo $cat_color ?>;
 		}
 </style>
 
