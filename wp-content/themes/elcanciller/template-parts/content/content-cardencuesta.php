@@ -36,7 +36,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                 ?>
                     <div class="opcion" data-id="<?php echo $post->ID ?>" data-votos_totales="<?php echo get_field('total_votos', $post->ID) ?>" data-votos="<?php echo $opcion['votos'] ?>" data-row_index="<?php echo $row_index - 1; ?>">
                         <div class="titulo-opcion">
-                            <?php echo $opcion['nombre'] ?>
+                            <span class="num-opcion"><?php echo $row_index; ?></span><?php echo $opcion['nombre'] ?>
                         </div><!-- titulo opcion -->
                     </div><!-- opcion -->
 
