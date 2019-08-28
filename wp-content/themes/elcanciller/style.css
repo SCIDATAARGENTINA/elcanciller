@@ -1430,7 +1430,7 @@ ul.tagposts-list li {
 }
 
 .post-rendered .hovered {
-    background-color: rgba(0, 0, 0, 0.3);
+    /*background-color: rgba(0, 0, 0, 0.3);*/
     position: relative;
     height: 100%;
     display: flex;
@@ -1440,6 +1440,7 @@ ul.tagposts-list li {
     padding: 10px;
     opacity: 1;
     transition: 300ms ease;
+    box-shadow: inset 39px -110px 48px 0px rgba(0, 0, 0, 0.50)
 }
 
 .hovered .action-links {
