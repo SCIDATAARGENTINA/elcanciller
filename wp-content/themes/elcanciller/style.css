@@ -3071,6 +3071,7 @@ article .post-content .has-content-area {
     color: #fff;
     font-family: "Lato";
     padding: 5px 10px;
+    padding-left: 50px;
     font-size: 14px;
     background: rgba(0, 0, 0, 0.30);
     transition: 300ms ease;
@@ -3083,7 +3084,7 @@ article .post-content .has-content-area {
     align-items: center;
     background: #e7d117;
     height: 100%;
-    width: auto;
+    width: 35px;
     border-radius: 40px;
     position: absolute;
     left: 0px;
