@@ -22,7 +22,7 @@ if(get_field('show_author') == 'si'){
 	$show_author = 'show-author';
 }
 
-echo '<style>' . '.post-rendered.' . $term->slug . '::before{ color:' . $cat_color . ';}' .'</style>';
+echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:' . $cat_color . ';}' .'</style>';
 
 ?>
 <style>
