@@ -3076,6 +3076,8 @@ article .post-content .has-content-area {
     background: rgba(0, 0, 0, 0.30);
     transition: 300ms ease;
     position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .encuesta.card .num-opcion {
