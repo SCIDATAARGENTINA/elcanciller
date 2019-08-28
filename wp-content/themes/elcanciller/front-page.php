@@ -55,8 +55,12 @@ $page_id  = get_queried_object_id();
 				<div class="advertical">
 					<?php the_field('anuncio_7', $page_id) ?>
 				</div>
-				<div class="render-posts col-2-2" data-quantity="4" data-offset="7"></div>
-				<?php echo do_shortcode('[posts cantidad="4" offset="7"]') ?>
+				<div class="col-2-2">
+					<?php echo do_shortcode('[posts cantidad="4" offset="7"]') ?>
+				</div>
+				
+				<!--<div class="render-posts col-2-2" data-quantity="4" data-offset="7"></div>-->
+				
 			</div>
 		</div><!-- outer-container -->
 
