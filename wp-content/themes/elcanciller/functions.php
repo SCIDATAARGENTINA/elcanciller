@@ -696,7 +696,7 @@ function mostrar_posts($atts){
       get_template_part( 'template-parts/content/content' );
       echo $a['encuesta_id'];
 
-      if($a['encuesta_id'] != false && ($i + 1) == $a['encuesta_pos']){
+      if($a['encuesta_id'] != false ){
         echo 'aca hay encuesta' . $a['encuesta_id']  . $a['encuesta_pos'];
       }
 
