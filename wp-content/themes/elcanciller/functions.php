@@ -708,10 +708,11 @@ function mostrar_posts($atts){
         if($encuesta_query->have_posts()){
           
           while($encuesta_query->have_posts()){
-
+            $encuesta_query->the_post();
             the_title();
-
           }
+        }    
+      }
 
     }
   }
