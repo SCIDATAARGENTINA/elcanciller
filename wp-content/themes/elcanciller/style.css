@@ -3110,11 +3110,19 @@ article .post-content .has-content-area {
     transform: translateX(10px);
     opacity: 0;
     transition: 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .encuesta.card .opcion:hover .total {
     opacity: 1;
     transform: translateX(0px);
+}
+
+.total .result {
+    font-size: 10px;
+    margin-left: 5px;
 }
 
 
