@@ -692,11 +692,8 @@ function mostrar_posts($atts){
     while($base_query->have_posts()){
       $base_query->the_post();
       $i++;
-      echo $i;
-      echo $a['encuesta_pos'];
 
       get_template_part( 'template-parts/content/content' );
-      echo $a['encuesta_id'];
 
       if($a['encuesta_id'] != false && $i == intval($a['encuesta_pos'])){
         echo 'aca hay encuesta' . $a['encuesta_id']  . $a['encuesta_pos'];
