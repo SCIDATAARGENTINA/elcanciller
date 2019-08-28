@@ -2516,6 +2516,10 @@ article .post-content .has-content-area {
     padding-right: 10px;
 }
 
+.comment-notes {
+    margin: 0px;
+}
+
 .comment-form .comment-notes,
 .comment-form label {
     font-size: 14px;
