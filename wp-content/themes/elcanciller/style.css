@@ -3105,5 +3105,17 @@ article .post-content .has-content-area {
     line-height: 22px;
 }
 
+.encuesta.card .total {
+    line-height: 22px;
+    transform: translateX(10px);
+    opacity: 0;
+    transition: 300ms ease;
+}
+
+.encuesta.card .opcion:hover .total {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 
 /* END ENCUESTAS*/
