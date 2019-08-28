@@ -3080,6 +3080,10 @@ article .post-content .has-content-area {
     cursor: pointer;
 }
 
+.encuesta.card .opcion:hover {
+    background: rgba(0, 0, 0, 0.60);
+}
+
 .encuesta.card .num-opcion {
     display: flex;
     justify-content: center;
