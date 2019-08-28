@@ -1450,7 +1450,7 @@ ul.tagposts-list li {
     align-items: center;
     width: 100%;
     position: relative;
-    top: 50px;
+    top: 60px;
     opacity: 0;
     transform: translateY(10px);
     transition: 300ms ease;
