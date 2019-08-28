@@ -17,13 +17,11 @@ $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 ?>
 
-<div id="encuesta-<?php echo $post->ID ?>" class="encuesta card">
+<div id="encuesta-<?php echo $post->ID ?>" class="encuesta card" style="background-image : url('<?php echo $featured_img_url ?>')">
     <div class="encuesta-container">
         <div class="encabezado">
-            <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/08/encuesta-logo.svg" alt="">
             <div class="titulo">
-                <h3><?php the_title(); ?></h3>
-                <p><?php the_field('subtitulo'); ?></p>
+                <h3><?php the_field('subtitulo'); ?></h3>
             </div><!-- titulo -->
         </div>
         <div class="opciones">
