@@ -1414,7 +1414,7 @@ ul.tagposts-list li {
 
 .post-rendered.show-author .rendered-img .render-author {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     padding: 8px 16px;
@@ -1451,7 +1451,7 @@ ul.tagposts-list li {
     width: 100%;
     position: relative;
     top: 50px;
-    opacity: 1;
+    opacity: 0;
     transform: translateY(0px);
     transition: 300ms ease;
 }
@@ -1531,7 +1531,7 @@ ul.tagposts-list li {
 /* HOVER EFFECT*/
 
 .post-rendered.show-author:hover .render-author {
-    opacity: 0;
+    opacity: 1;
 }
 
 .post-rendered:hover .comentarios {
