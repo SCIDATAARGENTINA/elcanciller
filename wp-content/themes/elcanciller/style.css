@@ -1379,7 +1379,7 @@ ul.tagposts-list li {
     bottom: -23px;
     left: -5px;
     z-index: 2;
-    opacity: 0;
+    opacity: 1;
     transition: 300ms ease;
 }
 
@@ -1424,7 +1424,7 @@ ul.tagposts-list li {
     justify-content: flex-end;
     align-items: flex-start;
     padding: 10px;
-    opacity: 0;
+    opacity: 1;
     transition: 300ms ease;
 }
 
@@ -1437,8 +1437,8 @@ ul.tagposts-list li {
     width: 100%;
     position: relative;
     top: 50px;
-    opacity: 0;
-    transform: translateY(10px);
+    opacity: 1;
+    transform: translateY(0px);
     transition: 300ms ease;
 }
 
