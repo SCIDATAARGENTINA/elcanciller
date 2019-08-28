@@ -23,12 +23,14 @@ $page_id  = get_queried_object_id();
 			<div class="content">
 
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
-				<div class="loader">Cargando...</div>
-				<div class="render-posts col-3" data-quantity="3" data-offset="0"></div>
-				<div class="render-posts col-3" data-quantity="2" data-offset="3">
+				<div class="col-3" data-quantity="3" data-offset="0">
+				<?php echo do_shortcode('[posts cantidad="3" offset="0"]') ?>
+				</div>
+				<div class="col-3" data-quantity="2" data-offset="3">
 					<div id="publi1">
 						<?php the_field('anuncio_1', $page_id) ?>
 					</div>
+					<?php echo do_shortcode('[posts cantidad="2" offset="3"]') ?>
 				</div>
 				<?php include( locate_template( 'template-parts/sections/section-encuesta.php', false, false ) ); ?>
 				<?php //get_template_part('template-parts/sections/section', 'encuesta') ?> 
@@ -45,7 +47,6 @@ $page_id  = get_queried_object_id();
 			<div class="ad-long"><?php the_field('anuncio_4', $page_id) ?></div>
 			<?php get_template_part('template-parts/sections/section', 'videos') ?>
 			<div class="ad-long"><?php the_field('anuncio_5', $page_id) ?></div>
-			<div class="loader">Cargando...</div>
 			<div class="col-3" data-quantity="2" data-offset="5">
 				<div id="publi2">
 					<?php the_field('anuncio_6', $page_id) ?>
