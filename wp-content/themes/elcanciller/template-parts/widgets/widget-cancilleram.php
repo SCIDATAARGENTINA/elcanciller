@@ -60,8 +60,23 @@
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <style type="text/css">
         #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        #mc_embed_signup input.email {
+            font-family: "Bree Serif";
+            font-size: 15px;
+            border: 1px solid #ABB0B2;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            color: #343434;
+            background-color: #fff;
+            box-sizing: border-box;
+            height: 32px;
+            padding: 0px 0.4em;
+            display: inline-block;
+            margin: 0;
+            width: auto;
+            vertical-align: top;
+            }
     </style>
     <div id="mc_embed_signup">
     <form action="https://elcanciller.us15.list-manage.com/subscribe/post?u=5b406821a12a44b764db5c9db&amp;id=58158a7c5f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
