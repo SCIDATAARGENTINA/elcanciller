@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
             if (isNaN(percentVotos)) {
                 percentVotos = "100";
             }
-
+            console.log(encuestaEl);
             if (encuestaEl.hasClass('card')) {
                 console.log('es un card');
                 return;
