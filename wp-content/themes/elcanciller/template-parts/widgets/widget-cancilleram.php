@@ -79,6 +79,10 @@
                 background: #e7d117 !important;
                 border-radius: 0px;
                 color: #111;
+                width: 100%;
+            }
+            #mc_embed_signup .clear{
+                display: block;
             }
     </style>
     <div id="mc_embed_signup">
