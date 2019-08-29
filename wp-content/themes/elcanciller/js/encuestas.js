@@ -9,13 +9,7 @@ jQuery(document).ready(function($) {
 
     let getEncuesta = (encuestaId) => {
 
-        $.ajax({
-            url: `http://142.93.24.13/wp-json/wp/v2/encuestas/${encuestaId}`,
-            type: 'GET',
-            success: function(data) {
-                return data;
-            }
-        });
+        return $.get(`http://142.93.24.13/wp-json/wp/v2/encuestas/${encuestaId}`);
 
     };
 
@@ -121,7 +115,11 @@ jQuery(document).ready(function($) {
         opcVotos = $(this).attr('data-votos');
         nOpcion = $(this).attr('data-row_index');
 
-        console.log(getEncuesta(idEncuesta));
+        let encuesta = getEncuesta(idEncuesta);
+
+        encuesta.done(function(data) {
+            console.log(data);
+        });
 
         if (validateIfVoted(idEncuesta)) {
             console.log('Ya votaste esta encuesta.');
