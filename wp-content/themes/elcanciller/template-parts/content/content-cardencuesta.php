@@ -39,7 +39,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                             <span class="num-opcion"><?php echo $row_index; ?></span><?php echo $opcion['nombre'] ?>
                         </div><!-- titulo opcion -->
                         <div class="total">
-                            <i class="far fa-thumbs-up"></i><div class="result">22%</div>
+                            <i class="far fa-thumbs-up"></i><div class="result"></div>
                         </div>
                     </div><!-- opcion -->
 
