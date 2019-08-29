@@ -26,13 +26,13 @@ $page_id  = get_queried_object_id();
 				<div class="col-3" data-quantity="3" data-offset="0">
 				<?php echo do_shortcode('[posts cantidad="2" offset="0" encuesta_id="48839" encuesta_pos="3"]') ?>
 				</div>
+				<?php include( locate_template( 'template-parts/sections/section-encuesta.php', false, false ) ); ?>
 				<div class="col-3 order-2" data-quantity="2" data-offset="3">
 					<div id="publi1">
 						<?php the_field('anuncio_1', $page_id) ?>
 					</div>
-					<?php echo do_shortcode('[posts cantidad="2" offset="3"]') ?>
+					<?php echo do_shortcode('[posts cantidad="2" offset="2"]') ?>
 				</div>
-				<?php include( locate_template( 'template-parts/sections/section-encuesta.php', false, false ) ); ?>
 				<?php //get_template_part('template-parts/sections/section', 'encuesta') ?> 
 				<?php get_template_part('template-parts/sections/section', 'opinion') ?>
 
@@ -51,14 +51,14 @@ $page_id  = get_queried_object_id();
 				<div id="publi2">
 					<?php the_field('anuncio_6', $page_id) ?>
 				</div>
-				<?php echo do_shortcode('[posts cantidad="2" offset="5"]') ?>
+				<?php echo do_shortcode('[posts cantidad="2" offset="4"]') ?>
 			</div>
 			<div class="col-1-2">
 				<div class="advertical">
 					<?php the_field('anuncio_7', $page_id) ?>
 				</div>
 				<div class="col-2-2">
-					<?php echo do_shortcode('[posts cantidad="4" offset="7"]') ?>
+					<?php echo do_shortcode('[posts cantidad="4" offset="6"]') ?>
 				</div>				
 			</div>
 		</div><!-- outer-container -->
