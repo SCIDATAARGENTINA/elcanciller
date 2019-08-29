@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
         $.ajax({
             url: `http://142.93.24.13/wp-json/wp/v2/encuestas/${encuestaId}`,
             data: data,
-            success: function() {
+            success: function(data) {
                 return data;
             }
         });
