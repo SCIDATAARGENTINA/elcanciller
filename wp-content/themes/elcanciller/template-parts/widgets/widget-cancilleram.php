@@ -64,6 +64,7 @@
             font-family: "Bree Serif";
             font-size: 15px;
             border: 0px;
+            border-radius: 0px;
             color: #111;
             background-color: #fff;
             box-sizing: border-box;
