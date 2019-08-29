@@ -84,8 +84,6 @@ jQuery(document).ready(function($) {
                 totVotos = data.acf.total_votos;
                 opcVotos = data.acf.opciones[nOpcion].opcion.votos;
 
-                console.log('after del vot', totVotos, opcVotos);
-
                 let percentVotos = (opcVotos * 100) / totVotos;
 
                 if (isNaN(percentVotos)) {
@@ -128,6 +126,9 @@ jQuery(document).ready(function($) {
 
         if (validateIfVoted(idEncuesta)) {
             console.log('Ya votaste esta encuesta.');
+            new Noty({
+                text: 'Ya votaste esta encuesta.'
+            }).show();
             return;
         }
         setCookie(idEncuesta);
@@ -135,8 +136,6 @@ jQuery(document).ready(function($) {
 
             totVotos = data.acf.total_votos;
             opcVotos = data.acf.opciones[nOpcion].opcion.votos;
-
-            console.log('antes del vot', totVotos, opcVotos);
 
             let updateData = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
 
