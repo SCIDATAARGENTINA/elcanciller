@@ -453,7 +453,7 @@ input:-internal-autofill-selected {
 
 .trending-post .titular {
     display: flex;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 .trending-post .titular a {
@@ -475,7 +475,7 @@ input:-internal-autofill-selected {
 
 .trending-post .category a h3 {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 27px;
 }
 
 .trending-post .category img {
@@ -488,7 +488,9 @@ input:-internal-autofill-selected {
 }
 
 .trending-post .titular h2 {
-    font-size: 27px;
+    font-size: 34px;
+    margin: 0;
+    height: 100%;
 }
 
 
