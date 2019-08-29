@@ -126,8 +126,17 @@ jQuery(document).ready(function($) {
 
         if (validateIfVoted(idEncuesta)) {
             console.log('Ya votaste esta encuesta.');
+            Noty.overrideDefaults({
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated fadeInRight',
+                    close: 'animated fadeOutRight'
+                }
+            });
             new Noty({
-                text: 'Ya votaste esta encuesta.'
+                theme: 'mint',
+                text: 'Ya votaste esta encuesta.',
+                timeout: '1000'
             }).show();
             return;
         }
