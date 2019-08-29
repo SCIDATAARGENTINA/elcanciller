@@ -74,8 +74,8 @@
             width: auto;
             vertical-align: top;
             }
-            #mc_embed_signup input.[type="submit"]{
-                background: #e7d117;
+            #mc_embed_signup input[type="submit"]{
+                background: #e7d117 !important;
                 border-radius: 0px;
                 color: #111;
             }
