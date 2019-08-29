@@ -79,6 +79,11 @@ jQuery(document).ready(function($) {
                 percentVotos = "100";
             }
 
+            if (encuestaEl.hasClass('card')) {
+                console.log('es un card');
+                return;
+            }
+
             el.find('.image-container').append('<div class="resultados">' + Math.round(percentVotos) + '%</div>');
 
             el.find('.resultados').animate({ height: percentVotos + "%" }, 300);

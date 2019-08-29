@@ -3060,7 +3060,7 @@ article .post-content .has-content-area {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 15px 10px;
 }
 
 .encuesta.card .opcion {
