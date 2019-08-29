@@ -61,28 +61,35 @@
     <style type="text/css">
         #mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
         #mc_embed_signup input.email {
-            font-family: "Bree Serif";
-            font-size: 15px;
-            border: 0px;
-            border-radius: 0px;
-            color: #111;
-            background-color: #fff;
-            box-sizing: border-box;
-            height: 32px;
-            padding: 0px 0.4em;
-            display: inline-block;
-            margin: 0;
-            width: auto;
-            vertical-align: top;
+                font-family: "Bree Serif";
+                font-size: 13px;
+                border: 0px;
+                border-radius: 0px;
+                color: #111;
+                background-color: #fff;
+                box-sizing: border-box;
+                height: 32px;
+                padding: 0px 0.4em;
+                display: inline-block;
+                margin: 0;
+                width: 100%;
+                vertical-align: top;
+                text-align: left;
             }
             #mc_embed_signup input[type="submit"]{
                 background: #e7d117 !important;
                 border-radius: 0px;
                 color: #111;
+                font-size: 13px;
                 width: 100%;
+                padding: 0 8px;
+                font-family: "Bree Serif";
             }
             #mc_embed_signup .clear{
                 display: block;
+            }
+            #mc_embed_signup_scroll{
+                display: flex;
             }
     </style>
     <div id="mc_embed_signup">
