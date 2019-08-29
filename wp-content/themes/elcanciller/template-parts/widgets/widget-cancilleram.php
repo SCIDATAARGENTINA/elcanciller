@@ -59,12 +59,12 @@
    <!-- Begin Mailchimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <style type="text/css">
-        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        #mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
         #mc_embed_signup input.email {
             font-family: "Bree Serif";
             font-size: 15px;
             border: 0px;
-            color: #343434;
+            color: #111;
             background-color: #fff;
             box-sizing: border-box;
             height: 32px;
@@ -74,6 +74,11 @@
             width: auto;
             vertical-align: top;
             }
+            #mc_embed_signup input.[type="submit"]{
+                background: #e7d117;
+                border-radius: 0px;
+                color: #111;
+            }
     </style>
     <div id="mc_embed_signup">
     <form action="https://elcanciller.us15.list-manage.com/subscribe/post?u=5b406821a12a44b764db5c9db&amp;id=58158a7c5f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -82,7 +87,7 @@
         <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Correo Electrónico" required>
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5b406821a12a44b764db5c9db_58158a7c5f" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        <div class="clear"><input type="submit" value="Suscribirme" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
         </div>
     </form>
     </div>
