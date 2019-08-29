@@ -3129,5 +3129,10 @@ article .post-content .has-content-area {
     margin-left: 5px;
 }
 
+.encuesta.card .voted .total {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
 
 /* END ENCUESTAS*/
