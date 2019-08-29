@@ -119,32 +119,32 @@ jQuery(document).ready(function($) {
 
         if (validateIfVoted(idEncuesta)) {
             console.log('Ya votaste esta encuesta.');
-            return;
-        } else {
-            setCookie(idEncuesta);
-            encuesta.done(function(data) {
+            //return;
+        } //else {
+        setCookie(idEncuesta);
+        encuesta.done(function(data) {
 
-                totVotos = data.acf.total_votos;
-                opcVotos = data.acf.opciones[nOpcion].opcion.votos;
+            totVotos = data.acf.total_votos;
+            opcVotos = data.acf.opciones[nOpcion].opcion.votos;
 
-                console.log(totVotos, opcVotos);
+            console.log(totVotos, opcVotos);
 
-                //let updateData = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
+            //let updateData = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
 
-                $.ajax({
-                    url: url,
-                    type: 'POST',
-                    data: updateData,
-                    success: function(result) {
-                        votoRealizado(idEncuesta);
-                    },
-                    error: function(errorThrown) {
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: updateData,
+                success: function(result) {
+                    votoRealizado(idEncuesta);
+                },
+                error: function(errorThrown) {
 
-                    }
-                });
-
+                }
             });
-        }
+
+        });
+        //}
 
     });
 
