@@ -7,6 +7,18 @@ jQuery(document).ready(function($) {
 
     var url = encuestas_params.ajaxurl;
 
+    let getEncuesta = (encuestaId) => {
+
+        $.ajax({
+            url: `http://142.93.24.13/wp-json/wp/v2/encuestas/${encuestaId}`,
+            data: data,
+            success: function() {
+                return data;
+            }
+        });
+
+    };
+
     let createOpcData = (idEncuesta, totVotos, opcVotos, nOpcion) => {
 
         let percentVotos = (opcVotos * 100) / totVotos;
@@ -108,6 +120,8 @@ jQuery(document).ready(function($) {
         totVotos = $(this).attr('data-votos_totales');
         opcVotos = $(this).attr('data-votos');
         nOpcion = $(this).attr('data-row_index');
+
+        console.log(getEncuesta(idEncuesta));
 
         if (validateIfVoted(idEncuesta)) {
             console.log('Ya votaste esta encuesta.');
