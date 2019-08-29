@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
 
             if (encuestaEl.hasClass('card')) {
 
-                el.find('.total .result').text(percentVotos + '%');
+                el.find('.total .result').text(Math.round(percentVotos) + '%');
 
                 el.addClass('voted');
                 return;
