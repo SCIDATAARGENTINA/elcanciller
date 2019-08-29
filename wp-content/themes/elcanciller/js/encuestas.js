@@ -80,7 +80,6 @@ jQuery(document).ready(function($) {
             }
 
             if (encuestaEl.hasClass('card')) {
-                console.log('es un card');
 
                 el.find('.total .result').text(percentVotos + '%');
 
