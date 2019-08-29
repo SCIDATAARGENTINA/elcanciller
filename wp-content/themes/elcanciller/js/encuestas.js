@@ -111,38 +111,40 @@ jQuery(document).ready(function($) {
 
     $('.opcion').click(function() {
         idEncuesta = $(this).attr('data-id');
-        totVotos = $(this).attr('data-votos_totales');
-        opcVotos = $(this).attr('data-votos');
         nOpcion = $(this).attr('data-row_index');
 
         let encuesta = getEncuesta(idEncuesta);
 
-        encuesta.done(function(data) {
-            console.log(data);
-        });
+
 
         if (validateIfVoted(idEncuesta)) {
             console.log('Ya votaste esta encuesta.');
             return;
+        } else {
+            setCookie(idEncuesta);
+            encuesta.done(function(data) {
+
+                totVotos = data.acf.total_votos;
+                opcVotos = data.acf.opciones[nOpcion].opcion.votos;
+
+                console.log(totVotos, opcVotos);
+
+                //let updateData = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
+
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: updateData,
+                    success: function(result) {
+                        votoRealizado(idEncuesta);
+                    },
+                    error: function(errorThrown) {
+
+                    }
+                });
+
+            });
         }
-
-
-        let data = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
-
-
-
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: data,
-            success: function(result) {
-                setCookie(idEncuesta);
-                votoRealizado(idEncuesta);
-            },
-            error: function(errorThrown) {
-
-            }
-        });
 
     });
 
