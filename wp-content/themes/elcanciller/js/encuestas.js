@@ -78,9 +78,14 @@ jQuery(document).ready(function($) {
             if (isNaN(percentVotos)) {
                 percentVotos = "100";
             }
-            console.log(encuestaEl);
+
             if (encuestaEl.hasClass('card')) {
                 console.log('es un card');
+
+                el.find('.total .result').text(percentVotos + '%');
+
+                el.addClass('voted');
+                return;
             }
 
             el.find('.image-container').append('<div class="resultados">' + Math.round(percentVotos) + '%</div>');
