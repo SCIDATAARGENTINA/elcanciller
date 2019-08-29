@@ -474,8 +474,9 @@ input:-internal-autofill-selected {
 }
 
 .trending-post .category a h3 {
-    margin-bottom: 10px;
     font-size: 27px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .trending-post .category img {
