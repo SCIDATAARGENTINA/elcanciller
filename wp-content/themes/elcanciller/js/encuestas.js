@@ -75,27 +75,36 @@ jQuery(document).ready(function($) {
         encuestaEl.find('.opcion').each(function() {
 
             let el = $(this);
+            let nOpcion = $(this).attr('data-row_index');
 
-            let totVotos = el.attr('data-votos_totales');
-            let opcVotos = el.attr('data-votos');
+            let encuesta = getEncuesta(idEncuesta);
 
-            let percentVotos = (opcVotos * 100) / totVotos;
+            encuesta.done(function(data) {
 
-            if (isNaN(percentVotos)) {
-                percentVotos = "100";
-            }
+                totVotos = data.acf.total_votos;
+                opcVotos = data.acf.opciones[nOpcion].opcion.votos;
 
-            if (encuestaEl.hasClass('card')) {
+                console.log('after del vot', totVotos, opcVotos);
 
-                el.find('.total .result').text(Math.round(percentVotos) + '%');
+                let percentVotos = (opcVotos * 100) / totVotos;
 
-                el.addClass('voted');
-                return;
-            }
+                if (isNaN(percentVotos)) {
+                    percentVotos = "100";
+                }
 
-            el.find('.image-container').append('<div class="resultados">' + Math.round(percentVotos) + '%</div>');
+                if (encuestaEl.hasClass('card')) {
 
-            el.find('.resultados').animate({ height: percentVotos + "%" }, 300);
+                    el.find('.total .result').text(Math.round(percentVotos) + '%');
+
+                    el.addClass('voted');
+                    return;
+                }
+
+                el.find('.image-container').append('<div class="resultados">' + Math.round(percentVotos) + '%</div>');
+
+                el.find('.resultados').animate({ height: percentVotos + "%" }, 300);
+
+            });
 
         });
 
@@ -119,17 +128,17 @@ jQuery(document).ready(function($) {
 
         if (validateIfVoted(idEncuesta)) {
             console.log('Ya votaste esta encuesta.');
-            //return;
-        } //else {
+            return;
+        }
         setCookie(idEncuesta);
         encuesta.done(function(data) {
 
             totVotos = data.acf.total_votos;
             opcVotos = data.acf.opciones[nOpcion].opcion.votos;
 
-            console.log(totVotos, opcVotos);
+            console.log('antes del vot', totVotos, opcVotos);
 
-            //let updateData = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
+            let updateData = createOpcData(idEncuesta, totVotos, opcVotos, nOpcion);
 
             $.ajax({
                 url: url,
@@ -144,7 +153,7 @@ jQuery(document).ready(function($) {
             });
 
         });
-        //}
+
 
     });
 
