@@ -3045,6 +3045,10 @@ article .post-content .has-content-area {
     text-align: center;
 }
 
+.encuesta.card .encabezado {
+    width: 100%;
+}
+
 .encuesta.card .encuesta-container {
     display: flex;
     justify-content: center;
