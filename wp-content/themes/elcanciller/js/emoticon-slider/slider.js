@@ -5,6 +5,8 @@ jQuery(document).ready(function($) {
     slider.each(function() {
         let sliderId = $(this).attr('id');
 
+        console.log($(this));
+
         let sliderInstance = new rSlider({
             target: $(this),
             values: ['1', '2', '3', '4', '5'],
