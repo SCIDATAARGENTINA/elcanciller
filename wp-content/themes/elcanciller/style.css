@@ -1550,7 +1550,7 @@ ul.tagposts-list li {
     opacity: 1;
 }
 
-.post-rendered:hover .hovered .action-links {
+.post-rendered:hover .hovered .action-container {
     transform: translateY(0px);
     opacity: 1;
 }
@@ -1907,6 +1907,9 @@ ul.tagposts-list li {
     position: relative;
     top: auto !important;
     opacity: 0;
+}
+
+.opinion .hovered .action-container {
     transform: translateY(10px);
     transition: 300ms ease;
 }

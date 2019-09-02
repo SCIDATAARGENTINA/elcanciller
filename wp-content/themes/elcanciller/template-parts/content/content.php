@@ -29,15 +29,17 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
 <article id="post-<?php the_ID(); ?>" class="post-rendered <?php echo $term->slug ?> <?php echo $show_author ?>">
 	<div class="rendered-img" style="background-image: url('<?php echo $featured_img_url ?>')">
 		<div class="hovered">
-			<div class="action-links">
-				<i class="fab fa-twitter" data-text="<?php the_title(); ?>" data-link="<?php the_permalink(); ?>"></i>
-				<i class="fab fa-facebook-f" data-title="<?php the_title(); ?>" data-img="<?php echo $featured_img_url ?>" data-text="<?php echo get_the_excerpt(); ?>" data-link="<?php the_permalink(); ?>"></i>
-				<a href="<?php the_permalink(); ?>"><i class="fas fa-sign-out-alt"></i></a>
-				<i class="fas fa-heart like" data-id="<?php the_ID() ?>" data-count="<?php echo get_field('likes') ?>"></i>
-			</div><!-- action-links -->
-			<div class="slider-container">
-				<div id="slider-<?php the_ID(); ?>" class="slider"></div>
-			</div>
+			<div class="actions-container">
+				<div class="action-links">
+					<i class="fab fa-twitter" data-text="<?php the_title(); ?>" data-link="<?php the_permalink(); ?>"></i>
+					<i class="fab fa-facebook-f" data-title="<?php the_title(); ?>" data-img="<?php echo $featured_img_url ?>" data-text="<?php echo get_the_excerpt(); ?>" data-link="<?php the_permalink(); ?>"></i>
+					<a href="<?php the_permalink(); ?>"><i class="fas fa-sign-out-alt"></i></a>
+					<i class="fas fa-heart like" data-id="<?php the_ID() ?>" data-count="<?php echo get_field('likes') ?>"></i>
+				</div><!-- action-links -->
+				<div class="slider-container">
+					<div id="slider-<?php the_ID(); ?>" class="slider"></div>
+				</div>
+			</div><!-- actions-container -->
 			<div class="post-data">
 				<div class="post-title">
 					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
