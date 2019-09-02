@@ -1453,8 +1453,6 @@ ul.tagposts-list li {
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: relative;
-    top: 60px;
     transition: 300ms ease;
 }
 
@@ -1910,6 +1908,12 @@ ul.tagposts-list li {
     transform: translateY(10px);
     transition: 300ms ease;
     opacity: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .opinion:hover .hovered .action-links {
@@ -3147,10 +3151,9 @@ article .post-content .has-content-area {
 /*SLIDER*/
 
 .slider-container {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    width: 80%;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 .slider {
