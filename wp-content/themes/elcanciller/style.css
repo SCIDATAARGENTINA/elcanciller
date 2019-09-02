@@ -3151,7 +3151,7 @@ article .post-content .has-content-area {
     left: 20px;
     width: 80%;
     border-radius: 30px;
-    background: transparent;
+    background: transparent !important;
     border: 2px solid white;
     box-shadow: none !important;
 }
