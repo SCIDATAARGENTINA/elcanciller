@@ -3143,7 +3143,11 @@ article .post-content .has-content-area {
 /* END ENCUESTAS*/
 
 .rs-container {
-    width: 100%;
+    width: 80%;
+    position: absolute;
+    left: 33px;
+    top: 60px;
+    margin: 0 auto;
 }
 
 .rs-container .rs-scale {
