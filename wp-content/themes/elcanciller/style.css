@@ -1906,12 +1906,12 @@ ul.tagposts-list li {
     width: 100%;
     position: relative;
     top: auto !important;
-    opacity: 0;
 }
 
 .opinion .hovered .action-container {
     transform: translateY(10px);
     transition: 300ms ease;
+    opacity: 0;
 }
 
 .opinion:hover .hovered .action-links {
