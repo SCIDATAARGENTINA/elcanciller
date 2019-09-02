@@ -3155,6 +3155,7 @@ article .post-content .has-content-area {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
+    z-index: 5;
 }
 
 .slider {
