@@ -3150,6 +3150,9 @@ article .post-content .has-content-area {
     top: 30px;
     left: 20px;
     width: 80%;
+}
+
+.slider {
     border-radius: 30px;
     background: transparent !important;
     border: 2px solid white;
