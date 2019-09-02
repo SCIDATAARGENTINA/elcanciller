@@ -3150,6 +3150,11 @@ article .post-content .has-content-area {
 
 /*SLIDER*/
 
+.actions-container {
+    z-index: 20;
+    position: relative;
+}
+
 .slider-container {
     width: 90%;
     display: block;
