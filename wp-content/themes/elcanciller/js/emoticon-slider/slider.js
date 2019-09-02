@@ -15,9 +15,9 @@ jQuery(document).ready(function($) {
             tooltip: false,
             scale: true,
             onChange: function(vals) {
-                $('.rs-pointer').append('<img id="emoticon" src="http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/' + vals + '.png" style="width: 30px;height: 30px;margin-top: -5px;margin-left: -1px;">');
                 $('.rs-pointer').empty();
                 $('.rs-pointer').append('<img id="emoticon" src="http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/' + vals + '.png" style="width: 30px;height: 30px;margin-top: -5px;margin-left: -1px;">');
+                //$('.rs-pointer').append('<img id="emoticon" src="http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/' + vals + '.png" style="width: 30px;height: 30px;margin-top: -5px;margin-left: -1px;">');
             }
         });
     });
