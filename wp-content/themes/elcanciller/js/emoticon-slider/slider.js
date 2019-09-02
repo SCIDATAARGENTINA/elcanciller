@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 
         $(this)[0].noUiSlider.on('update', function(values, handle) {
 
-            console.log(values, handle);
+            console.log(parseInt(values), handle);
         });
 
     });
