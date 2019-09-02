@@ -38,26 +38,6 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
 			<div class="slider-container">
 				<input type="text" id="slider-<?php the_ID(); ?>" class="slider" />
 			</div>
-			<script>
-
-			let sliderId = '#slider-<?php the_ID() ?>';
-
-			let slider = new rSlider({
-				target: sliderId,
-				values: ['1', '2', '3', '4', '5'],
-				range: false,
-				set: ['1'],
-				tooltip: false,
-				scale: true,
-				onChange: function(vals) {
-					$('.rs-pointer').append('<img id="emoticon" src="' + vals + '.png" style="width: 30px;height: 30px;margin-top: -5px;margin-left: -1px;">');
-					$('.rs-pointer').empty();
-					$('.rs-pointer').append('<img id="emoticon" src="' + vals + '.png" style="width: 30px;height: 30px;margin-top: -5px;margin-left: -1px;">');
-				}
-			});
-
-			
-			</script>
 			<div class="post-data">
 				<div class="post-title">
 					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
