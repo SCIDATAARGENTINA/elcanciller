@@ -1378,7 +1378,7 @@ ul.tagposts-list li {
 /* ---------------------------*/
 
 .post-rendered {
-    height: 300px;
+    height: 320px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -1479,11 +1479,11 @@ ul.tagposts-list li {
     color: #c4afa1;
     transform: rotate(270deg);
     position: absolute;
-    bottom: 48%;
+    bottom: 40%;
     font-size: 16px;
     height: 40px;
     width: 100%;
-    left: -112px;
+    left: -116px;
 }
 
 .hovered .post-category a {
@@ -3158,3 +3158,5 @@ article .post-content .has-content-area {
     border: 2px solid white;
     box-shadow: none !important;
 }
+
+.noUi-handle {}
