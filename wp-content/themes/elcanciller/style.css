@@ -3157,6 +3157,7 @@ article .post-content .has-content-area {
 
 .rs-container .rs-scale span ins {
     color: transparent;
+    background: transparent;
 }
 
 .rs-container .rs-bg {
