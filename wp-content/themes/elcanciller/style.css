@@ -1906,7 +1906,7 @@ ul.tagposts-list li {
     top: auto !important;
 }
 
-.opinion .hovered .actions-container {
+.hovered .actions-container {
     transform: translateY(10px);
     transition: 300ms ease;
     opacity: 0;
