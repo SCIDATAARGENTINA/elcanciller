@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
     slider.each(function() {
         let sliderId = $(this).attr('id');
 
-        noUiSlider.create($(this), {
+        noUiSlider.create($(this)[0], {
             start: [0],
             step: 10,
             behaviour: 'tap-drag',
