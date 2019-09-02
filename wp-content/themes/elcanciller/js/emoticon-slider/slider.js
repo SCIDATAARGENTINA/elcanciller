@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         console.log($(this));
 
         let sliderInstance = new rSlider({
-            target: $(this),
+            target: $(this)[0],
             values: ['1', '2', '3', '4', '5'],
             range: false,
             set: ['1'],
