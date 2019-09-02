@@ -3198,3 +3198,7 @@ article .post-content .has-content-area {
     width: 30px;
     height: 30px;
 }
+
+.rs-pointer {
+    transition: 300ms ease;
+}
