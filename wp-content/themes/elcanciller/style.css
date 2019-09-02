@@ -3150,4 +3150,8 @@ article .post-content .has-content-area {
     top: 30px;
     left: 20px;
     width: 80%;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: none !important;
 }
