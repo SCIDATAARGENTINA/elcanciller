@@ -34,6 +34,9 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
 				<i class="fab fa-facebook-f" data-title="<?php the_title(); ?>" data-img="<?php echo $featured_img_url ?>" data-text="<?php echo get_the_excerpt(); ?>" data-link="<?php the_permalink(); ?>"></i>
 				<a href="<?php the_permalink(); ?>"><i class="fas fa-sign-out-alt"></i></a>
 				<i class="fas fa-heart like" data-id="<?php the_ID() ?>" data-count="<?php echo get_field('likes') ?>"></i>
+				<div class="slider-container">
+					<input type="text" id="slider2" class="slider" />
+				</div>
 			</div><!-- action-links -->
 			<div class="post-data">
 				<div class="post-title">
