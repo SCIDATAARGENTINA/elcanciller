@@ -18,6 +18,13 @@ jQuery(document).ready(function($) {
                 mode: 'steps',
                 density: 3
             }
+
+
+        });
+
+        $(this)[0].noUiSlider.on('update', function(values, handle) {
+
+            console.log(values, handle);
         });
 
     });
