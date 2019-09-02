@@ -40,7 +40,7 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
 			</div>
 			<script>
 
-			let slider2 = new rSlider({
+			let slider<?php the_ID() ?> = new rSlider({
 				target: '#slider-<?php the_ID() ?>',
 				values: ['1', '2', '3', '4', '5'],
 				range: false,
