@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
             },
             pips: {
                 mode: 'steps',
-                density: 3
+                density: 1
             }
         });
 
