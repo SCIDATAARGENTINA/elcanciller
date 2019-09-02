@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
     let slider2 = new rSlider({
-        target: '#slider2',
+        target: '.slider2',
         values: ['1', '2', '3', '4', '5'],
         range: false,
         set: ['1'],
