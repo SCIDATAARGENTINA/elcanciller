@@ -36,7 +36,7 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
 				<i class="fas fa-heart like" data-id="<?php the_ID() ?>" data-count="<?php echo get_field('likes') ?>"></i>
 			</div><!-- action-links -->
 			<div class="slider-container">
-				<input type="text" id="slider-<?php the_ID(); ?>" class="slider" />
+				<div type="text" id="slider-<?php the_ID(); ?>" class="slider"></div>
 			</div>
 			<div class="post-data">
 				<div class="post-title">
