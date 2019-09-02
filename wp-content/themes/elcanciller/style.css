@@ -3142,63 +3142,12 @@ article .post-content .has-content-area {
 
 /* END ENCUESTAS*/
 
-.rs-container {
+
+/*SLIDER*/
+
+.slider-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
     width: 80%;
-    position: absolute;
-    left: 33px;
-    top: 60px;
-    margin: 0 auto;
-    z-index: 5;
-}
-
-.rs-container .rs-scale {
-    top: -1px;
-}
-
-.rs-container .rs-scale span ins {
-    color: transparent;
-    background: transparent;
-}
-
-.rs-container .rs-bg {
-    height: 15px !important;
-    border-radius: 7px !important;
-    border: 1px solid #fff !important;
-}
-
-.rs-container .rs-bg {
-    background-color: transparent;
-    border: 2px solid #fff;
-    border-radius: 8%;
-    height: 15px;
-}
-
-.rs-container .rs-selected {
-    background-color: #c4afa1;
-    height: 15px;
-    border-radius: 7px;
-    border: 1px solid #fff !important;
-}
-
-.rs-container .rs-pointer {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-}
-
-.rs-container .rs-pointer::after,
-.rs-container .rs-pointer::before {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 9px;
-    background-color: transparent;
-    left: 0px;
-    top: -5px;
-    width: 30px;
-    height: 30px;
-}
-
-.rs-pointer {
-    transition: 300ms ease;
 }
