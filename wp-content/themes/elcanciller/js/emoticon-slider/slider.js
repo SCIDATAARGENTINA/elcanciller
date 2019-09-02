@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 
         noUiSlider.create($(this)[0], {
             start: [0],
-            step: 10,
+            step: 1,
             behaviour: 'tap-drag',
             connect: true,
             range: {
