@@ -47,7 +47,7 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
 				</div>
 			</div><!-- post-data -->
 			<div class="post-category">
-				<a href="<?php get_term_link($term); ?>"><h4><?php echo $term->name ?></h4></a>
+				<a href="<?php echo get_term_link($term); ?>"><h4><?php echo $term->name ?></h4></a>
 			</div>
 		</div><!-- hovered -->
 		<div class="render-author" style="background-color: <?php echo $cat_color ?>">
