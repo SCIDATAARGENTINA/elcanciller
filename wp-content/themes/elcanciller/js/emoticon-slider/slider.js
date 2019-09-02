@@ -16,10 +16,10 @@ jQuery(document).ready(function($) {
             scale: true,
             onChange: function(vals) {
                 console.log(vals);
-                $(this)[0].css('opacity', '0');
-                $(this)[0].empty();
-                $(this)[0].append('<img id="emoticon" src="http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/' + vals + '.png" style="width: 30px;height: 30px;margin-top: -5px;margin-left: -1px;">');
-                $(this)[0].css('opacity', '1');
+                $(this).find('.rs-pointer').css('opacity', '0');
+                $(this).find('.rs-pointer').empty();
+                $(this).find('.rs-pointer').append('<img id="emoticon" src="http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/' + vals + '.png" style="width: 30px;height: 30px;margin-top: -5px;margin-left: -1px;">');
+                $(this).find('.rs-pointer').css('opacity', '1');
             }
         });
     });
