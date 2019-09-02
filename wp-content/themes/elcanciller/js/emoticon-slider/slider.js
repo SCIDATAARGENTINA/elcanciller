@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
             set: ['1'],
             tooltip: false,
             scale: true,
-            getValue: function() {
+            getValue: function(vals) {
                 console.log(vals);
                 $('.rs-pointer').css('opacity', '0');
                 $('.rs-pointer').empty();
