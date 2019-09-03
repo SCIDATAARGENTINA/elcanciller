@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 
             let handleUi = slide.find('.noUi-handle').css('background-image', 'http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/emoticon-' + parseInt(values) + '.svg');
 
-            handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-' + (parseInt(values) + 1) + '.svg)');
+            handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-' + parseInt(values) + '.svg)');
 
             console.log(parseInt(values), handle);
         });
