@@ -28,8 +28,10 @@ jQuery(document).ready(function($) {
 
             handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
 
+            let connectUi = slide.find('.noUi-connect');
+
             if (val == 5) {
-                handleUi.css('transform', 'scale(1.1)');
+                handleUi.css('box-shadow', 'inset 5px 0px 4px 4px rgba(231, 209, 23, 0.9) !important');
             }
 
             console.log(val, handle);
