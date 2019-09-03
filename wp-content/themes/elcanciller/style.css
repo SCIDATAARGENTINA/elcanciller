@@ -3174,6 +3174,6 @@ article .post-content .has-content-area {
 
 .noUi-handle {
     box-shadow: none !important;
-    background-color: none !important;
-    border: 50%;
+    background-color: inherit !important;
+    border-radius: 50%;
 }
