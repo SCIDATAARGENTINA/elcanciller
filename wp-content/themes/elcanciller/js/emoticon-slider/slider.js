@@ -28,7 +28,9 @@ jQuery(document).ready(function($) {
         $(this)[0].noUiSlider.on('update', function(values, handle) {
 
 
-            slide.find('.noUi-handle').css('background-image', 'http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/emoticon-' + parseInt(values) + '.svg');
+            let handleUi = slide.find('.noUi-handle').css('background-image', 'http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/emoticon-' + parseInt(values) + '.svg');
+
+            handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/emoticon-' + parseInt(values) + '.svg)');
 
             console.log(parseInt(values), handle);
         });
