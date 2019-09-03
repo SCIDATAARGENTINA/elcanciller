@@ -22,11 +22,13 @@ jQuery(document).ready(function($) {
 
         });
 
+        var slide = $(this);
+
         $(this)[0].noUiSlider.on('update', function(values, handle) {
 
-            console.log($(this)[0].find('.noUi-handle'));
+            console.log(slide.find('.noUi-handle'));
 
-            $(this).find('.noUi-handle').css('background-image', 'http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/emoticon-' + parseInt(values) + '.svg');
+            slide.find('.noUi-handle').css('background-image', 'http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/emoticon-' + parseInt(values) + '.svg');
 
             console.log(parseInt(values), handle);
         });
