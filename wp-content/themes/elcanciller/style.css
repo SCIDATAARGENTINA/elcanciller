@@ -3168,8 +3168,8 @@ article .post-content .has-content-area {
 .slider {
     border-radius: 30px;
     background: transparent !important;
-    border: 2px solid white;
-    box-shadow: none !important;
+    border: 0px solid white;
+    box-shadow: inset 0px 0px 3px 4px rgba(255, 255, 255, 0.6) !important;
 }
 
 .noUi-handle {
@@ -3183,7 +3183,7 @@ article .post-content .has-content-area {
     background-size: cover;
     background-repeat: no-repeat;
     outline: 0;
-    top: -11px;
+    top: -11px !important;
 }
 
 .noUi-handle::before {
