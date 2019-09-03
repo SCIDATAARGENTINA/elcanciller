@@ -3177,3 +3177,11 @@ article .post-content .has-content-area {
     background-color: transparent !important;
     border-radius: 50%;
 }
+
+.noUi-handle::before {
+    display: none;
+}
+
+.noUi-handle::after {
+    display: none;
+}
