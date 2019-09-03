@@ -477,6 +477,7 @@ input:-internal-autofill-selected {
     font-size: 27px;
     margin: 0;
     margin-bottom: 10px;
+    margin-top: 5%;
 }
 
 .trending-post .category img {
@@ -489,7 +490,7 @@ input:-internal-autofill-selected {
 }
 
 .trending-post .titular h2 {
-    font-size: 34px;
+    font-size: 37px;
     margin: 0;
     height: 100%;
 }
@@ -2406,7 +2407,7 @@ article .post-content {
 
 article .post-content .has-content-area {
     font-family: "Lato";
-    font-size: 15px;
+    font-size: 17px;
     line-height: 22pt;
 }
 
