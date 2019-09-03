@@ -3196,7 +3196,7 @@ body::after {
 .noUi-handle {
     box-shadow: none !important;
     background-color: transparent !important;
-    border-radius: 50%;
+    border-radius: 30%;
     border: 0px !important;
     height: 33px !important;
     width: 33px !important;
