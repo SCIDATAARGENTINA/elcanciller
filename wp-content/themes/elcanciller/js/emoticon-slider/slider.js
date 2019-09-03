@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
             step: 1,
             behaviour: 'tap-drag',
             connect: true,
-            cssPrefix: 'reaction-', // defaults to 'noUi-',
+            //cssPrefix: 'reaction-', // defaults to 'noUi-',
             range: {
                 'min': 0,
                 'max': 5
