@@ -3218,3 +3218,8 @@ body::after {
 .noUi-handle::after {
     display: none;
 }
+
+.widget_rss ul li {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
