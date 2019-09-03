@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
             connect: true,
             //cssPrefix: 'reaction-', // defaults to 'noUi-',
             range: {
-                'min': 0,
+                'min': 1,
                 'max': 5
             },
             pips: {
