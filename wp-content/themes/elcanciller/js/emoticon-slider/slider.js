@@ -31,6 +31,7 @@ jQuery(document).ready(function($) {
             let connectUi = slide.find('.noUi-connect');
 
             if (val == 5) {
+                console.log('hola');
                 connectUi.css('box-shadow', 'inset 5px 0px 4px 4px rgba(231, 209, 23, 0.9) !important');
             } else {
                 connectUi.css('box-shadow', 'inset 5px 0px 3px 4px rgba(231, 209, 23, 0.6) !important');
