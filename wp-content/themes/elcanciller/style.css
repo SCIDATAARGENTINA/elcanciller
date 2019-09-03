@@ -3172,4 +3172,8 @@ article .post-content .has-content-area {
     box-shadow: none !important;
 }
 
-.noUi-handle {}
+.noUi-handle {
+    box-shadow: none !important;
+    background-color: none !important;
+    border: 50%;
+}
