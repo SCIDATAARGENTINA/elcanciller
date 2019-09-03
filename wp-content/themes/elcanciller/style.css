@@ -3178,6 +3178,7 @@ body::after {
     margin-top: 20px;
     z-index: 5;
     position: relative;
+    max-width: 200px;
 }
 
 .slider {
