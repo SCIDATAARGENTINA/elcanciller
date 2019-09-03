@@ -9,8 +9,8 @@ jQuery(document).ready(function($) {
             start: [0],
             step: 1,
             behaviour: 'tap-drag',
-            connect: true,
             //cssPrefix: 'reaction-', // defaults to 'noUi-',
+            connect: 'lower',
             range: {
                 'min': 1,
                 'max': 5

@@ -3183,6 +3183,7 @@ article .post-content .has-content-area {
     background-size: cover;
     background-repeat: no-repeat;
     outline: 0;
+    top: -11px;
 }
 
 .noUi-handle::before {
