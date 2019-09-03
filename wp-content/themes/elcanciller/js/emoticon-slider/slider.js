@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
             step: 1,
             behaviour: 'tap-drag',
             connect: true,
+            cssPrefix: 'reaction-', // defaults to 'noUi-',
             range: {
                 'min': 0,
                 'max': 5
@@ -26,7 +27,6 @@ jQuery(document).ready(function($) {
 
         $(this)[0].noUiSlider.on('update', function(values, handle) {
 
-            console.log(slide.find('.noUi-handle'));
 
             slide.find('.noUi-handle').css('background-image', 'http://142.93.24.13/wp-content/themes/elcanciller/js/emoticon-slider/emoticon-' + parseInt(values) + '.svg');
 
