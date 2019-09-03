@@ -29,6 +29,7 @@ jQuery(document).ready(function($) {
             handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
 
             let connectUi = slide.find('.noUi-connect');
+            console.log(connectUi);
 
             if (val == 5) {
                 console.log('hola');
