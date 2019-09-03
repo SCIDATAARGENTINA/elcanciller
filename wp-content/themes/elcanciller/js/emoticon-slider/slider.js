@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
 
             if (val == 5) {
                 console.log('hola');
-                connectUi.css('box-shadow', 'inset 5px 0px 6px 4px rgba(231, 209, 23, 0.9)');
+                connectUi.css('box-shadow', 'inset 5px 0px 6px 4px rgba(3, 199, 0, 0.9)');
             } else {
                 connectUi.css('box-shadow', 'inset 5px 0px 3px 4px rgba(231, 209, 23, 0.6)');
             }
