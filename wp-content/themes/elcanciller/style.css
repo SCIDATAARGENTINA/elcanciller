@@ -3219,7 +3219,3 @@ body::after {
     display: none;
 }
 
-.widget_rss ul li {
-    margin-top: 0rem !important;
-    margin-bottom: 0rem !important;
-}
