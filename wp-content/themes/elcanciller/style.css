@@ -3182,6 +3182,7 @@ article .post-content .has-content-area {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    outline: 0;
 }
 
 .noUi-handle::before {
