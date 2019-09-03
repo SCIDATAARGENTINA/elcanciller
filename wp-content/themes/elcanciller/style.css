@@ -3151,6 +3151,21 @@ article .post-content .has-content-area {
 
 /*SLIDER*/
 
+
+/*preloads slider images*/
+
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-1.svg) url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-2.svg) url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-3.svg) url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-4.svg) url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-5.svg);
+}
+
+
+/*preloads slider images end*/
+
 .actions-container {
     z-index: 20;
     position: relative;
