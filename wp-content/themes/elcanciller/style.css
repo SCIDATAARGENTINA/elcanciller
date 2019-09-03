@@ -3194,7 +3194,6 @@ noUi-connects {
 .noUi-connect {
     background: transparent !important;
     box-shadow: inset 0px 0px 3px 4px rgba(231, 209, 23, 0.6) !important;
-    box-sizing: border-box;
 }
 
 .noUi-handle {
