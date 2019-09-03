@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
                 handleUi.css('transform', 'scale(1.1)');
             }
 
-            console.log(parseInt(values), handle);
+            console.log(val, handle);
         });
 
     });
