@@ -3172,6 +3172,12 @@ article .post-content .has-content-area {
     box-shadow: inset 0px 0px 3px 4px rgba(255, 255, 255, 0.6) !important;
 }
 
+.noUi-connect {
+    border-radius: 30px;
+    background: transparent !important;
+    box-shadow: inset 0px 0px 3px 4px rgba(231, 209, 23, 0.6) !important;
+}
+
 .noUi-handle {
     box-shadow: none !important;
     background-color: transparent !important;
