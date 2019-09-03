@@ -3188,12 +3188,12 @@ body::after {
 }
 
 .noUi-connects {
-    border-radius: 5% !important;
+    border-radius: 30px !important;
 }
 
 .noUi-connect {
     background: transparent !important;
-    box-shadow: inset 5px 0px 3px 4px rgba(231, 209, 23, 0.6) !important;
+    box-shadow: inset 5% 0px 3px 4px rgba(231, 209, 23, 0.6) !important;
 }
 
 .noUi-handle {
