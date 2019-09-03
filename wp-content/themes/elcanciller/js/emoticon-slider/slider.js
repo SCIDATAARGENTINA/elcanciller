@@ -14,12 +14,7 @@ jQuery(document).ready(function($) {
             range: {
                 'min': 1,
                 'max': 5
-            },
-            pips: {
-                mode: 'steps',
-                density: 3
             }
-
 
         });
 
