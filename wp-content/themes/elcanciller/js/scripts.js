@@ -119,4 +119,6 @@ jQuery(document).ready(function($) {
         currentSlide = updateSlides(currentSlide);
     });
 
+    jQuery('#floatBtn').on('click',function(){window.location.href = "http://142.93.24.13/";});
+
 });
