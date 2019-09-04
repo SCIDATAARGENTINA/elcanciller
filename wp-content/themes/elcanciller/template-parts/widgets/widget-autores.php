@@ -17,7 +17,7 @@
             <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
                 <div class="autores-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
+                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
                     <p>@luchio_</p>
                 </div>
             </div>
@@ -26,7 +26,7 @@
             <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
                 <div class="autores-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
+                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
                     <p>@luchio_</p>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
                 <div class="autores-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
+                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
                     <p>@luchio_</p>
                 </div>
             </div>
@@ -46,7 +46,7 @@
             <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
                 <div class="autores-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
+                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
                     <p>@luchio_</p>
                 </div>
             </div>
@@ -55,7 +55,7 @@
             <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
                 <div class="autores-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
+                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
                     <p>@luchio_</p>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
                 <div class="autores-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
+                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
                     <p>@luchio_</p>
                 </div>
             </div>
