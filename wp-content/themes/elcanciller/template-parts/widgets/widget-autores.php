@@ -16,22 +16,28 @@
         <div class="instagram-profile">
             <div class="instagram-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
-                <p>@luchio_</p>
+                <div class="instagram-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                    <p>@luchio_</p>
+                </div>
             </div>
         </div>
         <div class="instagram-profile">
             <div class="instagram-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
-                <p>@luchio_</p>
+                <div class="instagram-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                    <p>@luchio_</p>
+                </div>
             </div>
         </div>
         <div class="instagram-profile">
             <div class="instagram-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
-                <p>@luchio_</p>
+                <div class="instagram-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                    <p>@luchio_</p>
+                </div>
             </div>
         </div>
     </div>
@@ -39,22 +45,28 @@
         <div class="instagram-profile">
             <div class="instagram-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
-                <p>@luchio_</p>
+                <div class="instagram-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                    <p>@luchio_</p>
+                </div>
             </div>
         </div>
         <div class="instagram-profile">
             <div class="instagram-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
-                <p>@luchio_</p>
+                <div class="instagram-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                    <p>@luchio_</p>
+                </div>
             </div>
         </div>
         <div class="instagram-profile">
             <div class="instagram-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
-                <p>@luchio_</p>
+                <div class="instagram-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                    <p>@luchio_</p>
+                </div>
             </div>
         </div>
     </div>
