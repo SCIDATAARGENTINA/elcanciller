@@ -9,7 +9,7 @@
  * @since 1.0.0
  */
 
-?>
+?> 
 <hr class="yellow-hr">
 <div class="instagram-widget container">
     <div>
