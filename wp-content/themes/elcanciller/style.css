@@ -3219,3 +3219,6 @@ body::after {
     display: none;
 }
 
+.yellow-hr{
+    background-color: #e7d12d !important;
+}

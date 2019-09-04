@@ -12,17 +12,52 @@
 ?>
 <hr class="yellow-hr">
 <div class="instagram-widget container">
-    <div class="instagram-profile">
-        <div class="instagram-pic">
-            <a href="https://www.instagram.com/elcancillerlive/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="El Canciller Live"></a>
+    <div>
+        <div class="instagram-profile">
+            <div class="instagram-pic">
+                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <p>@luchio_</p>
+            </div>
         </div>
-        <div class="instagram-data">
-            <h4><a href="https://www.instagram.com/elcancillerlive/">@elcancillerlive</a></h4>
-            <hr>
-            <p>El Canciller Live</p>
-            <span><i class="far fa-envelope"></i>ms@elcanciller.com</span>
+        <div class="instagram-profile">
+            <div class="instagram-pic">
+                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <p>@luchio_</p>
+            </div>
         </div>
-    </div><!-- end instagram profile -->
+        <div class="instagram-profile">
+            <div class="instagram-pic">
+                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <p>@luchio_</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="instagram-profile">
+            <div class="instagram-pic">
+                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <p>@luchio_</p>
+            </div>
+        </div>
+        <div class="instagram-profile">
+            <div class="instagram-pic">
+                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <p>@luchio_</p>
+            </div>
+        </div>
+        <div class="instagram-profile">
+            <div class="instagram-pic">
+                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <p>@luchio_</p>
+            </div>
+        </div>
+    </div>
     
 </div><!-- end instagram widget container -->
 <hr class="yellow-hr">
