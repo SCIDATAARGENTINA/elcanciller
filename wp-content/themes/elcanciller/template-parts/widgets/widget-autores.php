@@ -10,7 +10,7 @@
  */
 
 ?>
-
+<hr class="yellow-hr">
 <div class="instagram-widget container">
     <div class="instagram-profile">
         <div class="instagram-pic">
@@ -23,5 +23,6 @@
             <span><i class="far fa-envelope"></i>ms@elcanciller.com</span>
         </div>
     </div><!-- end instagram profile -->
-    <div class="feed"><?php echo do_shortcode('[instagram-feed]'); ?></div>
+    
 </div><!-- end instagram widget container -->
+<hr class="yellow-hr">
