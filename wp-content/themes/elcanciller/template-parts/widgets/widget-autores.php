@@ -13,58 +13,58 @@
 <hr class="yellow-hr">
 <div class="instagram-widget container">
     <div>
-        <div class="instagram-profile">
-            <div class="instagram-pic">
+        <div class="autores-profile">
+            <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <div class="instagram-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <div class="autores-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
                     <p>@luchio_</p>
                 </div>
             </div>
         </div>
-        <div class="instagram-profile">
-            <div class="instagram-pic">
+        <div class="autores-profile">
+            <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <div class="instagram-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <div class="autores-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
                     <p>@luchio_</p>
                 </div>
             </div>
         </div>
-        <div class="instagram-profile">
-            <div class="instagram-pic">
+        <div class="autores-profile">
+            <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <div class="instagram-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <div class="autores-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
                     <p>@luchio_</p>
                 </div>
             </div>
         </div>
     </div>
     <div>
-        <div class="instagram-profile">
-            <div class="instagram-pic">
+    <div class="autores-profile">
+            <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <div class="instagram-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <div class="autores-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
                     <p>@luchio_</p>
                 </div>
             </div>
         </div>
-        <div class="instagram-profile">
-            <div class="instagram-pic">
+        <div class="autores-profile">
+            <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <div class="instagram-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <div class="autores-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
                     <p>@luchio_</p>
                 </div>
             </div>
         </div>
-        <div class="instagram-profile">
-            <div class="instagram-pic">
+        <div class="autores-profile">
+            <div class="autores-pic">
                 <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
-                <div class="instagram-data">
-                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Luciano Dolber</a></h5>
+                <div class="autores-data">
+                    <h5><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h5>
                     <p>@luchio_</p>
                 </div>
             </div>

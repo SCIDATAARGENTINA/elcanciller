@@ -3222,3 +3222,67 @@ body::after {
 .yellow-hr{
     background-color: #e7d12d !important;
 }
+
+
+/* 
+SECCION AUTORES
+*/
+
+#sb_autores #sbi_images .sbi_item {
+    padding: 2px !important;
+}
+
+#sb_autores #sbi_images {
+    padding: 0px !important;
+}
+
+.autores-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.autores-pic {
+    display: block;
+    width: 50px;
+    box-sizing: content-box;
+    padding: 10px;
+}
+
+.autores-pic a {
+    display: inline-block;
+    width: 100%;
+}
+
+.autores-data {
+    margin-left: 20px;
+}
+
+.autores-data>* {
+    margin: 0px;
+}
+
+.autores-data h4 a {
+    color: #b29f93 !important;
+    font-size: 17px;
+}
+
+.autores-data hr {
+    margin: 10px 0;
+    max-width: 40%;
+    height: 1px;
+    background: #ccc;
+}
+
+.autores-data p,
+.autores-data span {
+    font-family: "Roboto";
+    font-size: 10px;
+    color: #999999;
+    display: block;
+}
+
+.autores-data span i {
+    margin-right: 5px;
+}
