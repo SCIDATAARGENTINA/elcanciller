@@ -29,7 +29,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
        if(get_field('habilitado') != 'no'){ ?>
         <div class="titular" style="background-color:#000;text-align:center;">
-            <a href="http://142.93.24.13/2018/12/el-lider-antichavista-de-la-region-la-competencia-que-enfrenta-a-macri-contra-bolsonaro/"><h2 style="color:#fff;">EN VIVO</h2></a>
+            <a href="http://142.93.24.13/2018/12/el-lider-antichavista-de-la-region-la-competencia-que-enfrenta-a-macri-contra-bolsonaro/"><h2 style="color:#fff;margin-top: 0%;padding: 2% 0% 2% 0%;">EN VIVO</h2></a>
          </div>
         <article id="live-<?php the_ID(); ?>" style="max-width: 100%;background-color: #000;margin-top: -3%;">
         <p style="margin-top: 0%;background-color: #000;padding: 2% 0% 2% 0%;border-bottom: 4px solid #e7d12d;"><?php the_field('codigo_embebido'); ?> </p>
