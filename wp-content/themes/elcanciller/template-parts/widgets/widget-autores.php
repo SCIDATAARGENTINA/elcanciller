@@ -14,7 +14,7 @@
 <div class="instagram-widget container">
         <div class="autores-profile">
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/fernanda.png" alt="Luciano Dolber"></a>
                 <div class="autores-data">
                     <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
                     <p>@luchio_</p>

@@ -3245,7 +3245,7 @@ SECCION AUTORES
 
 .autores-pic {
     display: block;
-    width: 50px;
+    width: 58px;
     box-sizing: content-box;
     padding: 10px;
 }
@@ -3265,7 +3265,8 @@ SECCION AUTORES
 
 .autores-data h4 a {
     color: #b29f93 !important;
-    font-size: 17px;
+    font-size: 12px;
+    text-align: center;
 }
 
 .autores-data hr {
@@ -3281,6 +3282,7 @@ SECCION AUTORES
     font-size: 10px;
     color: #999999;
     display: block;
+    text-align: center;
 }
 
 .autores-data span i {
