@@ -10,7 +10,7 @@
  */
 
 ?> 
-<hr class="yellow-hr">
+<hr class="yellow-hr" style="background: #transparent url(http://142.93.24.13/wp-content/uploads/2019/09/microfonoautor.png) no-repeat scroll center;">
 <div class="instagram-widget container">
         <div class="autores-profile">
             <div class="autores-pic">
@@ -28,32 +28,32 @@
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <a href="http://142.93.24.13/author/diegogenoud/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Diego Genoud"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
+                    <h4><a href="http://142.93.24.13/author/diegogenoud/">Diego Genoud</a></h4>
                     <p>@twitter</p>
                 </div>
             </div>
         </div>
         <div class="autores-profile">
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <a href="http://142.93.24.13/author/solrodriguezgarnica/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Sol Rodriguez Garnica"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
+                    <h4><a href="http://142.93.24.13/author/solrodriguezgarnica/">Sol R. Garnica</a></h4>
                     <p>@twitter</p>
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <a href="http://142.93.24.13/author/nanothompson/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Nano Thompson"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
+                    <h4><a href="http://142.93.24.13/author/nanothompson/">Nano Thompson</a></h4>
                     <p>@twitter</p>
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/lucianodolber/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Luciano Dolber"></a>
+                <a href="http://142.93.24.13/author/brunocostanzo/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Bruno Costanzo"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/lucianodolber/">Diego Genoud</a></h4>
+                    <h4><a href="http://142.93.24.13/author/brunocostanzo/">Bruno Costanzo</a></h4>
                     <p>@twitter</p>
                 </div>
             </div>
