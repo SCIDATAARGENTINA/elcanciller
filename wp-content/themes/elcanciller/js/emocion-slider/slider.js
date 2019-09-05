@@ -84,6 +84,8 @@ jQuery(document).ready(function($) {
 
             let sliderId = slide.attr('id');
 
+            sliderId = sliderId.slice(7);
+
             console.log(sliderId);
 
             console.log(val, handle);
