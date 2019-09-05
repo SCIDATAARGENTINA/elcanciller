@@ -439,7 +439,7 @@ function custom_post_type_live()
     'filter_items_list'     => __('Filtrar listado', 'elcanciller'),
   );
   $args = array(
-    'label'                 => __('Live', 'elcanciller'),
+    'label'                 => __('live', 'elcanciller'),
     'description'           => __('Modulo de administración de Lives', 'elcanciller'),
     'labels'                => $labels,
     'supports'              => array('title'),
@@ -457,11 +457,11 @@ function custom_post_type_live()
     'exclude_from_search'   => true,
     'publicly_queryable'    => true,
     'show_in_rest'          => true,
-    'rest_base'             => 'Live',
+    'rest_base'             => 'live',
     'rest_controller_class' => 'WP_REST_Posts_Controller',
     'capability_type'       => 'post',
   );
-  register_post_type('Live', $args);
+  register_post_type('live', $args);
 }
 add_action('init', 'custom_post_type_Live', 0);
 
@@ -919,7 +919,7 @@ function live_shortcode($atts){
   
     // Setup arguments.
     $args = array(
-      'post_type' => 'Live',
+      'post_type' => 'live',
       'posts_per_page' => 1,
       'p' => $a['postid']
   );
