@@ -449,7 +449,7 @@ function custom_post_type_live()
     'show_ui'               => true,
     'show_in_menu'          => true,
     'menu_position'         => 6,
-    'menu_icon'             => 'dashicons-backup',
+    'menu_icon'             => 'dashicons-format-video',
     'show_in_admin_bar'     => false,
     'show_in_nav_menus'     => false,
     'can_export'            => true,
