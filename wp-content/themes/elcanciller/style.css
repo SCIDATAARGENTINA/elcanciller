@@ -3290,6 +3290,9 @@ SECCION AUTORES
 }
 
 .divisor-autor{
-    height: 15px;
-    background: url(http://142.93.24.13/wp-content/uploads/2019/09/microfonoautor.png) no-repeat scroll center;
+    height: 50px;
+    background: url(http://142.93.24.13/wp-content/uploads/2019/09/divisor-microfono.png) no-repeat scroll center;
+}
+.divisor-autor hr{
+    display:none;
 }
