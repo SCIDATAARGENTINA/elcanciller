@@ -64,6 +64,7 @@ jQuery(document).ready(function($) {
         var slide = $(this);
 
         $(this)[0].noUiSlider.on('update', function(val, handle) {
+            var timeout;
 
             val = parseInt(val);
 
