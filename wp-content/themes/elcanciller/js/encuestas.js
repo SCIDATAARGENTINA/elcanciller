@@ -125,7 +125,6 @@ jQuery(document).ready(function($) {
 
 
         if (validateIfVoted(idEncuesta)) {
-            console.log('Ya votaste esta encuesta.');
             new Noty({
                 theme: 'mint',
                 text: 'Ya votaste esta encuesta.',

@@ -20,9 +20,8 @@ function custom_scripts() {
   wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ), '1.0.0', true );
   wp_enqueue_script( 'skycons-js', get_stylesheet_directory_uri() . '/js/skycons.js', array( 'jquery' ), '1.0.0', true );
   wp_enqueue_script('comments-js', get_stylesheet_directory_uri() . '/template-parts/comments/comments.js', array('jquery'), '1.0.0', true);
-  wp_enqueue_script('nouislider-js', get_stylesheet_directory_uri() . '/js/emoticon-slider/nouislider.min.js', array('jquery'), '1.0.0', true);
-  wp_enqueue_style( 'nouislider-css', get_stylesheet_directory_uri() . '/js/emoticon-slider/nouislider.min.css' );
-  wp_enqueue_script('emocion-slider-js', get_stylesheet_directory_uri() . '/js/emoticon-slider/slider.js', array('jquery'), '1.0.0', true);
+  wp_enqueue_script('nouislider-js', get_stylesheet_directory_uri() . '/js/emocion-slider/nouislider.min.js', array('jquery'), '1.0.0', true);
+  wp_enqueue_style( 'nouislider-css', get_stylesheet_directory_uri() . '/js/emocion-slider/nouislider.min.css' );
   wp_enqueue_style( 'slick-css', get_stylesheet_directory_uri() . '/slick/slick.css' );
   wp_enqueue_style( 'mf-css', get_stylesheet_directory_uri() . '/js/magnific/magnific-popup.css' );
   wp_enqueue_style( 'noty-css', get_stylesheet_directory_uri() . '/js/noty/noty.css' );
@@ -695,6 +694,40 @@ function loadmore_ajax_handler(){
 add_action('wp_ajax_loadmore', 'loadmore_ajax_handler'); // wp_ajax_{action}
 add_action('wp_ajax_nopriv_loadmore', 'loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
 
+// AJAX SLIDER
+
+function slider_scripts() {
+ 
+	global $wp_query; 
+ 
+	// register our main script but do not enqueue it yet
+	wp_register_script( 'emocion-slider-js', get_stylesheet_directory_uri() . '/js/emocion-slider/slider.js', array('jquery') );
+ 
+	// now the most interesting part
+	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP
+	// you can define variables directly in your HTML but I decided that the most proper way is wp_localize_script()
+	wp_localize_script( 'emocion-slider-js', 'emocion-slider_params', array(
+		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+	) );
+ 
+ 	wp_enqueue_script( 'emocion-slider-js' );
+}
+ 
+add_action( 'wp_enqueue_scripts', 'slider_scripts' );
+
+
+function slider_ajax_handler(){
+
+  echo 'hello';
+ 
+	
+	die; // here we exit the script and even no wp_reset_query() required!
+};
+ 
+ 
+ 
+add_action('wp_ajax_slider', 'slider_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_slider', 'slider_ajax_handler'); // wp_ajax_nopriv_{action}
 
 // AJAX ENCUESTAS
 

@@ -1,13 +1,53 @@
 jQuery(document).ready(function($) {
 
-    let slideUpdater = () => {
+    let getSlider = (sliderId) => {
+
+        return $.get(`http://142.93.24.13/wp-json/wp/v2/encuestas/${sliderId}`);
+
+    };
+
+    let createSlideData = () => {
+
         
-    }
+
+        let data = {
+            action: 'slider',
+            
+        };
+
+        return data;
+
+    };
+
+    let slideUpdater = (sliderId) => {
+        
+        let url = encuestas_params.ajaxurl;
+
+        getSlider(sliderId).done(function(){
+
+            let totVotos = data.acf.total_votos;
+
+            let updateData = createSlideData();
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: updateData,
+                success: function (result) {
+                    votoRealizado(idEncuesta);
+                },
+                error: function (errorThrown) {
+
+                }
+            })// end ajax
+
+        })// end done
+
+    };// end sliderUpdater
 
     let slider = $('.slider');
 
     slider.each(function() {
-        let sliderId = $(this).attr('id');
 
         noUiSlider.create($(this)[0], {
             start: [0],
@@ -41,6 +81,10 @@ jQuery(document).ready(function($) {
             } else {
                 connectUi.css('box-shadow', 'inset 5px 0px 3px 4px rgba(231, 209, 23, 0.6)');
             }
+
+            let sliderId = slide.attr('id');
+
+            console.log(sliderId);
 
             console.log(val, handle);
         });
