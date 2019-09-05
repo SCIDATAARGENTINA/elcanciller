@@ -31,10 +31,10 @@ jQuery(document).ready(function($) {
                 type: 'POST',
                 data: updateData,
                 success: function (result) {
-                    votoRealizado(idEncuesta);
+                    console.log(result);
                 },
                 error: function (errorThrown) {
-
+                    console.log(errorThrown);
                 }
             })// end ajax
 
