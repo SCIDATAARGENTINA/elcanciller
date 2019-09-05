@@ -11,7 +11,7 @@
 
 ?> 
 <div class="divisor-autor">
-<hr class="yellow-hr">
+    <hr class="yellow-hr">
 </div>
 <div class="instagram-widget container">
         <div class="autores-profile">
@@ -61,4 +61,6 @@
             </div>
         </div>
 </div><!-- end autores widget container -->
-<hr class="yellow-hr">
+<div class="divisor-autor-inferior">
+    <hr class="yellow-hr">
+</div>
