@@ -8,8 +8,6 @@ jQuery(document).ready(function($) {
 
     let createSlideData = () => {
 
-        
-
         let data = {
             action: 'slider',
         };
@@ -20,7 +18,7 @@ jQuery(document).ready(function($) {
 
     let slideUpdater = (sliderId) => {
         
-        let url = encuestas_params.ajaxurl;
+        let url = slider_params.ajaxurl;
 
         getSlider(sliderId).done(function(data){
 
