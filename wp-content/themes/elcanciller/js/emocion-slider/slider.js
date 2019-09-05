@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
     let getSlider = (sliderId) => {
 
-        return $.get(`http://142.93.24.13/wp-json/wp/v2/encuestas/${sliderId}`);
+        return $.get(`http://142.93.24.13/wp-json/wp/v2/posts/${sliderId}`);
 
     };
 
@@ -12,7 +12,6 @@ jQuery(document).ready(function($) {
 
         let data = {
             action: 'slider',
-            
         };
 
         return data;
@@ -23,13 +22,13 @@ jQuery(document).ready(function($) {
         
         let url = encuestas_params.ajaxurl;
 
-        getSlider(sliderId).done(function(){
+        getSlider(sliderId).done(function(data){
 
-            let totVotos = data.acf.total_votos;
+            console.log(data);
 
             let updateData = createSlideData();
 
-            $.ajax({
+           /* $.ajax({
                 url: url,
                 type: 'POST',
                 data: updateData,
@@ -39,7 +38,7 @@ jQuery(document).ready(function($) {
                 error: function (errorThrown) {
 
                 }
-            })// end ajax
+            })// end ajax*/
 
         })// end done
 
@@ -85,6 +84,16 @@ jQuery(document).ready(function($) {
             let sliderId = slide.attr('id');
 
             sliderId = sliderId.slice(7);
+
+            if (timeout){
+                clearTimeout(timeout);
+            }
+
+            var timeout = setTimeout(function(){ // Updates values after 5 sec
+
+                slideUpdater(sliderId);
+
+            }, 5000)
 
             console.log(sliderId);
 
