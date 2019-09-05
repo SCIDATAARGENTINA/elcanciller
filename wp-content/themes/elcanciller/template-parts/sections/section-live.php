@@ -28,8 +28,8 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
       $livesection_query->the_post();
 
        if(get_field('habilitado') != 'no'){ ?>
-        <article id="live-<?php the_ID(); ?>" style="max-width: 100%;margin: 3% 0%;background-color: #000;">
-        <p style="background-color: #000;margin: 0%;border-bottom: 4px solid #e7d12d;"><?php the_field('codigo_embebido'); ?> </p>
+        <article id="live-<?php the_ID(); ?>" style="max-width: 100%;background-color: #000;">
+        <p style="background-color: #000;padding: 2% 0% 2% 0%;border-bottom: 4px solid #e7d12d;"><?php the_field('codigo_embebido'); ?> </p>
         </article><!-- #post-${ID} -->
         <?php }
 
