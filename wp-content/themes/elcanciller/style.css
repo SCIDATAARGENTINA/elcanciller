@@ -532,6 +532,7 @@ input:-internal-autofill-selected {
     font-family: Georgia, serif;
     font-size: 12px;
     margin-left: 10px;
+    font-weight: bold;
 }
 
 .cancilleram .author-container img {

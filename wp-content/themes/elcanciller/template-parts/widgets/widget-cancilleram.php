@@ -97,7 +97,7 @@
     <form action="https://elcanciller.us15.list-manage.com/subscribe/post?u=5b406821a12a44b764db5c9db&amp;id=58158a7c5f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
         
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Correo Electrónico" required>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="" required>
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5b406821a12a44b764db5c9db_58158a7c5f" tabindex="-1" value=""></div>
         <div class="clear"><input type="submit" value="Suscribirme" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
