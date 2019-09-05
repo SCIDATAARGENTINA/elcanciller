@@ -6,9 +6,60 @@ jQuery(document).ready(function($) {
 
     };
 
-    let createSlideData = (acfData) => {
+    let setCookie = (sliderId) => {
 
-        console.log(acfData);
+        let sliderAccionado = Cookies.get('sliderAccionado');
+        let arrIds = [];
+        let idInteraccion = 1;
+
+        if (sliderAccionado) {
+
+            arrIds = JSON.parse(sliderAccionado);
+            console.log(sliderId);
+            //arrIds.push(id);
+            sliderAccionado = JSON.stringify(arrIds);
+            Cookies.set('sliderAccionado', sliderAccionado, { expires: Infinity });
+
+        } else {
+
+            arrIds = [{
+                idInteraccion, 
+                sliderId
+            }];
+            sliderAccionado = JSON.stringify(arrIds);
+            Cookies.set('sliderAccionado', sliderAccionado, { expires: Infinity });
+
+        }
+
+    };
+
+    let getCookie = (acfData) => {
+
+    }
+
+    let createSlideData = (acfData, sliderId, val) => {
+
+        let resultadoPromedio;
+        let totalDeInteracciones;
+        let interaccionId;
+        let interaccionVal = val;
+        let createNew = true;
+
+        console.log(acfData, val);
+
+        if (!acfData.resultado_promedio) {
+            resultadoPromedio = 1;
+        }
+
+        if (!acfData.total_de_interacciones) {
+            totalDeInteracciones = 0;
+        }
+
+        if (!acfData.interacciones.id) {
+            interaccionId = 1;
+        }
+
+        setCookie(sliderId);
 
         let data = {
             action: 'slider',
@@ -18,13 +69,13 @@ jQuery(document).ready(function($) {
 
     };
 
-    let slideUpdater = (sliderId) => {
+    let slideUpdater = (sliderId, val) => {
         
         let url = slider_params.ajaxurl;
 
         getSlider(sliderId).done(function(data){
 
-            let updateData = createSlideData(data.acf);
+            let updateData = createSlideData(data.acf, sliderId, val);
 
             $.ajax({
                 url: url,
