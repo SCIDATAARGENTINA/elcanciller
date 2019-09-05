@@ -463,7 +463,7 @@ function custom_post_type_live()
   );
   register_post_type('live', $args);
 }
-add_action('init', 'custom_post_type_Live', 0);
+add_action('init', 'custom_post_type_live', 0);
 
 
 
