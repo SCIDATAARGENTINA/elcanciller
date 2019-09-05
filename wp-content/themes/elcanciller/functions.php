@@ -390,7 +390,7 @@ function custom_post_type_contador()
     'show_ui'               => true,
     'show_in_menu'          => true,
     'menu_position'         => 6,
-    'menu_icon'             => 'dashicons-testimonial',
+    'menu_icon'             => 'dashicons-backup',
     'show_in_admin_bar'     => false,
     'show_in_nav_menus'     => false,
     'can_export'            => true,
