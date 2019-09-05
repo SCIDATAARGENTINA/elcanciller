@@ -6,11 +6,10 @@ jQuery(document).ready(function($) {
 
     };
 
-    let setCookie = (sliderId) => {
+    let setCookie = (sliderId, interaccionId) => {
 
         let sliderAccionado = Cookies.get('sliderAccionado');
         let arrIds = [];
-        let idInteraccion = 1;
 
         if (sliderAccionado) {
 
@@ -23,7 +22,7 @@ jQuery(document).ready(function($) {
         } else {
 
             arrIds = [{
-                idInteraccion, 
+                interaccionId, 
                 sliderId
             }];
             sliderAccionado = JSON.stringify(arrIds);
@@ -57,9 +56,11 @@ jQuery(document).ready(function($) {
 
         if (!acfData.interacciones.id) {
             interaccionId = 1;
+        }else{
+            interaccionId = (acfData.interacciones.last().id) + 1;
         }
 
-        setCookie(sliderId);
+        setCookie(sliderId, interaccionId);
 
         let data = {
             action: 'slider',
