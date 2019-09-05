@@ -14,6 +14,8 @@ $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 ?>
 
+<?php if(get_the_field('habilitado') == 'si'){ ?>
 <article id="live-<?php the_ID(); ?>">
-<p> <?php if(get_the_field('habilitado') == 'Si'){the_field('codigo_embebido');} ?> </p>
+<p><?php the_field('codigo_embebido'); ?> </p>
 </article><!-- #post-${ID} -->
+<?php } ?>
