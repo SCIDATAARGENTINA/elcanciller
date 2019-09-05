@@ -46,5 +46,4 @@
 </div>
 <div class="widget">
   <?php echo do_shortcode('[contador postid=48914]') ?>
-  <?php echo do_shortcode('[live postid=48919]') ?>
 </div>
