@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
             totalDeInteracciones = 0;
         }
 
-        if (acfData.interacciones.id == null) {
+        if (acfData.interacciones == null) {
             interaccionId = 1;
         }else{
             interaccionId = (acfData.interacciones[acfData.interacciones.length - 1].id) + 1;
