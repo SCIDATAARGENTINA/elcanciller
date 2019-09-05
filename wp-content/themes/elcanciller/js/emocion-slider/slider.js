@@ -6,7 +6,9 @@ jQuery(document).ready(function($) {
 
     };
 
-    let createSlideData = () => {
+    let createSlideData = (acfData) => {
+
+        console.log(acfData);
 
         let data = {
             action: 'slider',
@@ -22,9 +24,7 @@ jQuery(document).ready(function($) {
 
         getSlider(sliderId).done(function(data){
 
-            console.log(data);
-
-            let updateData = createSlideData();
+            let updateData = createSlideData(data.acf);
 
             $.ajax({
                 url: url,
