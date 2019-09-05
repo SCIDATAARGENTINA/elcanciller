@@ -820,3 +820,32 @@ function mostrar_posts($atts){
 }
 
 add_shortcode( 'posts', 'mostrar_posts' );
+
+
+function contador_shortcode($atts){
+  $a = shortcode_atts( array(
+    'postid' => '0'
+  ), $atts );
+  
+    // Setup arguments.
+    $args = array(
+      'post_type' => 'contador',
+      'posts_per_page' => 1,
+      'p' => $a['postid']
+  );
+  
+  $base_query = new WP_Query( $args ); 
+
+  if($base_query->have_posts()){
+    while($base_query->have_posts()){
+      $base_query->the_post();
+
+      get_template_part( 'template-parts/content/content', 'contador' );
+
+    }
+  }
+  
+
+}
+
+add_shortcode( 'contador', 'contador_shortcode' );
