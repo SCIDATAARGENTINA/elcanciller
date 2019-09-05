@@ -894,11 +894,11 @@ function contador_shortcode($atts){
       'p' => $a['postid']
   );
   
-  $base_query = new WP_Query( $args ); 
+  $contador_query = new WP_Query( $args ); 
 
-  if($base_query->have_posts()){
-    while($base_query->have_posts()){
-      $base_query->the_post();
+  if($contador_query->have_posts()){
+    while($contador_query->have_posts()){
+      $contador_query->the_post();
 
       get_template_part( 'template-parts/content/content', 'contador' );
 
@@ -924,11 +924,11 @@ function live_shortcode($atts){
       'p' => $a['postid']
   );
   
-  $base_query = new WP_Query( $args ); 
+  $live_query = new WP_Query( $args ); 
 
-  if($base_query->have_posts()){
-    while($base_query->have_posts()){
-      $base_query->the_post();
+  if($live_query->have_posts()){
+    while($live_query->have_posts()){
+      $live_query->the_post();
 
       get_template_part( 'template-parts/content/content', 'live' );
 
