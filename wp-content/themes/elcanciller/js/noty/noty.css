@@ -149,7 +149,7 @@
   opacity: .3;
   left: 0;
   top: 0; 
-  background-color: #e7d12d;
+  background-color: #e7d12d !important;
 }
 
 .noty_modal.noty_modal_open {
