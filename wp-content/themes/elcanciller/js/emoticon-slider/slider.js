@@ -1,5 +1,9 @@
 jQuery(document).ready(function($) {
 
+    let slideUpdater = () => {
+        
+    }
+
     let slider = $('.slider');
 
     slider.each(function() {
@@ -29,7 +33,6 @@ jQuery(document).ready(function($) {
             handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
 
             let connectUi = slide.find('.noUi-connect');
-            console.log(connectUi);
 
             if (val == 2) {
                 connectUi.css('box-shadow', 'rgba(208, 35, 26, 0.61) 11px 0px 5px 5px inset');
