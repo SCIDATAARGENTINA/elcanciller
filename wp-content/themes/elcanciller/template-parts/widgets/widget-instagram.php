@@ -25,3 +25,4 @@
     </div><!-- end instagram profile -->
     <div class="feed"><?php echo do_shortcode('[instagram-feed]'); ?></div>
 </div><!-- end instagram widget container -->
+<hr class="yellow-hr">

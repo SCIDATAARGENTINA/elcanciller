@@ -32,6 +32,10 @@
   <?php get_template_part('template-parts/widgets/widget', 'cancilleram') ?>
 </div>
 <div class="widget">
+  <!-- publicidad-->
+  <img src="http://142.93.24.13/wp-content/uploads/2019/09/publi234x60.jpg">
+</div>
+<div class="widget">
 <?php get_template_part('template-parts/widgets/widget', 'autores') ?>
 </div>
 <div class="widget">
