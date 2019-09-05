@@ -3303,3 +3303,12 @@ SECCION AUTORES
 .divisor-autor hr, .divisor-autor-inferior hr{
     display:none;
 }
+
+/* FIN DE LA SECCIÓN AUTORES */
+
+.error-image {
+    width: 540px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    width: 450px;
+}
