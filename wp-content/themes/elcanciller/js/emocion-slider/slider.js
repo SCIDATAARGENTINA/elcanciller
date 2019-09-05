@@ -80,9 +80,6 @@ jQuery(document).ready(function($) {
                 connectUi.css('box-shadow', 'inset 5px 0px 3px 4px rgba(231, 209, 23, 0.6)');
             }
 
-            console.log(sliderId);
-
-            console.log(val, handle);
         });
 
         $(this)[0].noUiSlider.on('change', function (val) {
