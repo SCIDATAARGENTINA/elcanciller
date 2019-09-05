@@ -52,7 +52,6 @@ jQuery(document).ready(function($) {
             start: [0],
             step: 1,
             behaviour: 'tap-drag',
-            //cssPrefix: 'reaction-', // defaults to 'noUi-',
             connect: 'lower',
             range: {
                 'min': 1,
@@ -64,7 +63,6 @@ jQuery(document).ready(function($) {
         var slide = $(this);
 
         $(this)[0].noUiSlider.on('update', function(val, handle) {
-            var timeout;
 
             val = parseInt(val);
 
@@ -82,23 +80,31 @@ jQuery(document).ready(function($) {
                 connectUi.css('box-shadow', 'inset 5px 0px 3px 4px rgba(231, 209, 23, 0.6)');
             }
 
+            console.log(sliderId);
+
+            console.log(val, handle);
+        });
+
+        $(this)[0].noUiSlider.on('change', function (val) {
+
+            var timeout;
+
+            val = parseInt(val);
+
             let sliderId = slide.attr('id');
 
             sliderId = sliderId.slice(7);
 
-            if (timeout){
+            if (timeout) {
                 clearTimeout(timeout);
             }
 
-            var timeout = setTimeout(function(){ // Updates values after 5 sec
+            var timeout = setTimeout(function () { // Updates values after 5 sec
 
                 slideUpdater(sliderId);
 
             }, 5000)
 
-            console.log(sliderId);
-
-            console.log(val, handle);
         });
 
     });
