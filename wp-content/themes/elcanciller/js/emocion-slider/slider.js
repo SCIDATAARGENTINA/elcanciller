@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
         if (sliderAccionado) {
 
             arrIds = JSON.parse(sliderAccionado);
-            console.log(sliderId);
+            console.log(arrIds);
             //arrIds.push(id);
             sliderAccionado = JSON.stringify(arrIds);
             Cookies.set('sliderAccionado', sliderAccionado, { expires: Infinity });
