@@ -46,18 +46,18 @@ jQuery(document).ready(function($) {
 
         console.log(acfData, val);
 
-        if (!acfData.resultado_promedio) {
+        if (acfData.resultado_promedio == null) {
             resultadoPromedio = 1;
         }
 
-        if (!acfData.total_de_interacciones) {
+        if (acfData.total_de_interacciones == null) {
             totalDeInteracciones = 0;
         }
 
-        if (!acfData.interacciones.id) {
+        if (acfData.interacciones == null) {
             interaccionId = 1;
         }else{
-            interaccionId = (acfData.interacciones.last().id) + 1;
+            interaccionId = (acfData.interacciones[acfData.interacciones.length - 1].id) + 1;
         }
 
         setCookie(sliderId, interaccionId);
