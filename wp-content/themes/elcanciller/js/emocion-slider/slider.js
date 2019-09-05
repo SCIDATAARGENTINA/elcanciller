@@ -46,11 +46,11 @@ jQuery(document).ready(function($) {
 
         console.log(acfData, val);
 
-        if (!acfData.resultado_promedio) {
+        if (acfData.resultado_promedio == null) {
             resultadoPromedio = 1;
         }
 
-        if (!acfData.total_de_interacciones) {
+        if (acfData.total_de_interacciones == null) {
             totalDeInteracciones = 0;
         }
 
