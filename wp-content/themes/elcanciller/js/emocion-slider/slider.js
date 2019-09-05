@@ -147,7 +147,7 @@ jQuery(document).ready(function($) {
 
             var timeout = setTimeout(function () { // Updates values after 5 sec
 
-                slideUpdater(sliderId);
+                slideUpdater(sliderId, val);
 
             }, 5000)
 
