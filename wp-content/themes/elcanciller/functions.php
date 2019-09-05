@@ -406,7 +406,7 @@ function custom_post_type_contador()
 add_action('init', 'custom_post_type_contador', 0);
 
 
-function custom_post_type_contador()
+function custom_post_type_live()
 {
 
   $labels = array(
@@ -464,6 +464,8 @@ function custom_post_type_contador()
   register_post_type('Live', $args);
 }
 add_action('init', 'custom_post_type_Live', 0);
+
+
 
 //Crear taxonomia personalizada para videos.
 add_action( 'init', 'cat_videos_custom_taxonomy', 0 );
