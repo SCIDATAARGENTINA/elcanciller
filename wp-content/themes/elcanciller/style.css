@@ -3259,10 +3259,6 @@ SECCION AUTORES
     width: 100%;
 }
 
-.autores-data {
-    /*margin-left: 20px;*/
-}
-
 .autores-data>* {
     margin: 0px;
 }
