@@ -3228,6 +3228,10 @@ body::after {
 SECCION AUTORES
 */
 
+.chico{
+    padding: 15px 10px 0px 10px !important;
+}
+
 #sb_autores #sbi_images .sbi_item {
     padding: 2px !important;
 }

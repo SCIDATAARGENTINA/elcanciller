@@ -31,7 +31,7 @@
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'cancilleram') ?>
 </div>
-<div class="widget">
+<div class="widget chico">
 <?php get_template_part('template-parts/widgets/widget', 'autores') ?>
 </div>
 <div class="widget">
