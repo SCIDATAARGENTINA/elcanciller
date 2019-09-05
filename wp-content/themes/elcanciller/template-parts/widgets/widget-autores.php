@@ -10,7 +10,9 @@
  */
 
 ?> 
-<hr class="yellow-hr" style="background: #transparent url(http://142.93.24.13/wp-content/uploads/2019/09/microfonoautor.png) no-repeat scroll center;">
+<div class="divisor-autor">
+<hr class="yellow-hr">
+</div>
 <div class="instagram-widget container">
         <div class="autores-profile">
             <div class="autores-pic">

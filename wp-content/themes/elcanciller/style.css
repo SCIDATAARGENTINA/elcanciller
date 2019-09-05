@@ -3288,3 +3288,8 @@ SECCION AUTORES
 .autores-data span i {
     margin-right: 5px;
 }
+
+.divisor-autor{
+    height: 15px;
+    background: url(http://142.93.24.13/wp-content/uploads/2019/09/microfonoautor.png) no-repeat scroll center;
+}
