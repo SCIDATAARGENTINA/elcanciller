@@ -28,11 +28,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
       $livesection_query->the_post();
 
        if(get_field('habilitado') != 'no'){ ?>
-        <div class="trending-post titular" style="background-color:#000;">
-            <div class="category">
-               <a href="http://142.93.24.13/categoria/politica/"><h3 class="category-name">Política</h3></a>
-               <span><img src="http://142.93.24.13/wp-content/uploads/2019/07/fire-marron.svg" alt=""></span>
-            </div><!-- category -->
+        <div class="titular" style="background-color:#000;text-align:center;">
             <a href="http://142.93.24.13/2018/12/el-lider-antichavista-de-la-region-la-competencia-que-enfrenta-a-macri-contra-bolsonaro/"><h2 style="color:#fff;">EN VIVO</h2></a>
          </div>
         <article id="live-<?php the_ID(); ?>" style="max-width: 100%;background-color: #000;">
