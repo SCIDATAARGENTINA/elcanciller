@@ -3307,9 +3307,8 @@ SECCION AUTORES
 /* FIN DE LA SECCIÓN AUTORES */
 
 .error-image {
-    width: 540px;
+    width: 450px;
     margin-bottom: 100px;
     margin-top: 100px;
-    width: 450px;
-    margin: 0 auto;
+    margin: 10% 35%;
 }
