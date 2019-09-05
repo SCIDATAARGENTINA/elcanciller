@@ -17,8 +17,10 @@ get_header();
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<div class="error-404 not-found">
-				<img class="error-image" src="http://142.93.24.13/wp-content/uploads/2019/09/error-404.png">
+			<div class="error-404 not-found" style="width:100%;">
+				<div style="width:450px;">
+					<img class="error-image" src="http://142.93.24.13/wp-content/uploads/2019/09/error-404.png">
+				</div>
 				<!-- <header class="page-header">
 					<h1 class="page-title"><?php //_e( 'Oops! That page can&rsquo;t be found.', 'twentynineteen' ); ?></h1>
 				</header>-->
