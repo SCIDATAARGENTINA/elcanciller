@@ -2456,6 +2456,9 @@ article .post-content .has-content-area {
     background: #edede6;
 }
 
+.single{
+    overflow-x: hidden;
+}
 
 
 /*COMMENTS*/
