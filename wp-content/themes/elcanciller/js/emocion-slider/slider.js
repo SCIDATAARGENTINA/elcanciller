@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
 
             let updateData = createSlideData();
 
-           /* $.ajax({
+            $.ajax({
                 url: url,
                 type: 'POST',
                 data: updateData,
@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
                 error: function (errorThrown) {
 
                 }
-            })// end ajax*/
+            })// end ajax
 
         })// end done
 
