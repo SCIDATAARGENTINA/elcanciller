@@ -778,8 +778,12 @@ add_action( 'wp_enqueue_scripts', 'slider_scripts' );
 
 function slider_ajax_handler(){
 
-  echo 'hello';
- 
+  $id_interaccion = $_POST['interaccionId'];
+	$id_slider = $_POST['sliderId'];
+  $val = $_POST['interaccionVal'];
+  $crear = $_POST['createNew'];
+
+  echo get_field('field_5d70141e4264f', $field_5d70141e4264f);
 	
 	die; // here we exit the script and even no wp_reset_query() required!
 };
