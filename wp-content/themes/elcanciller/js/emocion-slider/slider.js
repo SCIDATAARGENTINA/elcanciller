@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
             let findSlider = arrIds.findIndex(obj => obj.sliderId == sliderId);
 
             
-            if (findSlider != -1){
+            if (findSlider > -1){
                 console.log('beforeSplice',arrIds);
                 arrIds.splice(findSlider);
                 console.log('afterSpice',arrIds);
