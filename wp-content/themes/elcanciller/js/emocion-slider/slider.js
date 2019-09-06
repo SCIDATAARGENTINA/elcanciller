@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 
             let findSlider = arrIds.findIndex(obj => obj.sliderId == sliderId);
 
-            console.log(findSlider);
+            console.log(arrIds);
             
             if (findSlider != -1){
 
