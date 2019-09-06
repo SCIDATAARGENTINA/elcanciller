@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 
                 arrIds.splice(findSlider);
 
-                arrIdsIds.push(interaccionObj);
+                arrIds.push(interaccionObj);
 
             }else{
                 arrIds.push(interaccionObj)
