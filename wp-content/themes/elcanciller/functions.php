@@ -783,7 +783,31 @@ function slider_ajax_handler(){
   $val = $_POST['interaccionVal'];
   $crear = $_POST['createNew'];
 
-  echo print_r(get_field('field_5d70141e4264f', $id_slider));
+  // Agregamos la ultima interaccion recibida via ajax al campo.
+  $interaccion_data = array(
+    'id' => $id_interaccion,
+    'respuesta' => $val
+  );
+
+  add_row('field_5d70141e4264f', $interaccion_data, $id_slider); // Agregamos la interaccion recibida al backend.
+
+  // Calculamos el promedio de todas las interacciones dentro del campo.
+
+  $interacciones = get_field('field_5d70141e4264f', $id_slider);
+  $total_interacciones = 0;
+  $total_valores = 0;
+
+  foreach($interacciones as $interaccion){
+
+    $total_valores += $interaccion['respuesta'];
+    $total_interacciones++;
+
+  }
+
+  $promedio = $total_valores / $total_interacciones;
+
+  update_field('field_5d7013e14264e', $promedio , $id_slider)  // Actualizamos el promedio.
+  update_field('field_5d7013c24264d', $total_interacciones , $id_slider)  // Actualizamos el total de interacciones.
 	
 	die; // here we exit the script and even no wp_reset_query() required!
 };
