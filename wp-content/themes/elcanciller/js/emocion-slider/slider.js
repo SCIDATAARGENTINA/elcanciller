@@ -15,6 +15,7 @@ jQuery(document).ready(function($) {
             sliderId,
             val
         }
+        let createNew = true;
 
         if (sliderAccionado) {
 
@@ -24,11 +25,12 @@ jQuery(document).ready(function($) {
 
             
             if (findSlider > -1){
-                console.log('beforeSplice',arrIds);
+
                 arrIds.splice(findSlider, 1);
-                console.log('afterSpice',arrIds);
 
                 arrIds.push(interaccionObj);
+
+                createNew = false;
 
             }else{
                 arrIds.push(interaccionObj)
@@ -45,7 +47,7 @@ jQuery(document).ready(function($) {
 
         }
 
-        console.log(arrIds);
+        return createNew;
 
     };
 
@@ -55,21 +57,9 @@ jQuery(document).ready(function($) {
 
     let createSlideData = (acfData, sliderId, val) => {
 
-        let resultadoPromedio;
-        let totalDeInteracciones;
         let interaccionId;
         let interaccionVal = val;
         let createNew = true;
-
-        console.log(acfData, val);
-
-        if (acfData.resultado_promedio == null) {
-            resultadoPromedio = 1;
-        }
-
-        if (acfData.total_de_interacciones == null) {
-            totalDeInteracciones = 0;
-        }
 
         if (acfData.interacciones == null) {
             interaccionId = 1;
@@ -77,10 +67,14 @@ jQuery(document).ready(function($) {
             interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id)) + 1;
         }
 
-        setCookie(sliderId, interaccionId, val);
+        createNew = setCookie(sliderId, interaccionId, interaccionVal);
 
         let data = {
             action: 'slider',
+            interaccionId,
+            interaccionVal,
+            sliderId,
+            createNew
         };
 
         return data;
