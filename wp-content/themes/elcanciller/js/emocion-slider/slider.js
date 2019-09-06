@@ -71,7 +71,7 @@ jQuery(document).ready(function($) {
         if (acfData.interacciones == null) {
             interaccionId = 1;
         }else{
-            interaccionId = (acfData.interacciones[acfData.interacciones.length - 1].id) + 1;
+            interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id)) + 1;
         }
 
         setCookie(sliderId, interaccionId);
