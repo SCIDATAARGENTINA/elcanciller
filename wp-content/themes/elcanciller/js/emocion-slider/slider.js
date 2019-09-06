@@ -23,7 +23,11 @@ jQuery(document).ready(function($) {
 
             console.log(findSlider);
             
-            if(false){
+            if (findSlider != -1){
+
+                arrIds.splice(findSlider);
+
+                arrIdsIds.push(interaccionObj);
 
             }else{
                 arrIds.push(interaccionObj)
