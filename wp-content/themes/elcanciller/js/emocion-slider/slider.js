@@ -24,8 +24,9 @@ jQuery(document).ready(function($) {
 
             
             if (findSlider != -1){
-
+                console.log('beforeSplice',arrIds);
                 arrIds.splice(findSlider);
+                console.log('afterSpice',arrIds);
 
                 arrIds.push(interaccionObj);
 
