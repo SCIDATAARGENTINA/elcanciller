@@ -21,7 +21,6 @@ jQuery(document).ready(function($) {
 
             let findSlider = arrIds.findIndex(obj => obj.sliderId == sliderId);
 
-            console.log(arrIds);
             
             if (findSlider != -1){
 
@@ -43,6 +42,8 @@ jQuery(document).ready(function($) {
             Cookies.set('sliderAccionado', sliderAccionado, { expires: Infinity });
 
         }
+
+        console.log(arrIds);
 
     };
 
@@ -73,6 +74,7 @@ jQuery(document).ready(function($) {
         }else{
             interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id)) + 1;
         }
+
         setCookie(sliderId, interaccionId);
 
         let data = {
