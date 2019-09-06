@@ -6,13 +6,14 @@ jQuery(document).ready(function($) {
 
     };
 
-    let setCookie = (sliderId, interaccionId) => {
+    let setCookie = (sliderId, interaccionId, val) => {
 
         let sliderAccionado = Cookies.get('sliderAccionado');
         let arrIds = [];
         let interaccionObj = {
             interaccionId,
-            sliderId
+            sliderId,
+            val
         }
 
         if (sliderAccionado) {
@@ -75,7 +76,7 @@ jQuery(document).ready(function($) {
             interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id)) + 1;
         }
 
-        setCookie(sliderId, interaccionId);
+        setCookie(sliderId, interaccionId, val);
 
         let data = {
             action: 'slider',
