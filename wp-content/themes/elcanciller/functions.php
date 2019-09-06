@@ -783,7 +783,7 @@ function slider_ajax_handler(){
   $val = $_POST['interaccionVal'];
   $crear = $_POST['createNew'];
 
-  echo print_r(get_field('field_5d70141e4264f', $id_interaccion));
+  echo print_r(get_field('field_5d70141e4264f', $id_slider));
 	
 	die; // here we exit the script and even no wp_reset_query() required!
 };
