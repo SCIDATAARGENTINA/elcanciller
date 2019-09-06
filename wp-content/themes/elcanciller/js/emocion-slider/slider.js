@@ -10,21 +10,31 @@ jQuery(document).ready(function($) {
 
         let sliderAccionado = Cookies.get('sliderAccionado');
         let arrIds = [];
+        let interaccionObj = {
+            interaccionId,
+            sliderId
+        }
 
         if (sliderAccionado) {
 
             arrIds = JSON.parse(sliderAccionado);
-            console.log(arrIds);
-            //arrIds.push(id);
+
+            let findSlider = arrIds.findIndex(obj => obj.sliderId == sliderId);
+
+            console.log(findSlider);
+            
+            if(false){
+
+            }else{
+                arrIds.push(interaccionObj)
+            }
+
             sliderAccionado = JSON.stringify(arrIds);
             Cookies.set('sliderAccionado', sliderAccionado, { expires: Infinity });
 
         } else {
 
-            arrIds = [{
-                interaccionId, 
-                sliderId
-            }];
+            arrIds = [interaccionObj];
             sliderAccionado = JSON.stringify(arrIds);
             Cookies.set('sliderAccionado', sliderAccionado, { expires: Infinity });
 
