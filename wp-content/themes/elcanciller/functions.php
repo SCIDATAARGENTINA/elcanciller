@@ -806,8 +806,8 @@ function slider_ajax_handler(){
 
   $promedio = $total_valores / $total_interacciones;
 
-  update_field('field_5d7013e14264e', $promedio , $id_slider)  // Actualizamos el promedio.
-  update_field('field_5d7013c24264d', $total_interacciones , $id_slider)  // Actualizamos el total de interacciones.
+  update_field('field_5d7013e14264e', $promedio , $id_slider);  // Actualizamos el promedio.
+  update_field('field_5d7013c24264d', $total_interacciones , $id_slider);  // Actualizamos el total de interacciones.
 	
 	die; // here we exit the script and even no wp_reset_query() required!
 };
