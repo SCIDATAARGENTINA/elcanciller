@@ -798,9 +798,10 @@ function slider_ajax_handler(){
   $row = 0;
   foreach($interacciones as $interaccion){
     $row++;
-
+    echo $row;
     if($interaccion['id'] == $id_interaccion){
       // Realizamos un update de la interaccion realizada.
+      echo 'hay update';
       update_row('field_5d70141e4264f', $row ,$interaccion_data, $id_slider); // Agregamos la interaccion recibida al backend.
       break;
     }
