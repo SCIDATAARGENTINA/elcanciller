@@ -797,6 +797,7 @@ function slider_ajax_handler(){
   }else{ // Si hay que updatear una interaccion existente
   $row = 0;
   foreach($interacciones as $interaccion){
+    echo print_r($interaccion);
     $row++;
     echo $row;
     if($interaccion['id'] == $id_interaccion){
