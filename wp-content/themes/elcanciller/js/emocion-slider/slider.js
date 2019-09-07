@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
             sliderId,
             val
         }
-        let createNew = true;
+        var createNew = true;
 
         if (sliderAccionado) {
 
