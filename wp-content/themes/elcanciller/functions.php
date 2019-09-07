@@ -790,7 +790,7 @@ function slider_ajax_handler(){
     'respuesta' => $val
   );
 
-  if($crear ){ // Si hay que crear una nueva interaccion
+  if($crear == true){ // Si hay que crear una nueva interaccion
 
   // Agregamos la ultima interaccion recibida via ajax al campo.
 
