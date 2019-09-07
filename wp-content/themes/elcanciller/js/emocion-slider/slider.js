@@ -20,6 +20,7 @@ jQuery(document).ready(function($) {
         if (sliderAccionado) {
 
             arrIds = JSON.parse(sliderAccionado);
+            console.log(arrIds);
 
             let findSlider = arrIds.findIndex(obj => obj.sliderId == sliderId);
 
