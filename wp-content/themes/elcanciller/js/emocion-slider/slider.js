@@ -24,6 +24,8 @@ jQuery(document).ready(function($) {
 
             let findSlider = arrIds.findIndex(obj => obj.sliderId == sliderId);
 
+            console.log(findSlider);
+
             if (findSlider > 0 && typeof arrIds[findSlider].id !== "undefined"){
 
                 arrIds.splice(findSlider, 1);
