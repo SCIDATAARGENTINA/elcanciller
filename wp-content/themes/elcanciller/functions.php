@@ -783,13 +783,14 @@ function slider_ajax_handler(){
   $val = $_POST['interaccionVal'];
   $crear = $_POST['createNew'];
   $interacciones = get_field('field_5d70141e4264f', $id_slider);
+  echo $crear;
 
   $interaccion_data = array(
     'id' => $id_interaccion,
     'respuesta' => $val
   );
 
-  if($crear){ // Si hay que crear una nueva interaccion
+  if($crear ){ // Si hay que crear una nueva interaccion
 
   // Agregamos la ultima interaccion recibida via ajax al campo.
 
