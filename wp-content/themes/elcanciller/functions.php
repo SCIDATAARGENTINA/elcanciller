@@ -798,10 +798,10 @@ function slider_ajax_handler(){
   $item_row = 0;
   foreach($interacciones as $interaccion){
     echo print_r($interaccion);
-    echo 'id-interacc' . $id_interaccion;
+    echo ' id-interacc :' . $id_interaccion;
     $item_row++;
-    echo 'row' . $item_row;
-    echo 'interaccion' . $interaccion['id'];
+    echo ' row :' . $item_row;
+    echo ' interaccion: ' . $interaccion['id'];
     if($interaccion['id'] == $id_interaccion){
       // Realizamos un update de la interaccion realizada.
       echo 'hay update';
