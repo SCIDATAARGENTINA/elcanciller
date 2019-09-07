@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
             console.log(interaccionObj);
             console.log(sliderId);
 
-            let findSlider = arrIds.findIndex((obj) => {obj.sliderId === sliderId});
+            let findSlider = arrIds.findIndex(obj => obj.sliderId === sliderId);
 
             console.log(findSlider);
 
