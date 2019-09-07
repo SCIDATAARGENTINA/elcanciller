@@ -795,10 +795,10 @@ function slider_ajax_handler(){
   add_row('field_5d70141e4264f', $interaccion_data, $id_slider); // Agregamos la interaccion recibida al backend.
 
   }else{ // Si hay que updatear una interaccion existente
-  $row = 0;
+  $item_row = 0;
   foreach($interacciones as $interaccion){
     echo print_r($interaccion);
-    $row++;
+    $item_row++;
     echo $row;
     if($interaccion['id'] == $id_interaccion){
       // Realizamos un update de la interaccion realizada.
