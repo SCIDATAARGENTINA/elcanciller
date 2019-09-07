@@ -141,6 +141,7 @@ h2:before {
     font-family: 'Bree Serif', serif;
     margin: 0 5px;
     padding: 0 5px;
+    display: none;
 }
 
 .trending-bar::after {
@@ -158,12 +159,16 @@ h2:before {
 .search input[type="search"] {
     background: transparent;
     border-color: transparent;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     font-family: 'Bree Serif', serif;
-    width: 73px;
+    width: 150px;
     padding: 10px 0;
     transition: 300ms ease;
+    height: 36px;
+    padding-left: 15px;
+    border-left: 2px solid #fff;
+
 }
 
 .search input[type="search"]:focus,
@@ -171,7 +176,7 @@ h2:before {
     border-color: transparent !important;
     outline: 0;
     padding: 10px 5px;
-    width: 130px;
+    width: 200px;
 }
 
 .search input[type="search"]::placeholder {
@@ -2527,10 +2532,11 @@ article .post-content .has-content-area {
     font-family: "Roboto";
     font-size: 15px;
     margin-top: 0px;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 15px;
     padding-bottom: 15px;
     padding-right: 10px;
+    margin-right: 10px;
 }
 
 .comment-notes {
@@ -2562,12 +2568,13 @@ article .post-content .has-content-area {
 
 .comment-reply-link,
 #cancel-comment-reply-link {
-    border-radius: 20px;
     background: #e7d117 !important;
     color: #fff !important;
-    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: "Lato";
     font-size: 12px;
-    font-family: "Bree Serif";
+    line-height: 16px;
+    padding: 3px 6px;
     font-weight: 400;
     text-transform: lowercase;
 }
@@ -2586,6 +2593,8 @@ article .post-content .has-content-area {
     background: #e7d117;
     color: #fff;
     text-decoration: none;
+    opacity: 0.8;
+    transition: 200ms ease;
 }
 
 .comment-form input[name="author"],
@@ -2631,7 +2640,7 @@ article .post-content .has-content-area {
 }
 
 #comments .children article {
-    border-left: 2px solid #ccc;
+    border-left: 1px solid #ccc;
     border-bottom: 0px !important;
     padding-left: 10px;
     padding-bottom: 0px;
