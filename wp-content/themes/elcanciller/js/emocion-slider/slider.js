@@ -71,7 +71,6 @@ jQuery(document).ready(function($) {
 
         let interaccionId;
         let interaccionVal = val;
-        let createNew = true;
 
         if (acfData.interacciones == null) {
             interaccionId = 1;
