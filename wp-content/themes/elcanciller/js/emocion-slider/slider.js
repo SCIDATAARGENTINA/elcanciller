@@ -68,6 +68,7 @@ jQuery(document).ready(function($) {
         }
 
         createNew = setCookie(sliderId, interaccionId, interaccionVal);
+        console.log(createNew);
 
         let data = {
             action: 'slider',
