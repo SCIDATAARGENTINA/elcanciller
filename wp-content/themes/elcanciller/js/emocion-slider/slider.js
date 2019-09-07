@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 
         return setCookieResponse = {
             createNew,
-
+            interaccionId
         };
 
     };
@@ -79,15 +79,15 @@ jQuery(document).ready(function($) {
             interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id));
         }
 
-        createNew = setCookie(sliderId, interaccionId, interaccionVal);
-        console.log(createNew);
+        cookieResponse = setCookie(sliderId, interaccionId, interaccionVal);
+        console.log(cookieResponse.createNew);
 
         let data = {
             action: 'slider',
-            interaccionId,
+            interaccionId: cookieResponse.interaccionId,
             interaccionVal,
             sliderId,
-            createNew
+            createNew: cookieResponse.createNew
         };
 
         return data;
