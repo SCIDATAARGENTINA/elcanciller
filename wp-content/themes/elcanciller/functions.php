@@ -783,7 +783,7 @@ function slider_ajax_handler(){
   $val = $_POST['interaccionVal'];
   $crear = $_POST['createNew'];
   $interacciones = get_field('field_5d70141e4264f', $id_slider);
-  echo $crear;
+  var_dump($crear) ;
 
   $interaccion_data = array(
     'id' => $id_interaccion,
