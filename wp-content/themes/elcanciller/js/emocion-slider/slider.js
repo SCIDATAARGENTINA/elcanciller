@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
                 type: 'POST',
                 data: updateData,
                 success: function (result) {
-                    console.log(result);
+                    //console.log(result);
                 },
                 error: function (errorThrown) {
                     console.log(errorThrown);
