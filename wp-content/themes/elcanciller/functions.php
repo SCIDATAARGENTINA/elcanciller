@@ -782,18 +782,38 @@ function slider_ajax_handler(){
 	$id_slider = $_POST['sliderId'];
   $val = $_POST['interaccionVal'];
   $crear = $_POST['createNew'];
+  $interacciones = get_field('field_5d70141e4264f', $id_slider);
 
-  // Agregamos la ultima interaccion recibida via ajax al campo.
   $interaccion_data = array(
     'id' => $id_interaccion,
     'respuesta' => $val
   );
 
+  if($crear){ // Si hay que crear una nueva interaccion
+
+  // Agregamos la ultima interaccion recibida via ajax al campo.
+
   add_row('field_5d70141e4264f', $interaccion_data, $id_slider); // Agregamos la interaccion recibida al backend.
+
+  }else{ // Si hay que updatear una interaccion existente
+  
+  $row = 0;
+  foreach($interacciones as $interaccion){
+    $row++;
+
+    if($interaccion['id'] == $id_interaccion){
+
+      update_row('field_5d70141e4264f', $row ,$interaccion_data, $id_slider); // Agregamos la interaccion recibida al backend.
+      break;
+    }
+
+  }
+
+  }
+
 
   // Calculamos el promedio de todas las interacciones dentro del campo.
 
-  $interacciones = get_field('field_5d70141e4264f', $id_slider);
   $total_interacciones = 0;
   $total_valores = 0;
 
