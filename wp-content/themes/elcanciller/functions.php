@@ -798,6 +798,7 @@ function slider_ajax_handler(){
   $item_row = 0;
   foreach($interacciones as $interaccion){
     echo print_r($interaccion);
+    echo print_r($_POST);
     $item_row++;
     echo $row;
     if($interaccion['id'] == $id_interaccion){
