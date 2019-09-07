@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 
             console.log(findSlider);
 
-            if (findSlider > 0 && typeof arrIds[findSlider].id !== "undefined"){
+            if (findSlider > 0 ){
 
                 console.log('entramo');
 
