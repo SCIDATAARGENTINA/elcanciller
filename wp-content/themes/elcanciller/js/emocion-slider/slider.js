@@ -30,6 +30,8 @@ jQuery(document).ready(function($) {
 
             if (findSlider > 0 && typeof arrIds[findSlider].id !== "undefined"){
 
+                console.log('entramo');
+
                 arrIds.splice(findSlider, 1);
 
                 interaccionId = arrIds[findSlider].id;
