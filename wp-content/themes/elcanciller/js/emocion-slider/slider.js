@@ -24,11 +24,12 @@ jQuery(document).ready(function($) {
 
             let findSlider = arrIds.findIndex(obj => obj.sliderId == sliderId);
 
-            interaccionId = arrIds[findSlider].id;
 
             if (findSlider > -1){
 
                 arrIds.splice(findSlider, 1);
+
+                interaccionId = arrIds[findSlider].id;
 
                 interaccionObj = {
                     interaccionId,
