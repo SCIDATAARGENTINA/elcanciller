@@ -783,7 +783,6 @@ function slider_ajax_handler(){
   $val = $_POST['interaccionVal'];
   $crear = $_POST['createNew'];
   $interacciones = get_field('field_5d70141e4264f', $id_slider);
-  var_dump($crear) ;
 
   $interaccion_data = array(
     'id' => $id_interaccion,
@@ -791,13 +790,11 @@ function slider_ajax_handler(){
   );
 
   if($crear == 'true'){ // Si hay que crear una nueva interaccion
-    echo 'crea una';
   // Agregamos la ultima interaccion recibida via ajax al campo.
 
   add_row('field_5d70141e4264f', $interaccion_data, $id_slider); // Agregamos la interaccion recibida al backend.
 
   }else{ // Si hay que updatear una interaccion existente
-  echo 'updatea una';
   $row = 0;
   foreach($interacciones as $interaccion){
     $row++;
