@@ -801,6 +801,7 @@ function slider_ajax_handler(){
     echo 'id-interacc' . $id_interaccion;
     $item_row++;
     echo 'row' . $item_row;
+    echo 'interaccion' . $interaccion['id'];
     if($interaccion['id'] == $id_interaccion){
       // Realizamos un update de la interaccion realizada.
       echo 'hay update';
