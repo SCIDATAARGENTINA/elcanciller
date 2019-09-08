@@ -13,11 +13,13 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
 $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
-$date = new DateTime();
+$fecha_limite = new DateTime();
 
-$date = $date->createFromFormat('d/m/Y', get_field('fecha_limite'));
+$fecha_hoy = new DateTime();
 
-$interval = $date->diff($now);
+$fecha_limite = $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
+
+$intervalo = $fecha_limite->diff($fecha_hoy);
 
 echo $interval->format("a");
 
