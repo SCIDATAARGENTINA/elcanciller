@@ -174,7 +174,7 @@ jQuery(document).ready(function($) {
 
         setSlide(slide, sliderId, connectUi);
 
-        slide[0].noUiSlider.on('update', function(val, handle) {
+        slide.noUiSlider.on('update', function(val, handle) {
 
             val = parseInt(val);
 
@@ -192,7 +192,7 @@ jQuery(document).ready(function($) {
 
         });
 
-        slide[0].noUiSlider.on('change', function (val) {
+        slide.noUiSlider.on('change', function (val) {
 
             var timeout;
 
