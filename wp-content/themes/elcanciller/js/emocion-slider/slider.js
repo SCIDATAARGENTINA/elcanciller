@@ -162,7 +162,7 @@ jQuery(document).ready(function($) {
 
         var connectUi = slide.find('.noUi-connect');
 
-        noUiSlider.create($(this)[0], {
+        noUiSlider.create(slide, {
             start: [0],
             step: 1,
             behaviour: 'tap-drag',
@@ -175,7 +175,7 @@ jQuery(document).ready(function($) {
 
         setSlide(slide, sliderId, connectUi);
 
-        $(this)[0].noUiSlider.on('update', function(val, handle) {
+        slide.noUiSlider.on('update', function(val, handle) {
 
             val = parseInt(val);
 
@@ -193,7 +193,7 @@ jQuery(document).ready(function($) {
 
         });
 
-        $(this)[0].noUiSlider.on('change', function (val) {
+        slide.noUiSlider.on('change', function (val) {
 
             var timeout;
 
