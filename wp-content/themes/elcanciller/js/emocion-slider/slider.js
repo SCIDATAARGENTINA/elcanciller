@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
 
         return setCookieResponse = {
             createNew,
-            interaccionId
+            interaccionId: interaccionObj.interaccionId
         };
 
     };
