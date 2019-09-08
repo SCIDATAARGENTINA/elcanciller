@@ -174,11 +174,11 @@ jQuery(document).ready(function($) {
 
         setSlide(slide, sliderId, connectUi);
 
-        slide[0].noUiSlider.on('update', function(val, handle) {
+        $(this)[0].noUiSlider.on('update', function(val, handle) {
 
             val = parseInt(val);
 
-            let handleUi = slide.find('.noUi-handle');
+            let handleUi = $(this).find('.noUi-handle');
 
             handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
 
@@ -192,7 +192,7 @@ jQuery(document).ready(function($) {
 
         });
 
-        slide[0].noUiSlider.on('change', function (val) {
+        $(this)[0].noUiSlider.on('change', function (val) {
 
             var timeout;
 
