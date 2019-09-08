@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
 
     };// end sliderUpdater
 
-    let setSlide = async (slide, sliderId, connectUi) => {
+        let setSlide = async (slide, sliderId, connectUi) => {
 
         let acfData = await getSlider(sliderId);
 
@@ -174,11 +174,11 @@ jQuery(document).ready(function($) {
 
         setSlide(slide, sliderId, connectUi);
 
-        $(this)[0].noUiSlider.on('update', function(val, handle) {
+        slide[0].noUiSlider.on('update', function(val, handle) {
 
             val = parseInt(val);
 
-            let handleUi = $(this).find('.noUi-handle');
+            let handleUi = slide.find('.noUi-handle');
 
             handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
 
@@ -192,7 +192,7 @@ jQuery(document).ready(function($) {
 
         });
 
-        $(this)[0].noUiSlider.on('change', function (val) {
+        slide[0].noUiSlider.on('change', function (val) {
 
             var timeout;
 
