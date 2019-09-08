@@ -1,10 +1,33 @@
 jQuery(document).ready(function($) {
 
+
     let getSlider = (sliderId) => {
 
         return $.get(`http://142.93.24.13/wp-json/wp/v2/posts/${sliderId}`);
 
     };
+
+    let setSlide = async (slide, sliderId, connectUi) => {
+
+        let acfData = await getSlider(sliderId);
+
+        let cookieData = getCookie();
+
+        cookieData.map((val, index) => {
+            console.log(val, index);
+        })
+
+        //slide.noUiSlider.set([null, 14]);
+
+        /*if (val == 2) {
+            connectUi.css('box-shadow', 'rgba(208, 35, 26, 0.61) 11px 0px 5px 5px inset');
+        } else if (val == 5) {
+            connectUi.css('box-shadow', 'inset 5px 0px 6px 4px rgba(3, 199, 0, 0.9)');
+        } else {
+            connectUi.css('box-shadow', 'inset 5px 0px 3px 4px rgba(231, 209, 23, 0.6)');
+        }*/
+
+    }
 
     let setCookie = (sliderId, interaccionId, val) => {
 
@@ -132,7 +155,13 @@ jQuery(document).ready(function($) {
 
     slider.each(function() {
 
-        noUiSlider.create($(this)[0], {
+        var slide = $(this);
+
+        var sliderId = slide.attr('id').slice(7);
+
+        var connectUi = slide.find('.noUi-connect');
+
+        noUiSlider.create(slide[0], {
             start: [0],
             step: 1,
             behaviour: 'tap-drag',
@@ -144,17 +173,13 @@ jQuery(document).ready(function($) {
 
         });
 
-        var slide = $(this);
-
-        $(this)[0].noUiSlider.on('update', function(val, handle) {
+        slide[0].noUiSlider.on('update', function(val, handle) {
 
             val = parseInt(val);
 
             let handleUi = slide.find('.noUi-handle');
 
             handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
-
-            let connectUi = slide.find('.noUi-connect');
 
             if (val == 2) {
                 connectUi.css('box-shadow', 'rgba(208, 35, 26, 0.61) 11px 0px 5px 5px inset');
@@ -166,15 +191,11 @@ jQuery(document).ready(function($) {
 
         });
 
-        $(this)[0].noUiSlider.on('change', function (val) {
+        slide[0].noUiSlider.on('change', function (val) {
 
             var timeout;
 
             val = parseInt(val);
-
-            let sliderId = slide.attr('id');
-
-            sliderId = sliderId.slice(7);
 
             if (timeout) {
                 clearTimeout(timeout);
