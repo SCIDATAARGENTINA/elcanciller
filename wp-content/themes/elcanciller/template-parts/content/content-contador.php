@@ -12,6 +12,15 @@
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
 $thumbnail_id = get_post_thumbnail_id($post->ID);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+
+$date = get_field('fecha_limite');
+
+$date = new DateTime($date);
+
+$interval = $future_date->diff($now);
+
+echo $interval->format("a");
+
 ?>
 
 <article id="contador-<?php the_ID(); ?>">
