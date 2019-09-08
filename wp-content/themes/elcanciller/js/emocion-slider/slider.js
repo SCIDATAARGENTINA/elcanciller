@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
         }
 
         cookieResponse = setCookie(sliderId, interaccionId, interaccionVal);
-        console.log(cookieResponse.createNew);
+        console.log(cookieResponse);
 
         let data = {
             action: 'slider',
@@ -93,6 +93,7 @@ jQuery(document).ready(function($) {
             sliderId,
             createNew: cookieResponse.createNew
         };
+        console.log(data);
 
         return data;
 
