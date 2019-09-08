@@ -139,9 +139,13 @@ jQuery(document).ready(function($) {
 
             console.log(data);
             console.log(slide);
-            
-            slide[0].noUiSlider.set([data.val]);
 
+            if(sliderId == data.sliderId){
+
+                slide[0].noUiSlider.set([data.val]);
+
+            }
+            
         })
 
     }
