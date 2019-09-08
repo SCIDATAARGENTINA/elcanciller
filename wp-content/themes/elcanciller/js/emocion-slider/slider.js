@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 
             if (findSlider > -1){ 
 
-                console.log('entramo');
+                console.log('entramos');
 
                 arrIds.splice(findSlider, 1);
 
