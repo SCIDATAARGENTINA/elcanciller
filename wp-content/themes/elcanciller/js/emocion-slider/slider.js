@@ -77,19 +77,15 @@ jQuery(document).ready(function($) {
             let cookieData = getCookie()
 
             let cookieIndex = cookieData.findIndex(obj => obj.sliderId == sliderId);
-            console.log(cookieData, 'index: ', cookieIndex);
 
             if (cookieIndex > -1){
 
                 interaccionId = cookieData[cookieIndex].id;
-                console.log(cookieData[cookieIndex]);
 
             }else{
 
-                console.log(acfData.interacciones);
 
                 interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id) + 1);
-                console.log(interaccionId);
 
             }
 
@@ -99,7 +95,7 @@ jQuery(document).ready(function($) {
 
         let data = {
             action: 'slider',
-            interaccionId: cookieResponse.interaccionId,
+            interaccionId,
             interaccionVal,
             sliderId,
             createNew: cookieResponse.createNew
