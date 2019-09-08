@@ -80,10 +80,9 @@ jQuery(document).ready(function($) {
 
             if (cookieIndex > -1){
 
-                interaccionId = cookieData[cookieIndex].id;
+                interaccionId = cookieData[cookieIndex].interaccionId;
 
             }else{
-
 
                 interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id) + 1);
 
