@@ -21,8 +21,6 @@ $fecha_limite = $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite
 
 $intervalo = $fecha_limite->diff($fecha_hoy);
 
-echo $interval->format("a");
-
 ?>
 
 <article id="contador-<?php the_ID(); ?>">
