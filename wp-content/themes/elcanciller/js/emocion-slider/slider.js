@@ -76,7 +76,7 @@ jQuery(document).ready(function($) {
 
             let cookieData = getCookie()
 
-            let cookieIndex = cookieData.findIndex(obj = obj.sliderId == sliderId)
+            let cookieIndex = cookieData.findIndex(obj => obj.sliderId == sliderId)
 
             if (cookieIndex > -1){
 
