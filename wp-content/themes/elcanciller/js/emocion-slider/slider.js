@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
         if (acfData.interacciones == null) {
             interaccionId = 1;
         }else{
-            interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id));
+            interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length].id));
         }
 
         cookieResponse = setCookie(sliderId, interaccionId, interaccionVal);
