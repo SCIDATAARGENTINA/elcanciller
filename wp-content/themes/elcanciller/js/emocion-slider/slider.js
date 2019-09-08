@@ -20,27 +20,12 @@ jQuery(document).ready(function($) {
         if (sliderAccionado) {
 
             arrIds = JSON.parse(sliderAccionado);
-            console.log(arrIds);
-            console.log(interaccionObj);
-            console.log(sliderId);
 
             let findSlider = arrIds.findIndex(obj => obj.sliderId === sliderId);
 
-            console.log(findSlider);
-
             if (findSlider > -1){ 
 
-                console.log('entramos');
-
                 arrIds.splice(findSlider, 1);
-
-                interaccionId = arrIds[findSlider].id;
-
-                interaccionObj = {
-                    interaccionId,
-                    sliderId,
-                    val
-                }
 
                 arrIds.push(interaccionObj);
 
@@ -61,11 +46,9 @@ jQuery(document).ready(function($) {
 
         }
 
-        console.log(interaccionObj);
-
         return setCookieResponse = {
             createNew,
-            interaccionId: interaccionObj.interaccionId
+            interaccionId
         };
 
     };
@@ -86,7 +69,6 @@ jQuery(document).ready(function($) {
         }
 
         cookieResponse = setCookie(sliderId, interaccionId, interaccionVal);
-        console.log(cookieResponse);
 
         let data = {
             action: 'slider',
