@@ -17,9 +17,7 @@ $date = new DateTime();
 
 $date = $date->createFromFormat('d/m/Y', get_field('fecha_limite'));
 
-
-
-$interval = $future_date->diff($now);
+$interval = $date->diff($now);
 
 echo $interval->format("a");
 
