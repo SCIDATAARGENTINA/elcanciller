@@ -156,6 +156,7 @@ jQuery(document).ready(function($) {
     slider.each(function() {
 
         var slide = $(this);
+        console.log(slide);
 
         var sliderId = slide.attr('id').slice(7);
 
