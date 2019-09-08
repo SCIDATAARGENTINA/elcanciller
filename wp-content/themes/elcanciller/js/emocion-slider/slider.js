@@ -99,7 +99,6 @@ jQuery(document).ready(function($) {
             sliderId,
             createNew: cookieResponse.createNew
         };
-        console.log(data);
 
         return data;
 
@@ -118,7 +117,7 @@ jQuery(document).ready(function($) {
                 type: 'POST',
                 data: updateData,
                 success: function (result) {
-                    console.log(result);
+                    //console.log(result);
                 },
                 error: function (errorThrown) {
                     console.log(errorThrown);
