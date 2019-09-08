@@ -85,6 +85,7 @@ jQuery(document).ready(function($) {
             }else{
 
                 interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id));
+                console.log(interaccionId);
 
             }
 
