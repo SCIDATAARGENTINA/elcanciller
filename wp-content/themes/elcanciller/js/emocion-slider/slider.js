@@ -86,7 +86,7 @@ jQuery(document).ready(function($) {
 
                 console.log(acfData.interacciones);
 
-                interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id));
+                interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id) + 1);
                 console.log(interaccionId);
 
             }
