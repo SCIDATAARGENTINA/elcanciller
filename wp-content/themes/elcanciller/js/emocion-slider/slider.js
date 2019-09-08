@@ -57,7 +57,9 @@ jQuery(document).ready(function($) {
 
         let sliderAccionado = Cookies.get('sliderAccionado');
         let arrIds = [];
-        arrIds = JSON.parse(sliderAccionado);
+        if(sliderAccionado){
+            arrIds = JSON.parse(sliderAccionado);
+        }
 
         return arrIds;
 
