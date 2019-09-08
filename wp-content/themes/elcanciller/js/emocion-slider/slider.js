@@ -138,6 +138,7 @@ jQuery(document).ready(function($) {
         cookieData.map((data) => {
 
             console.log(data);
+            console.log(slide);
             
             slide[0].noUiSlider.set([data.val]);
 
@@ -150,7 +151,6 @@ jQuery(document).ready(function($) {
     slider.each(function() {
 
         var slide = $(this);
-        console.log(slide);
 
         var sliderId = slide.attr('id').slice(7);
 
