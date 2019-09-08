@@ -131,8 +131,6 @@ jQuery(document).ready(function($) {
 
         let setSlide = async (slide, sliderId, connectUi) => {
 
-        let acfData = await getSlider(sliderId);
-
         let cookieData = getCookie();
 
         cookieData.map((data) => {
