@@ -76,11 +76,13 @@ jQuery(document).ready(function($) {
 
             let cookieData = getCookie()
 
-            let cookieIndex = cookieData.findIndex(obj => obj.sliderId == sliderId)
+            let cookieIndex = cookieData.findIndex(obj => obj.sliderId == sliderId);
+            console.log(cookieData, 'index: ', cookieIndex);
 
             if (cookieIndex > -1){
 
                 interaccionId = cookieData[cookieIndex].id;
+                console.log(cookieData[cookieIndex]);
 
             }else{
 
