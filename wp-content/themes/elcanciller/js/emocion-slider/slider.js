@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 
             console.log(findSlider);
 
-            if (findSlider > -1){
+            if (findSlider > -1){ 
 
                 console.log('entramo');
 
