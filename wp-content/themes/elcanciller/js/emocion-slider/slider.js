@@ -136,6 +136,8 @@ jQuery(document).ready(function($) {
         let cookieData = getCookie();
 
         cookieData.map((data) => {
+
+            console.log(data);
             
             slide.noUiSlider.set([data.val]);
 
