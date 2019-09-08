@@ -53,7 +53,12 @@ jQuery(document).ready(function($) {
 
     };
 
-    let getCookie = (acfData) => {
+    let getCookie = () => {
+
+        let sliderAccionado = Cookies.get('sliderAccionado');
+        let arrIds = JSON.parse(sliderAccionado);
+
+        return arrIds;
 
     }
 
@@ -65,7 +70,21 @@ jQuery(document).ready(function($) {
         if (acfData.interacciones == null) {
             interaccionId = 1;
         }else{
-            interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length].id));
+
+            let cookieData = getCookie()
+
+            let cookieIndex = cookieData.findIndex(obj = obj.sliderId == sliderId)
+
+            if (cookieIndex > -1){
+
+                interaccionId = cookieData[cookieIndex].id;
+
+            }else{
+
+                interaccionId = (parseInt(acfData.interacciones[acfData.interacciones.length - 1].id));
+
+            }
+
         }
 
         cookieResponse = setCookie(sliderId, interaccionId, interaccionVal);
