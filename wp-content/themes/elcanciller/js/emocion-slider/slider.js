@@ -135,19 +135,11 @@ jQuery(document).ready(function($) {
 
         let cookieData = getCookie();
 
-        cookieData.map((val, index) => {
-            console.log(val, index);
+        cookieData.map((data) => {
+            
+            slide.noUiSlider.set([data.val]);
+
         })
-
-        //slide.noUiSlider.set([null, 14]);
-
-        /*if (val == 2) {
-            connectUi.css('box-shadow', 'rgba(208, 35, 26, 0.61) 11px 0px 5px 5px inset');
-        } else if (val == 5) {
-            connectUi.css('box-shadow', 'inset 5px 0px 6px 4px rgba(3, 199, 0, 0.9)');
-        } else {
-            connectUi.css('box-shadow', 'inset 5px 0px 3px 4px rgba(231, 209, 23, 0.6)');
-        }*/
 
     }
 
