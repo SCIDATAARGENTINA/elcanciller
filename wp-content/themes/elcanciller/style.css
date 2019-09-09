@@ -113,6 +113,13 @@ h2:before {
     margin-left: 13px;
 }
 
+@media (max-width: 980px){
+    .header-navigation {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
 .header-navigation {
     margin-left: auto;
     width: 77%;
