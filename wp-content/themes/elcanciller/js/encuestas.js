@@ -128,7 +128,7 @@ jQuery(document).ready(function($) {
             new Noty({
                 theme: 'mint',
                 text: 'Ya votaste esta encuesta.',
-                timeout: '1000'
+                timeout: ''
             }).show();
             return;
         }
