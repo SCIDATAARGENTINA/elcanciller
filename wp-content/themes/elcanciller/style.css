@@ -69,8 +69,11 @@ blockquote p {
     margin: 0 auto;
 }
 @media (max-width: 1100px){
-    .container{
+    .inner-container{
     padding: 0 20px;
+    }
+    .outer-container{
+        padding: 0 20px;
     }
 }
 
