@@ -3487,6 +3487,7 @@ SECCION AUTORES
 /* SECCIÓN CONTADOR */
 .widget-contador{
     padding: 0px !important;
+    border: 1px solid #e7d12d;
 }
 .contador-header{
     color: #fff !important;
@@ -3496,17 +3497,19 @@ SECCION AUTORES
 }
 .contador-header h3{font-size: 26px;text-align: center;margin-bottom: 0px;}
 .contador-header-subtitulo{font-size: 23px;text-align: left;margin-left: 10%;}
-.contador-cuerpo{}
+.contador-cuerpo{
+    margin: 0px;
+}
 .contador-footer{
     font-family: 'Bree Serif', serif;
     font-weight: normal;
     font-size: 23px;
     text-align: left;
     padding: 8%;
-    border: 1px solid #e7d12d;
     background-color: #fff;
     line-height: 1em;
     color: #9E9E9E;
+    margin: 0px;
 }
 
 /* FIN SECCIÓN CONTADOR */
