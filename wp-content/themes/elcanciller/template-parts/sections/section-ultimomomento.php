@@ -17,7 +17,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 <div class="ultimomomento-section container">
 <?php // Setup arguments.
     $args = array(
-      'post_type' => 'live',
+      'post_type' => 'ultimomomento',
       'posts_per_page' => 1,
   );
   
