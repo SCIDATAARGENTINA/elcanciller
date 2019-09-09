@@ -2230,6 +2230,12 @@ ul.tagposts-list li {
     flex-wrap: nowrap;
 }
 
+@media (max-width: 650px){
+    #colophon .widget-column {
+        flex-wrap: wrap;
+    }
+}
+
 .footer-widget-1 .widget p {
     color: #fff;
     font-size: 17px;
