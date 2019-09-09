@@ -190,7 +190,6 @@ h2:before {
     border-color: transparent !important;
     outline: 0;
     padding: 10px 5px;
-    width: 350px;
 }
 
 .search input[type="search"]::placeholder {
