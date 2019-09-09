@@ -34,9 +34,6 @@
 					<a href="#"><i class="fas fa-bomb"></i></a>
 					<a href="#"><i class="fas fa-star"></i></a>
 				</div><!-- trending-bar -->
-				<div class="search">
-					<?php get_search_form(); ?>
-				</div>
 				<div class="current-user-avatar">
 					<?php
 
@@ -53,6 +50,8 @@
 		</div><!-- container -->
 
 	</div><!-- end top-bar -->
+
+	<?php get_template_part('template-parts/header/search', 'bar') ?>
 
 		<header id="masthead" >
 
