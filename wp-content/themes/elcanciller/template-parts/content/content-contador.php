@@ -29,7 +29,7 @@ $intervalo = $fecha_limite->diff($fecha_hoy);
         <h3> <?php the_title()?> </h3> <span class="contador-header-subtitulo">Faltan_</span>
     </div>
     <p class="contador-cuerpo" style="background-image: url('<?php the_field('imagen_de_fondo') ?>');background-size: cover;background-repeat: no-repeat;"> 
-        <span class="contador-numero">84</span><span class="contador-rango">DÍAS</span>
+        <span class="contador-cuerpo-inside"><span class="contador-numero">84</span><span class="contador-rango">DÍAS</span></span>
     </p>
     <p class="contador-footer"> <?php the_field('cuerpo')?> </p>
 </article><!-- #post-${ID} -->

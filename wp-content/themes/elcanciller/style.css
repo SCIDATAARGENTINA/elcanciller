@@ -3505,6 +3505,9 @@ SECCION AUTORES
     color: #fff !important;
     font-size: 23px;
 }
+.contador-cuerpo-inside{
+    padding:2%;
+}
 .contador-footer{
     font-family: 'Bree Serif', serif;
     font-weight: normal;
