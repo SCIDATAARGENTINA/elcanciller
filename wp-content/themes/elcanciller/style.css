@@ -3004,6 +3004,7 @@ article .post-content .has-content-area {
     align-items: center;
     position: relative;
     padding-top: 50px;
+    flex-wrap: wrap;
 }
 
 .encuesta-section .opciones::before {
