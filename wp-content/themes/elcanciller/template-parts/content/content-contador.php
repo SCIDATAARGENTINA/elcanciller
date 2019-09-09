@@ -25,7 +25,7 @@ $intervalo = $fecha_limite->diff($fecha_hoy);
 
 <article id="contador-<?php the_ID(); ?>">
     <div class="contador-header">
-        <h3> <?php the_title()?> </h3><span>Faltan_</span>
+        <h3> <?php the_title()?> </h3> <span class="contador-header-subtitulo">Faltan_</span>
     </div>
     <p> <?php the_field('fecha_limite')?> </p>
     <p> <?php the_field('cuerpo')?> </p>
