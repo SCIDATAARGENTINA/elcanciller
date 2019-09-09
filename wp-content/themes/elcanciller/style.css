@@ -501,6 +501,7 @@ input:-internal-autofill-selected {
 @media (max-width: 768px){
     .trending-post .titular {
         flex-direction: column;
+        margin: 5px;
     }
 }
 
@@ -539,6 +540,11 @@ input:-internal-autofill-selected {
     margin-bottom: 10px;
     margin-top: 5%;
 }
+@media (max-width: 400px){
+    .trending-post .category a h3{
+        font-size: 22px;
+    }
+}
 
 .trending-post .category img {
     width: 25px;
@@ -556,6 +562,12 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 768px){
+    .trending-post .titular h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px){
     .trending-post .titular h2 {
         font-size: 30px;
     }
