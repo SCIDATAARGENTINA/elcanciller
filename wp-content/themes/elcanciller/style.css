@@ -3500,6 +3500,11 @@ SECCION AUTORES
 .contador-cuerpo{
     margin: 0px;
 }
+.contador-numero{}
+.contador-rango{
+    color: #fff !important;
+    font-size: 23px;
+}
 .contador-footer{
     font-family: 'Bree Serif', serif;
     font-weight: normal;
