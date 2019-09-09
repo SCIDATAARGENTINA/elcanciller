@@ -1720,6 +1720,12 @@ ul.tagposts-list li {
     grid-gap: 30px;
 }
 
+@media (max-width: 900px){
+    .videos-section{
+        grid-template-columns: 1fr;
+    }
+}
+
 .videos-section::before {
     content: '';
     width: 90%;
