@@ -176,7 +176,7 @@ h2:before {
     font-size: 16px;
     color: #fff;
     font-family: 'Bree Serif', serif;
-    width: 150px;
+    width: 300px;
     padding: 10px 0;
     transition: 300ms ease;
     height: 36px;
@@ -190,7 +190,7 @@ h2:before {
     border-color: transparent !important;
     outline: 0;
     padding: 10px 5px;
-    width: 200px;
+    width: 350px;
 }
 
 .search input[type="search"]::placeholder {
