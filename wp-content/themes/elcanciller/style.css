@@ -194,7 +194,7 @@ h2:before {
 }
 
 .search input[type="search"]::placeholder {
-    font-size: 14px;
+    font-size: 17px;
     color: #fff;
     font-family: 'Bree Serif', serif;
 }
