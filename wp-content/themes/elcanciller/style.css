@@ -3081,6 +3081,7 @@ article .post-content .has-content-area {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
+    height: 320px;
 }
 
 .encuesta.card h3 {
