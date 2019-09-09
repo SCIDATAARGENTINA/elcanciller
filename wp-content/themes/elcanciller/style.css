@@ -1169,14 +1169,14 @@ ul.tagposts-list li {
 }
 
 @media (max-width: 950px){
-    .col-2-2 {
+    /*.col-2-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
         padding-left: 10px;
         margin-bottom: 50px;
         margin-top: 50px;
-    }
+    }*/
 }
 
 .advertical {
