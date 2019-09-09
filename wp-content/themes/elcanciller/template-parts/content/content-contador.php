@@ -29,7 +29,19 @@ $intervalo = $fecha_limite->diff($fecha_hoy);
         <h3> <?php the_title()?> </h3> <span class="contador-header-subtitulo">Faltan_</span>
     </div>
     <div class="contador-cuerpo" style="background-image: url('<?php the_field('imagen_de_fondo') ?>');background-size: cover;background-repeat: no-repeat;"> 
-        <div class="contador-cuerpo-inside"><div class="contador-numero"><div class="number">8</div><div class="number">4</div></div><div class="contador-rango">DÍAS</div></div>
+        <div class="contador-cuerpo-inside">
+            <div class="contador-numero">
+                <?php 
+                $numeros = array();
+                $num = 84;
+                while($num != 0){ //Ahora vemos por que usamos el while.
+                $numeros[] = $num % 10;
+                $num = intval($num/10); //Si dividimos 1234 / 10 nos da 123.4, pero queremos que no haya decimales. intval lo que hace es quitarle la parte decimal.
+                ?><div class="number"><? echo $num ?></div><?php
+                }
+                ?>
+            </div>
+            <div class="contador-rango">DÍAS</div></div>
     </div>
     <div class="contador-footer"> <?php the_field('cuerpo')?> </div>
 </article><!-- #post-${ID} -->
