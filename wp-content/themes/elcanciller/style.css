@@ -3482,8 +3482,16 @@ SECCION AUTORES
     background-color: #ead637;
 }
 
-/* */
+/* FIN DE LA SECCIÓN ÚLTIMO MOMENTO */
 
+/* SECCIÓN CONTADOR */
+.contador-header{
+    color: #fff !important;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #e7d12d;
+}
+/* FIN SECCIÓN CONTADOR */
 
 .error-image {
     width: 450px;
