@@ -44,6 +44,6 @@
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'twitter') ?>
 </div>
-<div class="widget">
+<div class="widget widget-contador">
   <?php echo do_shortcode('[contador postid=48914]') ?>
 </div>
