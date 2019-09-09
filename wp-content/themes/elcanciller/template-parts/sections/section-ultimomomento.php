@@ -28,9 +28,18 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
       $ultimomomentosection_query->the_post();
 
        if(get_field('habilitado') != 'no'){ ?>
-        <div class="titular" style="background-color:#000;text-align:center;">
-            <!--<a href="http://142.93.24.13/2018/12/el-lider-antichavista-de-la-region-la-competencia-que-enfrenta-a-macri-contra-bolsonaro/"><h2 style="color:#fff;margin-top: 0%;padding: 2% 0% 2% 0%;">EN VIVO</h2></a>-->
+        <!-- <div class="titular" style="background-color:#000;text-align:center;">
+            <h2 style="color:#fff;margin-top: 0%;padding: 2% 0% 2% 0%;"></h2>
+         </div>-->
+
+         <div class="titular">
+            <div class="category">
+               <a href="http://142.93.24.13/categoria/politica/"><h3 class="category-name">ULTIMO MOMENTO</h3></a>
+               <span><img src="http://142.93.24.13/wp-content/uploads/2019/07/fire-marron.svg" alt=""></span>
+            </div><!-- category -->
+            <a href="http://142.93.24.13/2018/12/el-lider-antichavista-de-la-region-la-competencia-que-enfrenta-a-macri-contra-bolsonaro/"><h2><?php get_field('texto_embebido') ?></h2></a>
          </div>
+
         <?php }
 
     }
