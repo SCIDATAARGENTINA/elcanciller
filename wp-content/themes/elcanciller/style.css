@@ -1152,6 +1152,13 @@ ul.tagposts-list li {
     grid-template-columns: 1fr 2fr;
 }
 
+@media (max-width: 950px){
+    .col-1-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+}
+
 .col-2-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
