@@ -1623,6 +1623,12 @@ ul.tagposts-list li {
     margin-top: 50px;
 }
 
+@media (max-width: 768px){
+    .instagram-section{
+        grid-template-columns: 1fr;
+    }
+}
+
 .instagram-section::before {
     content: '';
     width: 90%;
@@ -1654,6 +1660,12 @@ ul.tagposts-list li {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+@media (max-width: 768px){
+    .instagram-logo{
+        display: none;
+    }
 }
 
 .instagram-logo img {
