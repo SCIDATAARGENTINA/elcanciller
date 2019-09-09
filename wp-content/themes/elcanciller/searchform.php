@@ -14,5 +14,5 @@
 		<span class="screen-reader-text"><?php echo _x( 'Buscar en El Canciller...', 'label', 'elcanciller' ); ?></span>
 	</label>
 	<input type="search" id="search-input" class="search-field" placeholder="Buscar en El Canciller..." value="<?php echo get_search_query(); ?>" name="s" />
-	<button type="submit" class="search-submit">buscar</button>
+	<button type="submit" class="search-submit"></button>
 </form>
