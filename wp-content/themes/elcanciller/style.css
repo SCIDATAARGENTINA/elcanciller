@@ -3006,7 +3006,7 @@ article .post-content .has-content-area {
     padding-top: 50px;
 }
 
-@media (min-width: 1100px){
+@media (max-width: 1100px){
     .encuesta-section .opciones{
         flex-wrap: wrap;
     }
