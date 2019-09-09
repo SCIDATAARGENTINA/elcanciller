@@ -3508,6 +3508,11 @@ SECCION AUTORES
     color: #fff;
     font-family: 'Bree Serif', serif;
 }
+.number{
+    background-color:#c4afa1;
+    border-radius: 3%;
+}
+
 .contador-rango{
     color: #fff !important;
     width: 40%;
