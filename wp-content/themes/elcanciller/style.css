@@ -3413,6 +3413,17 @@ SECCION AUTORES
 
 /* FIN DE LA SECCIÓN AUTORES */
 
+/* SECCION ULTIMO MOMENTO */
+.ultimoicon{
+    color: #e7d117 !important;
+}
+.ultimomomento-section{
+    background-color: #ead637;
+}
+
+/* */
+
+
 .error-image {
     width: 450px;
     margin-bottom: 100px;
