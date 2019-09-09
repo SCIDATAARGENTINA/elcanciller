@@ -498,6 +498,12 @@ input:-internal-autofill-selected {
     margin: 15px;
 }
 
+@media (max-width: 768px){
+    .trending-post .titular {
+        flex-direction: column;
+    }
+}
+
 .trending-post .titular a {
     text-decoration: none !important;
     color: #111 !important;
@@ -511,8 +517,20 @@ input:-internal-autofill-selected {
     margin-right: 20px;
 }
 
+@media (max-width: 768px){
+    .trending-post .category{
+        flex-direction: row;
+    }
+}
+
 .trending-post .category a {
     color: #e7d117 !important;
+}
+
+@media (max-width: 768px){
+    .trending-post .category a{
+        margin-right: 10px;
+    }
 }
 
 .trending-post .category a h3 {
@@ -535,6 +553,12 @@ input:-internal-autofill-selected {
     font-size: 37px;
     margin: 0;
     height: 100%;
+}
+
+@media (max-width: 768px){
+    .trending-post .titular h2 {
+        font-size: 30px;
+    }
 }
 
 
