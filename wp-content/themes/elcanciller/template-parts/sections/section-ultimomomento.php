@@ -37,7 +37,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
               <div class="category">
                 <span style=" display: table-cell;vertical-align: middle;"><h3 class="category-name ultimoicon">ULTIMO MOMENTO</h3></span>
               </div><!-- category -->
-              <a href='"<?php the_field('url_embebido') ?>"' style="width: 60%;text-align: center;clear: both;margin: 1rem 0;"><h2 style="FONT-SIZE: xx-large;"><?php the_field('texto_embebido') ?></h2></a>
+              <a href='"<?php the_field('url_embebido') ?>"' style="width: 60%;text-align: center;clear: both;margin: 1rem 0;"><h2><?php the_field('texto_embebido') ?></h2></a>
           </div>
         </div>
 
