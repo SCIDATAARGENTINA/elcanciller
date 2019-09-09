@@ -2935,6 +2935,13 @@ article .post-content .has-content-area {
 
 
 /* ---------------------------*/
+/*SEARCH BAR*/
+
+.search-bar{
+    background: #5d5d5d;
+}
+
+/* END SEARCH BAR*/
 
 .search-post {
     display: grid;

@@ -8,6 +8,6 @@
  */
 ?>
 
-<div class="search">
+<div class="search search-bar">
     <?php get_search_form(); ?>
 </div>
