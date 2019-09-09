@@ -17,13 +17,9 @@ $fecha_limite = new DateTime();
 
 $fecha_hoy = new DateTime();
 
-$diff = $fecha_limite->diff($fecha_hoy);
-echo $diff->days . ' days ';
-
 $fecha_limite = $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
 
 $intervalo = $fecha_limite->diff($fecha_hoy);
-echo $intervalo;
 
 ?>
 
@@ -32,7 +28,7 @@ echo $intervalo;
         <h3> <?php the_title()?> </h3> <span class="contador-header-subtitulo">Faltan_</span>
     </div>
     <p class="contador-cuerpo" style="background-image: url('<?php the_field('imagen_de_fondo') ?>');background-size: cover;background-repeat: no-repeat;"> 
-        <?php the_field('fecha_limite')?> 
+        <?php $intervalo ?> 
     </p>
     <p class="contador-footer"> <?php the_field('cuerpo')?> </p>
 </article><!-- #post-${ID} -->
