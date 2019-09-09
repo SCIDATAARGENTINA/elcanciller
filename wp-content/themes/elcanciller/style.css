@@ -1792,6 +1792,7 @@ ul.tagposts-list li {
     background-position: center center;
     transition: 300ms ease;
     vertical-align: top;
+    min-height: 290px;
 }
 
 .video:hover {
