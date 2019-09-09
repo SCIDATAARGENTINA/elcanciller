@@ -1060,11 +1060,11 @@ function ultimomomento_shortcode($atts){
       'p' => $a['postid']
   );
   
-  $ultimo_query = new WP_Query( $args ); 
+  $ultimomomento_query = new WP_Query( $args ); 
 
-  if($ultimo_query->have_posts()){
-    while($ultimo_query->have_posts()){
-      $utimo_query->the_post();
+  if($ultimomomento_query->have_posts()){
+    while($ultimomomento_query->have_posts()){
+      $ultimomomento_query->the_post();
 
       get_template_part( 'template-parts/content/content', 'ultimomomento' );
 
