@@ -218,6 +218,7 @@ h2:before {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
 .search .search-form input[type="submit"] {
