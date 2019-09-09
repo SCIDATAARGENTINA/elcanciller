@@ -3501,18 +3501,25 @@ SECCION AUTORES
     margin: 0px;
 }
 .contador-numero{
-    width:70%;
+    width: 60%;
     text-align: center;
     float: left;
+    font-size: 45px;
+    color: #fff;
+    font-family: 'Bree Serif', serif;
 }
 .contador-rango{
     color: #fff !important;
-    font-size: 23px;
-    width:30%;
+    width: 40%;
     float: left;
+    font-size: 30px;
+    margin-top: 8%;
+    font-family: 'Bree Serif', serif;
 }
 .contador-cuerpo-inside{
-    padding:2%;
+    height: 150px;
+    margin: 0 auto;
+    padding: 13%;
 }
 .contador-footer{
     font-family: 'Bree Serif', serif;
