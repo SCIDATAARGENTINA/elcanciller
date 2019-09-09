@@ -113,9 +113,23 @@ h2:before {
     margin-left: 13px;
 }
 
+@media (max-width: 980px){
+    .header-navigation {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
 .header-navigation {
     margin-left: auto;
     width: 77%;
+}
+
+@media (max-width: 980px){
+    .header-navigation {
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
 .header-menu li {
@@ -441,10 +455,23 @@ input:-internal-autofill-selected {
     width: 23%;
 }
 
+@media (max-width: 980px){
+    .inner.container .sidebar {
+        display:none;
+    }
+}
+
 .inner.container .content {
     width: 77%;
     border-top: 4px solid #e7d117;
 }
+
+@media (max-width: 980px){
+    .inner.container .content {
+        width: 100%;
+    }
+}
+
 
 
 /*end front page*/
@@ -1691,6 +1718,12 @@ ul.tagposts-list li {
     margin-bottom: 50px;
     margin-top: 50px;
     grid-gap: 30px;
+}
+
+@media (max-width: 900px){
+    .videos-section{
+        grid-template-columns: 1fr;
+    }
 }
 
 .videos-section::before {
