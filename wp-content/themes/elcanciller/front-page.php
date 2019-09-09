@@ -22,6 +22,7 @@ $page_id  = get_queried_object_id();
 			</div><!-- sidebar -->
 			<div class="content">
 				<?php get_template_part('template-parts/sections/section', 'live') ?>
+				<?php get_template_part('template-parts/sections/section', 'ultimomomento') ?>
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
 				<div class="col-3" data-quantity="3" data-offset="0">
 				<?php echo do_shortcode('[posts cantidad="2" offset="0" encuesta_id="48839" encuesta_pos="3"]') ?>
