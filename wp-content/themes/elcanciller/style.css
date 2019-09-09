@@ -1100,7 +1100,7 @@ ul.tagposts-list li {
     margin-top: 50px;
     grid-gap: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
 }
 
 
