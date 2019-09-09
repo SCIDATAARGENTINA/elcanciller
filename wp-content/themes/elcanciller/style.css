@@ -426,7 +426,7 @@ input:-internal-autofill-selected {
     .inner.container{
     padding: 0 20px;
     }
-    .outer.container{
+    .outer-container{
         padding: 0 20px;
     }
 }
