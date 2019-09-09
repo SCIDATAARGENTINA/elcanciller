@@ -25,7 +25,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
   if($ultimomomentosection_query->have_posts()){
     while($ultimomomentosection_query->have_posts()){
-      $ultimomomentosection->the_post();
+      $ultimomomentosection_query->the_post();
 
        if(get_field('habilitado') != 'no'){ ?>
         <div class="titular" style="background-color:#000;text-align:center;">
