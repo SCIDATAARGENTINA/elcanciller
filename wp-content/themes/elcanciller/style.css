@@ -68,14 +68,6 @@ blockquote p {
     max-width: 1100px;
     margin: 0 auto;
 }
-@media (max-width: 1100px){
-    .inner-container{
-    padding: 0 20px;
-    }
-    .outer-container{
-        padding: 0 20px;
-    }
-}
 
 
 /* ---------------------------*/
@@ -430,6 +422,15 @@ input:-internal-autofill-selected {
     max-width: 1100px;
     margin: 0 auto;
 }
+@media (max-width: 1100px){
+    .inner-container{
+    padding: 0 20px;
+    }
+    .outer-container{
+        padding: 0 20px;
+    }
+}
+
 
 .front-page-content.inner.container {
     display: flex;
