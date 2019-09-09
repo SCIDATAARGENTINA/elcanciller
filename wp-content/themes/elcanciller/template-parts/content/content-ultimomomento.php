@@ -15,7 +15,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 ?>
 
 <?php if(get_field('habilitado') != 'no'){ ?>
-<article id="live-<?php the_ID(); ?>">
-<p><?php the_field('codigo_embebido'); ?> </p>
+<article id="ultimomomento-<?php the_ID(); ?>">
+<p><?php the_field('texto_embebido'); ?> </p>
 </article><!-- #post-${ID} -->
 <?php } ?>
