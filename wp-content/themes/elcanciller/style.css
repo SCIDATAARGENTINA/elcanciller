@@ -752,7 +752,7 @@ button {
 }
 
 .slick-initialized{
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 
