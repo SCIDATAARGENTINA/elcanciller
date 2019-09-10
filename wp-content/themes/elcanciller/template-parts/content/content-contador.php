@@ -31,6 +31,7 @@ $intervalo= $diff->days;
 
 ?>
 
+<?php if(get_field('habilitado') != 'no'){ ?>
 <article id="contador-<?php the_ID(); ?>">
     <div class="contador-header">
         <h3> <?php the_title()?> </h3> <span class="contador-header-subtitulo">Faltan_</span>
@@ -57,3 +58,4 @@ $intervalo= $diff->days;
     </div>
     <div class="contador-footer"> <?php the_field('cuerpo')?> </div>
 </article><!-- #post-${ID} -->
+<?php } ?>
