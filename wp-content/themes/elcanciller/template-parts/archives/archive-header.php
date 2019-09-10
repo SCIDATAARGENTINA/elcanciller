@@ -45,7 +45,7 @@ $term = get_queried_object();
          $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
          $categories = get_the_category($post->ID);
          $cat_link = get_term_link($categories[0]->term_id );
-         $cat_color = get_field('color', $categories[0]->taxonomy . '_' . $categories[0]->term_id);
+         $cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
          ?>
 
          <header class="archive-header">
