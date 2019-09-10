@@ -2270,6 +2270,15 @@ ul.tagposts-list li {
     flex-wrap: nowrap;
 }
 
+.footer-derechos{
+    width:49%;
+    float: left;
+}
+.footer-iconos{
+    width:49%;
+    float: left;
+}
+
 @media (max-width: 650px){
     #colophon .widget-column {
         flex-wrap: wrap;
