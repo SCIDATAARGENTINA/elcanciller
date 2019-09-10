@@ -21,7 +21,7 @@
 		</div><!-- end footer-logo -->
 		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
 		<div class="site-info">
-			<p>Todos los Derechos Reservados © elCanciller 2019</p>
+			<p>Todos los Derechos Reservados © elCanciller 2019</p></p><a href="https://www.facebook.com/elcancillercom/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a> </p>
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
 					<?php

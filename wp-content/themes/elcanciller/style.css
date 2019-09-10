@@ -2243,6 +2243,7 @@ ul.tagposts-list li {
 
 .widget-area.container {
     margin: 0 auto !important;
+    line-height: 1.4;
 }
 
 .footer-widget-1 .widget,
@@ -2257,6 +2258,8 @@ ul.tagposts-list li {
     font-size: 22px;
     color: #fff;
     font-family: lato;
+    font-weight: 600;
+    margin-bottom: 5%;
 }
 
 .widget-title:before {
@@ -2296,6 +2299,7 @@ ul.tagposts-list li {
 .wp-tag-cloud {
     list-style-type: none;
     padding: 0;
+    margin-top: -3%;
 }
 
 .wp-tag-cloud li {
