@@ -3594,10 +3594,6 @@ SECCION AUTORES
     color: #9d8575;
 }
 
-.footer-iconos a:visited {
-    color: #fff !important;
-}
-
 .fl-horizon,.fl-vertical{
 display:none;
 }
@@ -3609,6 +3605,7 @@ display:none;
     width: 1px;
     height: 20px;
     color:#fff;
+    border: 1px solid #fff;
 }
 
 
