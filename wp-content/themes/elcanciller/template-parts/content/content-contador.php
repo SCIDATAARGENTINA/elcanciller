@@ -32,13 +32,19 @@ $intervalo = $fecha_limite->diff($fecha_hoy);
         <div class="contador-cuerpo-inside">
             <div class="contador-numero">
                 <?php 
-                $numeros = array();
-                $num = 84;
-                while($num != 0){ //Ahora vemos por que usamos el while.
-                $numeros[] = $num % 10;
-                $num = intval($num/10); //Si dividimos 1234 / 10 nos da 123.4, pero queremos que no haya decimales. intval lo que hace es quitarle la parte decimal.
-                ?><div class="number"><?php echo $num ?></div><?php
+                //$numeros = array();
+                //$num = 84;
+                //while($num != 0){ //Ahora vemos por que usamos el while.
+                // $numeros[] = $num % 10;
+                // $num = intval($num/10);
+                
+                $count = 84;
+                // crea un array de números
+                $numeros = str_split($count);
+                foreach ($numeros as $val) {
+                    ?><div class="number"><?php echo $val ?></div><?php
                 }
+                //}
                 ?>
             </div>
             <div class="contador-rango">DÍAS</div></div>
