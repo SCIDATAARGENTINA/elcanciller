@@ -3642,3 +3642,9 @@ display:none;
     margin-top: 100px;
     margin: 10% 35%;
 }
+
+/*Page Blank*/
+
+.page-template-page-blank .masthead{
+    display: none;
+}
