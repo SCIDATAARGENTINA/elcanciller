@@ -1320,6 +1320,9 @@ ul.tagposts-list li {
     align-items: flex-end;
     margin: 10px 0px 20px 0px;
 }
+.no-trending .archive-title .category{
+    margin: 10px 0px 10px 0px;
+}
 
 .archive-title .category h3 {
     margin: 0;
