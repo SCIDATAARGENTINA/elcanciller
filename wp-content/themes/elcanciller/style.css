@@ -3648,3 +3648,7 @@ display:none;
 .page-template-page-blank #masthead{
     display: none;
 }
+
+.page-template-page-blank .entry-content{
+    font-family: "Lato";
+}
