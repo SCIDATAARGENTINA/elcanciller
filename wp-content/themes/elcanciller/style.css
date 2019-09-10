@@ -3577,7 +3577,7 @@ SECCION AUTORES
     color: #fff;
     text-decoration: none;
     transition: 0.2s;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-family: lato;
     margin-top: 1%;
@@ -3605,6 +3605,9 @@ display:none;
     width: 1px;
     height: 20px;
     color:#fff;
+}
+a:visited {
+    color: #ffffff;
 }
 
 
