@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/brunocostanzo/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/Bruno-Costanzo-Autor.png" alt="Bruno Costanzo"></a>
+                <a href="http://142.93.24.13/author/brunocostanzo/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Bruno-Costanzo-Autor.png" alt="Bruno Costanzo"></a>
                 <div class="autores-data">
                     <h4><a href="http://142.93.24.13/author/brunocostanzo/">Bruno Costanzo</a></h4>
                     <p>@twitter</p>
