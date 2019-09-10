@@ -3608,6 +3608,10 @@ display:none;
     border: 1px solid #fff;
 }
 
+#colophon .site-info a:hover {
+    text-decoration: none;
+    color: #9d8575;
+}
 
 .error-image {
     width: 450px;
