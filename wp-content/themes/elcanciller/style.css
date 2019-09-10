@@ -745,6 +745,16 @@ button {
     outline: 0;
 }
 
+.carrousel{
+    opacity: 0;
+    transition: 300ms ease;
+    max-height: 300px;
+}
+
+.slick-initialized{
+    opacity: 1;
+}
+
 
 /* CANCILLER AM */
 
