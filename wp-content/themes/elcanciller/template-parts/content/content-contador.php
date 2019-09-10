@@ -40,7 +40,7 @@ $intervalo = $fecha_limite->diff($fecha_hoy);
                 }
                 ?>
             </div>
-            <div class="contador-rango">DÍAS</div></div>
+            <div class="contador-rango"><?php echo $fecha_limite ?> DÍAS</div></div>
     </div>
     <div class="contador-footer"> <?php the_field('cuerpo')?> </div>
 </article><!-- #post-${ID} -->
