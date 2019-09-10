@@ -98,6 +98,10 @@ h2:before {
     align-items: center;
 }
 
+.logo{
+    margin-left: 7%;
+}
+
 .logo img {
     height: 15px;
 }
