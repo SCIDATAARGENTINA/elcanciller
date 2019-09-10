@@ -3584,6 +3584,10 @@ SECCION AUTORES
     margin-bottom: 1%;
     width: 49%;
     float: left;
+    text-align: right;
+}
+.footer-iconos a{
+    margin: 0% 1% 0% 1%;
 }
 
 
