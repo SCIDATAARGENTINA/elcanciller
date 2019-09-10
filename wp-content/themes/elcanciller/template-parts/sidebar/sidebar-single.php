@@ -34,6 +34,12 @@
 <div class="widget">
     <?php get_template_part('template-parts/widgets/widget', 'tagsrelated') ?>
 </div>
+<div class="widget widget-contador">
+  <?php echo do_shortcode('[contador postid=48914]') ?>
+</div>
+<div class="widget chico">
+<?php get_template_part('template-parts/widgets/widget', 'autores') ?>
+</div>
 <div class="widget no-padding">
   <div class="loader">Cargando...</div>
     <div class="render-posts col-1" data-quantity="2">
