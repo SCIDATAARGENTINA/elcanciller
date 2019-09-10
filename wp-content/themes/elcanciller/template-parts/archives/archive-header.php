@@ -66,4 +66,13 @@ $term = get_queried_object();
          
       <?php endwhile ?>
 
-   <?php endif ?>
+   <?php else : ?>
+
+      <header class="archive-header">
+            <div class="archive-title" style="background: <?php echo $cat_color ?>">
+               <div class="category">            
+                  <h3><?php echo $term->name ?></h3>
+               </div>
+         </header>
+
+   <?php endif; ?>
