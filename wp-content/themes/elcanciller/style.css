@@ -1175,6 +1175,10 @@ ul.tagposts-list li {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
+.inner.container .col-3{
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+}
+
 
 /* ADS inside render-posts*/
 
