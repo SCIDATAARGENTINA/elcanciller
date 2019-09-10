@@ -3650,5 +3650,5 @@ display:none;
 }
 
 .page-template-page-blank .entry-content{
-    font-family: "Lato";
+    font-family: "Lato" !important;
 }
