@@ -2254,7 +2254,7 @@ ul.tagposts-list li {
 
 .widget-title {
     font-family: 'Bree Serif', serif;
-    font-size: 25px;
+    font-size: 22px;
     color: #fff
 }
 
@@ -2281,10 +2281,11 @@ ul.tagposts-list li {
 
 .footer-widget-1 .widget a {
     color: #fff;
-    font-size: 17px;
-    font-weight: bold;
     text-decoration: none;
     transition: 0.2s;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: lato;
 }
 
 .footer-widget-1 .widget a:hover {
@@ -2298,6 +2299,7 @@ ul.tagposts-list li {
 
 .wp-tag-cloud li {
     line-height: 1 !important;
+    float: left;
 }
 
 .tag-cloud-link {
@@ -2314,6 +2316,8 @@ ul.tagposts-list li {
     max-width: 1100px;
     margin: 0px auto !important;
     margin-bottom: 0px !important;
+    margin-top: 1% !important;
+    font-family: lato;
 }
 
 .site-info p {
