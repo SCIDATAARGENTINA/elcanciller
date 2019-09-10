@@ -23,7 +23,7 @@ $fecha_hoy = new DateTime();
 //$intervalo = $fecha_limite->diff($fecha_hoy);
 
 
-$fecha1= new DateTime("01-08-2019");
+$fecha1= new DateTime("01/08/2019");
 $fecha2= date("d/m/Y");
 $diff = $fecha1->diff($fecha2);
  
