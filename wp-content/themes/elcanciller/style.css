@@ -3652,3 +3652,7 @@ display:none;
 .page-template-page-blank .entry-content{
     font-family: "Lato" !important;
 }
+
+.page-template-page-blank .highlight-and-share-wrapper{
+    display: none;
+}
