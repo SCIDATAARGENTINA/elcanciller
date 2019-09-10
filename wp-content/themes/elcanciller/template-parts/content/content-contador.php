@@ -42,7 +42,14 @@ $intervalo= $diff->days;
                 $count = $intervalo;
                 $numeros = str_split($count);
                 foreach ($numeros as $val) {
-                    ?><div class="number"><?php echo $val ?></div><?php
+                    if ($intervalo > 99)
+                    {
+                        ?><div class="number number-three"><?php echo $val ?></div><?php
+                    }
+                    else
+                    {
+                        ?><div class="number number-two"><?php echo $val ?></div><?php
+                    }
                 }
                 ?>
             </div>

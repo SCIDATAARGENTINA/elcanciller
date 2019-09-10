@@ -3518,6 +3518,12 @@ SECCION AUTORES
     -moz-box-shadow: 9px 4px 32px -8px rgba(0,0,0,0.66);
     box-shadow: 9px 4px 32px -8px rgba(0,0,0,0.86);
 }
+.number-two{
+    width: calc(100% - 60%) !important;
+}
+.number-three{
+    width: calc(100% - 72%) !important;
+}
 
 .contador-rango{
     color: #fff !important;
