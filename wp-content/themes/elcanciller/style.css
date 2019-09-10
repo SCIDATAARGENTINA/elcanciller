@@ -2271,12 +2271,24 @@ ul.tagposts-list li {
 }
 
 .footer-derechos{
-    width:49%;
-    float: left;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: lato;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .footer-iconos{
-    width:49%;
-    float: left;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: lato;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 @media (max-width: 650px){
