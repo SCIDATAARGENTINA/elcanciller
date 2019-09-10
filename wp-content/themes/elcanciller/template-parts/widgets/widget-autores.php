@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/diegogenoud/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Diego Genoud"></a>
+                <a href="http://142.93.24.13/author/diegogenoud/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Diego-Genoud-Autor.png" alt="Diego Genoud"></a>
                 <div class="autores-data">
                     <h4><a href="http://142.93.24.13/author/diegogenoud/">Diego Genoud</a></h4>
                     <p>@twitter</p>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/brunocostanzo/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Bruno Costanzo"></a>
+                <a href="http://142.93.24.13/author/brunocostanzo/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Bruno-Costanzo-Autor.png" alt="Bruno Costanzo"></a>
                 <div class="autores-data">
                     <h4><a href="http://142.93.24.13/author/brunocostanzo/">Bruno Costanzo</a></h4>
                     <p>@twitter</p>

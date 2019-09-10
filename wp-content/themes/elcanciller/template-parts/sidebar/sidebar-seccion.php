@@ -31,9 +31,15 @@
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'cancilleram') ?>
 </div>
+<div class="widget" style="margin-top: 9% !important;">
+<?php get_template_part('template-parts/widgets/widget', 'autores') ?>
+</div>
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'instagram') ?>
 </div>
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'twitter') ?>
+</div>
+<div class="widget widget-contador">
+  <?php echo do_shortcode('[contador postid=48914]') ?>
 </div>
