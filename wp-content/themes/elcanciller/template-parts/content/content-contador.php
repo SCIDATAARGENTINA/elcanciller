@@ -24,7 +24,7 @@ $fecha_hoy = new DateTime();
 
 
 $fecha1= new DateTime("01/08/2019");
-$fecha2= date("d/m/YYYY");
+$fecha2= new DateTime(date("d/m/Y"));
 $diff = $fecha1->diff($fecha2);
  
 $intervalo= $diff->days;
