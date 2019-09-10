@@ -2255,7 +2255,8 @@ ul.tagposts-list li {
 .widget-title {
     font-family: 'Bree Serif', serif;
     font-size: 22px;
-    color: #fff
+    color: #fff;
+    font-family: lato;
 }
 
 .widget-title:before {
