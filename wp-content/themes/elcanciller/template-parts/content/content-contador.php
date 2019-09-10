@@ -17,8 +17,11 @@ $fecha_limite = new DateTime();
 
 $fecha_hoy = new DateTime();
 
-$fecha_limite = $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
-$fecha_hoy = $fecha_hoy->createFromFormat('d/m/Y', getdate());
+/*$fecha_limite = $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
+$fecha_hoy = $fecha_hoy->createFromFormat('d/m/Y', getdate());*/
+
+$fecha_limite = new DateTime(get_field('fecha_limite'));
+$fecha_hoy = new DateTime("2019-09-09");
 
 $intervalo = $fecha_limite->diff($fecha_hoy);
 
@@ -32,7 +35,6 @@ $intervalo = $fecha_limite->diff($fecha_hoy);
         <div class="contador-cuerpo-inside">
             <div class="contador-numero">
                 <?php 
-                
                 $count = $intervalo;
                 $numeros = str_split($count);
                 foreach ($numeros as $val) {
@@ -40,7 +42,7 @@ $intervalo = $fecha_limite->diff($fecha_hoy);
                 }
                 ?>
             </div>
-            <div class="contador-rango"><?php echo $fecha_limite ?> DÍAS</div></div>
+            <div class="contador-rango">DÍAS</div></div>
     </div>
     <div class="contador-footer"> <?php the_field('cuerpo')?> </div>
 </article><!-- #post-${ID} -->
