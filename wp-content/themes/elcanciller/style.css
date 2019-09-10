@@ -3570,6 +3570,8 @@ SECCION AUTORES
     font-family: lato;
     margin-top: 1%;
     margin-bottom: 1%;
+    width: 49%;
+    float: left;
 }
 .footer-iconos{
     color: #fff;
@@ -3580,6 +3582,8 @@ SECCION AUTORES
     font-family: lato;
     margin-top: 1%;
     margin-bottom: 1%;
+    width: 49%;
+    float: left;
 }
 
 
