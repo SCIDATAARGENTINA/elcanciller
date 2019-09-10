@@ -3645,6 +3645,6 @@ display:none;
 
 /*Page Blank*/
 
-.page-template-page-blank .masthead{
+.page-template-page-blank #masthead{
     display: none;
 }
