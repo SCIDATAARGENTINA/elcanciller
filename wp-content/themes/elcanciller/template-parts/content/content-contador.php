@@ -37,7 +37,7 @@ $intervalo = $fecha_limite->diff($fecha_hoy);
                 while($num != 0){ //Ahora vemos por que usamos el while.
                 $numeros[] = $num % 10;
                 $num = intval($num/10); //Si dividimos 1234 / 10 nos da 123.4, pero queremos que no haya decimales. intval lo que hace es quitarle la parte decimal.
-                ?><div class="number"><? echo $num ?></div><?php
+                ?><div class="number"><? $num ?></div><?php
                 }
                 ?>
             </div>
