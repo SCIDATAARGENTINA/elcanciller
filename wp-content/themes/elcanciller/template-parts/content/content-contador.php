@@ -43,6 +43,7 @@ $intervalo= $diff->days;
                 <?php 
                 $count = $intervalo;
                 $numeros = str_split($count);
+                echo $fecha01;
                 foreach ($numeros as $val) {
                     if ($intervalo > 99)
                     {
