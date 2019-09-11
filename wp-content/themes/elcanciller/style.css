@@ -2270,11 +2270,11 @@ ul.tagposts-list li {
 
 .footer-iconos{
     width:100% !important;
-    text-align: left;
+    text-align: left !important;
 }
 
 .icon-newsletter{
-    margin: 0% 1% 0% 0%;
+    margin: 0% 1% 0% 0% !important;
 }
 
 }
