@@ -24,7 +24,8 @@ $fecha_hoy = new DateTime();
 
 
 $fecha2= $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
-$fecha1= new DateTime(date('d/m/Y'));
+// $fecha1= new DateTime(date('d/m/Y'));
+$fecha1 = $fecha1->createFromFormat('d/m/Y', date('d/m/Y'));
 $diff = $fecha1->diff($fecha2);
  
 $intervalo= $diff->days;
@@ -42,7 +43,6 @@ $intervalo= $diff->days;
                 <?php 
                 $count = $intervalo;
                 $numeros = str_split($count);
-                echo 'console.log('. json_encode( $fecha2 ) .')';
                 foreach ($numeros as $val) {
                     if ($intervalo > 99)
                     {
