@@ -29,7 +29,7 @@ $fecha01 = date('Y/m/d');
 $diff = $fecha01->diff($fecha2);
 
 $fecha1 = new DateTime(get_field('fecha_limite'));
-$fecha2 = new DateTime(date('Y/m/d'););
+$fecha2 = new DateTime(date('Y/m/d'));
 $resultado = $fecha1->diff($fecha2);
 echo $resultado->format('%R%a días');
  
