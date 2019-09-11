@@ -31,9 +31,9 @@ $fechaq01 = get_field('fecha_limite');
 $fechaq1 = new DateTime($fechaq01);
 $fechaq2 = new DateTime(date("Y/m/d"));
 $resultado = $fechaq2->diff($fechaq1);
-echo $resultado->format('%R%a días');
+$intervalo = $resultado->format('%a');
  
-$intervalo= $diff->days;
+// $intervalo= $diff->days;
 
 ?>
 
