@@ -24,7 +24,7 @@ $fecha_hoy = new DateTime();
 
 
 $fecha2= $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
-$fecha1= $fecha_hoy->createFromFormat('d/m/Y', '2019-09-11');
+$fecha1= $fecha_hoy->createFromFormat('d/m/Y', get_field('fecha_limite'));
 // $fecha1= new DateTime(date("d/m/Y"));
 $diff = $fecha1->diff($fecha2);
  
