@@ -25,10 +25,10 @@ $fecha_hoy = new DateTime();
 
 $fecha2= $fecha_limite->createFromFormat('Y/m/d', get_field('fecha_limite'));
 //$fecha1= new DateTime(date("d/m/Y")); 
-//$diff = $fecha01->diff($fecha2);
+//$diff = $fecha01->diff($fecha2); 
 
-$fechaq01 = get_field('fecha_limite');
-$fechaq1 = new DateTime($fechaq01);
+$fechaq01 = get_field('fecha_limite'); 
+$fechaq1 = new DateTime($fechaq01); 
 $fechaq2 = new DateTime(date("Y/m/d"));
 $resultado = $fechaq2->diff($fechaq1);
 $intervalo = $resultado->format('%a');
