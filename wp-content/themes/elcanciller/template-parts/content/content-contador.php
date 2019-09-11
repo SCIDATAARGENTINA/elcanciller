@@ -37,6 +37,10 @@ $diff = $fecha01->diff($newDate);
  
 $intervalo= $diff->days;
 
+$datetime1 = date_create(get_field('fecha_limite'));
+$datetime2 = date_create(date("Y/m/d"));
+$interval = date_diff($datetime1, $datetime2);
+
 ?>
 
 <?php if(get_field('habilitado') != 'no'){ ?>
@@ -48,7 +52,7 @@ $intervalo= $diff->days;
         <div class="contador-cuerpo-inside">
             <div class="contador-numero">
                 <?php 
-                $count = $intervalo;
+                $count = $interval;
                 $numeros = str_split($count);
                 foreach ($numeros as $val) {
                     if ($intervalo > 99)
