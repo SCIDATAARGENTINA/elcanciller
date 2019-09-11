@@ -25,8 +25,7 @@ $fecha_hoy = new DateTime();
 
 $fecha2= $fecha_limite->createFromFormat('Y/m/d', get_field('fecha_limite'));
 //$fecha1= new DateTime(date("d/m/Y")); 
-$fecha01 = DateTime('Y/m/d 00:00:00');
-$diff = $fecha01->diff($fecha2);
+//$diff = $fecha01->diff($fecha2);
 
 $fechaq1 = strtotime('2009-10-11');
 $fechaq2 = strtotime('2009-10-13');
