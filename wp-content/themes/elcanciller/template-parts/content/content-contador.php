@@ -29,7 +29,7 @@ $fecha2= $fecha_limite->createFromFormat('Y/m/d', get_field('fecha_limite'));
 
 $fechaq01 = get_field('fecha_limite');
 $fechaq1 = new DateTime($fechaq01);
-$fechaq2 = new DateTime(date("d/m/Y"));
+$fechaq2 = new DateTime(date("Y/m/d"));
 $resultado = $fechaq1->diff($fechaq2);
 echo $resultado->format('%R%a días');
  
