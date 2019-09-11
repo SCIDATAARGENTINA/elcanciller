@@ -39,6 +39,7 @@ $intervalo= $diff->days;
     <div class="contador-cuerpo" style="background-image: url('<?php the_field('imagen_de_fondo') ?>');background-size: cover;background-repeat: no-repeat;"> 
         <div class="contador-cuerpo-inside">
             <div class="contador-numero">
+                <script><?php echo $fecha2 ; echo $fecha1 ?></script>
                 <?php 
                 $count = $intervalo;
                 $numeros = str_split($count);
