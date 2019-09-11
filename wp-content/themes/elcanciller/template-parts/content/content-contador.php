@@ -24,8 +24,10 @@ $fecha_hoy = new DateTime();
 
 
 $fecha2= $fecha_limite->createFromFormat('Y-m-d', get_field('fecha_limite'));
+$fecha02= $fecha2->format('Y-m-d');
 $fecha1= new DateTime(date('Y-m-d'));
-$diff = $fecha1->diff($fecha2);
+$fecha01= $fecha1->format('Y-m-d');
+$diff = $fecha01->diff($fecha02);
  
 $intervalo= $diff->days;
 
