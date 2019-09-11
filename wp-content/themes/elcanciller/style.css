@@ -2259,6 +2259,18 @@ ul.tagposts-list li {
 
 /* ---------------------------*/
 
+@media (max-width: 650px){
+.site-footer{
+    padding: 5%;
+}
+.footer-derechos{
+    width:100%;
+}
+.footer-iconos{
+    width:100%;
+}
+}
+
 .site-footer {
     background: #e7d117;
 }
