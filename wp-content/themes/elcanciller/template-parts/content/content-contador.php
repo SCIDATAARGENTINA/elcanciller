@@ -23,13 +23,17 @@ $fecha_hoy = new DateTime();
 //$intervalo = $fecha_limite->diff($fecha_hoy);
 
 
-//$fecha2= $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
+$fecha2= $fecha_limite->createFromFormat('Y/m/d', get_field('fecha_limite'));
+//$fecha1= new DateTime(date("d/m/Y")); 
+$fecha01 = date('Y/m/d');
+$diff = $fecha01->diff($fecha2);
 
-
-$datetime1 = date_create(get_field('fecha_limite'));
-$datetime2 = date_create(date("Y/m/d"));
-$interval = date_diff($datetime1, $datetime2);
-echo $interval;
+$fecha1 = new DateTime(get_field('fecha_limite'));
+$fecha2 = new DateTime(date('Y/m/d'););
+$resultado = $fecha1->diff($fecha2);
+echo $resultado->format('%R%a días');
+ 
+$intervalo= $diff->days;
 
 ?>
 
@@ -42,7 +46,7 @@ echo $interval;
         <div class="contador-cuerpo-inside">
             <div class="contador-numero">
                 <?php 
-                $count = $interval;
+                $count = $intervalo;
                 $numeros = str_split($count);
                 foreach ($numeros as $val) {
                     if ($intervalo > 99)
