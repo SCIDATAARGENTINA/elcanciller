@@ -22,11 +22,12 @@ $fecha_hoy = new DateTime();
 
 //$intervalo = $fecha_limite->diff($fecha_hoy);
 
-
-$fecha2= $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
+$fechaa = DateTime::createFromFormat('j-M-Y', get_field('fecha_limite'));
+//$fecha2= $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
 $fecha1= new DateTime(date('d/m/Y'));
+$fechab = DateTime::createFromFormat('j-M-Y', $fecha1);
 //$fecha1 = $fecha1->createFromFormat('d/m/Y', new DateTime(date('d/m/Y')));
-$diff = $fecha1->diff($fecha2);
+$diff = $fechab->diff($fechaa);
  
 $intervalo= $diff->days;
 
@@ -43,8 +44,8 @@ $intervalo= $diff->days;
                 <?php 
                 $count = $intervalo;
                 $numeros = str_split($count);
-                echo 'console.log('. json_encode( $nfecha2 ) .')';
-                echo 'console.log('. json_encode( $nfecha1 ) .')';
+                echo 'console.log('. json_encode( $fechab ) .')';
+                echo 'console.log('. json_encode( $fechaa ) .')';
                 foreach ($numeros as $val) {
                     if ($intervalo > 99)
                     {
