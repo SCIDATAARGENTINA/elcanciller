@@ -30,8 +30,8 @@ $origDate = "15-11-2019";
 $date = str_replace('-', '/', $origDate );
 $newDate = date("Y/m/d", strtotime($date));
 
-$fecha02 = date("Y/m/d", strtotime('2019/10/27'));
-//$fecha1= new DateTime(date("d/m/Y"));
+$fecha02 = date("Y/m/d", strtotime('2019/10/27')); 
+//$fecha1= new DateTime(date("d/m/Y")); 
 $fecha01 = date('Y/m/d');
 $diff = $fecha01->diff($newDate);
  
