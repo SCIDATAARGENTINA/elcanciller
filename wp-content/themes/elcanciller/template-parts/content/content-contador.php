@@ -25,10 +25,10 @@ $fecha_hoy = new DateTime();
 
 //$fecha2= $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
 $fecha2= get_field('fecha_limite');
-$fecha02 = date("Y/m/d", strtotime($fecha2));
+$fecha02 = date("Y/m/d", strtotime('2019-10-27'));
 //$fecha1= new DateTime(date("d/m/Y"));
 $fecha01 = date('Y/m/d');
-$diff = $fecha01->diff('2019-10-27');
+$diff = $fecha01->diff($fecha02);
  
 $intervalo= $diff->days;
 
