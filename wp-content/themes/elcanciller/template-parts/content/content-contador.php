@@ -42,7 +42,7 @@ $intervalo= $diff->days;
                 <?php 
                 $count = $intervalo;
                 $numeros = str_split($count);
-                echo 'console.log('. json_encode( $fecha1 ) .')';
+                echo 'console.log('. json_encode( $fecha2 ) .')';
                 foreach ($numeros as $val) {
                     if ($intervalo > 99)
                     {
