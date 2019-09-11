@@ -25,12 +25,12 @@ $fecha_hoy = new DateTime();
 
 $fecha2= $fecha_limite->createFromFormat('Y/m/d', get_field('fecha_limite'));
 //$fecha1= new DateTime(date("d/m/Y")); 
-$fecha01 = date('Y/m/d');
+$fecha01 = DateTime('Y/m/d 00:00:00');
 $diff = $fecha01->diff($fecha2);
 
-$fecha1 = new DateTime(get_field('fecha_limite'));
-$fecha2 = new DateTime('Y/m/d');
-$resultado = $fecha01->diff($fecha2);
+$fechaq1 = new DateTime('2009-10-11');
+$fechaq2 = new DateTime('2009-10-13');
+$resultado = $fechaq1->diff($fechaq2);
 echo $resultado->format('%R%a días');
  
 $intervalo= $diff->days;
