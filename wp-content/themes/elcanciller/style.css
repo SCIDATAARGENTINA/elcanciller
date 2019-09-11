@@ -3665,6 +3665,22 @@ display:none;
 .entry .entry-content > *, .entry .entry-summary > *{
     max-width: calc(6 * (100vw / 1) - 0px) !important;
 }
+
+div.wpcf7-mail-sent-ok{
+    border: 2px solid #e7d22d;
+    background: #e7d22d;
+    color: #fff;
+}
+
+.one_half{
+    width: 49%;
+    float: left;
+}
+@media (max-width: 991px){
+.one_half{
+    width: 100%;
+}
+}
 /* FIN FORMULARIO DE CONTACTO */
 
 /*Page Blank*/
