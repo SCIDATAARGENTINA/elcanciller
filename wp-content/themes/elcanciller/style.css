@@ -3673,12 +3673,16 @@ div.wpcf7-mail-sent-ok{
 }
 
 .one_half{
-    width: 49%;
+    width: 50%;
     float: left;
+    margin-bottom: 3%;
 }
 @media (max-width: 991px){
 .one_half{
     width: 100%;
+}
+.wpcf7-form-control-wrap{
+    width:100%;
 }
 }
 /* FIN FORMULARIO DE CONTACTO */
