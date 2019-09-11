@@ -2277,6 +2277,14 @@ ul.tagposts-list li {
     margin: 0% 1% 0% 0% !important;
 }
 
+.footer-logo img{
+    max-width: 150px !important;
+}
+
+.footer-logo{
+    margin: 10px auto 0px auto !important;
+}
+
 }
 
 .site-footer {
