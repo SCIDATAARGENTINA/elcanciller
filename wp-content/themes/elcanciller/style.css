@@ -2265,11 +2265,11 @@ ul.tagposts-list li {
 }
 
 .footer-derechos{
-    width:100%;
+    width:100% !important;
 }
 
 .footer-iconos{
-    width:100%;
+    width:100% !important;
 }
 
 }
