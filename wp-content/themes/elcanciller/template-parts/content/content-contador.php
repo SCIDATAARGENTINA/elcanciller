@@ -29,6 +29,7 @@ $fecha_hoy = new DateTime();
 $datetime1 = date_create(get_field('fecha_limite'));
 $datetime2 = date_create(date("Y/m/d"));
 $interval = date_diff($datetime1, $datetime2);
+echo $interval;
 
 ?>
 
