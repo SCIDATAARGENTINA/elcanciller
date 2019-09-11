@@ -3653,6 +3653,20 @@ display:none;
     margin: 10% 35%;
 }
 
+/* FORMULARIO DE CONTACTO */
+.button, button, input[type="button"], input[type="reset"], input[type="submit"]{
+    background: #e7d22d;
+}
+
+.button:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover{
+    background: #e2cb13;
+}
+
+.entry .entry-content > *, .entry .entry-summary > *{
+    max-width: calc(6 * (100vw / 1) - 0px) !important;
+}
+/* FIN FORMULARIO DE CONTACTO */
+
 /*Page Blank*/
 
 .page-template-page-blank #masthead{
