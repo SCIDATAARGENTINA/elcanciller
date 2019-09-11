@@ -24,18 +24,7 @@ $fecha_hoy = new DateTime();
 
 
 //$fecha2= $fecha_limite->createFromFormat('d/m/Y', get_field('fecha_limite'));
-$fecha2= get_field('fecha_limite');
 
-$origDate = "15-11-2019";
-$date = str_replace('-', '/', $origDate );
-$newDate = date("Y/m/d", strtotime($date));
-
-$fecha02 = date("Y/m/d", strtotime('2019/10/27')); 
-//$fecha1= new DateTime(date("d/m/Y")); 
-$fecha01 = date('Y/m/d');
-$diff = $fecha01->diff($newDate);
- 
-$intervalo= $diff->days;
 
 $datetime1 = date_create(get_field('fecha_limite'));
 $datetime2 = date_create(date("Y/m/d"));
