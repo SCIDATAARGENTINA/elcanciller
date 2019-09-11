@@ -3681,7 +3681,7 @@ div.wpcf7-mail-sent-ok{
 .one_half{
     width: 100%;
 }
-.wpcf7-form-control-wrap{
+.wpcf7-form-control-wrap input{
     width:100%;
 }
 }
