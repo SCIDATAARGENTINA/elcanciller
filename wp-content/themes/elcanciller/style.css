@@ -161,6 +161,7 @@ h2:before {
     height: 100vh;
     width: 40vw;
     background: #f2f2f2;
+    top: 0;
 }
 
 @media (min-width: 980px){
