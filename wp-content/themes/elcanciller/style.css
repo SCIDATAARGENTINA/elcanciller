@@ -3871,9 +3871,9 @@ div.wpcf7-mail-sent-ok{
     content: "";
     display: block; }
   .hamburger-inner::before {
-    top: -10px; }
+    top: -9px; }
   .hamburger-inner::after {
-    bottom: -10px; }
+    bottom: -9px; }
 
     /*
    * Slider
