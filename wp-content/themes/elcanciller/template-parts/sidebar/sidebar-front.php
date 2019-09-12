@@ -12,7 +12,7 @@
 ?>
 
 <div class="stories">
-  <img src="<?php echo get_stylesheet_directory_uri() ?>/icons/c-stories.svg" alt="Stories - El Canciller">
+  <img src="<?php echo get_stylesheet_directory_uri() ?>/icons/c-stories.svg" alt="El Canciller - Plataforma digital de actualidad y noticias.">
 </div><!-- stories -->
 <div class="social-links">
   <a href="https://www.facebook.com/elcancillercom/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>

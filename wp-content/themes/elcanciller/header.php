@@ -26,7 +26,11 @@
 <div id="page" class="site">
 	<div class="top-bar">
 		<div class="container">
-
+			<div class="mobile-logo">
+				<div class="stories">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/icons/c-stories.svg" alt="El Canciller - Plataforma digital de actualidad y noticias.">
+				</div><!-- stories -->
+			</div>
 			<div class="logo">
 				<a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/brand-logo-w.svg" height="15" alt="El Canciller"></a>
 			</div><!-- end logo -->
