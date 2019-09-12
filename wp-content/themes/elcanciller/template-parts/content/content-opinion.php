@@ -12,12 +12,15 @@
 ?>
 
 <?php 
-$featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
-$thumbnail_id = get_post_thumbnail_id($post->ID);
-$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 $categories = get_the_terms( $post->ID , array( 'categoria_videos') );
 $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
 $author_link = get_author_posts_url( get_the_author_meta('ID') );
+$author_id = get_the_author_meta('ID');
+$thumbnail_id = get_field('imagen_portada','user_'.$author_id);
+$featured_img = wp_get_attachment_image_src($thumbnail_id, 'full');
+$featured_img_url = $featured_img[0];
+$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+
 ?>
 
 <div id="opinion-<?php echo $post->ID ?>" class="opinion">
