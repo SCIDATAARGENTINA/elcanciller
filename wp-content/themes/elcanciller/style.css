@@ -180,7 +180,7 @@ h2:before {
 
 @media (max-width: 768px){
     .mobile-menu{
-        width: 60vh;
+        width: 60vw;
         transform: translateX(60vw);
     }
 }
