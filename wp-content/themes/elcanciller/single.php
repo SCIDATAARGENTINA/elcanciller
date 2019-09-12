@@ -29,7 +29,6 @@ get_header();
 				the_post();
 				if (is_single()) {
 					$post_id = get_the_ID();
-					pvc_stats_update( $post_id, 0 );
 				}
 
 				get_template_part( 'template-parts/content/content', 'single' );
