@@ -192,6 +192,13 @@ h2:before {
     }
 }
 
+@media (max-width: 400px){
+    .mobile-menu{
+        width: 90vw;
+        transform: translateX(90vw);
+    }
+}
+
 @media (min-width: 980px){
     .mobile-menu{
         display: none;
