@@ -149,6 +149,11 @@ h2:before {
 .mobile-logo .stories::before{
     display: none;
 }
+
+.mobile-menu-toggle{
+    z-index: 99999999;
+}
+
 @media (min-width: 980px){
     .mobile-menu-toggle{
         display: none;
@@ -175,6 +180,9 @@ h2:before {
     fill: #e7d117;
 }
 
+.lock-scroll {
+    overflow: hidden;
+}
 
 .logo img {
     height: 15px;
