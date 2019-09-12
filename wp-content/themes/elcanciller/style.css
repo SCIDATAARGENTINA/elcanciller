@@ -3850,7 +3850,7 @@ div.wpcf7-mail-sent-ok{
 
 .hamburger-box {
   width: 40px;
-  height: 24px;
+  height: 16px;
   display: inline-block;
   position: relative; }
 
@@ -3859,8 +3859,8 @@ div.wpcf7-mail-sent-ok{
   top: 50%;
   margin-top: -2px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
     background-color: #fff;
     border-radius: 4px;
     position: absolute;
