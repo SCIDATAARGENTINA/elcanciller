@@ -287,6 +287,13 @@ h2:before {
     position: relative;
 }
 
+@media (max-width){
+    .search .search-form{
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+}
+
 .current-user-avatar .avatar {
     width: 30px;
     height: 30px;
