@@ -194,6 +194,18 @@ h2:before {
     justify-content: flex-start;
 }
 
+.mobile-menu .tiempo{
+    padding: 0px;
+}
+
+.mobile-menu .tiempo #icon1{
+    width: 40px;
+}
+
+.mobile-menu .tiempo .info-tiempo .temp{
+    font-size: 20px;
+}
+
 
 .lock-scroll {
     overflow: hidden;
