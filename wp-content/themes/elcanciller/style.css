@@ -170,7 +170,6 @@ h2:before {
     z-index: 999999;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     flex-direction: column;
     border-left: 4px solid #e7d117;
     padding: 20px;
@@ -187,7 +186,7 @@ h2:before {
 }
 
 .mobile-menu .menu-logo img{
-    width: 150px;
+    width: 200px;
 }
 
 .mobile-menu .social-links{
