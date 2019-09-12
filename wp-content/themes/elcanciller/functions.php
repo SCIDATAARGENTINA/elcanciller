@@ -1075,3 +1075,14 @@ function ultimomomento_shortcode($atts){
 }
 
 add_shortcode( 'ultimomomento', 'ultimomomento_shortcode' );
+
+
+
+/* FUNCION PARA REFRESCAR LA PÁGINA CADA 2 MINUTOS */
+
+jQuery(document).ready(function(){
+    setTimeout(refrescar, 120000);
+  });
+  function refrescar(){
+    location.reload();
+  }
