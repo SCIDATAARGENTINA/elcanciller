@@ -13,9 +13,11 @@ get_header();
 $page_id  = get_queried_object_id();
 ?>
 <script>
+	jQuery( document ).ready(function() {
 	setTimeout(function() {
    		window.location.reload;
 	}, 5000);
+});
 </script>
 
 <section id="primary" class="content-area">
