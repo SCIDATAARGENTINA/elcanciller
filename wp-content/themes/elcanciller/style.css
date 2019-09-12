@@ -173,6 +173,7 @@ h2:before {
     align-items: center;
     flex-direction: column;
     border-left: 4px solid #e7d117;
+    padding: 20px;
 }
 
 @media (min-width: 980px){
@@ -181,9 +182,14 @@ h2:before {
     }
 }
 
-.menu-logo img{
+.mobile-menu-header{
     width: 100%;
 }
+
+.mobile-menu .menu-logo img{
+    width: 150px;
+}
+
 
 .lock-scroll {
     overflow: hidden;
