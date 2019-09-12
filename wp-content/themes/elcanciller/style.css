@@ -173,12 +173,17 @@ h2:before {
     align-items: center;
     flex-direction: column;
     border-left: 4px solid #e7d117;
+    padding: 20px;
 }
 
 @media (min-width: 980px){
     .mobile-menu{
         display: none;
     }
+}
+
+.mobile-menu-header{
+    width: 100%;
 }
 
 .mobile-menu .menu-logo img{
