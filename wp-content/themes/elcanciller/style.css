@@ -181,9 +181,10 @@ h2:before {
     }
 }
 
-.menu-logo img{
-    width: 100%;
+.mobile-menu .menu-logo img{
+    width: 150px;
 }
+
 
 .lock-scroll {
     overflow: hidden;
