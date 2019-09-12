@@ -63,7 +63,7 @@
 
 		<div class="mobile-menu">
 				<div class="menu-logo">
-					<a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/brand-logo-w.svg" height="15" alt="El Canciller"></a>
+					<a href="<?php echo bloginfo('url') ?>"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/brand-logo-y.svg" height="15" alt="El Canciller"></a>
 				</div><!-- end logo -->
 				<nav class="mobile-navigation" aria-label="<?php esc_attr_e( 'Primary', 'twentynineteen' ); ?>">
 					<?php
