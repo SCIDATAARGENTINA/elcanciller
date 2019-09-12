@@ -178,6 +178,13 @@ h2:before {
     transition: 300ms ease;
 }
 
+@media (max-width: 768px){
+    .mobile-menu{
+        width: 60vh;
+        transform: translateX(60vw);
+    }
+}
+
 @media (min-width: 980px){
     .mobile-menu{
         display: none;
