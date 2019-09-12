@@ -149,6 +149,12 @@ h2:before {
 .mobile-logo .stories::before{
     display: none;
 }
+@media (min-width: 980px){
+    .mobile-menu-toggle{
+        display: none;
+    }
+}
+
 
 .logo img {
     height: 15px;
