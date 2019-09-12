@@ -264,6 +264,12 @@ header#masthead {
     position: relative;
 }
 
+@media (max-width: 991px){
+    .header#masthead {
+        display:none !important;
+    }
+}
+
 .main-menu-more {
     display: none;
 }
