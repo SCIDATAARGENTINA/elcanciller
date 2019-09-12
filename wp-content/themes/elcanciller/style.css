@@ -3190,6 +3190,13 @@ article .post-content .has-content-area {
     margin-left: 20px;
 }
 
+@media (max-width: 500px){
+    .encuesta-section .encabezado img{
+        width: 50px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
 .encuesta-section .titulo {
     margin-left: 20px;
     display: flex;
