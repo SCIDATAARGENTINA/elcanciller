@@ -61,21 +61,23 @@
 		</div><!-- container -->
 
 		<div class="mobile-menu">
+			<div class="mobile-menu-header">
 				<div class="menu-logo">
 					<a href="<?php echo bloginfo('url') ?>"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/brand-logo-y.svg" height="15" alt="El Canciller"></a>
 				</div><!-- end logo -->
-				<nav class="mobile-navigation" aria-label="<?php esc_attr_e( 'Primary', 'twentynineteen' ); ?>">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'menu-1',
-							'menu_class'     => 'mobile-header-menu',
-							'depth'          => 1,
-						)
-					);
-					?>
-				</nav><!-- .mobile-navigation-->
-			</div><!-- end menu-bar -->
+			</div>
+			<nav class="mobile-navigation" aria-label="<?php esc_attr_e( 'Primary', 'twentynineteen' ); ?>">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_class'     => 'mobile-header-menu',
+						'depth'          => 1,
+					)
+				);
+				?>
+			</nav><!-- .mobile-navigation-->
+		</div><!-- end menu-bar -->
 
 	</div><!-- end top-bar -->
 
