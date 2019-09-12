@@ -3210,16 +3210,23 @@ article .post-content .has-content-area {
     margin: 0px;
 }
 
-@media (max-width: 500px){
-    .encuesta-section .titulo h3{
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-}
 
 .encuesta-section .titulo p {
     margin: 0px;
 }
+@media (max-width: 500px){
+    .encuesta-section .titulo{
+        margin-left: 0px
+    }
+    .encuesta-section .titulo h3{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .encuesta-section .titulo p{
+        font-size: 22px;
+    }
+}
+
 
 .encuesta-section .opciones {
     display: flex;
