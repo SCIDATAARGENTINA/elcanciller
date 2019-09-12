@@ -358,7 +358,7 @@ h2:before {
 }
 @media (max-width: 600px){
     .search input[type="search"]::placeholder{
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
