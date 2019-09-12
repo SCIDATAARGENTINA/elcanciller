@@ -3884,10 +3884,10 @@ div.wpcf7-mail-sent-ok{
 }
 
 .hamburger--slider .hamburger-inner::before {
-top: 10px;
-transition-property: all;
-transition-timing-function: ease;
-transition-duration: 0.15s; 
+    top: 10px;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 0.15s; 
 }
 
 .hamburger--slider .hamburger-inner::after {
