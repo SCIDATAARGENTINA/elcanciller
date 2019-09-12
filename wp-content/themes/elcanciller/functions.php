@@ -232,7 +232,7 @@ function custom_post_type_placa()
   $labels = array(
     'name'                  => _x('Placas', 'Post Type General Name', 'elcanciller'),
     'singular_name'         => _x('Placa', 'Post Type Singular Name', 'elcanciller'),
-    'menu_name'             => __('Placa', 'elcanciller'),
+    'menu_name'             => __('Placas', 'elcanciller'),
     'name_admin_bar'        => __('Placas', 'elcanciller'),
     'archives'              => __('Archivo', 'elcanciller'),
     'attributes'            => __('Atributos', 'elcanciller'),
