@@ -135,8 +135,6 @@ jQuery(document).ready(function($) {
 
         cookieData.map((data) => {
 
-            console.log(data);
-            console.log(slide);
 
             if(sliderId == data.sliderId){
 
@@ -205,7 +203,7 @@ jQuery(document).ready(function($) {
 
                 slideUpdater(sliderId, val);
 
-            }, 5000)
+            }, 2500)
 
         });
 
