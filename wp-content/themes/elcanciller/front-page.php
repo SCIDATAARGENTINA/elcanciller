@@ -17,7 +17,7 @@ $page_id  = get_queried_object_id();
 	setTimeout(function() {
 		console.log('lucas2');
 		location.reload();
-	}, 5000);
+	}, 180000);
 });
 </script>
 
