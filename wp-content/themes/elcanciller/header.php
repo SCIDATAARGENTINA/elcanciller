@@ -51,6 +51,13 @@
 
 					 ?>
 				</div><!-- avatar -->
+				<div class="mobile-menu-toggle">
+					<button class="hamburger hamburguer--slider" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
 			</div><!-- user-bar -->
 		</div><!-- container -->
 
