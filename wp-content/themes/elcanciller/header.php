@@ -65,6 +65,20 @@
 				<div class="menu-logo">
 					<a href="<?php echo bloginfo('url') ?>"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/brand-logo-y.svg" height="15" alt="El Canciller"></a>
 				</div><!-- end logo -->
+				<div class="social-links">
+					<a href="https://www.facebook.com/elcancillercom/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+					<a href="https://twitter.com/elcancillercom" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://www.instagram.com/elcancillerlive/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCd9aVDXf_SH8-TNHRWj0J0g" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+				</div><!-- social-links -->
+				<div class="tiempo">
+					<div class="canva-tiempo">
+						<canvas id="icon1" width="60" height="60"></canvas>
+					</div><!-- canvia-tiempo -->
+					<div class="info-tiempo">
+						<span class="fech"><?php echo date_i18n('D j M Y'); ?></span>
+					</div><!-- info-tiempo -->
+				</div><!-- tiempo -->
 			</div>
 			<nav class="mobile-navigation" aria-label="<?php esc_attr_e( 'Primary', 'twentynineteen' ); ?>">
 				<?php
