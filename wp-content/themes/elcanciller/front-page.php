@@ -14,6 +14,7 @@ $page_id  = get_queried_object_id();
 ?>
 <script>
 	jQuery( document ).ready(function() {
+		console.log('lucas');
 	setTimeout(function() {
    		window.location.reload;
 	}, 5000);
