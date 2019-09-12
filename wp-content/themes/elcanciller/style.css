@@ -126,7 +126,7 @@ h2:before {
 .mobile-logo{
     position: absolute;
     left: 20px;
-    bottom: -130px;
+    bottom: -90px;
 }
 
 .mobile-logo .stories{
@@ -135,8 +135,8 @@ h2:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     margin: 0 auto;
     border: 2px solid #fff;
     position: relative;
