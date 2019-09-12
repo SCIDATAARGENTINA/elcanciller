@@ -126,7 +126,28 @@ h2:before {
 .mobile-logo{
     position: absolute;
     left: 20px;
-    bottom: -50px;
+    bottom: -130px;
+}
+
+.mobile-logo .stories{
+    border-radius: 50%;
+    background: #e7d117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    position: relative;
+}
+
+.mobile-logo img{
+    width: 40%;
+}
+
+.mobile-logo .stories::before{
+    display: none;
 }
 
 .logo img {
