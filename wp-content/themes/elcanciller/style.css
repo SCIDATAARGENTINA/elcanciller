@@ -190,6 +190,10 @@ h2:before {
     width: 150px;
 }
 
+.mobile-menu .social-links{
+    justify-content: flex-start;
+}
+
 
 .lock-scroll {
     overflow: hidden;
