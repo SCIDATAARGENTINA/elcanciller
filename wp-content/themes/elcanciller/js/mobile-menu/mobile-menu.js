@@ -1,6 +1,14 @@
 jQuery(document).ready(function ($) {
 
-    function lockScroll() {
+    let handleMobileMenu = (thiz) => {
+
+        if ($('.hamburger').hasClass('is-active')) {
+            $('.hamburger').removeClass('is-active');
+        }
+        else {
+            $('.hamburger').addClass('is-active');
+        }
+
         if ($('body').hasClass('lock-scroll')) {
             $('body').removeClass('lock-scroll');
         }
@@ -9,4 +17,7 @@ jQuery(document).ready(function ($) {
         }
     }
 
+    $('.hamburger').click(function(){
+        handleMobileMenu();
+    });
 });
