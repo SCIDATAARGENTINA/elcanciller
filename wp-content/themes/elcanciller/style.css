@@ -105,6 +105,12 @@ h2:before {
 }
 
 @media (max-width: 980px){
+    .top-bar .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 980px){
     .top-bar .container .logo{
         display: none;
     }
