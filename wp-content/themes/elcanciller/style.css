@@ -3910,6 +3910,9 @@ div.wpcf7-mail-sent-ok{
     width: 25px !important;
 }
 
+.is-active .hamburger-inner::before {
+    width: 30px !important;
+}
 
     /*
    * Slider
