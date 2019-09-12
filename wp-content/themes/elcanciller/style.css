@@ -211,6 +211,10 @@ h2:before {
     list-style-type: none;
 }
 
+.mobile-header-menu a{
+    color: #b29f93;
+}
+
 
 .lock-scroll {
     overflow: hidden;
