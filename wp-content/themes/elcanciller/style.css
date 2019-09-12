@@ -265,7 +265,7 @@ header#masthead {
 }
 
 @media (max-width: 991px){
-    .header#masthead {
+    #masthead {
         display:none !important;
     }
 }
