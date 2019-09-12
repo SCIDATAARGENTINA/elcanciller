@@ -61,6 +61,20 @@
 			</div><!-- user-bar -->
 		</div><!-- container -->
 
+		<div class="mobile-menu">
+				<nav class="mobile-navigation" aria-label="<?php esc_attr_e( 'Primary', 'twentynineteen' ); ?>">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_class'     => 'mobile-header-menu',
+							'depth'          => 1,
+						)
+					);
+					?>
+				</nav><!-- .mobile-navigation-->
+			</div><!-- end menu-bar -->
+
 	</div><!-- end top-bar -->
 
 	<?php get_template_part('template-parts/header/search', 'bar') ?>
@@ -78,7 +92,7 @@
 						)
 					);
 					?>
-				</nav><!-- .footer-navigation -->
+				</nav><!-- .header-navigation -->
 			</div><!-- end menu-bar -->
 
 		</header><!-- #masthead -->
