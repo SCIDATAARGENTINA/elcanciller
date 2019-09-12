@@ -162,6 +162,7 @@ h2:before {
     width: 40vw;
     background: #f2f2f2;
     top: 0;
+    z-index: 999999;
 }
 
 @media (min-width: 980px){
