@@ -164,7 +164,7 @@ h2:before {
     position: fixed;
     right: 0;
     height: 100vh;
-    width: 40vw;
+    width: 0;
     background: #f2f2f2;
     top: 0;
     z-index: 999999;
@@ -179,6 +179,10 @@ h2:before {
     .mobile-menu{
         display: none;
     }
+}
+
+.mobile-menu.open{
+    width: 50vw;
 }
 
 .mobile-menu-header{
