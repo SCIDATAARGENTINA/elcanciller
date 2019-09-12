@@ -172,7 +172,7 @@ h2:before {
     justify-content: flex-start;
     flex-direction: column;
     border-left: 4px solid #e7d117;
-    padding: 20px;
+    padding: 38px 20px;
 }
 
 @media (min-width: 980px){
