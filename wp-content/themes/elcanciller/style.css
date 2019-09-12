@@ -3176,6 +3176,15 @@ article .post-content .has-content-area {
     margin: 20px 0;
 }
 
+@media (max-width: 500px){
+    .encuesta-section .encabezado{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .encuesta-section .encabezado img {
     width: 100px;
     margin-left: 20px;
