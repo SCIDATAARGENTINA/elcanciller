@@ -172,6 +172,7 @@ h2:before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-left: 4px solid #e7d117;
 }
 
 @media (min-width: 980px){
