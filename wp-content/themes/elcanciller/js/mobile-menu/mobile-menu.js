@@ -2,6 +2,13 @@ jQuery(document).ready(function ($) {
 
     let handleMobileMenu = (thiz) => {
 
+        if ($('.mobile-menu').hasClass('open')) {
+            $('.mobile-menu').removeClass('open');
+        }
+        else {
+            $('.mobile-menu').addClass('open');
+        }
+
         if ($('.hamburger').hasClass('is-active')) {
             $('.hamburger').removeClass('is-active');
         }
