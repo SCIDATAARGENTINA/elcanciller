@@ -102,6 +102,12 @@ h2:before {
     margin-left: 7%;
 }
 
+@media (max-width: 980){
+    .top-bar .logo{
+        display: none;
+    }
+}
+
 .logo img {
     height: 15px;
 }
@@ -264,9 +270,9 @@ header#masthead {
     position: relative;
 }
 
-@media (max-width: 991px){
+@media (max-width: 980px){
     #masthead {
-        display:none !important;
+        display:none;
     }
 }
 
