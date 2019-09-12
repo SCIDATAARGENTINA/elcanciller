@@ -339,6 +339,13 @@ h2:before {
 @media (max-width: 600px){
     .search input[type="search"]{
         width: 170px;
+        padding-left: 0px;
+        border: 0;
+    }
+    .search .search-form label:after{
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
     }
 }
 
