@@ -3835,7 +3835,7 @@ div.wpcf7-mail-sent-ok{
   font: inherit;
   color: inherit;
   text-transform: none;
-  background-color: transparent;
+  background: transparent !important;
   border: 0;
   margin: 0;
   overflow: visible; }
@@ -3861,7 +3861,7 @@ div.wpcf7-mail-sent-ok{
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
