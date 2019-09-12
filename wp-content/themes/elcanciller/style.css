@@ -98,12 +98,8 @@ h2:before {
     align-items: center;
 }
 
-.logo{
-    margin-left: 7%;
-}
-
 @media (max-width: 980){
-    .top-bar .logo{
+    .logo{
         display: none;
     }
 }
