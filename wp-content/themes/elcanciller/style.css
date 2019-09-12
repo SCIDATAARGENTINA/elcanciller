@@ -3883,7 +3883,7 @@ div.wpcf7-mail-sent-ok{
    * Slider
    */
 .hamburger--slider .hamburger-inner {
-  top: 2px; 
+  top: 3px; 
 }
 
 .hamburger--slider .hamburger-inner::before {
