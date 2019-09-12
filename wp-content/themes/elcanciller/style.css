@@ -116,6 +116,12 @@ h2:before {
     }
 }
 
+@media (min-width: 980px){
+    .top-bar .container .mobile-logo{
+        display: none;
+    }
+}
+
 .logo img {
     height: 15px;
 }
