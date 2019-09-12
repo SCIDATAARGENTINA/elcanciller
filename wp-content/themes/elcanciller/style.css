@@ -169,7 +169,7 @@ h2:before {
     top: 0;
     z-index: 999999;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     border-left: 4px solid #e7d117;
@@ -192,6 +192,7 @@ h2:before {
 
 .mobile-menu .social-links{
     justify-content: flex-start;
+    margin-top: 0px;
 }
 
 .mobile-menu .tiempo{
@@ -204,6 +205,11 @@ h2:before {
 
 .mobile-menu .tiempo .info-tiempo .temp{
     font-size: 20px;
+}
+
+.mobile-header-menu{
+    padding: 0px;
+    list-style-type: none;
 }
 
 
