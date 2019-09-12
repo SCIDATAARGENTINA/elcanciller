@@ -413,6 +413,11 @@ h2:before {
         margin-right: 20px;
     }
 }
+@media (max-width: 600px){
+    .search .search-form{
+        margin-right: 5px;
+    }
+}
 
 .current-user-avatar .avatar {
     width: 30px;
