@@ -10,7 +10,7 @@
  */
 $author = get_queried_object();
 $author_id = $author->ID;
-$featured_img_url = get_the_post_thumbnail_url(get_field('portada',$author_id), 'full');
+$featured_img_url = get_the_post_thumbnail_url(get_field('portada','user_'.$author_id), 'full');
 $thumbnail_id = get_field('portada',$author_id);
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 ?>
