@@ -479,6 +479,7 @@ input:-internal-autofill-selected {
 @media (max-width: 980px){
     .inner.container .content {
         width: 100%;
+        border-top: 0px !important;
     }
 }
 
