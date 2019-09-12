@@ -22,6 +22,7 @@ function custom_scripts() {
   wp_enqueue_script('comments-js', get_stylesheet_directory_uri() . '/template-parts/comments/comments.js', array('jquery'), '1.0.0', true);
   wp_enqueue_script('nouislider-js', get_stylesheet_directory_uri() . '/js/emocion-slider/nouislider.min.js', array('jquery'), '1.0.0', true);
   wp_enqueue_style( 'nouislider-css', get_stylesheet_directory_uri() . '/js/emocion-slider/nouislider.min.css' );
+  wp_enqueue_script('mobile-menu-js', get_stylesheet_directory_uri() . '/js/mobile-menu/mobile-menu.js', array('jquery'), '1.0.0', true);
   wp_enqueue_style( 'slick-css', get_stylesheet_directory_uri() . '/slick/slick.css' );
   wp_enqueue_style( 'mf-css', get_stylesheet_directory_uri() . '/js/magnific/magnific-popup.css' );
   wp_enqueue_style( 'noty-css', get_stylesheet_directory_uri() . '/js/noty/noty.css' );
