@@ -3058,6 +3058,14 @@ article .post-content .has-content-area {
     font-weight: 400;
     text-transform: lowercase;
 }
+@media (max-width: 500px){
+    .comment-reply-link,
+#cancel-comment-reply-link {
+    font-size: 14px;
+    padding: 7px 14px;
+    margin-top: 10px;
+}
+}
 
 #reply-title.comment-reply-title {
     margin: 0px;
