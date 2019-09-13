@@ -4230,14 +4230,17 @@ AUTHOR PAGE
 
 .author-header .author-name::before{
     content: '';
-    width: 20px;
-    height: 1px;
+    width: 62px;
+    height: 2px;
     background-color: #b29f93;
     display: block;
+    margin-right: 15px;
 }
 
 .author-name h1{
     color: #b29f93;
     font-size: 22px;
     margin: 0px;
+    margin-top: 15px;
+    line-height: 0.8;
 }
