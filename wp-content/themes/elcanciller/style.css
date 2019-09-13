@@ -1558,6 +1558,12 @@ ul.tagposts-list li {
     line-height: 22px;
 }
 
+@media (max-width: 550px){
+    .archive-title .category h3{
+        padding-right: 10px;
+    }
+}
+
 .archive-title .category::before {
     content: '';
     width: 50px;
