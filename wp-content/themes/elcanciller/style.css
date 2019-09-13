@@ -2689,7 +2689,7 @@ ul.tagposts-list li {
     width: 10px;
     content: '';
     background-color: #e7d117;
-    height: 20%;
+    height: 90px;
     position: absolute;
     bottom: -5px;
     left: -5px;
@@ -2734,7 +2734,7 @@ ul.tagposts-list li {
 
 @media (max-width: 450px){
     .post-content {
-    margin-top: -92apx;
+    margin-top: -92px;
 
 }
 }
