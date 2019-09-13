@@ -2977,7 +2977,8 @@ article .post-content .has-content-area {
         display: none;
     }
     #comments .compartir i{
-        font-size: 20px;
+        font-size: 26px !important;
+        margin-right: 10px;
     }
 }
 
