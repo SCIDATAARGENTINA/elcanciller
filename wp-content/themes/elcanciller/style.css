@@ -2958,6 +2958,13 @@ article .post-content .has-content-area {
     margin: 0 auto;
 }
 
+@media (max-width: 768px){
+    #comments .comments-topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 #comments .nota-like i {
     margin: 0 15px !important;
     font-size: 23px !important;
@@ -2979,6 +2986,9 @@ article .post-content .has-content-area {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+@media (max-width: 550px){
+    #comments .comments-topbar div:after {display: none;}
 }
 
 #comments .comments-topbar div:last-child:after {
