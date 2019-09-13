@@ -1510,9 +1510,23 @@ ul.tagposts-list li {
     z-index: 2;
 }
 
+@media (max-width: 768px){
+    .archive-title .title h1{
+        padding: 10px;
+        font-size: 19px;
+    }
+}
+
 .archive-title img {
     max-width: 50px;
     margin: 0 20px;
+}
+
+@media (max-width: 768px){
+    .archive-title img {
+        max-width: 32px;
+        margin: 0 10px;
+    }
 }
 
 .archive-title .category {
@@ -1541,6 +1555,12 @@ ul.tagposts-list li {
 
 .archive-image {
     margin-left: 60px;
+}
+
+@media (max-width: 768px){
+    .archive-image{
+        margin-left: 0px;
+    }
 }
 
 .archive-image img {
