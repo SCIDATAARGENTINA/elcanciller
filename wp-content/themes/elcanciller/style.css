@@ -4250,3 +4250,15 @@ AUTHOR PAGE
     margin-top: 15px;
     line-height: 0.8;
 }
+
+@media (max-width: 600px){
+    .author-header .author-name::before{
+        display: none;
+    }
+    .author-header .author-name{
+        position: static;
+    }
+    .author-name h1{
+        line-height: 1;
+    }
+}
