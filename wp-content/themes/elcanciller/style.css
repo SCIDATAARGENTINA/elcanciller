@@ -1915,8 +1915,8 @@ ul.tagposts-list li {
 
 @media (max-width: 768px){
     .post-rendered .hovered .actions-container {
-        transform: translateY(0px);
-        opacity: 1;
+        transform: translateY(0px) !important;
+        opacity: 1 !important;
     }
 }
 
