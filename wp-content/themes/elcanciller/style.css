@@ -3134,6 +3134,13 @@ article .post-content .has-content-area {
     margin-right: 50px;
 }
 
+@media (max-width: 400px){
+    #commentform{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 #commentform input[type="submit"] {
     background: #e7d117;
     color: #fff;
