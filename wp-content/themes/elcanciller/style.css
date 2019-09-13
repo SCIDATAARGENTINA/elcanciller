@@ -366,7 +366,14 @@ h2:before {
 
 @media (max-width: 350px){
     .search input[type="search"]::placeholder{
-        display: none;
+        color: #5d5d5d;
+    }
+    .search input[type="search"]{
+        width: 0px;
+    }
+    .search input[type="search"]:focus,
+    .search input[type="search"]:active {
+        width: 120px;
     }
 }
 
