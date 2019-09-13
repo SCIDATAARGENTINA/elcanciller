@@ -2355,6 +2355,12 @@ ul.tagposts-list li {
     width: 150px;
 }
 
+@media (max-width: 700px){
+    .placa-content img {
+        width: 120px;
+    }
+}
+
 .placa-content h3 {
     color: #fff;
     font-size: 18px;
