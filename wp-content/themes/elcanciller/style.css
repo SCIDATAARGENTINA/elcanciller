@@ -4234,10 +4234,10 @@ AUTHOR PAGE
     height: 1px;
     background-color: #b29f93;
     display: block;
-    margin: 0px;
 }
 
 .author-name h1{
     color: #b29f93;
     font-size: 22px;
+    margin: 0px;
 }
