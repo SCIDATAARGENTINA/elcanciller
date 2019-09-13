@@ -3129,6 +3129,12 @@ article .post-content .has-content-area {
     margin-left: 50px;
 }
 
+@media (max-width: 400px){
+    .comment.depth-1 {
+        margin-left: 20px;
+    }
+}
+
 #commentform {
     margin-left: 50px;
     margin-right: 50px;
