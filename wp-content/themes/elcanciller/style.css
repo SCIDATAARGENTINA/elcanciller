@@ -2976,6 +2976,9 @@ article .post-content .has-content-area {
     #comments .compartir .text{
         display: none;
     }
+    #comments .compartir i{
+        font-size: 20px;
+    }
 }
 
 #comments .comments-topbar div {
