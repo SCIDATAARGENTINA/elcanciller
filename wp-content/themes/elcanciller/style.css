@@ -4211,8 +4211,18 @@ AUTHOR PAGE
 
 .author-header{
     border-bottom: 4px solid #e7d117;
+    position: relative;
 }
 
 .author-header img{
     vertical-align: top;
+}
+
+.author-header h1{
+    color: #b29f93;
+    font-size: 22px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
 }
