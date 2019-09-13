@@ -2401,7 +2401,7 @@ ul.tagposts-list li {
     }
 }
 
-@media (min-width: 1000px){
+@media (max-width: 1000px){
     .placa-next.mobile{
         display: block !important;
     }
