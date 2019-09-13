@@ -1510,7 +1510,7 @@ ul.tagposts-list li {
     z-index: 2;
 }
 
-@media (max-width: 768px){
+@media (max-width: 550px){
     .archive-title .title h1{
         padding: 10px;
         font-size: 19px;
@@ -1522,7 +1522,7 @@ ul.tagposts-list li {
     margin: 0 20px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 550px){
     .archive-title img {
         max-width: 32px;
         margin: 0 10px;
@@ -1557,7 +1557,7 @@ ul.tagposts-list li {
     margin-left: 60px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 550px){
     .archive-image{
         margin-left: 0px;
     }
