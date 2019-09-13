@@ -18,7 +18,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
    <header class="author-header">
       <div class="author-name">
-         <h1 class="author-name">
+         <h1>
             Por: <?php echo get_the_author_meta( 'display_name', $author_id ) ?>
          </h1>
       </div>
