@@ -51,11 +51,11 @@ $term = get_queried_object();
          <header class="archive-header">
             <div class="archive-title" style="background: <?php echo $cat_color ?>">
                <div class="category">            
-                  <h3><?php echo $categories[0]->name ?></h3>
+                  <h1><?php echo $categories[0]->name ?></h1>
                </div>
                <div class="title">
                   <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-blanco.svg" alt="">
-                  <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+                  <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
                </div>
             </div>
             <div class="archive-image">
