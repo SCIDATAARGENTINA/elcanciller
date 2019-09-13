@@ -2505,6 +2505,12 @@ ul.tagposts-list li {
     height: 100%;
 }
 
+@media (max-width: 1000px){
+    .slider-placa-imagen img{
+        height: auto;
+    }
+}
+
 
 /* PLACAS SECTION*/
 
