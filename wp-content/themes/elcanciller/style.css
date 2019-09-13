@@ -2958,7 +2958,7 @@ article .post-content .has-content-area {
     margin: 0 auto;
 }
 
-@media (max-width: 768px){
+@media (max-width: 540px){
     #comments .comments-topbar {
         flex-direction: column;
         align-items: flex-start;
