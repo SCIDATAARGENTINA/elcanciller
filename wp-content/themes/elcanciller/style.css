@@ -2970,6 +2970,9 @@ article .post-content .has-content-area {
 }
 
 @media (max-width: 420px){
+    #comments .nota-like i{
+        font-size: 26px !important;
+    }
     #comments .nota-like .text{
         display: none;
     }
