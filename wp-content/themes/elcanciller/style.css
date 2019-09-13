@@ -2964,7 +2964,7 @@ article .post-content .has-content-area {
         align-items: flex-start;
     }*/
     .comentar{
-        display: none;
+        display: none !important;
     }
 }
 
