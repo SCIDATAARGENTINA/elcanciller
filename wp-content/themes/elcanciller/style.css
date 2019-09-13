@@ -2728,8 +2728,14 @@ ul.tagposts-list li {
 @media (max-width: 768px){
     .post-content {
     margin-top: -65px;
-    position: relative;
-    z-index: 1;
+
+}
+}
+
+@media (max-width: 450px){
+    .post-content {
+    margin-top: -92apx;
+
 }
 }
 
@@ -2800,6 +2806,13 @@ ul.tagposts-list li {
     }
 }
 
+@media (max-width: 450px){
+    .post-meta{
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
+
 .post-meta .post-time {
     margin-right: 40px;
 }
@@ -2807,6 +2820,11 @@ ul.tagposts-list li {
 @media (max-width: 768px){
     .post-meta .post-time {
     margin-right: 10px;
+    }
+}
+@media (max-width: 450px){
+    .post-meta .post-time {
+    margin-right: 0px;
     }
 }
 
