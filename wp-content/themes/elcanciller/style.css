@@ -4260,5 +4260,6 @@ AUTHOR PAGE
     }
     .author-name h1{
         line-height: 1;
+        margin: 10px 0;
     }
 }
