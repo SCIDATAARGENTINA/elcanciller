@@ -2926,6 +2926,15 @@ article .post-content .has-content-area {
     }
 }
 
+@media (max-width: 768px){
+    .comments-area {
+        max-width: 100%;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        width: 100%;
+    }
+}
+
 #comments .comments-title-wrap {
     margin: 0px !important;
     background: #e7d117;
