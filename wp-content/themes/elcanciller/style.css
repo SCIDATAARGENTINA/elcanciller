@@ -1551,7 +1551,7 @@ ul.tagposts-list li {
     margin: 10px 0px 10px 0px;
 }
 
-.archive-title .category h3 {
+.archive-title .category h1 {
     margin: 0;
     margin-left: 20px;
     font-size: 30px;
@@ -1559,8 +1559,9 @@ ul.tagposts-list li {
 }
 
 @media (max-width: 550px){
-    .archive-title .category h3{
+    .archive-title .category h1{
         padding-right: 10px;
+        font-size: 30px;
     }
 }
 
