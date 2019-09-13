@@ -3140,7 +3140,7 @@ article .post-content .has-content-area {
     margin-right: 50px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     #commentform{
         margin-left: 10px;
         margin-right: 10px;
@@ -3157,7 +3157,11 @@ article .post-content .has-content-area {
     line-height: 23px;
     font-weight: 500;
 }
+@media (max-width: 540px){
+    .comment-form{
 
+    }
+}
 .comment-form-flex {
     margin: 0px;
 }
