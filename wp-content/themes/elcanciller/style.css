@@ -1913,6 +1913,13 @@ ul.tagposts-list li {
     opacity: 1;
 }
 
+@media (max-width: 768px){
+    .post-rendered .hovered .actions-container {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 
 /* END POST RENDERED*/
 
