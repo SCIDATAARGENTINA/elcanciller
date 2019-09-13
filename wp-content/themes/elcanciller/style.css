@@ -2368,6 +2368,12 @@ ul.tagposts-list li {
     position: relative;
 }
 
+@media(max-width: 1000px){
+    .placa-image {
+        padding: 0px;
+    }
+}
+
 .placa-image img {
     vertical-align: top;
     width: 100%;
