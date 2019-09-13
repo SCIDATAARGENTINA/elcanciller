@@ -1512,7 +1512,7 @@ ul.tagposts-list li {
     justify-content: flex-start;
 }
 
-.archive-title .title h1 {
+.archive-title .title h2 {
     background: #edede6;
     padding: 20px;
     margin: 0px;
@@ -1524,7 +1524,7 @@ ul.tagposts-list li {
 }
 
 @media (max-width: 550px){
-    .archive-title .title h1{
+    .archive-title .title h2{
         padding: 10px;
         font-size: 19px;
     }
