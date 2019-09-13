@@ -59,7 +59,7 @@ $term = get_queried_object();
                </div>
             </div>
             <div class="archive-image">
-               <a href="<?php the_permalink(); ?>"><img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>"></a>
+               <a href="<?php the_permalink(); ?>"><img class="destacada-img" src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>"></a>
                <?php get_template_part('template-parts/comments/comments', 'sharer') ?>
             </div>
          </header>
