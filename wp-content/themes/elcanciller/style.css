@@ -4218,7 +4218,7 @@ AUTHOR PAGE
     vertical-align: top;
 }
 
-.author-header h1{
+.author-header .author-name{
     color: #b29f93;
     font-size: 22px;
     position: absolute;
