@@ -2720,6 +2720,14 @@ ul.tagposts-list li {
     z-index: 1;
 }
 
+@media (max-width: 768px){
+    .post-content {
+    margin-top: -65px;
+    position: relative;
+    z-index: 1;
+}
+}
+
 .post-title h1 {
     margin: 0px;
     font-size: 33px;
@@ -2781,8 +2789,20 @@ ul.tagposts-list li {
     padding: 5px 10px;
 }
 
+@media (max-width: 768px){
+    .post-meta{
+        justify-content: flex-end;
+    }
+}
+
 .post-meta .post-time {
     margin-right: 40px;
+}
+
+@media (max-width: 768px){
+    .post-meta .post-time {
+    margin-right: 10px;
+    }
 }
 
 .post-meta .time-ago {
@@ -2798,6 +2818,7 @@ article .post-content {
 @media (max-width: 768px){
     article .post-content {
         margin-right: 0px;
+        margin-left: 0px;
     }
 }
 
