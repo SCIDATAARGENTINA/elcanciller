@@ -4223,6 +4223,9 @@ AUTHOR PAGE
     top: 20px;
     right: 20px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .author-header .author-name::before{
@@ -4231,6 +4234,7 @@ AUTHOR PAGE
     height: 1px;
     background-color: #b29f93;
     display: block;
+    margin: 0px;
 }
 
 .author-name h1{
