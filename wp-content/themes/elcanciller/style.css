@@ -4227,10 +4227,10 @@ AUTHOR PAGE
     z-index: 2;
 }
 
-.author-header h1::before{
+.author-header h1:before{
     content: '';
     width: 20px;
     height: 1px;
     background-color: #b29f93;
-    
+
 }
