@@ -2432,6 +2432,12 @@ ul.tagposts-list li {
     width: 100%;
 }
 
+@media (max-width: 1000px){
+    .slider-placa-titulo {
+        height: 100px;
+    }
+}
+
 .slider-placa-titulo h3 {
     position: absolute;
     top: 0;
@@ -2452,6 +2458,12 @@ ul.tagposts-list li {
     left: 48%;
     cursor: pointer;
     opacity: 0;
+}
+
+@media (max-width: 1000px){
+    .placa-like{
+        bottom: 20px;
+    }
 }
 
 .slider-placa-titulo h3.active {
