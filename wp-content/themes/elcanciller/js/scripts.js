@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
             crossDomain: true,
             dataType: 'jsonp',
             success: function(result) {
-                if ($(window).width() < 960) {
+                if ($(window).width() < 980) {
                     var skycons = new Skycons({ "color": "#b29f93" });
                     skycons.add("icon2", result.currently.icon);
                     skycons.play();
