@@ -8,10 +8,16 @@ jQuery(document).ready(function($) {
             crossDomain: true,
             dataType: 'jsonp',
             success: function(result) {
-                var skycons = new Skycons({ "color": "#b29f93" });
-                skycons.add("icon1", result.currently.icon);
-                skycons.play();
-
+                if ($(window).width() < 960) {
+                    var skycons = new Skycons({ "color": "#b29f93" });
+                    skycons.add("icon2", result.currently.icon);
+                    skycons.play();
+                }
+                else {
+                    var skycons = new Skycons({ "color": "#b29f93" });
+                    skycons.add("icon1", result.currently.icon);
+                    skycons.play();
+                }
 
 
                 $('.info-tiempo').append('<span class="temp">' + Math.round(result.currently.temperature) + '°</span>');

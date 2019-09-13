@@ -73,7 +73,7 @@
 				</div><!-- social-links -->
 				<div class="tiempo">
 					<div class="canva-tiempo">
-						<canvas id="icon1" width="60" height="60"></canvas>
+						<canvas id="icon2" width="60" height="60"></canvas>
 					</div><!-- canvia-tiempo -->
 					<div class="info-tiempo">
 						<span class="fech"><?php echo date_i18n('D j M Y'); ?></span>
