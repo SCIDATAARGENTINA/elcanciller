@@ -4202,3 +4202,17 @@ div.wpcf7-mail-sent-ok{
 .hamburger--slider.is-active .hamburger-inner::after {
     transform: translate3d(0, -17px, 0) rotate(-90deg); 
 }
+
+/* ----------------
+
+AUTHOR PAGE
+
+------------------*/
+
+.author-header{
+    border-bottom: 4px solid #e7d117;
+}
+
+.author-header img{
+    vertical-align: top;
+}
