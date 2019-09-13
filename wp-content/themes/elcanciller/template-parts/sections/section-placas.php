@@ -65,7 +65,7 @@
                     <?php } ?>
                 </div>
             </div><!-- end slider placa titulo -->
-
+            <button id="next-placa" class="placa-next mobile"></button>
         </div><!-- placa-content -->
     </div><!-- placa-title -->
 
