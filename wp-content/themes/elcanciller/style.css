@@ -2789,6 +2789,12 @@ article .post-content {
     margin-right: 50px;
 }
 
+@media (max-width: 768px){
+    article .post-content {
+        margin-right: 0px;
+    }
+}
+
 article .post-content .has-content-area {
     font-family: "Lato";
     font-size: 17px;
