@@ -34,12 +34,12 @@ $discussion = twentynineteen_get_discussion_data();
 				</a>
 			</div>
 			<div class="compartir">
-				<div class="text">Compartir:</div>
+				<span class="text">Compartir:</span>
 				<i class="fab fa-twitter"  data-text="<?php the_title(); ?>" data-link="<?php the_permalink() ?>"></i>
 				<i class="fab fa-facebook-f" data-title="<?php the_title(); ?>" data-img="" data-text="<?php echo get_the_excerpt(); ?>" data-link="<?php the_permalink() ?>"></i>
 			</div>
 			<div class="nota-like">
-				<div class="text">¿Te gusto esta nota?</div>
+				<span class="text">¿Te gusto esta nota?</span>
 				<i class="fas fa-heart like" data-id="<?php echo get_the_ID(); ?>" data-count="<?php the_field('likes') ?>" data-type="<?php echo get_post_type( get_the_ID() ); ?>"></i>
 			</div>
 		</div><!-- comments-topbar -->
