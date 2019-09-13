@@ -2849,7 +2849,7 @@ article .post-content .has-content-area {
 #comments {
     border-top: 7px solid #ccc;
     border-bottom: 7px solid #ccc;
-    margin: 0px !important;
+    margin: 0px;
     margin-left: 50px !important;
     background: #f5f8fa;
 }
