@@ -4291,3 +4291,10 @@ AUTHOR PAGE
         margin: 10px 0;
     }
 }
+
+/* FLOAT BUTTON */
+
+.float-btn.fl-right.fl-bottom {
+    bottom: 15px;
+    right: 15px;
+}
