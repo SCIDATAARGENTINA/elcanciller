@@ -2539,6 +2539,13 @@ ul.tagposts-list li {
     }
 }
 
+@media (max-width: 460px){
+.slider-placa-imagen {
+    width: 100%;
+    min-height: 242px;
+}
+}
+
 .slider-placa-imagen img {
     position: absolute;
     top: 0px;
