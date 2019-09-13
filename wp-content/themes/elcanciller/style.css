@@ -2756,6 +2756,12 @@ ul.tagposts-list li {
     font-size: 14px;
 }
 
+@media (max-width: 768px){
+    .post-author a {
+        border-radius: 20px 0px 0px 20px;
+    }
+}
+
 .post-author a span {
     color: #fff;
 }
