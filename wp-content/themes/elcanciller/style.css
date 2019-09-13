@@ -2878,6 +2878,12 @@ article .post-content .has-content-area {
 .related-title h3 {
     font-size: 26px;
 }
+@media (max-width: 500px){
+    .related-title h3 {
+        font-size: 22px;
+    }
+}
+
 
 .related-title img {
     border-bottom: 1px solid #fff;
