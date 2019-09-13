@@ -2330,6 +2330,11 @@ ul.tagposts-list li {
     margin-bottom: 50px;
     margin-top: 50px;
 }
+@media (max-width: 1000px){
+    .placas-section{
+        grid-template-columns: 1fr;
+    }
+}
 
 .placa-title {
     background: #e7d117;
