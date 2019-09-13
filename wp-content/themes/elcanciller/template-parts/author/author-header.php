@@ -17,6 +17,9 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 ?>
 
    <header class="author-header">
+      <h1 class="author-name">
+         <?php the_title(); ?>
+      </h1>
       <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt?>">
    </header>
          
