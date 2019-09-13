@@ -2854,6 +2854,12 @@ article .post-content .has-content-area {
     background: #f5f8fa;
 }
 
+@media (min-width: 980px){
+    .comments-area {
+        max-width: calc(8 * (100vw / 12) - 28px);
+    }
+}
+
 #comments .comments-title-wrap {
     margin: 0px !important;
     background: #e7d117;
