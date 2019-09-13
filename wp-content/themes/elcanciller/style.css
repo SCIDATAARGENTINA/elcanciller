@@ -4295,6 +4295,6 @@ AUTHOR PAGE
 /* FLOAT BUTTON */
 
 .float-btn.fl-right.fl-bottom {
-    bottom: 15px;
-    right: 15px;
+    bottom: 15px !important;
+    right: 15px !important;
 }
