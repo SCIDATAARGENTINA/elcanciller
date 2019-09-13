@@ -2404,6 +2404,9 @@ ul.tagposts-list li {
 @media (max-width: 1000px){
     .placa-next.mobile{
         display: block !important;
+        width: 17px;
+        height: 17px;
+        right: 10px;
     }
 }
 
