@@ -2857,6 +2857,7 @@ article .post-content .has-content-area {
 @media (max-width: 980px){
     .comments-area {
         max-width: 100%;
+        margin-right: 50px !important;
     }
 }
 
