@@ -2333,6 +2333,7 @@ ul.tagposts-list li {
 @media (max-width: 1000px){
     .placas-section{
         grid-template-columns: 1fr;
+        padding: 0px;
     }
 }
 
