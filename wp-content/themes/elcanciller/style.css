@@ -3045,6 +3045,11 @@ article .post-content .has-content-area {
     color: #656565;
     margin: 0px !important;
 }
+@media only screen and (min-width: 500px){
+    .comment .comment-content {
+        padding-right: 1rem;
+    }
+}
 
 .comment-reply-link,
 #cancel-comment-reply-link {
