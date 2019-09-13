@@ -4219,8 +4219,6 @@ AUTHOR PAGE
 }
 
 .author-header .author-name{
-    color: #b29f93;
-    font-size: 22px;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -4233,4 +4231,9 @@ AUTHOR PAGE
     height: 1px;
     background-color: #b29f93;
     display: block;
+}
+
+.author-name h1{
+    color: #b29f93;
+    font-size: 22px;
 }
