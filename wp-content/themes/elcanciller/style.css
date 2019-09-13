@@ -364,6 +364,12 @@ h2:before {
     }
 }
 
+@media (max-width: 350px){
+    .search input[type="search"]::placeholder{
+        display: none;
+    }
+}
+
 .search .search-form label {
     display: flex;
     justify-content: center;
