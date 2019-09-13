@@ -749,6 +749,11 @@ input:-internal-autofill-selected {
     vertical-align: top;
 }
 
+.trending-post .entry-img img {
+    width: 100%;
+}
+
+
 .trending-post .titular h2 {
     font-size: 37px;
     margin: 0;
