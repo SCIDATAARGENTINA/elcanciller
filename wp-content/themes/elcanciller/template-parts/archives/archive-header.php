@@ -71,7 +71,7 @@ $term = get_queried_object();
       <header class="archive-header no-trending">
             <div class="archive-title" style="background: <?php echo $cat_color ?>">
                <div class="category">            
-                  <h3><?php echo $term->name ?></h3>
+                  <h1><?php echo $term->name ?></h1>
                </div>
          </header>
 
