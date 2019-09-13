@@ -2709,6 +2709,11 @@ ul.tagposts-list li {
     left: -134px;
     z-index: 5;
 }
+@media (max-width: 769px){
+    .post-imagen .post-category {
+        bottom: 145px;
+    }
+}
 
 .post-imagen .post-category a {
     color: #c4afa1;
