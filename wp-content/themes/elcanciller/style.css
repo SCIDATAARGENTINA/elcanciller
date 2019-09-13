@@ -1800,7 +1800,7 @@ ul.tagposts-list li {
     font-size: 16px;
     height: 40px;
     width: 100%;
-    left: -116px;
+    left: -45%;
 }
 
 .hovered .post-category a {
@@ -1873,8 +1873,8 @@ ul.tagposts-list li {
 }
 
 .outer-container .post-category {
-    bottom: 60%;
-    left: -156px;
+    bottom: 53%;
+    left: -45%;
 }
 
 
