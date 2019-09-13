@@ -2959,9 +2959,12 @@ article .post-content .has-content-area {
 }
 
 @media (max-width: 540px){
-    #comments .comments-topbar {
+   /*#comments .comments-topbar {
         flex-direction: column;
         align-items: flex-start;
+    }*/
+    .comentar{
+        display: none;
     }
 }
 
