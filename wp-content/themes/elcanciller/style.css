@@ -2395,6 +2395,12 @@ ul.tagposts-list li {
     background: #e7d117;
 }
 
+@media (max-width: 1000px){
+    .placa-next{
+        display: none;
+    }
+}
+
 .placa-next::before {
     content: '';
     width: 12px;
