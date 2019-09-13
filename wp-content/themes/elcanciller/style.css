@@ -3013,6 +3013,12 @@ article .post-content .has-content-area {
     margin-right: 10px;
 }
 
+@media (max-width: 500px){
+    .comment .comment-body{
+        display: block;
+    }
+}
+
 .comment-notes {
     margin: 0px;
 }
