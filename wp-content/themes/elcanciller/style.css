@@ -2868,6 +2868,13 @@ article .post-content .has-content-area {
     position: relative;
 }
 
+@media (max-width: 768){
+    .related-title{
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .related-title h3 {
     font-size: 26px;
 }
