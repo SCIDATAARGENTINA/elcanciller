@@ -2495,10 +2495,19 @@ ul.tagposts-list li {
     opacity: 1;
 }
 
+
+
 .slider-placa-imagen {
     position: relative;
     width: calc(100% - 20px);
     min-height: 380px;
+}
+
+@media (max-width: 1000px){
+    .slider-placa-imagen{
+        width: 100%;
+        min-height: 300px;
+    }
 }
 
 .slider-placa-imagen img {
