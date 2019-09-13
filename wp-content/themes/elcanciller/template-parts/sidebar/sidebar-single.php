@@ -40,8 +40,3 @@
 <div class="widget" style="margin-top: 9% !important;">
 <?php get_template_part('template-parts/widgets/widget', 'autores') ?>
 </div>
-<div class="widget no-padding">
-  <div class="loader">Cargando...</div>
-    <div class="render-posts col-1" data-quantity="2" style="margin-top:0px;">
-  </div>
-</div>
