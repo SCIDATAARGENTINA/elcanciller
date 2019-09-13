@@ -2401,6 +2401,12 @@ ul.tagposts-list li {
     }
 }
 
+@media (min-width: 1000px){
+    .placa-next.mobile{
+        display: block !important;
+    }
+}
+
 .placa-next::before {
     content: '';
     width: 12px;
