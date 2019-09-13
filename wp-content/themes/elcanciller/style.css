@@ -4237,6 +4237,12 @@ AUTHOR PAGE
     margin-right: 15px;
 }
 
+@media (max-width: 768px){
+    .author-header .author-name::before{
+        display: none;
+    }
+}
+
 .author-name h1{
     color: #b29f93;
     font-size: 22px;
