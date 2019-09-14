@@ -37,6 +37,7 @@
 			<?php endif; ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+	asdasd
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
