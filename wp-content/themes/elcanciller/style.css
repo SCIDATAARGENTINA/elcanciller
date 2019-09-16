@@ -3549,6 +3549,12 @@ article .post-content .has-content-area {
     padding-left: 0px;
 }
 
+@media (max-width: 768px){
+    .search-post .comentarios-noshare {
+        display: none;
+    }
+}
+
 .search-post .comentarios-noshare img {
     width: 25px;
 }
