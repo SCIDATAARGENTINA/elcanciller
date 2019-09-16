@@ -11,13 +11,15 @@ $cat_link = get_term_link($categories[0]->term_id );
         <a href="<?php echo $cat_link; ?>"><h3 class="category-name"><?php echo $categories[0]->name ?></h3></a>
         <span><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron.svg" alt=""></span>
     </div><!-- category -->
-    <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-    <div class="user-actions">
-        <button class="shuffle">
-            <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/shuffle.svg" alt="">
-        </button>
-    </div>
-</div><!-- titulo -->
+    <div class="titulo">
+        <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+        <div class="user-actions">
+            <button class="shuffle">
+                <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/shuffle.svg" alt="">
+            </button>
+        </div>
+    </div><!-- titulo -->
+</div><!-- titular -->
 
 
 <div class="entry">
