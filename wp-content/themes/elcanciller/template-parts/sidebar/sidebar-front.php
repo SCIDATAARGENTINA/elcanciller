@@ -38,8 +38,27 @@
   <?php get_template_part('template-parts/widgets/widget', 'instagram') ?>
 </div>
 <div class="widget">
-  <!-- publicidad-->
-  <img src="http://142.93.24.13/wp-content/uploads/2019/09/publi234x60.jpg">
+  <!-- publicidades Barras y Juego ilegal -->
+  <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
+  <div id='div-gpt-ad-1539357193770-0'>
+    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357193770-0'); });</script>
+  </div>
+  <!-- /21749555895/Home-Lateral-SeccionEstaPasando2 -->
+  <div id='div-gpt-ad-1559747926255-0'>
+    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559747926255-0'); });</script>
+  </div>
+  <!-- /21749555895/Home-Lateral-SeccionPostCreditos-250x250 -->
+  <div id='div-gpt-ad-1543340613980-0'>
+    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1543340613980-0'); });</script>
+  </div>
+  <!-- /21749555895/Home-Lateral-SeccionEntreSelfies-250x250 -->
+  <div id='div-gpt-ad-1539787334136-0' style='height:250px; width:250px;margin:0 auto;'>
+    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539787334136-0'); });</script>
+  </div>
+  <!-- /21749555895/Home-Lateral-SeccionPressStart-250x250 -->
+  <div id='div-gpt-ad-1556238378054-0' style='height:250px; width:250px;margin:0 auto;'>
+    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1556238378054-0'); });</script>
+  </div>
 </div>
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'twitter') ?>
