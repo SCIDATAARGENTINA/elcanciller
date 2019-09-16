@@ -533,10 +533,10 @@ function custom_post_type_story()
 {
 
   $labels = array(
-    'name'                  => _x('Ultimas Story', 'Post Type General Name', 'elcanciller'),
-    'singular_name'         => _x('Ultima Story', 'Post Type Singular Name', 'elcanciller'),
-    'menu_name'             => __('Ultima Story', 'elcanciller'),
-    'name_admin_bar'        => __('Ultimo Story', 'elcanciller'),
+    'name'                  => _x('Ultimas Historias', 'Post Type General Name', 'elcanciller'),
+    'singular_name'         => _x('Ultima Historia', 'Post Type Singular Name', 'elcanciller'),
+    'menu_name'             => __('Historias', 'elcanciller'),
+    'name_admin_bar'        => __('Ultima Historia', 'elcanciller'),
     'archives'              => __('Archivo', 'elcanciller'),
     'attributes'            => __('Atributos', 'elcanciller'),
     'parent_item_colon'     => __('Padre:', 'elcanciller'),
@@ -562,7 +562,7 @@ function custom_post_type_story()
     'filter_items_list'     => __('Filtrar listado', 'elcanciller'),
   );
   $args = array(
-    'label'                 => __('Story', 'elcanciller'),
+    'label'                 => __('Historia', 'elcanciller'),
     'description'           => __('Modulo de administración de Story', 'elcanciller'),
     'labels'                => $labels,
     'supports'              => array('title'),
@@ -580,13 +580,13 @@ function custom_post_type_story()
     'exclude_from_search'   => true,
     'publicly_queryable'    => true,
     'show_in_rest'          => true,
-    'rest_base'             => 'story',
+    'rest_base'             => 'historia',
     'rest_controller_class' => 'WP_REST_Posts_Controller',
     'capability_type'       => 'post',
   );
-  register_post_type('story', $args);
+  register_post_type('historia', $args);
 }
-add_action('init', 'custom_post_type_story', 0);
+add_action('init', 'custom_post_type_historia', 0);
 
 
 
@@ -1142,25 +1142,25 @@ add_shortcode( 'ultimomomento', 'ultimomomento_shortcode' );
 
 
 
-function story_shortcode($atts){
-  $a = story_atts( array(
+function historia_shortcode($atts){
+  $a = historia_atts( array(
     'postid' => '0'
   ), $atts );
   
     // Setup arguments.
     $args = array(
-      'post_type' => 'story',
+      'post_type' => 'historia',
       'posts_per_page' => 1,
       'p' => $a['postid']
   );
   
-  $story_query = new WP_Query( $args ); 
+  $historia_query = new WP_Query( $args ); 
 
-  if($story_query->have_posts()){
-    while($story_query->have_posts()){
-      $story_query->the_post();
+  if($historia_query->have_posts()){
+    while($historia_query->have_posts()){
+      $historia_query->the_post();
 
-      get_template_part( 'template-parts/content/content', 'story' );
+      get_template_part( 'template-parts/content/content', 'historia' );
 
     }
   }
