@@ -3549,6 +3549,7 @@ article .post-content .has-content-area {
     .search-post .search-content{
         text-align: center;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
