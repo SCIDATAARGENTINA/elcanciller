@@ -797,8 +797,8 @@ input:-internal-autofill-selected {
 .trending-post .user-actions button{
     display: inline-block;
     background: transparent;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
 
 /* END FRONT PAGE TRENDING POST*/
