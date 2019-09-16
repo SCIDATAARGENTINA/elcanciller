@@ -3507,6 +3507,16 @@ article .post-content .has-content-area {
     }
 }
 
+@media (max-width: 500px){
+    .search-post{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .search-post .imagen {
     width: 200px;
     height: 200px;
@@ -3542,16 +3552,6 @@ article .post-content .has-content-area {
 @media (max-width: 768px){
     .search-post .search-content{
         justify-content: center;
-    }
-}
-
-@media (max-width: 500px){
-    .search-post .search-content{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
 
