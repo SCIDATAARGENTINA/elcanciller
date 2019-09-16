@@ -59,7 +59,6 @@
   <div id='div-gpt-ad-1557165803761-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1557165803761-0'); });</script>
   </div>
-  </div>
   <!-- /21749555895/Home-Lateral-SeccionPostCreditos-250x250 -->
   <img src='http://142.93.24.13/wp-content/uploads/2019/09/anses.png'>
   <div id='div-gpt-ad-1543340613980-0'>
@@ -79,6 +78,7 @@
   <div id='div-gpt-ad-1557312301298-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1557312301298-0'); });</script>
   </div>
+</div>
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'twitter') ?>
 </div>
