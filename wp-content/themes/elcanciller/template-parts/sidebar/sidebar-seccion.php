@@ -43,3 +43,10 @@
 <div class="widget widget-contador">
   <?php echo do_shortcode('[contador postid=48914]') ?>
 </div>
+<div class="widget">
+  <a href="https://www.gba.gob.ar/seguridad?utm_source=medios&utm_medium=cpc&utm_campaign=seguridad"><img src="https://elcanciller.com/files/juego.gif"></a>
+  <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
+  <div id='div-gpt-ad-1539357193770-0' style='height:250px; width:250px;margin:0 auto;margin-left: 0px;'>
+    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357193770-0'); });</script>
+  </div>
+</div>
