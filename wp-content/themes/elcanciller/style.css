@@ -703,6 +703,7 @@ input:-internal-autofill-selected {
 .trending-post .titular {
     display: flex;
     margin: 15px;
+    margin-bottom: 5px;
 }
 
 @media (max-width: 768px){
@@ -792,7 +793,7 @@ input:-internal-autofill-selected {
 
 .trending-post .user-actions{
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .trending-post .user-actions button{
