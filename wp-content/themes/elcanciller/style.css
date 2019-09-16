@@ -733,6 +733,7 @@ input:-internal-autofill-selected {
 
 .trending-post .category a {
     color: #e7d117 !important;
+    display: block;
 }
 
 @media (max-width: 768px){
@@ -779,12 +780,23 @@ input:-internal-autofill-selected {
     }
 }
 
+
 @media (max-width: 400px){
     .trending-post .titular h2 {
         font-size: 22px;
     }
 }
 
+.trending-post .user-actions{
+    display: inline-block;
+}
+
+.trending-post .user-actions button{
+    display: inline-block;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+}
 
 /* END FRONT PAGE TRENDING POST*/
 
