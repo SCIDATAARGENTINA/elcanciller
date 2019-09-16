@@ -3617,6 +3617,13 @@ article .post-content .has-content-area {
     font-weight: 400;
 }
 
+@media (max-width: 500px){
+    .search .page-header .page-description {
+        width: 100%;
+        
+    }
+}
+
 .search .page-header .page-description:after {
     display: none;
 }
