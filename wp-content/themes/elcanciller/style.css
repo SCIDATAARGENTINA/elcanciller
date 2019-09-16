@@ -3340,11 +3340,7 @@ article .post-content .has-content-area {
     line-height: 23px;
     font-weight: 500;
 }
-@media (max-width: 540px){
-    .comment-form{
 
-    }
-}
 .comment-form-flex {
     margin: 0px;
 }

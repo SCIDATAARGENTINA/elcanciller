@@ -1169,3 +1169,53 @@ function historia_shortcode($atts){
 }
 
 add_shortcode( 'historia', 'story_shortcode' );
+
+
+// AJAX TRENDING HOME HEADER SHUFFLE
+
+function shuffle_scripts() {
+  
+	wp_register_script( 'shuffle', get_stylesheet_directory_uri() . '/js/shuffle.js', array('jquery') );
+ 
+	wp_localize_script( 'shuffle', 'shuffle_params', array(
+		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+	) );
+ 
+ 	wp_enqueue_script( 'shuffle' );
+}
+ 
+add_action( 'wp_enqueue_scripts', 'shuffle_scripts' );
+
+
+function shuffle_ajax_handler(){
+ 
+	$args = array(
+      'post_type' => 'post',
+      'posts_per_page' => 1,
+      'orderby' => 'rand',
+      'order' => 'DESC',
+      'date_query' => array(
+        array(
+            'after' => '2 days ago'
+        )
+    )
+   );
+
+   $trending_post = new WP_Query($args);
+ 
+	if( $trending_post->have_posts() ) :
+ 
+		while( $trending_post->have_posts() ): the_post();
+
+    get_template_part('template-parts/home/trending-front', 'content');
+ 
+		endwhile;
+ 
+	endif;
+	die; // here we exit the script and even no wp_reset_query() required!
+}
+ 
+ 
+ 
+add_action('wp_ajax_shuffle', 'shuffle_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_shuffle', 'shuffle_ajax_handler'); // wp_ajax_nopriv_{action}
