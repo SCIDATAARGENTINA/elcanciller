@@ -1,5 +1,5 @@
 jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined" error
-    $('.trending-post .shuffle').click(function () {
+    $(document).on('click', '.trending-post .shuffle', function () {
         var trendingPost = $('.trending-post');
         var button = $(this),
             data = {
