@@ -42,6 +42,9 @@
 </div>
 
 <div class="widget">
+  <img src="http://142.93.24.13/wp-content/uploads/2019/09/caba2.png">
+  <img src="http://142.93.24.13/wp-content/uploads/2019/09/tigre2.png">
+  <img src="http://142.93.24.13/wp-content/uploads/2019/09/bapro2.png">
   <!-- /21749555895/Nota-Lateral-330x350 -->
   <div id='div-gpt-ad-1539356874237-0' style='height:350px; width:330px;'>
     <script>
