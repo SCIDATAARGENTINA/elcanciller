@@ -529,7 +529,7 @@ add_action('init', 'custom_post_type_ultimomomento', 0);
 
 
 
-function custom_post_type_story()
+function custom_post_type_historia()
 {
 
   $labels = array(
@@ -1168,4 +1168,4 @@ function historia_shortcode($atts){
 
 }
 
-add_shortcode( 'story', 'story_shortcode' );
+add_shortcode( 'historia', 'story_shortcode' );
