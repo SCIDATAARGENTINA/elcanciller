@@ -1188,7 +1188,8 @@ add_action( 'wp_enqueue_scripts', 'shuffle_scripts' );
 
 
 function shuffle_ajax_handler(){
- 
+  echo 'hola';
+ /*
 	$args = array(
       'post_type' => 'post',
       'posts_per_page' => 1,
@@ -1211,7 +1212,8 @@ function shuffle_ajax_handler(){
 		endwhile;
  
 	endif;
-	die; // here we exit the script and even no wp_reset_query() required!
+  die; // here we exit the script and even no wp_reset_query() required!
+  */
 }
  
  
