@@ -40,3 +40,26 @@
 <div class="widget" style="margin-top: 9% !important;">
 <?php get_template_part('template-parts/widgets/widget', 'autores') ?>
 </div>
+
+<div class="widget">
+  <!-- /21749555895/Nota-Lateral-330x350 -->
+  <div id='div-gpt-ad-1539356874237-0' style='height:350px; width:330px;'>
+    <script>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356874237-0'); });
+    </script>
+  </div>
+  <!-- /21749555895/Nota-Lateral-330x350-2 -->
+  <div id='div-gpt-ad-1559749382407-0'>
+    <script>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559749382407-0'); });
+    </script>
+  </div>
+  <!-- /21749555895/Nota-Lateral-300x600 -->
+  <div id='div-gpt-ad-1539356910114-0' style='height:600px; width:300px;'>
+    <script>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356910114-0'); });
+    </script>
+  </div>
+  <!-- nota-a-mano-330x350 -->
+  <a href="https://www.gba.gob.ar/seguridad?utm_source=medios&utm_medium=cpc&utm_campaign=seguridad"><img src="https://elcanciller.com/files/juego.gif"></a>
+</div>
