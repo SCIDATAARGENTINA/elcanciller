@@ -1193,7 +1193,6 @@ function shuffle_ajax_handler(){
       'post_type' => 'post',
       'posts_per_page' => 1,
       'orderby' => 'rand',
-      'order' => 'DESC',
       'date_query' => array(
         array(
             'after' => '2 days ago'
