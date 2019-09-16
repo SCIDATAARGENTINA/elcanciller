@@ -733,6 +733,9 @@ input:-internal-autofill-selected {
 
 .trending-post .category a {
     color: #e7d117 !important;
+}
+
+.trending-post .titulo a{
     display: block;
 }
 
