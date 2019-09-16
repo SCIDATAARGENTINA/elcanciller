@@ -1188,8 +1188,8 @@ add_action( 'wp_enqueue_scripts', 'shuffle_scripts' );
 
 
 function shuffle_ajax_handler(){
-  echo 'hola';
-	$args = array(
+
+  $args = array(
       'post_type' => 'post',
       'posts_per_page' => 1,
       'orderby' => 'rand',
@@ -1200,11 +1200,11 @@ function shuffle_ajax_handler(){
     )
    );
 
-   $trending_post = new WP_Query($args);
+    query_posts($args);
  
-	if( $trending_post->have_posts() ) :
+	if( have_posts() ) :
  
-		while( $trending_post->have_posts() ): the_post();
+		while( have_posts() ): the_post();
 
     get_template_part('template-parts/home/trending-front', 'content');
  
