@@ -61,6 +61,8 @@
    <?php endif ?>
 </div>
 <div class="ad-long">
+   <img src="http://142.93.24.13/wp-content/uploads/2019/09/caba.png">
+   
    <!-- /21749555895/Home-Superior-970x90 -->
    <div id='div-gpt-ad-1539356941944-0' style='height:90px; width:728px;margin: 0 auto;    margin-bottom: 2%;' >
       <script>
