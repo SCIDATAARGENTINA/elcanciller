@@ -698,6 +698,7 @@ input:-internal-autofill-selected {
 
 .trending-post {
     margin-bottom: 50px;
+    transition: 300ms ease;
 }
 
 .trending-post .titular {
