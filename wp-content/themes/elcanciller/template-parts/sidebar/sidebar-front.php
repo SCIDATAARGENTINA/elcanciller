@@ -47,6 +47,15 @@
   <div id='div-gpt-ad-1559747926255-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559747926255-0'); });</script>
   </div>
+  <!-- /21749555895/Home-Lateral-SeccionDesdeLaTrinchera-250x250 -->
+  <div id='div-gpt-ad-1559657822462-0'>
+    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559657822462-0'); });</script>
+  </div>
+    <!-- /21749555895/Home-Lateral-SeccionInternacional-250x250 -->
+  <div id='div-gpt-ad-1557165803761-0'>
+    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1557165803761-0'); });</script>
+  </div>
+  </div>
   <!-- /21749555895/Home-Lateral-SeccionPostCreditos-250x250 -->
   <div id='div-gpt-ad-1543340613980-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1543340613980-0'); });</script>
@@ -59,7 +68,10 @@
   <div id='div-gpt-ad-1556238378054-0' style='height:250px; width:250px;margin:0 auto;'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1556238378054-0'); });</script>
   </div>
-</div>
+  <!-- /21749555895/Home-Lateral-Politica-234x60 -->
+  <div id='div-gpt-ad-1557312301298-0'>
+    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1557312301298-0'); });</script>
+  </div>
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'twitter') ?>
 </div>
