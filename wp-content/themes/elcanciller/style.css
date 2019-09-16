@@ -3514,6 +3514,12 @@ article .post-content .has-content-area {
     background-size: cover;
 }
 
+@media (max-width: 500px){
+    .search-post .imagen{
+        margin-bottom: 20px;
+    }
+}
+
 .search-post .imagen img {
     width: 100%;
     max-height: 100%;
@@ -3536,6 +3542,15 @@ article .post-content .has-content-area {
 @media (max-width: 768px){
     .search-post .search-content{
         justify-content: center;
+    }
+}
+
+@media (max-width: 500px){
+    .search-post .search-content{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
