@@ -37,13 +37,13 @@ jQuery(document).ready(function($) {
             }
 
             sliderAccionado = JSON.stringify(arrIds);
-            Cookies.set('sliderAccionado', sliderAccionado, { expires: 999999999 });
+            Cookies.set('sliderAccionado', sliderAccionado, { expires: 999 });
 
         } else {
 
             arrIds = [interaccionObj];
             sliderAccionado = JSON.stringify(arrIds);
-            Cookies.set('sliderAccionado', sliderAccionado, { expires: 999999999 });
+            Cookies.set('sliderAccionado', sliderAccionado, { expires: 999 });
 
         }
 

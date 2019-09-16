@@ -44,13 +44,13 @@ jQuery(document).ready(function($) {
             arrIds = JSON.parse(encuestasVotadas);
             arrIds.push(id);
             encuestasVotadas = JSON.stringify(arrIds);
-            Cookies.set('encuestasVotadas', encuestasVotadas, { expires: 999999999 });
+            Cookies.set('encuestasVotadas', encuestasVotadas, { expires: 999 });
 
         } else {
 
             arrIds = [id];
             encuestasVotadas = JSON.stringify(arrIds);
-            Cookies.set('encuestasVotadas', encuestasVotadas, { expires: 999999999 });
+            Cookies.set('encuestasVotadas', encuestasVotadas, { expires: 999 });
 
         }
 
