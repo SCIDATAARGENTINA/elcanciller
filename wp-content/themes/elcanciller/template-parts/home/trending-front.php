@@ -60,3 +60,6 @@
 
    <?php endif ?>
 </div>
+<div class="ad-long">
+   <p><img src="http://142.93.24.13/wp-content/uploads/2019/07/970x90.jpg" alt=""></p>
+</div>
