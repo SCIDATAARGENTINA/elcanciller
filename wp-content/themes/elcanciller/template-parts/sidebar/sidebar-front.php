@@ -40,35 +40,43 @@
 <div class="widget">
   <!-- publicidades Barras y Juego ilegal -->
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
+  Publicidad Está Pasando 1
   <div id='div-gpt-ad-1539357193770-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357193770-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando2 -->
+  Publicidad Está Pasando 2
   <div id='div-gpt-ad-1559747926255-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559747926255-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionDesdeLaTrinchera-250x250 -->
+  Publicidad Desde la trinchera
   <div id='div-gpt-ad-1559657822462-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559657822462-0'); });</script>
   </div>
     <!-- /21749555895/Home-Lateral-SeccionInternacional-250x250 -->
+    Publicidad Internacional
   <div id='div-gpt-ad-1557165803761-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1557165803761-0'); });</script>
   </div>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionPostCreditos-250x250 -->
+  Publicidad Post Creditos
   <div id='div-gpt-ad-1543340613980-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1543340613980-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionEntreSelfies-250x250 -->
+  Publicidad Entre Selfies
   <div id='div-gpt-ad-1539787334136-0' style='height:250px; width:250px;margin:0 auto;'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539787334136-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionPressStart-250x250 -->
+  Publicidad Press Start
   <div id='div-gpt-ad-1556238378054-0' style='height:250px; width:250px;margin:0 auto;'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1556238378054-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-Politica-234x60 -->
+  Publicidad Politica 234x60 -Vacía-
   <div id='div-gpt-ad-1557312301298-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1557312301298-0'); });</script>
   </div>
