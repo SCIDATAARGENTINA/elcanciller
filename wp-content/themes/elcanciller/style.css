@@ -3533,6 +3533,12 @@ article .post-content .has-content-area {
     flex-direction: column;
 }
 
+@media (max-width: 768px){
+    .search-post .search-content{
+        justify-content: center;
+    }
+}
+
 .search-post .search-content {
     font-size: 16px;
 }
@@ -3542,6 +3548,12 @@ article .post-content .has-content-area {
     color: #c4afa1;
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
+}
+
+@media (max-width: 768px){
+    .search-post .search-content span.time-ago{
+        border-bottom: 0px;
+    }
 }
 
 .search-post .comentarios-noshare {
