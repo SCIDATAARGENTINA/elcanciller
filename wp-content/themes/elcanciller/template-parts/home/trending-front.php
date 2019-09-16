@@ -61,5 +61,31 @@
    <?php endif ?>
 </div>
 <div class="ad-long">
-   <p><img src="http://142.93.24.13/wp-content/uploads/2019/07/970x90.jpg" alt=""></p>
+   <!-- /21749555895/Home-Superior-970x90 -->
+   <div id='div-gpt-ad-1539356941944-0' style='height:90px; width:728px;margin: 0 auto;    margin-bottom: 2%;' >
+      <script>
+         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356941944-0'); });
+      </script>
+   </div>
+
+   <!-- /21749555895/Home-Superior-330x350 -->
+   <div id='div-gpt-ad-1539356967377-0' style='height:350px; width:330px;margin: 0 auto;' >
+      <script>
+         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356967377-0'); });
+      </script>
+   </div>
+
+   <!-- /21749555895/Home-Inferior-970x90 -->
+   <div id='div-gpt-ad-1539357298531-0' style='height:90px; width:970px;margin: 0 auto;' >
+      <script>
+         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357298531-0'); });
+      </script>
+   </div>
+
+   <!-- /21749555895/Home-Inferior-330x350 -->
+   <div id='div-gpt-ad-1539357335280-0' style='height:350px; width:330px;margin: 0 auto;    margin-bottom: 2%;' >
+      <script>
+         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357335280-0'); });
+      </script>
+   </div>
 </div>
