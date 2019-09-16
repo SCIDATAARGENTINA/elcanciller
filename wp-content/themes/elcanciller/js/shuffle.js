@@ -12,7 +12,7 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
             data: data,
             type: 'POST',
             beforeSend: function (xhr) {
-
+                trendingPost.fadeOut();
             },
             success: function (data) {
                 console.log(data);
