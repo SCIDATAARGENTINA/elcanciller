@@ -37,7 +37,7 @@
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'instagram') ?>
 </div>
-<div class="widget">
+<div class="widget" style="text-align: center;">
   <!-- publicidades Barras y Juego ilegal -->
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
   <img src='http://142.93.24.13/wp-content/uploads/2019/09/barras.png'>
@@ -66,12 +66,12 @@
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1543340613980-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionEntreSelfies-250x250 -->
-  <img src='http://142.93.24.13/wp-content/uploads/2019/09/entreselfies.jpg'>
+  <img src='http://142.93.24.13/wp-content/uploads/2019/09/entreselfies.jpeg'>
   <div id='div-gpt-ad-1539787334136-0' style='height:250px; width:250px;margin:0 auto;'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539787334136-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionPressStart-250x250 -->
-  <img src='http://142.93.24.13/wp-content/uploads/2019/09/pressstart.jpg'>
+  <img src='http://142.93.24.13/wp-content/uploads/2019/09/pressstart.jpeg'>
   <div id='div-gpt-ad-1556238378054-0' style='height:250px; width:250px;margin:0 auto;'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1556238378054-0'); });</script>
   </div>
