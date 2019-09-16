@@ -3620,7 +3620,7 @@ article .post-content .has-content-area {
 @media (max-width: 500px){
     .search .page-header .page-description {
         width: 100%;
-        
+        left: 0;
     }
 }
 
