@@ -59,10 +59,10 @@
   <div id='div-gpt-ad-1557165803761-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1557165803761-0'); });</script>
   </div>
-  <!-- /21749555895/Home-Lateral-SeccionPostCreditos-250x250 -->
-  <img src='http://142.93.24.13/wp-content/uploads/2019/09/anses.png'>
-  <div id='div-gpt-ad-1543340613980-0'>
-    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1543340613980-0'); });</script>
+  <img src='http://142.93.24.13/wp-content/uploads/2019/09/legislatura.png'>
+  <!-- /21749555895/Home-Lateral-SeccionSeComenta-250x250 -->
+  <div id='div-gpt-ad-1539357001041-0'>
+  <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357001041-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionEntreSelfies-250x250 -->
   <img src='http://142.93.24.13/wp-content/uploads/2019/09/entreselfies.jpeg'>
