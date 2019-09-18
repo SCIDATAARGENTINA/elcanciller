@@ -23,4 +23,4 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
         <a href="<?php get_field('link') ?>">Ver más</a>
     <?php } ?>
 
-</article><!-- #post-${ID} -->
+</article><!-- #historia-<?php the_ID(); ?> -->
