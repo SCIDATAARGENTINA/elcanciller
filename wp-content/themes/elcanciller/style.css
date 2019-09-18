@@ -4544,3 +4544,10 @@ AUTHOR PAGE
     left: 50%;
     position: absolute;
 }
+
+.historia h3{
+    margin: 0px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+}
