@@ -533,10 +533,10 @@ function custom_post_type_historia()
 {
 
   $labels = array(
-    'name'                  => _x('Ultimas Historias', 'Post Type General Name', 'elcanciller'),
-    'singular_name'         => _x('Ultima Historia', 'Post Type Singular Name', 'elcanciller'),
+    'name'                  => _x('Historias', 'Post Type General Name', 'elcanciller'),
+    'singular_name'         => _x('Historia', 'Post Type Singular Name', 'elcanciller'),
     'menu_name'             => __('Historias', 'elcanciller'),
-    'name_admin_bar'        => __('Ultima Historia', 'elcanciller'),
+    'name_admin_bar'        => __('Historia', 'elcanciller'),
     'archives'              => __('Archivo', 'elcanciller'),
     'attributes'            => __('Atributos', 'elcanciller'),
     'parent_item_colon'     => __('Padre:', 'elcanciller'),
@@ -1139,36 +1139,6 @@ function ultimomomento_shortcode($atts){
 }
 
 add_shortcode( 'ultimomomento', 'ultimomomento_shortcode' );
-
-
-
-function historia_shortcode($atts){
-  $a = historia_atts( array(
-    'postid' => '0'
-  ), $atts );
-  
-    // Setup arguments.
-    $args = array(
-      'post_type' => 'historia',
-      'posts_per_page' => 1,
-      'p' => $a['postid']
-  );
-  
-  $historia_query = new WP_Query( $args ); 
-
-  if($historia_query->have_posts()){
-    while($historia_query->have_posts()){
-      $historia_query->the_post();
-
-      get_template_part( 'template-parts/content/content', 'historia' );
-
-    }
-  }
-  
-
-}
-
-add_shortcode( 'historia', 'story_shortcode' );
 
 
 // AJAX TRENDING HOME HEADER SHUFFLE
