@@ -9,7 +9,7 @@
  * @since 1.0.0
  */
 $thumbnail_id = get_field('imagen');
-$featured_img = wp_get_attachment_image_src( $thumbnail_id, 'medium' );
+$featured_img = wp_get_attachment_image_src( $thumbnail_id, 'large' );
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 ?>
 
