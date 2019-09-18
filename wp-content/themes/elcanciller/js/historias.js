@@ -22,6 +22,8 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 2000,
+                    fade: true,
+                    cssEase: 'linear'
                 });
             },
             error: function (error) {
