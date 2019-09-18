@@ -16,7 +16,6 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 <article id="historia-<?php the_ID(); ?>" class="historia">
 
     <h3><?php the_title(); ?></h3>
-    <?php echo get_field('imagen') ?>
     <img src="<?php echo $featured_img[0] ?>" alt="<?php echo $alt ?>">
 
     <?php if(get_field('link')){ ?>
