@@ -4538,3 +4538,8 @@ AUTHOR PAGE
 .historias .slick-next{
     right: 0px;
 }
+
+.historias .slick-dots{
+    top: 10px;
+    left: 50%;
+}
