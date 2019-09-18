@@ -18,7 +18,7 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
                 console.log(data);
                 $('.historias').append(data);
                 $('.historias').slick({
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 2000,
