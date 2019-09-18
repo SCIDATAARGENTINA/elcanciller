@@ -1188,3 +1188,48 @@ function shuffle_ajax_handler(){
  
 add_action('wp_ajax_shuffle', 'shuffle_ajax_handler'); // wp_ajax_{action}
 add_action('wp_ajax_nopriv_shuffle', 'shuffle_ajax_handler'); // wp_ajax_nopriv_{action}
+
+
+// AJAX TRENDING HOME HEADER SHUFFLE
+
+function historia_scripts() {
+  
+	wp_register_script( 'historia', get_stylesheet_directory_uri() . '/js/historia.js', array('jquery') );
+ 
+	wp_localize_script( 'historia', 'historia_params', array(
+		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+	) );
+ 
+ 	wp_enqueue_script( 'historia' );
+}
+ 
+add_action( 'wp_enqueue_scripts', 'historia_scripts' );
+
+
+function historia_ajax_handler(){
+
+  $args = array(
+      'post_type' => 'historia',
+      'posts_per_page' => -1,
+      'orderby' => 'date',
+      'orderby' => 'DESC'
+   );
+
+    query_posts($args);
+ 
+	if( have_posts() ) :
+ 
+		while( have_posts() ): the_post();
+
+    get_template_part('template-parts/content/content', 'historia');
+ 
+		endwhile;
+ 
+  endif;
+  die; // here we exit the script and even no wp_reset_query() required!
+}
+ 
+ 
+ 
+add_action('wp_ajax_historia', 'historia_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_historia', 'historia_ajax_handler'); // wp_ajax_nopriv_{action}
