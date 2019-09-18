@@ -1192,18 +1192,18 @@ add_action('wp_ajax_nopriv_shuffle', 'shuffle_ajax_handler'); // wp_ajax_nopriv_
 
 // AJAX TRENDING HOME HEADER SHUFFLE
 
-function historia_scripts() {
+function historias_scripts() {
   
-	wp_register_script( 'historia', get_stylesheet_directory_uri() . '/js/historia.js', array('jquery') );
+	wp_register_script( 'historias', get_stylesheet_directory_uri() . '/js/historias.js', array('jquery') );
  
-	wp_localize_script( 'historia', 'historia_params', array(
+	wp_localize_script( 'historias', 'historias_params', array(
 		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
 	) );
  
- 	wp_enqueue_script( 'historia' );
+ 	wp_enqueue_script( 'historias' );
 }
  
-add_action( 'wp_enqueue_scripts', 'historia_scripts' );
+add_action( 'wp_enqueue_scripts', 'historias_scripts' );
 
 
 function historia_ajax_handler(){

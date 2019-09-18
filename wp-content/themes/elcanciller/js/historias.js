@@ -8,7 +8,7 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
 
 
         $.ajax({ // you can also use $.post here
-            url: shuffle_params.ajaxurl, // AJAX handler
+            url: historias_params.ajaxurl, // AJAX handler
             data: data,
             type: 'POST',
             beforeSend: function (xhr) {
