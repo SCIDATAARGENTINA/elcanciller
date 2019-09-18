@@ -4526,3 +4526,15 @@ AUTHOR PAGE
 .historia img{
     max-width: 300px;
 }
+
+.historias .slick-arrow{
+    position: absolute;
+    bottom: 50%;
+}
+
+.historias .slick-prev{
+    left: 0px;
+}
+.historias .slick-prev{
+    right: 0px;
+}
