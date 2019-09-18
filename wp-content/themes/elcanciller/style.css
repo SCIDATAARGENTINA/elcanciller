@@ -4510,4 +4510,6 @@ AUTHOR PAGE
     left: 0;
     width: 100%;
     position: fixed;
+    height: 100vh;
+    z-index: 9999999;
 }
