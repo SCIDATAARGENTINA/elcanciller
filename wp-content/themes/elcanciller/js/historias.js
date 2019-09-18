@@ -15,6 +15,7 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
                 $('body').append(historiasContainer);
             },
             success: function (data) {
+                console.log(data);
                 $('.historias').append(data);
             },
             error: function (error) {

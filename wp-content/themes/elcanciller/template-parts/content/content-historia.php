@@ -17,7 +17,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
     <h3><?php the_title(); ?></h3>
 
-    <img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
+    <img src="<?php echo $featured_img_url['url'] ?>" alt="<?php echo $alt ?>">
 
     <?php if(get_field('link')){ ?>
         <a href="<?php get_field('link') ?>">Ver más</a>
