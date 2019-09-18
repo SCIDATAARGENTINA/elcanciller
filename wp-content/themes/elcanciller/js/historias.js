@@ -17,6 +17,7 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
             success: function (data) {
                 console.log(data);
                 $('.historias').append(data);
+                $('.historias').slick();
             },
             error: function (error) {
                 console.log(`Error ${error}`);
