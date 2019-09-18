@@ -4551,4 +4551,6 @@ AUTHOR PAGE
     position: absolute;
     top: 20px;
     z-index: 9999999999999;
+    font-size: 22px;
+    font-family: "Lato";
 }
