@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts
+ * Template part for stories
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -13,7 +13,7 @@ $featured_img_url = wp_get_attachment_image_src( $thumbnail_id, 'full' );
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 ?>
 
-<article id="historia-<?php the_ID(); ?>">
+<article id="historia-<?php the_ID(); ?>" class="historia">
 
     <h3><?php the_title(); ?></h3>
 
