@@ -4550,4 +4550,5 @@ AUTHOR PAGE
     color: #fff;
     position: absolute;
     top: 20px;
+    z-index: 9999999999999;
 }
