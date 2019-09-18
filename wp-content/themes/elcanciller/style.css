@@ -4513,4 +4513,16 @@ AUTHOR PAGE
     height: 100vh;
     z-index: 9999999;
     overflow: hidden;
+    padding: 40px;
+}
+
+.historia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.historia img{
+    max-width: 300px;
 }
