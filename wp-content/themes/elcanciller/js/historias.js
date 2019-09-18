@@ -1,6 +1,6 @@
 jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined" error
     $(document).on('click', '.stories', function () {
-        var historiasContainer = '<div class="historias-container .slide-in-blurred-tl"><div class="historias"></div></div>';
+        var historiasContainer = '<div class="historias-container slide-in-blurred-tl"><div class="historias"></div></div>';
 
         var data = {
                 'action': 'historia',
