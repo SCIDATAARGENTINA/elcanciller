@@ -4534,14 +4534,17 @@ AUTHOR PAGE
 
 .historias .slick-arrow{
     position: absolute;
-    bottom: 50%;
+    bottom: 0;
+    height: 100%;
+    z-index: 2;
+    width: 10px;
 }
 
 .historias .slick-prev{
-    left: 0px;
+    left: -10px;
 }
 .historias .slick-next{
-    right: 0px;
+    right: -10px;
 }
 
 .historias .slick-dots{
