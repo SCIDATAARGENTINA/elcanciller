@@ -43,7 +43,7 @@
 <div class="widget widget-contador">
   <?php echo do_shortcode('[contador postid=48914]') ?>
 </div>
-<div class="widget">
+<div class="widget ad-lateral-sidebar">
 <!-- publicidades Barras y Juego ilegal -->
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
   <div id='div-gpt-ad-1539357193770-0'>

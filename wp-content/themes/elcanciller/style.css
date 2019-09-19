@@ -4671,6 +4671,9 @@ AUTHOR PAGE
 
 
 /* ADS */
+.ad-lateral-sidebar{
+    margin-left: -26% !important;
+}
 #div-gpt-ad-1543340613980-0{
 width: 200px !important;
 height: 200px !important;

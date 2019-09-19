@@ -41,7 +41,7 @@
 <?php get_template_part('template-parts/widgets/widget', 'autores') ?>
 </div>
 
-<div class="widget">
+<div class="widget ad-lateral-sidebar">
   <!-- /21749555895/Nota-Lateral-330x350 -->
   <div id='div-gpt-ad-1539356874237-0' style='height:350px; width:330px;'>
     <script>

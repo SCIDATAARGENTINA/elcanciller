@@ -37,7 +37,7 @@
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'instagram') ?>
 </div>
-<div class="widget" style="text-align: center;">
+<div class="widget ad-lateral-sidebar">
   <!-- publicidades Barras y Juego ilegal -->
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
   <div id='div-gpt-ad-1539357193770-0'>
