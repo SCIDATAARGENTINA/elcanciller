@@ -979,6 +979,7 @@ button {
 
 .slick-initialized{
     opacity: 1 !important;
+    max-height: 100% !important;
 }
 
 
