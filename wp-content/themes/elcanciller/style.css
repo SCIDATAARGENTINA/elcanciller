@@ -4556,7 +4556,7 @@ AUTHOR PAGE
     left: -40px;
 }
 
-.historias .slick-next::before{
+.historias .slick-prev::before{
     transform: rotate(135deg);
 }
 
