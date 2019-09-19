@@ -4556,6 +4556,12 @@ AUTHOR PAGE
     max-width: 300px;
 }
 
+@media (max-width: 500px){
+    .historia img{
+        max-width: 100%;
+    }
+}
+
 .historias .slick-arrow{
     position: absolute;
     bottom: 0;
