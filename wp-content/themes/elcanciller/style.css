@@ -2221,6 +2221,12 @@ ul.tagposts-list li {
     position: relative;
  }
 
+ @media (max-width: 768px){
+     .opiniones{
+         grid-template-columns: 1fr;
+     }
+ }
+
 .opinion-container {
     border: 2px solid #e7d117;
 }
