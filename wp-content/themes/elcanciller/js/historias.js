@@ -29,6 +29,7 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
                     prevArrow: '<button class="slick-prev slick-arrow" type="button" style="display: block;"></button>',
                     nextArrow: '<button class="slick-next slick-arrow" type="button" style="display: block;"></button>'
                 });
+                $('body').css('overflow-y', 'hidden');
 
                 $('.historia, .slick-arrow, .slick-dots').click(function(e){
                     e.stopPropagation();
@@ -37,6 +38,7 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
                 $('.historias-container').click( function(){
                     $('.historias').slick('unslick')
                     $('.historias-container').remove();
+                    $('body').css('overflow-y', 'visible');
                 });
             },
             error: function (error) {
