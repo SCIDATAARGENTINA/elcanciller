@@ -4580,7 +4580,6 @@ AUTHOR PAGE
 }
 
 .historias .slick-dots{
-    top: -30px;
     left: 0;
     position: absolute;
     width: 100%;
@@ -4609,7 +4608,7 @@ AUTHOR PAGE
     height: 10px;
     content: '';
     border-radius: 0;
-    border: 2px solid #e7d117;
+    border: 0px solid #e7d117;
     text-align: center;
     opacity: 1;
     color: #fff;
