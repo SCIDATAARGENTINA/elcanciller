@@ -1451,7 +1451,8 @@ ul.tagposts-list li {
 }
 
 .ad-long {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .ad-long img {
