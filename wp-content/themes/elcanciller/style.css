@@ -4531,6 +4531,8 @@ AUTHOR PAGE
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    border-top: 2px solid #e7d22d;
+    border-radius: 4px;
 }
 
 .historia img{
@@ -4578,17 +4580,54 @@ AUTHOR PAGE
 }
 
 .historias .slick-dots{
-    top: 10px;
-    left: 50%;
+    top: -30px;
+    left: 0;
     position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historias .slick-dots li{
+    font-size: 0;
+    width: 100%;
+}
+
+.historias .slick-dots li button{
+    visibility: hidden !important;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.historias .slick-dots li button::before{
+    width: 100%;
+    height: 10px;
+    content: '';
+    border-radius: 0;
+    border: 2px solid #e7d117;
+    text-align: center;
+    opacity: 1;
+    color: #fff;
+    background: #fff;
+    visibility: visible;
+    display: block;
 }
 
 .historia h3{
     margin: 0px;
     color: #fff;
     position: absolute;
-    top: 20px;
+    top: 0;
     z-index: 9999999999999;
-    font-size: 22px;
+    font-size: 14px;
     font-family: "Lato";
+    left: 0;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.26);
+    width: 100%;
 }
