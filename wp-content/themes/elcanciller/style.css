@@ -4537,14 +4537,14 @@ AUTHOR PAGE
     bottom: 0;
     height: 100%;
     z-index: 2;
-    width: 10px;
+    width: 40px;
 }
 
 .historias .slick-prev{
-    left: -10px;
+    left: -40px;
 }
 .historias .slick-next{
-    right: -10px;
+    right: -40px;
 }
 
 .historias .slick-dots{
