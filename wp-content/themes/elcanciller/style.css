@@ -4534,7 +4534,7 @@ AUTHOR PAGE
 
 @media (max-width: 500px){
     .historias{
-        max-width: 100%;
+        max-width: 350px;
     }
 }
 
@@ -4553,14 +4553,9 @@ AUTHOR PAGE
 }
 
 .historia img{
-    max-width: 300px;
+    max-width: 350px;
 }
 
-@media (max-width: 500px){
-    .historia img{
-        max-width: 100%;
-    }
-}
 
 .historias .slick-arrow{
     position: absolute;
