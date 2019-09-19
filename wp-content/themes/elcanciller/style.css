@@ -4550,6 +4550,7 @@ AUTHOR PAGE
     border-bottom: 3px solid #e7d22d;
     border-radius: 2px;
     transition: 300ms ease;
+    position: absolute;
 }
 
 .historias .slick-prev{
@@ -4558,6 +4559,7 @@ AUTHOR PAGE
 
 .historias .slick-prev::before{
     transform: rotate(135deg);
+    left: 10px;
 }
 
 .historias .slick-next{
@@ -4566,6 +4568,7 @@ AUTHOR PAGE
 
 .historias .slick-next::before{
     transform: rotate(-45deg);
+    right: 10px;
 }
 
 .historias .slick-dots{
