@@ -29,6 +29,11 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
                     prevArrow: '<button class="slick-prev slick-arrow" type="button" style="display: block;"></button>',
                     nextArrow: '<button class="slick-next slick-arrow" type="button" style="display: block;"></button>'
                 });
+
+                $(document).on('click', '.historias-container', function(){
+                    $('.historias').slick('unslick');
+                    $('.historias-container').remove();
+                });
             },
             error: function (error) {
                 console.log(`Error ${error}`);
