@@ -1435,6 +1435,10 @@ ul.tagposts-list li {
 
 .col-3 #publi1 {
     order: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .col-3.order-2 .post-rendered {
@@ -1459,6 +1463,7 @@ ul.tagposts-list li {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #publi2 p {
