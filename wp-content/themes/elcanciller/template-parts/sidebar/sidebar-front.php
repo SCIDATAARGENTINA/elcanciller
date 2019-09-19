@@ -40,12 +40,10 @@
 <div class="widget" style="text-align: center;">
   <!-- publicidades Barras y Juego ilegal -->
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
-  <img src='http://142.93.24.13/wp-content/uploads/2019/09/barras.png'>
   <div id='div-gpt-ad-1539357193770-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357193770-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando2 -->
-  <img src='http://142.93.24.13/wp-content/uploads/2019/09/juego.png'>
   <div id='div-gpt-ad-1559747926255-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559747926255-0'); });</script>
   </div>

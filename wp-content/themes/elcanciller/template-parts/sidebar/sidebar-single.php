@@ -42,9 +42,6 @@
 </div>
 
 <div class="widget">
-  <img src="http://142.93.24.13/wp-content/uploads/2019/09/caba2.png">
-  <img src="http://142.93.24.13/wp-content/uploads/2019/09/tigre2.png">
-  <img src="http://142.93.24.13/wp-content/uploads/2019/09/bapro2.png">
   <!-- /21749555895/Nota-Lateral-330x350 -->
   <div id='div-gpt-ad-1539356874237-0' style='height:350px; width:330px;'>
     <script>
@@ -64,5 +61,5 @@
     </script>
   </div>
   <!-- nota-a-mano-330x350 -->
-  <a href="https://www.gba.gob.ar/seguridad?utm_source=medios&utm_medium=cpc&utm_campaign=seguridad"><img src="https://elcanciller.com/files/juego.gif"></a>
+  <!-- <a href="https://www.gba.gob.ar/seguridad?utm_source=medios&utm_medium=cpc&utm_campaign=seguridad"><img src="https://elcanciller.com/files/juego.gif"></a>-->
 </div>
