@@ -22,9 +22,12 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 2000,
+                    speed: 200,
                     fade: true,
                     dots: true,
-                    cssEase: 'linear'
+                    cssEase: 'linear',
+                    prevArrow: '<button class="slick-prev slick-arrow" type="button" style="display: block;"></button>',
+                    nextArrow: '<button class="slick-next slick-arrow" type="button" style="display: block;"></button>'
                 });
             },
             error: function (error) {
