@@ -4543,18 +4543,29 @@ AUTHOR PAGE
 
 .historias .slick-arrow::before{
     content: '';
-    width: 15px;
-    height: 15px;
-    border-right: 2px solid #e7d22d;
-    border-bottom: 2px solid #e7d22d;
-    transform: 300ms ease;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-right: 3px solid #e7d22d;
+    border-bottom: 3px solid #e7d22d;
+    border-radius: 2px;
+    transition: 300ms ease;
 }
 
 .historias .slick-prev{
     left: -40px;
 }
+
+.historias .slick-next::before{
+    transform: rotate(135deg);
+}
+
 .historias .slick-next{
     right: -40px;
+}
+
+.historias .slick-next::before{
+    transform: rotate(-45deg);
 }
 
 .historias .slick-dots{
