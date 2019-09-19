@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
         dots: true,
         infinite: true,
         arrows: true,
-        variableHeight: true,
+        adaptiveHeight: true,
         prevArrow: '<div class="prev-arrow"></div>',
         nextArrow: '<div class="next-arrow"></div>',
         appendArrows: '.carr-nav',
