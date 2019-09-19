@@ -4551,6 +4551,7 @@ AUTHOR PAGE
     border-radius: 2px;
     transition: 300ms ease;
     position: absolute;
+    margin: 0 auto;
 }
 
 .historias .slick-prev{
