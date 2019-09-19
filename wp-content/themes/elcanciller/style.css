@@ -4593,6 +4593,10 @@ AUTHOR PAGE
     width: 100%;
 }
 
+.historias .slick-dots .slick-active button{
+    background: #e7d22d;
+}
+
 .historias .slick-dots li button{
     visibility: hidden !important;
     display: flex;
