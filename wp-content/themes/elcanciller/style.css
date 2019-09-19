@@ -1503,7 +1503,7 @@ ul.tagposts-list li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
