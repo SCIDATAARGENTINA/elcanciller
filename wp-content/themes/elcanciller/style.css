@@ -4605,10 +4605,9 @@ AUTHOR PAGE
     align-items: center;
     justify-content: center;
     margin: 0;
-    margin-right: 2px;
 }
 
-.historias .slick-dots li button:last-child{
+.historias .slick-dots li button:last-child::before{
     margin-right: 0px !important;
 }
 
@@ -4625,6 +4624,7 @@ AUTHOR PAGE
     visibility: visible;
     display: block;
     transition: 300ms ease;
+    margin-right: 2px;
 }
 
 .historia h3{
