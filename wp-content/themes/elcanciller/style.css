@@ -4521,11 +4521,16 @@ AUTHOR PAGE
     margin: 0 auto;
 }
 
+.historias .slick-list{
+    overflow: visible;
+}
+
 .historia{
     display: flex !important;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
 }
 
 .historia img{
