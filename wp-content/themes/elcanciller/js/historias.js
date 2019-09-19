@@ -35,9 +35,8 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
                 });
 
                 $('.historias-container').click( function(){
-                    console.log('clicked');
-                    //$('.historias').slick('unslick')
-                    //$('.historias-container').remove();
+                    $('.historias').slick('unslick')
+                    $('.historias-container').remove();
                 });
             },
             error: function (error) {
