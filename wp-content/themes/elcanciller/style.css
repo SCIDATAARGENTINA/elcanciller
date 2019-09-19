@@ -4607,7 +4607,7 @@ AUTHOR PAGE
     margin: 0;
 }
 
-.historias .slick-dots li button:last-child::before{
+.historias .slick-dots li:last-child button::before{
     margin-right: 0px !important;
 }
 
