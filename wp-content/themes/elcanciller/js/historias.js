@@ -30,6 +30,10 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
                     nextArrow: '<button class="slick-next slick-arrow" type="button" style="display: block;"></button>'
                 });
 
+                $('.historias').click(function(e){
+                    e.stopPropagation();
+                });
+
                 $('.historias-container').click( function(){
                     console.log('clicked');
                     //$('.historias').slick('unslick')
