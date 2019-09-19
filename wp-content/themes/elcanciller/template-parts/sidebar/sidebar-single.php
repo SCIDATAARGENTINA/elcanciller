@@ -43,7 +43,7 @@
 
 <div class="widget ad-lateral-sidebar">
   <!-- /21749555895/Nota-Lateral-330x350 -->
-  <div id='div-gpt-ad-1539356874237-0' style='height:350px; width:330px;'>
+  <div id='div-gpt-ad-1539356874237-0'>
     <script>
       googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356874237-0'); });
     </script>
@@ -55,7 +55,7 @@
     </script>
   </div>
   <!-- /21749555895/Nota-Lateral-300x600 -->
-  <div id='div-gpt-ad-1539356910114-0' style='height:600px; width:300px;'>
+  <div id='div-gpt-ad-1539356910114-0'>
     <script>
       googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356910114-0'); });
     </script>
