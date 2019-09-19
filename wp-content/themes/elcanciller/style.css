@@ -4593,8 +4593,8 @@ AUTHOR PAGE
     width: 100%;
 }
 
-.historias .slick-dots .slick-active button{
-    background: #e7d22d;
+.historias .slick-dots .slick-active button::before{
+    background: #e7d22d !important;
 }
 
 .historias .slick-dots li button{
@@ -4619,6 +4619,7 @@ AUTHOR PAGE
     background: #fff;
     visibility: visible;
     display: block;
+    transition: 300ms ease;
 }
 
 .historia h3{
