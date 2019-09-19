@@ -4516,6 +4516,11 @@ AUTHOR PAGE
     padding: 40px;
 }
 
+.historias{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
 .historia{
     display: flex !important;
     justify-content: center;
