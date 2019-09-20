@@ -21,6 +21,8 @@ $show_author = '';
 if(get_field('show_author') == 'si'){
 	$show_author = 'show-author';
 }
+$excerpt = get_the_excerpt();
+$excerpt = filter_var($excerpt, FILTER_SANITIZE_STRING);
 
 echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:' . $cat_color . ';}' .'</style>';
 
@@ -32,7 +34,7 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
 			<div class="actions-container">
 				<div class="action-links">
 					<i class="fab fa-twitter" data-text="<?php the_title(); ?>" data-link="<?php the_permalink(); ?>"></i>
-					<i class="fab fa-facebook-f" data-title="<?php the_title(); ?>" data-img="<?php echo $featured_img_url ?>" data-text="<?php echo get_the_excerpt(); ?>" data-link="<?php the_permalink(); ?>"></i>
+					<i class="fab fa-facebook-f" data-title="<?php the_title(); ?>" data-img="<?php echo $featured_img_url ?>" data-text="<?php echo $excerpt //echo get_the_excerpt(); ?>" data-link="<?php the_permalink(); ?>"></i>
 					<a href="<?php the_permalink(); ?>"><i class="fas fa-sign-out-alt"></i></a>
 					<i class="fas fa-heart like" data-id="<?php the_ID() ?>" data-count="<?php echo get_field('likes') ?>"></i>
 				</div><!-- action-links -->
