@@ -21,8 +21,6 @@ $show_author = '';
 if(get_field('show_author') == 'si'){
 	$show_author = 'show-author';
 }
-$excerpt = get_the_excerpt();
-$excerpt = filter_var($excerpt, FILTER_SANITIZE_STRING);
 
 echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:' . $cat_color . ';}' .'</style>';
 
