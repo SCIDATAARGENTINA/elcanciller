@@ -1453,6 +1453,9 @@ ul.tagposts-list li {
 .ad-long {
     display: flex;
     justify-content: center;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
