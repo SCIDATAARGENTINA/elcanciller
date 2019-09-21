@@ -38,15 +38,6 @@
   <?php get_template_part('template-parts/widgets/widget', 'instagram') ?>
 </div>
 <div class="widget ad-lateral-sidebar">
-  <!-- publicidades Barras y Juego ilegal -->
-  <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
-  <div id='div-gpt-ad-1539357193770-0'>
-    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357193770-0'); });</script>
-  </div>
-  <!-- /21749555895/Home-Lateral-SeccionEstaPasando2 -->
-  <div id='div-gpt-ad-1559747926255-0'>
-    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559747926255-0'); });</script>
-  </div>
   <!-- /21749555895/Home-Lateral-Politica-234x60 (VACIA) -->
   <div id='div-gpt-ad-1557312301298-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1557312301298-0'); });</script>
