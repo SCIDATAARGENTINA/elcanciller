@@ -4682,7 +4682,7 @@ height: 200px !important;
 /* AGREGADO LUCAS */ 
 @media only screen and (max-width: 991px) {
     .onlymobile{
-        display:block;
+        display:block; 
     } 
 }  
 
