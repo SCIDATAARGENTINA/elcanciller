@@ -57,7 +57,7 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
 	<?php get_template_part('template-parts/comments/comments', 'nosharer') ?>
 </article><!-- #post-${ID} -->
 
-<div class="ad-long">
+<div class="ad-long publicidad-en-notas">
 	<!-- publicidades Barras y Juego ilegal -->
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
   <div id='div-gpt-ad-1539357193770-0' class="onlymobile">

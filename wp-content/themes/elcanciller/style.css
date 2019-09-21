@@ -4684,6 +4684,12 @@ height: 200px !important;
     .onlymobile{
         display:block; 
     } 
+    .publicidad-en-notas{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
 }  
 
 
