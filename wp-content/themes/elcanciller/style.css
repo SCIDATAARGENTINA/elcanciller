@@ -4695,6 +4695,10 @@ height: 200px !important;
 
 @media only screen and (min-width: 991px) {
 
+.resultados{
+    padding-bottom: 15%;
+}
+
 .trending-post .titular {
     display: flex;
     padding: 15px;
