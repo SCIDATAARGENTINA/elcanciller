@@ -15,7 +15,8 @@ $cat_link = get_term_link($categories[0]->term_id );
         <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
         <div class="user-actions">
             <button class="shuffle">
-                <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/shuffle.svg" alt="">
+                <i aria-hidden="true" class="fa fa-random" style="color: #b29f93;"></i>
+                <!-- <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/shuffle.svg" alt=""> -->
             </button>
         </div>
     </div><!-- titulo -->
