@@ -38,15 +38,15 @@
   <?php get_template_part('template-parts/widgets/widget', 'instagram') ?>
 </div>
 <div class="widget ad-lateral-sidebar">
-  
+
   <!-- /21749555895/Home-Lateral-Politica-234x60 (VACIA) -->
   <div id='div-gpt-ad-1557312301298-0'>
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1557312301298-0'); });</script>
-  </div>
+  </div> 
 </div>
 <div class="widget">
   <?php get_template_part('template-parts/widgets/widget', 'twitter') ?>
 </div>
 <div class="widget widget-contador">
-  <?php echo do_shortcode('[contador postid=48914]') ?>
+  <?php echo do_shortcode('[contador postid=48914]') ?> 
 </div>
