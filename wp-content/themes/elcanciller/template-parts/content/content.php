@@ -57,7 +57,8 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
 	<?php get_template_part('template-parts/comments/comments', 'nosharer') ?>
 </article><!-- #post-${ID} -->
 
-  <!-- publicidades Barras y Juego ilegal -->
+<div class="ad-long">
+	<!-- publicidades Barras y Juego ilegal -->
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
   <div id='div-gpt-ad-1539357193770-0' class="onlymobile">
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357193770-0'); });</script>
@@ -66,3 +67,4 @@ echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:'
   <div id='div-gpt-ad-1559747926255-0' class="onlymobile">
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559747926255-0'); });</script>
   </div>
+</div>
