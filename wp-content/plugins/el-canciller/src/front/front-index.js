@@ -151,13 +151,19 @@ let renderTemplate = async(rendered) => {
 
 document.onreadystatechange = function() {
     if (document.readyState == "complete") {
-        renderTemplate(() => {
+
+        shareActions($);
+
+        ajax.setAllLikes();
+
+        ajax.likePost($);
+        /*renderTemplate(() => {
             var loading = document.getElementsByClassName('loader');
 
             for (let loader of loading) {
 
                 loader.style.display = 'none';
             }
-        });
+        });*/
     }
 };
