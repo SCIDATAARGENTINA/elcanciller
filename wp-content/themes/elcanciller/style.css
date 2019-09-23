@@ -704,6 +704,7 @@ input:-internal-autofill-selected {
 .trending-post .titular {
     display: flex;
     margin: 15px;
+    margin-right: 0px;
     margin-bottom: 5px;
 }
 
@@ -4709,7 +4710,6 @@ height: 200px !important;
     position: absolute;
     z-index: 1 !important;
     background: #fff !important;
-    width: 825px !important;
     opacity: 0.8 !important;
 }
 
