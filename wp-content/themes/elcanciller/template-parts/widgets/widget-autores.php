@@ -39,14 +39,14 @@
         </div>
         <div class="autores-profile">
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/solrodriguezgarnica/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Sol Rodriguez Garnica"></a>
+                <a href="http://142.93.24.13/author/solrodriguezgarnica/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Sol-Rodriguez-Garnica-Autora.png" alt="Sol Rodriguez Garnica"></a>
                 <div class="autores-data">
                     <h4><a href="http://142.93.24.13/author/solrodriguezgarnica/">Sol R. Garnica</a></h4>
                     <p>@twitter</p>
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/nanothompson/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/06/cancillerlivelogo2.svg" alt="Nano Thompson"></a>
+                <a href="http://142.93.24.13/author/nanothompson/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/nano-thompson-autor.png" alt="Nano Thompson"></a>
                 <div class="autores-data">
                     <h4><a href="http://142.93.24.13/author/nanothompson/">Nano Thompson</a></h4>
                     <p>@twitter</p>
