@@ -122,7 +122,7 @@ jQuery(document).ready(function($) {
 
     var currentSlide = 1;
 
-    $('.next-placa').click(function() {
+    $('.placa-next').click(function() {
         currentSlide = updateSlides(currentSlide);
     });
 
