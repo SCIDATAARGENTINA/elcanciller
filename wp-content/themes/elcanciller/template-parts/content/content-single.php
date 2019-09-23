@@ -49,9 +49,13 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; b
 		<div class="post-title">
 
 			<h1><?php the_title(); ?></h1>
+
+			<?php if(has_excerpt()){ ?>
 			<div class="resumen">
 				<?php echo get_the_excerpt(); ?>
 			</div><!-- resumen -->
+			<?php } ?>
+
 			<?php get_template_part('template-parts/comments/comments', 'sharer') ?>
 
 		</div><!-- post-title -->
