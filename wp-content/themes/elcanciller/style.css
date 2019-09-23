@@ -2446,6 +2446,10 @@ ul.tagposts-list li {
     }
 }
 
+.placa-next.mobile{
+    display: none;
+}
+
 @media (max-width: 1000px){
     .placa-next.mobile{
         display: block !important;
