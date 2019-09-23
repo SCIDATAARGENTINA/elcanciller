@@ -699,11 +699,13 @@ input:-internal-autofill-selected {
 .trending-post {
     margin-bottom: 50px;
     transition: 300ms ease;
+    position: relative;
 }
 
 .trending-post .titular {
     display: flex;
     margin: 15px;
+    margin-right: 0px;
     margin-bottom: 5px;
 }
 
@@ -2442,6 +2444,10 @@ ul.tagposts-list li {
     .placa-next{
         display: none;
     }
+}
+
+.placa-next.mobile{
+    display: none;
 }
 
 @media (max-width: 1000px){
@@ -4709,9 +4715,7 @@ height: 200px !important;
     margin-bottom: 5px;
     position: absolute;
     z-index: 1 !important;
-    background: #fff !important;
-    width: 825px !important;
-    opacity: 0.8 !important;
+    background: rgba(255,255,255,0.8) !important;
 }
 
 .onlymobile{
