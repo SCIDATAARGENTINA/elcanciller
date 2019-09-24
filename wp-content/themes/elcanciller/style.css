@@ -140,6 +140,7 @@ h2:before {
     margin: 0 auto;
     border: 2px solid #fff;
     position: relative;
+    cursor: pointer;
 }
 
 .mobile-logo img{
@@ -535,6 +536,7 @@ input:-internal-autofill-selected {
     margin: 0 auto;
     border: 2px solid #fff;
     position: relative;
+    cursor: pointer;
 }
 
 .stories:before {
