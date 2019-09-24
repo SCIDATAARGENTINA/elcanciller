@@ -126,6 +126,8 @@ jQuery(document).ready(function($) {
         currentSlide = updateSlides(currentSlide);
     });
 
-    jQuery('#floatBtn').on('click',function(){window.location.href = '<?= get_bloginfo("template_url"); ?>';});
+    var templateUrl = '<?= get_bloginfo("template_url"); ?>';
+
+    jQuery('#floatBtn').on('click',function(){window.location.href = templateUrl;});
 
 });
