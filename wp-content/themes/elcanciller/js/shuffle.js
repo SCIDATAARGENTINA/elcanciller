@@ -12,10 +12,11 @@ jQuery(function ($) { // use jQuery code inside this to avoid "$ is not defined"
             data: data,
             type: 'POST',
             beforeSend: function (xhr) {
-                trendingPost.css('opacity', '0').css('transform','translateX(20px)');
+                //trendingPost.css('opacity', '0').css('transform','translateX(20px)');
             },
             success: function (data) {
                 trendingPost.html(data);
+                trendingPost.css('opacity', '0').css('transform','translateX(20px)');
                 trendingPost.css('opacity', '1').css('transform', 'translateX(0px)');
             },
             error: function (error) {
