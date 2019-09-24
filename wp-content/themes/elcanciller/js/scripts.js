@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
         appendDots: '.prev-arrow'
     });
 
-    $('.prev-arrow').prepend('<img class="am-logo" src="http://142.93.24.13/wp-content/uploads/2019/06/cancilleramlogo.svg">');
+    $('.prev-arrow').prepend('<img class="am-logo" src="http://157.245.178.93/wp-content/uploads/2019/06/cancilleramlogo.svg">');
 
     var dotsWidth = 16;
 
@@ -126,6 +126,6 @@ jQuery(document).ready(function($) {
         currentSlide = updateSlides(currentSlide);
     });
 
-    jQuery('#floatBtn').on('click',function(){window.location.href = "http://142.93.24.13/";});
+    jQuery('#floatBtn').on('click',function(){window.location.href = '<?= get_bloginfo("template_url"); ?>';});
 
 });
