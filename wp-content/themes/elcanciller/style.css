@@ -794,7 +794,7 @@ input:-internal-autofill-selected {
 
 
 .trending-post .titular h2 {
-    font-size: 40px;
+    font-size: 40px; 
     margin: 0;
     height: 100%;
 }
@@ -812,9 +812,26 @@ input:-internal-autofill-selected {
     }
 }
 
-.trending-post .user-actions{
+.trending-post .user-actions {
     display: inline-block;
     margin-top: 15px;
+}
+
+@media only screen and (min-width: 991px) {
+
+.trending-post .user-actions {
+    display: inline-block;
+    margin-top: 15px;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    z-index: 1;
+    background-color: #fff;
+    padding: 1% 1% 1% 1.5%;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
 }
 
 .trending-post .user-actions button{
