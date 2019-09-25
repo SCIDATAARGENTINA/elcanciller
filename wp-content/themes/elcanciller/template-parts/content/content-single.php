@@ -63,6 +63,21 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; b
 	<?php the_content(); ?>
 	</div><!-- post content -->
 
+	<div class="widget ad-lateral-sidebar onlymobile">
+		<!-- /21749555895/Nota-Lateral-330x350 -->
+		<div id="div-gpt-ad-1539356874237-0" data-google-query-id="CODs4sS_7OQCFZGBgwgdbkcGVA">
+			
+		<div id="google_ads_iframe_/21749555895/Nota-Lateral-330x350_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/21749555895/Nota-Lateral-330x350_0" title="3rd party ad content" name="google_ads_iframe_/21749555895/Nota-Lateral-330x350_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="3" data-load-complete="true"></iframe></div></div>
+		<!-- /21749555895/Nota-Lateral-330x350-2 -->
+		<div id="div-gpt-ad-1559749382407-0" data-google-query-id="CPjs4sS_7OQCFZGBgwgdbkcGVA">
+			
+		<div id="google_ads_iframe_/21749555895/Nota-Lateral-330x350-2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/21749555895/Nota-Lateral-330x350-2_0" title="3rd party ad content" name="google_ads_iframe_/21749555895/Nota-Lateral-330x350-2_0" width="300" height="300" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="r" data-load-complete="true"></iframe></div></div>
+		<!-- /21749555895/Nota-Lateral-300x600 -->
+		<div id="div-gpt-ad-1539356910114-0" data-google-query-id="COHs4sS_7OQCFZGBgwgdbkcGVA">
+			
+		<div id="google_ads_iframe_/21749555895/Nota-Lateral-300x600_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/21749555895/Nota-Lateral-300x600_0" title="3rd party ad content" name="google_ads_iframe_/21749555895/Nota-Lateral-300x600_0" width="300" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="4" data-load-complete="true"></iframe></div></div>
+	</div>
+
 </article><!-- #post-${ID} -->
 
 <?php 
