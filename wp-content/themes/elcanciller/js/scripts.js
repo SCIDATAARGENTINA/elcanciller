@@ -128,6 +128,6 @@ jQuery(document).ready(function($) {
         currentSlide = updateSlides(currentSlide);
     });
 
-    jQuery('#floatBtn').on('click',function(){window.location.href = URLdomain;});
+    jQuery('#floatBtn').on('click',function(){window.location.href = window.location.hostname;});
 
 });
