@@ -1441,7 +1441,7 @@ ul.tagposts-list li {
 .inner.container .col-3{
     grid-template-columns: repeat(3, minmax(260px, 1fr));
 }
-@media (max-width: 900px){
+@media (max-width: 1050px){
     .inner.container .col-3{
     grid-template-columns: repeat(2, minmax(260px, 1fr));
 }
