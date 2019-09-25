@@ -458,15 +458,15 @@ h2:before {
 }
 
 .menu-bar .search .search-form label:after{
-    color: #5d5d5d;
+    color: #b29f93;
 }
 
 .menu-bar .search input[type="search"]{
-    border-left-color: #5d5d5d;
-    color: #5d5d5d;
+    border-left-color: #b29f93;
+    color: #b29f93;
 }
 .menu-bar .search input[type="search"]::placeholder{
-    color: #5d5d5d;
+    color: #b29f93;
     
 }
 
