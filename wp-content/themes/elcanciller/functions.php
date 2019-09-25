@@ -1165,7 +1165,7 @@ function shuffle_ajax_handler(){
       'orderby' => 'rand',
       'date_query' => array(
         array(
-            'after' => '4 months ago'
+            'after' => '1 day ago'
         )
     )
    );
