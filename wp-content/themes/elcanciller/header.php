@@ -178,7 +178,7 @@
 					);
 					?>
 				</nav><!-- .header-navigation -->
-				<p>hola</p>
+				<?php get_search_form(); ?>
 			</div><!-- end menu-bar -->
 
 		</header><!-- #masthead -->
