@@ -126,8 +126,8 @@ jQuery(document).ready(function($) {
         currentSlide = updateSlides(currentSlide);
     });
 
-    var templateUrl = '<?= get_bloginfo("template_url"); ?>';
+    var URLdomain = window.location.host;
 
-    jQuery('#floatBtn').on('click',function(){window.location.href = templateUrl;});
+    jQuery('#floatBtn').on('click',function(){window.location.href = URLdomain;});
 
 });
