@@ -1,3 +1,5 @@
+var URLdomain = window.location.host;
+
 jQuery(document).ready(function($) {
 
     const Url = 'https://api.darksky.net/forecast/f7a0551eab3dced527a3626f5efd3c92/-34.6036844,-58.3815591?lang=es&units=si';
@@ -40,7 +42,7 @@ jQuery(document).ready(function($) {
         appendDots: '.prev-arrow'
     });
 
-    $('.prev-arrow').prepend('<img class="am-logo" src="http://157.245.178.93/wp-content/uploads/2019/06/cancilleramlogo.svg">');
+    $('.prev-arrow').prepend('<img class="am-logo" src=\"'+URLdomain+'/wp-content/uploads/2019/06/cancilleramlogo.svg">');
 
     var dotsWidth = 16;
 
@@ -125,8 +127,6 @@ jQuery(document).ready(function($) {
     $('.placa-next').click(function() {
         currentSlide = updateSlides(currentSlide);
     });
-
-    var URLdomain = window.location.host;
 
     jQuery('#floatBtn').on('click',function(){window.location.href = URLdomain;});
 
