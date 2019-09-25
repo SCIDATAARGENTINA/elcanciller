@@ -65,28 +65,6 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; b
 
 </article><!-- #post-${ID} -->
 
-	<div class="onlymobile">
-		<!-- /21749555895/Nota-Lateral-330x350 -->
-		<div id='div-gpt-ad-1539356874237-0'>
-			<script>
-			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356874237-0'); });
-			</script>
-		</div>
-		<!-- /21749555895/Nota-Lateral-330x350-2 -->
-		<div id='div-gpt-ad-1559749382407-0'>
-			<script>
-			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559749382407-0'); });
-			</script>
-		</div>
-		<!-- /21749555895/Nota-Lateral-300x600 -->
-		<div id='div-gpt-ad-1539356910114-0'>
-			<script>
-			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356910114-0'); });
-			</script>
-		</div>
-		
-	</div>
-
 <?php 
 
 // If comments are open or we have at least one comment, load up the comment template.
@@ -95,3 +73,23 @@ if ( comments_open() || get_comments_number() ) {
 }
 
 ?>
+<div class="onlymobile">
+	<!-- /21749555895/Nota-Lateral-330x350 -->
+	<div id='div-gpt-ad-1539356874237-0'>
+		<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356874237-0'); });
+		</script>
+	</div>
+	<!-- /21749555895/Nota-Lateral-330x350-2 -->
+	<div id='div-gpt-ad-1559749382407-0'>
+		<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559749382407-0'); });
+		</script>
+	</div>
+	<!-- /21749555895/Nota-Lateral-300x600 -->
+	<div id='div-gpt-ad-1539356910114-0'>
+		<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356910114-0'); });
+		</script>
+	</div>
+</div>
