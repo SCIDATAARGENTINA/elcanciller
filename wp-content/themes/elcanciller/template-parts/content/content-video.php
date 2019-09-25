@@ -35,6 +35,6 @@ $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
                 <h3><?php the_title(); ?></h3>
             </div><!-- end videos-data -->
         </div><!-- end videos-title -->
-        <?php the_content(); ?>
+        <?php echo get_the_content(); ?>
     </div>
 </div>
