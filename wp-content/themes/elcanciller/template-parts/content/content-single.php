@@ -63,7 +63,9 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; b
 	<?php the_content(); ?>
 	</div><!-- post content -->
 
-	<div class="widget ad-lateral-sidebar onlymobile">
+</article><!-- #post-${ID} -->
+
+<div class="widget ad-lateral-sidebar onlymobile">
 		<!-- /21749555895/Nota-Lateral-330x350 -->
 		<div id="div-gpt-ad-1539356874237-0" data-google-query-id="CODs4sS_7OQCFZGBgwgdbkcGVA">
 			
@@ -77,9 +79,7 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; b
 			
 		<div id="google_ads_iframe_/21749555895/Nota-Lateral-300x600_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/21749555895/Nota-Lateral-300x600_0" title="3rd party ad content" name="google_ads_iframe_/21749555895/Nota-Lateral-300x600_0" width="300" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="4" data-load-complete="true"></iframe></div></div>
 	</div>
-
-</article><!-- #post-${ID} -->
-
+	
 <?php 
 
 // If comments are open or we have at least one comment, load up the comment template.
