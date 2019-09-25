@@ -19,7 +19,7 @@ jQuery(function ($) {
                 trendingPost.css('opacity', '1').css('transform', 'translateX(0px)');
             },
             error: function (error) {
-                console.log(`Error ${error}`);
+                trendingPost.css('opacity', '1').css('transform', 'translateX(0px)');
             }
         });
     });
