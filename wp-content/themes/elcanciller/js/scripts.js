@@ -1,4 +1,4 @@
-var URLdomain = window.location.host;
+var URLdomain = 'http://'+ window.location.host;
 
 jQuery(document).ready(function($) {
 
@@ -128,6 +128,6 @@ jQuery(document).ready(function($) {
         currentSlide = updateSlides(currentSlide);
     });
 
-    jQuery('#floatBtn').on('click',function(){window.location.assign = window.location.hostname;});
+    jQuery('#floatBtn').on('click',function(){window.location.href = URLdomain;});
 
 });
