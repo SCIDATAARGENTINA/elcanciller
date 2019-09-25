@@ -16,9 +16,9 @@
 <div class="instagram-widget container">
         <div class="autores-profile">
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/leandromoraalfonsin/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/leandromoraalfonsinok.png" alt="Leandro Mora Alfonsín"></a>
+                <a href="<?php bloginfo('url') ?>/author/leandromoraalfonsin/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/leandromoraalfonsinok.png" alt="Leandro Mora Alfonsín"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/leandromoraalfonsin/">Leandro Alfonsín</a></h4>
+                    <h4><a href="<?php bloginfo('url') ?>/author/leandromoraalfonsin/">Leandro Alfonsín</a></h4>
                     <p>@twitter</p>
                 </div>
             </div>
