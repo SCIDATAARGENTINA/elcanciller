@@ -178,6 +178,7 @@
 					);
 					?>
 				</nav><!-- .header-navigation -->
+				<p>hola</p>
 			</div><!-- end menu-bar -->
 
 		</header><!-- #masthead -->
