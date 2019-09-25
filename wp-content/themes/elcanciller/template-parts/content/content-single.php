@@ -65,14 +65,6 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; b
 
 </article><!-- #post-${ID} -->
 
-<?php 
-
-// If comments are open or we have at least one comment, load up the comment template.
-if ( comments_open() || get_comments_number() ) {
-	comments_template();
-}
-
-?>
 <div class="onlymobile">
 	<!-- /21749555895/Nota-Lateral-330x350 -->
 	<div id='div-gpt-ad-1539356874237-0'>
@@ -93,3 +85,12 @@ if ( comments_open() || get_comments_number() ) {
 		</script>
 	</div>
 </div>
+
+<?php 
+
+// If comments are open or we have at least one comment, load up the comment template.
+if ( comments_open() || get_comments_number() ) {
+	comments_template();
+}
+
+?>
