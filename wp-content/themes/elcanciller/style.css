@@ -4712,11 +4712,16 @@ AUTHOR PAGE
 width: 200px !important;
 height: 200px !important;
 }
+
+@media only screen and (min-width: 991px) {
+
 .onlydesktop{
     display:block; 
 }
 .onlymobile{
     display:none; 
+}
+
 }
 
 /* AGREGADO LUCAS */ 
