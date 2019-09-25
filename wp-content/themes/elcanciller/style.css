@@ -455,8 +455,21 @@ h2:before {
 }
 
 .menu-bar .search{
-    background: #5d5d5d;
+    background:;
     padding: 5px;
+}
+
+.menu-bar .search .search-form label:after{
+    color: #5d5d5d;
+}
+
+.menu-bar .search input[type="search"]{
+    border-left-color: #5d5d5d;
+    color: #5d5d5d;
+}
+.menu-bar .search input[type="search"]::placeholder{
+    color: #5d5d5d;
+    
 }
 
 header#masthead {
