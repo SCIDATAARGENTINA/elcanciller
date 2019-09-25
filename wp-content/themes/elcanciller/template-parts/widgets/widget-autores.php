@@ -19,44 +19,44 @@
                 <a href="<?php bloginfo('url') ?>/author/leandromoraalfonsin/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/leandromoraalfonsinok.png" alt="Leandro Mora Alfonsín"></a>
                 <div class="autores-data">
                     <h4><a href="<?php bloginfo('url') ?>/author/leandromoraalfonsin/">Leandro Alfonsín</a></h4>
-                    <p>@twitter</p>
+                    
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/marianoojeda/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/marianoojeda.png" alt="Mariano Ojeda"></a>
+                <a href="<?php bloginfo('url') ?>/author/marianoojeda/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/marianoojeda.png" alt="Mariano Ojeda"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/marianoojeda/">Mariano Ojeda</a></h4>
-                    <p>@twitter</p>
+                    <h4><a href="<?php bloginfo('url') ?>/author/marianoojeda/">Mariano Ojeda</a></h4>
+                    
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/diegogenoud/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Diego-Genoud-Autor.png" alt="Diego Genoud"></a>
+                <a href="<?php bloginfo('url') ?>/author/diegogenoud/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Diego-Genoud-Autor.png" alt="Diego Genoud"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/diegogenoud/">Diego Genoud</a></h4>
-                    <p>@twitter</p>
+                    <h4><a href="<?php bloginfo('url') ?>/author/diegogenoud/">Diego Genoud</a></h4>
+                    
                 </div>
             </div>
         </div>
         <div class="autores-profile">
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/solrodriguezgarnica/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Sol-Rodriguez-Garnica-Autora.png" alt="Sol Rodriguez Garnica"></a>
+                <a href="<?php bloginfo('url') ?>/author/solrodriguezgarnica/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Sol-Rodriguez-Garnica-Autora.png" alt="Sol Rodriguez Garnica"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/solrodriguezgarnica/">Sol R. Garnica</a></h4>
-                    <p>@twitter</p>
+                    <h4><a href="<?php bloginfo('url') ?>/author/solrodriguezgarnica/">Sol R. Garnica</a></h4>
+                    
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/nanothompson/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/nano-thompson-autor.png" alt="Nano Thompson"></a>
+                <a href="<?php bloginfo('url') ?>/author/nanothompson/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/nano-thompson-autor.png" alt="Nano Thompson"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/nanothompson/">Nano Thompson</a></h4>
-                    <p>@twitter</p>
+                    <h4><a href="<?php bloginfo('url') ?>/author/nanothompson/">Nano Thompson</a></h4>
+                    
                 </div>
             </div>
             <div class="autores-pic">
-                <a href="http://142.93.24.13/author/brunocostanzo/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Bruno-Costanzo-Autor.png" alt="Bruno Costanzo"></a>
+                <a href="<?php bloginfo('url') ?>/author/brunocostanzo/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/Bruno-Costanzo-Autor.png" alt="Bruno Costanzo"></a>
                 <div class="autores-data">
-                    <h4><a href="http://142.93.24.13/author/brunocostanzo/">Bruno Costanzo</a></h4>
-                    <p>@twitter</p>
+                    <h4><a href="<?php bloginfo('url') ?>/author/brunocostanzo/">Bruno Costanzo</a></h4>
+                    
                 </div>
             </div>
         </div>
