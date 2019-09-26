@@ -66,7 +66,7 @@
                 </div>
             </div><!-- end slider placa titulo -->
             <button id="next-placa" class="placa-next mobile"></button>
-            <button id="next-placa" class="placa-next"></button>
+            <button id="prev-placa" class="placa-prev"></button>
         </div><!-- placa-content -->
     </div><!-- placa-title -->
 
