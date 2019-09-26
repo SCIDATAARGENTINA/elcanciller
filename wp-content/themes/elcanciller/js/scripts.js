@@ -101,8 +101,27 @@ jQuery(document).ready(function($) {
     /*MAGINIFIC POPUP VIDEOS END*/
 
     /* SLIDER PLACAS*/
+    function prevSlideHandler(currentSlide) {
 
-    function updateSlides(currentSlide) {
+        var prevSlide = currentSlide - 1;
+        var lastSlide = $('.slider-placa-titulo h3').length;
+
+        if (currentSlide == lastSlide) {
+            nextSlide = 1;
+        }
+
+        $('.slider-placa-titulo h3[data-slide="' + currentSlide + '"]').removeClass('active');
+        $('.placa-like i[data-slide="' + currentSlide + '"]').removeClass('active');
+        $('.slider-placa-imagen img[data-slide="' + currentSlide + '"]').removeClass('active');
+
+        $('.slider-placa-titulo h3[data-slide="' + prevSlide + '"]').addClass('active');
+        $('.placa-like i[data-slide="' + prevSlide + '"]').addClass('active');
+        $('.slider-placa-imagen img[data-slide="' + prevSlide + '"]').addClass('active');
+
+        return prevSlide;
+    }
+
+    function nextSlideHandler(currentSlide) {
 
         var nextSlide = currentSlide + 1;
         var lastSlide = $('.slider-placa-titulo h3').length;
@@ -125,7 +144,10 @@ jQuery(document).ready(function($) {
     var currentSlide = 1;
 
     $('.placa-next').click(function() {
-        currentSlide = updateSlides(currentSlide);
+        currentSlide = nextSlideHandler(currentSlide);
+    });
+    $('.placa-prev').click(function () {
+        currentSlide = prevSlideHandler(currentSlide);
     });
 
     jQuery('#floatBtn').on('click',function(){window.location.href = URLdomain;});
