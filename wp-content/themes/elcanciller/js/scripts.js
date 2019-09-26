@@ -106,8 +106,8 @@ jQuery(document).ready(function($) {
         var prevSlide = currentSlide - 1;
         var lastSlide = $('.slider-placa-titulo h3').length;
 
-        if (currentSlide == lastSlide) {
-            nextSlide = 1;
+        if (currentSlide == 1) {
+            prevSlide = lastSlide;
         }
 
         $('.slider-placa-titulo h3[data-slide="' + currentSlide + '"]').removeClass('active');
