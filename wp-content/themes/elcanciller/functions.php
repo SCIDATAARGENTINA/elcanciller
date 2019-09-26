@@ -1239,3 +1239,42 @@ function historia_ajax_handler(){
  
 add_action('wp_ajax_historia', 'historia_ajax_handler'); // wp_ajax_{action}
 add_action('wp_ajax_nopriv_historia', 'historia_ajax_handler'); // wp_ajax_nopriv_{action}
+
+// ADD AUTHOR TO SEARCH
+
+/**
+ * Include posts from authors in the search results where
+ * either their display name or user login matches the query string
+ *
+ * @author danielbachhuber
+ */
+add_filter( 'posts_search', 'db_filter_authors_search' );
+function db_filter_authors_search( $posts_search ) {
+
+	global $wpdb;
+
+	add_filter( 'pre_user_query', 'db_filter_user_query' );
+	$search = sanitize_text_field( get_query_var( 's' ) );
+	$args = array(
+		'count_total' => false,
+		'search' => sprintf( '*%s*', $search ),
+		'search_fields' => array(
+			'display_name',
+			'user_login',
+		),
+		'fields' => 'ID',
+	);
+	$matching_users = get_users( $args );
+	remove_filter( 'pre_user_query', 'db_filter_user_query' );
+	if ( empty( $matching_users ) )
+		return $posts_search;
+	// Take a slightly different approach than core where we want all of the posts from these authors
+	$posts_search = str_replace( ')))', ")) OR ( {$wpdb->posts}.post_author IN (" . implode( ',', array_map( 'absint', $matching_users ) ) . ")))", $posts_search );
+	return $posts_search;
+}
+
+function db_filter_user_query( &$user_query ) {
+	if ( is_object( $user_query ) )
+		$user_query->query_where = str_replace( "user_nicename LIKE", "display_name LIKE", $user_query->query_where );
+	return $user_query;
+}
