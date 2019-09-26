@@ -23,7 +23,7 @@ $show_author = '';
 if(get_field('show_author') == 'si'){
 	$show_author = 'show-author';
 }
-
+echo $featured_img_url;
 echo '<style>' . '.post-rendered.' . $term->slug . '::before{ background-color:' . $cat_color . ';}' .'</style>';
 
 ?>
