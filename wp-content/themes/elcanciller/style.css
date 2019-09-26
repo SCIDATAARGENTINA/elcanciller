@@ -2461,11 +2461,15 @@ ul.tagposts-list li {
 
 .placa-next:hover,
 .placa-next:active,
-.placa-next:focus {
+.placa-next:focus,
+.placa-prev:hover,
+.placa-prev:active,
+.placa-prev:focus {
     background: #e7d117;
 }
 
-.placa-next {
+.placa-next,
+.placa-prev {
     display: block;
     height: 100%;
     width: 20px;
@@ -2476,17 +2480,20 @@ ul.tagposts-list li {
 }
 
 @media (max-width: 1000px){
-    .placa-next{
+    .placa-next,
+    .placa-prev{
         display: none;
     }
 }
 
-.placa-next.mobile{
+.placa-next.mobile,
+.placa-prev.mobile{
     display: none;
 }
 
 @media (max-width: 1000px){
-    .placa-next.mobile{
+    .placa-next.mobile,
+    .placa-prev.mobile{
         display: block !important;
         width: 20px;
         position: absolute;
@@ -2496,7 +2503,8 @@ ul.tagposts-list li {
         background: #e7d117;
         padding: 20px;
     }
-    .placa-next.mobile::before {
+    .placa-next.mobile::before,
+    .placa-prev.mobile::before {
     content: '';
     width: 17px;
     height: 17px;
@@ -2514,7 +2522,8 @@ ul.tagposts-list li {
 }
 }
 
-.placa-next::before {
+.placa-next::before,
+.placa-prev::before {
     content: '';
     width: 12px;
     height: 12px;
