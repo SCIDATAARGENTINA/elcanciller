@@ -2530,11 +2530,18 @@ ul.tagposts-list li {
     display: inline-block;
     border: 2px solid #fff;
     border-left: 0px;
-    transform: rotate(45deg);
     background: transparent;
     border-bottom: 0px;
     cursor: pointer;
     margin-right: 5px;
+}
+
+.placa-next::before{
+    transform: rotate(45deg);
+}
+
+.placa-prev::before{
+    transform: rotate(-135deg);
 }
 
 .placa-like {
