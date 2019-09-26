@@ -23,29 +23,6 @@
 	<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
 	<meta name="keywords" content="noticias, información, periodismo, prensa, actualidad" >
 	<meta name="description" content="Plataforma digital local enfocada al género periodístico de mayor impacto: la conversación. Servicios e información sobre la política, los negocios y el fútbol en tiempo real.">
-	<meta property="og:title" content="El Canciller" >
-	<meta property="og:site_name" content="El Canciller">
-	<meta property="og:description" content="Plataforma digital local enfocada al género periodístico de mayor impacto: la conversación. Servicios e información sobre la política, los negocios y el fútbol en tiempo real." >
-	<meta property="og:image" content="https://elcanciller.com/wp-content/uploads/2019/09/default-share.jpg" >
-	<meta property="fb:app_id" content="462204567495177" >
-	<meta property="og:type" content="website" >
-	<meta property="og:locale" content="es_AR" >
-	<meta property="twitter:card" content="summary" >
-	<meta property="twitter:title" content="elCanciller" >
-	<meta property="twitter:description" content="#elCanciller es la primera plataforma digital local enfocada al género periodístico de mayor impacto: la conversación. ¡Las noticias y vos!" >
-	<meta property="twitter:image" content="https://elcanciller.com/wp-content/uploads/2019/09/default-share.jpg" >
-	<meta property="twitter:image:alt" content="elCanciller" >
-	<meta name="twitter:card" content="summary_large_image">
-
-	<meta name="twitter:site" content="@elcancillercom">
-	<meta name="twitter:description" content="">
-	<meta name="twitter:app:name:iphone" content="El Canciller">
-	<meta name="twitter:app:id:iphone" content="">
-	<meta name="twitter:app:name:ipad" content="El Canciller">
-	<meta name="twitter:app:id:ipad" content="">
-	<meta name="twitter:app:name:googleplay" content="El Canciller">
-	<meta name="twitter:app:id:googleplay" content="">
-	<meta name="twitter:app:country" content="Argentina">
 
 	<script>
 	/* ADMANAGER */
