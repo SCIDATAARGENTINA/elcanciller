@@ -823,7 +823,7 @@ input:-internal-autofill-selected {
     display: inline-block;
     margin-top: 15px;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 90%;
     z-index: 1;
     background-color: #fff;
