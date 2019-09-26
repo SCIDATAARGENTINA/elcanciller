@@ -2512,7 +2512,7 @@ ul.tagposts-list li {
         padding: 20px;
     }
     .placa-next.mobile::before,
-    .placa-prev.mobile::before {
+    .placa-prev::before {
     content: '';
     width: 17px;
     height: 17px;
