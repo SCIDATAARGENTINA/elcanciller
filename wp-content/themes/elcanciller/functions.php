@@ -50,6 +50,8 @@ function sidebar_register() {
 // IMAGE SIZE CROP
 
 add_image_size( 'card-nota', 450, 450, true );
+add_image_size( 'historia', 300, 550 );
+
 
 
 // Register Custom Post Type
