@@ -2491,12 +2491,21 @@ ul.tagposts-list li {
 }
 
 @media (max-width: 1000px){
-    .placa-next.mobile,
-    .placa-prev.mobile{
+    .placa-next.mobile{
         display: block !important;
         width: 20px;
         position: absolute;
         right: 43px;
+        height: 20%;
+        bottom: 0px;
+        background: #e7d117;
+        padding: 20px;
+    }
+    .placa-prev{
+        display: block !important;
+        width: 20px;
+        position: absolute;
+        left: 43px;
         height: 20%;
         bottom: 0px;
         background: #e7d117;
