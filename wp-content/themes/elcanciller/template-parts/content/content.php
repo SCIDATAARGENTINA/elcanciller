@@ -11,7 +11,7 @@
 
 
 $thumbnail_id = get_post_thumbnail_id($post->ID);
-$featured_img = wp_get_attachment_image_src( $thumbnail_id, 'large' );
+$featured_img = wp_get_attachment_image_src( $thumbnail_id, 'historia' );
 $featured_img_url = $featured_img[0];
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 $post_id = $post->ID; // this is for any other custom taxonomy
