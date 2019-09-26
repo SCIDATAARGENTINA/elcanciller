@@ -4744,8 +4744,8 @@ height: 200px !important;
 
 /* AGREGADO LUCAS */ 
 
-.timeline-Header , .timeline-Footer {
-    display:none;
+.timeline-InformationCircle-widgetParent , .timeline-Footer {
+    display:none !important;
 }
 
 @media only screen and (max-width: 991px) {
