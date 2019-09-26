@@ -2439,6 +2439,11 @@ ul.tagposts-list li {
     color: #fff;
     font-size: 18px;
 }
+@media (max-width: 1000px){
+    .placa-content h3{
+        text-align: center;
+    }
+}
 
 .placa-image {
     display: flex;
@@ -2514,8 +2519,8 @@ ul.tagposts-list li {
     .placa-next.mobile::before,
     .placa-prev::before {
     content: '';
-    width: 17px;
-    height: 17px;
+    width: 17px !important;
+    height: 17px !important;
     display: inline-block;
     border: 2px solid #fff;
     border-left: 0px;
