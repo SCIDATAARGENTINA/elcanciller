@@ -2442,6 +2442,7 @@ ul.tagposts-list li {
 @media (max-width: 1000px){
     .placa-content h3{
         text-align: center;
+        width: 100%;
     }
 }
 
