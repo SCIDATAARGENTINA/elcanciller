@@ -9,8 +9,9 @@
  * @since 1.0.0
  */
 
-$featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
 $thumbnail_id = get_post_thumbnail_id($post->ID);
+$featured_img = wp_get_attachment_image_src( $thumbnail_id, 'card-nota' );
+$featured_img_url = $featured_img[0];
 $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 
 $fecha_limite = new DateTime();
