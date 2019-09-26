@@ -16,10 +16,12 @@ jQuery(function ($) {
             },
             success: function (data) {
                 if(data === ''){
-                    console.log(data, 'no hay data');
+                    trendingPost.css('opacity', '1').css('transform', 'translateX(0px)');
+                    return;
+                }else{
+                    trendingPost.html(data);
+                    trendingPost.css('opacity', '1').css('transform', 'translateX(0px)');
                 }
-                trendingPost.html(data);
-                trendingPost.css('opacity', '1').css('transform', 'translateX(0px)');
             },
             error: function (error) {
                 trendingPost.css('opacity', '1').css('transform', 'translateX(0px)');
