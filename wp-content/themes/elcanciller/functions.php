@@ -47,6 +47,10 @@ function sidebar_register() {
 
 }
 
+// IMAGE SIZE CROP
+
+add_image_size( 'card-nota', 450, 450, true );
+
 
 // Register Custom Post Type
 function custom_post_type_cancilleram()
