@@ -15,7 +15,7 @@ jQuery(function ($) {
                 trendingPost.css('opacity', '0').css('transform','translateX(20px)');
             },
             success: function (data) {
-                if(data === null){
+                if(data === ''){
                     console.log(data, 'no hay data');
                 }
                 trendingPost.html(data);
