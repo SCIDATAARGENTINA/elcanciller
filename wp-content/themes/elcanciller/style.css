@@ -543,7 +543,6 @@ input:-internal-autofill-selected {
 
 .stories {
     border-radius: 50%;
-    background: #e7d117;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -563,6 +562,7 @@ input:-internal-autofill-selected {
     width: 100%;
     position: relative;
     z-index: 2;
+    background: #e7d117;
 }
 
 .stories .stories-border{
