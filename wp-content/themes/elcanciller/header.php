@@ -70,9 +70,11 @@
 	<div class="top-bar">
 		<div class="container">
 			<div class="mobile-logo">
-				<div class="stories-border"></div>
-				<div class="stories-logo">
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/icons/c-stories.svg" alt="El Canciller - Plataforma digital de actualidad y noticias.">
+				<div class="stories">
+					<div class="stories-border"></div>
+					<div class="stories-logo">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/icons/c-stories.svg" alt="El Canciller - Plataforma digital de actualidad y noticias.">
+					</div>
 				</div>
 			</div>
 			<div class="logo">
