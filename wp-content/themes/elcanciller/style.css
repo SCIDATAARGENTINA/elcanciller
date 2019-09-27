@@ -1716,6 +1716,12 @@ ul.tagposts-list li {
     vertical-align: top;
 }
 
+@media (max-width: 650px){
+    .archive-header_opinion .archive-banner img{
+        margin-bottom: 0;
+    }
+}
+
 /*SECCION*/
 
 
