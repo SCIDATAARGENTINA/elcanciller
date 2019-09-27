@@ -524,18 +524,19 @@ input:-internal-autofill-selected {
     height: 120px;
     width: 120px;
     margin: 0 auto;
-    border: 2px solid #fff;
     position: relative;
     cursor: pointer;
 }
 
-.mobile-logo img{
+.mobile-logo .stories .stories-border{
+    width: 136px;
+    height: 136px;
+} 
+
+.mobile-logo .stories-logo img{
     width: 40%;
 }
 
-.mobile-logo .stories::before{
-    display: none;
-}
 .front-page-content .sidebar {
     margin-top: -100px;
     background: #f5f8fa;
