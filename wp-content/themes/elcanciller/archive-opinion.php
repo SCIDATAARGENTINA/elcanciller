@@ -26,7 +26,7 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; }
 			</div><!-- sidebar -->
 			<div class="content <?php echo $term->slug ?>">
 			
-				<?php get_template_part('template-parts/archives/archive', 'header') ?>
+				<?php get_template_part('template-parts/archives/archive', 'header_opinion') ?>
 
 			<div class="seccion-posts col-3">
 			<?php
