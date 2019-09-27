@@ -4784,11 +4784,12 @@ AUTHOR PAGE
 
 .historia .historia-link::after{
     content: '';
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     border-right: 2px solid #fff;
     border-bottom: 2px solid #fff;
     transform: rotate(-45deg);
+    margin-left: 10px;
 }
 
 
