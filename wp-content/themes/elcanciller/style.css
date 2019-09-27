@@ -592,27 +592,14 @@ input:-internal-autofill-selected {
 		}
 }
 
-/*.stories:before {
-    position: absolute;
-    background: #b29f93;
-    content: "\f067";
-    font-family: "Font Awesome 5 Free" !important;
-    font-weight: 900;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 10px;
-    color: #fff;
-    border: 2px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 21px;
-    right: 15px;
-}*/
 
 .stories .stories-logo img {
     width: 45%;
+    transition: 300ms ease;
+}
+
+.stories:hover .stories-logo img{
+    transform: scale(1.1);
 }
 
 .social-links {
