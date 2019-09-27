@@ -29,7 +29,7 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; b
 		</div>
 	</div><!-- post-imagen -->
 	<div class="post-content">
-		<?php if(get_the_author_meta('ID') != 81){ ?>
+		<?php if(get_field('show_author') == 'si'){ ?>
 		<div class="post-author" >
 			<a style="background-color: <?php echo $cat_color; ?>" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )) ?>">
 			<?php echo get_avatar( get_the_author_meta('ID'), 26 ); ?>
@@ -38,7 +38,7 @@ echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; b
 		</div><!-- post-author -->
 		<?php } ?>
 		<div class="post-meta">
-			<?php $default_local_date = ucwords(utf8_decode(get_the_time('l d \d\e F \d\e Y | H:i'))); 
+			<?php $default_local_date = ucwords(utf8_encode(get_the_time(' d \d\e F \d\e Y | H:i'))); 
 			$date_connectors_capital = array('De', 'Del');
 			$date_connectors_lower = array('de', 'del');
 			$local_date = str_replace($date_connectors_capital, $date_connectors_lower, $default_local_date);
