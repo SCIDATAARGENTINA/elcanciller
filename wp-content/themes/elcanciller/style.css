@@ -2324,7 +2324,15 @@ ul.tagposts-list li {
          grid-template-columns: 1fr;
      }
  }
-
+.opinion-banner{
+    position: relative;
+}
+.opinion-banner a{
+    position: absolute;
+    left: 0px;
+    display: inline-block;
+    top: 50%;
+}
 .opinion-container {
     border: 2px solid #e7d117;
 }
