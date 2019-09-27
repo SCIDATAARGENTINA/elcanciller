@@ -4633,6 +4633,12 @@ AUTHOR PAGE
     height: 100%;
 }
 
+@media (max-height: 650px){
+    .historias{
+        max-width: 300px;
+    }
+}
+
 @media (max-width: 500px){
     .historias{
         max-width: 300px;
