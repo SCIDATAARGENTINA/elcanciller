@@ -535,7 +535,7 @@ input:-internal-autofill-selected {
 
 .mobile-logo .stories-logo img{
     width: 40%;
-    animation: rotation 3s infinite ease;
+    animation: grow 3s infinite ease;
 }
 @keyframes grow {
         0%{
