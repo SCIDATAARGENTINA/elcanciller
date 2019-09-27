@@ -1713,6 +1713,7 @@ ul.tagposts-list li {
     max-width: 100%;
     margin: 0 ;
     margin-bottom: -65.5px;
+    vertical-align: top;
 }
 
 /*SECCION*/
