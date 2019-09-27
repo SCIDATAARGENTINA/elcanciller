@@ -535,10 +535,13 @@ input:-internal-autofill-selected {
 
 .mobile-logo .stories-logo img{
     width: 40%;
-    animation: grow 3s infinite ease;
+    animation: grow 5s infinite ease;
 }
 @keyframes grow {
         0%{
+            transform: scale(1.0);
+        }
+        79%{
             transform: scale(1.0);
         }
 		80% {
