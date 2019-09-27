@@ -2322,22 +2322,32 @@ ul.tagposts-list li {
  @media (max-width: 650px){
      .opiniones{
          grid-template-columns: 1fr;
+         margin-top: 0px;
      }
  }
 .opinion-banner{
     position: relative;
 }
+.opinion-banner img{
+    width: 100%;
+}
 .opinion-banner a{
     position: absolute;
     right: 0px;
     display: flex;
-    top: 30px;
+    top: 35px;
     padding: 0px 5px;
     font-family: "Bree Serif";
     color: #b29f93;
     background: #fff;
     border: 2px solid #e7d117;
     font-size: 16px;
+    align-items: center;
+}
+@media (max-width: 650px){
+    .opinion-banner a{
+        top: 5px;
+    }
 }
 .opinion-banner a::after{
     content: '';
