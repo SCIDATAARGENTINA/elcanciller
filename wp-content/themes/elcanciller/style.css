@@ -569,10 +569,10 @@ input:-internal-autofill-selected {
 .stories .stories-border{
     border: 1px solid #fff;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 215px;
-    height: 215px;
+    top: -8px;
+    left: -8px;
+    width: 216px;
+    height: 216px;
     background: #f09433; 
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
@@ -580,7 +580,7 @@ input:-internal-autofill-selected {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     border-radius: 50%;
     z-index: 1;
-    animation: rotation 2s infinite linear;
+    animation: rotation 3s infinite linear;
 }
 
 @keyframes rotation {
