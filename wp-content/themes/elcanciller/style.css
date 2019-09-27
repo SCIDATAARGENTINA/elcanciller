@@ -4798,7 +4798,10 @@ height: 200px !important;
         justify-content: center;
     }
     .ad-long {
-        display: block !important;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }  
 
