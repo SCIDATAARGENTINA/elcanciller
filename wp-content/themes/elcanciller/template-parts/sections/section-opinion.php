@@ -14,6 +14,7 @@
 <div class="opinion-section container">
     <div class="opinion-banner">
         <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/opinion-banner-1.png" alt="Sección opinion - El Canciller revista online">
+        <a href="<?php bloginfo('url') ?>/opinion">Todas las opiniones</a>
     </div><!-- opinion-banner -->
 
     <div class="opiniones">

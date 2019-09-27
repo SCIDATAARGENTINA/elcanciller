@@ -19,7 +19,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
     <img src="<?php echo $featured_img[0] ?>" alt="<?php echo $alt ?>">
 
     <?php if(get_field('link')){ ?>
-        <a href="<?php get_field('link') ?>">Ver más</a>
+        <a class="historia-link" href="<?php echo get_field('link') ?>">Ver más</a>
     <?php } ?>
 
 </article><!-- #historia-<?php the_ID(); ?> -->
