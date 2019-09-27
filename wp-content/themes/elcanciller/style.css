@@ -596,6 +596,7 @@ input:-internal-autofill-selected {
 .stories .stories-logo img {
     width: 45%;
     transition: 300ms ease;
+    vertical-align: top;
 }
 
 .stories:hover .stories-logo img{
