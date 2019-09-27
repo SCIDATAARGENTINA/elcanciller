@@ -4635,7 +4635,7 @@ AUTHOR PAGE
 
 @media (min-height: 600px){
     .historias{
-        max-width: 300px;
+        max-width: 300px !important;
     }
 }
 
