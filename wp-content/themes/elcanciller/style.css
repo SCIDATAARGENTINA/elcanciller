@@ -2329,10 +2329,31 @@ ul.tagposts-list li {
 }
 .opinion-banner a{
     position: absolute;
-    left: 0px;
-    display: inline-block;
-    top: 50%;
+    right: 0px;
+    display: flex;
+    top: 30px;
+    padding: 0px 5px;
+    font-family: "Bree Serif";
+    color: #b29f93;
+    background: #fff;
+    border: 2px solid #e7d117;
+    font-size: 16px;
 }
+.opinion-banner a::after{
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-right: 2px solid #b29f93;
+    border-bottom: 2px solid #b29f93;
+    margin: 0 10px;
+    transform: rotate(-45deg);
+    transition: 300ms ease;
+}
+
+.opinion-banner a:hover::after{
+    transform: translateX(5px) rotate(-45deg);
+}
+
 .opinion-container {
     border: 2px solid #e7d117;
 }
