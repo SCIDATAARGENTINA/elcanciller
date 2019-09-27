@@ -535,6 +535,18 @@ input:-internal-autofill-selected {
 
 .mobile-logo .stories-logo img{
     width: 40%;
+    animation: rotation 3s infinite ease;
+}
+@keyframes grow {
+        0%{
+            transform: scale(1.0);
+        }
+		80% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1.0);
+		}
 }
 
 .front-page-content .sidebar {
@@ -587,10 +599,10 @@ input:-internal-autofill-selected {
 
 @keyframes rotation {
 		from {
-				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
 		}
 		to {
-				-webkit-transform: rotate(359deg);
+				transform: rotate(359deg);
 		}
 }
 
