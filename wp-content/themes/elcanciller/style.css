@@ -2968,6 +2968,7 @@ ul.tagposts-list li {
 
 .post-imagen {
     position: relative;
+    min-height: 200px;
 }
 
 .post-imagen img {
