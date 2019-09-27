@@ -555,7 +555,13 @@ input:-internal-autofill-selected {
     cursor: pointer;
 }
 
-.stories:before {
+.stories .stories-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.stories:before {
     position: absolute;
     background: #b29f93;
     content: "\f067";
@@ -572,9 +578,9 @@ input:-internal-autofill-selected {
     align-items: center;
     top: 21px;
     right: 15px;
-}
+}*/
 
-.stories img {
+.stories .stories-logo img {
     width: 45%;
 }
 
