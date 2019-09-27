@@ -41,7 +41,7 @@ $term = get_queried_object();
          $cat_link = get_term_link($categories[0]->term_id );
          ?>
 
-         <header class="archive-header">
+         <header class="archive-header archive-header_opinion">
             <div class="archive-title">
                <div class="archive-banner"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/opinion-banner-1.png"></div>
 

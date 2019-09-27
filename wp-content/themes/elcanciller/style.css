@@ -1704,6 +1704,16 @@ ul.tagposts-list li {
     width: 100%;
 }
 
+.archive-header_opinion{
+    padding: 0px;
+}
+
+.archive-header_opinion .archive-banner img{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: -65.5px;
+}
 
 /*SECCION*/
 
