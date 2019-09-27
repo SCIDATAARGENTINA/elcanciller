@@ -48,7 +48,7 @@
    </div>
 
    <!-- /21749555895/Home-Superior-330x350 -->
-   <div id='div-gpt-ad-1539356967377-0' style='display: flex;align-items: center;flex-direction: column;justify-content: center;' >
+   <div id='div-gpt-ad-1539356967377-0' style='display: flex;align-items: center;flex-direction: column;justify-content: center;margin: 0 auto;' >
       <script>
          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356967377-0'); });
       </script>

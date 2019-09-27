@@ -4797,6 +4797,9 @@ height: 200px !important;
         flex-direction: column;
         justify-content: center;
     }
+    .ad-long {
+        display: block !important;
+    }
 }  
 
 
