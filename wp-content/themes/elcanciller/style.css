@@ -1711,7 +1711,7 @@ ul.tagposts-list li {
 .archive-header_opinion .archive-banner img{
     width: 100%;
     max-width: 100%;
-    margin: 0 !important;
+    margin: 0 ;
     margin-bottom: -65.5px;
 }
 
