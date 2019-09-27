@@ -2346,7 +2346,10 @@ ul.tagposts-list li {
 }
 @media (max-width: 650px){
     .opinion-banner a{
-        top: 5px;
+        bottom: 5px;
+        top: unset;
+        padding: 5px 10px;
+        font-size: 14px;
     }
 }
 .opinion-banner a::after{
