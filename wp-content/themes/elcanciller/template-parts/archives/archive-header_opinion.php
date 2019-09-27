@@ -17,13 +17,6 @@ $term = get_queried_object();
       'posts_per_page' => 1,
       'orderby' => 'date',
       'order' => 'DESC',
-      'tax_query' => array(
-        array(
-            'taxonomy' => 'category',
-            'field'    => 'term_id',
-            'terms'    => $term->term_id,
-            ),
-        ),
       'meta_query' => array(
          array(
             'key' => 'trending',
