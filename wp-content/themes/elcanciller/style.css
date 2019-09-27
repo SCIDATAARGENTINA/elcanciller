@@ -3159,6 +3159,21 @@ article .post-content .has-content-area {
     flex-direction: column;
 }
 
+.related-posts .col-3{
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+}
+
+@media (max-width: 900px){
+    .related-posts .col-3{
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+}
+}
+@media (max-width: 550px){
+    .related-posts .col-3{
+    grid-template-columns: repeat(1, minmax(260px, 1fr));
+}
+}
+
 .grey-band {
     position: absolute;
     width: 100vw;
