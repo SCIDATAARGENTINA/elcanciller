@@ -42,7 +42,9 @@ $term = get_queried_object();
          ?>
 
          <header class="archive-header">
-            <div class="archive-banner"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/opinion-banner-1.png"></div>
+            <div class="archive-title">
+               <div class="archive-banner"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/opinion-banner-1.png"></div>
+
                <div class="title">
                   <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-blanco.svg" alt="">
                   <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
