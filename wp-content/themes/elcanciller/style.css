@@ -535,6 +535,7 @@ input:-internal-autofill-selected {
 } 
 .mobile-logo .stories .stories-logo{
     border: 0px !important;
+    cursor: pointer;
 }
 
 .mobile-logo .stories-logo img{
