@@ -559,6 +559,8 @@ input:-internal-autofill-selected {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 /*.stories:before {
