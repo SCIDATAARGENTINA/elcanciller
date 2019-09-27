@@ -1250,8 +1250,8 @@ add_action('wp_ajax_nopriv_historia', 'historia_ajax_handler'); // wp_ajax_nopri
  */
 add_filter( 'posts_search', 'db_filter_authors_search' );
 function db_filter_authors_search( $posts_search ) {
-  if(is_search()){
-	global $wpdb;
+
+  global $wpdb;
 
 	add_filter( 'pre_user_query', 'db_filter_user_query' );
 	$search = sanitize_text_field( get_query_var( 's' ) );
@@ -1277,5 +1277,5 @@ function db_filter_user_query( &$user_query ) {
 	if ( is_object( $user_query ) )
 		$user_query->query_where = str_replace( "user_nicename LIKE", "display_name LIKE", $user_query->query_where );
   return $user_query;
-  }
+  
 }
