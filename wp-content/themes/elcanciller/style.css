@@ -563,6 +563,7 @@ input:-internal-autofill-selected {
     position: relative;
     z-index: 2;
     background: #e7d117;
+    border-radius: 50%;
 }
 
 .stories .stories-border{
