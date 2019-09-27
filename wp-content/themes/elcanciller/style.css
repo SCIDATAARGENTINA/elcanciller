@@ -531,7 +531,11 @@ input:-internal-autofill-selected {
 .mobile-logo .stories .stories-border{
     width: 136px;
     height: 136px;
+    border: 0px;
 } 
+.mobile-logo .stories-logo{
+    border: 0px;
+}
 
 .mobile-logo .stories-logo img{
     width: 40%;
