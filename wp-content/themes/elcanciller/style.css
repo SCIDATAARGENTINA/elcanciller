@@ -4766,6 +4766,29 @@ AUTHOR PAGE
     width: 100%;
 }
 
+.historia .historia-link{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 10px;
+    background: #e7d117;
+    padding: 5px 10px;
+    font-family: "Bree Serif";
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.historia .historia-link::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
 
 
 /* ADS */
