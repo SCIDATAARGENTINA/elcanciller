@@ -541,13 +541,13 @@ input:-internal-autofill-selected {
         0%{
             transform: scale(1.0);
         }
-        70%{
+        60%{
             transform: scale(1.0);
         }
 		80% {
 			transform: scale(1.1);
 		}
-		100% {
+		90% {
 			transform: scale(1.0);
 		}
 }
