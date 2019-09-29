@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+    var URLdomain = 'http://'+ window.location.host;
 
     var idEncuesta,
         totVotos,
@@ -9,7 +10,7 @@ jQuery(document).ready(function($) {
 
     let getEncuesta = (encuestaId) => {
 
-        return $.get(`http://142.93.24.13/wp-json/wp/v2/encuestas/${encuestaId}`);
+        return $.get(\'"+URLdomain+"/wp-json/wp/v2/encuestas/${encuestaId}`);
 
     };
 
