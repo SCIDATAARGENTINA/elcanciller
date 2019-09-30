@@ -4117,7 +4117,7 @@ article .post-content .has-content-area {
 }
 
 .encuesta.card .opcion {
-    display: block;
+    order: unset !important;
     width: 100%;
     border-radius: 40px;
     border: 1px solid white;
