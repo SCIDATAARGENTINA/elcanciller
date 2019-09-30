@@ -1280,8 +1280,8 @@ function videopopup_ajax_handler(){
  
  
  
-add_action('wp_ajax_video-popup', 'video-popup_ajax_handler'); // wp_ajax_{action}
-add_action('wp_ajax_nopriv_video-popup', 'video-popup_ajax_handler'); // wp_ajax_nopriv_{action}
+add_action('wp_ajax_video-popup', 'videopopup_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_video-popup', 'videopopup_ajax_handler'); // wp_ajax_nopriv_{action}
 
 // ADD AUTHOR TO SEARCH
 add_filter( 'posts_search', 'db_filter_authors_search' );
