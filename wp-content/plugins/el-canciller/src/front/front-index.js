@@ -68,7 +68,7 @@ let shareActions = ($) => {
             var fbText = $.parseHTML($(this).attr('data-text'));
             var title = encodeURIComponent(fbTtitle);
             var text = encodeURIComponent(fbText[0].innerText);
-            var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=1389892087910588&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
+            var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=2944460418926952&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
             var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
             win.opener = null;
         });
@@ -80,7 +80,7 @@ let shareActions = ($) => {
             var fbText = $.parseHTML($(this).attr('data-text'));
             var title = encodeURIComponent(fbTtitle);
             var text = encodeURIComponent(fbText[0].innerText);
-            var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=1389892087910588&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
+            var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=2944460418926952&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
             var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
             win.opener = null;
         });
@@ -92,7 +92,7 @@ let shareActions = ($) => {
             var fbText = $.parseHTML($(this).attr('data-text'));
             var title = encodeURIComponent(fbTtitle);
             var text = encodeURIComponent(fbText[0].innerText);
-            var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=1389892087910588&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
+            var shareUrl = 'https://www.facebook.com/dialog/feed?app_id=2944460418926952&redirect_uri=https://elcanciller.com&link=' + fbUrl + '&picture=' + fbImg + '&caption=' + title + '&description=' + text;
             var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
             win.opener = null;
         });

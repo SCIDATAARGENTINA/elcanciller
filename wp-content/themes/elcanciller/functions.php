@@ -1241,6 +1241,48 @@ function historia_ajax_handler(){
 add_action('wp_ajax_historia', 'historia_ajax_handler'); // wp_ajax_{action}
 add_action('wp_ajax_nopriv_historia', 'historia_ajax_handler'); // wp_ajax_nopriv_{action}
 
+// AJAX YOUTUBE VIDEOS
+
+function videopopup_scripts() {
+  
+	wp_register_script( 'video-popup', get_stylesheet_directory_uri() . '/js/video-popup.js', array('jquery') );
+ 
+	wp_localize_script( 'video-popup', 'video_params', array(
+		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+	) );
+ 
+ 	wp_enqueue_script( 'video-popup' );
+}
+ 
+add_action( 'wp_enqueue_scripts', 'videopopup_scripts' );
+
+
+function videopopup_ajax_handler(){
+
+  $args = array(
+      'post_type' => 'video',
+      'p' => $_POST['id']
+   );
+
+    query_posts($args);
+ 
+	if( have_posts() ) :
+ 
+		while( have_posts() ): the_post();
+
+    get_template_part('template-parts/content/content', 'video_inside');
+ 
+		endwhile;
+ 
+  endif;
+  die; // here we exit the script and even no wp_reset_query() required!
+}
+ 
+ 
+ 
+add_action('wp_ajax_video-popup', 'videopopup_ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_video-popup', 'videopopup_ajax_handler'); // wp_ajax_nopriv_{action}
+
 // ADD AUTHOR TO SEARCH
 add_filter( 'posts_search', 'db_filter_authors_search' );
 function db_filter_authors_search( $posts_search ) {

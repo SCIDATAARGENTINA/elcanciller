@@ -24,17 +24,5 @@ $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
         <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-icon.svg" alt="<?php echo $alt ?>">
     </div><!-- player icon -->
 </div><!-- video -->
-<div id="video-popup-<?php echo $post->ID ?>" class="player-content mfp-hide">
-    <div class="popup-content">
-        <div class="videos-title">
-            <div class="videos-pic">
-                <a href="#"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-logo.svg" alt="El Canciller - Videos"></a>
-            </div><!-- end videos-pic -->
-            <div class="videos-data">
-                <h4><a href="<?php echo $term_link ?>"><?php echo $categories[0]->name ?></a></h4>
-                <h3><?php the_title(); ?></h3>
-            </div><!-- end videos-data -->
-        </div><!-- end videos-title -->
-        <?php echo get_the_content(); ?>
-    </div>
-</div>
+
+<?php //get_template_part('template-parts/content/content', 'video_inside'); ?>
