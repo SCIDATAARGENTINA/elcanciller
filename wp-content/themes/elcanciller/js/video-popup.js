@@ -1,13 +1,14 @@
 jQuery(function ($) { 
     $(document).on('click', '.popup-video', function () {
         var id = $(this).attr('data-id');
-
+        var popupVideo = $(this);
         var data = {
                 'action': 'video-popup',
                 'id': id
             };
 
-        $(this).magnificPopup();
+        popupVideo.magnificPopup();
+
         $.ajax({ 
             url: video_params.ajaxurl,
             data: data,
@@ -18,7 +19,7 @@ jQuery(function ($) {
             success: function (data) {
                 console.log(data);
                 var popupContent = data;
-                $(this).magnificPopup({
+                popupVideo.magnificPopup({
                     items: {
                         src: toString(popupContent),
                         type: 'inline'
