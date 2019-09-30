@@ -18,7 +18,7 @@ jQuery(function ($) {
             success: function (data) {
                 console.log(data);
                 var popupContent = data;
-                $(this).magnificPopup({
+                popupContent.magnificPopup({
                     items: {
                         src: popupContent,
                         type: 'inline'
