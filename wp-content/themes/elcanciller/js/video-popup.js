@@ -19,10 +19,10 @@ jQuery(function ($) {
             success: function (data) {
                 console.log(data);
                 var popupContent = data;
-                popupVideo.magnificPopup({
+                $.magnificPopup.open({
+                    type: 'inline',
                     items: {
-                        src: toString(popupContent),
-                        type: 'inline'
+                        src: popupContent
                     },
                     // Delay in milliseconds before popup is removed
                     removalDelay: 300,
