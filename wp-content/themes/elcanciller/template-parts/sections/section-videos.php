@@ -37,20 +37,6 @@
                         <div id="video-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="video-item popup-video">
                             <h3><?php the_title(); ?></h3>
                         </div>
-                        <div id="video-popup-<?php echo $post->ID ?>" class="player-content mfp-hide">
-                            <div class="popup-content">
-                                <div class="videos-title">
-                                    <div class="videos-pic">
-                                        <a href="#"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-logo.svg" alt="El Canciller - Videos"></a>
-                                    </div><!-- end videos-pic -->
-                                    <div class="videos-data">
-                                        <h4><a href="">Streaming</a></h4>
-                                        <h3><?php the_title(); ?></h3>
-                                    </div><!-- end videos-data -->
-                                </div><!-- end videos-title -->
-                                <?php echo get_the_content(); ?>
-                            </div>
-                        </div>
                         
                     <?php }
                     // Restore original Post Data
