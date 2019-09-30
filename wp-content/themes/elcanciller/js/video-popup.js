@@ -20,7 +20,7 @@ jQuery(function ($) {
                 var popupContent = data;
                 $(this).magnificPopup({
                     items: {
-                        src: popupContent,
+                        src: toString(popupContent),
                         type: 'inline'
                     },
                     // Delay in milliseconds before popup is removed
