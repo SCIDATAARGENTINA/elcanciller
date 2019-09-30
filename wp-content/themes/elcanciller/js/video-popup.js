@@ -7,7 +7,7 @@ jQuery(function ($) {
                 'id': id
             };
 
-
+        $(this).magnificPopup();
         $.ajax({ 
             url: video_params.ajaxurl,
             data: data,
@@ -18,7 +18,7 @@ jQuery(function ($) {
             success: function (data) {
                 console.log(data);
                 var popupContent = data;
-                popupContent.magnificPopup({
+                $(this).magnificPopup({
                     items: {
                         src: popupContent,
                         type: 'inline'
