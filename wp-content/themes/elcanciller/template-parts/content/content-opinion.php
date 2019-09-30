@@ -37,7 +37,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
         </div>
         <div class="autor">
             <a href="<?php echo $author_link ?>">
-            <p>@<?php the_author(); ?></p>
+            <p><?php the_author(); ?></p>
             </a>
         </div>
         <div class="titulo">
