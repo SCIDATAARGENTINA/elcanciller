@@ -25,4 +25,4 @@ $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
     </div><!-- player icon -->
 </div><!-- video -->
 
-<?php get_template_part('template-parts/content/content', 'video_inside'); ?>
+<?php //get_template_part('template-parts/content/content', 'video_inside'); ?>

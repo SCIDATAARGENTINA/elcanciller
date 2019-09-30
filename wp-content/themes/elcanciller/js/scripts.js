@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
 
     /* SLICK CARROUSEL CANCILELR AM END*/
 
-    /*MAGINIFIC POPUP VIDEOS*/
+    /*MAGINIFIC POPUP VIDEOS
 
     $('.popup-video').each(function() {
         var id = $(this).attr('data-id');
@@ -96,7 +96,7 @@ jQuery(document).ready(function($) {
             closeBtnInside: true,
             showCloseBtn: true
         });
-    });
+    });*/
 
     /*MAGINIFIC POPUP VIDEOS END*/
 
