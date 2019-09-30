@@ -2263,6 +2263,11 @@ ul.tagposts-list li {
 .popup-video {
     cursor: pointer;
 }
+.player-content{
+    opacity: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
 
 .mfp-content {
     width: auto !important;

@@ -19,7 +19,7 @@ $categories = get_the_terms( $post->ID , array( 'categoria_videos') );
 $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
 ?>
 
-<div id="video-popup-<?php echo $post->ID ?>" class="player-content mfp-hide">
+<div id="video-popup-<?php echo $post->ID ?>" class="player-content">
     <div class="popup-content">
         <div class="videos-title">
             <div class="videos-pic">
