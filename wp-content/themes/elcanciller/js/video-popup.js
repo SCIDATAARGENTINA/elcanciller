@@ -21,15 +21,15 @@ jQuery(function ($) {
                     type: 'inline',
                     items: {
                         src: popupContent
-                    }
+                    },
                     // Delay in milliseconds before popup is removed
-                    //removalDelay: 300,
+                    removalDelay: 300,
 
                     // Class that is added to popup wrapper and background
                     // make it unique to apply your CSS animations just to this exact popup
-                    //mainClass: 'mfp-fade',
-                    //closeBtnInside: true,
-                    //showCloseBtn: true
+                    mainClass: 'mfp-fade',
+                    closeBtnInside: true,
+                    showCloseBtn: true
                 });
             },
             error: function (error) {
