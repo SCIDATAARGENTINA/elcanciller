@@ -53,7 +53,7 @@
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357193770-0'); });</script>
   </div>
   <!-- /21749555895/Home-Lateral-SeccionEstaPasando2 -->
-  <div id='div-gpt-ad-1559747926255-0'>
+  <div id='div-gpt-ad-1559747926255-0' style="margin-top: 10%;">
     <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559747926255-0'); });</script>
   </div>
   <!--<a href="https://www.gba.gob.ar/seguridad?utm_source=medios&utm_medium=cpc&utm_campaign=seguridad"><img src="https://elcanciller.com/files/juego.gif"></a>-->
