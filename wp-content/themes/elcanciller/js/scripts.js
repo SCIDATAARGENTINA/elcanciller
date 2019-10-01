@@ -2,7 +2,7 @@ var URLdomain = 'http://'+ window.location.host;
 
 jQuery(document).ready(function($) {
 
-    const Url = 'https://api.darksky.net/forecast/f7a0551eab3dced527a3626f5efd3c92/-34.6036844,-58.3815591?lang=es&units=si';
+    const Url = 'https://api.darksky.net/forecast/bbe0dc31a288906f1d963a4351449023/-34.6036844,-58.3815591?lang=es&units=si';
     $.ajax({
             url: Url,
             headers: { 'Access-Control-Allow-Origin': '*' },
