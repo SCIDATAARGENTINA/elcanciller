@@ -14,6 +14,7 @@ get_header();
 	<style>
 		#masthead{display:none !important;}
 	</style>
+	<script>window.location.replace("http://elcanciller.com");</script>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 
