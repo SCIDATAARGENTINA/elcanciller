@@ -21,7 +21,7 @@ $term_link = get_term_link( $categories[0], array( 'categoria_videos') );
 
 <div id="video-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="video popup-video" style="background-image: url('<?php echo $featured_img_url ?>');">
     <div class="player-icon">
-        <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-icon.svg" alt="<?php echo $alt ?>">
+        <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/videos-icon.svg" alt="El Canciller - Videos">
     </div><!-- player icon -->
 </div><!-- video -->
 
