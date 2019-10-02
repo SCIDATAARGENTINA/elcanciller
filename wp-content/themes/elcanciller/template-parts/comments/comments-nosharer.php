@@ -20,7 +20,7 @@
    );
    ?>
    <div class="comment-icon">
-      <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/comment-bubble.svg" alt="">
+      <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/comment-bubble.svg" alt="El Canciller - Comentarios">
    </div>
    <div class="comment-container">
     <?php if($comments){  ?>

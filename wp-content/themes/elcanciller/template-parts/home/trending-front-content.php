@@ -9,7 +9,7 @@ $cat_link = get_term_link($categories[0]->term_id );
 <div class="titular">
     <div class="category">
         <a href="<?php echo $cat_link; ?>"><h3 class="category-name"><?php echo $categories[0]->name ?></h3></a>
-        <span><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron.svg" alt=""></span>
+        <span><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron.svg" alt="El Canciller - Noticia destacada"></span>
     </div><!-- category -->
     <div class="titulo">
         <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
