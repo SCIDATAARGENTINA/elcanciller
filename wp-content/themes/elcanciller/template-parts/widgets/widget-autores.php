@@ -18,7 +18,7 @@
             <div class="autores-pic">
                 <a href="<?php bloginfo('url') ?>/author/leandromoraalfonsin/"><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/09/leandromoraalfonsinok.png" alt="Leandro Mora Alfonsín"></a>
                 <div class="autores-data">
-                    <h4><a href="<?php bloginfo('url') ?>/author/leandromoraalfonsin/">Leandro Alfonsín</a></h4>
+                    <h4><a href="<?php bloginfo('url') ?>/author/leandromoraalfonsin/">Leandro M. Alfonsín</a></h4>
                     
                 </div>
             </div>
