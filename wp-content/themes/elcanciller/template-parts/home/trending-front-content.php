@@ -12,7 +12,7 @@ $cat_link = get_term_link($categories[0]->term_id );
         <span><img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron.svg" alt=""></span>
     </div><!-- category -->
     <div class="titulo">
-        <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+        <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
         <div class="user-actions">
             <button class="shuffle">
                 <i aria-hidden="true" class="fa fa-random" style="color: #b29f93;"></i>

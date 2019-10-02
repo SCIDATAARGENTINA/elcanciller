@@ -854,8 +854,17 @@ input:-internal-autofill-selected {
     height: 100%;
 }
 
+.trending-post .titular h1 {
+    font-size: 40px; 
+    margin: 0;
+    height: 100%;
+}
+
 @media (max-width: 768px){
     .trending-post .titular h2 {
+        font-size: 30px;
+    }
+    .trending-post .titular h1 {
         font-size: 30px;
     }
 }
@@ -863,6 +872,9 @@ input:-internal-autofill-selected {
 
 @media (max-width: 400px){
     .trending-post .titular h2 {
+        font-size: 22px;
+    }
+    .trending-post .titular h1 {
         font-size: 22px;
     }
 }
