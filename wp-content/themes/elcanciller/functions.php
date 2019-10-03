@@ -1372,4 +1372,4 @@ function excluir_trending_categorias( $query ) {
         //$query->set( 'post_type', array( 'post', 'opinion' ) );
     }
 }
-add_action( 'pre_get_posts', 'excluir_trending_categorias', 1 );
+//add_action( 'pre_get_posts', 'excluir_trending_categorias', 1 );
