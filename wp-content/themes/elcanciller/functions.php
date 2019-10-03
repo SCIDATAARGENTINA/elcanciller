@@ -1341,7 +1341,7 @@ function db_filter_user_query( &$user_query ) {
 
 
 // EXCLUIR POSTS DESTACADOS DE LAS CATEGORIAS
-function my_custom_get_posts( $query ) {
+function excluir_trending_categorias( $query ) {
     if ( is_admin() || ! $query->is_main_query() )
         return;
 
@@ -1368,4 +1368,4 @@ function my_custom_get_posts( $query ) {
       $query->set( 'post__not_in', array( $excluded ) );
     }
 }
-add_action( 'pre_get_posts', 'my_custom_get_posts', 1 );
+add_action( 'pre_get_posts', 'excluir_trending_categorias', 1 );
