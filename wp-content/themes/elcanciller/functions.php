@@ -1340,7 +1340,7 @@ function db_filter_user_query( &$user_query ) {
 }
 
 
-// EXCLUIR POSTS DESTACADOS DE LAS CATEGORIAS
+// EXCLUIR POSTS DESTACADOS DE LAS CATEGORIAS Y AGREGAR OPINIONES A LOS ARCHIVOS DE CATEGORIAS
 function excluir_trending_categorias( $query ) {
     if ( is_admin() || ! $query->is_main_query() )
         return;
@@ -1366,6 +1366,10 @@ function excluir_trending_categorias( $query ) {
       $excluded = $excluded[0]->ID;
 
       $query->set( 'post__not_in', array( $excluded ) );
+    }
+
+    if($query->is_archive() && is_post_type_archive('opinion') == false){
+        $query->set( 'post_type', array( 'post', 'opinion' ) );
     }
 }
 add_action( 'pre_get_posts', 'excluir_trending_categorias', 1 );
