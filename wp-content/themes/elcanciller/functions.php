@@ -1028,13 +1028,14 @@ function mostrar_posts($atts){
    );
   $excluded = get_posts($excluded_args);
   $excluded = $excluded[0]->ID;
-  echo '<pre>'; print_r($excluded); echo '</pre>';
+  //echo '<pre>'; print_r($excluded); echo '</pre>';
 
   // Setup arguments.
   $args = array(
       'post_type' => 'post',
       'posts_per_page' => $a['cantidad'],
       'offset' => $a['offset']
+      'excluded' => $excluded
   );
   
   $base_query = new WP_Query( $args ); 
