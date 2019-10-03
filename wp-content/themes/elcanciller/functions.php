@@ -1034,7 +1034,7 @@ function mostrar_posts($atts){
   $args = array(
       'post_type' => 'post',
       'posts_per_page' => $a['cantidad'],
-      'offset' => $a['offset']
+      'offset' => $a['offset'],
       'excluded' => $excluded
   );
   
