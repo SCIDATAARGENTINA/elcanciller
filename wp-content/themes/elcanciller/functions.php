@@ -1338,3 +1338,19 @@ function db_filter_user_query( &$user_query ) {
 		$user_query->query_where = str_replace( "user_nicename LIKE", "display_name LIKE", $user_query->query_where );
 	return $user_query;
 }
+
+
+// EXCLUIR POSTS DESTACADOS DE LAS CATEGORIAS
+function my_custom_get_posts( $query ) {
+    if ( is_admin() || ! $query->is_main_query() )
+        return;
+    
+    $term = get_queried_object_id();
+
+    echo $term;
+
+    if ( $query->is_archive() ) {
+        //$query->set( 'post__not_in', array( 7, 11, 21 ) );
+    }
+}
+add_action( 'pre_get_posts', 'my_custom_get_posts', 1 );
