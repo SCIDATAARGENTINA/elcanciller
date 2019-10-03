@@ -1035,7 +1035,7 @@ function mostrar_posts($atts){
       'post_type' => 'post',
       'posts_per_page' => $a['cantidad'],
       'offset' => $a['offset'],
-      'excluded' => $excluded
+      'exclude' => $excluded
   );
   
   $base_query = new WP_Query( $args ); 
