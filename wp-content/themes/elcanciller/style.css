@@ -2295,7 +2295,7 @@ ul.tagposts-list li {
     background: #fff;
     margin: 0 auto;
     width: 600px;
-    max-width: 90%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -2303,6 +2303,29 @@ ul.tagposts-list li {
     border-radius: 4px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
+
+@media (max-width: 600px){
+    .mfp-content .popup-content {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px){
+    .mfp-content .popup-content {
+        width: 400px;
+    }
+}
+@media (max-width: 400px){
+    .mfp-content .popup-content {
+        width: 300px;
+    }
+}
+@media (max-width: 300px){
+    .mfp-content .popup-content {
+        width: 250px;
+    }
+}
+
 
 .popup-content .videos-pic {
     width: 66px;
