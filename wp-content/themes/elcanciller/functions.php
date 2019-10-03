@@ -1369,7 +1369,7 @@ function excluir_trending_categorias( $query ) {
     }
 
     if($query->is_archive() && is_post_type_archive('opinion') == false){
-        $query->set( 'post_type', array( 'post', 'opinion' ) );
+        //$query->set( 'post_type', array( 'post', 'opinion' ) );
     }
 }
 add_action( 'pre_get_posts', 'excluir_trending_categorias', 1 );
