@@ -1013,6 +1013,21 @@ function mostrar_posts($atts){
   ), $atts );
   $title = get_the_title($a['postid']);
   $link = get_the_permalink($a['postid']);
+  $excluded_args = array(
+      'post_type' => 'post',
+      'posts_per_page' => 1,
+      'orderby' => 'date',
+      'order' => 'DESC',
+      'meta_query' => array(
+         array(
+            'key' => 'trending',
+            'value' => 'si',
+            'compare' => '='
+         )
+      )
+   );
+  $excluded = get_posts($excluded_args);
+  echo '<pre>'; print_r($excluded); echo '</pre>';
 
   // Setup arguments.
   $args = array(
