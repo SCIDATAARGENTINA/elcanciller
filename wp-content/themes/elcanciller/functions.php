@@ -1373,3 +1373,17 @@ function excluir_trending_categorias( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'excluir_trending_categorias', 1 );
+
+// EXCLUIR POSTS DESTACADOS DE LAS CATEGORIAS Y AGREGAR OPINIONES A LOS ARCHIVOS DE CATEGORIAS
+function only_show_author_posts_in_author_archive( $query ) {
+    if ( is_admin() || ! $query->is_main_query() )
+        return;
+
+    if ( $query->is_author() ) {
+
+      $query->set( 'meta_query', array( array('key' => 'show_author', 'value' => 'si', 'compare' => '=' )));
+
+    }
+
+}
+add_action( 'pre_get_posts', 'only_show_author_posts_in_author_archive', 1 );
