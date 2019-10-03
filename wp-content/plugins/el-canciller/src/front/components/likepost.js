@@ -7,7 +7,7 @@ let getPostData = (id, type) => {
         type = "posts";
     }
 
-    const url = `http://142.93.24.13/wp-json/wp/v2/${type}/${id}`;
+    const url = `http://elcanciller.com/wp-json/wp/v2/${type}/${id}`;
 
     const headers = {
         // tslint:disable-next-line:max-line-length
@@ -90,11 +90,11 @@ let updateLikeData = (likeCount, id, url, $) => {
                 like_count: likeCount,
             },
             success: function(result) {
-                console.log(result);
+                //console.log(result);
                 setCookie(cjs, id);
             },
             error: function(errorThrown) {
-                console.log(errorThrown);
+                //console.log(errorThrown);
             }
         });
 
