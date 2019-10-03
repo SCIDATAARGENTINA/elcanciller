@@ -1366,6 +1366,7 @@ function excluir_trending_categorias( $query ) {
       $excluded = $excluded[0]->ID;
 
       $query->set( 'post__not_in', array( $excluded ) );
+      $query->set( 'post_type', array( 'post', 'opinion' ) );
     }
 }
 add_action( 'pre_get_posts', 'excluir_trending_categorias', 1 );
