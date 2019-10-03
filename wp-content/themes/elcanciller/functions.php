@@ -1348,8 +1348,6 @@ function my_custom_get_posts( $query ) {
     if ( $query->is_archive() ) {
       $term = get_queried_object_id();
 
-      echo $term;
-
       $excluded_args = array(
           'post_type' => 'post',
           'posts_per_page' => 1,
