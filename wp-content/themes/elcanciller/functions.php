@@ -1027,7 +1027,7 @@ function mostrar_posts($atts){
       )
    );
   $excluded = get_posts($excluded_args);
-  echo '<pre>'; print_r($excluded[0]); echo '</pre>';
+  echo '<pre>'; print_r($excluded[0]->ID); echo '</pre>';
 
   // Setup arguments.
   $args = array(
