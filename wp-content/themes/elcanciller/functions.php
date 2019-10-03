@@ -1344,13 +1344,30 @@ function db_filter_user_query( &$user_query ) {
 function my_custom_get_posts( $query ) {
     if ( is_admin() || ! $query->is_main_query() )
         return;
-    
-    $term = get_queried_object_id();
-
-    echo $term;
 
     if ( $query->is_archive() ) {
-        //$query->set( 'post__not_in', array( 7, 11, 21 ) );
+      $term = get_queried_object_id();
+
+      echo $term;
+
+      $excluded_args = array(
+          'post_type' => 'post',
+          'posts_per_page' => 1,
+          'cat' => $term,
+          'orderby' => 'date',
+          'order' => 'DESC',
+          'meta_query' => array(
+            array(
+                'key' => 'trending',
+                'value' => 'si',
+                'compare' => '='
+            )
+          )
+      );
+      $excluded = get_posts($excluded_args);
+      $excluded = $excluded[0]->ID;
+
+      $query->set( 'post__not_in', array( $excluded ) );
     }
 }
 add_action( 'pre_get_posts', 'my_custom_get_posts', 1 );
