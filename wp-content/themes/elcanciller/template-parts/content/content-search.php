@@ -29,6 +29,10 @@ if($term){
 }else{
     $term_link = '';
 }
+$show_post = 'hide'
+if(get_field('show_author') == 'si'){
+
+}
 ?>
 
 <div id="search-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="search-post">
