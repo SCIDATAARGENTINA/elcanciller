@@ -37,9 +37,9 @@ $encuesta_grande = get_field('encuesta_grande');
 				
 				<?php // Cambia el Layout si no hay encuesta pequeña
 				if ($encuesta_pequena){
-					echo do_shortcode('[posts cantidad="2" offset="0" encuesta_id="'.$encuesta_pequena.'" encuesta_pos="3"]') 
+					echo do_shortcode('[posts cantidad="2" offset="0" encuesta_id="'.$encuesta_pequena.'" encuesta_pos="3"]');
 				}else{
-					echo do_shortcode('[posts cantidad="3" offset="0"]') 
+					echo do_shortcode('[posts cantidad="3" offset="0"]');
 				}
 				?>
 				</div>
