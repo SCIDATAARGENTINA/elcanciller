@@ -17,7 +17,7 @@
         <?php $args = array(
                         'posts_per_page' => 1,
                         'post_type' => 'encuesta',
-                        'p' => get_field('encuesta', '33064')
+                        'p' => get_field('encuesta_grande', '33064')
                     );
                     $query = new WP_Query( $args );
                     while( $query->have_posts() ) {
