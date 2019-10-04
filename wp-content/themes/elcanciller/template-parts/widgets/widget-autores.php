@@ -61,6 +61,6 @@
             </div>
         </div>
 </div><!-- end autores widget container -->
-<div class="divisor-autor-inferior">
+<!--<div class="divisor-autor-inferior">-->
     <hr class="yellow-hr">
-</div>
+<!--</div>-->
