@@ -22,7 +22,7 @@ $page_id  = get_queried_object_id();
 
 <section id="primary" class="content-area">
 	<main id="main" class="site-main">
-
+		<?php echo get_field('encuesta_pequena') ?>
 		<div class="front-page-content inner container">
 			<div class="sidebar">
 				<?php get_template_part('template-parts/sidebar/sidebar', 'front') ?>
