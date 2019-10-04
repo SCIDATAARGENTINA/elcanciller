@@ -43,12 +43,24 @@ $encuesta_grande = get_field('encuesta_grande');
 				}
 				?>
 				</div>
-				<?php include( locate_template( 'template-parts/sections/section-encuesta.php', false, false ) ); ?>
+				<?php 
+				if($encuesta_grande){
+					include( locate_template( 'template-parts/sections/section-encuesta.php', false, false ) ); 
+				}else{
+					
+				}
+				?>
 				<div class="col-3 order-2" data-quantity="2" data-offset="3">
 					<div id="publi1">
 						<?php the_field('anuncio_1', $page_id) ?>
 					</div>
-					<?php echo do_shortcode('[posts cantidad="2" offset="2"]') ?>
+					<?php 
+					if ($encuesta_pequena){
+						echo do_shortcode('[posts cantidad="2" offset="2"]');
+					}else{
+						echo do_shortcode('[posts cantidad="2" offset="3"]');
+					}
+					?>
 				</div>
 				<?php //get_template_part('template-parts/sections/section', 'encuesta') ?> 
 				<?php get_template_part('template-parts/sections/section', 'opinion') ?>
@@ -68,14 +80,27 @@ $encuesta_grande = get_field('encuesta_grande');
 				<div id="publi2">
 					<?php the_field('anuncio_6', $page_id) ?>
 				</div>
-				<?php echo do_shortcode('[posts cantidad="2" offset="4"]') ?>
+				<?php
+				if ($encuesta_pequena){
+					echo do_shortcode('[posts cantidad="2" offset="4"]');
+				}else{
+					echo do_shortcode('[posts cantidad="2" offset="5"]');
+				}
+				?>
 			</div>
 			<div class="col-1-2">
 				<div class="advertical">
 					<?php the_field('anuncio_7', $page_id) ?>
 				</div>
 				<div class="col-2-2">
-					<?php echo do_shortcode('[posts cantidad="4" offset="6"]') ?>
+				<?php 
+				if ($encuesta_pequena){
+					echo do_shortcode('[posts cantidad="4" offset="6"]');
+				}else{
+					echo do_shortcode('[posts cantidad="2" offset="7"]');
+				}
+					
+				?>
 				</div>				
 			</div>
 		</div><!-- outer-container -->
