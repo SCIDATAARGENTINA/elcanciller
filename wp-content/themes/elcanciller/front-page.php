@@ -32,7 +32,7 @@ $page_id  = get_queried_object_id();
 				<?php get_template_part('template-parts/sections/section', 'ultimomomento') ?>
 				<?php get_template_part('template-parts/home/trending', 'front') ?>
 				<div class="col-3" data-quantity="3" data-offset="0">
-				<?php echo do_shortcode("[posts cantidad='2' offset='0' encuesta_id='".get_field('encuesta_pequena')."' encuesta_pos='3']") ?>
+				<?php echo do_shortcode('[posts cantidad="2" offset="0" encuesta_id="'.get_field("encuesta_pequena").'" encuesta_pos="3"]') ?>
 				</div>
 				<?php include( locate_template( 'template-parts/sections/section-encuesta.php', false, false ) ); ?>
 				<div class="col-3 order-2" data-quantity="2" data-offset="3">
