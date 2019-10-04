@@ -47,9 +47,13 @@ $encuesta_grande = get_field('encuesta_grande');
 				if($encuesta_grande){
 					include( locate_template( 'template-parts/sections/section-encuesta.php', false, false ) ); 
 				}else if($encuesta_pequena){
+					?><div class="col-3"> <?php
 					echo do_shortcode('[posts cantidad="3" offset="2"]'); // Con encuesta pequeña sin encuesta grande - offset 2 total: 5
+					?></div> <?php 
 				}else{
+					?><div class="col-3"> <?php
 					echo do_shortcode('[posts cantidad="3" offset="3"]'); // Sin encuestas offset 3 total: 6
+					?></div> <?php 
 				}
 				?>
 				<div class="col-3 order-2" data-quantity="2" data-offset="3">
