@@ -1374,6 +1374,35 @@ function excluir_trending_categorias( $query ) {
 }
 add_action( 'pre_get_posts', 'excluir_trending_categorias', 1 );
 
+function excluir_trending_opinion( $query ) {
+    if ( is_admin() || ! $query->is_main_query() )
+        return;
+
+    if ( $query->is_archive() && is_post_type_archive('opinion') ) {
+      $term = get_queried_object_id();
+
+      $excluded_args = array(
+          'post_type' => 'opinion',
+          'posts_per_page' => 1
+          'orderby' => 'date',
+          'order' => 'DESC',
+          'meta_query' => array(
+            array(
+                'key' => 'trending',
+                'value' => 'si',
+                'compare' => '='
+            )
+          )
+      );
+      $excluded = get_posts($excluded_args);
+      $excluded = $excluded[0]->ID;
+
+      $query->set( 'post__not_in', array( $excluded ) );
+    }
+
+}
+add_action( 'pre_get_posts', 'excluir_trending_categorias', 1 );
+
 // EXCLUIR POSTS DESTACADOS DE LAS CATEGORIAS Y AGREGAR OPINIONES A LOS ARCHIVOS DE CATEGORIAS
 function only_show_author_posts_in_author_archive( $query ) {
     if ( is_admin() || ! $query->is_main_query() )
