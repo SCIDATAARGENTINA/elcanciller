@@ -1014,7 +1014,7 @@ function mostrar_posts($atts){
   $title = get_the_title($a['postid']);
   $link = get_the_permalink($a['postid']);
   $excluded_args = array(
-      'post_type' => 'post',
+      'post_type' => array('post', 'opinion'),
       'posts_per_page' => 1,
       'orderby' => 'date',
       'order' => 'DESC',
@@ -1028,11 +1028,10 @@ function mostrar_posts($atts){
    );
   $excluded = get_posts($excluded_args);
   $excluded = $excluded[0]->ID;
-  //echo '<pre>'; print_r($excluded); echo '</pre>';
 
   // Setup arguments.
   $args = array(
-      'post_type' => 'post',
+      'post_type' => array('post', 'opinion'),
       'posts_per_page' => $a['cantidad'],
       'offset' => $a['offset'],
       'post__not_in' => array($excluded)
@@ -1349,7 +1348,7 @@ function excluir_trending_categorias( $query ) {
       $term = get_queried_object_id();
 
       $excluded_args = array(
-          'post_type' => 'post',
+          'post_type' => array('post', 'opinion'),
           'posts_per_page' => 1,
           'cat' => $term,
           'orderby' => 'date',
