@@ -4985,6 +4985,8 @@ height: 200px !important;
 
 /* AGREGADO LUCAS */ 
 
+.live-section{text-align: center;}
+
 .timeline-InformationCircle-widgetParent , .timeline-Footer {
     display:none !important;
 }
