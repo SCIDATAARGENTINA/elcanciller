@@ -1383,7 +1383,7 @@ function excluir_trending_opinion( $query ) {
 
       $excluded_args = array(
           'post_type' => 'opinion',
-          'posts_per_page' => 1
+          'posts_per_page' => 1,
           'orderby' => 'date',
           'order' => 'DESC',
           'meta_query' => array(
