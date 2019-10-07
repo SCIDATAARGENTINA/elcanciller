@@ -1044,8 +1044,12 @@ function mostrar_posts($atts){
     while($base_query->have_posts()){
       $base_query->the_post();
       $i++;
+      if(get_post_type() == 'opinion'){
+        get_template_part( 'template-parts/content/content-opinion');
+      }else{
+        get_template_part( 'template-parts/content/content');
+      }
 
-      get_template_part( 'template-parts/content/content' );
 
       if($a['encuesta_id'] != false && $i == intval($a['encuesta_pos'])){
         
