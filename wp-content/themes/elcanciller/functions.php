@@ -1401,7 +1401,7 @@ function excluir_trending_opinion( $query ) {
     }
 
 }
-add_action( 'pre_get_posts', 'excluir_trending_opinion', 1 );
+add_action( 'pre_get_posts', 'excluir_trending_opinion', 2 );
 
 // EXCLUIR POSTS DESTACADOS DE LAS CATEGORIAS Y AGREGAR OPINIONES A LOS ARCHIVOS DE CATEGORIAS
 function only_show_author_posts_in_author_archive( $query ) {
