@@ -14,7 +14,7 @@
 <div class="trending-post">
    <?php
    $args = array(
-      'post_type' => 'post',
+      'post_type' => array('post', 'opinion'),
       'posts_per_page' => 1,
       'orderby' => 'date',
       'order' => 'DESC',
