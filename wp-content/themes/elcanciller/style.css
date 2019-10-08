@@ -1611,7 +1611,8 @@ ul.tagposts-list li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    white-space: pre-line;
 }
 
 
