@@ -842,6 +842,9 @@ input:-internal-autofill-selected {
 .trending-post .entry img {
     vertical-align: top;
 }
+.trending-post .entry-img{
+    position: relative;
+}
 
 .trending-post .entry-img img {
     width: 100%;
