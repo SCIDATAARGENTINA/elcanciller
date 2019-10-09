@@ -850,15 +850,8 @@ input:-internal-autofill-selected {
     width: 100%;
 }
 
-.trending-post .entry-img .post-author a img{
-    width: 30px !important;
-}
-
-.trending-post .entry-img .post-author{
-    position: absolute;
-    bottom: 15px;
-    right: 0px;
-    z-index: 1;
+.trending-post .post-author{
+    color: #b29f93;
 }
 
 
