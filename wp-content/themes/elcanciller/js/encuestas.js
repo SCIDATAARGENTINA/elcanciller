@@ -91,10 +91,13 @@ jQuery(document).ready(function($) {
                     percentVotos = "100";
                 }
 
-                if (encuestaEl.hasClass('card')) {
+                if (encuestaEl.hasClass('card')){
+
+                    barraTotal = '<div class="barraTotal"></div>';
 
                     el.find('.total .result').text(Math.round(percentVotos) + '%');
-
+                    el.append(barraTotal);
+                    barraTotal.css('width', Math.round(percentVotos) + '%')
                     el.addClass('voted');
                     return;
                 }
