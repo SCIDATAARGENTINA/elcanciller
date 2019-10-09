@@ -20,10 +20,14 @@ $cat_link = get_term_link($categories[0]->term_id );
 <div class="entry">
 <div class="entry-img">
     <div class="user-actions">
-        
         <button class="shuffle">
             <i aria-hidden="true" class="fa fa-random" style="color: #b29f93;"></i>
         </button>
+    </div>
+    <div class="post-author">
+        <a style="background-color: #e7d117" href="http://142.93.24.13/author/diegogenoud/">
+        <img src="http://142.93.24.13/wp-content/uploads/2019/09/Diego-Genoud-Autor.png" width="26" height="26" alt="Diego Genoud" class="avatar avatar-26 wp-user-avatar wp-user-avatar-26 alignnone photo">			<span>Diego Genoud</span>
+        </a>
     </div>
     <a href="<?php the_permalink(); ?>"><img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>"></a>
 </div>
