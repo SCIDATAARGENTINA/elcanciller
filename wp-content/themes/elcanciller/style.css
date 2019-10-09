@@ -850,6 +850,10 @@ input:-internal-autofill-selected {
     width: 100%;
 }
 
+.trending-post .entry-img .post-author a img{
+    width: 30px !important;
+}
+
 
 .trending-post .titular h2 {
     font-size: 40px; 
