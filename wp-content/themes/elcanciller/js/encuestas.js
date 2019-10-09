@@ -93,7 +93,7 @@ jQuery(document).ready(function($) {
 
                 if (encuestaEl.hasClass('card')){
 
-                    barraTotal = '<div class="barraTotal"></div>';
+                    let barraTotal = '<div class="barraTotal"></div>';
 
                     el.find('.total .result').text(Math.round(percentVotos) + '%');
                     el.append(barraTotal);
