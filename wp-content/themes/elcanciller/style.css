@@ -4192,6 +4192,7 @@ article .post-content .has-content-area {
 }
 
 .encuesta.card .opcion::before{
+    content: '';
     position: absolute;
     display: block;
     height: 100%;
@@ -4199,6 +4200,7 @@ article .post-content .has-content-area {
     transition: 300ms ease;
     background: #e7d117;
     opacity: 0.3;
+    left: 0;
 }
 
 .encuesta.card .num-opcion {
