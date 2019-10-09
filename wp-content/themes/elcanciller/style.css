@@ -882,16 +882,9 @@ input:-internal-autofill-selected {
 .trending-post .user-actions {
     display: inline-block;
     margin-top: 15px;
-}
-
-@media only screen and (min-width: 991px) {
-
-.trending-post .user-actions {
-    display: inline-block;
-    margin-top: 15px;
     position: absolute;
-    z-index: 1;
-}
+    right: 0px;
+    top: 0px;
 }
 
 .trending-post .user-actions button{
