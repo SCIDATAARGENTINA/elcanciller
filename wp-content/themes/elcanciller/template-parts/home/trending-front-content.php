@@ -26,7 +26,7 @@ $cat_link = get_term_link($categories[0]->term_id );
     </div>
     <?php if(get_the_author_meta('ID') != 81 && get_field('show_author') == 'si'){ ?>
     <div class="post-author" >
-        <a style="background-color: <?php echo $cat_color; ?>" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )) ?>">
+        <a style="background-color: #e7d117" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )) ?>">
         <?php echo get_avatar( get_the_author_meta('ID'), 26 ); ?>
         <span><?php echo get_the_author(); ?></span>
         </a>
