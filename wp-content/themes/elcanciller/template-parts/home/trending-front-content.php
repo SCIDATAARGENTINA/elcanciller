@@ -24,6 +24,12 @@ $cat_link = get_term_link($categories[0]->term_id );
 
 <div class="entry">
 <div class="entry-img">
+    <div class="user-actions">
+        
+        <button class="shuffle">
+            <i aria-hidden="true" class="fa fa-random" style="color: #b29f93;"></i>
+        </button>
+    </div>
     <a href="<?php the_permalink(); ?>"><img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>"></a>
 </div>
 <?php get_template_part('template-parts/comments/comments', 'sharer') ?>
