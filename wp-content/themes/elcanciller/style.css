@@ -4191,6 +4191,16 @@ article .post-content .has-content-area {
     background: rgba(0, 0, 0, 0.60);
 }
 
+.encuesta.card .opcion::before{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: 300ms ease;
+    background: #e7d117;
+    opacity: 0.3;
+}
+
 .encuesta.card .num-opcion {
     display: flex;
     justify-content: center;
@@ -4223,6 +4233,8 @@ article .post-content .has-content-area {
     opacity: 1;
     transform: translateX(0px);
 }
+
+
 
 .total .result {
     font-size: 10px;
