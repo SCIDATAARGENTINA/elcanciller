@@ -811,7 +811,9 @@ input:-internal-autofill-selected {
 .trending-post .category a {
     color: #e7d117 !important;
 }
-
+.trending-post .titulo{
+    position: relative;
+}
 .trending-post .titulo a{
     display: block;
 }
@@ -848,6 +850,12 @@ input:-internal-autofill-selected {
 
 .trending-post .entry-img img {
     width: 100%;
+}
+
+.trending-post .post-author{
+    position: absolute;
+    left: 0px;
+    top: -18px;
 }
 
 .trending-post .post-author a span{
