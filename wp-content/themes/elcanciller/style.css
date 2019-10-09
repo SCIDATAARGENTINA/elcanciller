@@ -884,18 +884,18 @@ input:-internal-autofill-selected {
 
 .trending-post .user-actions {
     display: inline-block;
-    margin-top: 15px;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 15px;
+    top: 15px;
+    z-index: 1;
 }
 
 .trending-post .user-actions button{
     display: inline-block;
-    background: transparent;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
+    border-radius: 50%;
 }
 
 
