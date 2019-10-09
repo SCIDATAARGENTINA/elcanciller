@@ -1187,6 +1187,7 @@ function shuffle_ajax_handler(){
       'post_type' => 'post',
       'posts_per_page' => 1,
       'orderby' => 'rand',
+      'post_status' => 'publish',
       'date_query' => array(
         array(
             'after' => '1 day ago'
