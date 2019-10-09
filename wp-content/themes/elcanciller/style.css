@@ -4185,6 +4185,7 @@ article .post-content .has-content-area {
     display: flex;
     justify-content: space-between;
     height: 37px;
+    overflow: hidden;
 }
 
 .encuesta.card .opcion:hover {
@@ -4201,6 +4202,7 @@ article .post-content .has-content-area {
     background: #e7d117;
     opacity: 0.3;
     left: 0;
+    top: 0;
 }
 
 .encuesta.card .num-opcion {
