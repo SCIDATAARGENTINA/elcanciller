@@ -97,7 +97,7 @@ jQuery(document).ready(function($) {
 
                     el.find('.total .result').text(Math.round(percentVotos) + '%');
                     el.append(barraTotal);
-                    barraTotal.css('width', Math.round(percentVotos) + '%')
+                    el.find('.barraTotal').css('width', Math.round(percentVotos) + '%');
                     el.addClass('voted');
                     return;
                 }
