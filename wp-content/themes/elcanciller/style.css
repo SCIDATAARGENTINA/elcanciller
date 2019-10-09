@@ -4203,6 +4203,7 @@ article .post-content .has-content-area {
     background: #e7d117;
     left: 0;
     top: 0;
+    box-shadow: inset 10px 3px 10px rgba(0,0,0,0.16), inset 10px -3px 10px rgba(0,0,0,0.16);
 }
 
 .encuesta.card .num-opcion {
