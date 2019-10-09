@@ -24,11 +24,14 @@ $cat_link = get_term_link($categories[0]->term_id );
             <i aria-hidden="true" class="fa fa-random" style="color: #b29f93;"></i>
         </button>
     </div>
-    <div class="post-author">
-        <a style="background-color: #e7d117" href="http://142.93.24.13/author/diegogenoud/">
-        <img src="http://142.93.24.13/wp-content/uploads/2019/09/Diego-Genoud-Autor.png" width="26" height="26" alt="Diego Genoud" class="avatar avatar-26 wp-user-avatar wp-user-avatar-26 alignnone photo">			<span>Diego Genoud</span>
+    <?php if(get_the_author_meta('ID') != 81 && get_field('show_author') == 'si'){ ?>
+    <div class="post-author" >
+        <a style="background-color: <?php echo $cat_color; ?>" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )) ?>">
+        <?php echo get_avatar( get_the_author_meta('ID'), 26 ); ?>
+        <span><?php echo get_the_author(); ?></span>
         </a>
-    </div>
+    </div><!-- post-author -->
+    <?php } ?>
     <a href="<?php the_permalink(); ?>"><img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>"></a>
 </div>
 <?php get_template_part('template-parts/comments/comments', 'sharer') ?>
