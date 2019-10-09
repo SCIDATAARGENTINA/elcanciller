@@ -4199,7 +4199,6 @@ article .post-content .has-content-area {
     display: block;
     height: 100%;
     width: 0;
-    transition: 300ms ease;
     background: #e7d117;
     left: 0;
     top: 0;
