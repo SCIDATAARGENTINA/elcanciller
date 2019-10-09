@@ -3354,6 +3354,9 @@ article .post-content .has-content-area {
     overflow-x: hidden;
 }
 
+.wp-caption{
+    max-width: 100%;
+}
 
 /*COMMENTS*/
 
