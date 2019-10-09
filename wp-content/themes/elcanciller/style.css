@@ -858,6 +858,15 @@ input:-internal-autofill-selected {
     top: -23px;
 }
 
+@media(max-width: 768px){
+    .trending-post .post-author{
+        position: static;
+        left: 0px;
+        top: -23px;
+        justify-content: flex-start;
+    }
+}
+
 .trending-post .post-author a span{
     color: #b29f93 !important;
 }
