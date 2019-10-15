@@ -2,8 +2,9 @@ jQuery(document).ready(function($) {
 
 
     let getSlider = (sliderId) => {
+        let URLdomain = 'http://' + window.location.host;
 
-        return $.get(`http://elcanciller/wp-json/wp/v2/posts/${sliderId}`);
+        return $.get(`${URLdomain}/wp-json/wp/v2/posts/${sliderId}`);
 
     };
 
