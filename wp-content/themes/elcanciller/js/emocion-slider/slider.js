@@ -139,7 +139,7 @@ jQuery(document).ready(function($) {
 
             if(sliderId == data.sliderId){
 
-                slide[0].noUiSlider.set([data.val]);
+                slide[0].noUiSlider.set([data.val]);  
 
             }
             
