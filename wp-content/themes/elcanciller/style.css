@@ -5008,10 +5008,10 @@ height: 200px !important;
 @media only screen and (min-width: 991px) {
 
 .onlydesktop{
-    display:block;
+    display:block !important;
 }
 .onlymobile{
-    display:none;
+    display:none !important;
 }
 
 }
