@@ -56,18 +56,18 @@ $encuesta_grande = get_field('encuesta_grande');
 				}
 				?>
 				<div class="col-3 order-2" data-quantity="2" data-offset="3">
-					<div id="publi1">
-						<?php the_field('anuncio_1', $page_id) ?>
-					</div>
+					<!-- <div id="publi1">
+						<?php //the_field('anuncio_1', $page_id) ?>
+					</div>-->
 					<?php 
 					if ($encuesta_pequena && $encuesta_grande){
-						echo do_shortcode('[posts cantidad="2" offset="2"]'); // Con encuesta grande y pequeña offset: 2 total: 4
+						echo do_shortcode('[posts cantidad="3" offset="2"]'); // Con encuesta grande y pequeña offset: 2 total: 5
 					}else if($encuesta_pequena && !$encuesta_grande){ 
-						echo do_shortcode('[posts cantidad="2" offset="5"]'); // Con encuesta pequeña sin encuesta grande - offset 5 total: 7 
+						echo do_shortcode('[posts cantidad="3" offset="5"]'); // Con encuesta pequeña sin encuesta grande - offset 5 total: 8 
 					}else if(!$encuesta_pequena && $encuesta_grande){
-						echo do_shortcode('[posts cantidad="2" offset="3"]'); // Sin encuesta pequeña con encuesta grande - offset 3 total: 5
+						echo do_shortcode('[posts cantidad="3" offset="3"]'); // Sin encuesta pequeña con encuesta grande - offset 3 total: 6
 					}else {
-						echo do_shortcode('[posts cantidad="2" offset="6"]'); // Sin encuestas - offset 6 total: 8
+						echo do_shortcode('[posts cantidad="3" offset="6"]'); // Sin encuestas - offset 6 total: 9
 					}
 					?>
 				</div>
@@ -85,36 +85,36 @@ $encuesta_grande = get_field('encuesta_grande');
 			<div class="ad-long"><?php the_field('anuncio_4', $page_id) ?></div>
 			<?php get_template_part('template-parts/sections/section', 'videos') ?>
 			<div class="ad-long"><?php the_field('anuncio_5', $page_id) ?></div>
-			<div class="col-3" data-quantity="2" data-offset="5">
-				<div id="publi2">
-					<?php the_field('anuncio_6', $page_id) ?>
-				</div>
+			<div class="col-3">
+				<!--<div id="publi2">
+					<?php// the_field('anuncio_6', $page_id) ?>
+				</div> -->
 				<?php
 				if ($encuesta_pequena && $encuesta_grande){
-					echo do_shortcode('[posts cantidad="2" offset="4"]'); // Con encuesta grande y pequeña offset: 4 total: 6
+					echo do_shortcode('[posts cantidad="3" offset="5"]'); // Con encuesta grande y pequeña offset: 5 total: 8
 				}else if($encuesta_pequena && !$encuesta_grande){ 
-					echo do_shortcode('[posts cantidad="2" offset="7"]'); // Con encuesta pequeña sin encuesta grande - offset 7 total: 9 
+					echo do_shortcode('[posts cantidad="3" offset="8"]'); // Con encuesta pequeña sin encuesta grande - offset 8 total: 11
 				}else if(!$encuesta_pequena && $encuesta_grande){
-					echo do_shortcode('[posts cantidad="2" offset="5"]'); // Sin encuesta pequeña con encuesta grande - offset 5 total: 7
+					echo do_shortcode('[posts cantidad="3" offset="6"]'); // Sin encuesta pequeña con encuesta grande - offset 6 total: 9
 				}else {
-					echo do_shortcode('[posts cantidad="2" offset="8"]'); // Sin encuestas - offset 8 total: 10
+					echo do_shortcode('[posts cantidad="3" offset="9"]'); // Sin encuestas - offset 9 total: 12
 				}
 				?>
 			</div>
 			<div class="col-1-2">
-				<div class="advertical">
-					<?php the_field('anuncio_7', $page_id) ?>
-				</div>
+				<!-- <div class="advertical">
+					<?php // the_field('anuncio_7', $page_id) ?>
+				</div>  -->
 				<div class="col-2-2">
 				<?php
 				if ($encuesta_pequena && $encuesta_grande){
-					echo do_shortcode('[posts cantidad="4" offset="6"]'); // Con encuesta grande y pequeña offset: 6 total: 10
+					echo do_shortcode('[posts cantidad="6" offset="8"]'); // Con encuesta grande y pequeña offset: 8 total: 14
 				}else if($encuesta_pequena && !$encuesta_grande){ 
-					echo do_shortcode('[posts cantidad="4" offset="9"]'); // Con encuesta pequeña sin encuesta grande - offset 9 total: 13 
+					echo do_shortcode('[posts cantidad="6" offset="11"]'); // Con encuesta pequeña sin encuesta grande - offset 11 total: 17 
 				}else if(!$encuesta_pequena && $encuesta_grande){
-					echo do_shortcode('[posts cantidad="4" offset="7"]'); // Sin encuesta pequeña con encuesta grande - offset 7 total: 11
+					echo do_shortcode('[posts cantidad="6" offset="9"]'); // Sin encuesta pequeña con encuesta grande - offset 9 total: 15
 				}else {
-					echo do_shortcode('[posts cantidad="4" offset="10"]'); // Sin encuestas - offset 10 total: 14
+					echo do_shortcode('[posts cantidad="6" offset="12"]'); // Sin encuestas - offset 12 total: 18
 				}
 				?>
 				</div>				
