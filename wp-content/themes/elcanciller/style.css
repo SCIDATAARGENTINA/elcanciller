@@ -5015,6 +5015,16 @@ height: 200px !important;
 }
 
 }
+@media only screen and (max-width: 991px) {
+
+    .onlydesktop{
+        display:none; 
+    }
+    .onlymobile{
+        display:block; 
+    }
+    
+    }
 
 /* AGREGADO LUCAS */ 
 
