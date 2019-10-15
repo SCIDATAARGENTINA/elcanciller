@@ -30,34 +30,7 @@
 	var googletag = googletag || {};
   	googletag.cmd = googletag.cmd || [];
 	googletag.cmd.push(function() {
-		googletag.defineSlot('/21749555895/Nota-Superior-970x90', [970, 90], 'div-gpt-ad-1539356742520-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Nota-Superior-330x350', [[250, 250],[250, 208],[330, 350]], 'div-gpt-ad-1539356838606-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Nota-Lateral-330x350', [[250, 250],[250, 208],[330, 350]], 'div-gpt-ad-1539356874237-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Nota-Lateral-300x600', [300, 600], 'div-gpt-ad-1539356910114-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Superior-970x90', [[728, 90],[970, 90]], 'div-gpt-ad-1539356941944-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Superior-330x350', [330, 350], 'div-gpt-ad-1539356967377-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionSeComenta-250x250', [[250, 250],[250, 208]], 'div-gpt-ad-1539357001041-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionPolitica-250x250', [[250, 250],[250, 208],[200, 200],[300, 250]], 'div-gpt-ad-1539357099510-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionPerfilados-250x250', [[250, 250],[250, 208]], 'div-gpt-ad-1539357152674-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionEstaPasando-250x250', [[250, 250],[250, 208],[200, 200],[300, 250]], 'div-gpt-ad-1539357193770-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionDeportes-250x250', [[200, 200],[250, 250],[250, 208]], 'div-gpt-ad-1539357249935-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Inferior-970x90', [970, 90], 'div-gpt-ad-1539357298531-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Inferior-330x350', [330, 350], 'div-gpt-ad-1539357335280-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-CancillerLive-970x90', [970, 90], 'div-gpt-ad-1539357363691-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionResistiendoConStyle-250x250', [[250, 250], [234, 60], [250, 208], [200, 200]], 'div-gpt-ad-1565620681957-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionEntreSelfies-250x250', [[250, 250], [250, 208], [200, 200]], 'div-gpt-ad-1539787334136-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionDesfileDePoder-250x250', [[200, 200], [250, 208], [250, 250]], 'div-gpt-ad-1540992335998-0').addService(googletag.pubads());
-		// googletag.defineSlot('/21749555895/Home-Lateral-SeccionPostCreditos-250x250', [[250, 208], [200, 200], [250, 250], [330, 350]], 'div-gpt-ad-1543340613980-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Nota-Lateral-2-330x350', [[200, 200], [330, 350],[300, 250]], 'div-gpt-ad-1549900487921-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Nota-Lateral-2-300x600', [300, 600], 'div-gpt-ad-1549913091042-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionPressStart-250x250', [[200, 200], [250, 208], [250, 250]], 'div-gpt-ad-1556238378054-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionInternacional-250x250', [[200, 200], [300, 250], [250, 208], [250, 250]], 'div-gpt-ad-1557165803761-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-Politica-234x60', [234, 60], 'div-gpt-ad-1557312301298-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionDesdeLaTrinchera-250x250', [[200, 200], [250, 250], [208, 250], [300, 300], [300, 250]], 'div-gpt-ad-1559657822462-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionEstaPasando2', [[200, 200], [300, 250], [200, 208], [250, 250]], 'div-gpt-ad-1559747926255-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionPolitica2', [[250, 250], [200, 208], [200, 200],[300, 250],[300, 300],[350, 300]], 'div-gpt-ad-1559748137237-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Nota-Lateral-330x350-2', [[300, 300], [330, 350]], 'div-gpt-ad-1559749382407-0').addService(googletag.pubads());
-
+		googletag.defineSlot('/21749555895/Home-Lateral-SeccionPostCreditos-250x250', [[250, 208], [200, 200], [250, 250], [330, 350]], 'div-gpt-ad-1543340613980-0').addService(googletag.pubads());
 	googletag.pubads().enableSingleRequest();
 	googletag.pubads().collapseEmptyDivs();
 		googletag.enableServices();
