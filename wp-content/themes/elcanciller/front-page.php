@@ -101,11 +101,10 @@ $encuesta_grande = get_field('encuesta_grande');
 				}
 				?>
 			</div>
-			<div class="col-1-2">
+			<div class="col-3">
 				<!-- <div class="advertical">
 					<?php // the_field('anuncio_7', $page_id) ?>
 				</div>  -->
-				<div class="col-2-2">
 				<?php
 				if ($encuesta_pequena && $encuesta_grande){
 					echo do_shortcode('[posts cantidad="6" offset="8"]'); // Con encuesta grande y pequeña offset: 8 total: 14
@@ -117,7 +116,6 @@ $encuesta_grande = get_field('encuesta_grande');
 					echo do_shortcode('[posts cantidad="6" offset="12"]'); // Sin encuestas - offset 12 total: 18
 				}
 				?>
-				</div>				
 			</div>
 		</div><!-- outer-container -->
 
