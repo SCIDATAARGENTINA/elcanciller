@@ -811,7 +811,9 @@ input:-internal-autofill-selected {
 .trending-post .category a {
     color: #e7d117 !important;
 }
-
+.trending-post .titulo{
+    position: relative;
+}
 .trending-post .titulo a{
     display: block;
 }
@@ -842,9 +844,31 @@ input:-internal-autofill-selected {
 .trending-post .entry img {
     vertical-align: top;
 }
+.trending-post .entry-img{
+    position: relative;
+}
 
 .trending-post .entry-img img {
     width: 100%;
+}
+
+.trending-post .post-author{
+    position: absolute;
+    left: 0px;
+    top: -23px;
+}
+
+@media(max-width: 768px){
+    .trending-post .post-author{
+        position: static;
+        left: 0px;
+        top: -23px;
+        justify-content: flex-start;
+    }
+}
+
+.trending-post .post-author a span{
+    color: #b29f93 !important;
 }
 
 
@@ -881,32 +905,20 @@ input:-internal-autofill-selected {
 
 .trending-post .user-actions {
     display: inline-block;
-    margin-top: 15px;
-}
-
-@media only screen and (min-width: 991px) {
-
-.trending-post .user-actions {
-    display: inline-block;
-    margin-top: 15px;
     position: absolute;
-    top: 25%;
-    left: 90%;
+    right: 15px;
+    top: 15px;
     z-index: 1;
-    background-color: #fff;
-    padding: 1% 1% 1% 1.5%;
-    border-radius: 100%;
-    height: 50px;
-    width: 50px;
-}
 }
 
 .trending-post .user-actions button{
     display: inline-block;
-    background: transparent;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
 }
+
 
 /* END FRONT PAGE TRENDING POST*/
 
@@ -3342,6 +3354,9 @@ article .post-content .has-content-area {
     overflow-x: hidden;
 }
 
+.wp-caption{
+    max-width: 100%;
+}
 
 /*COMMENTS*/
 
@@ -4170,10 +4185,24 @@ article .post-content .has-content-area {
     display: flex;
     justify-content: space-between;
     height: 37px;
+    overflow: hidden;
 }
 
 .encuesta.card .opcion:hover {
     background: rgba(0, 0, 0, 0.60);
+}
+
+.encuesta.card .opcion .barraTotal{
+    content: '';
+    opacity: 0.7;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0;
+    background: #e7d117;
+    left: 0;
+    top: 0;
+    box-shadow: inset 10px 3px 10px rgba(0,0,0,0.16), inset 10px -3px 10px rgba(0,0,0,0.16);
 }
 
 .encuesta.card .num-opcion {
@@ -4192,6 +4221,7 @@ article .post-content .has-content-area {
 
 .encuesta.card .titulo-opcion {
     line-height: 22px;
+    z-index: 2;
 }
 
 .encuesta.card .total {
@@ -4208,6 +4238,8 @@ article .post-content .has-content-area {
     opacity: 1;
     transform: translateX(0px);
 }
+
+
 
 .total .result {
     font-size: 10px;
