@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
 
     let getSlider = (sliderId) => {
 
-        return $.get(`http://142.93.24.13/wp-json/wp/v2/posts/${sliderId}`);
+        return $.get(`http://elcanciller/wp-json/wp/v2/posts/${sliderId}`);
 
     };
 
@@ -175,7 +175,7 @@ jQuery(document).ready(function($) {
 
             let handleUi = slide.find('.noUi-handle');
 
-            handleUi.css('background-image', 'url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
+            handleUi.css('background-image', 'url(http://elcanciller.com/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
 
             let connectUi = slide.find('.noUi-connect');
 
