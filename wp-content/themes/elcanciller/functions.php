@@ -893,7 +893,7 @@ function slider_scripts() {
 	global $wp_query; 
  
 	// register our main script but do not enqueue it yet
-	wp_register_script( 'emocion-slider-js', get_stylesheet_directory_uri() . '/js/emocion-slider/slider.js', array('jquery') );
+	//wp_register_script( 'emocion-slider-js', get_stylesheet_directory_uri() . '/js/emocion-slider/slider.js', array('jquery') );
  
 	// now the most interesting part
 	// we have to pass parameters to myloadmore.js script but we can get the parameters values only in PHP
