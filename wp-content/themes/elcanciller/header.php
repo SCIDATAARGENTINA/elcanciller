@@ -47,7 +47,7 @@
 		googletag.defineSlot('/21749555895/Home-Lateral-SeccionResistiendoConStyle-250x250', [[250, 250], [234, 60], [250, 208], [200, 200]], 'div-gpt-ad-1565620681957-0').addService(googletag.pubads());
 		googletag.defineSlot('/21749555895/Home-Lateral-SeccionEntreSelfies-250x250', [[250, 250], [250, 208], [200, 200]], 'div-gpt-ad-1539787334136-0').addService(googletag.pubads());
 		googletag.defineSlot('/21749555895/Home-Lateral-SeccionDesfileDePoder-250x250', [[200, 200], [250, 208], [250, 250]], 'div-gpt-ad-1540992335998-0').addService(googletag.pubads());
-		googletag.defineSlot('/21749555895/Home-Lateral-SeccionPostCreditos-250x250', [[250, 208], [200, 200], [250, 250], [330, 350]], 'div-gpt-ad-1543340613980-0').addService(googletag.pubads());
+		// googletag.defineSlot('/21749555895/Home-Lateral-SeccionPostCreditos-250x250', [[250, 208], [200, 200], [250, 250], [330, 350]], 'div-gpt-ad-1543340613980-0').addService(googletag.pubads());
 		googletag.defineSlot('/21749555895/Nota-Lateral-2-330x350', [[200, 200], [330, 350],[300, 250]], 'div-gpt-ad-1549900487921-0').addService(googletag.pubads());
 		googletag.defineSlot('/21749555895/Nota-Lateral-2-300x600', [300, 600], 'div-gpt-ad-1549913091042-0').addService(googletag.pubads());
 		googletag.defineSlot('/21749555895/Home-Lateral-SeccionPressStart-250x250', [[200, 200], [250, 208], [250, 250]], 'div-gpt-ad-1556238378054-0').addService(googletag.pubads());

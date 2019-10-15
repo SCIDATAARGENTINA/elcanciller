@@ -47,14 +47,17 @@
   <?php echo do_shortcode('[contador postid=48914]') ?>
 </div>
 <div class="widget ad-lateral-sidebar">
-<!-- publicidades Barras y Juego ilegal -->
-  <!-- /21749555895/Home-Lateral-SeccionEstaPasando-250x250 -->
-  <div id='div-gpt-ad-1539357193770-0'>
-    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539357193770-0'); });</script>
+
+  <div id="publicidadPBABarrasSeccion">
+    <a href="https://www.gba.gob.ar/seguridad?utm_source=medios&utm_medium=cpc&utm_campaign=seguridad">
+      <img src="http://elcanciller.com/wp-content/uploads/2019/10/pbabarras1.gif">
+    </a>
   </div>
-  <!-- /21749555895/Home-Lateral-SeccionEstaPasando2 -->
-  <div id='div-gpt-ad-1559747926255-0' style="margin-top: 10%;">
-    <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559747926255-0'); });</script>
+
+  <div id="publicidadPBAJuegoSeccion">
+    <a href="https://www.gba.gob.ar/seguridad?utm_source=medios&utm_medium=cpc&utm_campaign=seguridad">
+      <img src="http://elcanciller.com/wp-content/uploads/2019/10/pbajuego1.gif">
+    </a>
   </div>
-  <!--<a href="https://www.gba.gob.ar/seguridad?utm_source=medios&utm_medium=cpc&utm_campaign=seguridad"><img src="https://elcanciller.com/files/juego.gif"></a>-->
+
 </div>

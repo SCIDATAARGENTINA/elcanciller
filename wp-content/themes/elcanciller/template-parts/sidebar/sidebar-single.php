@@ -45,24 +45,17 @@
 </div>
 
 <div class="widget ad-lateral-sidebar onlydesktop">
-  <!-- /21749555895/Nota-Lateral-330x350 -->
-  <div id='div-gpt-ad-1539356874237-0'>
-    <script>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356874237-0'); });
-    </script>
-  </div>
-  <!-- /21749555895/Nota-Lateral-330x350-2 -->
-  <div id='div-gpt-ad-1559749382407-0' style="margin-top: 10%;">
-    <script>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559749382407-0'); });
-    </script>
-  </div>
-  <!-- /21749555895/Nota-Lateral-300x600 -->
-  <div id='div-gpt-ad-1539356910114-0' style="margin-top: 10%;">
-    <script>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356910114-0'); });
-    </script>
-  </div>
-  <!-- nota-a-mano-330x350 -->
-  <!-- <a href="https://www.gba.gob.ar/seguridad?utm_source=medios&utm_medium=cpc&utm_campaign=seguridad"><img src="https://elcanciller.com/files/juego.gif"></a>-->
+
+<div id="publicidadCABANota">
+  <a href="https://www.buenosaires.gob.ar/salud">
+    <img src="http://elcanciller.com/wp-content/uploads/2019/10/CABAmobile1.jpeg">
+  </a>
+</div>
+
+<div id="publicidadBcoProvinciaNota">
+  <a href="https://www.bancoprovincia.com.ar/web">
+    <img src="http://elcanciller.com/wp-content/uploads/2019/10/PBAtasafija1.gif">
+  </a>
+</div>
+  
 </div>

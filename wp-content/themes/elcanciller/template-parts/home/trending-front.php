@@ -40,17 +40,12 @@
    <?php endif ?>
 </div>
 <div class="ad-long">
-   <!-- /21749555895/Home-Superior-970x90 -->
-   <div id='div-gpt-ad-1539356941944-0' style='height:90px; width:728px;margin: 0 auto;    margin-bottom: 2%;' >
-      <script>
-         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356941944-0'); });
-      </script>
+
+   <div id="publicidadCABANota">
+      <a href="https://www.buenosaires.gob.ar/salud">
+         <img src="http://elcanciller.com/wp-content/uploads/2019/10/CABAdesktop1.jpeg" class="onlydesktop">
+         <img src="http://elcanciller.com/wp-content/uploads/2019/10/CABAmobile1.jpeg" class="onlymobile">
+      </a>
    </div>
 
-   <!-- /21749555895/Home-Superior-330x350 -->
-   <div id='div-gpt-ad-1539356967377-0' style='display: flex;align-items: center;flex-direction: column;justify-content: center;margin: 0 auto;' >
-      <script>
-         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539356967377-0'); });
-      </script>
-   </div>
 </div>
