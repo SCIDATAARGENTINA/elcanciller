@@ -52,10 +52,10 @@
   </a>
 </div>
 
-<div id="publicidadBcoProvinciaNota">
+<!--<div id="publicidadBcoProvinciaNota">
   <a href="https://www.bancoprovincia.com.ar/web">
     <img src="http://elcanciller.com/wp-content/uploads/2019/10/PBAtasafija1.gif">
   </a>
-</div>
+</div>-->
   
 </div>
