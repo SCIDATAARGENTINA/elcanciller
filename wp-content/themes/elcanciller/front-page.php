@@ -61,7 +61,7 @@ $encuesta_grande = get_field('encuesta_grande');
 					</div>-->
 					<?php 
 					if ($encuesta_pequena && $encuesta_grande){
-						echo do_shortcode('[posts cantidad="6" offset="2"]'); // Con encuesta grande y pequeña offset: 2 total: 5
+						echo do_shortcode('[posts cantidad="3" offset="2"]'); // Con encuesta grande y pequeña offset: 2 total: 5
 					}else if($encuesta_pequena && !$encuesta_grande){ 
 						echo do_shortcode('[posts cantidad="3" offset="5"]'); // Con encuesta pequeña sin encuesta grande - offset 5 total: 8 
 					}else if(!$encuesta_pequena && $encuesta_grande){
