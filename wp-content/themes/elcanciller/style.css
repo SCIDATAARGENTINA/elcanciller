@@ -2039,8 +2039,8 @@ ul.tagposts-list li {
     font-size: 12px;
     font-family: 'Bree Serif', serif;
     text-transform: uppercase;
-}
-
+} 
+ 
 .post-rendered.trending::after {
     content: url('https://elcanciller.com/wp-content/uploads/2019/07/fire-blanco.svg');
     width: 54px;
@@ -2053,8 +2053,8 @@ ul.tagposts-list li {
     left: 0;
     padding: 10px 15px;
 }
-
-
+ 
+ 
 /* HOVER EFFECT*/
 
 .post-rendered.show-author:hover .render-author {
