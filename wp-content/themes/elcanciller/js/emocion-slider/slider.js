@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
 
     let getSlider = (sliderId) => {
-        let URLdomain = 'http://' + window.location.host;
+        let URLdomain = 'https://' + window.location.host;
 
         return $.get(`${URLdomain}/wp-json/wp/v2/posts/${sliderId}`);
 
@@ -176,7 +176,7 @@ jQuery(document).ready(function($) {
 
             let handleUi = slide.find('.noUi-handle');
 
-            handleUi.css('background-image', 'url(http://elcanciller.com/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
+            handleUi.css('background-image', 'url(https://elcanciller.com/wp-content/uploads/2019/09/emoticon-' + val + '.svg)');
 
             let connectUi = slide.find('.noUi-connect');
 
