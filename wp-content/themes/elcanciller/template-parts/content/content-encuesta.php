@@ -20,7 +20,7 @@ $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
 <div id="encuesta-<?php echo $post->ID ?>" class="encuesta">
     <div class="encuesta-container">
         <div class="encabezado">
-            <img src="https://elcanciller.com/wp-content/uploads/2019/08/encuesta-logo.svg" alt="Encuestas">
+            <img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/08/encuesta-logo.svg" alt="Encuestas">
             <div class="titulo">
                 <h3><?php the_title(); ?></h3>
                 <p><?php the_field('subtitulo'); ?></p>
