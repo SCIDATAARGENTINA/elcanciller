@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 
     let getEncuesta = (encuestaId) => {
 
-        return $.get(`https://elcanciller.com/wp-json/wp/v2/encuestas/${encuestaId}`);
+        return $.get(`${URLdomain}/wp-json/wp/v2/encuestas/${encuestaId}`);
 
     };
 

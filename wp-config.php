@@ -1,4 +1,6 @@
 <?php
+/** Enable W3 Total Cache */
+
 /**
  * The base configuration for WordPress
  *
@@ -79,10 +81,7 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 define('FS_METHOD', 'direct');
-
-define('WP_HOME','https://elcanciller.com');
-define('WP_SITEURL','https://elcanciller.com');
-
+/* define('FORCE_SSL_ADMIN', true);
 
 /* That's all, stop editing! Happy blogging. */
 
