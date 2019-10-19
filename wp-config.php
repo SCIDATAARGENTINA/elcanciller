@@ -83,6 +83,7 @@ define('FS_METHOD', 'direct');
 define('WP_HOME','https://elcanciller.com');
 define('WP_SITEURL','https://elcanciller.com');
 
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
