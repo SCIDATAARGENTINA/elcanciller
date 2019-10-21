@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    var URLdomain = 'http://'+ window.location.host;
+    var URLdomain = 'https://'+ window.location.host;
     
     var idEncuesta,
         totVotos,

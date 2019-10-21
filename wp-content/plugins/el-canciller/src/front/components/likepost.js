@@ -7,7 +7,7 @@ let getPostData = (id, type) => {
         type = "posts";
     }
 
-    const url = `http://elcanciller.com/wp-json/wp/v2/${type}/${id}`;
+    const url = `https://elcanciller.com/wp-json/wp/v2/${type}/${id}`;
 
     const headers = {
         // tslint:disable-next-line:max-line-length
