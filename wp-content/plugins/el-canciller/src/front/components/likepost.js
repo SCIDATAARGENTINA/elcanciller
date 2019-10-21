@@ -1,8 +1,6 @@
 var $ = require("jquery");
 var cjs = require("cookies-js");
 
-console.log('hola');
-
 let getPostData = (id, type) => {
 
     if (type == "post" || type == null) {
