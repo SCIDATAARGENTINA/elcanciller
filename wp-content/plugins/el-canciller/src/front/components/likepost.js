@@ -1,17 +1,18 @@
 var $ = require("jquery");
 var cjs = require("cookies-js");
 
+console.log('hola');
+
 let getPostData = (id, type) => {
 
     if (type == "post" || type == null) {
         type = "posts";
     }
 
-    const url = `https://elcanciller.com/wp-json/wp/v2/${type}/${id}`;
+    const url = `https://elcanciller.com/wp-json/wp/v2/${type}/${id}`; 
 
     const headers = {
-        // tslint:disable-next-line:max-line-length
-        //'Authorization': 'Bearer BQDN8FI-G3-thKplSnuymOZA8ixIHLoEnrEg4-nvcCsN64BGpyNv1LdbM53gz0ODqo9QXYLHKtbKaG7DLl0'
+        
     };
 
     return fetch(url, { headers }).then(data => data.json());
