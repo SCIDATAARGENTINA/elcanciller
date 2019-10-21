@@ -29,9 +29,9 @@
                         'posts_per_page' => 3,
                         'post_type' => 'video'
                     );
-                    $videolist = new WP_Query( $args );
-                    while( $videolist->have_posts() ) {
-                        $videolist->the_post();
+                    query_posts($args);
+                    while( have_posts() ) {
+                        the_post();
                         ?>
                         
                         <div id="video-<?php echo $post->ID ?>" data-id="<?php echo $post->ID ?>" class="video-item popup-video">
@@ -50,9 +50,9 @@
                         'posts_per_page' => 2,
                         'post_type' => 'video'
                     );
-                    $query = new WP_Query( $args );
-                    while( $query->have_posts() ) {
-                        $query->the_post(); 
+                    query_posts($args);
+                    while( have_posts() ) {
+                        the_post(); 
                         
                         get_template_part('template-parts/content/content', 'video');
                     }
