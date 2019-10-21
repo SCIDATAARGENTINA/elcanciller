@@ -1,4 +1,4 @@
-var URLdomain = 'http://'+ window.location.host;
+var URLdomain = 'https://'+ window.location.host;
 
 jQuery(document).ready(function($) {
 
