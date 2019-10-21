@@ -2039,10 +2039,10 @@ ul.tagposts-list li {
     font-size: 12px;
     font-family: 'Bree Serif', serif;
     text-transform: uppercase;
-}
-
+} 
+ 
 .post-rendered.trending::after {
-    content: url('http://142.93.24.13/wp-content/uploads/2019/07/fire-blanco.svg');
+    content: url('https://elcanciller.com/wp-content/uploads/2019/07/fire-blanco.svg');
     width: 54px;
     height: 54px;
     color: #fff;
@@ -2053,8 +2053,8 @@ ul.tagposts-list li {
     left: 0;
     padding: 10px 15px;
 }
-
-
+ 
+ 
 /* HOVER EFFECT*/
 
 .post-rendered.show-author:hover .render-author {
@@ -4276,7 +4276,7 @@ body::after {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-1.svg) url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-2.svg) url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-3.svg) url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-4.svg) url(http://142.93.24.13/wp-content/uploads/2019/09/emoticon-5.svg);
+    content: url(https://elcanciller.com/wp-content/uploads/2019/09/emoticon-1.svg) url(https://elcanciller.com/wp-content/uploads/2019/09/emoticon-2.svg) url(https://elcanciller.com/wp-content/uploads/2019/09/emoticon-3.svg) url(https://elcanciller.com/wp-content/uploads/2019/09/emoticon-4.svg) url(https://elcanciller.com/wp-content/uploads/2019/09/emoticon-5.svg);
 }
 
 
@@ -4407,13 +4407,13 @@ SECCION AUTORES
 
 .divisor-autor{
     height: 50px;
-    background: url(http://142.93.24.13/wp-content/uploads/2019/09/divisor-microfono.png) no-repeat scroll center;
+    background: url(https://elcanciller.com/wp-content/uploads/2019/09/divisor-microfono.png) no-repeat scroll center;
     margin-top: -15px;
 }
 
 .divisor-autor-inferior{
     height: 50px;
-    background: url(http://142.93.24.13/wp-content/uploads/2019/09/divisor-microfono-inferior.png) no-repeat scroll center;
+    background: url(https://elcanciller.com/wp-content/uploads/2019/09/divisor-microfono-inferior.png) no-repeat scroll center;
     margin-top: -15px;
 }
 .divisor-autor hr, .divisor-autor-inferior hr{
