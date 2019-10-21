@@ -1,4 +1,4 @@
-var URLdomain = 'https://'+ window.location.host;
+var URLdomain = 'https://elcanciller.com';
 
 jQuery(document).ready(function($) {
 
