@@ -54,9 +54,13 @@ $intervalo = $resultado->format('%a');
                     {
                         ?><div class="number number-three"><?php echo $val ?></div><?php
                     }
-                    else
+                    if($intervalo > 9)
                     {
                         ?><div class="number number-two"><?php echo $val ?></div><?php
+                    }
+                    else
+                    {
+                        ?><div class="number number-one"><?php echo $val ?></div><?php
                     }
                 }
                 ?>
