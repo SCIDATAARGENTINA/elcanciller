@@ -10,7 +10,15 @@
  */
 
 ?>
+<div>
+<script>
+var dia = getDate();
+if (dia > '27'){
+   console.log('mayor '+dia);
+}
 
+</script>
+</div>
 <div class="trending-post">
    <?php
    $args = array(
