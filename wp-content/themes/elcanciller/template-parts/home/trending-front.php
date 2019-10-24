@@ -14,10 +14,9 @@
 <script>
 var d = new Date();
 var dia = d.getDate();
-// if (dia < '27'){
-   //console.log('mayor '+dia);
-   console.log('Fecha: '+d.getDate(),'<br>Dia de la semana: '+d.getDay(),'<br>Mes (0 al 11): '+d.getMonth(),'<br>Año:'+d.getFullYear(),'<br>Hora:'+d.getHours(),'<br>HoraUTC: '+d.getUTCHours(),'<br>Minutos: '+d.getMinutes(),'<br>Segundos: '+d.getSeconds());
-//}
+if (dia < '26'){
+   <div class="ad-long"><div id="resultados" style="width: 100% !important;"><a href=""><img src="https://drive.google.com/file/d/1oD0mJxcmx_KZhhZ2M6yntl1gRBCCZ6sx/edit" class="onlydesktop" style="width: 728px;"><img src="https://drive.google.com/file/d/1JESSBrIQ7uUZZrgIy4Sw73g45YRpnH92/edit" class="onlymobile" style="width: 300px;"></a></div></div>
+}
 
 </script>
 </div>
