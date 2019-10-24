@@ -12,7 +12,8 @@
 ?>
 <div>
 <script>
-var dia = getDate();
+var d = new Date();
+var dia = d.getDate();
 if (dia > '27'){
    console.log('mayor '+dia);
 }
