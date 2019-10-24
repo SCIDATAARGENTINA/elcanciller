@@ -10,6 +10,7 @@
  */
 
 ?>
+<div id="resultados"></div>
 <script>
 var d = new Date();
 var dia = d.getDate();
@@ -18,7 +19,6 @@ if (dia < '26'){
    console.log(dia);
 }
 </script>
-<div id="resultados"></div>
 <div class="trending-post">
    <?php
    $args = array(
