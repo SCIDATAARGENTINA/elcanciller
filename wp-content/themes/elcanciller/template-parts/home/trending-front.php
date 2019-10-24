@@ -15,7 +15,7 @@
 var d = new Date();
 var dia = d.getDate();
 if (dia < '26'){
-   jQuery('#resultados').append('<div class=\"ad-long\"><div id=\"resultado\" style=\"width: 100% !important;\"><a href=\"\"><img src=\"http://drive.google.com/uc?export=view&id=1oD0mJxcmx_KZhhZ2M6yntl1gRBCCZ6sx" class=\"onlydesktop\" style=\"width: 728px;\"><img src=\"http://drive.google.com/uc?export=view&id=1JESSBrIQ7uUZZrgIy4Sw73g45YRpnH92" class=\"onlymobile\" style=\"width: 300px;\"></a></div></div>');
+   jQuery('#resultados').append('<div class=\"ad-long\"><div id=\"resultado\" style=\"width: 100% !important;\"><a href=\"\"><img src=\"http://drive.google.com/uc?export=view&id=1oD0mJxcmx_KZhhZ2M6yntl1gRBCCZ6sx" class=\"onlydesktop\" style=\"\"><img src=\"http://drive.google.com/uc?export=view&id=1JESSBrIQ7uUZZrgIy4Sw73g45YRpnH92" class=\"onlymobile\" style=\"width: 300px;\"></a></div></div>');
    console.log(dia);
 }
 </script>
