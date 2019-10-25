@@ -38,3 +38,32 @@ function admin_scripts() {
 	);
 }
 add_action( 'admin_enqueue_scripts', 'admin_scripts' );
+
+
+add_action( 'wp_enqueue_scripts', 'rest_js_enqueue_scripts' );
+
+add_filter( 'acf/rest_api/key', function( $key, $request, $type ) {
+    return 'acf_fields';
+}, 10, 3 );
+
+ function rest_js_enqueue_scripts() {
+
+  wp_localize_script( 'wds-wwe-frontend-js', 'content_data', array('ajax_url' => admin_url( 'admin-ajax.php' )));
+
+ }
+
+ add_action( 'wp_ajax_nopriv_ajax_call_count_likes', 'ajax_call_count_likes' );
+ add_action( 'wp_ajax_ajax_call_count_likes', 'ajax_call_count_likes' );
+
+ function ajax_call_count_likes() {
+
+   $currentVal = $_POST['like_count'];
+   $currentVal++;
+   if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
+
+   update_field( 'likes', $currentVal, $_POST['post_id'] );
+
+   }
+
+ 	die();
+ }

@@ -112,10 +112,11 @@ eval("/**\r\n * Test admin component.\r\n *\r\n * src/admin/components/admin-tes
 /*!**********************************!*\
   !*** ./src/utils/utils-index.js ***!
   \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: shuffle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("/**\r\n * Shared utilities.\r\n */\n\n/**\r\n * Uppercase a string.\r\n */\nexports.upper = function (message) {\n  return message.toUpperCase();\n};\n/**\r\n * Test if is type string.\r\n */\n\n\nexports.isString = function (message) {\n  return 'string' === typeof message;\n};\n\n//# sourceURL=webpack:///./src/utils/utils-index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"shuffle\", function() { return shuffle; });\n/**\r\n * Shared utilities.\r\n */\n\n/**\r\n * Suffle Array ( Para randomizar los posts);\r\n */\nfunction shuffle(arrParam) {\n  var arr = arrParam.slice(),\n      length = arr.length,\n      temp,\n      i;\n\n  while (length) {\n    i = Math.floor(Math.random() * length--);\n    temp = arr[length];\n    arr[length] = arr[i];\n    arr[i] = temp;\n  }\n\n  return arr;\n}\n\n//# sourceURL=webpack:///./src/utils/utils-index.js?");
 
 /***/ })
 

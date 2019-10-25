@@ -26,41 +26,23 @@ $discussion = twentynineteen_get_discussion_data();
 
 <div id="comments" class="<?php echo comments_open() ? 'comments-area' : 'comments-area comments-closed'; ?>">
 	<div class="<?php echo $discussion->responses > 0 ? 'comments-title-wrap' : 'comments-title-wrap no-responses'; ?>">
-		<h2 class="comments-title">
-		<?php
-		if ( comments_open() ) {
-			if ( have_comments() ) {
-				_e( 'Join the Conversation', 'twentynineteen' );
-			} else {
-				_e( 'Leave a comment', 'twentynineteen' );
-			}
-		} else {
-			if ( '1' == $discussion->responses ) {
-				/* translators: %s: post title */
-				printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'twentynineteen' ), get_the_title() );
-			} else {
-				printf(
-					/* translators: 1: number of comments, 2: post title */
-					_nx(
-						'%1$s reply on &ldquo;%2$s&rdquo;',
-						'%1$s replies on &ldquo;%2$s&rdquo;',
-						$discussion->responses,
-						'comments title',
-						'twentynineteen'
-					),
-					number_format_i18n( $discussion->responses ),
-					get_the_title()
-				);
-			}
-		}
-		?>
-		</h2><!-- .comments-title -->
-		<?php
-			// Only show discussion meta information when comments are open and available.
-		if ( have_comments() && comments_open() ) {
-			get_template_part( 'template-parts/post/discussion', 'meta' );
-		}
-		?>
+		<div class="comments-topbar">
+			<div class="comentar">
+				<a href="#respond">
+				<img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/chat-blanco.svg" alt="">
+				comentar
+				</a>
+			</div>
+			<div class="compartir">
+				<span class="text">Compartir:</span>
+				<i class="fab fa-twitter"  data-text="<?php the_title(); ?>" data-link="<?php the_permalink() ?>"></i>
+				<i class="fab fa-facebook-f" data-title="<?php the_title(); ?>" data-img="" data-text="<?php echo get_the_excerpt(); ?>" data-link="<?php the_permalink() ?>"></i>
+			</div>
+			<div class="nota-like">
+				<span class="text">¿Te gusto esta nota?</span>
+				<i class="fas fa-heart like" data-id="<?php echo get_the_ID(); ?>" data-count="<?php the_field('likes') ?>" data-type="<?php echo get_post_type( get_the_ID() ); ?>"></i>
+			</div>
+		</div><!-- comments-topbar -->
 	</div><!-- .comments-title-flex -->
 	<?php
 	if ( have_comments() ) :
@@ -75,7 +57,7 @@ $discussion = twentynineteen_get_discussion_data();
 			<?php
 			wp_list_comments(
 				array(
-					'walker'      => new TwentyNineteen_Walker_Comment(),
+					'walker'      => new Canciller_Walker_Comment(),
 					'avatar_size' => twentynineteen_get_avatar_size(),
 					'short_ping'  => true,
 					'style'       => 'ol',

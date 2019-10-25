@@ -9,93 +9,69 @@
  * @since 1.0.0
  */
 
+$featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+$thumbnail_id = get_post_thumbnail_id($post->ID);
+$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+$post_id = $post->ID; // this is for any other custom taxonomy
+$taxonomy = 'category'; // this is for default wordpress taxonomy
+$terms = wp_get_post_terms( $post_id, $taxonomy );
+$term = $terms[0];
+$cat_color = get_field('color', $term->taxonomy . '_' . $term->term_id);
+echo '<style> .' . $term->slug . ':before'. '{ background: ' . $cat_color . '; border-color: ' . $cat_color . ';} </style>';
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
-		$destacada = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-		$destacada = $destacada[0]; ?>
-
-
-	<header class="entry-header container" style="background-image:url('<?php echo $destacada ?>')">
+	<div class="post-imagen <?php echo $term->slug ?>">
 		<div class="post-category">
-			<?php the_category(); ?>
+			<a href="<?php echo get_term_link($term);  ?>"><h4 style="color: <?php echo $cat_color; ?>"><?php echo $term->name; ?></h4></a>
 		</div>
-		<div class="post-tags">
-			<p>Trends</p>
-			<?php the_tags( $before = '',  $sep = '', $after = '' ); ?>
+		<div class="post-imagen-container">
+			<img src="<?php echo $featured_img_url ?>" alt="<?php echo $alt ?>">
 		</div>
-		<div class="post-info">
-			<span class="posted-on">
-				<div class="timestamp">
-					<?php echo  'Escrito hace ' . human_time_diff( get_the_time('U'), current_time('timestamp') ) ; ?>
-				</div>
-				<div class="post-date">
-					<?php $post_date = get_the_date( 'l j, F Y' ); echo $post_date; ?>
-				</div>
-			</span>
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-			<div class="entry-meta">
-				<?php
-					$authorId = get_the_author_id()
-				 ?>
-				 <?php echo get_avatar($authorId, 100); ?>
-					<h5 class="author-post__title"><?php the_author() ?></h5>
-			</div><!-- .meta-info -->
-		</div><!-- End post-info -->
-	</header>
-	<div class="post-content container">
-
-		<div class="entry-content">
-			<?php
-			the_content();
-
-			wp_link_pages(
-				array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
-					'after'  => '</div>',
-				)
-			);
+	</div><!-- post-imagen -->
+	<div class="post-content">
+		<?php if(get_the_author_meta('ID') != 81 && get_field('show_author') == 'si'){ ?>
+		<div class="post-author" >
+			<a style="background-color: <?php echo $cat_color; ?>" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' )) ?>">
+			<?php echo get_avatar( get_the_author_meta('ID'), 26 ); ?>
+			<span><?php echo get_the_author(); ?></span>
+			</a>
+		</div><!-- post-author -->
+		<?php } ?>
+		<div class="post-meta">
+			<?php $default_local_date = ucwords(utf8_encode(get_the_time(' d \d\e F \d\e Y | H:i'))); 
+			$date_connectors_capital = array('De', 'Del');
+			$date_connectors_lower = array('de', 'del');
+			$local_date = str_replace($date_connectors_capital, $date_connectors_lower, $default_local_date);
 			?>
-		</div><!-- .entry-content -->
-
-		<aside class="sidebar-single">
-			<div class="full-width follow-us-box md-margin">
-		    <div class="title">Seguinos</div>
-		    <div>Leé las últimas noticias en cualquiera de estas redes sociales!</div>
-		    <div class="follow-us-box__button-row">
-		      <a target="_blank" href="https://twitter.com/elcancillercom"><i class="fas fa-twitter"></i></a>
-		      <a target="_blank" href="https://www.facebook.com/elcancillercom/"><i class="fa fa-facebook-f"></i></a>
-		      <a target="_blank" href="https://www.instagram.com/elcancillerlive/"><i class="fa fa-instagram"></i></a>
-		      <a target="_blank" href="https://www.youtube.com/channel/UCd9aVDXf_SH8-TNHRWj0J0g"><i class="fa fa-youtube"></i></a>
-		    </div>
-			</div><!-- End follow us box -->
-			<div class="full-width subscribe-box md-margin m-b-3">
-	    	<div class="title">Dejanos tu correo y recibí los principales títulos y servicios del día.</div>
-	    	<div>Te enviaremos noticias de última hora directo a tu bandeja de entrada</div>
-	  		<form action="https://elcanciller.com/ajax_subscribe" class="ajaxForm form-subscribe m-t-3" method="post">
-	        <div class="form-group" style="width:100%">
-	          <input type="email" placeholder="Tu e-mail" name="mail">
-	          <button type="submit" class="btn-subscribe">Suscribirme</button>
-	        </div>
-	  		</form>
-			</div><!-- End suscribe box -->
-
-			<?php dynamic_sidebar( 'sidebar-single' ); ?>
-
-		</aside><!-- end aside -->
-	</div><!-- end post-content -->
+			<span class="post-time"><?php echo $local_date; ?></span>
+			<span class="time-ago"><?php echo time_ago() ?></span>
+		</div><!-- post-meta -->
 
 
+		<div class="post-title">
 
+			<h1><?php the_title(); ?></h1>
 
-	<footer class="entry-footer">
-		<?php twentynineteen_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+			<?php if(has_excerpt()){ ?>
+			<div class="resumen">
+				<?php echo get_the_excerpt(); ?>
+			</div><!-- resumen -->
+			<?php } ?>
 
-	<?php if ( ! is_singular( 'attachment' ) ) : ?>
-		<?php get_template_part( 'template-parts/post/author', 'bio' ); ?>
-	<?php endif; ?>
+			<?php get_template_part('template-parts/comments/comments', 'sharer') ?>
 
+		</div><!-- post-title -->
+
+	<?php the_content(); ?>
+	</div><!-- post content -->
+	
 </article><!-- #post-${ID} -->
+
+<?php 
+
+// If comments are open or we have at least one comment, load up the comment template.
+if ( comments_open() || get_comments_number() ) {
+	comments_template();
+}
+
+?>

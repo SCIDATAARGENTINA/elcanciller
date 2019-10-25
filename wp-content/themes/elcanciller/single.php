@@ -10,10 +10,17 @@
  */
 
 get_header();
+
 ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
+
+		<div class="front-page-content inner container">
+			<div class="sidebar">
+				<?php get_template_part('template-parts/sidebar/sidebar', 'single') ?>
+			</div><!-- sidebar -->
+			<div class="content">
 
 			<?php
 
@@ -22,40 +29,28 @@ get_header();
 				the_post();
 				if (is_single()) {
 					$post_id = get_the_ID();
-					pvc_stats_update( $post_id, 0 );
 				}
 
 				get_template_part( 'template-parts/content/content', 'single' );
 
-				if ( is_singular( 'attachment' ) ) {
-					// Parent post navigation.
-					the_post_navigation(
-						array(
-							/* translators: %s: parent post link */
-							'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentynineteen' ), '%title' ),
-						)
-					);
-				} elseif ( is_singular( 'post' ) ) {
-					// Previous/next post navigation.
-					the_post_navigation(
-						array(
-							'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post', 'twentynineteen' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Next post:', 'twentynineteen' ) . '</span> <br/>' .
-								'<span class="post-title">%title</span>',
-							'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post', 'twentynineteen' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Previous post:', 'twentynineteen' ) . '</span> <br/>' .
-								'<span class="post-title">%title</span>',
-						)
-					);
-				}
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
-
 			endwhile; // End of the loop.
 			?>
+
+			</div><!-- content -->
+
+		</div><!-- inner container -->
+		<div class="outer-container">
+			<div class="related-posts">
+				<div class="grey-band"></div>
+				<div class="related-title">
+					<img src="<?php bloginfo('url') ?>/wp-content/uploads/2019/07/fire-marron-blanco.svg" alt="">
+					<h3>Lo que no te podés perder</h3>
+				</div><!-- related-title -->
+				<div class="col-3">
+					<?php echo do_shortcode('[posts cantidad="9" offset="0"]') ?>
+				</div>
+			</div>
+		</div><!-- outer-container -->
 
 		</main><!-- #main -->
 	</section><!-- #primary -->

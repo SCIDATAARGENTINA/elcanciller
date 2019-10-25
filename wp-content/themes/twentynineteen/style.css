@@ -2529,7 +2529,7 @@ h2:before {
 hr {
   background-color: #767676;
   border: 0;
-  height: 2px;
+  height: 1px;
 }
 
 ul,
@@ -5127,8 +5127,8 @@ body.page .main-navigation {
   font-size: calc(22px * 1.125);
   font-weight: 700;
   line-height: 1.2;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 
 .widget_archive ul ul,
